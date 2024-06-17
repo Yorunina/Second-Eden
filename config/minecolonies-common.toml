@@ -2,7 +2,7 @@
 #所有的配置选项都与核心玩法有关
 [gameplay]
 	#是否在战利品箱内生成 补给船 和 补给营地 战利品 [默认: true]
-	generatesupplyloot = true
+	generatesupplyloot = false
 
 #所有与请求系统有关的配置
 [requestsystem]

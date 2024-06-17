@@ -1,0 +1,174 @@
+
+#所有的配置选项都与核心玩法有关
+[gameplay]
+	#初始公民的数量。 [默认：4，最小：1，最大：10]
+	#Range: 1 ~ 10
+	initialcitizenamount = 4
+	#玩家是否可以放置无限数量的补给船/营地？ [默认: false]
+	allowinfinitesupplychests = false
+	#是否允许玩家放弃他的殖民地并创造新的殖民地？注意：这可能会出现未知的问题！ [默认: false]
+	allowinfinitecolonies = true
+	#是否允许在其他维度创建殖民地？ [默认: true]
+	allowotherdimcolonies = true
+	#单殖民地最大公民数量 [默认：250，最小：100，最大：500]
+	#Range: 100 ~ 500
+	maxcitizenpercolony = 250
+	#是否启用实验特性（可能存在BUG）？ [默认: false]
+	enableindevelopmentfeatures = false
+	#是否显示公民姓名标签？ [默认: true]
+	alwaysrendernametag = true
+	#工人是否在雨天工作？ [默认: false]
+	workersalwaysworkinrain = true
+	#是否显示特殊节日内容？ [默认: true]
+	holidayfeatures = true
+	#挖掘圆石或石头（默认设置，可以使用数据包扩展使用其他材料）时，矿工获得矿石的几率。该数值为百分比值。（要修改矿工能获取的矿石，参见“幸运矿物列表”。） [默认：1，最小：0，最大：100]
+	#Range: 0 ~ 100
+	luckyblockchance = 3
+	#市政厅至少需要多少级才可启用传送至盟友殖民地功能。 [默认：3，最小：0，最大：5]
+	#Range: 0 ~ 5
+	minthleveltoteleport = 1
+	#食物消耗系数 [默认：1.000000，最小：0.100000，最大：100.000000
+	#Range: 0.1 ~ 100.0
+	foodmodifier = 1.2
+	#疾病发生频率。1 = 非常常见，100 = 非常罕见。 [默认：5，最小：1，最大：100]
+	#Range: 1 ~ 100
+	diseasemodifier = 5
+	#如果殖民地仅一部分区块被其 所有者/市长 加载，整个殖民地是否应当保持已加载状态。（在 “殖民地区块加载限制” 设置加载区块的数量） [默认: true]
+	forceloadcolony = true
+	#设置玩家离开后区块保持加载的时间，重新启动后不会持续存在。默认：10分钟 [默认：10，最小：1，最大：1440]
+	#Range: 1 ~ 1440
+	loadtime = 10
+	#这项与“殖民地区块加载”选项一起控制多少个区块被加载，这个值越大，则越少的区块被加载。 (最中心的区块会被首先加载。) 1 = 加载所有认领的区块。 [默认：3，最小：1，最大：15]
+	#Range: 1 ~ 15
+	colonyloadstrictness = 3
+	#林务员搜索一棵树时检查的最大原木数量。 [默认：400，最小：1，最大：1000]
+	#Range: 1 ~ 1000
+	maxtreesize = 400
+	#禁用补给营地放置限制，以支持空岛等类似模式 [默认: false]
+	nosupplyplacementrestrictions = false
+	#开启此项以允许入侵者在空中生成 [默认: false]
+	skyraiders = false
+
+#与研究系统有关的设置
+[research]
+	#在创造模式下自动并且（几乎）瞬间完成研究。如果设为false，创造模式玩家仍能开始研究，但研究速度和生存模式一样。 [默认: true]
+	researchcreativecompletion = true
+	#显著提高在世界加载时与研究数据包有关的日志的量 [默认: false]
+	researchdebuglog = false
+	#消耗列表中的物品来撤销一项已完成的研究 
+	researchresetcost = ["minecolonies:ancienttome:1"]
+
+#所有与模拟殖民地命令有关的配置
+[commands]
+	#是否允许玩家使用 /mc rtp 命令？ [默认: false]
+	canplayerusertpcommand = true
+	#是否允许玩家使用 /mc colony teleport 命令？ [默认: false]
+	canplayerusecolonytpcommand = false
+	#玩家是否可传送至盟友的殖民地？ [默认: true]
+	canplayeruseallytownhallteleport = true
+	#是否允许玩家使用 /mc home 命令？注意：只有殖民地的所有者才能使用此命令。 [默认: false]
+	canplayerusehometpcommand = false
+	#是否允许玩家使用 /mc colony info 命令？ [默认: true]
+	canplayeruseshowcolonyinfocommand = true
+	#是否允许玩家使用 /mc citizens kill 命令？ [默认: false]
+	canplayerusekillcitizenscommand = false
+	#是否允许玩家使用 /mc colony addOfficer 命令？ [默认: true]
+	canplayeruseaddofficercommand = true
+	#是否允许玩家使用 /mc colony delete 命令？ [默认: false]
+	canplayerusedeletecolonycommand = false
+	#是否允许玩家使用 /mc colony requestsystem-reset 命令？ [默认: false]
+	canplayeruseresetcommand = false
+
+#与殖民地领地有关的设置
+[claims]
+	#殖民地的最大领地范围。半径，以区块为单位。 [默认：20，最小：1，最大：250]
+	#Range: 1 ~ 250
+	maxColonySize = 20
+	#殖民地之间的最小间距 (以区块为单位)。 [默认：8，最小：1，最大：200]
+	#Range: 1 ~ 200
+	minColonyDistance = 8
+	#殖民地的初始领地范围。半径，以区块为单位。 [默认：4，最小：1，最大：15]
+	#Range: 1 ~ 15
+	initialColonySize = 4
+	#殖民地距离世界出生点的最大距离 (单位：方块) [默认：30000，最小：1000，最大：2147483647]
+	#Range: > 1000
+	maxdistancefromworldspawn = 30000
+	#殖民地距离世界出生点的最小距离 (单位：方块) [默认：0，最小：0，最大：1000]
+	#Range: 0 ~ 1000
+	mindistancefromworldspawn = 0
+
+#所有的配置选项均与模拟殖民地的战斗元素有关
+[combat]
+	#minecolonies.config.dobarbariansspawn.comment [默认: true]
+	dobarbariansspawn = true
+	#minecolonies.config.barbarianhordedifficulty.comment [默认：5，最小：0，最大：10]
+	#Range: 0 ~ 10
+	barbarianhordedifficulty = 5
+	#minecolonies.config.maxbarbariansize.comment [默认：80，最小：6，最大：400]
+	#Range: 6 ~ 400
+	maxBarbarianSize = 80
+	#minecolonies.config.dobarbariansbreakthroughwalls.comment [默认: true]
+	dobarbariansbreakthroughwalls = true
+	#两次袭击间隔的平均天数 [默认：14，最小：1，最大：50]
+	#Range: 1 ~ 50
+	averagenumberofnightsbetweenraids = 14
+	#袭击最短间隔的天数 [默认：10，最小：1，最大：30]
+	#Range: 1 ~ 30
+	minimumnumberofnightsbetweenraids = 7
+	#怪物是否攻击公民？ [默认: true]
+	mobattackcitizens = true
+	#minecolonies.config.shouldraiderbreakdoors.comment [默认: true]
+	shouldraiderbreakdoors = true
+	#minecolonies.config.guarddamagemultiplier.comment [默认：1.000000，最小：0.100000，最大：15.000000
+	#Range: 0.1 ~ 15.0
+	guardDamageMultiplier = 1.0
+	#所有卫兵的生命值加成。 [默认：1.000000，最小：0.100000，最大：5.000000
+	#Range: 0.1 ~ 5.0
+	guardhealthmult = 1.0
+	#开启PVP模式 (在特定情况下，殖民地可以被摧毁、损坏)。 [默认: false]
+	pvp_mode = true
+
+#所有权限配置选项
+[permissions]
+	#是否启用殖民地保护？ [默认: true]
+	enablecolonyprotection = true
+	#与殖民地保护选项无关，是否禁用殖民地内的爆炸？DAMAGE_NOTHING 完全禁止爆炸。DAMAGE_PLAYERS 允许爆炸伤害玩家，但不影响方块，中立或友善的实体。DAMAGE_ENTITIES 允许伤害所有实体。DAMAGE_EVERYTHING 允许伤害所有实体和方块。 
+	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
+	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
+	#可供玩家在任意殖民地进行交互的方块（例如：自动贩卖机） 
+	freetointeractblocks = ["simpleshops:simple_shop", "simpleshops:creative_simple_shop", "waystones:waystone", "waystones:mossy_waystone", "waystones:sharestone", "waystones:sandy_waystone"]
+
+#所有的配置选项均与模组兼容性有关
+[compatibility]
+	#公民在图书馆中所消耗的物品。 
+	configliststudyitems = ["minecraft:paper;200;100", "minecraft:book;400;30", "kubejs:book_of_knowledge;600;15", "kubejs:book_of_enlight;800;10"]
+	#酒馆客人需求的物品 
+	configlistrecruitmentitems = ["minecraft:hay_block;3", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;11", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
+	#低权重矿物列表，矿工更少地获得列表内的矿物 (参考 ”矿物权重“选项) 格式: 方块! 权重 
+	luckyores = ["minecraft:coal_ore!64", "minecraft:copper_ore!48", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
+	#所有公民可能患上的疾病、名称、频率以及相应的治疗药物。 
+	diseases = ["Influenza,100,minecraft:carrot,minecraft:potato", "Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy", "Smallpox,1,minecraft:honey_bottle,minecraft:golden_apple"]
+	#加载配方时，生成CSV文件以帮助调试数据包或其他模组。 [默认: false]
+	auditcraftingtags = false
+	#开启建筑物库存的调试。 [默认: false]
+	debuginventories = false
+	#如果你要在这个世界中建造和扫描蓝图，请打开它。 [默认: false]
+	blueprintbuildmode = false
+
+#所有与寻路有关的配置
+[pathfinding]
+	#寻路调试信息的详细程度 [默认：0，最小：0，最大：10]
+	#Range: 0 ~ 10
+	pathfindingdebugverbosity = 0
+	#公民会去使用最短多少格连续的铁轨。 [默认：8，最小：5，最大：100]
+	#Range: 5 ~ 100
+	minimumrailstopath = 8
+	#用于寻路的线程数量。 [默认：2，最小：1，最大：10]
+	#Range: 1 ~ 10
+	pathfindingmaxthreadcount = 2
+
+#所有与请求系统有关的配置
+[requestSystem]
+	#当要求玩家解决请求时，是否请求系统应该创造性地解决请求（如果可能的话）？ 这是一个调试工具，可能需要很长时间才能解决请求。 [默认: false]
+	creativeresolve = false
+
