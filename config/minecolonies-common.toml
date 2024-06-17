@@ -1,0 +1,11 @@
+
+#所有的配置选项都与核心玩法有关
+[gameplay]
+	#是否在战利品箱内生成 补给船 和 补给营地 战利品 [默认: true]
+	generatesupplyloot = true
+
+#所有与请求系统有关的配置
+[requestsystem]
+	#是否在debug.log中显示请求系统的调试信息？出现问题时建议开启。 [默认: false]
+	enabledebuglogging = false
+

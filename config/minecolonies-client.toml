@@ -1,0 +1,16 @@
+
+#所有的配置选项都与核心玩法有关
+[gameplay]
+	#minecolonies.config.enablecitizenvoices.comment [默认: true]
+	enablecitizenvoices = true
+	#默认情况下，当在一个建筑附近放置其它建筑时，已经放置的建筑会显示它们等级 5 时候的预览，并且会有蓝色的轮廓线包围着。设置为 false 以关闭此功能。 [默认: true]
+	neighborbuildingrendering = true
+	#调整建筑被视为临近所需的最小间距，单位为方块数量。-1 = 重合，0 = 接触 [默认：4，最小：-2，最大：16]
+	#Range: -2 ~ 16
+	neighborbuildingrange = 4
+	#佩戴建筑工护目镜时，你需要离多近（以方块为单位）才能看到工作指令。 [默认：50，最小：1，最大：250]
+	#Range: 1 ~ 250
+	buildgogglerange = 50
+	#当启用时，持有建筑工具时出现的殖民地边界，将会以该殖民地所属队伍的颜色显示。当禁用时，你所在的殖民地边界将以白色显示，其他殖民地边界将以红色显示。 [默认: true]
+	colonyteamborders = true
+

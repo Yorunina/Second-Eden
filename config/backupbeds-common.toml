@@ -1,0 +1,4 @@
+#The maximum amount of backup beds tracked by the server for each player.
+#Range: 0 ~ 100
+backup_bed_track_count = 5
+
