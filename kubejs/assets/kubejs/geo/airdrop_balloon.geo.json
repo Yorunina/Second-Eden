@@ -1,0 +1,151 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.AirDropBallon",
+				"texture_width": 136,
+				"texture_height": 136,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 6.5,
+				"visible_bounds_offset": [0, 2.75, 0]
+			},
+			"bones": [
+				{
+					"name": "balloon2",
+					"pivot": [0, 41, 0]
+				},
+				{
+					"name": "ropes2",
+					"parent": "balloon2",
+					"pivot": [0, 38, 0]
+				},
+				{
+					"name": "basket2",
+					"parent": "ropes2",
+					"pivot": [0, 8, 0]
+				},
+				{
+					"name": "balloon",
+					"pivot": [0, 41, 0],
+					"cubes": [
+						{"origin": [-11, 38, -11], "size": [22, 6, 22], "uv": [0, 64]},
+						{"origin": [-16, 44, -16], "size": [32, 32, 32], "uv": [2, 0]}
+					]
+				},
+				{
+					"name": "ropes",
+					"parent": "balloon",
+					"pivot": [0, 38, 0],
+					"cubes": [
+						{"origin": [-9, 14, -9], "size": [18, 24, 18], "uv": [64, 92]}
+					]
+				},
+				{
+					"name": "basket",
+					"parent": "ropes",
+					"pivot": [0, 8, 0],
+					"cubes": [
+						{"origin": [-10, 0, -10], "size": [20, 2, 20], "uv": [0, 114]},
+						{"origin": [-10, 2, -10], "size": [20, 12, 3], "uv": [0, 92]},
+						{"origin": [-10, 2, 7], "size": [20, 12, 3], "uv": [66, 64]},
+						{"origin": [7, 2, -7], "size": [3, 12, 14], "uv": [98, 0]},
+						{"origin": [-10, 2, -7], "size": [3, 12, 14], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "sandBags",
+					"pivot": [9, -2, -9]
+				},
+				{
+					"name": "sandBag1",
+					"parent": "sandBags",
+					"pivot": [-5, 12.5, -10],
+					"rotation": [-20, 0, 0],
+					"cubes": [
+						{"origin": [-5.5, 7.5, -10], "size": [1, 6, 0], "uv": [0, 0]},
+						{"origin": [-5, 7.5, -10.5], "size": [0, 6, 1], "uv": [0, -1]},
+						{"origin": [-6.5, 3.5, -11.5], "size": [3, 5, 3], "pivot": [-5, 8.5, -10], "rotation": [20, 0, 0], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag2",
+					"parent": "sandBags",
+					"pivot": [5, 12.5, -10],
+					"rotation": [-20, 0, 0],
+					"cubes": [
+						{"origin": [4.5, 7.5, -10], "size": [1, 6, 0], "uv": [0, 0]},
+						{"origin": [5, 7.5, -10.5], "size": [0, 6, 1], "uv": [0, -1]},
+						{"origin": [3.5, 3.5, -11.5], "size": [3, 5, 3], "pivot": [5, 8.5, -10], "rotation": [20, 0, 0], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag3",
+					"parent": "sandBags",
+					"pivot": [-5, 12.5, 10],
+					"rotation": [20, 0, 0],
+					"cubes": [
+						{"origin": [-5.5, 7.5, 10], "size": [1, 6, 0], "uv": [0, 0]},
+						{"origin": [-5, 7.5, 9.5], "size": [0, 6, 1], "uv": [0, -1]},
+						{"origin": [-6.5, 3.5, 8.5], "size": [3, 5, 3], "pivot": [-5, 8.5, 10], "rotation": [-20, 0, 0], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag4",
+					"parent": "sandBags",
+					"pivot": [5, 12.5, 10],
+					"rotation": [20, 0, 0],
+					"cubes": [
+						{"origin": [4.5, 7.5, 10], "size": [1, 6, 0], "uv": [0, 0], "mirror": true},
+						{"origin": [5, 7.5, 9.5], "size": [0, 6, 1], "uv": [0, -1], "mirror": true},
+						{"origin": [3.5, 3.5, 8.5], "size": [3, 5, 3], "pivot": [5, 8.5, 10], "rotation": [-20, 0, 0], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag5",
+					"parent": "sandBags",
+					"pivot": [-10, 12.5, -5],
+					"rotation": [0, 0, 20],
+					"cubes": [
+						{"origin": [-10, 7.5, -5.5], "size": [0, 6, 1], "uv": [0, -1]},
+						{"origin": [-10.5, 7.5, -5], "size": [1, 6, 0], "uv": [0, 0]},
+						{"origin": [-11.5, 3.5, -6.5], "size": [3, 5, 3], "pivot": [-10, 8.5, -5], "rotation": [0, 0, -20], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag6",
+					"parent": "sandBags",
+					"pivot": [-10, 12.5, 5],
+					"rotation": [0, 0, 20],
+					"cubes": [
+						{"origin": [-10, 7.5, 4.5], "size": [0, 6, 1], "uv": [0, -1]},
+						{"origin": [-10.5, 7.5, 5], "size": [1, 6, 0], "uv": [0, 0]},
+						{"origin": [-11.5, 3.5, 3.5], "size": [3, 5, 3], "pivot": [-10, 8.5, 5], "rotation": [0, 0, -20], "uv": [0, 6]}
+					]
+				},
+				{
+					"name": "sandBag7",
+					"parent": "sandBags",
+					"pivot": [10, 12.5, 5],
+					"rotation": [0, 0, -20],
+					"cubes": [
+						{"origin": [10, 7.5, 4.5], "size": [0, 6, 1], "uv": [0, -1], "mirror": true},
+						{"origin": [9.5, 7.5, 5], "size": [1, 6, 0], "uv": [0, 0], "mirror": true},
+						{"origin": [8.5, 3.5, 3.5], "size": [3, 5, 3], "pivot": [10, 8.5, 5], "rotation": [0, 0, 20], "uv": [0, 6], "mirror": true}
+					]
+				},
+				{
+					"name": "sandBag8",
+					"parent": "sandBags",
+					"pivot": [10, 12.5, 5],
+					"rotation": [0, 0, -20],
+					"cubes": [
+						{"origin": [10, 7.5, -5.5], "size": [0, 6, 1], "uv": [0, -1], "mirror": true},
+						{"origin": [9.5, 7.5, -5], "size": [1, 6, 0], "uv": [0, 0], "mirror": true},
+						{"origin": [8.5, 3.5, -6.5], "size": [3, 5, 3], "pivot": [10, 8.5, -5], "rotation": [0, 0, 20], "uv": [0, 6], "mirror": true}
+					]
+				}
+			]
+		}
+	]
+}

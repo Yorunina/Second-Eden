@@ -1,0 +1,9 @@
+
+[gui]
+	#ESC key allows return to previous window.
+	#Applies at Hut/Citizen inventory and Recipe Teach window and Hire window.
+	escToReturn = true
+	#Add close button what can return previous window.
+	#Applies at Hut/Citizen inventory and Recipe Teach window.
+	addCloseButton = false
+

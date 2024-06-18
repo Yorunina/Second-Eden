@@ -1,4 +1,4 @@
-/.vscode/
+/.*
 /crash-reports/
 /local/
 /logs/
@@ -31,3 +31,5 @@
 /patchouli_books
 /.DS_Store
 /blueprints
+/music_sheets
+jsconfig.json
