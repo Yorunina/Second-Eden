@@ -31,7 +31,6 @@
   },
   "loot": {
     "entries": {
-      "[\\w]+:chests\\/[\\w_\\/]*(bastion|piglin)[\\w_\\/]*": 0.025
     }
   }
 }

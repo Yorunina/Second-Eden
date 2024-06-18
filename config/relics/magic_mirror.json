@@ -33,9 +33,6 @@
   },
   "loot": {
     "entries": {
-      "[\\w]+:chests\\/[\\w_\\/]*(mineshaft|city|stronghold)[\\w_\\/]*": 0.025,
-      "minecraft:chests/woodland_mansion": 0.025,
-      "[\\w]+:chests\\/[\\w_\\/]*(pillag|outpost)[\\w_\\/]*": 0.025
     }
   }
 }

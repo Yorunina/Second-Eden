@@ -33,7 +33,6 @@
   },
   "loot": {
     "entries": {
-      "[\\w]+:chests\\/[\\w_\\/]*(desert|sand|pyramid)[\\w_\\/]*": 0.025
     }
   }
 }

@@ -1,29 +1,36 @@
-function identifyLootMap(event) {
-    let level = event.level
+// priority: 100
+NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
+    /**@type {Internal.ServerPlayer} */
     let player = event.player
+    if (!player instanceof $ServerPlayer) return
+    player.modifyAttribute('minecraft:generic.attack_damage')
+    let lazyOptCapability = player.getCapability(CuriosCapabilities.INVENTORY)
+    if (!lazyOptCapability.isPresent()) return
+    let curios = lazyOptCapability.resolve().get()
+    
+    let atlasItemSlotResOpt = curios.findFirstCurio(item => {
+        return item.hasTag('curios:atlas')
+    })
+    if (!atlasItemSlotResOpt.ifPresent()) return
+    let atlasSlotRes = atlasItemSlotResOpt.get()
+    let atlasItem = atlasSlotRes.stack()
+    let level = event.level
+    let mapItem = genAtlasLootMap(level, player)
+    if (!mapItem) return
+    player.give(mapItem)
+    atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+})
+
+
+/**
+ * @param {Internal.Level} level 
+ * @param {Internal.ServerPlayer} player 
+ * @return {Internal.ItemStack}
+ */
+function genAtlasLootMap(level, player) {
     let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
     
     let luck = Math.max(player.getLuck(), 0)
-    let table = 'minecraft:chests/stronghold/base'
-    let dimLootMap = treasureDetectorTableMap[level.dimensionKey.location()]
-    
-    if (dimLootMap) {
-        let keys = Object.keys(dimLootMap)
-        keys.forEach((a) => parseInt(a))
-        keys = keys.sort((a, b) => {
-            return a - b
-        })
-        for (let i = 1; i < keys.length; i++) {
-            if (i + 1 >= keys.length) {
-                table = dimLootMap['-1']
-                break
-            }
-            if (luck < parseInt(keys[i + 1]) && luck >= parseInt(keys[i])) {
-                table = dimLootMap[keys[i]]
-                break
-            }
-        }
-    }
 
     for (let i = 0; i < 16; i++) {
         if (!randomPosBlock.blockState.isAir()) {
@@ -42,5 +49,5 @@ function identifyLootMap(event) {
     let placementState = Blocks.CHEST.defaultBlockState();
     level.setBlock(pos, placementState, 2)
     $RandomizableContainerBlockEntity.setLootTable(level, level.getRandom(), pos, table)
-    player.give(mapItem)
+    return mapItem
 }

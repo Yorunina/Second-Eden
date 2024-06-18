@@ -118,7 +118,6 @@
   },
   "loot": {
     "entries": {
-      "[\\w]+:chests\\/[\\w_\\/]*(jungle|temple)[\\w_\\/]*": 0.025
     }
   }
 }
