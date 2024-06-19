@@ -53,6 +53,10 @@
   "exposure": {
     "lightroom": true
   },
+  "touhou_little_maid": {
+    "maid": true,
+    "shrine_lamp": true
+  },
   "jadecolonies": {
     "colony.citizens": true,
     "colony.pack": true,

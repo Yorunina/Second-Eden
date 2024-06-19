@@ -1,0 +1,7 @@
+
+[breedingpotion-common-config]
+	#Ingredient of brewing recipe of breeding potion.
+	INGREDIENT_BREWING = "minecraft:enchanted_golden_apple"
+	#These animals will never turn into breeding mode and only regenerate after gaining breeding effect.
+	IGNORE_ANIMALS = ["minecraft:polar_bear"]
+

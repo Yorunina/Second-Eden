@@ -1,0 +1,112 @@
+
+#General settings.
+[general]
+	#Max number of undos a player has for block painting.
+	#Range: 0 ~ 1000
+	maxUndos = 100
+	#Max number of processing blocks in per tick.
+	#Range: 1 ~ 1000
+	blockTaskRate = 10
+	#When enabled players will not be able to remove dyes from skins in the dye table.
+	lockDyesOnSkins = false
+	#If true the dye table will be instanced for each player. Items will be dropped when the table is closed.
+	instancedDyeTable = false
+	#If enabled the server will check the client protocol version in the login.
+	#Highly recommended unless the server does not support handshake.
+	enableProtocolCheck = true
+	#If enabled the server will check permission node in the each operation.
+	#Highly recommended in the forge server.
+	enablePermissionCheck = true
+	#The maximum number of skins the server is allow to send every minute.
+	#Less that 1 equals unlimited. (not recommended may cause bandwidth and cpu spikes on the server)
+	#Range: 0 ~ 8000
+	serverModelSendRate = 4000
+	#If enabled the server will compress skins before sending them to clients.
+	#Highly recommended unless the server has a very slow CPU.
+	serverCompressesSkins = true
+	#Using embedded skin renderer to replace the original item renderer.
+	#0 = use client config
+	#1 = always disable
+	#2 = always enable
+	#Range: 0 ~ 2
+	enableEmbeddedSkinRenderer = 0
+	#Using skin renderer to replace the original first person hands renderer.
+	#0 = use client config
+	#1 = always disable
+	#2 = always enable
+	#Range: 0 ~ 2
+	enableFirstPersonSkinRenderer = 0
+
+#Setting for the players wardrobe.
+[wardrobe]
+	#Allow the player to open the wardrobe GUI.
+	allowOpening = true
+	#Enable the wardrobe skins tab.
+	enableSkinTab = true
+	#Enable the wardrobe outfits tab.
+	enableOutfitTab = true
+	#Enable the wardrobe display settings tab.
+	enableDisplayTab = true
+	#Enable the wardrobe colour settings tab.
+	enableColourTab = true
+	#Enable the wardrobe dyes tab.
+	enableDyeTab = true
+	#Number of slot columns the mob starts with for skins.
+	#Range: 1 ~ 10
+	mobStartingSlots = 3
+	#Number of slot columns the player starts with for skins.
+	#Range: 1 ~ 10
+	playerStartingSlots = 3
+	#Should skins be dropped on player death.
+	#0 = use keep inventory rule
+	#1 = never drop
+	#2 = always drop
+	#Range: 0 ~ 2
+	playerDropSkinsOnDeath = 0
+
+#Setting for the library blocks.
+[library]
+	#Allows clients to save skins from a server to their local computer using the library.
+	allowDownloadingSkins = false
+	#Allows clients to load skins from their local computer onto the server using the library.
+	allowUploadingSkins = true
+	#Allow the mod to extract the official skins that come with the mod into the library folder.
+	extractOfficialSkins = true
+	#Shows model previews in the library.
+	#Causes a lot of extra load on servers.
+	#Best to turn off on high population servers
+	allowPreviewSkins = true
+	#Allows clients to manage skins of the server computer library.
+	#Required permission level 5 or higher.
+	allowManageSkins = false
+	#We priority use https for the access token APIs.
+	skinServerURLs = []
+
+#Enable/disable holiday events.
+[holiday-events]
+	#Setting to true will disable all holiday events. What's wrong with you!
+	disableAllHolidayEvents = false
+
+#Change (memory use/IO access) ratio by category setting in this category.
+[cache]
+	#How long in seconds the server will keep skins in it's cache.
+	#Default 600 seconds is 10 minutes.
+	#Setting to 0 turns off this option.
+	#Range: 0 ~ 36000
+	expireTime = 6000
+	#Max size the skin cache can reach before skins are removed.
+	#Setting to 0 turns off this option.
+	#Range: 0 ~ 10000
+	maxSize = 2000
+
+#Custom list of items that can be skinned.
+[overrides]
+	#Format ["override type:mod id:item name"]
+	#Valid override types are: sword, shield, bow, pickaxe, axe, shovel, hoe and item
+	#example ["sword:minecraft:iron_sword","sword:minecraft:gold_sword"]
+	itemOverrides = []
+	#Tries to automatically assign the correct type of skin type without config and tag.
+	enableMatchingByItemId = true
+	#If the matching system wrong, you can add the item id here to this ignore it.
+	matchingBlacklistByItemId = []
+
