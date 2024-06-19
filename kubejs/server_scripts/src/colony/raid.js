@@ -1,14 +1,32 @@
 // priority: 100
-ItemEvents.entityInteracted('item_x', event => {
+const { $IRaiderManager$RaidSpawnResult } = require("packages/com/minecolonies/api/colony/managers/interfaces/$IRaiderManager$RaidSpawnResult")
+const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
+
+ItemEvents.entityInteracted('kubejs:item_x', event => {
     let {target, player} = event
     if (target.type != 'minecolonies:citizen') return
     let colony = getColonyByEntity(target)
     if (!colony) return
     let result = colony.raiderManager.raiderEvent('', true, true)
-    colony.raiderManager.setNightsSinceLastRaid
-    if (result != $RaidSpawnResult.SUCCESS) return
+    if (result != $IRaiderManager$RaidSpawnResult.SUCCESS) return
     event.item.shrink(1)
 })
+
+
+/**
+ * 通过实体获取colonyId进而获取colony
+ * @param {$Entity_} target 
+ * @returns {$IColony_}
+ */
+function getColonyByEntity(target) {
+    let colonyId = target?.nbt.getInt('colony')
+    if (!colonyId) return null
+    let colony = $IColonyManager.getInstance().getColonyByDimension(colonyId, target.level.dimensionKey)
+    if (!colony) return null
+    return colony
+}
+
+
 
 
 

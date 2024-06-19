@@ -1,6 +1,7 @@
-const $RangedAttribute = Java.loadClass("net.minecraft.world.entity.ai.attributes.RangedAttribute")
-const $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
-const $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType")
+const { $EntityType } = require("packages/net/minecraft/world/entity/$EntityType")
+const { $RangedAttribute } = require("packages/net/minecraft/world/entity/ai/attributes/$RangedAttribute")
+const { $ForgeRegistries } = require("packages/net/minecraftforge/registries/$ForgeRegistries")
+
 StartupEvents.registry("attribute", event => {
     /**
      * 宝藏距离：玩家使用宝藏能力时，出现宝藏的距离系数。
