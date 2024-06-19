@@ -13,3 +13,6 @@ const $CitizenSkill = Java.loadClass('com.minecolonies.api.entity.citizen.Skill'
 const $ICitizenSkillHandler = Java.loadClass('com.minecolonies.api.entity.citizen.citizenhandlers.ICitizenSkillHandler')
 const $IColonyManager = Java.loadClass('com.minecolonies.api.colony.IColonyManager')
 const $RaidSpawnResult = Java.loadClass('com.minecolonies.api.colony.managers.interfaces.IRaiderManager$RaidSpawnResult')
+
+// 技能相关
+const $SkillsAPI = Java.loadClass('net.puffish.skillsmod.api.SkillsAPI')

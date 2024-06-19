@@ -1,0 +1,366 @@
+{
+	"root_health_add_1": {
+		"title": "kubejs.puffskill.def.root_health_add_1.title",
+		"description": "kubejs.puffskill.def.root_health_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_health_add_2": {
+		"title": "kubejs.puffskill.def.root_health_add_2.title",
+		"description": "kubejs.puffskill.def.root_health_add_2.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 2,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_health_add_4": {
+		"title": "kubejs.puffskill.def.root_health_add_4.title",
+		"description": "kubejs.puffskill.def.root_health_add_4.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 4,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_health_multiply_base_02": {
+		"title": "kubejs.puffskill.def.root_health_multiply_base_02.title",
+		"description": "kubejs.puffskill.def.root_health_multiply_base_02.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 0.2,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"root_health_multiply_base_05": {
+		"title": "kubejs.puffskill.def.root_health_multiply_base_05.title",
+		"description": "kubejs.puffskill.def.root_health_multiply_base_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 0.5,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"root_health_multiply_base_1": {
+		"title": "kubejs.puffskill.def.root_health_multiply_base_1.title",
+		"description": "kubejs.puffskill.def.root_health_multiply_base_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.health",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "generic.max_health",
+					"value": 1,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"root_resistance_add_001": {
+		"title": "kubejs.puffskill.def.root_resistance_add_001.title",
+		"description": "kubejs.puffskill.def.root_resistance_add_001.desc",
+		"extra_description": "kubejs.puffskill.exdesc.resistance",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.resistance",
+					"value": 0.01,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_resistance_add_002": {
+		"title": "kubejs.puffskill.def.root_resistance_add_002",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.resistance",
+					"value": 0.02,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_resistance_add_005": {
+		"title": "kubejs.puffskill.def.root_resistance_add_005",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.resistance",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_healing_add_025": {
+		"title": "kubejs.puffskill.def.root_healing_add_025",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.healing",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_healing_add_05": {
+		"title": "kubejs.puffskill.def.root_healing_add_05",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.healing",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"root_healing_multiply_base_025": {
+		"title": "kubejs.puffskill.def.root_healing_multiply_base_025",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.healing",
+					"value": 0.25,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"root_healing_multiply_base_05": {
+		"title": "kubejs.puffskill.def.root_healing_multiply_base_05",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.healing",
+					"value": 0.5,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"root_stamina_add_05": {
+		"title": "kubejs.puffskill.def.root_stamina_add_05",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_skills:player.stamina",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	}
+}

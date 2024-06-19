@@ -1,7 +1,6 @@
 const $RangedAttribute = Java.loadClass("net.minecraft.world.entity.ai.attributes.RangedAttribute")
 const $ForgeRegistries = Java.loadClass("net.minecraftforge.registries.ForgeRegistries")
 const $EntityType = Java.loadClass("net.minecraft.world.entity.EntityType")
-
 StartupEvents.registry("attribute", event => {
     /**
      * 宝藏距离：玩家使用宝藏能力时，出现宝藏的距离系数。
@@ -23,12 +22,11 @@ StartupEvents.registry("attribute", event => {
 
 })
 
-
 ForgeModEvents.onEvent("net.minecraftforge.event.entity.EntityAttributeModificationEvent", event => {
-    event.add($EntityType.PLAYER, getAttribute("kubejs:treasure_distance"))
-    event.add($EntityType.PLAYER, getAttribute("kubejs:treasure_fortune"))
-    event.add($EntityType.PLAYER, getAttribute("kubejs:unpack_ability"))
-    event.add($EntityType.PLAYER, getAttribute("kubejs:education_ability"))
+    event.add($EntityType.PLAYER, "kubejs:treasure_distance")
+    event.add($EntityType.PLAYER, "kubejs:treasure_fortune")
+    event.add($EntityType.PLAYER, "kubejs:unpack_ability")
+    event.add($EntityType.PLAYER, "kubejs:education_ability")
 })
 
 

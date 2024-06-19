@@ -30,18 +30,13 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
 function genAtlasLootMap(level, player) {
     let randomPosBlock = player.block.offset((0.5 - Math.random()) * 1000, (128 - Math.random() * 32) - player.block.y, (0.5 - Math.random()) * 1000)
     
-    let luck = Math.max(player.getLuck(), 0)
-
-    for (let i = 0; i < 16; i++) {
-        if (!randomPosBlock.blockState.isAir()) {
-            if (!randomPosBlock.offset(0, -1, 0).blockState.isAir()) {
-                randomPosBlock = randomPosBlock.offset(0, -4, 0)
-                break
-            }
-        }
-        randomPosBlock = randomPosBlock.offset(0, -4, 0)
-    }
     let pos = randomPosBlock.getPos()
+    let airdropEntity = level.createEntity('kubejs:airdrop_balloon')
+    airdropEntity.persistentData.putString('owner', player.stringUuid)
+    airdropEntity.persistentData.putFloat('fortune', player.getAttribute('kubejs:treasure_fortune').getValue())
+    airdropEntity.setPosition(pos.x, pos.y, pos.z)
+    airdropEntity.spawn()
+    
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
     $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecorationType.RED_X)

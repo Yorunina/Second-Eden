@@ -1,6 +1,6 @@
 {
 	"unlocked_by_default": true,
-	"title": "Govern",
+	"title": "kubejs.puffskill.basic.title",
 	"icon": {
 		"type": "item",
 		"data": {
