@@ -20,11 +20,12 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     if (!atlasStacks) return
     let atlasItem = atlasStacks.getStackInSlot(0)
     if (!atlasItem) return
+    if (!atlasItem?.nbt?.remains > 0) return
     let level = event.level
     let mapItem = genAtlasLootMap(level, player, atlasItem)
     if (!mapItem) return
     player.give(mapItem)
-    atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+    atlasItem.nbt.putInt('remains', atlasItem.nbt.getInt('remains') - 1)
 })
 
 
@@ -49,7 +50,7 @@ function genAtlasLootMap(level, player, atlasItem) {
     airdropEntity.setCustomNameVisible(false)
     airdropEntity.persistentData.putString('owner', player.stringUuid)
     airdropEntity.persistentData.putFloat('fortune', treasureFortune)
-    airdropEntity.persistentData.putFloat('type', atlasItem.id)
+    airdropEntity.persistentData.putString('type', atlasItem.id)
     airdropEntity.setPosition(pos.x, pos.y, pos.z)
     airdropEntity.spawn()
 

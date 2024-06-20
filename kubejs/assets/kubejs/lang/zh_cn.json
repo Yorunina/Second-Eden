@@ -1,3 +1,7 @@
 {
-    "entity.kubejs.airdrop_balloon": "空投热气球"
+    "entity.kubejs.airdrop_balloon": "空投热气球",
+    "attribute.kubejs.treasure_distance": "宝藏距离",
+    "attribute.kubejs.treasure_fortune": "宝藏幸运",
+    "attribute.kubejs.unpack_ability": "分解效率",
+    "attribute.kubejs.education_ability": "教育能力"
 }

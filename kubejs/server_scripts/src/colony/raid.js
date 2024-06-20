@@ -1,6 +1,6 @@
 // priority: 100
 const { $IRaiderManager$RaidSpawnResult } = require("packages/com/minecolonies/api/colony/managers/interfaces/$IRaiderManager$RaidSpawnResult")
-const { GetColonyByEntity } = require("../utils/colony/GetColonyByEntity")
+const { GetColonyByEntity } = require("../utils/colony")
 
 ItemEvents.entityInteracted('kubejs:item_x', event => {
     let {target, player} = event

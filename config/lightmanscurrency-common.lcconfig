@@ -65,13 +65,13 @@ debugLevel=0
 #Note: Any changes to villagers requires a full reboot to be applied due to how Minecraft/Forge registers trades.
 [villagers]
 	#Whether the wandering trader will have additional trades that allow you to buy misc items with money.
-	addCustomWanderingTrades=true
+	addCustomWanderingTrades=false
 	
 	#Whether the banker villager profession will have any registered trades. The banker sells Lightman's Currency items for coins.
-	addBanker=true
+	addBanker=false
 	
 	#Whether the cashier villager profession will have any registered trades.. The cashier sells an amalgamation of vanilla traders products for coins.
-	addCashier=true
+	addCashier=false
 	
 	#Villager Trade Modification
 	#Note: Changes made only apply to newly generated trades. Villagers with trades already defined will not be changed.
@@ -136,14 +136,14 @@ debugLevel=0
 	#Entity Loot Settings.
 	[loot.entities]
 		#Whether coins can be dropped by entities.
-		enabled=true
+		enabled=false
 		
 		#Whether coins can be dropped by entities that were spawned by the vanilla spawner.
 		allowSpawnedDrops=false
 		
 		#Whether modded machines that emulate player behaviour can trigger coin drops from entities.
 		#Set to false to help prevent autmated coin farming.
-		allowFakePlayerDrops=true
+		allowFakePlayerDrops=false
 		
 		#Entity Drop Lists. Accepts the following inputs:
 		#Entity IDs. e.g. "minecraft:cow"
@@ -157,15 +157,15 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier2" loot table.
 			#Requires a player kill to trigger coin drops.
-			T2=["minecraft:zombie","minecraft:skeleton","minecraft:creeper","minecraft:spider","minecraft:cave_spider","minecraft:husk","minecraft:stray","minecraft:zombie_villager","minecraft:drowned","alexsmobs:bone_serpent","alexsmobs:anaconda","alexsmobs:froststalker","alexsmobs:rattlesnake","alexsmobs:rockey_roller","alexsmobs:skreecher","alexsmobs:soul_vulture","alexsmobs:tarantula_hawk"]
+			T2=["minecraft:zombie","minecraft:skeleton","minecraft:creeper","minecraft:spider","minecraft:cave_spider","minecraft:husk","minecraft:stray","minecraft:magma_cube","minecraft:zombie_villager","minecraft:drowned","alexsmobs:bone_serpent","alexsmobs:anaconda","alexsmobs:froststalker","alexsmobs:rattlesnake","alexsmobs:rockey_roller","alexsmobs:skreecher","alexsmobs:soul_vulture","alexsmobs:tarantula_hawk"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier3" loot table.
 			#Requires a player kill to trigger coin drops.
-			T3=["minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
+			T3=["minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:witch","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier4" loot table.
 			#Requires a player kill to trigger coin drops.
-			T4=["minecraft:enderman","minecraft:shulker","#minecraft:raiders","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
+			T4=["minecraft:enderman","minecraft:evoker","minecraft:vindicator","minecraft:pillager","minecraft:ravager","minecraft:shulker","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier5" loot table.
 			#Requires a player kill to trigger coin drops.
@@ -202,7 +202,7 @@ debugLevel=0
 	#Chest Loot Settings
 	[loot.chests]
 		#Whether coins can spawn in chests.
-		enabled=true
+		enabled=false
 		
 		#Chest Spawn Lists
 		[loot.chests.lists]

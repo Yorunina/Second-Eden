@@ -1,3 +1,4 @@
+// priority: 1000
 const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
 
 

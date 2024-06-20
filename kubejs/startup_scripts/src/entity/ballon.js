@@ -13,9 +13,9 @@ StartupEvents.registry('entity_type', event => {
         })
         .isInvulnerableTo((ctx) => {
             let owner = ctx.entity.persistentData.getString('owner')
-            if (!owner) return true
-            if (ctx.target.stringUuid == owner) return true
-            return false
+            if (!owner) return false
+            if (ctx.damageSource.actual.uuid.toString() == owner) return false
+            return true
         })
 })
 

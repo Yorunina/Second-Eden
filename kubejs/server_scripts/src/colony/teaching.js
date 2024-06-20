@@ -1,6 +1,6 @@
 // priority: 100
 const { $Skill } = require("packages/com/minecolonies/api/entity/citizen/$Skill")
-const { GetCitizenFromEntity } = require("../utils/colony/GetCitizenFromEntity")
+const { GetCitizenFromEntity } = require("../utils/colony")
 
 ItemEvents.entityInteracted('kubejs:teaching_manual', event => {
     let {target, player, item} = event
