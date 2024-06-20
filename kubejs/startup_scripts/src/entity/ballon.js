@@ -11,7 +11,7 @@ StartupEvents.registry('entity_type', event => {
         .onAddedToWorld(entity => {
             entity.setNoGravity(true)
         })
-        .canAttack((ctx) => {
+        .isInvulnerableTo((ctx) => {
             let owner = ctx.entity.persistentData.getString('owner')
             if (!owner) return true
             if (ctx.target.stringUuid == owner) return true

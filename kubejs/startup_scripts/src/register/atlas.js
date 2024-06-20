@@ -1,5 +1,5 @@
-StartupEvents.registry('minecraft:item', event => {
-    event.create('newer_atlas')        
+StartupEvents.registry('item', event => {
+    event.create('newer_atlas', 'basic')        
     .texture('kubejs:item/curios/newer_atlas')
     .maxDamage(8)
     .maxStackSize(1)

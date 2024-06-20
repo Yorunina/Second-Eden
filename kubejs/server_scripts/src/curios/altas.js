@@ -35,15 +35,22 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
  * @return {$ItemStack_}
  */
 function genAtlasLootMap(level, player, atlasItem) {
-    let randomPosBlock = player.block.offset((0.5 - Math.random()) * 300, 0, (0.5 - Math.random()) * 300)
-    let y = level.getHeight('world_surface', randomPosBlock.x, randomPosBlock.z) + 12 + Math.random() * 20
+    let treasureFortune = player.getAttribute('kubejs:treasure_fortune').getValue()
+    let treasureDistance = player.getAttribute('kubejs:treasure_distance').getValue()
+    let deltaX = Math.random() * treasureDistance
+    let deltaZ = Math.sqrt(treasureDistance ** 2 - deltaX ** 2)
+    let deltaDim = Math.floor(Math.random() * 4) + 1
+
+    let randomPosBlock = player.block.offset(deltaX * (-1) ** Math.floor(deltaDim / 2), 0, deltaZ * (-1) ** Math.floor((deltaDim + 1) / 2))
+    let y = Math.min(level.getHeight('world_surface', randomPosBlock.x, randomPosBlock.z) * 1.2 + Math.random() * 20, 255)
     let pos = new BlockPos(randomPosBlock.x, y, randomPosBlock.z)
 
     let airdropEntity = level.createEntity('kubejs:airdrop_balloon')
+    airdropEntity.setCustomNameVisible(false)
     airdropEntity.persistentData.putString('owner', player.stringUuid)
-    airdropEntity.persistentData.putFloat('fortune', player.getAttribute('kubejs:treasure_fortune').getValue())
+    airdropEntity.persistentData.putFloat('fortune', treasureFortune)
     airdropEntity.persistentData.putFloat('type', atlasItem.id)
-    airdropEntity.setPosition(pos.x, y, pos.z)
+    airdropEntity.setPosition(pos.x, pos.y, pos.z)
     airdropEntity.spawn()
 
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
