@@ -3,5 +3,8 @@
     "attribute.kubejs.treasure_distance": "宝藏距离",
     "attribute.kubejs.treasure_fortune": "宝藏幸运",
     "attribute.kubejs.unpack_ability": "分解效率",
-    "attribute.kubejs.education_ability": "教育能力"
+    "attribute.kubejs.education_ability": "教育能力",
+    "tooltips.kubejs.item.atlas.1": "地图册剩余页数：",
+    "msg.player.common.no_more_skill_claim": "你不能在该能力类型下获取更多的技能点数了！",
+    "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点"
 }

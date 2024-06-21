@@ -62,18 +62,18 @@
 	MaidFairyPowerPoint = 0.16
 	#Maid fairy's spawn probability (zombie is 100, enderman is 10)
 	#Range: > 0
-	MaidFairySpawnProbability = 70
+	MaidFairySpawnProbability = 0
 	#The following biome do not spawn maid fairy
 	MaidFairyBlacklistBiome = ["minecraft:the_void", "minecraft:mushroom_fields"]
 	#The following dimension do not spawn maid fairy
-	MaidFairyBlacklistDimension = ["minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"]
+	MaidFairyBlacklistDimension = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end", "twilightforest:twilight_forest"]
 	#Loss power point after player death
 	#Range: 0.0 ~ 5.0
 	PlayerDeathLossPowerPoint = 1.0
 	#Give a soul spell item for player first join
-	GiveSoulSpell = true
+	GiveSoulSpell = false
 	#Give the Memorizable Gensokyo book item for player first join
-	GivePatchouliBook = true
+	GivePatchouliBook = false
 	#Shrine Lamp Effect Cost (Power Point/Per Hour)
 	#Range: 0.0 ~ 1.7976931348623157E308
 	ShrineLampEffectCost = 0.9
@@ -88,11 +88,11 @@
 
 [vanilla]
 	#Whether to replace the vanilla slime model with the yukkuri.
-	ReplaceSlimeModel = true
+	ReplaceSlimeModel = false
 	#Whether to replace the vanilla xp orb texture with the point items.
-	ReplaceXPTexture = true
+	ReplaceXPTexture = false
 	#Whether to replace the vanilla totem texture with the life point.
-	ReplaceTotemTexture = true
+	ReplaceTotemTexture = false
 	#Whether to replace the vanilla bottle of xp texture with the point items.
-	ReplaceXPBottleTexture = true
+	ReplaceXPBottleTexture = false
 

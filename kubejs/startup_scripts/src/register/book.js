@@ -10,4 +10,8 @@ StartupEvents.registry('item', event => {
         .maxDamage(8)
         .texture('kubejs:item/teaching_manual')
 
+    event.create('skill_book_strength')
+        .maxStackSize(16)
+        .texture('kubejs:item/skill_book_strength')
+
 })

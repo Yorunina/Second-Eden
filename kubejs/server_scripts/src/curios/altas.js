@@ -39,7 +39,7 @@ function genAtlasLootMap(level, player, atlasItem) {
     let treasureFortune = player.getAttribute('kubejs:treasure_fortune').getValue()
     let treasureDistance = player.getAttribute('kubejs:treasure_distance').getValue()
     let deltaX = Math.random() * treasureDistance
-    let deltaZ = Math.sqrt(treasureDistance ** 2 - deltaX ** 2)
+    let deltaZ = Math.sqrt(treasureDistance ** 2 - deltaX ** 2) * Math.random()
     let deltaDim = Math.floor(Math.random() * 4) + 1
 
     let randomPosBlock = player.block.offset(deltaX * (-1) ** Math.floor(deltaDim / 2), 0, deltaZ * (-1) ** Math.floor((deltaDim + 1) / 2))
