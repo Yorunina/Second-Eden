@@ -13,5 +13,11 @@ StartupEvents.registry('item', event => {
     event.create('skill_book_strength')
         .maxStackSize(16)
         .texture('kubejs:item/skill_book_strength')
+    event.create('skill_book_agility')
+        .maxStackSize(16)
+        .texture('kubejs:item/skill_book_agility')
+    event.create('skill_book_intelligence')
+        .maxStackSize(16)
+        .texture('kubejs:item/skill_book_intelligence')
 
 })

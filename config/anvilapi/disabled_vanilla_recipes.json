@@ -1,0 +1,13 @@
+{
+  "enable": true,
+  "repair": [],
+  "repairItems": [],
+  "enchantments": [
+    {
+      "baseItem": {
+        "tag": "curios:atlas"
+      },
+      "enchantment": "minecraft:mending"
+    }
+  ]
+}

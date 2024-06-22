@@ -33,7 +33,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -60,7 +60,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -134,87 +134,6 @@
 			}
 		]
 	},
-	"resistance_add_001": {
-		"title": "kubejs.puffskill.def.resistance_add_001.title",
-		"description": "kubejs.puffskill.def.resistance_add_001.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.01,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"resistance_add_002": {
-		"title": "kubejs.puffskill.def.resistance_add_002.title",
-		"description": "kubejs.puffskill.def.resistance_add_002.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.02,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"resistance_add_005": {
-		"title": "kubejs.puffskill.def.resistance_add_005.title",
-		"description": "kubejs.puffskill.def.resistance_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.05,
-					"operation": "addition"
-				}
-			}
-		]
-	},
 	"healing_add_025": {
 		"title": "kubejs.puffskill.def.healing_add_025.title",
 		"description": "kubejs.puffskill.def.healing_add_025.desc",
@@ -222,7 +141,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -249,7 +168,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -265,33 +184,6 @@
 					"attribute": "puffish_skills:player.healing",
 					"value": 0.25,
 					"operation": "addition"
-				}
-			}
-		]
-	},
-	"healing_multiply_base_05": {
-		"title": "kubejs.puffskill.def.healing_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.healing_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.healing",
-					"value": 0.5,
-					"operation": "multiply_base"
 				}
 			}
 		]
@@ -357,7 +249,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -384,7 +276,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -454,6 +346,330 @@
 					"attribute": "puffish_skills:player.melee_damage",
 					"value": 0.25,
 					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"armor_add_025": {
+		"title": "kubejs.puffskill.def.armor_add_025.title",
+		"description": "kubejs.puffskill.def.armor_add_025.desc",
+		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor_add_05": {
+		"title": "kubejs.puffskill.def.armor_add_05.title",
+		"description": "kubejs.puffskill.def.armor_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor_toughness_add_025": {
+		"title": "kubejs.puffskill.def.armor_toughness_add_025.title",
+		"description": "kubejs.puffskill.def.armor_toughness_add_025.desc",
+		"extra_description": "kubejs.puffskill.exdesc.armor_toughness",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor_toughness",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"armor_multiply_base_025": {
+		"title": "kubejs.puffskill.def.armor_multiply_base_025.title",
+		"description": "kubejs.puffskill.def.armor_multiply_base_025.desc",
+		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.armor",
+					"value": 0.25,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"armor_shred_add_005": {
+		"title": "kubejs.puffskill.def.armor_shred_add_005.title",
+		"description": "kubejs.puffskill.def.armor_shred_add_005.desc",
+		"extra_description": "kubejs.puffskill.exdesc.armor_shred",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:armor_shred",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"crit_damage_01": {
+		"title": "kubejs.puffskill.def.crit_damage_01.title",
+		"description": "kubejs.puffskill.def.crit_damage_01.desc",
+		"extra_description": "kubejs.puffskill.exdesc.crit_damage",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"crit_damage_025": {
+		"title": "kubejs.puffskill.def.crit_damage_025.title",
+		"description": "kubejs.puffskill.def.crit_damage_025.desc",
+		"extra_description": "kubejs.puffskill.exdesc.crit_damage",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:crit_damage",
+					"value": 0.25,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"current_hp_damage_add_003": {
+		"title": "kubejs.puffskill.def.current_hp_damage_add_003.title",
+		"description": "kubejs.puffskill.def.current_hp_damage_add_003.desc",
+		"extra_description": "kubejs.puffskill.exdesc.current_hp_damage",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:current_hp_damage",
+					"value": 0.03,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"prot_shred_add_005": {
+		"title": "kubejs.puffskill.def.prot_shred_add_005.title",
+		"description": "kubejs.puffskill.def.prot_shred_add_005.desc",
+		"extra_description": "kubejs.puffskill.exdesc.prot_shred",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "task"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:prot_shred",
+					"value": 0.05,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"knockback_resistance_add_01": {
+		"title": "kubejs.puffskill.def.knockback_resistance_add_01.title",
+		"description": "kubejs.puffskill.def.knockback_resistance_add_01.desc",
+		"extra_description": "kubejs.puffskill.exdesc.knockback_resistance",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "goal"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.knockback_resistance",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"knockback_add_05": {
+		"title": "kubejs.puffskill.def.knockback_add_05.title",
+		"description": "kubejs.puffskill.def.knockback_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.knockback",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.knockback",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"draw_speed_add_03": {
+		"title": "kubejs.puffskill.def.draw_speed_add_03.title",
+		"description": "kubejs.puffskill.def.draw_speed_add_03.desc",
+		"extra_description": "kubejs.puffskill.exdesc.draw_speed",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:draw_speed",
+					"value": 0.3,
+					"operation": "addition"
 				}
 			}
 		]

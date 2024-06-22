@@ -10,9 +10,3 @@ StartupEvents.registry('item', event => {
         )
         .texture('kubejs:item/curios/newer_atlas')
 })
-
-ForgeEvents.onEvent('net.minecraftforge.event.AnvilUpdateEvent', event => {
-    if (event.getLeft().hasTag('curios:atlas')) {
-        event.setOutput('minecraft:air')
-    }
-})
