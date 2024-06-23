@@ -1,0 +1,33 @@
+
+[Variables]
+	#Radius of region checked for path (ie. radius = x; checks ((x*2)+1)^3 cubic region)
+	"Infrastructure Check Radius" = 1.0
+	#Minimum distance between two nodes
+	"Node Distance Minimum" = 10.0
+	#Maximum distance between two nodes
+	"Node Distance Maximum" = 20.0
+	#% of blocks required to be path blocks in a 3x3 region of ground.
+	"Path Quality Threshold" = 0.6
+	#The minimum length for a path to be valid in blocks from start to finish
+	"Minimum Path Distance" = 50.0
+	#The maximum length for a path to be valid in blocks from start to finish
+	"Maximum Path Distance" = 100000.0
+	#Amount of ticks for teleport cooldown effect (enter 0 to disable)
+	"Teleport Cooldown" = 60.0
+
+["Allowed Blocks, Entities, & Dimensions"]
+	#A comma seperated list of accepted path tags
+	"Valid Block Tags" = "forge:via_romana_path_block"
+	#Entities that you are able to teleport with
+	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, minecraft:pig, minecraft:strider, minecraft:camel"
+	#Dimensions that paths will be allowed in
+	"Valid Dimensions" = "minecraft:overworld, minecraft:the_end"
+
+[Client]
+	#Toggle debug overlay
+	"Debug Mode" = false
+	#The amount of particles generated per-tick for the teleport effect
+	"Particle Amount" = 20.0
+	#Allow for teleport pop-up when looking at a linked sign
+	"Linked Sign Message" = false
+
