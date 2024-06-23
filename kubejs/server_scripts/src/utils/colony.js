@@ -23,7 +23,7 @@ export function GetColonyByEntity(target) {
 export function GetCitizenFromEntity(target) {
     let citizenId = target?.nbt.getInt('citizen')
     if (!citizenId) return null
-    let colony = getColonyByEntity(target)
+    let colony = GetColonyByEntity(target)
     if (!colony) return null
     return colony.getCitizenManager().getCivilian(citizenId)
 }

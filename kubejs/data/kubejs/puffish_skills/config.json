@@ -1,6 +1,8 @@
 {
 	"version": 2,
 	"categories": [
-		"strength"
+		"strength",
+		"agility",
+		"intelligence"
 	]
 }

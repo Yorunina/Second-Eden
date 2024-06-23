@@ -6,5 +6,16 @@
     "attribute.kubejs.education_ability": "教育能力",
     "tooltips.kubejs.item.atlas.1": "地图册剩余页数：",
     "msg.player.common.no_more_skill_claim": "你不能在该能力类型下获取更多的技能点数了！",
-    "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点"
+    "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点",
+    "msg.teaching_manual_adaptability.using.1": "由于你的教育能力（%d），%s的适应性提升了%d->%d",
+    "msg.teaching_manual_agility.using.1": "由于你的教育能力（%d），%s的敏捷提升了%d->%d",
+    "msg.teaching_manual_athletics.using.1": "由于你的教育能力（%d），%s的运动提升了%d->%d",
+    "msg.teaching_manual_creativity.using.1": "由于你的教育能力（%d），%s的创造力提升了%d->%d",
+    "msg.teaching_manual_dexterity.using.1": "由于你的教育能力（%d），%s的灵巧提升了%d->%d",
+    "msg.teaching_manual_focus.using.1": "由于你的教育能力（%d），%s的注意力提升了%d->%d",
+    "msg.teaching_manual_intelligence.using.1": "由于你的教育能力（%d），%s的智力提升了%d->%d",
+    "msg.teaching_manual_knowledge.using.1": "由于你的教育能力（%d），%s的知识提升了%d->%d",
+    "msg.teaching_manual_mana.using.1": "由于你的教育能力（%d），%s的魔力提升了%d->%d",
+    "msg.teaching_manual_strength.using.1": "由于你的教育能力（%d），%s的力量提升了%d->%d",
+    "msg.teaching_manual_stamina.using.1": "由于你的教育能力（%d），%s的耐力提升了%d->%d"
 }
