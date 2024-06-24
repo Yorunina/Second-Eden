@@ -6,12 +6,15 @@ ItemEvents.entityInteracted('kubejs:item_x', event => {
     let {target, player} = event
     if (target.type != 'minecolonies:citizen') return
     let colony = GetColonyByEntity(target)
+
     if (!colony) return
     let result = colony.raiderManager.raiderEvent('', true, true)
     if (result != $IRaiderManager$RaidSpawnResult.SUCCESS) return
     event.item.shrink(1)
 })
 
+// 计算随机的生成位置，可以用于其他类型的生物选取生成地点用于袭击
+// colony.getRaiderManager().calculateSpawnLocation()
 
 //   /**
 //   *

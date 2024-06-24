@@ -103,7 +103,7 @@
 	dobarbariansspawn = true
 	#minecolonies.config.barbarianhordedifficulty.comment [默认：5，最小：0，最大：10]
 	#Range: 0 ~ 10
-	barbarianhordedifficulty = 5
+	barbarianhordedifficulty = 8
 	#minecolonies.config.maxbarbariansize.comment [默认：80，最小：6，最大：400]
 	#Range: 6 ~ 400
 	maxBarbarianSize = 80
@@ -111,20 +111,20 @@
 	dobarbariansbreakthroughwalls = true
 	#两次袭击间隔的平均天数 [默认：14，最小：1，最大：50]
 	#Range: 1 ~ 50
-	averagenumberofnightsbetweenraids = 14
+	averagenumberofnightsbetweenraids = 21
 	#袭击最短间隔的天数 [默认：10，最小：1，最大：30]
 	#Range: 1 ~ 30
-	minimumnumberofnightsbetweenraids = 7
+	minimumnumberofnightsbetweenraids = 14
 	#怪物是否攻击公民？ [默认: true]
 	mobattackcitizens = true
 	#minecolonies.config.shouldraiderbreakdoors.comment [默认: true]
 	shouldraiderbreakdoors = true
 	#minecolonies.config.guarddamagemultiplier.comment [默认：1.000000，最小：0.100000，最大：15.000000
 	#Range: 0.1 ~ 15.0
-	guardDamageMultiplier = 1.0
+	guardDamageMultiplier = 1.5
 	#所有卫兵的生命值加成。 [默认：1.000000，最小：0.100000，最大：5.000000
 	#Range: 0.1 ~ 5.0
-	guardhealthmult = 1.0
+	guardhealthmult = 2.0
 	#开启PVP模式 (在特定情况下，殖民地可以被摧毁、损坏)。 [默认: false]
 	pvp_mode = true
 

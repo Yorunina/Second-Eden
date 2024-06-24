@@ -6,10 +6,10 @@
     }
   ],
   "icon": "minecraft:cobbled_deepslate",
-  "parentResearch": "minecolonies:technology/rockingroll",
+  "parentResearch": "minecolonies:technology/morescrolls",
   "requirements": [
     {
-      "building": "crusher",
+      "building": "enchanter",
       "level": 3
     },
     {
@@ -23,5 +23,5 @@
     }
   ],
   "researchLevel": 3,
-  "subtitle": "com.minecolonies.research.technology.depthknowledge.subtitle"
+  "subtitle": "kubejs.research.technology.scrollmaidunlock.subtitle"
 }

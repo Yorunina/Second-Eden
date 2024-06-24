@@ -13,12 +13,6 @@ StartupEvents.registry('entity_type', event => {
         .onAddedToWorld(entity => {
             entity.setNoGravity(true)
         })
-        .isInvulnerableTo((ctx) => {
-            let owner = ctx.entity.persistentData.getString('owner')
-            if (!owner) return false
-            if (ctx.damageSource.actual && ctx.damageSource.actual.isPlayer() && ctx.damageSource.actual.uuid.toString() == owner) return false
-            return true
-        })
 })
 
 EntityJSEvents.attributes(event => {
