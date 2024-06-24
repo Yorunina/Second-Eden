@@ -18,11 +18,11 @@ StartupEvents.registry("attribute", event => {
     /**
      * 解密能力：在他人使用空投、宝藏能力时，监听到事件的概率
      */
-    event.createCustom("kubejs:decode_ability", () => new $RangedAttribute("attribute.kubejs.education_ability", 0, 0, 128).setSyncable(true))
+    event.createCustom("kubejs:decode_ability", () => new $RangedAttribute("attribute.kubejs.decode_ability", 0, 0, 128).setSyncable(true))
     /**
      * 加密能力：减少他人监听到自己使用空投能力的概率
      */
-    event.createCustom("kubejs:encode_ability", () => new $RangedAttribute("attribute.kubejs.education_ability", 0, 0, 128).setSyncable(true))
+    event.createCustom("kubejs:encode_ability", () => new $RangedAttribute("attribute.kubejs.encode_ability", 0, 0, 128).setSyncable(true))
 })
 
 ForgeModEvents.onEvent("net.minecraftforge.event.entity.EntityAttributeModificationEvent", event => {

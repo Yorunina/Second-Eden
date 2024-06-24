@@ -70,7 +70,7 @@ function getAirdropEntity(level, player, pos, config) {
     airdropEntity.persistentData.putFloat('fortune', treasureFortune)
     airdropEntity.persistentData.putString('type', config.type)
     airdropEntity.setPosition(pos.x, pos.y, pos.z)
-    return true
+    return airdropEntity
 }
 
 /**
@@ -91,7 +91,7 @@ function getMapItem(level, pos) {
  * @param {string} type 
  */
 function AirdropEntityConfig(type) {
-    this.type = 'normal'
+    this.type = type
     this.entityType = 'kubejs:airdrop_balloon'
 }
 AirdropEntityConfig.prototype = {
@@ -112,7 +112,7 @@ AirdropEntityConfig.prototype = {
  * @returns {$BlockPos_}
  */
 const AtlasActiveStrategy = {
-    'kubejs:new_atlas': function (event, atlasItem) {
+    'kubejs:newer_atlas': function (event, atlasItem) {
         let {level, player} = event
         if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
 

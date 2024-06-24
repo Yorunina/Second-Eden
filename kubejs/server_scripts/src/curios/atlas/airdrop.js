@@ -1,7 +1,9 @@
-const { SliceChunkArray, RandomGet } = require("../utils/common")
+const { SliceChunkArray, RandomGet } = require("../../utils/common")
+
 EntityEvents.death('kubejs:airdrop_balloon', event => {
     let { entity } = event
     let type = entity.persistentData.getString('type')
+    if (!type) return
     if (!AirdropDeathStrategy[type]) return
     AirdropDeathStrategy[type](event)
 })
@@ -18,7 +20,8 @@ function popItemFromAirdrop(level, entity, itemList) {
     itemChunks.forEach(itemChunk => {
         level.server.scheduleInTicks(tickCounter, callback => {
             itemChunk.forEach(item => {
-                entity.block.popItemFromFace(item, Direction.UP)
+                console.log(item)
+                entity.block.popItem(item)
             })
         })
         tickCounter = tickCounter + 10
@@ -78,8 +81,9 @@ AirdropPoolItem.prototype = {
  */
 function getItemListFromPoolItems(poolItems, fortune) {
     let itemStackList = []
+    console.log(1)
     poolItems.forEach(poolItem => {
-        if (Math.random() < poolItem.chance) return
+        if (Math.random() > poolItem.chance) return
         let randomCount = poolItem.minCount + Math.round(Math.random() * (poolItem.maxCount - poolItem.minCount))
         let realCount = randomCount + randomCount * fortune * poolItem.fortuneCoe
         // 数值安全范围
@@ -101,7 +105,9 @@ const AirdropDeathStrategy = {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
         let itemPoolTheme = RandomGet(NewerAirdropPool)
+        console.log(itemPoolTheme)
         let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
+        console.log(itemList)
         popItemFromAirdrop(level, entity, itemList)
     },
 }

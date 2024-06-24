@@ -50,12 +50,23 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "cagedmobs": {
+    "cagedmobs_jade": true
+  },
   "exposure": {
     "lightroom": true
+  },
+  "crockpot": {
+    "birdcage": true,
+    "crock_pot": true
   },
   "touhou_little_maid": {
     "maid": true,
     "shrine_lamp": true
+  },
+  "delightful": {
+    "crop_progress": true,
+    "pie_icons": true
   },
   "jadecolonies": {
     "colony.citizens": true,

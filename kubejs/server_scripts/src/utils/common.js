@@ -1,3 +1,4 @@
+// priority: 1000
 /**
  * @param {any[]} array 
  * @param {Number} chunkSize 

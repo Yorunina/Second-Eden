@@ -4,10 +4,9 @@ const { GetCitizenFromEntity } = require("../utils/colony")
 
 ItemEvents.entityInteracted('#kubejs:teaching_manual', event => {
     let { target, player, item } = event
-    // player.closeMenu()
     if (target.type != 'minecolonies:citizen') return
 
-    let rank = item.nbt.getInt('rank')
+    let rank = item.nbt ? item.nbt.getInt('rank') : 0
     if (!rank) rank = 0
     let citizen = GetCitizenFromEntity(target)
     if (!citizen) return
@@ -15,13 +14,13 @@ ItemEvents.entityInteracted('#kubejs:teaching_manual', event => {
     let educationAbility = player.getAttribute('kubejs:education_ability').getValue()
     let increment = Math.min(Math.floor(1 + rank * educationAbility * 0.1), 100)
     let skill = TeachingManualAttributes[item.id]
-
-    let oldLevel = citizen.citizenSkillHandler.getLevel(skill)
-    citizen.citizenSkillHandler.incrementLevel(skill, increment)
+    
+    let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
+    citizen.getCitizenSkillHandler().incrementLevel(skill, increment)
 
     player.tell(Text.translatable(`msg.${item.idLocation.path}.using.1`, Text.darkPurple(educationAbility), Text.green(citizen.getName()), Text.gold(oldLevel), Text.gold(oldLevel + increment)))
     // 关闭因为右键交互而产生的殖民地交互界面
-    player.closeMenu()
+    // player.closeMenu()
     item.shrink(1)
 })
 

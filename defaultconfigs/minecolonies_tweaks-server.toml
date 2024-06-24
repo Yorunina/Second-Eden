@@ -1,0 +1,53 @@
+
+[researches]
+	#Range: 0.0 ~ 2.147483647E9
+	speed = 2.0
+
+[fields]
+	#If true, Citizen can works same field to without wait time. Also work in field list by sequentially.
+	#If false, use MineColonies' s method.
+	newRetrieveMethod = true
+	#Range: 5 ~ 15
+	farmMaxRange = 5
+
+[jobs]
+	#Range: > 0
+	blockMiningDelay = 500
+	#Range: > 0
+	blockBuildingDelay = 15
+
+	[jobs.builder]
+		#builder's blockMiningDelay = commonBlockingMiningDelay * buff
+		#Range: 0.0 ~ 1.0
+		blockMiningDelayBuff = 0.5
+
+	[jobs.crafing]
+		#craftingTicks = progressMultiplier / craftSkillLevel * hittingTime
+		#Range: > 0
+		progressMultiplier = 10
+		#Range: > 0
+		hittingTime = 3
+		#The delay ticks for go to work again after Citizen returned at hut
+		#This was 0 when 1.19.2
+		#Range: 0 ~ 400
+		decideDelay = 400
+
+	[jobs.sifter]
+		#siftingTicks = progressMultiplier - strengthLevel
+		#Range: > 0
+		progressMultiplier = 50
+
+	[jobs.farmer]
+		#finalDelay = workDelay - (skillDivider * staminaLevel)
+		#Range: > 0
+		workDelay = 40
+		#Range: 1.0 ~ 2.147483647E9
+		skillDivider = 2.0
+		#if harvested count reached to this, farmer will go to dump
+		#Range: > 64
+		actionsDoneUntilDumping = 256
+		#whether plant seed after hoeing dirt
+		plantAfterHoe = true
+		#whether plant seed after harvest crop
+		plantAfterHarvest = true
+
