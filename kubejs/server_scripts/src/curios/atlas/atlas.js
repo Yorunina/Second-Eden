@@ -6,7 +6,7 @@ const { $MapItemSavedData } = require("packages/net/minecraft/world/level/savedd
 const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$ChunkStatus")
 
 NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
-    let {level, player} = event
+    let { level, player } = event
     if (!player instanceof $ServerPlayer) return
     let lazyOptCapability = player.getCapability(CuriosCapabilities.INVENTORY)
     if (!lazyOptCapability.isPresent()) return
@@ -44,7 +44,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
 function getSpawnLocation(level, player) {
     let treasureDistance = player.getAttribute('kubejs:treasure_distance').getValue()
     let distance = treasureDistance * Math.random()
-    
+
     let deltaDim = Math.floor(Math.random() * 4) + 1
     let deltaX = Math.pow(-1, Math.floor(deltaDim / 2)) * Math.random() * distance
     let deltaZ = Math.pow(-1, Math.floor((deltaDim + 1) / 2)) * Math.sqrt(Math.pow(distance, 2) - Math.pow(deltaX, 2))
@@ -82,7 +82,7 @@ function getMapItem(level, pos) {
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
     $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecoration$Type.RED_X)
-    mapItem = mapItem.withName({ "translate": "map.kubejs.lost_treasure" })
+    mapItem = mapItem.withName({ "translate": "item.map.kubejs.airdrop" })
     return mapItem
 }
 
@@ -99,10 +99,10 @@ AirdropEntityConfig.prototype = {
      * @param {$EntityType_} entityType 
      * @returns {AirdropEntityConfig}
      */
-    setEntityType : function (entityType) {
+    setEntityType: function (entityType) {
         this.entityType = entityType
         return this
-    } 
+    }
 }
 
 /**
@@ -113,12 +113,28 @@ AirdropEntityConfig.prototype = {
  */
 const AtlasActiveStrategy = {
     'kubejs:newer_atlas': function (event, atlasItem) {
-        let {level, player} = event
+        let { level, player } = event
+
         if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
 
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('newer'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+
+        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+        return airdropPos
+    },
+    'kubejs:common_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
+
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('common'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)

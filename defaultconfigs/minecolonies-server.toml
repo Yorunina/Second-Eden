@@ -26,7 +26,7 @@
 	luckyblockchance = 3
 	#市政厅至少需要多少级才可启用传送至盟友殖民地功能。 [默认：3，最小：0，最大：5]
 	#Range: 0 ~ 5
-	minthleveltoteleport = 1
+	minthleveltoteleport = 2
 	#食物消耗系数 [默认：1.000000，最小：0.100000，最大：100.000000
 	#Range: 0.1 ~ 100.0
 	foodmodifier = 1.2
@@ -45,7 +45,7 @@
 	#Range: 1 ~ 1000
 	maxtreesize = 400
 	#禁用补给营地放置限制，以支持空岛等类似模式 [默认: false]
-	nosupplyplacementrestrictions = false
+	nosupplyplacementrestrictions = true
 	#开启此项以允许入侵者在空中生成 [默认: false]
 	skyraiders = false
 

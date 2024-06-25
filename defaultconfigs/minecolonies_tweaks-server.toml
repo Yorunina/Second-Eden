@@ -24,7 +24,7 @@
 	[jobs.crafing]
 		#craftingTicks = progressMultiplier / craftSkillLevel * hittingTime
 		#Range: > 0
-		progressMultiplier = 10
+		progressMultiplier = 20
 		#Range: > 0
 		hittingTime = 3
 		#The delay ticks for go to work again after Citizen returned at hut

@@ -1,7 +1,6 @@
 // priority: 1000
 const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
 
-
 /**
  * 通过实体获取colonyId进而获取colony
  * @param {$Entity_} target 
