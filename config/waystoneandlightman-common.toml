@@ -2,12 +2,12 @@
 isEnableMoneyCost = true
 #每一百米所需消耗的最低等级货币(将自动根据莱特曼货币配置换算)
 #Range: > 0
-moneyCostPerHundredMeter = 1
+moneyCostPerHundredMeter = 10
 #是否向上取整，即不足一百米按一百米计算
-roundUp = false
+roundUp = true
 #每单次传送所需的最低消耗
 #Range: > -1
-minimumCost = 0
+minimumCost = 50
 #每单次传送所的最大消耗上限
 #Range: > -1
 maximumCost = 100000

@@ -1,5 +1,5 @@
 ItemEvents.tooltip((tooltip) => {
-    tooltip.addAdvanced('#curios:atlas', (item, advanced, text) => {
-    })
+    // tooltip.addAdvanced('#curios:atlas', (item, advanced, text) => {
+    // })
 })
 

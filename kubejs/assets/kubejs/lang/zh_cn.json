@@ -1,6 +1,6 @@
 {
     "curios.identifier.atlas": "地图册",
-    "curios.modifiers.atlas": "地图册",
+    "curios.modifiers.atlas": "按下图骥按键以生成一个空投地图",
 
     "entity.kubejs.airdrop_balloon": "空投热气球",
 

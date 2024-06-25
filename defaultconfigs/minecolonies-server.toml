@@ -47,7 +47,7 @@
 	#禁用补给营地放置限制，以支持空岛等类似模式 [默认: false]
 	nosupplyplacementrestrictions = true
 	#开启此项以允许入侵者在空中生成 [默认: false]
-	skyraiders = false
+	skyraiders = true
 
 #与研究系统有关的设置
 [research]
