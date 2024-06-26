@@ -2,8 +2,9 @@
 const { $Skill } = require("packages/com/minecolonies/api/entity/citizen/$Skill")
 const { GetCitizenFromEntity } = require("../utils/colony")
 
-ItemEvents.entityInteracted('#kubejs:teaching_manual', event => {
+ItemEvents.entityInteracted(event => {
     let { target, player, item } = event
+    if (!item.hasTag('kubejs:teaching_manual')) return
     if (target.type != 'minecolonies:citizen') return
 
     let rank = item.nbt ? item.nbt.getInt('rank') : 0
