@@ -4,7 +4,7 @@ const { GetCitizenFromEntity } = require("../utils/colony")
 
 ItemEvents.entityInteracted(event => {
     let { target, player, item } = event
-    if (!item.hasTag('kubejs:teaching_manual')) return
+    if (!item.hasTag('kubejs:soul_gem')) return
     if (target.type != 'minecolonies:citizen') return
 
     let rank = item.nbt ? item.nbt.getInt('rank') : 0
@@ -26,15 +26,15 @@ ItemEvents.entityInteracted(event => {
 })
 
 const TeachingManualAttributes = {
-    'kubejs:teaching_manual_adaptability': $Skill.Adaptability,
-    'kubejs:teaching_manual_agility': $Skill.Agility,
-    'kubejs:teaching_manual_athletics': $Skill.Athletics,
-    'kubejs:teaching_manual_creativity': $Skill.Creativity,
-    'kubejs:teaching_manual_dexterity': $Skill.Dexterity,
-    'kubejs:teaching_manual_focus': $Skill.Focus,
-    'kubejs:teaching_manual_intelligence': $Skill.Intelligence,
-    'kubejs:teaching_manual_knowledge': $Skill.Knowledge,
-    'kubejs:teaching_manual_mana': $Skill.Mana,
-    'kubejs:teaching_manual_strength': $Skill.Strength,
-    'kubejs:teaching_manual_stamina': $Skill.Stamina,
+    'kubejs:soul_gem_adaptability': $Skill.Adaptability,
+    'kubejs:soul_gem_agility': $Skill.Agility,
+    'kubejs:soul_gem_athletics': $Skill.Athletics,
+    'kubejs:soul_gem_creativity': $Skill.Creativity,
+    'kubejs:soul_gem_dexterity': $Skill.Dexterity,
+    'kubejs:soul_gem_focus': $Skill.Focus,
+    'kubejs:soul_gem_intelligence': $Skill.Intelligence,
+    'kubejs:soul_gem_knowledge': $Skill.Knowledge,
+    'kubejs:soul_gem_mana': $Skill.Mana,
+    'kubejs:soul_gem_strength': $Skill.Strength,
+    'kubejs:soul_gem_stamina': $Skill.Stamina,
 }

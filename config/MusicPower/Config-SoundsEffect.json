@@ -1,0 +1,22 @@
+[
+  {
+    "Sound": "minecraft:example.anvil.place",
+    "Buff": "minecraft:strength",
+    "Strength": 1,
+    "Duration": 60,
+    "Distance": 16,
+    "StrengthDecayWithDistance": true,
+    "DurationDecayWithDistance": false,
+    "SendMessage": ""
+  },
+  {
+    "Sound": "musicpower:example.sound",
+    "Buff": "musicpower:examplebuff",
+    "Strength": 5,
+    "Duration": 10,
+    "Distance": 32,
+    "StrengthDecayWithDistance": false,
+    "DurationDecayWithDistance": true,
+    "SendMessage": "I love this mod!"
+  }
+]
