@@ -1,14 +1,12 @@
+const { $LivingDamageEvent } = require("packages/net/minecraftforge/event/entity/living/$LivingDamageEvent");
+const { $LivingHurtEvent } = require("packages/net/minecraftforge/event/entity/living/$LivingHurtEvent");
+
 /**
  * 使用ForgeEvent监听LivingHurtEvent事件
  * 用于替换原有EntityEvents.hurt事件
  */
-ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', event => {
-    if (event.source.player) {
-        global.LivingHurtByPlayer(event);
-    }
-    if (event.entity.isPlayer()) {
-        global.LivingHurtByOthers(event);
-    }
+ForgeEvents.onEvent($LivingHurtEvent, event => {
+    global.LivingHurt(event);
 })
 
 
@@ -16,8 +14,6 @@ ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingHurtEvent', ev
  * 使用ForgeEvent监听LivingHurtEvent事件
  * 用于替换原有EntityEvents.hurt事件
  */
-ForgeEvents.onEvent('net.minecraftforge.event.entity.living.LivingDamageEvent', event => {
-    if (event.entity.isPlayer()) {
-        global.LivingDamageByOthers(event);
-    }
+ForgeEvents.onEvent($LivingDamageEvent, event => {
+    global.LivingDamage(event);
 })

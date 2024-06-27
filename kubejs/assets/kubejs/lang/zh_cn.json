@@ -1,6 +1,6 @@
 {
     "curios.identifier.atlas": "地图册",
-    "curios.modifiers.atlas": "按下图骥按键以生成一个空投地图",
+    "curios.modifiers.atlas": "按下“图骥”按键以生成一个空投地图",
 
     "entity.kubejs.airdrop_balloon": "空投热气球",
 
@@ -9,24 +9,42 @@
     "attribute.kubejs.education_ability": "教育能力",
     "attribute.kubejs.encode_ability": "加密能力",
     "attribute.kubejs.decode_ability": "解密能力",
+    "attribute.kubejs.player_damage_reduction": "玩家伤害减免",
 
     "msg.player.common.no_more_skill_claim": "你不能在该能力类型下获取更多的技能点数了！",
     "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点",
-    "msg.teaching_manual_adaptability.using.1": "由于你的教育能力（%d），%s的适应性提升了%d->%d",
-    "msg.teaching_manual_agility.using.1": "由于你的教育能力（%d），%s的敏捷提升了%d->%d",
-    "msg.teaching_manual_athletics.using.1": "由于你的教育能力（%d），%s的运动提升了%d->%d",
-    "msg.teaching_manual_creativity.using.1": "由于你的教育能力（%d），%s的创造力提升了%d->%d",
-    "msg.teaching_manual_dexterity.using.1": "由于你的教育能力（%d），%s的灵巧提升了%d->%d",
-    "msg.teaching_manual_focus.using.1": "由于你的教育能力（%d），%s的注意力提升了%d->%d",
-    "msg.teaching_manual_intelligence.using.1": "由于你的教育能力（%d），%s的智力提升了%d->%d",
-    "msg.teaching_manual_knowledge.using.1": "由于你的教育能力（%d），%s的知识提升了%d->%d",
-    "msg.teaching_manual_mana.using.1": "由于你的教育能力（%d），%s的魔力提升了%d->%d",
-    "msg.teaching_manual_strength.using.1": "由于你的教育能力（%d），%s的力量提升了%d->%d",
-    "msg.teaching_manual_stamina.using.1": "由于你的教育能力（%d），%s的耐力提升了%d->%d",
+    "msg.teaching_manual_adaptability.using.1": "%s的适应性提升了%d->%d",
+    "msg.teaching_manual_agility.using.1": "%s的敏捷提升了%d->%d",
+    "msg.teaching_manual_athletics.using.1": "%s的运动提升了%d->%d",
+    "msg.teaching_manual_creativity.using.1": "%s的创造力提升了%d->%d",
+    "msg.teaching_manual_dexterity.using.1": "%s的灵巧提升了%d->%d",
+    "msg.teaching_manual_focus.using.1": "%s的注意力提升了%d->%d",
+    "msg.teaching_manual_intelligence.using.1": "%s的智力提升了%d->%d",
+    "msg.teaching_manual_knowledge.using.1": "%s的知识提升了%d->%d",
+    "msg.teaching_manual_mana.using.1": "%s的魔力提升了%d->%d",
+    "msg.teaching_manual_strength.using.1": "%s的力量提升了%d->%d",
+    "msg.teaching_manual_stamina.using.1": "%s的耐力提升了%d->%d",
+    "msg.undead_raid_book.using.1": "一群食尸鬼集结在了 %d, %d 处，它们渴求着殖民者的鲜血",
+
 
     "com.kubejs.research.technology.scrollmaidunlock.name": "",
     "com.kubejs.research.technology.scrollmaidunlock.subtitle": "",
     "com.minecolonies.research.effects.scrollmaidunlock.description": "",
 
-    "item.map.kubejs.airdrop": "空投地图"
+    "item.map.kubejs.airdrop": "空投地图",
+
+    "tooltip.item.kubejs.teaching_manual_adaptability": "右键市民使用，用以提升其适应性",
+    "tooltip.item.kubejs.teaching_manual_agility": "右键市民使用，用以提升其敏捷",
+    "tooltip.item.kubejs.teaching_manual_athletics": "右键市民使用，用以提升其运动",
+    "tooltip.item.kubejs.teaching_manual_creativity": "右键市民使用，用以提升其创造力",
+    "tooltip.item.kubejs.teaching_manual_dexterity": "右键市民使用，用以提升其灵巧",
+    "tooltip.item.kubejs.teaching_manual_focus": "右键市民使用，用以提升其注意力",
+    "tooltip.item.kubejs.teaching_manual_intelligence": "右键市民使用，用以提升其智力",
+    "tooltip.item.kubejs.teaching_manual_knowledge": "右键市民使用，用以提升其知识",
+    "tooltip.item.kubejs.teaching_manual_mana": "右键市民使用，用以提升其魔力",
+    "tooltip.item.kubejs.teaching_manual_strength": "右键市民使用，用以提升其力量",
+    "tooltip.item.kubejs.teaching_manual_stamina": "右键市民使用，用以提升其耐力",
+
+    "tooltip.item.kubejs.peaceful_ring.1": "你受到来自玩家的伤害会极大幅度降低",
+    "tooltip.item.kubejs.peaceful_ring.2": "同时你对玩家造成的伤害也会极大幅度降低"
 }

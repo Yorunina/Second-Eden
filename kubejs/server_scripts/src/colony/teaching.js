@@ -19,13 +19,11 @@ ItemEvents.entityInteracted(event => {
     let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
     citizen.getCitizenSkillHandler().incrementLevel(skill, increment)
 
-    player.tell(Text.translatable(`msg.${item.idLocation.path}.using.1`, Text.darkPurple(educationAbility), Text.green(citizen.getName()), Text.gold(oldLevel), Text.gold(oldLevel + increment)))
-    // 关闭因为右键交互而产生的殖民地交互界面
+    player.setStatusMessage(Text.translatable(`msg.${item.idLocation.path}.using.1`, Text.green(citizen.getName()), Text.gold(oldLevel), Text.gold(oldLevel + increment)))
+    // 关闭因为右键交互而产生的殖民地交互界面，使用tag可以规避
     // player.closeMenu()
     item.shrink(1)
 })
-
-
 
 const TeachingManualAttributes = {
     'kubejs:teaching_manual_adaptability': $Skill.Adaptability,
