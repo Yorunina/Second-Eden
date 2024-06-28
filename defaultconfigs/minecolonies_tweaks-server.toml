@@ -30,7 +30,7 @@
 		#The delay ticks for go to work again after Citizen returned at hut
 		#This was 0 when 1.19.2
 		#Range: 0 ~ 400
-		decideDelay = 400
+		decideDelay = 100
 
 	[jobs.sifter]
 		#siftingTicks = progressMultiplier - strengthLevel

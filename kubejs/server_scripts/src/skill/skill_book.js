@@ -11,7 +11,7 @@ ItemEvents.rightClicked('kubejs:skill_book_strength', event => {
         player.tell(Text.translatable('msg.player.common.no_more_skill_claim'))
         return
     }
-    player.tell(Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
+    player.statusMessage(Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
     cateGory.addExtraPoints(player, 1)
     item.shrink(1)
 })
@@ -26,7 +26,7 @@ ItemEvents.rightClicked('kubejs:skill_book_agility', event => {
         player.tell(Text.translatable('msg.player.common.no_more_skill_claim'))
         return
     }
-    player.tell(Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
+    player.statusMessage(Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
     cateGory.addExtraPoints(player, 1)
     item.shrink(1)
 })
@@ -41,7 +41,7 @@ ItemEvents.rightClicked('kubejs:skill_book_intelligence', event => {
         player.tell(Text.translatable('msg.player.common.no_more_skill_claim'))
         return
     }
-    player.tell(Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
+    player.statusMessage    (Text.translatable('msg.player.common.skill_point_claim_succ', Text.gold(Text.translatable(`msg.player.skill_type.${skillType}`)), Text.gold(1)))
     cateGory.addExtraPoints(player, 1)
     item.shrink(1)
 })

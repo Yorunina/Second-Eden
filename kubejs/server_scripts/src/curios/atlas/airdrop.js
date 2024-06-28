@@ -1,3 +1,4 @@
+// priority: 100
 const { SliceChunkArray, RandomGet } = require("../../utils/common")
 const { NewerAirdropPool, CommonAirdropPool } = require("../../utils/airdrop_pool")
 
@@ -67,6 +68,24 @@ const AirdropDeathStrategy = {
         popItemFromAirdrop(level, entity, itemList)
     },
     'common': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let itemPoolTheme = RandomGet(NewerAirdropPool)
+        console.log(itemPoolTheme)
+        let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
+        console.log(itemList)
+        popItemFromAirdrop(level, entity, itemList)
+    },
+    'advanced': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let itemPoolTheme = RandomGet(NewerAirdropPool)
+        console.log(itemPoolTheme)
+        let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
+        console.log(itemList)
+        popItemFromAirdrop(level, entity, itemList)
+    },
+    'ultra': function (event) {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
         let itemPoolTheme = RandomGet(NewerAirdropPool)

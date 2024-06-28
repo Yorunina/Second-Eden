@@ -4,6 +4,7 @@ const { $MapItem } = require("packages/net/minecraft/world/item/$MapItem")
 const { $MapDecoration$Type } = require("packages/net/minecraft/world/level/saveddata/maps/$MapDecoration$Type")
 const { $MapItemSavedData } = require("packages/net/minecraft/world/level/saveddata/maps/$MapItemSavedData")
 const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$ChunkStatus")
+const { AirdropEntityConfig } = require("../../model/airdrop_entity_config")
 
 NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     let { level, player } = event
@@ -103,24 +104,6 @@ function getMapItem(level, pos) {
     return mapItem
 }
 
-/**
- * 空投实体配置
- * @param {string} type 
- */
-function AirdropEntityConfig(type) {
-    this.type = type
-    this.entityType = 'kubejs:airdrop_balloon'
-}
-AirdropEntityConfig.prototype = {
-    /**
-     * @param {$EntityType_} entityType 
-     * @returns {AirdropEntityConfig}
-     */
-    setEntityType: function (entityType) {
-        this.entityType = entityType
-        return this
-    }
-}
 
 /**
  * 空投呼唤策略
@@ -160,13 +143,13 @@ const AtlasActiveStrategy = {
         atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
         return airdropPos
     },
-    'kubejs:uncommon_atlas': function (event, atlasItem) {
+    'kubejs:advanced_atlas': function (event, atlasItem) {
         let { level, player } = event
         if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('uncommon'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('advanced'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -175,7 +158,22 @@ const AtlasActiveStrategy = {
         atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
         return airdropPos
     },
-    'kubejs:wooden_atlas': function (event, atlasItem) {
+    'kubejs:ultra_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
+
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('ultra'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+
+        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+        return airdropPos
+    },
+    'kubejs:wood_atlas': function (event, atlasItem) {
         let { level, player } = event
         if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
 

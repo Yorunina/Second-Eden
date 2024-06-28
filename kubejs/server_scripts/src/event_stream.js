@@ -1,5 +1,6 @@
 // priority: 0
-const { CuriosGetHurt, CuriosHurtOthers } = require("./curios/common/get_hurt")
+const { CuriosGetHurt } = require("./curios/strategy/get_hurt")
+const { CuriosHurtOthers } = require("./curios/strategy/hurt_others")
 
 /**
  * 事件流，用于某些事件的连续处理

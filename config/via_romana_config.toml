@@ -21,7 +21,7 @@
 	#Entities that you are able to teleport with
 	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, minecraft:pig, minecraft:strider, minecraft:camel"
 	#Dimensions that paths will be allowed in
-	"Valid Dimensions" = "minecraft:overworld, minecraft:the_end"
+	"Valid Dimensions" = "minecraft:overworld, minecraft:the_nether, minecraft:the_end"
 
 [Client]
 	#Toggle debug overlay

@@ -26,13 +26,13 @@
 	ChromaticPrintTime = 120
 	#Amount of experience awarded per printed black and white Photograph. Set to 0 to disable. Default: 2
 	#Range: 0 ~ 99
-	ExperiencePerPrintBW = 2
+	ExperiencePerPrintBW = 4
 	#Amount of experience awarded per printed color Photograph. Set to 0 to disable. Default: 4
 	#Range: 0 ~ 99
-	ExperiencePerPrintColor = 4
+	ExperiencePerPrintColor = 6
 	#Amount of experience awarded per printed chromatic Photograph (when all three channels have been printed). Set to 0 to disable. Default: 5
 	#Range: 0 ~ 99
-	ExperiencePerPrintChromatic = 5
+	ExperiencePerPrintChromatic = 8
 
 [Photographs]
 	#How many photographs can be stacked in Stacked Photographs item. Default: 16.

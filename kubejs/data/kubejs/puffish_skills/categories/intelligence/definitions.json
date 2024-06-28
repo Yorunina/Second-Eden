@@ -1,7 +1,7 @@
 {
-	"root_strength": {
-		"title": "kubejs.puffskill.def.root_strength.title",
-		"description": "kubejs.puffskill.def.root_strength.desc",
+	"root_intelligence": {
+		"title": "kubejs.puffskill.def.root_intelligence.title",
+		"description": "kubejs.puffskill.def.root_intelligence.desc",
 		"extra_description": "kubejs.puffskill.exdesc.health",
 		"frame": {
 			"type": "advancement",
