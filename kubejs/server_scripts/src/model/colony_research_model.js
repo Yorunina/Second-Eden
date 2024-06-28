@@ -24,7 +24,7 @@ ColonyResearchModel.prototype = {
         return this
     },
     /**
-     * @param {$ItemStack_} icon 
+     * @param {$Block_} icon 
      * @returns {ColonyResearchModel}
      */
     setIcon(icon) {
@@ -66,10 +66,9 @@ ColonyResearchModel.prototype = {
 export function ItemRequirementModel(items, quantity) {
     this.type = 'minecolonies:item_list'
     this.item = {
-        items: items
+        'items': items
     }
     this.quantity = quantity
-    this.researchLevel = researchLevel
 }
 
 /**

@@ -10,9 +10,9 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16),
         ])
             .setEffects([{ 'kubejs:effects/scrollmaidunlock': 1 }])
-            .setIcon('kubejs:scroll_maid')
+            .setIcon('minecolonies:blockhutenchanter')
             .setSubtitle('com.kubejs.research.technology.scrollmaidunlock.subtitle')
     )
-    event.addJson(`kubejs:effects/scrollmaidunlock.json`, { "effect": true })
+    event.addJson(`kubejs:researches/effects/scrollmaidunlock.json`, { "effect": true })
 
 })

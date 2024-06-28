@@ -9,10 +9,10 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:soul_sand'], 32),
         ])
             .setEffects([{ 'kubejs:effects/lanternsunlock': 1 }])
-            .setIcon('kubejs:scroll_maid')
+            .setIcon('minecolonies:blockhutenchanter')
             .setSubtitle('com.kubejs.research.technology.lanternsunlock.subtitle')
     )
-    event.addJson(`kubejs:effects/lanternsunlock.json`, { "effect": true })
+    event.addJson(`kubejs:researches/effects/lanternsunlock.json`, { "effect": true })
 
 })
 

@@ -9,10 +9,10 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16)
         ])
             .setEffects([{ 'kubejs:effects/basicaircraftunlock': 1 }])
-            .setIcon('immersive_aircraft:airship')
+            .setIcon('minecolonies:blockhutmechanic')
             .setSubtitle('com.kubejs.research.technology.basicaircraftunlock.subtitle')
     )
-    event.addJson(`kubejs:effects/basicaircraftunlock.json`, { "effect": true })
+    event.addJson(`kubejs:researches/effects/basicaircraftunlock.json`, { "effect": true })
     
 
 })

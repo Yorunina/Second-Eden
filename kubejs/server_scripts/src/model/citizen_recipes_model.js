@@ -45,12 +45,12 @@ ColonyCraftRecipes.prototype = {
     },
     /**
      * @param {Number} researchId 
-     * @param {Boolean} showTooltips
+     * @param {Boolean} showTooltip
      * @returns {ColonyCraftRecipes}
      */
-    setResearchId(researchId, showTooltips) {
+    setResearchId(researchId, showTooltip) {
         this['research-id'] = researchId
-        this['show-tooltips'] = showTooltips
+        this['show-tooltip'] = showTooltip
         return this
     },
     /**
