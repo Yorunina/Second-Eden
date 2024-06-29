@@ -17,7 +17,7 @@
 
 ["Allowed Blocks, Entities, & Dimensions"]
 	#A comma seperated list of accepted path tags
-	"Valid Block Tags" = "forge:via_romana_path_block"
+	"Valid Block Tags" = "forge:via_romana_path_block, minecolonies:pathblocks"
 	#Entities that you are able to teleport with
 	"Valid Entities" = "minecraft:player, minecraft:boat, minecraft:horse, minecraft:pig, minecraft:strider, minecraft:camel"
 	#Dimensions that paths will be allowed in

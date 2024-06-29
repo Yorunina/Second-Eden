@@ -2,7 +2,7 @@
 	"root_intelligence": {
 		"title": "kubejs.puffskill.def.root_intelligence.title",
 		"description": "kubejs.puffskill.def.root_intelligence.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -19,17 +19,17 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "generic.max_health",
+					"attribute": "kubejs:decode_ability",
 					"value": 1,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"health_add_1": {
-		"title": "kubejs.puffskill.def.health_add_1.title",
-		"description": "kubejs.puffskill.def.health_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+	"cold_damage_add_05": {
+		"title": "kubejs.puffskill.def.cold_damage_add_05.title",
+		"description": "kubejs.puffskill.def.cold_damage_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -46,17 +46,44 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "generic.max_health",
+					"attribute": "attributeslib:cold_damage",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"cold_damage_add_1": {
+		"title": "kubejs.puffskill.def.cold_damage_add_1.title",
+		"description": "kubejs.puffskill.def.cold_damage_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
 					"value": 1,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"health_add_2": {
-		"title": "kubejs.puffskill.def.health_add_2.title",
-		"description": "kubejs.puffskill.def.health_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+	"cold_damage_add_2": {
+		"title": "kubejs.puffskill.def.cold_damage_add_2.title",
+		"description": "kubejs.puffskill.def.cold_damage_add_2.desc",
+		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -73,17 +100,17 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "generic.max_health",
+					"attribute": "attributeslib:cold_damage",
 					"value": 2,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"health_add_4": {
-		"title": "kubejs.puffskill.def.health_add_4.title",
-		"description": "kubejs.puffskill.def.health_add_4.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+	"cold_damage_multiply_base_05": {
+		"title": "kubejs.puffskill.def.cold_damage_multiply_base_05.title",
+		"description": "kubejs.puffskill.def.cold_damage_multiply_base_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.cold_damage_multiply_base_05",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -100,44 +127,25 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "generic.max_health",
-					"value": 4,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"health_multiply_base_05": {
-		"title": "kubejs.puffskill.def.health_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.health_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "generic.max_health",
+					"attribute": "attributeslib:cold_damage",
 					"value": 0.5,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:fire_damage",
+					"value": -1,
 					"operation": "multiply_base"
 				}
 			}
 		]
 	},
-	"resistance_add_001": {
-		"title": "kubejs.puffskill.def.resistance_add_001.title",
-		"description": "kubejs.puffskill.def.resistance_add_001.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
+	"fire_damage_add_05": {
+		"title": "kubejs.puffskill.def.fire_damage_add_05.title",
+		"description": "kubejs.puffskill.def.fire_damage_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -154,179 +162,17 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.01,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"resistance_add_002": {
-		"title": "kubejs.puffskill.def.resistance_add_002.title",
-		"description": "kubejs.puffskill.def.resistance_add_002.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.02,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"resistance_add_005": {
-		"title": "kubejs.puffskill.def.resistance_add_005.title",
-		"description": "kubejs.puffskill.def.resistance_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.resistance",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.resistance",
-					"value": 0.05,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"healing_add_025": {
-		"title": "kubejs.puffskill.def.healing_add_025.title",
-		"description": "kubejs.puffskill.def.healing_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.healing",
-					"value": 0.25,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"healing_add_05": {
-		"title": "kubejs.puffskill.def.healing_add_05.title",
-		"description": "kubejs.puffskill.def.healing_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.healing",
-					"value": 0.25,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"healing_multiply_base_05": {
-		"title": "kubejs.puffskill.def.healing_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.healing_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.healing",
-					"value": 0.5,
-					"operation": "multiply_base"
-				}
-			}
-		]
-	},
-	"stamina_add_05": {
-		"title": "kubejs.puffskill.def.stamina_add_05.title",
-		"description": "kubejs.puffskill.def.stamina_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.stamina",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.stamina",
+					"attribute": "attributeslib:fire_damage",
 					"value": 0.5,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"stamina_multiply_base_025": {
-		"title": "kubejs.puffskill.def.stamina_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.stamina_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.stamina",
+	"fire_damage_add_1": {
+		"title": "kubejs.puffskill.def.fire_damage_add_1.title",
+		"description": "kubejs.puffskill.def.fire_damage_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -343,71 +189,17 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.stamina",
-					"value": 0.25,
-					"operation": "multiply_base"
-				}
-			}
-		]
-	},
-	"melee_damage_add_05": {
-		"title": "kubejs.puffskill.def.melee_damage_add_05.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
-					"value": 0.5,
-					"operation": "addition"
-				}
-			}
-		]
-	},
-	"melee_damage_add_1": {
-		"title": "kubejs.puffskill.def.melee_damage_add_1.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
-		"frame": {
-			"type": "advancement",
-			"data": {
-				"frame": "challenge"
-			}
-		},
-		"icon": {
-			"type": "effect",
-			"data": {
-				"effect": "health_boost"
-			}
-		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "attributeslib:fire_damage",
 					"value": 1,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"melee_damage_add_2": {
-		"title": "kubejs.puffskill.def.melee_damage_add_2.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+	"fire_damage_add_2": {
+		"title": "kubejs.puffskill.def.fire_damage_add_2.title",
+		"description": "kubejs.puffskill.def.fire_damage_add_2.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -424,17 +216,17 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "attributeslib:fire_damage",
 					"value": 2,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"melee_damage_multiply_base_025": {
-		"title": "kubejs.puffskill.def.melee_damage_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.melee_damage_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+	"fire_damage_multiply_base_05": {
+		"title": "kubejs.puffskill.def.fire_damage_multiply_base_05.title",
+		"description": "kubejs.puffskill.def.fire_damage_multiply_base_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fire_damage_multiply_base_05",
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -451,9 +243,449 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
-					"value": 0.25,
+					"attribute": "attributeslib:fire_damage",
+					"value": 0.5,
 					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:cold_damage",
+					"value": -1,
+					"operation": "multiply_base"
+				}
+			}
+		]
+	},
+	"luck_add_05": {
+		"title": "kubejs.puffskill.def.luck_add_05.title",
+		"description": "kubejs.puffskill.def.luck_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.luck",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"luck_add_1": {
+		"title": "kubejs.puffskill.def.luck_add_1.title",
+		"description": "kubejs.puffskill.def.luck_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.luck",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.luck",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"fortune_add_05": {
+		"title": "kubejs.puffskill.def.fortune_add_05.title",
+		"description": "kubejs.puffskill.def.fortune_add_05.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fortune",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.fortune",
+					"value": 0.5,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"fortune_add_1": {
+		"title": "kubejs.puffskill.def.fortune_add_1.title",
+		"description": "kubejs.puffskill.def.fortune_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.fortune",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:player.fortune",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"treasure_distance_reduce_16": {
+		"title": "kubejs.puffskill.def.treasure_distance_reduce_16.title",
+		"description": "kubejs.puffskill.def.treasure_distance_reduce_16.desc",
+		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:treasure_distance",
+					"value": -16,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"treasure_distance_reduce_32": {
+		"title": "kubejs.puffskill.def.treasure_distance_reduce_32.title",
+		"description": "kubejs.puffskill.def.treasure_distance_reduce_32.desc",
+		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:treasure_distance",
+					"value": -32,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"treasure_distance_reduce_64": {
+		"title": "kubejs.puffskill.def.treasure_distance_reduce_64.title",
+		"description": "kubejs.puffskill.def.treasure_distance_reduce_64.desc",
+		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:treasure_distance",
+					"value": -64,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"treasure_fortune_add_1": {
+		"title": "kubejs.puffskill.def.treasure_fortune_add_1.title",
+		"description": "kubejs.puffskill.def.treasure_fortune_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.treasure_fortune",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:treasure_fortune",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"encode_ability_add_1": {
+		"title": "kubejs.puffskill.def.encode_ability_add_1.title",
+		"description": "kubejs.puffskill.def.encode_ability_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:encode_ability",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"encode_ability_add_2": {
+		"title": "kubejs.puffskill.def.encode_ability_add_2.title",
+		"description": "kubejs.puffskill.def.encode_ability_add_2.desc",
+		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:encode_ability",
+					"value": 2,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"encode_ability_add_3": {
+		"title": "kubejs.puffskill.def.encode_ability_add_3.title",
+		"description": "kubejs.puffskill.def.encode_ability_add_3.desc",
+		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:encode_ability",
+					"value": 3,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"overheal_add_01": {
+		"title": "kubejs.puffskill.def.overheal_add_01.title",
+		"description": "kubejs.puffskill.def.overheal_add_01.desc",
+		"extra_description": "kubejs.puffskill.exdesc.overheal",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:overheal",
+					"value": 0.1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"decode_ability_add_1": {
+		"title": "kubejs.puffskill.def.decode_ability_add_1.title",
+		"description": "kubejs.puffskill.def.decode_ability_add_1.desc",
+		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:decode_ability",
+					"value": 1,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"decode_ability_add_2": {
+		"title": "kubejs.puffskill.def.decode_ability_add_2.title",
+		"description": "kubejs.puffskill.def.decode_ability_add_2.desc",
+		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:decode_ability",
+					"value": 2,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"decode_ability_add_3": {
+		"title": "kubejs.puffskill.def.decode_ability_add_3.title",
+		"description": "kubejs.puffskill.def.decode_ability_add_3.desc",
+		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "kubejs:decode_ability",
+					"value": 3,
+					"operation": "addition"
+				}
+			}
+		]
+	},
+	"life_steal_add_01": {
+		"title": "kubejs.puffskill.def.life_steal_add_01.title",
+		"description": "kubejs.puffskill.def.life_steal_add_01.desc",
+		"extra_description": "kubejs.puffskill.exdesc.life_steal",
+		"frame": {
+			"type": "advancement",
+			"data": {
+				"frame": "challenge"
+			}
+		},
+		"icon": {
+			"type": "effect",
+			"data": {
+				"effect": "health_boost"
+			}
+		},
+		"rewards": [
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "attributeslib:life_steal",
+					"value": 0.1,
+					"operation": "addition"
 				}
 			}
 		]

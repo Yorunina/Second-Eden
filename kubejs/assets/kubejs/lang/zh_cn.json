@@ -27,9 +27,20 @@
     "msg.undead_raid_book.using.1": "一群食尸鬼集结在了 %d, %d 处，它们渴求着殖民者的鲜血",
 
 
-    "com.kubejs.research.technology.scrollmaidunlock.name": "",
-    "com.kubejs.research.technology.scrollmaidunlock.subtitle": "",
-    "com.kubejs.research.effects.scrollmaidunlock.description": "",
+    "com.kubejs.research.technology.scrollmaidunlock.name": "异次元的协议",
+    "com.kubejs.research.technology.scrollmaidunlock.subtitle": "我们的附魔学者意外的在某些文献中，找到了名为‘幻想乡’的神秘地域。他或许能够召唤那一侧的实体为我们所用。",
+    "com.kubejs.research.effects.scrollmaidunlock.description": "能够召唤一名车万女仆协助玩家",
+
+    "com.kubejs.research.technology.basicaircraftunlock.name": "基础航空学",
+    "com.kubejs.research.technology.basicaircraftunlock.subtitle": "从风的流向中我们总结出了世界运行的一部分规律。",
+    "com.kubejs.research.effects.basicaircraftunlock.description": "解锁飞艇与货运飞船的制作方法",
+
+    "com.kubejs.research.technology.lanternsunlock.name": "灯火魔法",
+    "com.kubejs.research.technology.lanternsunlock.subtitle": "在光晕之中，我们偶然间获得了新的力量。",
+    "com.kubejs.research.effects.lanternsunlock.description": "解锁一部分魔法灯笼",
+    "com.kubejs.research.technology.advancedlanternsunlock.name": "名为最终闪光！",
+    "com.kubejs.research.technology.advancedlanternsunlock.subtitle": "观察到了！名为最终的光芒！操控他们的力量触手可得！",
+    "com.kubejs.research.effects.advancedlanternsunlock.description": "解锁高级魔法灯笼",
 
     "item.map.kubejs.airdrop": "空投地图",
 

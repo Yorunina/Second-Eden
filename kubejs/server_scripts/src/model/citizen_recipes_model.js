@@ -32,7 +32,7 @@ ColonyCraftRecipes.prototype = {
      * @returns {ColonyCraftRecipes}
      */
     setMinBuildingLevel(minBuildingLevel) {
-        this['min-building-level'] = minBuildingLevel
+        this['min-building-level'] = minBuildingLevel.toFixed()
         return this
     },
     /**
@@ -40,11 +40,11 @@ ColonyCraftRecipes.prototype = {
      * @returns {ColonyCraftRecipes}
      */
     setMaxBuildingLevel(maxBuildingLevel) {
-        this['max-building-level'] = maxBuildingLevel
+        this['max-building-level'] = maxBuildingLevel.toFixed()
         return this
     },
     /**
-     * @param {Number} researchId 
+     * @param {String} researchId 
      * @param {Boolean} showTooltip
      * @returns {ColonyCraftRecipes}
      */
@@ -54,7 +54,7 @@ ColonyCraftRecipes.prototype = {
         return this
     },
     /**
-     * @param {Number} researchId 
+     * @param {String} researchId 
      * @returns {ColonyCraftRecipes}
      */
     setNotResearchId(researchId) {
