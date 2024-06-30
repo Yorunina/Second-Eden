@@ -11,7 +11,7 @@ ServerEvents.highPriorityData(event => {
         ])
             .setEffects([{ 'kubejs:effects/scrollmaidunlock': 1 }])
             .setParentResearch('minecolonies:technology/morescrolls')
-            .setIcon('minecolonies:blockhutenchanter')
             .setSubtitle('com.kubejs.research.technology.scrollmaidunlock.subtitle')
     )
+    event.addJson(`kubejs:researches/effects/scrollmaidunlock.json`, { "effect": true })
 })

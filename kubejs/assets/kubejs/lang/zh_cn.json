@@ -2,6 +2,9 @@
     "curios.identifier.atlas": "地图册",
     "curios.modifiers.atlas": "按下“图骥”按键以生成一个空投地图",
 
+    "jei.category.kubejs.atlas.name": "地图册",
+    "jei.category.kubejs.atlas.word.1": "概率获得：",
+
     "entity.kubejs.airdrop_balloon": "空投热气球",
 
     "attribute.kubejs.treasure_distance": "宝藏距离",
@@ -26,6 +29,19 @@
     "msg.soul_gem_stamina.using.1": "%s的耐力提升了%d->%d",
     "msg.undead_raid_book.using.1": "一群食尸鬼集结在了 %d, %d 处，它们渴求着殖民者的鲜血",
 
+    "com.kubejs.research.civilian.introeconomics.name": "初级经济学",
+    "com.kubejs.research.civilian.introeconomics.subtitle": "其他城镇与我们的交流愈加频繁，一种用于统一度量价值的方案被居民们自发的提出。",
+    "com.kubejs.research.effects.introeconomics.description": "允许玩家制造交易核心",
+    "com.kubejs.research.civilian.intermedeconomics.name": "中级经济学",
+    "com.kubejs.research.civilian.intermedeconomics.subtitle": "深入研究经济运作的原理后，针对微观与宏观方面的不同调整方案被逐个提出。",
+    "com.kubejs.research.effects.intermedeconomics.description": "解锁收税方块、拍卖柜以及一些小东西",
+    "com.kubejs.research.civilian.adveconomics.name": "高级经济学",
+    "com.kubejs.research.civilian.adveconomics.subtitle": "科技的革新带来了超远程交易的可能性",
+    "com.kubejs.research.effects.adveconomics.description": "解锁网络交易",
+    "com.kubejs.research.civilian.coinageunlock.name": "铸币",
+    "com.kubejs.research.civilian.coinageunlock.subtitle": "钱币的制作并不复杂，生产也并不需要任何人的许可。只是如果仅是为了掠夺财富，铸币有时并不是一个足够划算的选择。",
+    "com.kubejs.research.effects.coinageunlock.description": "解锁硬币铸造配方",
+    
 
     "com.kubejs.research.technology.scrollmaidunlock.name": "异次元的协议",
     "com.kubejs.research.technology.scrollmaidunlock.subtitle": "我们的附魔学者意外的在某些文献中，找到了名为‘幻想乡’的神秘地域。他或许能够召唤那一侧的实体为我们所用。",
@@ -34,7 +50,21 @@
     "com.kubejs.research.technology.basicaircraftunlock.name": "基础航空学",
     "com.kubejs.research.technology.basicaircraftunlock.subtitle": "从风的流向中我们总结出了世界运行的一部分规律。",
     "com.kubejs.research.effects.basicaircraftunlock.description": "解锁飞艇与货运飞船的制作方法",
-
+    "com.kubejs.research.technology.advancedaircraftunlock.name": "先进航空学",
+    "com.kubejs.research.technology.advancedaircraftunlock.subtitle": "翱翔吧，翱翔吧，飞得更高！",
+    "com.kubejs.research.effects.advancedaircraftunlock.description": "解锁双翼机、固定旋翼机、四轴飞行器",
+    "com.kubejs.research.technology.aircraftaddition.name": "模块化航空",
+    "com.kubejs.research.technology.aircraftaddition.subtitle": "如此庞大的机身就应该携带更多的功能道具！",
+    "com.kubejs.research.effects.aircraftaddition.description": "解锁飞行器的所有功能性部件",
+    
+    "com.kubejs.research.technology.coalcokeunlock.name": "新兴燃料",
+    "com.kubejs.research.technology.coalcokeunlock.subtitle": "煤炭之后——那便是焦炭",
+    "com.kubejs.research.effects.coalcokeunlock.description": "解锁焦炭的制作",
+    "com.kubejs.research.technology.steelunlock.name": "钢",
+    "com.kubejs.research.technology.steelunlock.subtitle": "仅仅是稍微的变化，材料的性质却已然天翻地覆",
+    "com.kubejs.research.effects.steelunlock.description": "解锁钢冶炼和钢制装备的制作",
+    
+    
     "com.kubejs.research.technology.lanternsunlock.name": "灯火魔法",
     "com.kubejs.research.technology.lanternsunlock.subtitle": "在光晕之中，我们偶然间获得了新的力量。",
     "com.kubejs.research.effects.lanternsunlock.description": "解锁一部分魔法灯笼",

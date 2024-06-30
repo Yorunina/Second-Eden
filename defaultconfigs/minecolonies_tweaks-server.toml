@@ -1,7 +1,7 @@
 
 [researches]
 	#Range: 0.0 ~ 2.147483647E9
-	speed = 2.0
+	speed = 1.0
 
 [fields]
 	#If true, Citizen can works same field to without wait time. Also work in field list by sequentially.

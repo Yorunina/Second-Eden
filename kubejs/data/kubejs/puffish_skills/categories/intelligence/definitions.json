@@ -33,7 +33,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -60,7 +60,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -149,7 +149,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -176,7 +176,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -265,7 +265,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -292,7 +292,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -373,7 +373,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -400,7 +400,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -481,7 +481,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -508,7 +508,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {
@@ -589,7 +589,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "task"
 			}
 		},
 		"icon": {
@@ -616,7 +616,7 @@
 		"frame": {
 			"type": "advancement",
 			"data": {
-				"frame": "challenge"
+				"frame": "goal"
 			}
 		},
 		"icon": {

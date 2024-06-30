@@ -9,12 +9,33 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16)
         ])
             .setEffects([{ 'kubejs:effects/basicaircraftunlock': 1 }])
-            .setIcon('minecolonies:blockhutmechanic')
-            // 机械小屋解锁前置
             .setParentResearch('minecolonies:technology/whatyaneed')
             .setSubtitle('com.kubejs.research.technology.basicaircraftunlock.subtitle')
     )
     event.addJson(`kubejs:researches/effects/basicaircraftunlock.json`, { "effect": true })
     
+    event.addJson(`kubejs:researches/technology/advancedaircraftunlock.json`,
+        new ColonyResearchModel('minecolonies:technology', 4, [
+            new BuildingRequirementModel('mechanic', 3),
+            new ItemRequirementModel(['minecraft:iron_block'], 8),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+        ])
+            .setEffects([{ 'kubejs:effects/advancedaircraftunlock': 1 }])
+            .setParentResearch('minecolonies:technology/whatyaneed')
+            .setSubtitle('com.kubejs.research.technology.advancedaircraftunlock.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/advancedaircraftunlock.json`, { "effect": true })
+    
+    event.addJson(`kubejs:researches/technology/aircraftaddition.json`,
+        new ColonyResearchModel('minecolonies:technology', 4, [
+            new BuildingRequirementModel('blacksmith', 4),
+            new ItemRequirementModel(['minecraft:iron_block'], 8),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+        ])
+            .setEffects([{ 'kubejs:effects/aircraftaddition': 1 }])
+            .setParentResearch('minecolonies:technology/whatyaneed')
+            .setSubtitle('com.kubejs.research.technology.aircraftaddition.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/aircraftaddition.json`, { "effect": true })
 
 })

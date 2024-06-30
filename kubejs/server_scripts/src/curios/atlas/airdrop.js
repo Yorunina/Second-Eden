@@ -1,6 +1,6 @@
 // priority: 100
 const { SliceChunkArray, RandomGet } = require("../../utils/common")
-const { NewerAirdropPool, CommonAirdropPool } = require("../../utils/airdrop_pool")
+const { AirdropPoolItem } = require('../../model/airdrop_pool_model')
 
 EntityEvents.death('kubejs:airdrop_balloon', event => {
     let { entity } = event
@@ -38,7 +38,6 @@ function popItemFromAirdrop(level, entity, itemList) {
  */
 function getItemListFromPoolItems(poolItems, fortune) {
     let itemStackList = []
-    console.log(1)
     poolItems.forEach(poolItem => {
         if (Math.random() > poolItem.chance) return
         let randomCount = poolItem.minCount + Math.round(Math.random() * (poolItem.maxCount - poolItem.minCount))
@@ -49,6 +48,18 @@ function getItemListFromPoolItems(poolItems, fortune) {
     })
     return itemStackList
 }
+
+/**
+ * @param {Map<string, AirdropPoolItem[]>} poolMap
+ * @param {Number} fortune
+ * @returns {$ItemStack_[]}
+ */
+function getRandomThemePackFromPool(poolMap) {
+    let keys = Array.from(poolMap.keys())
+    let randomKey = RandomGet(keys)
+    return poolMap.get(randomKey)
+}
+
 
 
 /**
@@ -61,37 +72,29 @@ const AirdropDeathStrategy = {
     'newer': function (event) {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
-        let itemPoolTheme = RandomGet(NewerAirdropPool)
-        console.log(itemPoolTheme)
+        let itemPoolTheme = getRandomThemePackFromPool(global.AirdropPool['newer'])
         let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
-        console.log(itemList)
         popItemFromAirdrop(level, entity, itemList)
     },
     'common': function (event) {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
-        let itemPoolTheme = RandomGet(NewerAirdropPool)
-        console.log(itemPoolTheme)
+        let itemPoolTheme = getRandomThemePackFromPool(global.AirdropPool['common'])
         let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
-        console.log(itemList)
         popItemFromAirdrop(level, entity, itemList)
     },
     'advanced': function (event) {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
-        let itemPoolTheme = RandomGet(NewerAirdropPool)
-        console.log(itemPoolTheme)
+        let itemPoolTheme = getRandomThemePackFromPool(global.AirdropPool['common'])
         let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
-        console.log(itemList)
         popItemFromAirdrop(level, entity, itemList)
     },
     'ultra': function (event) {
         let { level, entity } = event
         let fortune = entity.persistentData.getInt('fortune')
-        let itemPoolTheme = RandomGet(NewerAirdropPool)
-        console.log(itemPoolTheme)
+        let itemPoolTheme = getRandomThemePackFromPool(global.AirdropPool['common'])
         let itemList = getItemListFromPoolItems(itemPoolTheme, fortune)
-        console.log(itemList)
         popItemFromAirdrop(level, entity, itemList)
     },
 }
