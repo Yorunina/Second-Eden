@@ -29,8 +29,7 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/blacksmith/boiler.json`,
         new ColonyCraftRecipes('blacksmith_crafting',
             Item.of('immersive_aircraft:boiler'),
-            [Item.of('minecraft:copper_ingot', 16), Item.of('minecraft:blast_furnace', 4)])
-            .setMinBuildingLevel(2))
+            [Item.of('minecraft:copper_ingot', 16), Item.of('minecraft:blast_furnace', 4)]))
 
     event.addJson(`kubejs:crafterrecipes/mechanic/engine.json`,
         new ColonyCraftRecipes('mechanic_crafting',
@@ -73,11 +72,61 @@ ServerEvents.highPriorityData(event => {
             Item.of('immersive_aircraft:gyrodyne'),
             [Item.of('immersive_aircraft:hull', 8), Item.of('immersive_aircraft:engine', 4), Item.of('immersive_aircraft:sail', 4), Item.of('immersive_aircraft:propeller', 1)])
             .setResearchId('kubejs:effects/advancedaircraftunlock', true))
-    
+
     // 模块化航空
     event.addJson(`kubejs:crafterrecipes/blacksmith/improved_landing_gear.json`,
         new ColonyCraftRecipes('blacksmith_crafting',
             Item.of('immersive_aircraft:improved_landing_gear'),
-            [Item.of('immersive_aircraft:hull', 8), Item.of('immersive_aircraft:engine', 4), Item.of('immersive_aircraft:sail', 4), Item.of('immersive_aircraft:propeller', 1)])
+            [Item.of('kubejs:steel_ingot', 8), Item.of('immersive_aircraft:engine', 1), Item.of('minecraft:copper', 4)])
             .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/enhanced_propeller.json`,
+        new ColonyCraftRecipes('mechanic_crafting',
+            Item.of('immersive_aircraft:enhanced_propeller'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('minecraft:engine', 1), Item.of('immersive_aircraft:propeller', 1)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/eco_engine.json`,
+        new ColonyCraftRecipes('mechanic_crafting',
+            Item.of('immersive_aircraft:eco_engine'),
+            [Item.of('kubejs:steel_ingot', 4), Item.of('minecraft:engine', 1), Item.of('minecraft:copper', 16)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/nether_engine.json`,
+        new ColonyCraftRecipes('mechanic_crafting',
+            Item.of('immersive_aircraft:nether_engine'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('minecraft:engine', 1), Item.of('minecraft:blaze_powder', 6)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/industrial_gears.json`,
+        new ColonyCraftRecipes('mechanic_crafting',
+            Item.of('immersive_aircraft:industrial_gears'),
+            [Item.of('kubejs:steel_ingot', 12), Item.of('minecraft:obsidian', 1)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/blacksmith/steel_boiler.json`,
+        new ColonyCraftRecipes('blacksmith_crafting',
+            Item.of('immersive_aircraft:steel_boiler'),
+            [Item.of('immersive_aircraft:boiler', 1), Item.of('kubejs:steel_ingot', 8), Item.of('minecraft:blaze_powder', 3)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/blacksmith/sturdy_pipes.json`,
+        new ColonyCraftRecipes('blacksmith_crafting',
+            Item.of('immersive_aircraft:sturdy_pipes'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('minecraft:gold_nugget', 3), Item.of('minecraft:coal', 3)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/gyroscope.json`,
+        new ColonyCraftRecipes('mechanic_crafting',
+            Item.of('immersive_aircraft:gyroscope'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('minecraft:compass', 1), Item.of('minecraft:iron_nugget', 1)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/blacksmith/hull_reinforcement.json`,
+        new ColonyCraftRecipes('blacksmith_crafting',
+            Item.of('immersive_aircraft:hull_reinforcement'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('immersive_aircraft:hull', 1), Item.of('minecraft:obsidian', 3)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+    
+    // 制空权
 })

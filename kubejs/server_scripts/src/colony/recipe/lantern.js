@@ -49,6 +49,7 @@ ServerEvents.highPriorityData(event => {
             Item.of('arcanelanterns:brilliant_lantern'),
             [Item.of('minecraft:shulker_shell', 1), Item.of('minecraft:paper', 9), Item.of('minecraft:soul_lantern', 1)])
             .setResearchId('kubejs:effects/lanternsunlock', true))
+
     // 高级灯笼解锁
     event.addJson(`kubejs:crafterrecipes/enchanter/life_lantern.json`,
         new ColonyCraftRecipes('enchanter_custom',

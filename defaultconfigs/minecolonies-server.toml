@@ -32,7 +32,7 @@
 	foodmodifier = 1.2
 	#疾病发生频率。1 = 非常常见，100 = 非常罕见。 [默认：5，最小：1，最大：100]
 	#Range: 1 ~ 100
-	diseasemodifier = 5
+	diseasemodifier = 10
 	#如果殖民地仅一部分区块被其 所有者/市长 加载，整个殖民地是否应当保持已加载状态。（在 “殖民地区块加载限制” 设置加载区块的数量） [默认: true]
 	forceloadcolony = true
 	#设置玩家离开后区块保持加载的时间，重新启动后不会持续存在。默认：10分钟 [默认：10，最小：1，最大：1440]
@@ -61,11 +61,11 @@
 #所有与模拟殖民地命令有关的配置
 [commands]
 	#是否允许玩家使用 /mc rtp 命令？ [默认: false]
-	canplayerusertpcommand = true
+	canplayerusertpcommand = false
 	#是否允许玩家使用 /mc colony teleport 命令？ [默认: false]
 	canplayerusecolonytpcommand = false
 	#玩家是否可传送至盟友的殖民地？ [默认: true]
-	canplayeruseallytownhallteleport = true
+	canplayeruseallytownhallteleport = false
 	#是否允许玩家使用 /mc home 命令？注意：只有殖民地的所有者才能使用此命令。 [默认: false]
 	canplayerusehometpcommand = false
 	#是否允许玩家使用 /mc colony info 命令？ [默认: true]
@@ -75,9 +75,9 @@
 	#是否允许玩家使用 /mc colony addOfficer 命令？ [默认: true]
 	canplayeruseaddofficercommand = true
 	#是否允许玩家使用 /mc colony delete 命令？ [默认: false]
-	canplayerusedeletecolonycommand = false
+	canplayerusedeletecolonycommand = true
 	#是否允许玩家使用 /mc colony requestsystem-reset 命令？ [默认: false]
-	canplayeruseresetcommand = false
+	canplayeruseresetcommand = true
 
 #与殖民地领地有关的设置
 [claims]
@@ -124,7 +124,7 @@
 	guardDamageMultiplier = 1.5
 	#所有卫兵的生命值加成。 [默认：1.000000，最小：0.100000，最大：5.000000
 	#Range: 0.1 ~ 5.0
-	guardhealthmult = 2.0
+	guardhealthmult = 2.5
 	#开启PVP模式 (在特定情况下，殖民地可以被摧毁、损坏)。 [默认: false]
 	pvp_mode = true
 

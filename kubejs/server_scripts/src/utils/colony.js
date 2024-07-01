@@ -26,3 +26,14 @@ export function GetCitizenFromEntity(target) {
     if (!colony) return null
     return colony.getCitizenManager().getCivilian(citizenId)
 }
+
+/**
+ * 校验该玩家是否是殖民地的拥有者，这往往用于某些殖民地负面的设置上的校验，如强制的袭击
+ * @param {$IColony_} colony 
+ * @param {$ServerPlayer_} player 
+ * @returns {boolean}
+ */
+export function CheckColonyOwner(colony, player) {
+    let uuid = colony.getPermissions().getOwner()
+    return uuid == player.uuid
+}

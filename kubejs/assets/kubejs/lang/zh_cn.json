@@ -14,6 +14,7 @@
     "attribute.kubejs.decode_ability": "解密能力",
     "attribute.kubejs.player_damage_reduction": "玩家伤害减免",
 
+    "msg.player.common.not_colony_owner": "你不是这个殖民地的所有者！",
     "msg.player.common.no_more_skill_claim": "你不能在该能力类型下获取更多的技能点数了！",
     "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点",
     "msg.soul_gem_adaptability.using.1": "%s的适应性提升了%d->%d",

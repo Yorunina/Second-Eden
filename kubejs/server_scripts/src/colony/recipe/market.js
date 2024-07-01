@@ -5,6 +5,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'lightmanscurrency:coinmint' })
 
     event.remove({ output: 'lightmanscurrency:trading_core' })
+
     event.remove({ output: 'lightmanscurrency:auction_stand_dark_oak' })
     event.remove({ output: 'lightmanscurrency:auction_stand_bamboo' })
     event.remove({ output: 'lightmanscurrency:auction_stand_cherry' })
@@ -16,9 +17,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'lightmanscurrency:auction_stand_acacia' })
     event.remove({ output: 'lightmanscurrency:auction_stand_birch' })
     event.remove({ output: 'lightmanscurrency:auction_stand_warped' })
-
-
-    event.remove({ output: 'lightmanscurrency:trading_core' })
 
     event.remove({ output: 'lightmanscurrency:item_trader_server_sml' })
     event.remove({ output: 'lightmanscurrency:item_trader_server_med' })
@@ -40,8 +38,18 @@ ServerEvents.recipes(event => {
 
 
 ServerEvents.highPriorityData(event => {
-    event.addJson(`kubejs:crafterrecipes/enchanter/scroll_maid.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:trading_core'), [Item.of('minecraft:iron_ingot'), Item.of('minecraft:gold_ingot')])
+    // 初级经济学
+    event.addJson(`kubejs:crafterrecipes/enchanter/trading_core.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('lightmanscurrency:trading_core'), [Item.of('minecraft:iron_ingot'), Item.of('minecraft:gold_ingot')])
             .setResearchId('kubejs:effects/introeconomics', true))
-})
 
+    // 铸币
+    event.addJson(`kubejs:crafterrecipes/mechanic/coinmint.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:coinmint'), [Item.of('minecraft:iron_ingot'), Item.of('minecraft:gold_ingot')])
+            .setResearchId('kubejs:effects/coinageunlock', true))
+
+    // 中级经济学
+    event.addJson(`kubejs:crafterrecipes/mechanic/auction_stand_dark_oak.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:auction_stand_dark_oak'), [Item.of('minecraft:dark_oak_log'), Item.of('minecraft:gold_ingot')])
+            .setResearchId('kubejs:effects/intermedeconomics', true))
+})
