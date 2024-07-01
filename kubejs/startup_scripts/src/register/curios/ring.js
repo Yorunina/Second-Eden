@@ -32,7 +32,7 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/curios/evening_primrose_ring')
 
     // 红宝石戒指
-    event.create('evening_primrose_ring')
+    event.create('ruby_ring')
         .maxStackSize(1)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()

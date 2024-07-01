@@ -57,6 +57,10 @@
     "com.kubejs.research.technology.aircraftaddition.name": "模块化航空",
     "com.kubejs.research.technology.aircraftaddition.subtitle": "如此庞大的机身就应该携带更多的功能道具！",
     "com.kubejs.research.effects.aircraftaddition.description": "解锁飞行器的所有功能性部件",
+    "com.kubejs.research.technology.airweaponpower.name": "制空权",
+    "com.kubejs.research.technology.airweaponpower.subtitle": "如掠过雄鹰，现在，规则由我们重新定义",
+    "com.kubejs.research.effects.airweaponpower.description": "解锁所有武器化模块以及军舰",
+    
     
     "com.kubejs.research.technology.coalcokeunlock.name": "新兴燃料",
     "com.kubejs.research.technology.coalcokeunlock.subtitle": "煤炭之后——那便是焦炭",

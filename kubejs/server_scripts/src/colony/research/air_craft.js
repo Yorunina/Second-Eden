@@ -21,7 +21,7 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16)
         ])
             .setEffects([{ 'kubejs:effects/advancedaircraftunlock': 1 }])
-            .setParentResearch('minecolonies:technology/whatyaneed')
+            .setParentResearch('kubejs:technology/basicaircraftunlock')
             .setSubtitle('com.kubejs.research.technology.advancedaircraftunlock.subtitle')
     )
     event.addJson(`kubejs:researches/effects/advancedaircraftunlock.json`, { "effect": true })
@@ -33,9 +33,20 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16)
         ])
             .setEffects([{ 'kubejs:effects/aircraftaddition': 1 }])
-            .setParentResearch('minecolonies:technology/whatyaneed')
+            .setParentResearch('kubejs:technology/basicaircraftunlock')
             .setSubtitle('com.kubejs.research.technology.aircraftaddition.subtitle')
     )
     event.addJson(`kubejs:researches/effects/aircraftaddition.json`, { "effect": true })
 
+    event.addJson(`kubejs:researches/technology/airweaponpower.json`,
+        new ColonyResearchModel('minecolonies:technology', 5, [
+            new BuildingRequirementModel('blacksmith', 5),
+            new ItemRequirementModel(['minecraft:iron_block'], 8),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+        ])
+            .setEffects([{ 'kubejs:effects/airweaponpower': 1 }])
+            .setParentResearch('kubejs:technology/aircraftaddition')
+            .setSubtitle('com.kubejs.research.technology.airweaponpower.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/airweaponpower.json`, { "effect": true })
 })

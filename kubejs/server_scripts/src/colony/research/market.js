@@ -9,7 +9,6 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16)
         ])
             .setEffects([{ 'kubejs:effects/introeconomics': 1 }])
-            .setParentResearch('minecolonies:civilian/firstaid')
             .setSubtitle('com.kubejs.research.civilian.introeconomics.subtitle')
     )
     event.addJson(`kubejs:researches/effects/introeconomics.json`, { "effect": true })
