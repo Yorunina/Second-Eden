@@ -4,7 +4,6 @@ const { ColonyResearchModel, BuildingRequirementModel, ItemRequirementModel } = 
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/scrollmaidunlock.json`,
         new ColonyResearchModel('minecolonies:technology', 2, [
-            new BuildingRequirementModel('enchanter', 5),
             new ItemRequirementModel(['minecraft:soul_lantern'], 1),
             new ItemRequirementModel(['minecraft:bone_block'], 32),
             new ItemRequirementModel(['minecraft:magma_cream'], 16),

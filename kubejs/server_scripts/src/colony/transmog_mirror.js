@@ -6,7 +6,7 @@ ItemEvents.entityInteracted('kubejs:transmog_mirror', event => {
     if (entity.isShiftKeyDown()) return
 
     if (target.isPlayer()) {
-        // 将玩家uuid刻入书本
+        // 将玩家uuid置入
         let targetUUID = target.uuid.toString()
         if (item.nbt) {
             item.nbt['uuid'] = targetUUID
@@ -29,7 +29,6 @@ ItemEvents.rightClicked('kubejs:transmog_mirror', event => {
     let { entity, item } = event
     if (!entity.isPlayer()) return
     if (!entity.isShiftKeyDown()) return
-    // 将玩家uuid刻入书本
     let targetUUID = entity.uuid.toString()
     if (item.nbt) {
         item.nbt['uuid'] = targetUUID

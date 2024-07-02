@@ -1,6 +1,6 @@
 {
 	"unlocked_by_default": true,
-	"title": "kubejs.puffskill.strength.title",
+	"title": {"translate":"kubejs.puffskill.strength.title"},
 	"icon": {
 		"type": "item",
 		"data": {

@@ -1,8 +1,11 @@
 {
 	"root_agility": {
-		"title": "kubejs.puffskill.def.root_agility.title",
-		"description": "kubejs.puffskill.def.root_agility.desc",
-		"extra_description": "kubejs.puffskill.exdesc.movement_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.root_agility.title"
+		},
+		"description": {
+			"translate": "kubejs.puffskill.def.root_agility.desc"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -15,21 +18,15 @@
 				"effect": "health_boost"
 			}
 		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "minecraft:generic.movement_speed",
-					"value": 0.05,
-					"operation": "addition"
-				}
-			}
-		]
+		"rewards": []
 	},
 	"attack_speed_add_005": {
-		"title": "kubejs.puffskill.def.attack_speed_add_005.title",
-		"description": "kubejs.puffskill.def.attack_speed_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.attack_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.attack_speed_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.attack_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -54,9 +51,12 @@
 		]
 	},
 	"attack_speed_add_01": {
-		"title": "kubejs.puffskill.def.attack_speed_add_01.title",
-		"description": "kubejs.puffskill.def.attack_speed_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.attack_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.attack_speed_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.attack_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -81,9 +81,12 @@
 		]
 	},
 	"attack_speed_add_02": {
-		"title": "kubejs.puffskill.def.attack_speed_add_02.title",
-		"description": "kubejs.puffskill.def.attack_speed_add_02.desc",
-		"extra_description": "kubejs.puffskill.exdesc.attack_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.attack_speed_add_02.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.attack_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -108,9 +111,12 @@
 		]
 	},
 	"step_height_addition_add_05": {
-		"title": "kubejs.puffskill.def.step_height_addition_add_05.title",
-		"description": "kubejs.puffskill.def.step_height_addition_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.step_height_addition",
+		"title": {
+			"translate": "kubejs.puffskill.def.step_height_addition_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.step_height_addition"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -135,9 +141,12 @@
 		]
 	},
 	"ranged_damage_add_05": {
-		"title": "kubejs.puffskill.def.ranged_damage_add_05.title",
-		"description": "kubejs.puffskill.def.ranged_damage_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.ranged_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.ranged_damage_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -162,9 +171,12 @@
 		]
 	},
 	"ranged_damage_add_1": {
-		"title": "kubejs.puffskill.def.ranged_damage_add_1.title",
-		"description": "kubejs.puffskill.def.ranged_damage_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.ranged_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.ranged_damage_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -189,9 +201,12 @@
 		]
 	},
 	"ranged_damage_add_2": {
-		"title": "kubejs.puffskill.def.ranged_damage_add_2.title",
-		"description": "kubejs.puffskill.def.ranged_damage_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.ranged_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.ranged_damage_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -216,9 +231,12 @@
 		]
 	},
 	"ranged_damage_multiply_base_025": {
-		"title": "kubejs.puffskill.def.ranged_damage_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.ranged_damage_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.ranged_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.ranged_damage_multiply_base_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -243,9 +261,12 @@
 		]
 	},
 	"mining_speed_add_01": {
-		"title": "kubejs.puffskill.def.mining_speed_add_01.title",
-		"description": "kubejs.puffskill.def.mining_speed_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.mining_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.mining_speed_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.mining_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -270,9 +291,12 @@
 		]
 	},
 	"mining_speed_add_025": {
-		"title": "kubejs.puffskill.def.mining_speed_add_025.title",
-		"description": "kubejs.puffskill.def.mining_speed_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.mining_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.mining_speed_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.mining_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -297,9 +321,12 @@
 		]
 	},
 	"axe_speed_add_025": {
-		"title": "kubejs.puffskill.def.axe_speed_add_025.title",
-		"description": "kubejs.puffskill.def.axe_speed_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.axe_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.axe_speed_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.axe_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -324,9 +351,12 @@
 		]
 	},
 	"entity_reach_addition_1": {
-		"title": "kubejs.puffskill.def.entity_reach_addition_1.title",
-		"description": "kubejs.puffskill.def.entity_reach_addition_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.entity_reach",
+		"title": {
+			"translate": "kubejs.puffskill.def.entity_reach_addition_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.entity_reach"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -351,9 +381,12 @@
 		]
 	},
 	"sprinting_speed_add_005": {
-		"title": "kubejs.puffskill.def.sprinting_speed_add_005.title",
-		"description": "kubejs.puffskill.def.sprinting_speed_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.sprinting_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.sprinting_speed_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.sprinting_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -378,9 +411,12 @@
 		]
 	},
 	"sprinting_speed_add_01": {
-		"title": "kubejs.puffskill.def.sprinting_speed_add_01.title",
-		"description": "kubejs.puffskill.def.sprinting_speed_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.sprinting_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.sprinting_speed_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.sprinting_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -404,10 +440,13 @@
 			}
 		]
 	},
-	"sprinting_speed_add_025": {
-		"title": "kubejs.puffskill.def.sprinting_speed_add_025.title",
-		"description": "kubejs.puffskill.def.sprinting_speed_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.sprinting_speed",
+	"sprinting_speed_add_02": {
+		"title": {
+			"translate": "kubejs.puffskill.def.sprinting_speed_add_02.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.sprinting_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -425,16 +464,19 @@
 				"type": "puffish_skills:attribute",
 				"data": {
 					"attribute": "puffish_attributes:player.sprinting_speed",
-					"value": 0.25,
+					"value": 0.2,
 					"operation": "addition"
 				}
 			}
 		]
 	},
 	"jump_add_1": {
-		"title": "kubejs.puffskill.def.jump_add_1.title",
-		"description": "kubejs.puffskill.def.jump_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.jump",
+		"title": {
+			"translate": "kubejs.puffskill.def.jump_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.jump"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -459,9 +501,12 @@
 		]
 	},
 	"armor_pierce_add_005": {
-		"title": "kubejs.puffskill.def.armor_pierce_add_005.title",
-		"description": "kubejs.puffskill.def.armor_pierce_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor_pierce",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_pierce_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor_pierce"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -486,9 +531,12 @@
 		]
 	},
 	"crit_chance_0025": {
-		"title": "kubejs.puffskill.def.crit_chance_0025.title",
-		"description": "kubejs.puffskill.def.crit_chance_0025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.crit_chance",
+		"title": {
+			"translate": "kubejs.puffskill.def.crit_chance_0025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.crit_chance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -513,9 +561,12 @@
 		]
 	},
 	"crit_chance_005": {
-		"title": "kubejs.puffskill.def.crit_chance_005.title",
-		"description": "kubejs.puffskill.def.crit_chance_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.crit_chance",
+		"title": {
+			"translate": "kubejs.puffskill.def.crit_chance_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.crit_chance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -540,9 +591,12 @@
 		]
 	},
 	"arrow_velocity_add_025": {
-		"title": "kubejs.puffskill.def.arrow_velocity_add_025.title",
-		"description": "kubejs.puffskill.def.arrow_velocity_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.arrow_velocity",
+		"title": {
+			"translate": "kubejs.puffskill.def.arrow_velocity_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.arrow_velocity"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -567,9 +621,12 @@
 		]
 	},
 	"prot_pierce_add_005": {
-		"title": "kubejs.puffskill.def.prot_pierce_add_005.title",
-		"description": "kubejs.puffskill.def.prot_pierce_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.prot_pierce",
+		"title": {
+			"translate": "kubejs.puffskill.def.prot_pierce_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.prot_pierce"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -594,9 +651,12 @@
 		]
 	},
 	"dodge_chance_add_0025": {
-		"title": "kubejs.puffskill.def.dodge_chance_add_0025.title",
-		"description": "kubejs.puffskill.def.dodge_chance_add_0025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.dodge_chance",
+		"title": {
+			"translate": "kubejs.puffskill.def.dodge_chance_add_0025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.dodge_chance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -621,9 +681,12 @@
 		]
 	},
 	"dodge_chance_add_005": {
-		"title": "kubejs.puffskill.def.dodge_chance_add_005.title",
-		"description": "kubejs.puffskill.def.dodge_chance_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.dodge_chance",
+		"title": {
+			"translate": "kubejs.puffskill.def.dodge_chance_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.dodge_chance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -648,9 +711,12 @@
 		]
 	},
 	"experience_gained_add_05": {
-		"title": "kubejs.puffskill.def.experience_gained_add_05.title",
-		"description": "kubejs.puffskill.def.experience_gained_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.experience_gained",
+		"title": {
+			"translate": "kubejs.puffskill.def.experience_gained_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.experience_gained"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {

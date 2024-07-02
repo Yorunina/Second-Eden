@@ -46,12 +46,12 @@ function handleLookupAtlas(jeiHelpers, builder, recipe, focuses) {
  * @param {Number} mouseY 
  */
 function drawHandlerAtlas(jeiHelpers, recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) {
-    guiGraphics.drawWordWrap(Client.font, Text.translatable('jei.category.kubejs.atlas.word.1'), 5, 20, 150, 0)
+    guiGraphics.drawWordWrap(Client.font, Text.translatable('jei.category.kubejs.atlas.word.1', theme), 5, 20, 150, 0)
 }
 
 JEIAddedEvents.registerRecipes((event) => {
     global.AirdropPool['newer'].forEach((value, key, map) => {
         event.custom("kubejs:atlas")
-            .add({ outputs: value, atlas: Item.of('kubejs:newer_atlas') })
+            .add({ outputs: value, atlas: Item.of('kubejs:newer_atlas'), theme: key})
     })
 })

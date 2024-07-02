@@ -282,7 +282,7 @@
 		"root": false
 	},
 	"1ttnncvah3cldfqe": {
-		"definition": "sprinting_speed_add_025",
+		"definition": "sprinting_speed_add_02",
 		"x": 73.9008344562721,
 		"y": -128,
 		"root": false
@@ -462,7 +462,7 @@
 		"root": false
 	},
 	"ehviib5ro4q12opr": {
-		"definition": "sprinting_speed_add_025",
+		"definition": "sprinting_speed_add_02",
 		"x": 0,
 		"y": 256,
 		"root": false

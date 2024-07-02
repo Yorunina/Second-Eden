@@ -1,11 +1,23 @@
 {
     "curios.identifier.atlas": "地图册",
-    "curios.modifiers.atlas": "按下“图骥”按键以生成一个空投地图",
+    "curios.modifiers.atlas": "按下“呼唤空投”按键以从“原点”获取一个空投地图",
 
     "jei.category.kubejs.atlas.name": "地图册",
-    "jei.category.kubejs.atlas.word.1": "概率获得：",
+    "jei.category.kubejs.atlas.word.1": "主题：%s",
 
     "entity.kubejs.airdrop_balloon": "空投热气球",
+    "entity.kubejs.airdrop_balloon_red": "空投热气球",
+    "entity.kubejs.airdrop_balloon_blue": "空投热气球",
+    "entity.kubejs.airdrop_balloon_yellow": "空投热气球",
+    "entity.kubejs.med_airdrop_balloon": "空投热气球",
+    "entity.kubejs.med_airdrop_balloon_red": "空投热气球",
+    "entity.kubejs.med_airdrop_balloon_blue": "空投热气球",
+    "entity.kubejs.med_airdrop_balloon_yellow": "空投热气球",
+    "entity.kubejs.adv_airdrop_balloon": "空投热气球",
+    "entity.kubejs.adv_airdrop_balloon_red": "空投热气球",
+    "entity.kubejs.adv_airdrop_balloon_blue": "空投热气球",
+    "entity.kubejs.adv_airdrop_balloon_yellow": "空投热气球",
+
 
     "attribute.kubejs.treasure_distance": "宝藏距离",
     "attribute.kubejs.treasure_fortune": "宝藏幸运",
@@ -16,7 +28,11 @@
 
     "msg.player.common.not_colony_owner": "你不是这个殖民地的所有者！",
     "msg.player.common.no_more_skill_claim": "你不能在该能力类型下获取更多的技能点数了！",
-    "msg.player.common.skill_point_claim_succ": "你获得了%s相关的技能点数%d点",
+    "msg.player.common.skill_point_claim_succ": "你获得了%s技能点数%d点",
+    "msg.player.skill_type.strength": "力量",
+    "msg.player.skill_type.agility": "敏捷",
+    "msg.player.skill_type.intelligence": "智力",
+
     "msg.soul_gem_adaptability.using.1": "%s的适应性提升了%d->%d",
     "msg.soul_gem_agility.using.1": "%s的敏捷提升了%d->%d",
     "msg.soul_gem_athletics.using.1": "%s的运动提升了%d->%d",
@@ -68,6 +84,10 @@
     "com.kubejs.research.technology.steelunlock.name": "钢",
     "com.kubejs.research.technology.steelunlock.subtitle": "仅仅是稍微的变化，材料的性质却已然天翻地覆",
     "com.kubejs.research.effects.steelunlock.description": "解锁钢冶炼和钢制装备的制作",
+
+    "com.kubejs.research.technology.iridiumunlock.name": "铱",
+    "com.kubejs.research.technology.iridiumunlock.subtitle": "这种材料就算是在“原点”，也异常稀少",
+    "com.kubejs.research.effects.iridiumunlock.description": "解锁铱锭制作",
     
     
     "com.kubejs.research.technology.lanternsunlock.name": "灯火魔法",
@@ -92,5 +112,48 @@
     "tooltip.item.kubejs.soul_gem_stamina": "右键市民使用，用以提升其耐力",
 
     "tooltip.item.kubejs.peaceful_ring.1": "你受到来自玩家的伤害会极大幅度降低",
-    "tooltip.item.kubejs.peaceful_ring.2": "同时你对玩家造成的伤害也会极大幅度降低"
+    "tooltip.item.kubejs.peaceful_ring.2": "同时你对玩家造成的伤害也会极大幅度降低",
+
+    "kubejs.puffskill.def.root_strength.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
+    "kubejs.puffskill.def.root_agility.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
+    "kubejs.puffskill.def.root_intelligence.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
+    "kubejs.puffskill.def.root_strength.title": "力量",
+    "kubejs.puffskill.def.health_add_1.title": "生命值+1",
+    "kubejs.puffskill.exdesc.health": "生命值：衡量玩家耐久程度的标准，默认玩家血量为20",
+    "kubejs.puffskill.def.health_add_2.title": "生命值+2",
+    "kubejs.puffskill.def.health_add_4.title": "生命值+4",
+    "kubejs.puffskill.def.health_multiply_base_05.title": "生命值+50%",
+    "kubejs.puffskill.def.healing_add_025.title": "生命恢复+0.25",
+    "kubejs.puffskill.exdesc.healing": "生命恢复：玩家每次自然血量回复时的回复值",
+    "kubejs.puffskill.def.healing_add_05.title": "生命恢复+0.5",
+    "kubejs.puffskill.def.stamina_add_05.title": "饥饿耐久+0.5",
+    "kubejs.puffskill.exdesc.stamina": "饥饿耐久：影响每个饥饿值的有效程度，默认每个饥饿值有4点耐久",
+    "kubejs.puffskill.def.stamina_multiply_base_025.title": "饥饿耐久+25%",
+    "kubejs.puffskill.def.melee_damage_add_05.title": "近战伤害+0.5",
+    "kubejs.puffskill.exdesc.melee_damage": "近战伤害：影响所有近距离作战武器造成的伤害",
+    "kubejs.puffskill.def.melee_damage_add_1.title": "近战伤害+1",
+    "kubejs.puffskill.def.melee_damage_add_2.title": "近战伤害+2",
+    "kubejs.puffskill.def.melee_damage_multiply_base_025.title": "近战伤害+25%",
+    "kubejs.puffskill.def.armor_add_025.title": "护甲值+0.25",
+    "kubejs.puffskill.exdesc.armor": "护甲值：降低生物收到伤害的属性，由盔甲提供的免伤上限比例为80%",
+    "kubejs.puffskill.def.armor_add_05.title": "护甲值+0.5",
+    "kubejs.puffskill.def.armor_toughness_add_025.title": "护甲韧性+0.25",
+    "kubejs.puffskill.exdesc.armor_toughness": "护甲韧性：降低伤害对护甲值影响的属性，受到的伤害越高，对防御能力的削弱越强",
+    "kubejs.puffskill.def.armor_multiply_base_025.title": "护甲值+25%",
+    "kubejs.puffskill.def.armor_shred_add_005.title": "盔甲撕裂+5%",
+    "kubejs.puffskill.exdesc.armor_shred": "盔甲撕裂：降低目标护甲值",
+    "kubejs.puffskill.def.crit_damage_01.title": "暴击伤害+10%",
+    "kubejs.puffskill.exdesc.crit_damage": "暴击伤害：在暴击伤害触发时造成的额外伤害，暴击包含原版跳劈暴击",
+    "kubejs.puffskill.def.crit_damage_025.title": "暴击伤害+25%",
+    "kubejs.puffskill.def.current_hp_damage_add_003.title": "额外当前生命伤害+3%",
+    "kubejs.puffskill.exdesc.current_hp_damage": "额外当前生命伤害：基于当前目标所具有的生命值，造成其百分比对应的额外伤害",
+    "kubejs.puffskill.def.prot_shred_add_005.title": "保护撕裂+5%",
+    "kubejs.puffskill.exdesc.prot_shred": "保护撕裂：降低目标对应百分比的总保护点数",
+    "kubejs.puffskill.def.knockback_resistance_add_01.title": "击退抗性+10%",
+    "kubejs.puffskill.exdesc.knockback_resistance": "击退抗性：受到伤害时降低被击退距离",
+    "kubejs.puffskill.def.knockback_add_05.title": "击退能力+5%",
+    "kubejs.puffskill.exdesc.knockback": "击退能力：造成伤害时对目标生物的击退能力",
+    "kubejs.puffskill.def.draw_speed_add_03.title": "拉弓速度+30%",
+    "kubejs.puffskill.exdesc.draw_speed": "拉弓速度：生物拉开弓弦射击的速度"
+
 }

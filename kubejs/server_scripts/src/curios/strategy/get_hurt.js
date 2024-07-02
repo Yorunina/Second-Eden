@@ -24,8 +24,8 @@ export function CuriosGetHurt(event) {
  */
 const CuriosGetHurtStrategy = {
     'kubejs:peaceful_ring': (event, curios) => {
-        let source = event.source
-        if (source.actual && source.actual.isPlayer()) {
+        let {source, entity} = event
+        if (source.actual && source.actual.isPlayer() && entity.isPlayer()) {
             event.amount = event.amount * 0.1
         }
     },

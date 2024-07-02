@@ -1,8 +1,11 @@
 {
 	"root_strength": {
-		"title": "kubejs.puffskill.def.root_strength.title",
-		"description": "kubejs.puffskill.def.root_strength.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"title": {
+			"translate": "kubejs.puffskill.def.root_strength.title"
+		},
+		"description": {
+			"translate": "kubejs.puffskill.def.root_strength.desc"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -15,21 +18,15 @@
 				"effect": "health_boost"
 			}
 		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "generic.max_health",
-					"value": 1,
-					"operation": "addition"
-				}
-			}
-		]
+		"rewards": []
 	},
 	"health_add_1": {
-		"title": "kubejs.puffskill.def.health_add_1.title",
-		"description": "kubejs.puffskill.def.health_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"title": {
+			"translate": "kubejs.puffskill.def.health_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.health"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -54,9 +51,12 @@
 		]
 	},
 	"health_add_2": {
-		"title": "kubejs.puffskill.def.health_add_2.title",
-		"description": "kubejs.puffskill.def.health_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"title": {
+			"translate": "kubejs.puffskill.def.health_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.health"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -81,9 +81,12 @@
 		]
 	},
 	"health_add_4": {
-		"title": "kubejs.puffskill.def.health_add_4.title",
-		"description": "kubejs.puffskill.def.health_add_4.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"title": {
+			"translate": "kubejs.puffskill.def.health_add_4.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.health"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -108,9 +111,12 @@
 		]
 	},
 	"health_multiply_base_05": {
-		"title": "kubejs.puffskill.def.health_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.health_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.health",
+		"title": {
+			"translate": "kubejs.puffskill.def.health_multiply_base_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.health"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -135,9 +141,12 @@
 		]
 	},
 	"healing_add_025": {
-		"title": "kubejs.puffskill.def.healing_add_025.title",
-		"description": "kubejs.puffskill.def.healing_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
+		"title": {
+			"translate": "kubejs.puffskill.def.healing_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.healing"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -162,9 +171,12 @@
 		]
 	},
 	"healing_add_05": {
-		"title": "kubejs.puffskill.def.healing_add_05.title",
-		"description": "kubejs.puffskill.def.healing_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.healing",
+		"title": {
+			"translate": "kubejs.puffskill.def.healing_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.healing"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -189,9 +201,12 @@
 		]
 	},
 	"stamina_add_05": {
-		"title": "kubejs.puffskill.def.stamina_add_05.title",
-		"description": "kubejs.puffskill.def.stamina_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.stamina",
+		"title": {
+			"translate": "kubejs.puffskill.def.stamina_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.stamina"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -216,9 +231,12 @@
 		]
 	},
 	"stamina_multiply_base_025": {
-		"title": "kubejs.puffskill.def.stamina_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.stamina_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.stamina",
+		"title": {
+			"translate": "kubejs.puffskill.def.stamina_multiply_base_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.stamina"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -243,9 +261,12 @@
 		]
 	},
 	"melee_damage_add_05": {
-		"title": "kubejs.puffskill.def.melee_damage_add_05.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.melee_damage_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.melee_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -270,9 +291,12 @@
 		]
 	},
 	"melee_damage_add_1": {
-		"title": "kubejs.puffskill.def.melee_damage_add_1.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.melee_damage_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.melee_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -297,9 +321,12 @@
 		]
 	},
 	"melee_damage_add_2": {
-		"title": "kubejs.puffskill.def.melee_damage_add_2.title",
-		"description": "kubejs.puffskill.def.melee_damage_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.melee_damage_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.melee_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -324,9 +351,12 @@
 		]
 	},
 	"melee_damage_multiply_base_025": {
-		"title": "kubejs.puffskill.def.melee_damage_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.melee_damage_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.melee_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.melee_damage_multiply_base_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.melee_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -351,9 +381,12 @@
 		]
 	},
 	"armor_add_025": {
-		"title": "kubejs.puffskill.def.armor_add_025.title",
-		"description": "kubejs.puffskill.def.armor_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -378,9 +411,12 @@
 		]
 	},
 	"armor_add_05": {
-		"title": "kubejs.puffskill.def.armor_add_05.title",
-		"description": "kubejs.puffskill.def.armor_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -405,9 +441,12 @@
 		]
 	},
 	"armor_toughness_add_025": {
-		"title": "kubejs.puffskill.def.armor_toughness_add_025.title",
-		"description": "kubejs.puffskill.def.armor_toughness_add_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor_toughness",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_toughness_add_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor_toughness"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -432,9 +471,12 @@
 		]
 	},
 	"armor_multiply_base_025": {
-		"title": "kubejs.puffskill.def.armor_multiply_base_025.title",
-		"description": "kubejs.puffskill.def.armor_multiply_base_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_multiply_base_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -459,9 +501,12 @@
 		]
 	},
 	"armor_shred_add_005": {
-		"title": "kubejs.puffskill.def.armor_shred_add_005.title",
-		"description": "kubejs.puffskill.def.armor_shred_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.armor_shred",
+		"title": {
+			"translate": "kubejs.puffskill.def.armor_shred_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.armor_shred"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -486,9 +531,12 @@
 		]
 	},
 	"crit_damage_01": {
-		"title": "kubejs.puffskill.def.crit_damage_01.title",
-		"description": "kubejs.puffskill.def.crit_damage_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.crit_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.crit_damage_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.crit_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -513,9 +561,12 @@
 		]
 	},
 	"crit_damage_025": {
-		"title": "kubejs.puffskill.def.crit_damage_025.title",
-		"description": "kubejs.puffskill.def.crit_damage_025.desc",
-		"extra_description": "kubejs.puffskill.exdesc.crit_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.crit_damage_025.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.crit_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -540,9 +591,12 @@
 		]
 	},
 	"current_hp_damage_add_003": {
-		"title": "kubejs.puffskill.def.current_hp_damage_add_003.title",
-		"description": "kubejs.puffskill.def.current_hp_damage_add_003.desc",
-		"extra_description": "kubejs.puffskill.exdesc.current_hp_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.current_hp_damage_add_003.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.current_hp_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -567,9 +621,12 @@
 		]
 	},
 	"prot_shred_add_005": {
-		"title": "kubejs.puffskill.def.prot_shred_add_005.title",
-		"description": "kubejs.puffskill.def.prot_shred_add_005.desc",
-		"extra_description": "kubejs.puffskill.exdesc.prot_shred",
+		"title": {
+			"translate": "kubejs.puffskill.def.prot_shred_add_005.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.prot_shred"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -594,9 +651,12 @@
 		]
 	},
 	"knockback_resistance_add_01": {
-		"title": "kubejs.puffskill.def.knockback_resistance_add_01.title",
-		"description": "kubejs.puffskill.def.knockback_resistance_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.knockback_resistance",
+		"title": {
+			"translate": "kubejs.puffskill.def.knockback_resistance_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.knockback_resistance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -621,9 +681,12 @@
 		]
 	},
 	"knockback_add_05": {
-		"title": "kubejs.puffskill.def.knockback_add_05.title",
-		"description": "kubejs.puffskill.def.knockback_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.knockback",
+		"title": {
+			"translate": "kubejs.puffskill.def.knockback_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.knockback"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -648,9 +711,12 @@
 		]
 	},
 	"draw_speed_add_03": {
-		"title": "kubejs.puffskill.def.draw_speed_add_03.title",
-		"description": "kubejs.puffskill.def.draw_speed_add_03.desc",
-		"extra_description": "kubejs.puffskill.exdesc.draw_speed",
+		"title": {
+			"translate": "kubejs.puffskill.def.draw_speed_add_03.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.draw_speed"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {

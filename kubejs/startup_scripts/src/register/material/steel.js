@@ -1,3 +1,5 @@
+const { RARE } = require("../../utils/itemborder")
+
 ItemEvents.toolTierRegistry(event => {
     event.add('steel', tier => {
         tier.uses = 1200
@@ -39,16 +41,16 @@ ItemEvents.armorTierRegistry(event => {
 
 StartupEvents.registry('item', event => {
 
-    event.create('steel_helmet', 'helmet').texture('kubejs:item/steel_helmet').tier('steel').tag('minecraft:trimmable_armor')
-    event.create('steel_chestplate', 'chestplate').texture('kubejs:item/steel_chestplate').tier('steel').tag('minecraft:trimmable_armor')
-    event.create('steel_leggings', 'leggings').texture('kubejs:item/steel_leggings').tier('steel').tag('minecraft:trimmable_armor')
-    event.create('steel_boots', 'boots').texture('kubejs:item/steel_boots').tier('steel').tag('minecraft:trimmable_armor')
+    event.create('steel_helmet', 'helmet').texture('kubejs:item/steel_helmet').tier('steel').tag('minecraft:trimmable_armor').rarity('rare').tag(RARE)
+    event.create('steel_chestplate', 'chestplate').texture('kubejs:item/steel_chestplate').tier('steel').tag('minecraft:trimmable_armor').rarity('rare').tag(RARE)
+    event.create('steel_leggings', 'leggings').texture('kubejs:item/steel_leggings').tier('steel').tag('minecraft:trimmable_armor').rarity('rare').tag(RARE)
+    event.create('steel_boots', 'boots').texture('kubejs:item/steel_boots').tier('steel').tag('minecraft:trimmable_armor').rarity('rare').tag(RARE)
 
     event.create('steel_sword', 'sword').tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/steel_sword').tier('steel')
 
-    event.create('steel_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('travelersbackpack:acceptable_tools').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/steel_pickaxe').tier('steel')
-    event.create('steel_axe', 'axe').tag('minecraft:axes').tag('forge:tools').tag('forge:tools/axes').tag('minecraft:tools').texture('kubejs:item/steel_axe').tier('steel')
-    event.create('steel_hoe', 'hoe').tag('minecraft:hoes').tag('forge:tools').tag('forge:tools/hoes').tag('minecraft:tools').texture('kubejs:item/steel_hoe').tier('steel')
-    event.create('steel_shovel', 'shovel').tag('minecraft:shovels').tag('forge:tools').tag('forge:tools/shovels').tag('minecraft:tools').texture('kubejs:item/steel_shovel').tier('steel')
+    event.create('steel_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('travelersbackpack:acceptable_tools').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/steel_pickaxe').tier('steel').rarity('rare').tag(RARE)
+    event.create('steel_axe', 'axe').tag('minecraft:axes').tag('forge:tools').tag('forge:tools/axes').tag('minecraft:tools').texture('kubejs:item/steel_axe').tier('steel').rarity('rare').tag(RARE)
+    event.create('steel_hoe', 'hoe').tag('minecraft:hoes').tag('forge:tools').tag('forge:tools/hoes').tag('minecraft:tools').texture('kubejs:item/steel_hoe').tier('steel').rarity('rare').tag(RARE)
+    event.create('steel_shovel', 'shovel').tag('minecraft:shovels').tag('forge:tools').tag('forge:tools/shovels').tag('minecraft:tools').texture('kubejs:item/steel_shovel').tier('steel').rarity('rare').tag(RARE)
 
 })

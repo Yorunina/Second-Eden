@@ -54,7 +54,8 @@
     "cagedmobs_jade": true
   },
   "exposure": {
-    "lightroom": true
+    "lightroom": true,
+    "photograph_frame": true
   },
   "crockpot": {
     "birdcage": true,

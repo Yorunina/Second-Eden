@@ -2,8 +2,9 @@
 const { SliceChunkArray, RandomGet } = require("../../utils/common")
 const { AirdropPoolItem } = require('../../model/airdrop_pool_model')
 
-EntityEvents.death('kubejs:airdrop_balloon', event => {
+EntityEvents.death(event => {
     let { entity } = event
+    if (!entity.getTags().contains('kubejs:airdrop_balloon')) return
     let type = entity.persistentData.getString('type')
     if (!type) return
     if (!AirdropDeathStrategy[type]) return

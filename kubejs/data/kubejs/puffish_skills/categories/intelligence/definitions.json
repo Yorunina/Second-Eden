@@ -1,8 +1,11 @@
 {
 	"root_intelligence": {
-		"title": "kubejs.puffskill.def.root_intelligence.title",
-		"description": "kubejs.puffskill.def.root_intelligence.desc",
-		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.root_intelligence.title"
+		},
+		"description": {
+			"translate": "kubejs.puffskill.def.root_intelligence.desc"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -15,21 +18,15 @@
 				"effect": "health_boost"
 			}
 		},
-		"rewards": [
-			{
-				"type": "puffish_skills:attribute",
-				"data": {
-					"attribute": "kubejs:decode_ability",
-					"value": 1,
-					"operation": "addition"
-				}
-			}
-		]
+		"rewards": []
 	},
 	"cold_damage_add_05": {
-		"title": "kubejs.puffskill.def.cold_damage_add_05.title",
-		"description": "kubejs.puffskill.def.cold_damage_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.cold_damage_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.cold_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -54,9 +51,12 @@
 		]
 	},
 	"cold_damage_add_1": {
-		"title": "kubejs.puffskill.def.cold_damage_add_1.title",
-		"description": "kubejs.puffskill.def.cold_damage_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.cold_damage_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.cold_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -81,9 +81,12 @@
 		]
 	},
 	"cold_damage_add_2": {
-		"title": "kubejs.puffskill.def.cold_damage_add_2.title",
-		"description": "kubejs.puffskill.def.cold_damage_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.cold_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.cold_damage_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.cold_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -108,9 +111,12 @@
 		]
 	},
 	"cold_damage_multiply_base_05": {
-		"title": "kubejs.puffskill.def.cold_damage_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.cold_damage_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.cold_damage_multiply_base_05",
+		"title": {
+			"translate": "kubejs.puffskill.def.cold_damage_multiply_base_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.cold_damage_multiply_base_05"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -143,9 +149,12 @@
 		]
 	},
 	"fire_damage_add_05": {
-		"title": "kubejs.puffskill.def.fire_damage_add_05.title",
-		"description": "kubejs.puffskill.def.fire_damage_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.fire_damage_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fire_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -170,9 +179,12 @@
 		]
 	},
 	"fire_damage_add_1": {
-		"title": "kubejs.puffskill.def.fire_damage_add_1.title",
-		"description": "kubejs.puffskill.def.fire_damage_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.fire_damage_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fire_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -197,9 +209,12 @@
 		]
 	},
 	"fire_damage_add_2": {
-		"title": "kubejs.puffskill.def.fire_damage_add_2.title",
-		"description": "kubejs.puffskill.def.fire_damage_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fire_damage",
+		"title": {
+			"translate": "kubejs.puffskill.def.fire_damage_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fire_damage"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -224,9 +239,12 @@
 		]
 	},
 	"fire_damage_multiply_base_05": {
-		"title": "kubejs.puffskill.def.fire_damage_multiply_base_05.title",
-		"description": "kubejs.puffskill.def.fire_damage_multiply_base_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fire_damage_multiply_base_05",
+		"title": {
+			"translate": "kubejs.puffskill.def.fire_damage_multiply_base_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fire_damage_multiply_base_05"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -259,9 +277,12 @@
 		]
 	},
 	"luck_add_05": {
-		"title": "kubejs.puffskill.def.luck_add_05.title",
-		"description": "kubejs.puffskill.def.luck_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.luck",
+		"title": {
+			"translate": "kubejs.puffskill.def.luck_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.luck"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -286,9 +307,12 @@
 		]
 	},
 	"luck_add_1": {
-		"title": "kubejs.puffskill.def.luck_add_1.title",
-		"description": "kubejs.puffskill.def.luck_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.luck",
+		"title": {
+			"translate": "kubejs.puffskill.def.luck_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.luck"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -313,9 +337,12 @@
 		]
 	},
 	"fortune_add_05": {
-		"title": "kubejs.puffskill.def.fortune_add_05.title",
-		"description": "kubejs.puffskill.def.fortune_add_05.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fortune",
+		"title": {
+			"translate": "kubejs.puffskill.def.fortune_add_05.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fortune"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -340,9 +367,12 @@
 		]
 	},
 	"fortune_add_1": {
-		"title": "kubejs.puffskill.def.fortune_add_1.title",
-		"description": "kubejs.puffskill.def.fortune_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.fortune",
+		"title": {
+			"translate": "kubejs.puffskill.def.fortune_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.fortune"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -367,9 +397,12 @@
 		]
 	},
 	"treasure_distance_reduce_16": {
-		"title": "kubejs.puffskill.def.treasure_distance_reduce_16.title",
-		"description": "kubejs.puffskill.def.treasure_distance_reduce_16.desc",
-		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"title": {
+			"translate": "kubejs.puffskill.def.treasure_distance_reduce_16.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.treasure_distance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -394,9 +427,12 @@
 		]
 	},
 	"treasure_distance_reduce_32": {
-		"title": "kubejs.puffskill.def.treasure_distance_reduce_32.title",
-		"description": "kubejs.puffskill.def.treasure_distance_reduce_32.desc",
-		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"title": {
+			"translate": "kubejs.puffskill.def.treasure_distance_reduce_32.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.treasure_distance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -421,9 +457,12 @@
 		]
 	},
 	"treasure_distance_reduce_64": {
-		"title": "kubejs.puffskill.def.treasure_distance_reduce_64.title",
-		"description": "kubejs.puffskill.def.treasure_distance_reduce_64.desc",
-		"extra_description": "kubejs.puffskill.exdesc.treasure_distance",
+		"title": {
+			"translate": "kubejs.puffskill.def.treasure_distance_reduce_64.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.treasure_distance"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -448,9 +487,12 @@
 		]
 	},
 	"treasure_fortune_add_1": {
-		"title": "kubejs.puffskill.def.treasure_fortune_add_1.title",
-		"description": "kubejs.puffskill.def.treasure_fortune_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.treasure_fortune",
+		"title": {
+			"translate": "kubejs.puffskill.def.treasure_fortune_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.treasure_fortune"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -475,9 +517,12 @@
 		]
 	},
 	"encode_ability_add_1": {
-		"title": "kubejs.puffskill.def.encode_ability_add_1.title",
-		"description": "kubejs.puffskill.def.encode_ability_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.encode_ability_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.encode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -502,9 +547,12 @@
 		]
 	},
 	"encode_ability_add_2": {
-		"title": "kubejs.puffskill.def.encode_ability_add_2.title",
-		"description": "kubejs.puffskill.def.encode_ability_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.encode_ability_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.encode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -529,9 +577,12 @@
 		]
 	},
 	"encode_ability_add_3": {
-		"title": "kubejs.puffskill.def.encode_ability_add_3.title",
-		"description": "kubejs.puffskill.def.encode_ability_add_3.desc",
-		"extra_description": "kubejs.puffskill.exdesc.encode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.encode_ability_add_3.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.encode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -556,9 +607,12 @@
 		]
 	},
 	"overheal_add_01": {
-		"title": "kubejs.puffskill.def.overheal_add_01.title",
-		"description": "kubejs.puffskill.def.overheal_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.overheal",
+		"title": {
+			"translate": "kubejs.puffskill.def.overheal_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.overheal"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -583,9 +637,12 @@
 		]
 	},
 	"decode_ability_add_1": {
-		"title": "kubejs.puffskill.def.decode_ability_add_1.title",
-		"description": "kubejs.puffskill.def.decode_ability_add_1.desc",
-		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.decode_ability_add_1.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.decode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -610,9 +667,12 @@
 		]
 	},
 	"decode_ability_add_2": {
-		"title": "kubejs.puffskill.def.decode_ability_add_2.title",
-		"description": "kubejs.puffskill.def.decode_ability_add_2.desc",
-		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.decode_ability_add_2.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.decode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -637,9 +697,12 @@
 		]
 	},
 	"decode_ability_add_3": {
-		"title": "kubejs.puffskill.def.decode_ability_add_3.title",
-		"description": "kubejs.puffskill.def.decode_ability_add_3.desc",
-		"extra_description": "kubejs.puffskill.exdesc.decode_ability",
+		"title": {
+			"translate": "kubejs.puffskill.def.decode_ability_add_3.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.decode_ability"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {
@@ -664,9 +727,12 @@
 		]
 	},
 	"life_steal_add_01": {
-		"title": "kubejs.puffskill.def.life_steal_add_01.title",
-		"description": "kubejs.puffskill.def.life_steal_add_01.desc",
-		"extra_description": "kubejs.puffskill.exdesc.life_steal",
+		"title": {
+			"translate": "kubejs.puffskill.def.life_steal_add_01.title"
+		},
+		"extra_description": {
+			"translate": "kubejs.puffskill.exdesc.life_steal"
+		},
 		"frame": {
 			"type": "advancement",
 			"data": {

@@ -13,7 +13,7 @@ NewerAirdropPool.set('land', [
     new AirdropPoolItem('minecraft:carrot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:potato').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
-    new AirdropPoolItem('travelersbackpack:red_sleeping_bag').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+    new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
 ])
 NewerAirdropPool.set('sea', [
@@ -27,7 +27,7 @@ NewerAirdropPool.set('sea', [
     new AirdropPoolItem('minecraft:carrot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:potato').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
-    new AirdropPoolItem('travelersbackpack:red_sleeping_bag').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+    new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
 ])
 
@@ -42,7 +42,7 @@ CommonAirdropPool.set('land', [
     new AirdropPoolItem('minecraft:carrot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:potato').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
-    new AirdropPoolItem('travelersbackpack:red_sleeping_bag').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+    new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
 ])
 CommonAirdropPool.set('sea', [
@@ -56,7 +56,7 @@ CommonAirdropPool.set('sea', [
     new AirdropPoolItem('minecraft:carrot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:potato').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
     new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
-    new AirdropPoolItem('travelersbackpack:red_sleeping_bag').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+    new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
 ])
 

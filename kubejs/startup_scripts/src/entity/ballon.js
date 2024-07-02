@@ -1,24 +1,75 @@
+const AirDropBalloonType = ['airdrop_balloon', 'airdrop_balloon_red', 'airdrop_balloon_blue', 'airdrop_balloon_yellow']
+
 StartupEvents.registry('entity_type', event => {
-    event.create('airdrop_balloon', 'entityjs:mob')
-        .mobCategory('misc')
-        .setRenderType('translucent')
-        .sized(1.2, 5.0)
-        .updateInterval(1)
-        .modelResource(() => 'kubejs:geo/airdrop_balloon.geo.json')
-        .textureResource(() => 'kubejs:textures/entity/airdrop_balloon.png')
-        .canSpawnFarFromPlayer(true)
-        .isPersistenceRequired(true)
-        .isPushable(true)
-        .setSoundVolume(0)
-        .onAddedToWorld(entity => {
-            entity.setNoGravity(true)
-        })
+    AirDropBalloonType.forEach(type => {
+        event.create(type, 'entityjs:mob')
+            .mobCategory('misc')
+            .tag('kubejs:airdrop_balloon')
+            .setRenderType('translucent')
+            .sized(1.4, 4.5)
+            .updateInterval(1)
+            .modelResource(() => 'kubejs:geo/airdrop_balloon.geo.json')
+            .textureResource(() => `kubejs:textures/entity/${type}.png`)
+            .canSpawnFarFromPlayer(true)
+            .isPersistenceRequired(true)
+            .isPushable(true)
+            .setSoundVolume(0)
+            .onAddedToWorld(entity => {
+                entity.setNoGravity(true)
+            })
+
+        event.create(`med_${type}`, 'entityjs:mob')
+            .mobCategory('misc')
+            .tag('kubejs:airdrop_balloon')
+            .setRenderType('translucent')
+            .sized(1.5, 5.0)
+            .updateInterval(1)
+            .modelResource(() => 'kubejs:geo/med_airdrop_balloon.geo.json')
+            .textureResource(() => `kubejs:textures/entity/med_${type}.png`)
+            .canSpawnFarFromPlayer(true)
+            .isPersistenceRequired(true)
+            .isPushable(true)
+            .setSoundVolume(0)
+            .onAddedToWorld(entity => {
+                entity.setNoGravity(true)
+            })
+
+        event.create(`adv_${type}`, 'entityjs:mob')
+            .mobCategory('misc')
+            .tag('kubejs:airdrop_balloon')
+            .setRenderType('translucent')
+            .sized(1.6, 6.0)
+            .updateInterval(1)
+            .modelResource(() => 'kubejs:geo/adv_airdrop_balloon.geo.json')
+            .textureResource(() => `kubejs:textures/entity/adv_${type}.png`)
+            .canSpawnFarFromPlayer(true)
+            .isPersistenceRequired(true)
+            .isPushable(true)
+            .setSoundVolume(0)
+            .onAddedToWorld(entity => {
+                entity.setNoGravity(true)
+            })
+    })
+
 })
 
 EntityJSEvents.attributes(event => {
-    event.modify('kubejs:airdrop_balloon', attribute => {
-        attribute.add('minecraft:generic.max_health', 50)
-        attribute.add('minecraft:generic.movement_speed', 0.0)
-        attribute.add('minecraft:generic.attack_damage', 0.0)
+    AirDropBalloonType.forEach(type => {
+        event.modify(`kubejs:${type}`, attribute => {
+            attribute.add('minecraft:generic.max_health', 20)
+            attribute.add('minecraft:generic.movement_speed', 0.0)
+            attribute.add('minecraft:generic.attack_damage', 0.0)
+        })
+        event.modify(`kubejs:med_${type}`, attribute => {
+            attribute.add('minecraft:generic.max_health', 50)
+            attribute.add('minecraft:generic.movement_speed', 0.0)
+            attribute.add('minecraft:generic.attack_damage', 0.0)
+        })
+        event.modify(`kubejs:adv_${type}`, attribute => {
+            attribute.add('minecraft:generic.max_health', 100)
+            attribute.add('minecraft:generic.movement_speed', 0.0)
+            attribute.add('minecraft:generic.attack_damage', 0.0)
+        })
     })
+
 })
