@@ -13,7 +13,6 @@ ItemEvents.toolTierRegistry(event => {
 
 StartupEvents.registry('block', event => {
     event.create('iridium_block', 'basic')
-        .material('netherite_block')
         .soundType("netherite_block")
         .textureAll('kubejs:block/iridium_block')
         .resistance(3000)

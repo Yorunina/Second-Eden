@@ -1,4 +1,4 @@
-// priority: 1000
+// priority: 950
 const { RandomGet, SliceChunkArray } = require('./common')
 const { AirdropPoolItem } = require('../model/airdrop_pool_model')
 

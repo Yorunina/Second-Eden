@@ -1,11 +1,10 @@
 // priority: 900
-const { AtlasTypeMapping } = require('../utils/atlas_type')
 /**
  * 空投实体配置
  * @param {$ItemStack_} atlasItem 
  */
 export function AirdropEntityConfig(atlasItem) {
-    this.type = atlasItem.nbt?.getString('type') ? atlasItem.nbt?.getString('type') : AtlasTypeMapping.get(atlasItem.id)
+    this.type = atlasItem.nbt?.getString('type') ? atlasItem.nbt?.getString('type') : global.AtlasTypeMapping.get(atlasItem.id)
     this.entityType = 'kubejs:airdrop_balloon'
     this.theme = atlasItem.nbt?.getString('theme') ? atlasItem.nbt?.getString('theme') : 'random'
 }
