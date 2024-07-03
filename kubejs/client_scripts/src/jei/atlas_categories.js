@@ -32,8 +32,6 @@ function handleLookupAtlas(jeiHelpers, builder, recipe, focuses) {
             .addItemStack(Item.of(poolItem.itemId).withCount(poolItem.maxCount).withChance(poolItem.chance))
             .setBackground(guiHelper.getSlotDrawable(), -1, -1)
     }
-
-
 }
 
 /**
@@ -50,8 +48,12 @@ function drawHandlerAtlas(jeiHelpers, recipe, recipeSlotsView, guiGraphics, mous
 }
 
 JEIAddedEvents.registerRecipes((event) => {
-    global.AirdropPool['newer'].forEach((value, key, map) => {
-        event.custom("kubejs:atlas")
-            .add({ outputs: value, atlas: Item.of('kubejs:newer_atlas'), theme: key})
+    // 遍历类型map
+    global.AtlasTypeMapping.forEach((value, key, map) => {
+        // 遍历主题map，不忽略报错，以排查问题
+        global.AirdropPool[value].forEach((poolValue, poolKey, poolMap) => {
+            event.custom('kubejs:atlas')
+                .add({ outputs: poolValue, atlas: Item.of(key), theme: poolKey})
+        })
     })
 })

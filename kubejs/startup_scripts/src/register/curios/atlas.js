@@ -1,6 +1,10 @@
 const { COMMON, RARE, EPIC, LEGENDARY, OVERLIMIT } = require("../../utils/itemborder")
 
 StartupEvents.registry('item', event => {
+    // 地图册主题标签
+    event.create('atlas_theme_nametag').rarity('epic').maxStackSize(1).tag(LEGENDARY).texture('kubejs:item/atlas_theme_nametag')
+
+    // 地图册
     // 初心地图册
     event.create('newer_atlas').rarity('epic').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(EPIC)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -16,6 +20,13 @@ StartupEvents.registry('item', event => {
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1500, 'addition')
             .modifyAttribute('kubejs:encode_ability', 'CommonAtlasEncodeAbility', 1, 'addition')
+        ).texture('kubejs:item/curios/common_atlas')
+
+    // 社会型地图册（产生多个空投气球，由普通地图册升级而来）
+    event.create('sociality_atlas').rarity('epic').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(EPIC)
+        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
+            .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
+            .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1500, 'addition')
         ).texture('kubejs:item/curios/common_atlas')
 
     // 高级地图册

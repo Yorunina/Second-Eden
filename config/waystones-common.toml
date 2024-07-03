@@ -45,7 +45,7 @@
 	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
 	restrictRenameToOwner = false
 	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = false
+	generatedWaystonesUnbreakable = true
 	#If enabled, leashed mobs will be teleported with you
 	transportLeashed = true
 	#Whether to take leashed mobs with you when teleporting between dimensions
@@ -62,7 +62,7 @@
 	#Set to true if players should be able to teleport between waystones by simply right-clicking a waystone.
 	allowWaystoneToWaystoneTeleport = true
 	#Set to false to allow non-creative players to make waystones globally activated for all players.
-	globalWaystoneSetupRequiresCreativeMode = true
+	globalWaystoneSetupRequiresCreativeMode = false
 
 [cooldowns]
 	#The multiplier applied to the cooldown when teleporting to a global waystone via inventory button or warp stone.
@@ -70,7 +70,7 @@
 	globalWaystoneCooldownMultiplier = 1.0
 	#The cooldown between usages of the warp stone in seconds. This is bound to the player, not the item, so multiple warp stones share the same cooldown.
 	#Range: > -2147483648
-	warpStoneCooldown = 30
+	warpStoneCooldown = 60
 	#The time in ticks that it takes to use a warp stone. This is the charge-up time when holding right-click.
 	#Range: > -2147483648
 	warpStoneUseTime = 32
@@ -106,7 +106,7 @@
 	worldGenStyle = "BIOME"
 	#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
 	#Range: > -2147483648
-	frequency = 25
+	frequency = 0
 	#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
 	dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 	#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.
@@ -117,7 +117,7 @@
 	#These names will be used for the PRESET name generation mode. See the nameGenerationMode option for more info.
 	customWaystoneNames = []
 	#Set to true if waystones should be added to the generation of villages. Some villages may still spawn without a waystone.
-	spawnInVillages = true
+	spawnInVillages = false
 	#Ensures that pretty much every village will have a waystone, by spawning it as early as possible. In addition, this means waystones will generally be located in the center of the village.
 	forceSpawnInVillages = false
 

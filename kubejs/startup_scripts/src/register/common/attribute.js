@@ -8,7 +8,7 @@ StartupEvents.registry("attribute", event => {
      */
     event.createCustom("kubejs:treasure_distance", () => new $RangedAttribute("attribute.kubejs.treasure_distance", 0, 0, 65535).setSyncable(true))
     /**
-     * 宝藏幸运：玩家使用宝藏能力时，出现宝藏的稀有度描述系数。
+     * 宝藏时运：玩家使用宝藏能力时，出现宝藏的稀有度描述系数。
      */
     event.createCustom("kubejs:treasure_fortune", () => new $RangedAttribute("attribute.kubejs.treasure_fortune", 0, 0, 1024).setSyncable(true))
     /**

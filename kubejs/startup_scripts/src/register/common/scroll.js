@@ -1,6 +1,4 @@
-const { $EntityType } = require("packages/net/minecraft/world/entity/$EntityType");
-const { $MobSpawnType } = require("packages/net/minecraft/world/entity/$MobSpawnType");
-const { $ForgeRegistries } = require("packages/net/minecraftforge/registries/$ForgeRegistries");
+const { $EntityMaid } = require("packages/com/github/tartaricacid/touhoulittlemaid/entity/passive/$EntityMaid");
 
 StartupEvents.registry('item', event => {
     event.create('scroll_maid').maxStackSize(1)
@@ -12,6 +10,7 @@ StartupEvents.registry('item', event => {
         .finishUsing((itemstack, level, entity) => {
             if (level.isClientSide()) return itemstack
             if (!entity.isPlayer()) return itemstack
+            // new $EntityMaid(level).finalizeSpawn(level, level.getCurrentDifficultyAt(spawnLocation), $MobSpawnType.PATROL, null, null)
             level.runCommandSilent(`/summon touhou_little_maid:maid ${entity.x} ${entity.y} ${entity.z}`)
             return Item.of('air')
         })

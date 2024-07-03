@@ -1,10 +1,10 @@
 // priority: 100
-const { $ServerPlayer } = require("packages/net/minecraft/server/level/$ServerPlayer")
-const { $MapItem } = require("packages/net/minecraft/world/item/$MapItem")
-const { $MapDecoration$Type } = require("packages/net/minecraft/world/level/saveddata/maps/$MapDecoration$Type")
-const { $MapItemSavedData } = require("packages/net/minecraft/world/level/saveddata/maps/$MapItemSavedData")
-const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$ChunkStatus")
-const { AirdropEntityConfig } = require("../../model/airdrop_entity_config")
+const { $ServerPlayer } = require('packages/net/minecraft/server/level/$ServerPlayer')
+const { $MapItem } = require('packages/net/minecraft/world/item/$MapItem')
+const { $MapDecoration$Type } = require('packages/net/minecraft/world/level/saveddata/maps/$MapDecoration$Type')
+const { $MapItemSavedData } = require('packages/net/minecraft/world/level/saveddata/maps/$MapItemSavedData')
+const { $ChunkStatus } = require('packages/net/minecraft/world/level/chunk/$ChunkStatus')
+const { AirdropEntityConfig } = require('../../model/airdrop_entity_config')
 
 NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     let { level, player } = event
@@ -87,6 +87,7 @@ function getAirdropEntity(level, player, pos, config) {
     airdropEntity.persistentData.putString('owner', player.stringUuid)
     airdropEntity.persistentData.putFloat('fortune', treasureFortune)
     airdropEntity.persistentData.putString('type', config.type)
+    airdropEntity.persistentData.putString('theme', config.theme)
     airdropEntity.setPosition(pos.x, pos.y, pos.z)
     return airdropEntity
 }
@@ -99,14 +100,14 @@ function getAirdropEntity(level, player, pos, config) {
 function getMapItem(level, pos) {
     let mapItem = $MapItem.create(level, pos.x, pos.z, 1, true, true)
     $MapItem.renderBiomePreviewMap(level, mapItem)
-    $MapItemSavedData.addTargetDecoration(mapItem, pos, "+", $MapDecoration$Type.RED_X)
-    mapItem = mapItem.withName({ "translate": "item.map.kubejs.airdrop" })
+    $MapItemSavedData.addTargetDecoration(mapItem, pos, '+', $MapDecoration$Type.RED_X)
+    mapItem = mapItem.withName(Text.translatable('item.map.kubejs.airdrop'))
     return mapItem
 }
 
 
 /**
- * 空投呼唤策略
+ * 地图册策略，注册地图册物品之后需要实现其对应的策略，而后去注册AtlasTypeMapping中地图册对应的airdrop type
  * @constant
  * @type {Object<string,function($NetworkEventJS_, $ItemStack_):void>}
  * @returns {$BlockPos_}
@@ -119,7 +120,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('newer'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -134,7 +135,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('common'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -149,7 +150,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('advanced'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_blue'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -164,7 +165,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('ultra'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_yellow'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -179,7 +180,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('wooden'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -194,7 +195,7 @@ const AtlasActiveStrategy = {
 
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('common').setEntityType('huge_airdrop_balloon'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('adv_airdrop_balloon'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -210,7 +211,7 @@ const AtlasActiveStrategy = {
         let airdropPos = getSpawnLocation(level, player)
         for (let i = 0; i < 12; i++) {
             airdropPos.offset(Math.random() * 3, Math.random() * 2, Math.random() * 3)
-            let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig('common').setEntityType('huge_airdrop_balloon'))
+            let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
             airdropEntity.spawn()
         }
 
