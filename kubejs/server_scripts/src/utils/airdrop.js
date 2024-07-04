@@ -25,7 +25,7 @@ export function GetItemListFromPoolItems(poolItems, fortune) {
  * @param {string} theme
  * @returns {$ItemStack_[]}
  */
-export function GetThemePackFromPool(poolMap, theme) {
+export function GetThemePackFromPool(poolMap, theme) {  
     if (!theme || theme == 'random' || !poolMap.has(theme)) {
         let keys = Array.from(poolMap.keys())
         let randomKey = RandomGet(keys)

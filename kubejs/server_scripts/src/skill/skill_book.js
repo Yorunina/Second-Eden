@@ -1,5 +1,6 @@
 const { $SkillsAPI } = require("packages/net/puffish/skillsmod/api/$SkillsAPI")
 const { $SkillsMod } = require("packages/net/puffish/skillsmod/$SkillsMod")
+const { $Skill } = require("packages/com/minecolonies/api/entity/citizen/$Skill")
 
 const MAX_COMMON_SKILL_POINTS = 25
 ItemEvents.rightClicked('kubejs:skill_book_strength', event => {
@@ -45,6 +46,19 @@ ItemEvents.rightClicked('kubejs:skill_book_intelligence', event => {
     }
     player.setStatusMessage(Text.translatable('msg.player.common.skill_point_claim_succ', Text.translatable(`msg.player.skill_type.intelligence`).gold(), Text.gold('1')))
     cateGory.addExtraPoints(player, 1)
+    item.shrink(1)
+})
+
+ItemEvents.rightClicked('kubejs:skill_forget_book', event => {
+    let { player, item } = event
+    if (!player) return
+    ['intelligence', 'agility', 'strength'].forEach(skillType => {
+        let cateGory = getSkillCategory(new ResourceLocation('kubejs', skillType))
+        let originPoint = cateGory.getExtraPoints(player)
+        cateGory.resetSkills(player)
+        cateGory.setExtraPoints(player, originPoint)
+    })
+    player.setStatusMessage(Text.translatable('msg.player.common.skill_forget_succ').gold())
     item.shrink(1)
 })
 

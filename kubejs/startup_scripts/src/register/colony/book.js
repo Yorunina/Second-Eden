@@ -1,4 +1,4 @@
-const { RARE, EPIC, LEGENDARY } = require("../../utils/itemborder")
+const { RARE, EPIC, LEGENDARY, OVERLIMIT } = require("../../utils/itemborder")
 
 StartupEvents.registry('item', event => {
     event.create('book_of_knowledge', 'basic')
@@ -36,7 +36,18 @@ StartupEvents.registry('item', event => {
         .rarity('epic')
         .tag(LEGENDARY)
         .texture('kubejs:item/skill_book_intelligence')
+    event.create('skill_forget_book')
+        .maxStackSize(16)
+        .rarity('epic')
+        .tag(LEGENDARY)
+        .texture('kubejs:item/skill_forget_book')
 
+    event.create('master_certificate', "basic")
+        .maxStackSize(16)
+        .rarity('epic')
+        .tag(OVERLIMIT)
+        .tag('minecolonies:hide_citizen_data')
+        .texture('kubejs:item/master_certificate')
 
     event.create('soul_gem_adaptability', 'basic')
         .maxStackSize(16)

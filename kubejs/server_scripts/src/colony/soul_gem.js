@@ -1,6 +1,7 @@
 // priority: 100
 const { $Skill } = require("packages/com/minecolonies/api/entity/citizen/$Skill")
 const { GetCitizenFromEntity } = require("../utils/colony")
+const { ShuffleAndTake } = require("../utils/common")
 
 ItemEvents.entityInteracted(event => {
     let { target, player, item } = event
@@ -13,9 +14,9 @@ ItemEvents.entityInteracted(event => {
     if (!citizen) return
 
     let educationAbility = player.getAttribute('kubejs:education_ability').getValue()
-    let increment = Math.min(Math.floor(1 + rank * educationAbility * 0.1), 100)
-    let skill = TeachingManualAttributes[item.id]
-    
+    let increment = Math.min(Math.ceil(1 + rank * educationAbility * 0.1), 100)
+    let skill = SoulGemTypeMapping[item.id] 
+
     let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
     citizen.getCitizenSkillHandler().incrementLevel(skill, increment)
 
@@ -25,7 +26,23 @@ ItemEvents.entityInteracted(event => {
     item.shrink(1)
 })
 
-const TeachingManualAttributes = {
+ItemEvents.entityInteracted('kubejs:master_certificate', event => {
+    let { target, player, item } = event
+    if (target.type != 'minecolonies:citizen') return
+
+    let citizen = GetCitizenFromEntity(target)
+    if (!citizen) return
+    ShuffleAndTake(CitizenAttributeList, 3).forEach(skill => {
+        let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
+        let increment = 40 - oldLevel
+        if (increment < 0) return
+        citizen.getCitizenSkillHandler().incrementLevel(skill, increment)
+    })
+    player.setStatusMessage(Text.translatable(`msg.master_certificate.using.1`, Text.green(citizen.getName())))
+    item.shrink(1)
+})
+
+const SoulGemTypeMapping = {
     'kubejs:soul_gem_adaptability': $Skill.Adaptability,
     'kubejs:soul_gem_agility': $Skill.Agility,
     'kubejs:soul_gem_athletics': $Skill.Athletics,
@@ -38,3 +55,5 @@ const TeachingManualAttributes = {
     'kubejs:soul_gem_strength': $Skill.Strength,
     'kubejs:soul_gem_stamina': $Skill.Stamina,
 }
+
+const CitizenAttributeList = [$Skill.Adaptability, $Skill.Agility, $Skill.Athletics, $Skill.Creativity, $Skill.Dexterity, $Skill.Focus, $Skill.Intelligence, $Skill.Knowledge, $Skill.Mana, $Skill.Strength, $Skill.Stamina,]

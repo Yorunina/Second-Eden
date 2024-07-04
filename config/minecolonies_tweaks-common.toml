@@ -1,6 +1,6 @@
 
 [tools]
-	customTypes = []
+	customTypes = ["{\"name\": \"knives\", \"hasVariableMaterials\": false}"]
 
 [worldGens]
 	#Range: 0.0 ~ 1.0

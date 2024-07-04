@@ -6,7 +6,6 @@ ItemEvents.entityInteracted('kubejs:transmog_mirror', event => {
     if (entity.isShiftKeyDown()) return
 
     if (target.isPlayer()) {
-        // 将玩家uuid置入
         let targetUUID = target.uuid.toString()
         let targetName = target.getUsername()
         if (item.nbt) {

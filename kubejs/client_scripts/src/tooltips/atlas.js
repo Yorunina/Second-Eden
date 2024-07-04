@@ -7,4 +7,8 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('#kubejs:soul_gem', (item, advanced, text) => {
         text.add(1, Text.translatable(`tooltip.item.kubejs.${item.idLocation.path}`).gold())
     })
+
+    tooltip.addAdvanced('kubejs:master_certificate', (item, advanced, text) => {
+        text.add(1, Text.translatable(`tooltip.item.kubejs.master_certificate`).gold())
+    })
 })

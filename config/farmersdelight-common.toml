@@ -51,7 +51,7 @@
 #World generation
 [world]
 	#Should this mod add some of its items (ropes, seeds, knives, meals etc.) as extra chest loot across Minecraft?
-	generateFDChestLoot = true
+	generateFDChestLoot = false
 	#Generate Compost Heaps across all village biomes
 	genVillageCompostHeaps = true
 

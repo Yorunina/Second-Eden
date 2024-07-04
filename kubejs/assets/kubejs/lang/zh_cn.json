@@ -32,6 +32,7 @@
     "msg.player.skill_type.strength": "力量",
     "msg.player.skill_type.agility": "敏捷",
     "msg.player.skill_type.intelligence": "智力",
+    "msg.player.common.skill_forget_succ": "你已重置所有技能线的技能点数",
 
     "msg.soul_gem_adaptability.using.1": "%s的适应性提升了%d->%d",
     "msg.soul_gem_agility.using.1": "%s的敏捷提升了%d->%d",
@@ -45,6 +46,7 @@
     "msg.soul_gem_strength.using.1": "%s的力量提升了%d->%d",
     "msg.soul_gem_stamina.using.1": "%s的耐力提升了%d->%d",
     "msg.undead_raid_book.using.1": "一群食尸鬼集结在了 %d, %d 处，它们渴求着殖民者的鲜血",
+    "msg.master_certificate.using.1": "%s被一种特殊的力量感染，现在他在某些领域的技巧近乎登峰造极",
 
     "com.kubejs.research.civilian.introeconomics.name": "初级经济学",
     "com.kubejs.research.civilian.introeconomics.subtitle": "其他城镇与我们的交流愈加频繁，一种用于统一度量价值的方案被居民们自发的提出。",
@@ -110,6 +112,7 @@
     "tooltip.item.kubejs.soul_gem_mana": "右键市民使用，用以提升其魔力",
     "tooltip.item.kubejs.soul_gem_strength": "右键市民使用，用以提升其力量",
     "tooltip.item.kubejs.soul_gem_stamina": "右键市民使用，用以提升其耐力",
+    "tooltip.item.kubejs.master_certificate": "右键市民使用，能够使其随机三个属性提升至45级",
 
     "tooltip.item.kubejs.peaceful_ring.1": "你受到来自玩家的伤害会极大幅度降低",
     "tooltip.item.kubejs.peaceful_ring.2": "同时你对玩家造成的伤害也会极大幅度降低",

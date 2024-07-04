@@ -6,7 +6,7 @@ StartupEvents.registry("attribute", event => {
     /**
      * 宝藏距离：玩家使用宝藏能力时，出现宝藏的距离系数。
      */
-    event.createCustom("kubejs:treasure_distance", () => new $RangedAttribute("attribute.kubejs.treasure_distance", 0, 0, 65535).setSyncable(true))
+    event.createCustom("kubejs:treasure_distance", () => new $RangedAttribute("attribute.kubejs.treasure_distance", 64, 64, 65535).setSyncable(true))
     /**
      * 宝藏时运：玩家使用宝藏能力时，出现宝藏的稀有度描述系数。
      */

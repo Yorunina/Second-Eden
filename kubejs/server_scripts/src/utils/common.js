@@ -24,3 +24,16 @@ export function RandomGet(array) {
     let randomIndex = Math.floor(Math.random() * array.length);
     return array[randomIndex];
 }
+
+/**
+ * 
+ * @param {any[]} array 
+ * @param {number} n 
+ * @returns {any[]}
+ */
+export function ShuffleAndTake(array, n) {
+    let shuffledArray = array.slice()
+    // 使用sort方法打乱数组
+    shuffledArray.sort(() => Math.random() - 0.5)
+    return shuffledArray.slice(0, n)
+  }
