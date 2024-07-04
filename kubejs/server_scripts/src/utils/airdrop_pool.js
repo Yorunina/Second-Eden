@@ -121,5 +121,5 @@ const CommonAirdropPool = new Map()
 
 global.AirdropPool['newer'] = NewerAirdropPool
 global.AirdropPool['common'] = CommonAirdropPool
-global.AirdropPool['advanced'] = AdvancedAirdropPool
-global.AirdropPool['ultra'] = ultraAirdropPool
+// global.AirdropPool['advanced'] = AdvancedAirdropPool
+// global.AirdropPool['ultra'] = ultraAirdropPool
