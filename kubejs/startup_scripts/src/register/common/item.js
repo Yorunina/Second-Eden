@@ -1,7 +1,7 @@
 StartupEvents.registry('item', event => {
     event.create('echo_crystal', 'basic').texture('kubejs:item/echo_crystal')
     event.create('coal_coke', 'basic').burnTime(3200).texture('kubejs:item/coal_coke')
-    event.create('infinity_cooked_beef', 'basic')
+    event.create('eternal_steak', 'basic')
         .useAnimation('eat')
         .use((level, player, hand) => {
             return true;
@@ -16,5 +16,5 @@ StartupEvents.registry('item', event => {
             player.addItemCooldown(itemstack.id, 20 * 60)
             return itemstack
         })
-        .texture('kubejs:item/infinity_cooked_beef')
+        .texture('kubejs:item/eternal_steak')
 })

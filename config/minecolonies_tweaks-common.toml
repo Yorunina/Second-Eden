@@ -1,6 +1,6 @@
 
 [tools]
-	customTypes = ["{\"name\": \"knives\", \"hasVariableMaterials\": false}"]
+	customTypes = ["{\"name\": \"coin_engraving\", \"hasVariableMaterials\": false}"]
 
 [worldGens]
 	#Range: 0.0 ~ 1.0

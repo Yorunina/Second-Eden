@@ -16,7 +16,7 @@ export function ColonyCraftRecipes(crafter, resultItem, inputItems) {
         inputs.push({ item: inputItem.id, count: inputItem.count })
     })
     this.inputs = inputs
-    this.result = resultItem.id
+    this.result = resultItem.id + (resultItem.nbt ? resultItem.nbtString : '')
     this.count = resultItem.count
 }
 

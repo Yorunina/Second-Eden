@@ -1,0 +1,38 @@
+{
+    "key": "iridium",
+    "translation": "kubejs.miapi.material.iridium",
+    "icon": {
+        "type": "item",
+        "item": "kubejs:iridium_ingot"
+    },
+    "groups": [
+        "metal"
+    ],
+    "hardness": 12,
+    "density": 3.2,
+    "flexibility": 6,
+    "durability": 2000,
+    "mining_speed": 9,
+    "mining_level": 4,
+    "color_palette": {
+        "type": "grayscale_map",
+        "colors": {
+            "0": "080808",
+            "36": "000000",
+            "72": "572b75",
+            "108": "753c96",
+            "144": "8851af",
+            "180": "a56acf",
+            "216": "b884e0",
+            "252": "d5a3ff",
+            "255": "d5a3ff"
+        },
+        "filler": "interpolate"
+    },
+    "items": [
+        {
+            "item": "kubejs:iridium_ingot",
+            "value": 1
+        }
+    ]
+}

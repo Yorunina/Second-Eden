@@ -5,7 +5,7 @@ ItemEvents.toolTierRegistry(event => {
         tier.uses = 1200
         tier.speed = 7
         tier.attackDamageBonus = 3
-        tier.level = 2
+        tier.level = 3
         tier.enchantmentValue = 10
         tier.repairIngredient = 'kubejs:steel_ingot'
     })
