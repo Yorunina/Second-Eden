@@ -1,6 +1,6 @@
 // priority: 950
-const { RandomGet, SliceChunkArray } = require('./common')
-const { AirdropPoolItem } = require('../model/airdrop_pool_model')
+const { RandomGet, SliceChunkArray } = require("./common")
+const { AirdropPoolItem } = require("../model/airdrop_pool_model")
 
 /**
  * @param {AirdropPoolItem[]} poolItems
@@ -26,6 +26,8 @@ export function GetItemListFromPoolItems(poolItems, fortune) {
  * @returns {$ItemStack_[]}
  */
 export function GetThemePackFromPool(poolMap, theme) {  
+    // 存在潜在类型问题，需要强转
+    theme = String(theme)
     if (!theme || theme == 'random' || !poolMap.has(theme)) {
         let keys = Array.from(poolMap.keys())
         let randomKey = RandomGet(keys)

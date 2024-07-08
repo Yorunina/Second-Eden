@@ -1,5 +1,5 @@
 // priority: 500
-const { ColonyCraftRecipes } = require('../../model/citizen_recipes_model')
+const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.recipes(event => {
     event.remove({ mod: 'arcanelanterns' })
@@ -61,11 +61,11 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('enchanter_custom',
             Item.of('arcanelanterns:love_lantern'),
             [Item.of('minecraft:golden_carrot', 3), Item.of('minecraft:rabbit_foot', 3), Item.of('minecraft:soul_lantern', 1)])
-            .setResearchId('minecolonies:effects/advancedlanternsunlock', true))
+            .setResearchId('kubejs:effects/advancedlanternsunlock', true))
 
     event.addJson(`kubejs:crafterrecipes/enchanter/withering_lantern.json`,
         new ColonyCraftRecipes('enchanter_custom',
             Item.of('arcanelanterns:withering_lantern'),
             [Item.of('minecraft:wither_rose', 3), Item.of('minecraft:coal_block', 3), Item.of('minecraft:soul_lantern', 1)])
-            .setResearchId('minecolonies:effects/advancedlanternsunlock', true))
+            .setResearchId('kubejs:effects/advancedlanternsunlock', true))
 })

@@ -18,11 +18,11 @@ ItemEvents.entityInteracted('kubejs:transmog_mirror', event => {
         if (!item.nbt || !item.nbt.getString('uuid')) return
         let citizen = GetCitizenFromEntity(target)
         let colony = GetColonyByEntity(target)
-        citizen.setCustomTexture(item.nbt.getString('uuid'))
         if (!CheckColonyOwner(colony, entity)) {
-            entity.status(Text.translatable('msg.player.common.not_colony_owner').gold())
+            entity.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
             return
         }
+        citizen.setCustomTexture(item.nbt.getString('uuid'))
     }
 })
 

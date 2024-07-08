@@ -1,28 +1,31 @@
 // priority: 500
-const { ColonyCraftRecipes } = require('../../model/citizen_recipes_model')
+const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:quartz_enriched_iron' })
     event.remove({ output: 'refinedstorage:silicon' })
 
     event.remove({ output: 'refinedstorage:machine_casing' })
+    event.remove({ output: 'refinedstorage:storage_housing' })
     event.remove({ output: 'refinedstorage:controller' })
     event.remove({ output: 'refinedstorage:grid' })
     event.remove({ output: 'refinedstorage:crafting_grid' })
     event.remove({ output: 'refinedstorage:fluid_grid' })
     event.remove({ output: 'refinedstorage:disk_manipulator' })
     event.remove({ output: 'refinedstorage:disk_drive' })
-    event.remove({ output: 'refinedstorage:1k_storage_disk' })
-    event.remove({ output: 'refinedstorage:4k_storage_disk' })
-    event.remove({ output: 'refinedstorage:16k_storage_disk' })
-    event.remove({ output: 'refinedstorage:64k_storage_disk' })
-    event.remove({ output: 'refinedstorage:64k_fluid_storage_disk' })
-    event.remove({ output: 'refinedstorage:256k_fluid_storage_disk' })
-    event.remove({ output: 'refinedstorage:1024k_fluid_storage_disk' })
-    event.remove({ output: 'refinedstorage:4096k_fluid_storage_disk' })
+    event.remove({ output: 'refinedstorage:1k_storage_part' })
+    event.remove({ output: 'refinedstorage:4k_storage_part' })
+    event.remove({ output: 'refinedstorage:16k_storage_part' })
+    event.remove({ output: 'refinedstorage:64k_storage_part' })
+    event.remove({ output: 'refinedstorage:64k_fluid_storage_part' })
+    event.remove({ output: 'refinedstorage:256k_fluid_storage_part' })
+    event.remove({ output: 'refinedstorage:1024k_fluid_storage_part' })
+    event.remove({ output: 'refinedstorage:4096k_fluid_storage_part' })
 
     event.remove({ output: 'refinedstorage:creative_storage_disk' })
     event.remove({ output: 'refinedstorage:creative_fluid_storage_disk' })
+    event.remove({ output: 'refinedstorage:creative_storage_block' })
+    event.remove({ output: 'refinedstorage:creative_fluid_storage_block' })
 
     // todo 自动制作管理缺少部分配方
     event.remove({ output: 'refinedstorage:crafter' })
@@ -48,6 +51,11 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
+    event.addJson(`kubejs:crafterrecipes/mechanic/storage_housing.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:storage_housing', 1), [Item.of('refinedstorage:quartz_enriched_iron', 3), Item.of('minecraft:redstone', 3), Item.of('minecraft:glass', 2)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/multidimstoragetheory', true))
+
     event.addJson(`kubejs:crafterrecipes/enchanter/controller.json`,
         new ColonyCraftRecipes('enchanter_custom', Item.of('refinedstorage:controller', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('minecraft:soul_lantern', 1), Item.of('kubejs:echo_crystal', 1), Item.of('refinedstorage:silicon', 4)])
             .setMinBuildingLevel(3)
@@ -69,7 +77,7 @@ ServerEvents.highPriorityData(event => {
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
     event.addJson(`kubejs:crafterrecipes/mechanic/disk_manipulator.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:disk_manipulator', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:quartz_enriched_iron', 8), Item.of('refinedstorage:1k_storage_disk', 1)])
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:disk_manipulator', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:quartz_enriched_iron', 8), Item.of('refinedstorage:1k_storage_part', 1)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
@@ -78,57 +86,67 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/1k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:1k_storage_disk', 1), [Item.of('refinedstorage:quartz_enriched_iron', 4), Item.of('minecraft:ender_pearl', 1), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/1k_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:1k_storage_part', 1), [Item.of('refinedstorage:quartz_enriched_iron', 4), Item.of('minecraft:ender_pearl', 1), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/4k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:4k_storage_disk', 1), [Item.of('refinedstorage:1k_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/4k_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:4k_storage_part', 1), [Item.of('refinedstorage:1k_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/64k_fluid_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:64k_fluid_storage_disk', 1), [Item.of('refinedstorage:quartz_enriched_iron', 4), Item.of('minecraft:ender_pearl', 1), Item.of('minecraft:glass', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/64k_fluid_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:64k_fluid_storage_part', 1), [Item.of('refinedstorage:quartz_enriched_iron', 4), Item.of('minecraft:ender_pearl', 1), Item.of('minecraft:glass', 8)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/256k_fluid_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:256k_fluid_storage_disk', 1), [Item.of('refinedstorage:64k_fluid_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/256k_fluid_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:256k_fluid_storage_part', 1), [Item.of('refinedstorage:64k_fluid_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
     // 更多磁盘
-    event.addJson(`kubejs:crafterrecipes/mechanic/16k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:16k_storage_disk', 1), [Item.of('refinedstorage:4k_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/16k_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:16k_storage_part', 1), [Item.of('refinedstorage:4k_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(4)
             .setResearchId('kubejs:effects/morediskunlock', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/64k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:64k_storage_disk', 1), [Item.of('refinedstorage:16k_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/64k_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:64k_storage_part', 1), [Item.of('refinedstorage:16k_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(4)
             .setResearchId('kubejs:effects/morediskunlock', true))
 
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/1024k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:1024k_storage_disk', 1), [Item.of('refinedstorage:256k_fluid_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/1024k_fluid_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:1024k_fluid_storage_part', 1), [Item.of('refinedstorage:256k_fluid_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(4)
             .setResearchId('kubejs:effects/morediskunlock', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/4096k_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:4096k_storage_disk', 1), [Item.of('refinedstorage:1024k_storage_disk', 4), Item.of('refinedstorage:silicon', 8)])
+    event.addJson(`kubejs:crafterrecipes/mechanic/4096k_fluid_storage_part.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:4096k_fluid_storage_part', 1), [Item.of('refinedstorage:1024k_fluid_storage_part', 4), Item.of('refinedstorage:silicon', 8)])
             .setMinBuildingLevel(4)
             .setResearchId('kubejs:effects/morediskunlock', true))
 
     // 无穷无尽多维理论
     event.addJson(`kubejs:crafterrecipes/mechanic/creative_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_storage_disk', 1), [Item.of('refinedstorage:64k_storage_disk', 64), Item.of('refinedstorage:silicon', 128), Item.of('kubejs:echo_crystal', 16)])
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_storage_disk', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('refinedstorage:silicon', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:storage_housing')])
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/creativediskunlock', true))
 
     event.addJson(`kubejs:crafterrecipes/mechanic/creative_fluid_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_fluid_storage_disk', 1), [Item.of('refinedstorage:64k_storage_disk', 64), Item.of('minecraft:glass', 128), Item.of('kubejs:echo_crystal', 16)])
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_fluid_storage_disk', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('minecraft:glass', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:storage_housing')])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/creativediskunlock', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/creative_storage_block.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_storage_block', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('refinedstorage:silicon', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:machine_casing')])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/creativediskunlock', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/creative_fluid_storage_block.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_fluid_storage_block', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('minecraft:glass', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:machine_casing')])
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/creativediskunlock', true))
 

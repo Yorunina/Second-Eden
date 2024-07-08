@@ -1,5 +1,5 @@
 // priority: 500
-const { ColonyResearchModel, ItemRequirementModel, BuildingRequirementModel } = require('../../model/colony_research_model')
+const { ColonyResearchModel, ItemRequirementModel, BuildingRequirementModel } = require("../../model/colony_research_model")
 
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/lanternsunlock.json`,

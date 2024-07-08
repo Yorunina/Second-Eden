@@ -18,7 +18,7 @@ StartupEvents.registry('item', event => {
     event.create('common_atlas').rarity('common').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(COMMON)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1500, 'addition')
+            .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1000, 'addition')
             .modifyAttribute('kubejs:encode_ability', 'CommonAtlasEncodeAbility', 1, 'addition')
         ).texture('kubejs:item/curios/common_atlas')
 
@@ -33,7 +33,7 @@ StartupEvents.registry('item', event => {
     event.create('advanced_atlas').rarity('rare').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(RARE)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_distance', 'AdvancedAtlasTreasureDistance', 1500, 'addition')
+            .modifyAttribute('kubejs:treasure_distance', 'AdvancedAtlasTreasureDistance', 1000, 'addition')
             .modifyAttribute('kubejs:encode_ability', 'AdvancedAtlasEncodeAbility', 1, 'addition')
         ).texture('kubejs:item/curios/advanced_atlas')
 
@@ -41,7 +41,7 @@ StartupEvents.registry('item', event => {
     event.create('ultra_atlas').rarity('epic').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(EPIC)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_distance', 'UltraAtlasTreasureDistance', 1500, 'addition')
+            .modifyAttribute('kubejs:treasure_distance', 'UltraAtlasTreasureDistance', 1000, 'addition')
             .modifyAttribute('kubejs:encode_ability', 'UltraAtlasEncodeAbility', 1, 'addition')
         ).texture('kubejs:item/curios/ultra_atlas')
 

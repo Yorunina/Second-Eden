@@ -1,10 +1,12 @@
 // priority: 100
-const { $ServerPlayer } = require('packages/net/minecraft/server/level/$ServerPlayer')
-const { $MapItem } = require('packages/net/minecraft/world/item/$MapItem')
-const { $MapDecoration$Type } = require('packages/net/minecraft/world/level/saveddata/maps/$MapDecoration$Type')
-const { $MapItemSavedData } = require('packages/net/minecraft/world/level/saveddata/maps/$MapItemSavedData')
-const { $ChunkStatus } = require('packages/net/minecraft/world/level/chunk/$ChunkStatus')
-const { AirdropEntityConfig } = require('../../model/airdrop_entity_config')
+
+const { $MapItem } = require("packages/net/minecraft/world/item/$MapItem")
+const { $MapDecoration$Type } = require("packages/net/minecraft/world/level/saveddata/maps/$MapDecoration$Type")
+const { $MapItemSavedData } = require("packages/net/minecraft/world/level/saveddata/maps/$MapItemSavedData")
+const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$ChunkStatus")
+const { AirdropEntityConfig } = require("../../model/airdrop_entity_config")
+const { $ServerPlayer } = require("packages/net/minecraft/server/level/$ServerPlayer")
+const { $BlockPos } = require("packages/net/minecraft/core/$BlockPos")
 
 NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     let { level, player } = event
@@ -49,7 +51,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
  * @returns {$ICuriosItemHandler_}
  */
 function getCuriosHandler(player) {
-    player.getCapability(CuriosCapabilities.INVENTORY)
+    let lazyOptCapability = player.getCapability(CuriosCapabilities.INVENTORY)
     if (!lazyOptCapability.isPresent()) return
     return lazyOptCapability.resolve().get()
 }
@@ -57,7 +59,7 @@ function getCuriosHandler(player) {
 /**
  * @param {$Level_} level 
  * @param {$ServerPlayer_} player 
- * @return {$BlockPos_}
+ * @return {$BlockPos}
  */
 function getSpawnLocation(level, player) {
     let treasureDistance = player.getAttribute('kubejs:treasure_distance').getValue()
@@ -66,12 +68,17 @@ function getSpawnLocation(level, player) {
     let deltaDim = Math.floor(Math.random() * 4) + 1
     let deltaX = Math.pow(-1, Math.floor(deltaDim / 2)) * Math.random() * distance
     let deltaZ = Math.pow(-1, Math.floor((deltaDim + 1) / 2)) * Math.sqrt(Math.pow(distance, 2) - Math.pow(deltaX, 2))
-    let randomPosBlock = player.block.offset(deltaX, 0, deltaZ)
-    let targetChunk = level.getChunk(randomPosBlock.x, randomPosBlock.z, $ChunkStatus.SURFACE, true)
+    let ranPosBlock = player.block.offset(deltaX, 0, deltaZ)
+    
+    let chunkX = Math.floor(ranPosBlock.x / 16)
+    let chunkZ = Math.floor(ranPosBlock.z / 16)
+    let blockX = ranPosBlock.x % 16
+    let blockZ = ranPosBlock.z % 16
 
-    let y = Math.min(targetChunk.getHeight('world_surface', randomPosBlock.x, randomPosBlock.z) + 12 + Math.random() * 20, 255)
-
-    return new BlockPos(randomPosBlock.x, y, randomPosBlock.z)
+    let targetChunk = level.getChunk(chunkX, chunkZ, $ChunkStatus.SURFACE, true)
+    let y = Math.min(targetChunk.getHeight('motion_blocking', blockX, blockZ), 255)
+    y = y + 12 + Math.random() * 10
+    return new BlockPos(ranPosBlock.x, y, ranPosBlock.z)
 }
 
 /**
@@ -209,9 +216,10 @@ const AtlasActiveStrategy = {
         if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
 
         let airdropPos = getSpawnLocation(level, player)
-        for (let i = 0; i < 12; i++) {
-            airdropPos.offset(Math.random() * 3, Math.random() * 2, Math.random() * 3)
-            let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
+        let entityConfig = new AirdropEntityConfig(atlasItem)
+        for (let i = 0; i < 6; i++) {
+            airdropPos = airdropPos.offset(Math.random() * 8 + 2, Math.random() * 3, Math.random() * 8 + 2)
+            let airdropEntity = getAirdropEntity(level, player, airdropPos, entityConfig)
             airdropEntity.spawn()
         }
 

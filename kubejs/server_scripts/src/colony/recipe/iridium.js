@@ -1,5 +1,5 @@
 // priority: 500
-const { ColonyCraftRecipes } = require('../../model/citizen_recipes_model')
+const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/alchemist/iridium_ingot.json`,

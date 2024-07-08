@@ -1,5 +1,5 @@
 // priority: 1000
-const { AirdropPoolItem } = require('../model/airdrop_pool_model')
+const { AirdropPoolItem } = require("../model/airdrop_pool_model")
 
 global.AirdropPool = {}
 const NewerAirdropPool = new Map()
@@ -117,14 +117,16 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:enchanted_golden_apple').setMinCount(1).setMaxCount(2).setFortuneCoe(0).setChance(0.03),
         new AirdropPoolItem('minecraft:golden_apple').setMinCount(2).setMaxCount(4).setFortuneCoe(1.5).setChance(0.15),
         new AirdropPoolItem('minecraft:golden_carrot').setMinCount(8).setMaxCount(16).setFortuneCoe(1.5).setChance(0.15),
-    ]).set('curios', [
+    ])
+    
+const AdvancedAirdropPool = new Map()
+    .set('curios', [
         new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
         new AirdropPoolItem('relics:amphibian_boot').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:aqua_walker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:arrow_quiver').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:bastion_ring').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:blazing_flask').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
-        new AirdropPoolItem('relics:chorus_inhibitor').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:chorus_inhibitor').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:drowned_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:elytra_booster').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
@@ -144,7 +146,6 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('relics:reflection_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:roller_skates').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:shadow_glaive').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
-        new AirdropPoolItem('relics:solid_snowball').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:space_dissector').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:spatial_sign').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
         new AirdropPoolItem('relics:spore_sack').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
@@ -154,5 +155,5 @@ const CommonAirdropPool = new Map()
 
 global.AirdropPool['newer'] = NewerAirdropPool
 global.AirdropPool['common'] = CommonAirdropPool
-// global.AirdropPool['advanced'] = AdvancedAirdropPool
+global.AirdropPool['advanced'] = AdvancedAirdropPool
 // global.AirdropPool['ultra'] = ultraAirdropPool

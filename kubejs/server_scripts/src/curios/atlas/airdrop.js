@@ -3,7 +3,7 @@ const { GetItemListFromPoolItems, GetThemePackFromPool, PopItemFromAirdrop } = r
 
 EntityEvents.death(event => {
     let { entity } = event
-    if (!entity.getTags().contains('kubejs:airdrop_balloon')) return
+    if (!entity.type.contains('airdrop')) return
     let type = entity.persistentData.getString('type')
     if (!type) return
     if (!AirdropDeathStrategy[type]) return

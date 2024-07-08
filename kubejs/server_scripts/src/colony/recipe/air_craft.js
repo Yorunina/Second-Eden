@@ -1,5 +1,5 @@
 // priority: 500
-const { ColonyCraftRecipes } = require('../../model/citizen_recipes_model')
+const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.recipes(event => {
     event.remove({ output: 'immersive_aircraft:boiler' })

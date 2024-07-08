@@ -1,5 +1,5 @@
 // priority: 500
-const { ColonyResearchModel, BuildingRequirementModel, ItemRequirementModel } = require('../../model/colony_research_model')
+const { ColonyResearchModel, BuildingRequirementModel, ItemRequirementModel } = require("../../model/colony_research_model")
 
 ServerEvents.highPriorityData(event => {
     // 高级石英使用
