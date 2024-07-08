@@ -15,6 +15,7 @@ const NewerAirdropPool = new Map()
         new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+        new AirdropPoolItem('kubejs:master_certificate').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     ])
     .set('sea', [
         new AirdropPoolItem('minecolonies:supplychestdeployer').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
@@ -29,6 +30,7 @@ const NewerAirdropPool = new Map()
         new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
+        new AirdropPoolItem('kubejs:master_certificate').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     ])
 
 const CommonAirdropPool = new Map()
@@ -63,6 +65,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:raw_copper').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
         new AirdropPoolItem('minecraft:raw_gold').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:quartz').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.3),
     ]).set('wool', [
         new AirdropPoolItem('minecraft:white_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:orange_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
@@ -115,7 +118,37 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:golden_apple').setMinCount(2).setMaxCount(4).setFortuneCoe(1.5).setChance(0.15),
         new AirdropPoolItem('minecraft:golden_carrot').setMinCount(8).setMaxCount(16).setFortuneCoe(1.5).setChance(0.15),
     ]).set('curios', [
-        new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(2).setFortuneCoe(0).setChance(0.025),
+        new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
+        new AirdropPoolItem('relics:amphibian_boot').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:aqua_walker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:arrow_quiver').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:bastion_ring').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:blazing_flask').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:chorus_inhibitor').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:chorus_inhibitor').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:drowned_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:elytra_booster').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:enders_hand').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:holy_locket').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:horse_flute').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:hunter_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:ice_breaker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:ice_skates').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:infinity_ham').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:jellyfish_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:leather_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:magic_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:magma_walker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:midnight_robe').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:rage_glove').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:reflection_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:roller_skates').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:shadow_glaive').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:solid_snowball').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:space_dissector').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:spatial_sign').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:spore_sack').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
+        new AirdropPoolItem('relics:wool_mitten').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.02),
     ])
 // todo 继续增添theme
 

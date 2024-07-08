@@ -10,7 +10,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
     if (target.type != 'minecolonies:citizen') return
 
     let rank = item.nbt ? Math.min(item.nbt.getInt('rank'), 5) : 0
-    if (!rank) rank = 0
+    if (!rank) rank = 1
 
     let colony = GetColonyByEntity(target)
     if (!colony) return
@@ -19,7 +19,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
         return
     }
     let spawnLocation = colony.getRaiderManager().calculateSpawnLocation()
-    for (let i = 0; i < 10 * (rank + 1); i++) {
+    for (let i = 0; i < 10 * rank; i++) {
         let hordeEntity = $TGEntities.GHOUL.get().create(level)
 
         hordeEntity.setPatrolTarget(target.block.pos)

@@ -121,7 +121,7 @@
 	shouldraiderbreakdoors = true
 	#minecolonies.config.guarddamagemultiplier.comment [默认：1.000000，最小：0.100000，最大：15.000000
 	#Range: 0.1 ~ 15.0
-	guardDamageMultiplier = 1.5
+	guardDamageMultiplier = 1.0
 	#所有卫兵的生命值加成。 [默认：1.000000，最小：0.100000，最大：5.000000
 	#Range: 0.1 ~ 5.0
 	guardhealthmult = 2.5
@@ -131,7 +131,7 @@
 #所有权限配置选项
 [permissions]
 	#是否启用殖民地保护？ [默认: true]
-	enablecolonyprotection = true
+	enablecolonyprotection = false
 	#与殖民地保护选项无关，是否禁用殖民地内的爆炸？DAMAGE_NOTHING 完全禁止爆炸。DAMAGE_PLAYERS 允许爆炸伤害玩家，但不影响方块，中立或友善的实体。DAMAGE_ENTITIES 允许伤害所有实体。DAMAGE_EVERYTHING 允许伤害所有实体和方块。 
 	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
 	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"

@@ -8,13 +8,13 @@ ItemEvents.entityInteracted(event => {
     if (!item.hasTag('kubejs:soul_gem')) return
     if (target.type != 'minecolonies:citizen') return
 
-    let rank = item.nbt ? item.nbt.getInt('rank') : 0
-    if (!rank) rank = 0
+    let rank = item.nbt ? item.nbt.getInt('rank') : 1
+    if (!rank) rank = 1
     let citizen = GetCitizenFromEntity(target)
     if (!citizen) return
 
     let educationAbility = player.getAttribute('kubejs:education_ability').getValue()
-    let increment = Math.min(Math.ceil(1 + rank * educationAbility * 0.1), 100)
+    let increment = Math.min(Math.ceil(rank + educationAbility), 50)
     let skill = SoulGemTypeMapping[item.id] 
 
     let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
