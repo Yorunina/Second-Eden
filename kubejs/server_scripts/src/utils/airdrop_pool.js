@@ -96,7 +96,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:white_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:orange_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:magenta_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
-        new AirdropPoolItem('minecraft:light_blue_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2), 
+        new AirdropPoolItem('minecraft:light_blue_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:yellow_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:lime_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:pink_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
@@ -110,7 +110,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:red_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
         new AirdropPoolItem('minecraft:black_wool').setMinCount(16).setMaxCount(48).setFortuneCoe(1.5).setChance(0.2),
     ]).set('dye', [
-        new AirdropPoolItem('minecraft:white_dye').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),   
+        new AirdropPoolItem('minecraft:white_dye').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:orange_dye').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:magenta_dye').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:light_blue_dye').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
@@ -131,7 +131,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:emerald').setMinCount(8).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:lapis_lazuli').setMinCount(8).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.3),
-        new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(4).setFortuneCoe(1.5).setChance(0.02),
+        new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.02),
     ]).set('altas', [
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.8),
         new AirdropPoolItem('kubejs:advanced_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
@@ -143,7 +143,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('kubejs:luxury_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.25),
         new AirdropPoolItem('kubejs:huge_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
     ])
-    
+
 const AdvancedAirdropPool = new Map()
     .set('curios', [
         new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
@@ -221,14 +221,14 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('sophisticatedbackpacks:filter_upgrade').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
         new AirdropPoolItem('sophisticatedbackpacks:advanced_pickup_upgrade').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
         new AirdropPoolItem('sophisticatedbackpacks:advanced_feeding_upgrade').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
-        new AirdropPoolItem('sophisticatedbackpacks:feeding_upgrade').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),        
+        new AirdropPoolItem('sophisticatedbackpacks:feeding_upgrade').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
     ]).set('gem', [
         new AirdropPoolItem('minecraft:diamond').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.3),
         new AirdropPoolItem('minecraft:emerald').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.5),
         new AirdropPoolItem('minecraft:lapis_lazuli').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:nether_star').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.1),
-        new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.08),
+        new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(4).setFortuneCoe(1.5).setChance(0.08),
     ]).set('raw_ore', [
         new AirdropPoolItem('minecraft:coal').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
@@ -262,6 +262,18 @@ const AdvancedAirdropPool = new Map()
 global.AirdropPool['newer'] = NewerAirdropPool
 global.AirdropPool['common'] = CommonAirdropPool
 global.AirdropPool['advanced'] = AdvancedAirdropPool
-global.AirdropPool['ultra'] = UltraAirdropPool
-global.AirdropPool['huge'] = HugeAirdropPool
+// global.AirdropPool['ultra'] = UltraAirdropPool
+// global.AirdropPool['huge'] = HugeAirdropPool
 global.AirdropPool['wood'] = WoodAirdropPool
+
+global.AtlasTypeMapping = new Map()
+    .set('kubejs:newer_atlas', 'newer')
+    .set('kubejs:common_atlas', 'common')
+    .set('kubejs:sociality_atlas', 'common')
+    .set('kubejs:advanced_atlas', 'advanced')
+    // .set('kubejs:ultra_atlas', 'ultra')
+    // .set('kubejs:huge_atlas', 'huge')
+    .set('kubejs:wood_atlas', 'wood')
+    // .set('kubejs:stone_atlas', 'stone')
+    // .set('kubejs:ore_atlas', 'ore')
+    // .set('kubejs:luxury_atlas', 'luxury')

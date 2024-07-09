@@ -12,7 +12,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
     let { target, level, item, player } = event
     if (target.type != 'minecolonies:citizen') return
 
-    let rank = item.nbt ? Math.min(item.nbt.getInt('rank'), 5) : 0
+    let rank = item.nbt ? Math.min(item.nbt.getInt('rank'), 5) : 1
     if (!rank) rank = 1
 
     let colony = GetColonyByEntity(target)
@@ -38,6 +38,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
         hordeEntity.modifyAttribute('generic.armor', 'DAA7175A-C74D-4622-9F51-D2D97A0EA85B', 0.5 * rank, 'addition')
         hordeEntity.modifyAttribute('generic.attack_damage', '89AF1558-9D04-40FB-ABB8-730F44741FBB', 1 * rank, 'addition')
         hordeEntity.modifyAttribute('generic.max_health', '51917664-66B9-4E23-AF0B-934B1B57ABF1', 5 * rank, 'addition')
+        hordeEntity.heal(hordeEntity.getMaxHealth())
 
         hordeEntity.setPersistenceRequired()
         hordeEntity.setPos(spawnLocation.x + Math.random() * 6, spawnLocation.y, spawnLocation.z + Math.random() * 6)

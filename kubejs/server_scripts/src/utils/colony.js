@@ -1,10 +1,12 @@
 // priority: 1000
+import { $IColony } from "packages/com/minecolonies/api/colony/$IColony"
+
 const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
 
 /**
  * 通过实体获取colonyId进而获取colony
  * @param {$Entity_} target 
- * @returns {$IColony_}
+ * @returns {$IColony}
  */
 export function GetColonyByEntity(target) {
     let colonyId = target?.nbt.getInt('colony')
@@ -34,6 +36,6 @@ export function GetCitizenFromEntity(target) {
  * @returns {boolean}
  */
 export function CheckColonyOwner(colony, player) {
-    let uuid = colony.getPermissions().getOwner()
-    return uuid == player.uuid
+    let uuid = colony.getPermissions().getOwner().toString()
+    return uuid == player.uuid.toString()
 }

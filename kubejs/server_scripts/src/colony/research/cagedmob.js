@@ -2,7 +2,6 @@
 const { ColonyResearchModel, BuildingRequirementModel, ItemRequirementModel } = require("../../model/colony_research_model")
 
 ServerEvents.highPriorityData(event => {
-    // todo 设置合适的前置科技
     // 基础
     event.addJson(`kubejs:researches/technology/locksoulincage.json`,
         new ColonyResearchModel('minecolonies:technology', 2, [
@@ -12,7 +11,7 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16),
         ])
             .setEffects([{ 'kubejs:effects/locksoulincage': 1 }])
-            .setParentResearch('minecolonies:technology/firstaid')
+            .setParentResearch('minecolonies:technology/opennether')
             .setSubtitle('com.kubejs.research.technology.locksoulincage.subtitle')
     )
     event.addJson(`kubejs:researches/effects/locksoulincage.json`, { "effect": true })
@@ -28,7 +27,7 @@ ServerEvents.highPriorityData(event => {
             .setParentResearch('kubejs:technology/locksoulincage')
             .setSubtitle('com.kubejs.research.technology.hoppingcage.subtitle')
     )
-    event.addJson(`kubejs:researches/effects/locksoulincage.json`, { "effect": true })
+    event.addJson(`kubejs:researches/effects/hoppingcage.json`, { "effect": true })
 
     // 升级
     event.addJson(`kubejs:researches/technology/morepowerfulcage.json`,

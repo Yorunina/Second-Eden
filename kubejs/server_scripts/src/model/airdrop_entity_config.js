@@ -2,18 +2,6 @@
 
 import { $ItemStack } from "packages/net/minecraft/world/item/$ItemStack"
 
-global.AtlasTypeMapping = new Map()
-    .set('kubejs:newer_atlas', 'newer')
-    .set('kubejs:common_atlas', 'common')
-    .set('kubejs:sociality_atlas', 'common')
-    .set('kubejs:advanced_atlas', 'advanced')
-    .set('kubejs:ultra_atlas', 'ultra')
-    .set('kubejs:huge_atlas', 'huge')
-    .set('kubejs:wood_atlas', 'wood')
-    .set('kubejs:stone_atlas', 'stone')
-    .set('kubejs:ore_atlas', 'ore')
-    .set('kubejs:food_atlas', 'food')
-    .set('kubejs:luxury_atlas', 'luxury')
 /**
  * 空投实体配置
  * @param {$ItemStack} atlasItem 
