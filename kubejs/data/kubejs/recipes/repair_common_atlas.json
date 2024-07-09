@@ -1,0 +1,7 @@
+{
+    "type": "minecraft:anvil_repair",
+    "baseItem": "kubejs:common_atlas",
+    "repairItem": {
+        "item": "minecraft:book"
+    }
+}

@@ -26,7 +26,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     player.addItemCooldown(atlasItem, 20 * 30)
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()
-
+    let mapItem = getMapItem(level, airdropPos)
     // 监听戒指事件
     level.getPlayers().forEach(entityItem => {
         if (!entityItem instanceof $ServerPlayer) return
@@ -41,7 +41,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
         })
         if (!isSpoon) return
         if (Math.random() * encodeAbility < decodeAbility - encodeAbility) {
-            player.give(getMapItem(level, airdropPos))
+            player.give(mapItem)
         }
     })
 })

@@ -7,7 +7,7 @@ ItemEvents.entityInteracted('kubejs:raid_book', event => {
     if (target.type != 'minecolonies:citizen') return
     let colony = GetColonyByEntity(target)
     if (!CheckColonyOwner(colony, player)) {
-        player.status(Text.translatable('msg.player.common.not_colony_owner').gold())
+        player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
         return
     } 
     if (!colony) return

@@ -27,7 +27,7 @@ StartupEvents.registry('item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1500, 'addition')
-        ).texture('kubejs:item/curios/common_atlas')
+        ).texture('kubejs:item/curios/sociality_atlas')
 
     // 高级地图册
     event.create('advanced_atlas').rarity('rare').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(RARE)
@@ -68,14 +68,6 @@ StartupEvents.registry('item', event => {
             .modifyAttribute('kubejs:treasure_fortune', 'WoodAtlasTreasureFortune', 2, 'addition')
             .modifyAttribute('kubejs:treasure_distance', 'WoodAtlasTreasureDistance', 800, 'addition')
         ).texture('kubejs:item/curios/ore_atlas')
-
-    // 食材地图册
-    event.create('food_atlas').rarity('rare').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(RARE)
-        .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
-            .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_fortune', 'WoodAtlasTreasureFortune', 2, 'addition')
-            .modifyAttribute('kubejs:treasure_distance', 'WoodAtlasTreasureDistance', 800, 'addition')
-        ).texture('kubejs:item/curios/food_atlas')
 
     // 奢侈品地图册
     event.create('luxury_atlas').rarity('rare').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(RARE)

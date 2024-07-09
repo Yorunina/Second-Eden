@@ -49,4 +49,11 @@ const AirdropDeathStrategy = {
         let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
         PopItemFromAirdrop(level, entity, itemList)
     },
+    'huge': function (event) {
+        let { level, entity } = event
+        let theme = entity.persistentData.getString('theme')
+        let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['huge'], theme)
+        let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
+        PopItemFromAirdrop(level, entity, itemList)
+    },
 }

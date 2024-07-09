@@ -553,7 +553,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "attributeslib:crit_chance",
+					"attribute": "miapi:generic.crit_chance",
 					"value": 0.025,
 					"operation": "addition"
 				}
@@ -583,7 +583,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "attributeslib:crit_chance",
+					"attribute": "miapi:generic.crit_chance",
 					"value": 0.05,
 					"operation": "addition"
 				}

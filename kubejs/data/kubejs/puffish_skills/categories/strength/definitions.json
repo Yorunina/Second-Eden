@@ -553,7 +553,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "attributeslib:crit_damage",
+					"attribute": "miapi:generic.crit_damage",
 					"value": 0.1,
 					"operation": "addition"
 				}
@@ -583,7 +583,7 @@
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "attributeslib:crit_damage",
+					"attribute": "miapi:generic.crit_damage",
 					"value": 0.25,
 					"operation": "addition"
 				}
