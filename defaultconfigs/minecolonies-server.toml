@@ -14,7 +14,7 @@
 	#Range: 100 ~ 500
 	maxcitizenpercolony = 250
 	#是否启用实验特性（可能存在BUG）？ [默认: false]
-	enableindevelopmentfeatures = false
+	enableindevelopmentfeatures = true
 	#是否显示公民姓名标签？ [默认: true]
 	alwaysrendernametag = true
 	#工人是否在雨天工作？ [默认: false]
@@ -145,7 +145,7 @@
 	#酒馆客人需求的物品 
 	configlistrecruitmentitems = ["minecraft:hay_block;3", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;11", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
 	#低权重矿物列表，矿工更少地获得列表内的矿物 (参考 ”矿物权重“选项) 格式: 方块! 权重 
-	luckyores = ["minecraft:coal_ore!64", "minecraft:copper_ore!48", "minecraft:iron_ore!32", "minecraft:gold_ore!16", "minecraft:redstone_ore!8", "minecraft:lapis_ore!4", "minecraft:diamond_ore!2", "minecraft:emerald_ore!1"]
+	luckyores = ["minecraft:coal_ore!256", "minecraft:copper_ore!192", "minecraft:iron_ore!128", "minecraft:gold_ore!64", "minecraft:redstone_ore!64", "minecraft:lapis_ore!16", "minecraft:diamond_ore!16", "minecraft:emerald_ore!8", "kubejs:raw_iridium!1", "kubejs:echo_crystal!1"]
 	#所有公民可能患上的疾病、名称、频率以及相应的治疗药物。 
 	diseases = ["Influenza,100,minecraft:carrot,minecraft:potato", "Measles,10,minecraft:dandelion,minecraft:kelp,minecraft:poppy", "Smallpox,1,minecraft:honey_bottle,minecraft:golden_apple"]
 	#加载配方时，生成CSV文件以帮助调试数据包或其他模组。 [默认: false]

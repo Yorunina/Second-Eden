@@ -1,4 +1,5 @@
 // priority: 500
+const { $Recipe } = require("packages/net/minecraft/world/item/crafting/$Recipe")
 const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.recipes(event => {
@@ -26,24 +27,49 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:creative_fluid_storage_disk' })
     event.remove({ output: 'refinedstorage:creative_storage_block' })
     event.remove({ output: 'refinedstorage:creative_fluid_storage_block' })
-    event.remove({ output: 'refinedstorage:upgrade'})
+    event.remove({ output: 'refinedstorage:upgrade' })
 
     // todo 自动制作管理缺少部分配方
     event.remove({ output: 'refinedstorage:crafter' })
+    // event.remove({ output: 'refinedstorage:network_transmitter' })
+    event.findRecipes().forEach(/**@param {$Recipe} recipe*/recipe => {
+        recipe.replaceInput('refinedstorage:basic_processor', Item.of('minecraft:zombie_head'))
+        recipe.replaceInput('refinedstorage:improved_processor', Item.of('minecraft:creeper_head'))
+        recipe.replaceInput('refinedstorage:advanced_processor', Item.of('minecraft:skeleton_skull'))
+        recipe.replaceInput('refinedstorage:construction_core', Item.of('minecraft:wither_skeleton_skull'))
+        recipe.replaceInput('refinedstorage:destruction_core', Item.of('minecraft:zombie_head'))
+    })
+    // event.remove({ output: 'refinedstorage:crafter_manager' })
+    // event.remove({ output: 'refinedstorage:wireless_transmitter' })
+    // event.remove({ output: 'refinedstorage:network_receiver' })
+    // event.remove({ output: 'refinedstorage:pattern_grid' })
+    // event.remove({ output: 'refinedstorage:destructor' })
+    // event.remove({ output: 'refinedstorage:crafting_monitor' })
+    // event.remove({ output: 'refinedstorage:constructor' })
+    // event.remove({ output: 'refinedstorage:network_card' })
+    // event.remove({ output: 'refinedstorage:fluid_interface' })
+    // event.remove({ output: 'refinedstorage:storage_monitor' })
+    // event.remove({ output: 'refinedstorage:detector' })
+    // event.remove({ output: 'refinedstorage:exporter' })
+    // event.remove({ output: 'refinedstorage:importer' })
+    // event.remove({ output: 'refinedstorage:external_storage' })
+    // event.remove({ output: 'refinedstorage:wrench' })
+    // event.remove({ output: 'refinedstorage:crafting_upgrade' })
+    // event.remove({ output: 'refinedstorage:security_card' })
 
     event.remove({ output: 'rsinfinitybooster:infinity_card' })
     event.remove({ output: 'rsinfinitybooster:dimension_card' })
 
     // 删除其余配方防止混淆
-    event.remove({ output: 'refinedstorage:raw_advanced_processor'})
-    event.remove({ output: 'refinedstorage:basic_processor'})
-    event.remove({ output: 'refinedstorage:improved_processor'})
-    event.remove({ output: 'refinedstorage:advanced_processor'})
-    event.remove({ output: 'refinedstorage:construction_core'})
-    event.remove({ output: 'refinedstorage:processor_binding'})
-    event.remove({ output: 'refinedstorage:destruction_core'})
-    event.remove({ output: 'refinedstorage:raw_basic_processor'})
-    event.remove({ output: 'refinedstorage:raw_improved_processor'})
+    event.remove({ output: 'refinedstorage:raw_advanced_processor' })
+    event.remove({ output: 'refinedstorage:basic_processor' })
+    event.remove({ output: 'refinedstorage:improved_processor' })
+    event.remove({ output: 'refinedstorage:advanced_processor' })
+    event.remove({ output: 'refinedstorage:construction_core' })
+    event.remove({ output: 'refinedstorage:processor_binding' })
+    event.remove({ output: 'refinedstorage:destruction_core' })
+    event.remove({ output: 'refinedstorage:raw_basic_processor' })
+    event.remove({ output: 'refinedstorage:raw_improved_processor' })
 })
 
 ServerEvents.highPriorityData(event => {
@@ -172,7 +198,7 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/autocraftmanage', true))
 
-    // todo 自动制作管理
+    // todo 自动制作管理,删除原配方对于某些特定物品的依赖
     // ['refinedstorage:network_transmitter', 'refinedstorage:crafter_manager', 'refinedstorage:wireless_transmitter', 'refinedstorage:network_receiver', 'refinedstorage:pattern_grid', 'refinedstorage:destructor', 'refinedstorage:crafting_monitor', 'refinedstorage:constructor', 'refinedstorage:network_card', 'refinedstorage:fluid_interface', 'refinedstorage:storage_monitor', 'refinedstorage:detector', 'refinedstorage:exporter', 'refinedstorage:importer', 'refinedstorage:external_storage', 'refinedstorage:wrench', 'refinedstorage:crafting_upgrade', 'refinedstorage:security_card']
 
     // 无限无线通讯协议

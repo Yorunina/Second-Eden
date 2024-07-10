@@ -34,7 +34,7 @@ ItemEvents.entityInteracted('kubejs:master_certificate', event => {
     if (!citizen) return
     ShuffleAndTake(CitizenAttributeList, 3).forEach(skill => {
         let oldLevel = citizen.getCitizenSkillHandler().getLevel(skill)
-        let increment = 45 - oldLevel
+        let increment = 50 - oldLevel
         if (increment < 0) return
         citizen.getCitizenSkillHandler().incrementLevel(skill, increment)
     })
