@@ -60,6 +60,20 @@ ServerEvents.highPriorityData(event => {
     )
     event.addJson(`kubejs:researches/effects/morediskunlock.json`, { "effect": true })
 
+    // 无线通讯协议
+    event.addJson(`kubejs:researches/technology/wirelessaccess.json`,
+        new ColonyResearchModel('minecolonies:technology', 4, [
+            new BuildingRequirementModel('deliveryman', 5),
+            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
+            new ItemRequirementModel(['minecraft:bone_block'], 32),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+        ])
+            .setEffects([{ 'kubejs:effects/wirelessaccess': 1 }])
+            .setParentResearch('kubejs:technology/multidimstoragetheory')
+            .setSubtitle('com.kubejs.research.technology.wirelessaccess.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/wirelessaccess.json`, { "effect": true })
+
     // 无限无线通讯协议
     event.addJson(`kubejs:researches/technology/infinitywirelessaccess.json`,
         new ColonyResearchModel('minecolonies:technology', 5, [
@@ -69,7 +83,7 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16),
         ])
             .setEffects([{ 'kubejs:effects/infinitywirelessaccess': 1 }])
-            .setParentResearch('kubejs:technology/autocraftmanager')
+            .setParentResearch('kubejs:technology/wirelessaccess')
             .setSubtitle('com.kubejs.research.technology.infinitywirelessaccess.subtitle')
     )
     event.addJson(`kubejs:researches/effects/infinitywirelessaccess.json`, { "effect": true })

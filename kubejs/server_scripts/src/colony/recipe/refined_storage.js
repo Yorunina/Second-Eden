@@ -7,7 +7,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:silicon' })
 
     event.remove({ output: 'refinedstorage:machine_casing' })
-    event.remove({ output: 'refinedstorage:storage_housing' })
     event.remove({ output: 'refinedstorage:controller' })
     event.remove({ output: 'refinedstorage:grid' })
     event.remove({ output: 'refinedstorage:crafting_grid' })
@@ -29,34 +28,59 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:creative_fluid_storage_block' })
     event.remove({ output: 'refinedstorage:upgrade' })
 
+    // 配方纠正
+    event.remove({ output: 'refinedstorage:wrench' })
+    event.shaped('refinedstorage:wrench', ['I I', 'III', ' I '], { I: 'refinedstorage:quartz_enriched_iron' })
+
+    event.remove({ output: 'refinedstorage:network_card' })
+    event.shaped('refinedstorage:network_card', ['III', 'PDP', 'III'], { I: 'refinedstorage:quartz_enriched_iron', P: 'minecraft:paper', D: 'minecraft:diamond' })
+
+    event.remove({ output: 'refinedstorage:security_card' })
+    event.shaped('refinedstorage:security_card', ['III', 'NSN', 'III'], { I: 'refinedstorage:quartz_enriched_iron', N: 'refinedstorage:network_card', S: 'refinedstorage:silicon' })
+
+    event.remove({ output: 'refinedstorage:constructor' })
+    event.shaped('refinedstorage:constructor', ['IEI', 'RLR', 'IEI'], { I: 'refinedstorage:quartz_enriched_iron', E: 'minecraft:ender_pearl', R: 'minecraft:redstone', L: 'refinedstorage:cable' })
+
+    event.remove({ output: 'refinedstorage:destructor' })
+    event.shaped('refinedstorage:destructor', ['IMI', 'RLR', 'IMI'], { I: 'refinedstorage:quartz_enriched_iron', M: 'minecraft:magma_cream', R: 'minecraft:redstone', L: 'refinedstorage:cable' })
+
+    event.remove({ output: 'refinedstorage:exporter' })
+    event.shapeless('refinedstorage:exporter', ['refinedstorage:cable', 'minecraft:black_dye', 'minecraft:ender_pearl'])
+
+    event.remove({ output: 'refinedstorage:importer' })
+    event.shapeless('refinedstorage:importer', ['refinedstorage:cable', 'minecraft:white_dye', 'minecraft:ender_pearl'])
+
+    event.remove({ output: 'refinedstorage:external_storage' })
+    event.shaped('refinedstorage:external_storage', ['IRI', 'CLC', 'IGI'], { I: 'refinedstorage:quartz_enriched_iron', C: 'minecraft:ender_chest', R: 'minecraft:redstone', L: 'refinedstorage:cable', G: 'minecraft:glowstone_dust' })
+
+    event.remove({ output: 'refinedstorage:crafting_upgrade' })
+    event.shaped('refinedstorage:crafting_upgrade', ['IEI', 'CUC', 'III'], { I: 'refinedstorage:quartz_enriched_iron', C: 'minecraft:crafting_table', E: 'minecraft:ender_pearl', U: 'refinedstorage:upgrade' })
+
+    event.remove({ output: 'refinedstorage:detector' })
+    event.shaped('refinedstorage:detector', ['IRI', 'CMC', 'IEI'], { I: 'refinedstorage:quartz_enriched_iron', C: 'minecraft:comparator', M: 'refinedstorage:machine_casing', E: 'minecraft:ender_pearl', R: 'minecraft:redstone' })
+
+    event.remove({ output: 'refinedstorage:fluid_interface' })
+    event.shapeless('refinedstorage:fluid_interface', ['refinedstorage:interface', 'minecraft:bucket'])
+
     // todo 自动制作管理缺少部分配方
     event.remove({ output: 'refinedstorage:crafter' })
-    // event.remove({ output: 'refinedstorage:network_transmitter' })
-    event.findRecipes().forEach(/**@param {$Recipe} recipe*/recipe => {
-        recipe.replaceInput('refinedstorage:basic_processor', Item.of('minecraft:zombie_head'))
-        recipe.replaceInput('refinedstorage:improved_processor', Item.of('minecraft:creeper_head'))
-        recipe.replaceInput('refinedstorage:advanced_processor', Item.of('minecraft:skeleton_skull'))
-        recipe.replaceInput('refinedstorage:construction_core', Item.of('minecraft:wither_skeleton_skull'))
-        recipe.replaceInput('refinedstorage:destruction_core', Item.of('minecraft:zombie_head'))
-    })
-    // event.remove({ output: 'refinedstorage:crafter_manager' })
-    // event.remove({ output: 'refinedstorage:wireless_transmitter' })
-    // event.remove({ output: 'refinedstorage:network_receiver' })
-    // event.remove({ output: 'refinedstorage:pattern_grid' })
-    // event.remove({ output: 'refinedstorage:destructor' })
-    // event.remove({ output: 'refinedstorage:crafting_monitor' })
-    // event.remove({ output: 'refinedstorage:constructor' })
-    // event.remove({ output: 'refinedstorage:network_card' })
-    // event.remove({ output: 'refinedstorage:fluid_interface' })
-    // event.remove({ output: 'refinedstorage:storage_monitor' })
-    // event.remove({ output: 'refinedstorage:detector' })
-    // event.remove({ output: 'refinedstorage:exporter' })
-    // event.remove({ output: 'refinedstorage:importer' })
-    // event.remove({ output: 'refinedstorage:external_storage' })
-    // event.remove({ output: 'refinedstorage:wrench' })
-    // event.remove({ output: 'refinedstorage:crafting_upgrade' })
-    // event.remove({ output: 'refinedstorage:security_card' })
+    event.remove({ output: 'refinedstorage:pattern_grid' })
+    event.remove({ output: 'refinedstorage:pattern' })
+    event.remove({ output: 'refinedstorage:crafting_monitor' })
+    event.remove({ output: 'refinedstorage:crafter_manager' })
+    event.remove({ output: 'refinedstorage:storage_monitor' })
 
+
+    // 无线技术
+    event.remove({ output: 'refinedstorage:network_receiver' })
+    event.remove({ output: 'refinedstorage:network_transmitter' })
+    event.remove({ output: 'refinedstorage:wireless_grid' })
+    event.remove({ output: 'refinedstorage:wireless_universal_grid' })
+    event.remove({ output: 'refinedstorage:wireless_fluid_grid' })
+    event.remove({ output: 'refinedstorage:wireless_crafting_monitor' })
+    event.remove({ output: 'refinedstorage:wireless_transmitter' })
+
+    // 无限无线
     event.remove({ output: 'rsinfinitybooster:infinity_card' })
     event.remove({ output: 'rsinfinitybooster:dimension_card' })
 
@@ -70,6 +94,7 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:destruction_core' })
     event.remove({ output: 'refinedstorage:raw_basic_processor' })
     event.remove({ output: 'refinedstorage:raw_improved_processor' })
+    event.remove({ mod: 'refinedstorage', input: 'refinedstorage:advanced_processor' })
 })
 
 ServerEvents.highPriorityData(event => {
@@ -86,11 +111,6 @@ ServerEvents.highPriorityData(event => {
     // 多维度存储理论
     event.addJson(`kubejs:crafterrecipes/mechanic/machine_casing.json`,
         new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:machine_casing', 1), [Item.of('refinedstorage:quartz_enriched_iron', 8), Item.of('minecraft:redstone', 8), Item.of('minecraft:glowstone_dust', 8)])
-            .setMinBuildingLevel(3)
-            .setResearchId('kubejs:effects/multidimstoragetheory', true))
-
-    event.addJson(`kubejs:crafterrecipes/mechanic/storage_housing.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:storage_housing', 1), [Item.of('refinedstorage:quartz_enriched_iron', 3), Item.of('minecraft:redstone', 3), Item.of('minecraft:glass', 2)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/multidimstoragetheory', true))
 
@@ -196,10 +216,53 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/mechanic/crafter.json`,
         new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:crafter', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:silicon', 16), Item.of('minecraft:crafting_table', 4)])
             .setMinBuildingLevel(3)
-            .setResearchId('kubejs:effects/autocraftmanage', true))
+            .setResearchId('kubejs:effects/autocraftmanager', true))
 
-    // todo 自动制作管理,删除原配方对于某些特定物品的依赖
-    // ['refinedstorage:network_transmitter', 'refinedstorage:crafter_manager', 'refinedstorage:wireless_transmitter', 'refinedstorage:network_receiver', 'refinedstorage:pattern_grid', 'refinedstorage:destructor', 'refinedstorage:crafting_monitor', 'refinedstorage:constructor', 'refinedstorage:network_card', 'refinedstorage:fluid_interface', 'refinedstorage:storage_monitor', 'refinedstorage:detector', 'refinedstorage:exporter', 'refinedstorage:importer', 'refinedstorage:external_storage', 'refinedstorage:wrench', 'refinedstorage:crafting_upgrade', 'refinedstorage:security_card']
+    event.addJson(`kubejs:crafterrecipes/mechanic/pattern.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:pattern', 1), [Item.of('refinedstorage:quartz_enriched_iron', 3), Item.of('minecraft:redstone', 3), Item.of('minecraft:glass', 3)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/autocraftmanager', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/pattern_grid.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:pattern_grid', 1), [Item.of('refinedstorage:pattern', 1), Item.of('refinedstorage:grid', 1)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/autocraftmanager', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/crafting_monitor.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:crafting_monitor', 1), [Item.of('refinedstorage:pattern', 4), Item.of('refinedstorage:machine_casing', 1), Item.of('minecraft:glass', 4)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/autocraftmanager', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/crafter_manager.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:crafter_manager', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:quartz_enriched_iron', 3), Item.of('refinedstorage:crafter', 3), Item.of('minecraft:glass', 3)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/autocraftmanager', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/storage_monitor.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:storage_monitor', 1), [Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:quartz_enriched_iron', 3), Item.of('minecraft:ender_chest', 3), Item.of('minecraft:glass', 3)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/autocraftmanager', true))
+
+    // 无线技术
+    event.addJson(`kubejs:crafterrecipes/mechanic/network_receiver.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:network_receiver', 1), [Item.of('minecraft:ender_pearl', 4), Item.of('refinedstorage:machine_casing', 1), Item.of('minecraft:netherite_ingot', 1)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/wirelessaccess', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/network_transmitter.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:network_transmitter', 1), [Item.of('minecraft:ender_pearl', 4), Item.of('refinedstorage:machine_casing', 1), Item.of('minecraft:netherite_ingot', 1)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/wirelessaccess', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/wireless_transmitter.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:wireless_transmitter', 1), [Item.of('minecraft:ender_pearl', 1), Item.of('refinedstorage:machine_casing', 1), Item.of('refinedstorage:quartz_enriched_iron', 6)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/wirelessaccess', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/creative_wireless_universal_grid.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('universalgrid:creative_wireless_universal_grid', 1), [Item.of('refinedstorage:network_card', 3), Item.of('refinedstorage:wireless_transmitter', 1), Item.of('refinedstorage:crafting_grid', 1)])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/wirelessaccess', true))
 
     // 无限无线通讯协议
     event.addJson(`kubejs:crafterrecipes/enchanter/infinity_card.json`,

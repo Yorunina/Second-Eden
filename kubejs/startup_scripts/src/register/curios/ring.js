@@ -5,6 +5,8 @@ StartupEvents.registry('item', event => {
     // todo 补充材质
     event.create('peaceful_ring')
         .maxStackSize(1)
+        .rarity('epic')
+        .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip(() => true)
@@ -12,9 +14,10 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/curios/peaceful_ring')
 
     // 窃听之戒
-    // todo 补充材质
     event.create('snoop_ring')
         .maxStackSize(1)
+        .rarity('epic')
+        .tag(EPIC)
         .tag('curios:ring')
         .tag('kubejs:snoop')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -24,11 +27,9 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/curios/snoop_ring')
 
     // 月见草之语
-    // todo 补充材质
     event.create('evening_primrose_ring')
         .maxStackSize(1)
         .tag('curios:ring')
-        .displayName(Text.translatable('item.kubejs.evening_primrose_ring').red())
         .tag(OVERLIMIT)
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
@@ -40,11 +41,9 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/curios/evening_primrose_ring')
 
     // 红宝石戒指
-    // todo 补充材质
     event.create('common_ruby_ring')
         .maxStackSize(1)
         .rarity('common')
-        .displayName(Text.translatable('item.kubejs.ruby_ring'))
         .tag(COMMON)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -56,7 +55,6 @@ StartupEvents.registry('item', event => {
     event.create('rare_ruby_ring')
         .maxStackSize(1)
         .rarity('rare')
-        .displayName(Text.translatable('item.kubejs.ruby_ring'))
         .tag(RARE)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -68,7 +66,6 @@ StartupEvents.registry('item', event => {
     event.create('epic_ruby_ring')
         .maxStackSize(1)
         .rarity('epic')
-        .displayName(Text.translatable('item.kubejs.ruby_ring'))
         .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -80,7 +77,6 @@ StartupEvents.registry('item', event => {
 
     event.create('legendary_ruby_ring')
         .maxStackSize(1)
-        .displayName(Text.translatable('item.kubejs.ruby_ring').gold())
         .tag(LEGENDARY)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -91,11 +87,9 @@ StartupEvents.registry('item', event => {
         .texture('kubejs:item/curios/ruby_ring')
 
     // 蓝宝石戒指
-    // todo 补充材质
     event.create('common_sapphire_ring')
         .maxStackSize(1)
         .rarity('common')
-        .displayName(Text.translatable('item.kubejs.sapphire_ring'))
         .tag(COMMON)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -107,7 +101,6 @@ StartupEvents.registry('item', event => {
     event.create('rare_sapphire_ring')
         .maxStackSize(1)
         .rarity('rare')
-        .displayName(Text.translatable('item.kubejs.sapphire_ring'))
         .tag(RARE)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -119,7 +112,6 @@ StartupEvents.registry('item', event => {
     event.create('epic_sapphire_ring')
         .maxStackSize(1)
         .rarity('epic')
-        .displayName(Text.translatable('item.kubejs.sapphire_ring'))
         .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -131,7 +123,6 @@ StartupEvents.registry('item', event => {
 
     event.create('legendary_sapphire_ring')
         .maxStackSize(1)
-        .displayName(Text.translatable('item.kubejs.sapphire_ring').gold())
         .tag(LEGENDARY)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
