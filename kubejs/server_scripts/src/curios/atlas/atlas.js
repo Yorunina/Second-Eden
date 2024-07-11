@@ -21,8 +21,10 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     let atlasItem = atlasStacks.getStackInSlot(0)
 
     if (!AtlasActiveStrategy[atlasItem.id]) return
+    if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return
     let airdropPos = AtlasActiveStrategy[atlasItem.id](event, atlasItem)
     if (!airdropPos) return
+    atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
     player.addItemCooldown(atlasItem, 20 * 30)
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()
@@ -69,7 +71,7 @@ function getSpawnLocation(level, player) {
     let deltaX = Math.pow(-1, Math.floor(deltaDim / 2)) * Math.random() * distance
     let deltaZ = Math.pow(-1, Math.floor((deltaDim + 1) / 2)) * Math.sqrt(Math.pow(distance, 2) - Math.pow(deltaX, 2))
     let ranPosBlock = player.block.offset(deltaX, 0, deltaZ)
-    
+
     let chunkX = Math.floor(ranPosBlock.x / 16)
     let chunkZ = Math.floor(ranPosBlock.z / 16)
     let blockX = ranPosBlock.x % 16
@@ -122,84 +124,6 @@ function getMapItem(level, pos) {
 const AtlasActiveStrategy = {
     'kubejs:newer_atlas': function (event, atlasItem) {
         let { level, player } = event
-
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
-        let airdropPos = getSpawnLocation(level, player)
-
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
-        airdropEntity.spawn()
-
-        let mapItem = getMapItem(level, airdropPos)
-        player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-        return airdropPos
-    },
-    'kubejs:common_atlas': function (event, atlasItem) {
-        let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
-        let airdropPos = getSpawnLocation(level, player)
-
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
-        airdropEntity.spawn()
-
-        let mapItem = getMapItem(level, airdropPos)
-        player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-        return airdropPos
-    },
-    'kubejs:advanced_atlas': function (event, atlasItem) {
-        let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
-        let airdropPos = getSpawnLocation(level, player)
-
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_blue'))
-        airdropEntity.spawn()
-
-        let mapItem = getMapItem(level, airdropPos)
-        player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-        return airdropPos
-    },
-    'kubejs:ultra_atlas': function (event, atlasItem) {
-        let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
-        let airdropPos = getSpawnLocation(level, player)
-
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_yellow'))
-        airdropEntity.spawn()
-
-        let mapItem = getMapItem(level, airdropPos)
-        player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-        return airdropPos
-    },
-    'kubejs:wood_atlas': function (event, atlasItem) {
-        let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
-        let airdropPos = getSpawnLocation(level, player)
-
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
-        airdropEntity.spawn()
-
-        let mapItem = getMapItem(level, airdropPos)
-        player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-        return airdropPos
-    },
-    'kubejs:huge_atlas': function (event, atlasItem) {
-        let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('adv_airdrop_balloon'))
@@ -207,17 +131,102 @@ const AtlasActiveStrategy = {
 
         let mapItem = getMapItem(level, airdropPos)
         player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:common_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
 
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:advanced_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_blue'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:ultra_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_yellow'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:wood_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:stone_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:ore_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:luxury_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
+        return airdropPos
+    },
+    'kubejs:huge_atlas': function (event, atlasItem) {
+        let { level, player } = event
+        let airdropPos = getSpawnLocation(level, player)
+
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('adv_airdrop_balloon_blue'))
+        airdropEntity.spawn()
+
+        let mapItem = getMapItem(level, airdropPos)
+        player.give(mapItem)
         return airdropPos
     },
     'kubejs:sociality_atlas': function (event, atlasItem) {
         let { level, player } = event
-        if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return null
-
         let airdropPos = getSpawnLocation(level, player)
         let entityConfig = new AirdropEntityConfig(atlasItem)
-        for (let i = 0; i < 6; i++) {
+        let amount = Math.floor(Math.random() * 8) + 2
+        for (let i = 0; i < amount; i++) {
             airdropPos = airdropPos.offset(Math.random() * 8 + 2, Math.random() * 3, Math.random() * 8 + 2)
             let airdropEntity = getAirdropEntity(level, player, airdropPos, entityConfig)
             airdropEntity.spawn()
@@ -225,8 +234,6 @@ const AtlasActiveStrategy = {
 
         let mapItem = getMapItem(level, airdropPos)
         player.give(mapItem)
-
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
         return airdropPos
     },
 }

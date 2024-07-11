@@ -227,7 +227,7 @@
     "kubejs.puffskill.exdesc.healing": "生命恢复：玩家每次自然血量回复时的回复值",
     "kubejs.puffskill.def.healing_add_05.title": "生命恢复+0.5",
     "kubejs.puffskill.def.stamina_add_05.title": "饥饿耐久+0.5",
-    "kubejs.puffskill.exdesc.stamina": "饥饿耐久：影响每个饥饿值的有效程度，默认每个饥饿值有4点耐久",
+    "kubejs.puffskill.exdesc.stamina": "饥饿耐久：影响每个饥饿值的有效程度，默认每个饥饿值有4点耐久，耐久消耗完毕后，玩家的饥饿值/饱和度就会下降",
     "kubejs.puffskill.def.stamina_multiply_base_025.title": "饥饿耐久+25%",
     "kubejs.puffskill.def.melee_damage_add_05.title": "近战伤害+0.5",
     "kubejs.puffskill.exdesc.melee_damage": "近战伤害：影响所有近距离作战武器造成的伤害",

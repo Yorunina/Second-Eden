@@ -1,0 +1,25 @@
+{
+	"content": {
+        "airdrop_rews_advanced_atlas": {
+            "type": "item",
+            "content": "kubejs:advanced_atlas",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 500,
+            "nbt": "{Damage:0}"
+        },
+        "airdrop_rews_ultra_atlas": {
+            "type": "item",
+            "content": "kubejs:ultra_atlas",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 1500,
+            "nbt": "{Damage:0}"
+        }
+	}
+
+}

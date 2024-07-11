@@ -273,18 +273,21 @@ const AdvancedAirdropPool = new Map()
 global.AirdropPool['newer'] = NewerAirdropPool
 global.AirdropPool['common'] = CommonAirdropPool
 global.AirdropPool['advanced'] = AdvancedAirdropPool
-// global.AirdropPool['ultra'] = UltraAirdropPool
-// global.AirdropPool['huge'] = HugeAirdropPool
+global.AirdropPool['ultra'] = UltraAirdropPool
+global.AirdropPool['huge'] = HugeAirdropPool
 global.AirdropPool['wood'] = WoodAirdropPool
+global.AirdropPool['stone'] = StoneAirdropPool
+global.AirdropPool['ore'] = OreAirdropPool
+global.AirdropPool['luxury'] = LuxuryAirdropPool
 
 global.AtlasTypeMapping = new Map()
     .set('kubejs:newer_atlas', 'newer')
     .set('kubejs:common_atlas', 'common')
     .set('kubejs:sociality_atlas', 'common')
     .set('kubejs:advanced_atlas', 'advanced')
-    // .set('kubejs:ultra_atlas', 'ultra')
-    // .set('kubejs:huge_atlas', 'huge')
+    .set('kubejs:ultra_atlas', 'ultra')
+    .set('kubejs:huge_atlas', 'huge')
     .set('kubejs:wood_atlas', 'wood')
-    // .set('kubejs:stone_atlas', 'stone')
-    // .set('kubejs:ore_atlas', 'ore')
-    // .set('kubejs:luxury_atlas', 'luxury')
+    .set('kubejs:stone_atlas', 'stone')
+    .set('kubejs:ore_atlas', 'ore')
+    .set('kubejs:luxury_atlas', 'luxury')
