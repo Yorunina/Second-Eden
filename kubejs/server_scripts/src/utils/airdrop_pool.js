@@ -63,6 +63,39 @@ const WoodAirdropPool = new Map().set('wood&sapling', [
     new AirdropPoolItem('minecraft:mangrove_log').setMinCount(64).setMaxCount(128).setFortuneCoe(2).setChance(0.8),
 ])
 
+const StoneAirdropPool = new Map()
+    .set('stone', [
+        new AirdropPoolItem('minecraft:cobblestone').setMinCount(64).setMaxCount(256).setFortuneCoe(2),
+        new AirdropPoolItem('minecraft:stone').setMinCount(64).setMaxCount(256).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:cobbled_deepslate').setMinCount(32).setMaxCount(128).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:deepslate').setMinCount(32).setMaxCount(128).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:smooth_stone').setMinCount(32).setMaxCount(128).setFortuneCoe(2).setChance(0.25),
+    ]).set('sand', [
+        new AirdropPoolItem('minecraft:sand').setMinCount(32).setMaxCount(256).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:red_sand').setMinCount(32).setMaxCount(256).setFortuneCoe(2).setChance(0.8),
+        new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(256).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:stone_bricks').setMinCount(16).setMaxCount(128).setFortuneCoe(2).setChance(0.8),
+        new AirdropPoolItem('minecart:clay_block').setMinCount(16).setMaxCount(128).setFortuneCoe(2).setChance(1),
+    ])
+
+const OreAirdropPool = new Map()
+    .set('raw_ore', [
+        new AirdropPoolItem('minecraft:coal').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
+        new AirdropPoolItem('minecraft:raw_iron').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
+        new AirdropPoolItem('minecraft:raw_copper').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:raw_gold').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:quartz').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.3),
+        new AirdropPoolItem('kubejs:raw_iridium').setMinCount(1).setMaxCount(4).setFortuneCoe(1.5).setChance(0.02),
+    ])
+
+const LuxuryAirdropPool = new Map()
+    .set('curios', [
+        // todo 添加更多饰品
+        new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
+        new AirdropPoolItem('sophisticatedbackpacks:diamond_backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
+        new AirdropPoolItem('sophisticatedbackpacks:netherite_backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
+        new AirdropPoolItem('minecraft:dragon_head').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.01),
+    ])
 
 const CommonAirdropPool = new Map()
     .set('common_wood', [
@@ -84,11 +117,11 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:dark_oak_log').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:mangrove_log').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
     ]).set('stone', [
-        new AirdropPoolItem('minecraft:sand').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.75),
+        new AirdropPoolItem('minecraft:sand').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:red_sand').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
-        new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.5),
-        new AirdropPoolItem('minecraft:cobblestone').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5),
-        new AirdropPoolItem('minecraft:stone').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.75),
+        new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:cobblestone').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5),
+        new AirdropPoolItem('minecraft:stone').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:cobbled_deepslate').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:deepslate').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:smooth_stone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
@@ -269,6 +302,68 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('arcanelanterns:withering_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
     ])
 
+const UltraAirdropPool = new Map()
+    .set('relics', [
+        new AirdropPoolItem('relics:amphibian_boot').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:aqua_walker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:arrow_quiver').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:bastion_ring').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:blazing_flask').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:chorus_inhibitor').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:drowned_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:elytra_booster').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:enders_hand').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:holy_locket').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:horse_flute').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:hunter_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:ice_breaker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:ice_skates').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:infinity_ham').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:jellyfish_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:leather_belt').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:magic_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:magma_walker').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:midnight_robe').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:rage_glove').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:reflection_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:roller_skates').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:shadow_glaive').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:space_dissector').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:spatial_sign').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:spore_sack').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+        new AirdropPoolItem('relics:wool_mitten').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
+    ])
+
+
+const HugeAirdropPool = new Map().set('wood&sapling', [
+    new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5),
+    new AirdropPoolItem('minecraft:grass_block').setMinCount(8).setMaxCount(16).setFortuneCoe(1).setChance(0.5),
+    new AirdropPoolItem('minecraft:oak_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:birch_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:cherry_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:spruce_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:acacia_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:jungle_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:dark_oak_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:mangrove_log').setMinCount(32).setMaxCount(64).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:oak_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:birch_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:spruce_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:acacia_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:cherry_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:jungle_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('minecraft:dark_oak_sapling').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+    new AirdropPoolItem('mangrove_roots').setMinCount(8).setMaxCount(16).setFortuneCoe(3).setChance(0.5),
+]).set('only_wood', [
+    new AirdropPoolItem('minecraft:oak_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:birch_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:cherry_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:spruce_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:acacia_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:jungle_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:dark_oak_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+    new AirdropPoolItem('minecraft:mangrove_log').setMinCount(64).setMaxCount(128).setFortuneCoe(3).setChance(0.8),
+])
 
 global.AirdropPool['newer'] = NewerAirdropPool
 global.AirdropPool['common'] = CommonAirdropPool
