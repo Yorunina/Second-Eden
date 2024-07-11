@@ -13,9 +13,9 @@
 			}
 		},
 		"icon": {
-			"type": "texture",
+			"type": "item",
 			"data": {
-				"texture": ""
+				"item": "kubejs:skill_book_intelligence"
 			}
 		},
 		"rewards": []
@@ -36,7 +36,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/cold_damage.png"
 			}
 		},
 		"rewards": [
@@ -66,7 +66,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/cold_damage.png"
 			}
 		},
 		"rewards": [
@@ -96,7 +96,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/cold_damage.png"
 			}
 		},
 		"rewards": [
@@ -126,7 +126,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/cold_damage.png"
 			}
 		},
 		"rewards": [
@@ -164,7 +164,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fire_damage.png"
 			}
 		},
 		"rewards": [
@@ -194,7 +194,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fire_damage.png"
 			}
 		},
 		"rewards": [
@@ -224,7 +224,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fire_damage.png"
 			}
 		},
 		"rewards": [
@@ -254,7 +254,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fire_damage.png"
 			}
 		},
 		"rewards": [
@@ -292,7 +292,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/luck.png"
 			}
 		},
 		"rewards": [
@@ -322,7 +322,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/luck.png"
 			}
 		},
 		"rewards": [
@@ -352,7 +352,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fortune.png"
 			}
 		},
 		"rewards": [
@@ -382,7 +382,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/fortune.png"
 			}
 		},
 		"rewards": [
@@ -412,7 +412,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/treasure_distance.png"
 			}
 		},
 		"rewards": [
@@ -442,7 +442,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/treasure_distance.png"
 			}
 		},
 		"rewards": [
@@ -472,7 +472,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/treasure_distance.png"
 			}
 		},
 		"rewards": [
@@ -502,7 +502,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/treasure_fortune.png"
 			}
 		},
 		"rewards": [
@@ -532,7 +532,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/encode_ability.png"
 			}
 		},
 		"rewards": [
@@ -562,7 +562,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/encode_ability.png"
 			}
 		},
 		"rewards": [
@@ -592,7 +592,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/encode_ability.png"
 			}
 		},
 		"rewards": [
@@ -622,7 +622,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/overheal.png"
 			}
 		},
 		"rewards": [
@@ -652,7 +652,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/decode_ability.png"
 			}
 		},
 		"rewards": [
@@ -682,7 +682,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/decode_ability.png"
 			}
 		},
 		"rewards": [
@@ -712,7 +712,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/decode_ability.png"
 			}
 		},
 		"rewards": [
@@ -742,7 +742,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/life_steal.png"
 			}
 		},
 		"rewards": [

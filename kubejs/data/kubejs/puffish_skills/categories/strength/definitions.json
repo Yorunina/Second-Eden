@@ -13,9 +13,9 @@
 			}
 		},
 		"icon": {
-			"type": "texture",
+			"type": "item",
 			"data": {
-				"texture": ""
+				"item": "kubejs:skill_book_strength"
 			}
 		},
 		"rewards": []
@@ -36,7 +36,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/health.png"
 			}
 		},
 		"rewards": [
@@ -66,7 +66,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/health.png"
 			}
 		},
 		"rewards": [
@@ -96,7 +96,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/health.png"
 			}
 		},
 		"rewards": [
@@ -126,7 +126,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/health.png"
 			}
 		},
 		"rewards": [
@@ -156,7 +156,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/healing.png"
 			}
 		},
 		"rewards": [
@@ -186,7 +186,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/healing.png"
 			}
 		},
 		"rewards": [
@@ -216,7 +216,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/stamina.png"
 			}
 		},
 		"rewards": [
@@ -246,7 +246,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/stamina.png"
 			}
 		},
 		"rewards": [
@@ -276,7 +276,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/melee_damage.png"
 			}
 		},
 		"rewards": [
@@ -306,7 +306,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/melee_damage.png"
 			}
 		},
 		"rewards": [
@@ -336,7 +336,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/melee_damage.png"
 			}
 		},
 		"rewards": [
@@ -366,7 +366,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/melee_damage.png"
 			}
 		},
 		"rewards": [
@@ -396,7 +396,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor.png"
 			}
 		},
 		"rewards": [
@@ -426,7 +426,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor.png"
 			}
 		},
 		"rewards": [
@@ -456,7 +456,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor_toughness.png"
 			}
 		},
 		"rewards": [
@@ -486,7 +486,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor.png"
 			}
 		},
 		"rewards": [
@@ -516,7 +516,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor_shred.png"
 			}
 		},
 		"rewards": [
@@ -546,7 +546,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/crit_damage.png"
 			}
 		},
 		"rewards": [
@@ -576,7 +576,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/crit_damage.png"
 			}
 		},
 		"rewards": [
@@ -606,7 +606,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/current_hp_damage.png"
 			}
 		},
 		"rewards": [
@@ -636,7 +636,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/prot_shred.png"
 			}
 		},
 		"rewards": [
@@ -666,7 +666,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/knockback_resistance.png"
 			}
 		},
 		"rewards": [
@@ -696,7 +696,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/knockback.png"
 			}
 		},
 		"rewards": [
@@ -726,7 +726,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/draw_speed.png"
 			}
 		},
 		"rewards": [

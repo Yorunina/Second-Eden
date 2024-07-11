@@ -13,9 +13,9 @@
 			}
 		},
 		"icon": {
-			"type": "texture",
+			"type": "item",
 			"data": {
-				"texture": ""
+				"item": "kubejs:skill_book_agility"
 			}
 		},
 		"rewards": []
@@ -36,7 +36,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/attack_speed.png"
 			}
 		},
 		"rewards": [
@@ -66,7 +66,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/attack_speed.png"
 			}
 		},
 		"rewards": [
@@ -96,7 +96,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/attack_speed.png"
 			}
 		},
 		"rewards": [
@@ -115,7 +115,7 @@
 			"translate": "kubejs.puffskill.def.step_height_addition_add_05.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.step_height_addition"
+			"translate": "kubejs.puffskill.exdesc.step_height"
 		},
 		"frame": {
 			"type": "advancement",
@@ -126,7 +126,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/step_height.png"
 			}
 		},
 		"rewards": [
@@ -156,7 +156,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/ranged_damage.png"
 			}
 		},
 		"rewards": [
@@ -186,7 +186,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/ranged_damage.png"
 			}
 		},
 		"rewards": [
@@ -216,7 +216,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/ranged_damage.png"
 			}
 		},
 		"rewards": [
@@ -246,7 +246,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/ranged_damage.png"
 			}
 		},
 		"rewards": [
@@ -276,7 +276,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/mining_speed.png"
 			}
 		},
 		"rewards": [
@@ -306,7 +306,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/mining_speed.png"
 			}
 		},
 		"rewards": [
@@ -336,7 +336,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/axe_speed.png"
 			}
 		},
 		"rewards": [
@@ -366,7 +366,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/entity_reach.png"
 			}
 		},
 		"rewards": [
@@ -396,7 +396,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/sprinting_speed.png"
 			}
 		},
 		"rewards": [
@@ -426,7 +426,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/sprinting_speed.png"
 			}
 		},
 		"rewards": [
@@ -456,7 +456,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/sprinting_speed.png"
 			}
 		},
 		"rewards": [
@@ -486,7 +486,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/jump.png"
 			}
 		},
 		"rewards": [
@@ -516,7 +516,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/armor_pierce.png"
 			}
 		},
 		"rewards": [
@@ -546,7 +546,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/crit_chance.png"
 			}
 		},
 		"rewards": [
@@ -576,7 +576,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/crit_chance.png"
 			}
 		},
 		"rewards": [
@@ -606,7 +606,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/arrow_velocity.png"
 			}
 		},
 		"rewards": [
@@ -636,7 +636,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/prot_pierce.png"
 			}
 		},
 		"rewards": [
@@ -666,7 +666,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/dodge_chance.png"
 			}
 		},
 		"rewards": [
@@ -696,7 +696,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/dodge_chance.png"
 			}
 		},
 		"rewards": [
@@ -726,7 +726,7 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": ""
+				"texture": "kubejs:textures/skill/experience_gained.png"
 			}
 		},
 		"rewards": [

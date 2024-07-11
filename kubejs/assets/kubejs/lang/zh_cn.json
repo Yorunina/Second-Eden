@@ -261,7 +261,7 @@
     "kubejs.puffskill.def.attack_speed_add_01.title": "攻击速度+10%",
     "kubejs.puffskill.def.attack_speed_add_02.title": "攻击速度+20%",
     "kubejs.puffskill.def.step_height_addition_add_05.title": "行走高高度+0.5",
-    "kubejs.puffskill.exdesc.step_height_addition": "行走高度：在不跳跃的情况下自动走上方块的高度",
+    "kubejs.puffskill.exdesc.step_height": "行走高度：在不跳跃的情况下自动走上方块的高度",
     "kubejs.puffskill.def.ranged_damage_add_05.title": "远程伤害+0.5",
     "kubejs.puffskill.exdesc.ranged_damage": "远程伤害：远程武器造成的伤害，包括三叉戟、弓箭和弩",
     "kubejs.puffskill.def.ranged_damage_add_1.title": "远程伤害+1",

@@ -4,8 +4,8 @@
 	"icon": {
 		"type": "item",
 		"data": {
-			"item": "diamond_sword"
+			"item": "kubejs:skill_book_agility"
 		}
 	},
-	"background": "textures/gui/advancements/backgrounds/adventure.png"
+	"background": "textures/gui/advancements/backgrounds/stone.png"
 }
