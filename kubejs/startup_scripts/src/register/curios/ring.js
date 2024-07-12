@@ -2,10 +2,8 @@ const { OVERLIMIT, COMMON, RARE, EPIC, LEGENDARY } = require("../../utils/itembo
 
 StartupEvents.registry('item', event => {
     // 和平之戒
-    // todo 补充材质
     event.create('peaceful_ring')
         .maxStackSize(1)
-        .rarity('epic')
         .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -16,7 +14,6 @@ StartupEvents.registry('item', event => {
     // 窃听之戒
     event.create('snoop_ring')
         .maxStackSize(1)
-        .rarity('epic')
         .tag(EPIC)
         .tag('curios:ring')
         .tag('kubejs:snoop')
@@ -43,7 +40,6 @@ StartupEvents.registry('item', event => {
     // 红宝石戒指
     event.create('common_ruby_ring')
         .maxStackSize(1)
-        .rarity('common')
         .tag(COMMON)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -54,7 +50,6 @@ StartupEvents.registry('item', event => {
 
     event.create('rare_ruby_ring')
         .maxStackSize(1)
-        .rarity('rare')
         .tag(RARE)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -65,7 +60,6 @@ StartupEvents.registry('item', event => {
 
     event.create('epic_ruby_ring')
         .maxStackSize(1)
-        .rarity('epic')
         .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -89,7 +83,6 @@ StartupEvents.registry('item', event => {
     // 蓝宝石戒指
     event.create('common_sapphire_ring')
         .maxStackSize(1)
-        .rarity('common')
         .tag(COMMON)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -100,7 +93,6 @@ StartupEvents.registry('item', event => {
 
     event.create('rare_sapphire_ring')
         .maxStackSize(1)
-        .rarity('rare')
         .tag(RARE)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
@@ -111,7 +103,6 @@ StartupEvents.registry('item', event => {
 
     event.create('epic_sapphire_ring')
         .maxStackSize(1)
-        .rarity('epic')
         .tag(EPIC)
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()

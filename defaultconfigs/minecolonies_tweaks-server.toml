@@ -8,13 +8,13 @@
 	#If false, use MineColonies' s method.
 	newRetrieveMethod = true
 	#Range: 5 ~ 15
-	farmMaxRange = 5
+	farmMaxRange = 10
 
 [jobs]
 	#Range: > 0
-	blockMiningDelay = 500
+	blockMiningDelay = 200
 	#Range: > 0
-	blockBuildingDelay = 15
+	blockBuildingDelay = 10
 
 	[jobs.builder]
 		#builder's blockMiningDelay = commonBlockingMiningDelay * buff
@@ -30,7 +30,7 @@
 		#The delay ticks for go to work again after Citizen returned at hut
 		#This was 0 when 1.19.2
 		#Range: 0 ~ 400
-		decideDelay = 80
+		decideDelay = 0
 
 	[jobs.sifter]
 		#siftingTicks = progressMultiplier - strengthLevel
