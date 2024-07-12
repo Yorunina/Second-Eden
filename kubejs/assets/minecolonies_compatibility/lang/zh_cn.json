@@ -1,0 +1,56 @@
+{
+	"minecolonies_tweaks.custom_tooltype.crossbow": "弩",
+	"minecolonies_tweaks.custom_tooltype.gun": "枪",
+	"minecolonies_tweaks.custom_tooltype.knife": "刀",
+	"minecolonies_tweaks.custom_tooltype.ranger_weapon": "远程武器",
+	"minecolonies_tweaks.custom_tooltype.knight_weapon": "近战武器",
+  
+	"minecolonies_compatibility.job.gunner": "炮手",
+	"minecolonies_compatibility:gunner.job.desc": "远程战斗者，能造成高伤害，但在近战中生存几率较低。",
+	"minecolonies_compatibility:gunner.skills.desc": "影响速度、精准度、射程和伤害输出。",
+  
+	"minecolonies_compatibility.job.orchardist": "果园管理员",
+	"minecolonies_compatibility:orchardist.job.desc": "采摘树上的果实和悬挂的叶类作物。",
+	"minecolonies_compatibility:orchardist.skills.desc": "影响采摘和行走速度。",
+  
+	"minecolonies_compatibility.job.farmers_cook": "农夫乐事厨师",
+	"minecolonies_compatibility:farmers_cook.job.desc": "使用农夫乐事模组的烹饪锅烹饪，并分发食物给殖民者。",
+	"minecolonies_compatibility:farmers_cook.skills.desc": "影响烹饪速度。",
+  
+	"minecolonies_compatibility.ie_bullet": "子弹",
+	"minecolonies_compatibility.ie_bullet.desc": "沉浸工程模组的子弹",
+	"minecolonies_compatibility.reliquary_magazine": "弹匣",
+	"minecolonies_compatibility.reliquary_magazine.desc": "圣物模组的弹匣",
+  
+	"block.minecolonies_compatibility.citizen_grid": "殖民者网格",
+	"item.minecolonies_compatibility.citizen_terminal": "殖民者终端机",
+  
+	"block.minecolonies_compatibility.citizen_inventory": "殖民者存储箱",
+	"block.minecolonies_compatibility.citizen_inventory.tooltip": "连接存储网络和快递员小屋",
+  
+	"com.minecolonies.coremod.gui.workerhuts.fruitlist_blacklist": "果实黑名单",
+	"com.minecolonies.coremod.gui.workerhuts.network_storage": "网络存储",
+  
+	"minecolonies_compatibility.gui.refresh": "刷新",
+	"minecolonies_compatibility.gui.refreshing": "正在刷新",
+	"minecolonies_compatibility.gui.pos": "位置: %1$s, %2$s, %3$s",
+	"minecolonies_compatibility.gui.linked_pos": "已链接至: %1$s, %2$s, %3$s",
+	"minecolonies_compatibility.gui.not_linked": "未链接",
+  
+	"com.minecolonies.coremod.setting.minecolonies_compatibility:request_firework_rocket": "请求烟花火箭",
+	"com.minecolonies.coremod.setting.minecolonies_compatibility:need_max_harvest": "仅收获最大年龄",
+  
+	"minecolonies_compatibility.jei.unsupported_tool": "不支持的工具",
+  
+	"com.minecolonies.coremod.gui.workerhuts.recipe.farmers_cutting_knife": "使用刀的切割配方",
+	"minecolonies_compatibility.gui.farmers_cutting_knife": "使用刀的切割配方",
+	"com.minecolonies.coremod.gui.workerhuts.recipe.farmers_cooking": "使用烹饪锅的烹饪配方",
+	"minecolonies_compatibility.gui.farmers_cooking": "使用锅的烹饪配方",
+  
+	"minecolonies_compatibility.interaction.no_farmers_cooking_recipe": "我的工作小屋没有注册任何烹饪配方！请注册一些以便我可以工作！",
+	"minecolonies_compatibility.interaction.no_cutting_board": "我的工作小屋没有菜板！请放置一些以便我可以使用！",
+	"minecolonies_compatibility.interaction.no_heated_cooking_pot": "我的工作小屋没有加热的烹饪锅！请放置烹饪锅并在其下方放置热源！",
+  
+	"com.minecolonies.coremod.jei.farmers_cook": "使用农夫乐事模组的烹饪锅烹饪，并分发食物给殖民者。",
+	"com.minecolonies.coremod.jei.orchardist": "采摘树上的果实和悬挂的叶类作物。"
+}

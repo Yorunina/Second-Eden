@@ -1,0 +1,11 @@
+{
+	id: "2A63ADFE42C2F671"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ item: "kubejs:skill_book_strength" }
+		{ item: "kubejs:skill_book_agility" }
+		{ item: "kubejs:skill_book_intelligence" }
+	]
+	title: "随机技能书"
+}

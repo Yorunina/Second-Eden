@@ -1,1 +1,2 @@
-global.AtlasKeyPressed = 'AltasKeyPressed'
+global.AtlasKeyPressedChannel = 'AltasKeyPressed'
+global.WayPointCreateChannel = 'WayPointCreate'

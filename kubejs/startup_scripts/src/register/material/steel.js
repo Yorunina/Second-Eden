@@ -13,6 +13,7 @@ ItemEvents.toolTierRegistry(event => {
 
 StartupEvents.registry('block', event => {
     event.create('steel_block', 'basic')
+        .tag(RARE)
         .soundType("netherite_block")
         .textureAll('kubejs:block/steel_block')
         .resistance(1500)
@@ -23,7 +24,7 @@ StartupEvents.registry('block', event => {
 
 
 StartupEvents.registry('item', event => {
-    event.create('steel_ingot', 'basic').texture('kubejs:item/steel_ingot')
+    event.create('steel_ingot', 'basic').tag(RARE).texture('kubejs:item/steel_ingot')
 })
 
 ItemEvents.armorTierRegistry(event => {
@@ -45,7 +46,7 @@ StartupEvents.registry('item', event => {
     event.create('steel_leggings', 'leggings').texture('kubejs:item/steel_leggings').tier('steel').tag('minecraft:trimmable_armor').tag(RARE)
     event.create('steel_boots', 'boots').texture('kubejs:item/steel_boots').tier('steel').tag('minecraft:trimmable_armor').tag(RARE)
 
-    event.create('steel_sword', 'sword').tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/steel_sword').tier('steel')
+    event.create('steel_sword', 'sword').tag('minecraft:swords').tag('forge:tools').tag(RARE).tag('minecraft:tools').texture('kubejs:item/steel_sword').tier('steel')
 
     event.create('steel_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('travelersbackpack:acceptable_tools').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/steel_pickaxe').tier('steel').tag(RARE)
     event.create('steel_axe', 'axe').tag('minecraft:axes').tag('forge:tools').tag('forge:tools/axes').tag('minecraft:tools').texture('kubejs:item/steel_axe').tier('steel').tag(RARE)

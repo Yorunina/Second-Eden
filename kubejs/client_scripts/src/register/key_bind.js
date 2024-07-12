@@ -6,6 +6,6 @@ const AtlasUsingKey = new $KeyMapping(`key.kubejs.atlas_key`, $GLFW.GLFW_KEY_X, 
 $KeyMappingRegistry.register(AtlasUsingKey)
 ClientEvents.tick(event => {
     if (AtlasUsingKey.consumeClick()) {
-        event.player.sendData(global.AtlasKeyPressed)
+        event.player.sendData(global.AtlasKeyPressedChannel)
     }
 })

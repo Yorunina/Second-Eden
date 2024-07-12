@@ -7,8 +7,9 @@ const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$Chun
 const { AirdropEntityConfig } = require("../../model/airdrop_entity_config")
 const { $ServerPlayer } = require("packages/net/minecraft/server/level/$ServerPlayer")
 const { $BlockPos } = require("packages/net/minecraft/core/$BlockPos")
+const { CreateWaypoint } = require("../../utils/ftbchunk")
 
-NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
+NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
     let { level, player } = event
     if (!player instanceof $ServerPlayer) return
     let curios = getCuriosHandler(player)
@@ -24,6 +25,12 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
     if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return
     let airdropPos = AtlasActiveStrategy[atlasItem.id](event, atlasItem)
     if (!airdropPos) return
+
+    // 标记地点
+    if (curios.isEquipped('kubejs:waypointer_necklace')) {
+        CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFAED34)
+    }
+
     atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
     player.addItemCooldown(atlasItem, 20 * 30)
 
@@ -47,6 +54,8 @@ NetworkEvents.dataReceived(global.AtlasKeyPressed, event => {
         }
     })
 })
+
+
 
 /**
  * @param {$ServerPlayer_} player 
@@ -119,14 +128,14 @@ function getMapItem(level, pos) {
  * 地图册策略，注册地图册物品之后需要实现其对应的策略，而后去注册AtlasTypeMapping中地图册对应的airdrop type
  * @constant
  * @type {Object<string,function($NetworkEventJS_, $ItemStack_):void>}
- * @returns {$BlockPos_}
+ * @returns {$BlockPos}
  */
 const AtlasActiveStrategy = {
     'kubejs:newer_atlas': function (event, atlasItem) {
         let { level, player } = event
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('adv_airdrop_balloon'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:adv_airdrop_balloon'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)
@@ -214,7 +223,7 @@ const AtlasActiveStrategy = {
         let { level, player } = event
         let airdropPos = getSpawnLocation(level, player)
 
-        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('adv_airdrop_balloon_blue'))
+        let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:adv_airdrop_balloon_blue'))
         airdropEntity.spawn()
 
         let mapItem = getMapItem(level, airdropPos)

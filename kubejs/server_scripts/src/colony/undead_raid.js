@@ -41,7 +41,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
         hordeEntity.heal(hordeEntity.getMaxHealth())
 
         hordeEntity.setPersistenceRequired()
-        hordeEntity.setPos(spawnLocation.x + Math.random() * 6, spawnLocation.y, spawnLocation.z + Math.random() * 6)
+        hordeEntity.setPos(spawnLocation.x + Math.random() * 3, spawnLocation.y + 1, spawnLocation.z + Math.random() * 3)
         hordeEntity.finalizeSpawn(level, level.getCurrentDifficultyAt(spawnLocation), $MobSpawnType.PATROL, null, null)
         level.addFreshEntityWithPassengers(hordeEntity)
     }

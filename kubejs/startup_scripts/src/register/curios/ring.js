@@ -23,6 +23,7 @@ StartupEvents.registry('item', event => {
         )
         .texture('kubejs:item/curios/snoop_ring')
 
+
     // 月见草之语
     event.create('evening_primrose_ring')
         .maxStackSize(1)

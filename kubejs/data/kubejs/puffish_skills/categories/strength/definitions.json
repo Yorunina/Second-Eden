@@ -7,9 +7,10 @@
 			"translate": "kubejs.puffskill.def.root_strength.desc"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -28,9 +29,10 @@
 			"translate": "kubejs.puffskill.exdesc.health"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -58,9 +60,10 @@
 			"translate": "kubejs.puffskill.exdesc.health"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -88,9 +91,10 @@
 			"translate": "kubejs.puffskill.exdesc.health"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -118,9 +122,10 @@
 			"translate": "kubejs.puffskill.exdesc.health"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -148,9 +153,10 @@
 			"translate": "kubejs.puffskill.exdesc.healing"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -178,9 +184,10 @@
 			"translate": "kubejs.puffskill.exdesc.healing"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -208,9 +215,10 @@
 			"translate": "kubejs.puffskill.exdesc.stamina"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -238,9 +246,10 @@
 			"translate": "kubejs.puffskill.exdesc.stamina"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -268,9 +277,10 @@
 			"translate": "kubejs.puffskill.exdesc.melee_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -298,9 +308,10 @@
 			"translate": "kubejs.puffskill.exdesc.melee_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -328,9 +339,10 @@
 			"translate": "kubejs.puffskill.exdesc.melee_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -358,9 +370,10 @@
 			"translate": "kubejs.puffskill.exdesc.melee_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -388,9 +401,10 @@
 			"translate": "kubejs.puffskill.exdesc.armor"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -418,9 +432,10 @@
 			"translate": "kubejs.puffskill.exdesc.armor"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -448,9 +463,10 @@
 			"translate": "kubejs.puffskill.exdesc.armor_toughness"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -478,9 +494,10 @@
 			"translate": "kubejs.puffskill.exdesc.armor"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -508,9 +525,10 @@
 			"translate": "kubejs.puffskill.exdesc.armor_shred"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -538,9 +556,10 @@
 			"translate": "kubejs.puffskill.exdesc.crit_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -568,9 +587,10 @@
 			"translate": "kubejs.puffskill.exdesc.crit_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -598,9 +618,10 @@
 			"translate": "kubejs.puffskill.exdesc.current_hp_damage"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {
@@ -628,9 +649,10 @@
 			"translate": "kubejs.puffskill.exdesc.prot_shred"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "task"
+				"unlocked": "kubejs:textures/skill/frame/square_unlock.png",
+				"available": "kubejs:textures/skill/frame/square_available.png"
 			}
 		},
 		"icon": {
@@ -658,9 +680,10 @@
 			"translate": "kubejs.puffskill.exdesc.knockback_resistance"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "goal"
+				"unlocked": "kubejs:textures/skill/frame/round_square_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_square_available.png"
 			}
 		},
 		"icon": {
@@ -688,9 +711,10 @@
 			"translate": "kubejs.puffskill.exdesc.knockback"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/round_unlock.png",
+				"available": "kubejs:textures/skill/frame/round_available.png"
 			}
 		},
 		"icon": {
@@ -718,9 +742,10 @@
 			"translate": "kubejs.puffskill.exdesc.draw_speed"
 		},
 		"frame": {
-			"type": "advancement",
+			"type": "texture",
 			"data": {
-				"frame": "challenge"
+				"unlocked": "kubejs:textures/skill/frame/sawtooth_unlock.png",
+				"available": "kubejs:textures/skill/frame/sawtooth_available.png"
 			}
 		},
 		"icon": {

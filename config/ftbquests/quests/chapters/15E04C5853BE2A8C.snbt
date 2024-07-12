@@ -1,0 +1,68 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "15E04C5853BE2A8C"
+	group: ""
+	id: "15E04C5853BE2A8C"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"New-Colony（中文名：地平线）是一款完全围绕MineColonies（模拟殖民地）的主题向整合包。"
+				""
+				"整个整合包流程围绕模拟殖民地展开，通过筛选相关Mod，并且进行前、中、后期的内容微调，使得整个模拟殖民地的发展流程更为顺滑、轻松。"
+			]
+			icon: "kubejs:master_certificate"
+			id: "6A8DF9B51A9B903B"
+			subtitle: "写在最前面"
+			tasks: [{
+				id: "5E180DC1685F8084"
+				title: "放在前面"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"通过将新手地图册装备在饰品栏：地图册，你可以使用自定义按键来消耗地图册的耐久，以在世界的某处生成&m（呼叫）&r一个&6空投热气球&r。"
+				""
+				"不同的地图册会有不同的主题池，对于新手地图册来说，其主题池包含了land（陆地）和sea（海洋）两种。&2不同的主题池，有着不同的掉落内容&r。"
+				""
+				"以&6新手地图册&r为例，陆地主题会掉落地面上便于放置的&6补给营地&r，而海洋主题会掉落便于海上放置的&6补给船&r。"
+				""
+				"其余的地图册也有着各种各样不同的主题。一般来说，主题的出现是完全等概率随机的，你可以通过&6主题命名牌&r来强制修改某个地图册的主题到某个具体类型。"
+				""
+				"{@pagebreak}"
+				"但是请注意！主题命名牌有些时候会拥有某个地图册不拥有的主题，如果地图册不拥有这个主题，会随机选择一个主题生成！"
+			]
+			id: "48FD6C4DE7C8B59A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00A0AE1CA95A0FF1"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			subtitle: "怀揣地图，呼叫支援"
+			tasks: [{
+				id: "5B64A75BDE482865"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"curios:item": { }
+					}
+					id: "kubejs:newer_atlas"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "新手地图册"
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "引入"
+}

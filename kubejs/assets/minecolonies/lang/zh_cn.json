@@ -1230,7 +1230,7 @@
     "com.minecolonies.coremod.gui.chat.cancel": "尝试取消该请求!",
     "com.minecolonies.coremod.gui.chat.fulfill": "请详细说明！",
     "com.minecolonies.coremod.gui.research.title": "研究分支",
-    "com.minecolonies.coremod.gui.research.tier.header": "等级 %s (原研究需 %s 小时)",
+    "com.minecolonies.coremod.gui.research.tier.header": "等级 %s (需 %s 小时)",
     "com.minecolonies.coremod.gui.research.tier.header.unrestricted": "%d小时",
     "com.minecolonies.coremod.gui.research.time": "剩余 %s",
     "com.minecolonies.coremod.gui.research.countinprogress": "%d/%d 研究进行中",
