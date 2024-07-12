@@ -1,8 +1,8 @@
 {
 	"objectives": [
-		"slayer_objs"
+		"airdrop_objs"
 	],
 	"rewards": [
-		"slayer_rews"
+		"airdrop_rews"
 	]
 }

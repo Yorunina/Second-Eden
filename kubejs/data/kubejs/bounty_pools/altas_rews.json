@@ -1,0 +1,95 @@
+{
+    "_comment": "地图册奖励",
+    "content": {
+        "altas_rews_advanced_atlas": {
+            "type": "item",
+            "content": "kubejs:advanced_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 500,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_common_atlas": {
+            "type": "item",
+            "content": "kubejs:common_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 250,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_sociality_atlas": {
+            "type": "item",
+            "content": "kubejs:sociality_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            }   ,
+            "unitWorth": 800,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_wood_atlas": {
+            "type": "item",
+            "content": "kubejs:wood_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 600,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_stone_atlas": {
+            "type": "item",
+            "content": "kubejs:stone_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 600,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_ore_atlas": {
+            "type": "item",
+            "content": "kubejs:ore_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1000,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_luxury_atlas": {
+            "type": "item",
+            "content": "kubejs:luxury_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_huge_atlas": {
+            "type": "item",
+            "content": "kubejs:huge_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200,
+            "nbt": "{Damage:0}"
+        },
+        "altas_rews_ultra_atlas": {
+            "type": "item",
+            "content": "kubejs:ultra_atlas",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1500,
+            "nbt": "{Damage:0}"
+        }
+    }
+}
