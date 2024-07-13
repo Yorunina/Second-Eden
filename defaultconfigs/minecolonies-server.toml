@@ -141,7 +141,7 @@
 #所有的配置选项均与模组兼容性有关
 [compatibility]
 	#公民在图书馆中所消耗的物品。 
-	configliststudyitems = ["minecraft:paper;200;100", "minecraft:book;400;30", "kubejs:book_of_knowledge;600;15", "kubejs:book_of_enlight;800;10"]
+	configliststudyitems = ["minecraft:paper;200;100", "minecraft:book;600;40", "kubejs:book_of_enlight;800;10"]
 	#酒馆客人需求的物品 
 	configlistrecruitmentitems = ["minecraft:hay_block;3", "minecraft:book;2", "minecraft:enchanted_book;9", "minecraft:diamond;9", "minecraft:emerald;8", "minecraft:baked_potato;1", "minecraft:gold_ingot;2", "minecraft:redstone;2", "minecraft:lapis_lazuli;2", "minecraft:cake;11", "minecraft:sunflower;5", "minecraft:honeycomb;6", "minecraft:quartz;3"]
 	#低权重矿物列表，矿工更少地获得列表内的矿物 (参考 ”矿物权重“选项) 格式: 方块! 权重 

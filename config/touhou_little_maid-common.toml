@@ -49,6 +49,12 @@
 	MaidHomeMealsBlockListRegEx = []
 	#These items cannot be used as a maid's heal meals which match the regex
 	MaidHealMealsBlockListRegEx = []
+	#Percentage chance of replace Allays spawn in pillager outposts with Maids
+	#Range: 0.0 ~ 1.0
+	ReplaceAllayPercent = 0.2
+	#These entries configure the container returned after a maid has eaten
+	#Eg: ["minecraft:beetroot_soup", "minecraft:bowl"]
+	MaidEatenReturnContainerList = []
 
 [chair]
 	#Chair can switch models freely

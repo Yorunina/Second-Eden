@@ -67,7 +67,8 @@
   },
   "delightful": {
     "crop_progress": true,
-    "pie_icons": true
+    "pie_icons": true,
+    "mushroom_colony": true
   },
   "jadecolonies": {
     "colony.citizens": true,

@@ -2,7 +2,7 @@ const { $SkillsAPI } = require("packages/net/puffish/skillsmod/api/$SkillsAPI")
 const { $SkillsMod } = require("packages/net/puffish/skillsmod/$SkillsMod")
 const { $Skill } = require("packages/com/minecolonies/api/entity/citizen/$Skill")
 
-const MAX_COMMON_SKILL_POINTS = 25
+const MAX_COMMON_SKILL_POINTS = 30
 ItemEvents.rightClicked('kubejs:skill_book_strength', event => {
     let { player, item } = event
     if (!player) return

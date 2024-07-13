@@ -136,12 +136,6 @@
 	#Range: 1 -> 2147483647
 	tickDelay=40
 	
-	#The maximum delay (in ticks) between Money Mending & Coin Magnet ticks.
-	#If greater than 0, will run the Money Mending & Coin Magnet ticks this frequently even if the server is falling behind.
-	#Note: 20 ticks = 1s
-	#Range: 1 -> 2147483647
-	maxTickDelay=200
-	
 	#The cost required to repair a single item durability point with the Money Mending enchantment.
 	#See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments
 	moneyMendingRepairCost="coin;1-lightmanscurrency:coin_copper"

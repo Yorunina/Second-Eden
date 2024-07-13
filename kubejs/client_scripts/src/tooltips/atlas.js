@@ -13,12 +13,12 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('#curios:atlas', (item, advanced, text) => {
-        text.add(1, Text.translatable(`tooltip.item.kubejs.atlas.1`, Text.gold((item.hasNBT() && item.nbt.contains('theme')) ? item.nbt.getString('theme') : 'random')).gray())
+        text.add(1, Text.translatable(`tooltip.item.kubejs.atlas.1`, Text.yellow((item.hasNBT() && item.nbt.contains('theme')) ? item.nbt.getString('theme') : 'random')).gold())
     })
 
     tooltip.addAdvanced('kubejs:atlas_theme_nametag', (item, advanced, text) => {
         text.add(1, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.1`,
-            Text.gold((item.hasNBT() && item.nbt.contains('itemId')) ? Item.of(item.nbt.getString('itemId')).getDisplayName() : Text.translatable('tooltip.item.kubejs.atlas_theme_nametag.2'))).gray())
+            Text.gold((item.hasNBT() && item.nbt.contains('itemId')) ? Item.of(item.nbt.getString('itemId')).getHoverName() : Text.translatable('tooltip.item.kubejs.atlas_theme_nametag.2'))).gray())
         text.add(1, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.3`,
             Text.gold((item.hasNBT() && item.nbt.contains('theme')) ? item.nbt.getString('theme') : 'random')).gray())
     })

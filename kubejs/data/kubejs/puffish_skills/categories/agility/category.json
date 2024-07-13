@@ -7,5 +7,5 @@
 			"item": "kubejs:skill_book_agility"
 		}
 	},
-	"background": "textures/gui/advancements/backgrounds/stone.png"
+	"background": "kubejs:textures/gui/all_black.png"
 }

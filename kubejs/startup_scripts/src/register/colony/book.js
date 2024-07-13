@@ -1,9 +1,6 @@
 const { RARE, EPIC, LEGENDARY, OVERLIMIT } = require("../../utils/itemborder")
 
 StartupEvents.registry('item', event => {
-    event.create('book_of_knowledge', 'basic')
-        .maxStackSize(16)
-        .texture('kubejs:item/book_of_knowledge')
     event.create('book_of_enlight', 'basic')
         .maxStackSize(16)
         .texture('kubejs:item/book_of_enlight')

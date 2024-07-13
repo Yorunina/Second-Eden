@@ -491,8 +491,8 @@
         "value": 0
       },
       "max": {
-        "default": 128,
-        "value": 128
+        "default": 1024,
+        "value": 1024
       }
     },
     "miapi:generic.resistance": {
@@ -678,8 +678,8 @@
         "value": 0
       },
       "max": {
-        "default": 128,
-        "value": 128
+        "default": 1024,
+        "value": 1024
       }
     },
     "attributeslib:prot_pierce": {

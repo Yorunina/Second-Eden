@@ -163,4 +163,7 @@
 	give_sliced_directly = false
 	#Allow sliced melons to be juiced in-world (right click)
 	melon_juicing = true
+	cactus_chili = true
+	cactus_soup = true
+	cactus_soup_cup = true
 

@@ -1,0 +1,19 @@
+{
+	id: "6854D0B0EF2E63EB"
+	loot_size: 3
+	order_index: 1
+	rewards: [
+		{ item: "kubejs:soul_gem_adaptability" }
+		{ item: "kubejs:soul_gem_agility" }
+		{ item: "kubejs:soul_gem_athletics" }
+		{ item: "kubejs:soul_gem_creativity" }
+		{ item: "kubejs:soul_gem_dexterity" }
+		{ item: "kubejs:soul_gem_focus" }
+		{ item: "kubejs:soul_gem_intelligence" }
+		{ item: "kubejs:soul_gem_knowledge" }
+		{ item: "kubejs:soul_gem_mana" }
+		{ item: "kubejs:soul_gem_strength" }
+		{ item: "kubejs:soul_gem_stamina" }
+	]
+	title: "随机灵魂宝石"
+}

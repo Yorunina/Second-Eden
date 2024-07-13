@@ -4,6 +4,7 @@ StartupEvents.registry('entity_type', event => {
     AirDropBalloonType.forEach(type => {
         event.create(type, 'entityjs:mob')
             .mobCategory('misc')
+            .noEggItem()
             .setRenderType('translucent')
             .sized(1.4, 4.5)
             .updateInterval(1)
@@ -19,6 +20,7 @@ StartupEvents.registry('entity_type', event => {
 
         event.create(`med_${type}`, 'entityjs:mob')
             .mobCategory('misc')
+            .noEggItem()
             .setRenderType('translucent')
             .sized(1.5, 5.0)
             .updateInterval(1)
@@ -34,6 +36,7 @@ StartupEvents.registry('entity_type', event => {
 
         event.create(`adv_${type}`, 'entityjs:mob')
             .mobCategory('misc')
+            .noEggItem()
             .setRenderType('translucent')
             .sized(1.6, 6.0)
             .updateInterval(1)

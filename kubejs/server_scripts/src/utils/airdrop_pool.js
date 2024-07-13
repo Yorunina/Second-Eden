@@ -76,7 +76,7 @@ const StoneAirdropPool = new Map()
         new AirdropPoolItem('minecraft:red_sand').setMinCount(32).setMaxCount(256).setFortuneCoe(2).setChance(0.8),
         new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(256).setFortuneCoe(2).setChance(1),
         new AirdropPoolItem('minecraft:stone_bricks').setMinCount(16).setMaxCount(128).setFortuneCoe(2).setChance(0.8),
-        new AirdropPoolItem('minecart:clay_block').setMinCount(16).setMaxCount(128).setFortuneCoe(2).setChance(1),
+        new AirdropPoolItem('minecraft:clay').setMinCount(16).setMaxCount(128).setFortuneCoe(2).setChance(1),
     ])
 
 const OreAirdropPool = new Map()
@@ -127,7 +127,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:deepslate').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.75),
         new AirdropPoolItem('minecraft:smooth_stone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:stone_bricks').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.25),
-        new AirdropPoolItem('minecart:clay_block').setMinCount(16).setMaxCount(64).setFortuneCoe(0.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:clay').setMinCount(16).setMaxCount(64).setFortuneCoe(0.5).setChance(0.5),
     ]).set('raw_ore', [
         new AirdropPoolItem('minecraft:coal').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
