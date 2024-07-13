@@ -73,33 +73,4 @@ ServerEvents.highPriorityData(event => {
             .setSubtitle('com.kubejs.research.technology.wirelessaccess.subtitle')
     )
     event.addJson(`kubejs:researches/effects/wirelessaccess.json`, { "effect": true })
-
-    // 无限无线通讯协议
-    event.addJson(`kubejs:researches/technology/infinitywirelessaccess.json`,
-        new ColonyResearchModel('minecolonies:technology', 5, [
-            new BuildingRequirementModel('deliveryman', 10),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
-        ])
-            .setEffects([{ 'kubejs:effects/infinitywirelessaccess': 1 }])
-            .setParentResearch('kubejs:technology/wirelessaccess')
-            .setSubtitle('com.kubejs.research.technology.infinitywirelessaccess.subtitle')
-    )
-    event.addJson(`kubejs:researches/effects/infinitywirelessaccess.json`, { "effect": true })
-
-    // 无穷无尽多维理论
-    event.addJson(`kubejs:researches/technology/creativediskunlock.json`,
-        new ColonyResearchModel('minecolonies:technology', 5, [
-            new BuildingRequirementModel('enchanter', 5),
-            new BuildingRequirementModel('netherworker', 10),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
-        ])
-            .setEffects([{ 'kubejs:effects/creativediskunlock': 1 }])
-            .setParentResearch('kubejs:technology/morediskunlock')
-            .setSubtitle('com.kubejs.research.technology.creativediskunlock.subtitle')
-    )
-    event.addJson(`kubejs:researches/effects/creativediskunlock.json`, { "effect": true })
 })

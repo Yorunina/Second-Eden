@@ -1,6 +1,6 @@
 // priority: 1000
 export const $ColonyResearchBranch_ = 'minecolonies:technology' || 'minecolonies:combat' || 'minecolonies:civilian'
-export const $ColonyBuilding_ = 'townhall' || 'library' || 'cook' || 'graveyard' || 'school' || 'residence' || 'deliveryman' || 'hospital' || 'guardtower' || 'archery' || 'combatacademy' || 'smeltery' || 'barracks' || 'miner' || 'sawmill' || 'plantation' || 'crusher' || 'composter' || 'netherworker' || 'beekeeper' || 'fletcher' || 'enchanter' || 'fisherman' || 'blacksmith' || 'stonemason' || 'lumberjack' || 'baker' || 'mechanic' || 'alchemist'
+export const $ColonyBuilding_ = 'townhall' || 'library' || 'cook' || 'graveyard' || 'school' || 'residence' || 'deliveryman' || 'hospital' || 'guardtower' || 'archery' || 'combatacademy' || 'smeltery' || 'barracks' || 'miner' || 'sawmill' || 'plantation' || 'crusher' || 'composter' || 'netherworker' || 'beekeeper' || 'fletcher' || 'enchanter' || 'fisherman' || 'blacksmith' || 'stonemason' || 'lumberjack' || 'baker' || 'mechanic' || 'alchemist' || 'sifter'
 
 export const $ColonyResearchRequirement_ = ItemRequirementModel || BuildingRequirementModel
 /**
@@ -53,7 +53,7 @@ ColonyResearchModel.prototype = {
      * @returns {ColonyResearchModel}
      */
     setSortOrder(sortOrder) {
-        this.sortOrder = sortOrder.toFixed()
+        this.sortOrder = sortOrder
         return this
     }
 }

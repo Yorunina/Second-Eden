@@ -178,7 +178,6 @@
 			]
 			icon: "kubejs:skill_book_strength"
 			id: "13BCDD950336C1F4"
-			min_required_tasks: 1
 			rewards: [{
 				id: "26416B4AA598045D"
 				item: "kubejs:skill_forget_book"
@@ -252,7 +251,6 @@
 			]
 			icon: "minecolonies:supplycampdeployer"
 			id: "3B3395C72863B7EC"
-			min_required_tasks: 1
 			rewards: [{
 				id: "4E566A64A3E5197D"
 				table_id: 3054476279840700017L
@@ -402,12 +400,57 @@
 			subtitle: "向你的灵魂中灌注知识"
 			tasks: [{
 				icon: "kubejs:soul_gem_agility"
-				id: "57192296C5AB9741"
+				id: "543D15D354F5CF0C"
 				item: {
 					Count: 1
-					id: "itemfilters:tag"
+					id: "itemfilters:or"
 					tag: {
-						value: "kubejs:soul_gem"
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_mana"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_intelligence"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_dexterity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_focus"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_athletics"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_creativity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_agility"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_strength"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_knowledge"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_stamina"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_adaptability"
+							}
+						]
 					}
 				}
 				title: "任意灵魂宝石"

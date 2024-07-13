@@ -191,26 +191,7 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(4)
             .setResearchId('kubejs:effects/morediskunlock', true))
 
-    // 无穷无尽多维理论
-    event.addJson(`kubejs:crafterrecipes/mechanic/creative_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_storage_disk', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('refinedstorage:silicon', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:storage_housing')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/creativediskunlock', true))
 
-    event.addJson(`kubejs:crafterrecipes/mechanic/creative_fluid_storage_disk.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_fluid_storage_disk', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('minecraft:glass', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:storage_housing')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/creativediskunlock', true))
-
-    event.addJson(`kubejs:crafterrecipes/mechanic/creative_storage_block.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_storage_block', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('refinedstorage:silicon', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:machine_casing')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/creativediskunlock', true))
-
-    event.addJson(`kubejs:crafterrecipes/mechanic/creative_fluid_storage_block.json`,
-        new ColonyCraftRecipes('mechanic_crafting', Item.of('refinedstorage:creative_fluid_storage_block', 1), [Item.of('refinedstorage:64k_storage_part', 64), Item.of('minecraft:glass', 128), Item.of('kubejs:echo_crystal', 16), Item.of('refinedstorage:machine_casing')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/creativediskunlock', true))
 
     // 自动制作管理
     event.addJson(`kubejs:crafterrecipes/mechanic/crafter.json`,
@@ -263,15 +244,4 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('mechanic_crafting', Item.of('universalgrid:creative_wireless_universal_grid', 1), [Item.of('refinedstorage:network_card', 3), Item.of('refinedstorage:wireless_transmitter', 1), Item.of('refinedstorage:crafting_grid', 1)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/wirelessaccess', true))
-
-    // 无限无线通讯协议
-    event.addJson(`kubejs:crafterrecipes/enchanter/infinity_card.json`,
-        new ColonyCraftRecipes('enchanter_custom', Item.of('rsinfinitybooster:infinity_card', 1), [Item.of('refinedstorage:network_card', 16), Item.of('kubejs:echo_crystal', 16), Item.of('minecraft:chorus_fruit', 128)])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/infinitywirelessaccess', true))
-
-    event.addJson(`kubejs:crafterrecipes/enchanter/dimension_card.json`,
-        new ColonyCraftRecipes('enchanter_custom', Item.of('rsinfinitybooster:dimension_card', 1), [Item.of('refinedstorage:network_card', 16), Item.of('kubejs:echo_crystal', 16), Item.of('minecraft:ender_eye', 32)])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/infinitywirelessaccess', true))
 })
