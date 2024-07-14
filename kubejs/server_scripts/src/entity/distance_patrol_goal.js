@@ -7,7 +7,7 @@ const { $Vec3 } = require("packages/net/minecraft/world/phys/$Vec3")
  * @param {$PathfinderMob_} entity 
  */
 export function SetLongDistancePatrolGoal(entity) {
-    entity.goalSelector.addGoal(0, new $CustomGoal(
+    entity.goalSelector.addGoal(3, new $CustomGoal(
         'long_distance_patrol',
         entity,
         /** @param {$PathfinderMob_} mob **/ mob => {

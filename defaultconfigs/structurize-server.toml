@@ -1,0 +1,43 @@
+
+#All configuration items related to the core gameplay
+[gameplay]
+	#Should the default schematics be ignored (from the jar)? [Default: false]
+	ignoreSchematicsFromJar = false
+	#Should player-made schematics be allowed? [Default: true]
+	allowPlayerSchematics = true
+	#Max world operations per tick (max blocks to place, remove, or replace). [Default: 1000, min: 0, max: 100000]
+	#Range: 0 ~ 100000
+	maxOperationsPerTick = 1000
+	#Max amount of undos saved. A higher number requires more memory. [Default: 50, min: 0, max: 250]
+	#Range: 0 ~ 250
+	maxCachedChanges = 50
+	#Max amount of schematics to be cached on the server. [Default: 100, min: 0, max: 100000]
+	#Range: 0 ~ 100000
+	maxCachedSchematics = 100
+	#Max amount of blocks checked by a possible worker. [Default: 1000, min: 0, max: 100000]
+	#Range: 0 ~ 100000
+	maxBlocksChecked = 1000
+	#structurize.config.schematicblocklimit.comment [Default: 100000, min: 1000, max: 1000000]
+	#Range: 1000 ~ 1000000
+	schematicBlockLimit = 100000
+	#Currently supports 'default', 'inwardcircle', 'hilbert', 'random' and 'inwardcircleheight1' to 'inwardcircleheight4' [Default: default]
+	iteratorType = "default"
+
+#Configuration related to scan tool teleportation
+[teleport]
+	#If creative-mode players can use the scan tool to teleport to/from their builds. [Default: true]
+	teleportAllowed = true
+	#When teleporting to a build, land on this side of it. [Default: south, values: DOWN, UP, NORTH, SOUTH, WEST, EAST]
+	#Allowed Values: DOWN, UP, NORTH, SOUTH, WEST, EAST
+	teleportBuildDirection = "SOUTH"
+	#When teleporting to a build, land this far away from it. [Default: 3, min: 1, max: 16]
+	#Range: 1 ~ 16
+	teleportBuildDistance = 3
+	#Allow teleporting a little distance away if the landing area is blocked; disable to teleport exactly to target. [Default: true]
+	teleportSafety = true
+
+#structurize.config.update.comment
+[update]
+	start = [-10, -10]
+	end = [10, 10]
+

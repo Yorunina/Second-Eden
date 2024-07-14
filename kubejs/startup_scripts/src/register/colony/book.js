@@ -5,17 +5,6 @@ StartupEvents.registry('item', event => {
         .maxStackSize(16)
         .texture('kubejs:item/book_of_enlight')
 
-    event.create('raid_book', 'basic')
-        .maxStackSize(16)
-        .tag(RARE)
-        .tag('minecolonies:hide_citizen_data')
-        .texture('kubejs:item/raid_book')
-    event.create('undead_raid_book', 'basic')
-        .maxStackSize(16)
-        .tag(EPIC)
-        .tag('minecolonies:hide_citizen_data')
-        .texture('kubejs:item/undead_raid_book')
-
     event.create('skill_book_strength')
         .maxStackSize(16)
         .tag(LEGENDARY)

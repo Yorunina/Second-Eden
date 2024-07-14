@@ -1,0 +1,138 @@
+
+[jobs]
+
+	[jobs.ranger]
+		canUseCrossbow = true
+		canShootFireworkRocket = true
+
+	[jobs.knight]
+		canUseAxe = true
+
+	[jobs.gunner]
+		#DONT_USE: don't use bullet, only shot default bullet
+		#CAN_USE: use bullet if citizen have bullet, else shot default bullet
+		#ONLY_USE: citizen must have bullet
+		#Allowed Values: DONT_USE, CAN_USE, ONLY_USE
+		bulletMode = "CAN_USE"
+
+		[jobs.gunner.searchRange]
+			#Range: 0 ~ 32
+			horizontal = 16
+			#Range: 0 ~ 32
+			vertical = 3
+			#Range: 0 ~ 32
+			verticalBonusOnGuard = 25
+
+		[jobs.gunner.attackRange]
+			#Range: 2.0 ~ 24.0
+			base = 10.0
+			#Range: 0.0 ~ 24.0
+			increasePerSkillLevel = 0.3
+			#Range: 0.0 ~ 24.0
+			increasePerBuildingLevel = 1.0
+			#Range: 2.0 ~ 48.0
+			maximum = 24.0
+			#Range: 0.0 ~ 24.0
+			bonusOnGuard = 10.0
+			yDifferenceCorrection = true
+
+		[jobs.gunner.combatMoveSpeed]
+			#Range: 0.1 ~ 2.0
+			base = 1.0
+			#Range: 0.0 ~ 24.0
+			increasePerSkillLevel = 0.01
+			#Range: 0.0 ~ 24.0
+			increasePerBuildingLevel = 0.02
+
+	[jobs.orchardist]
+		#Range: 0 ~ 240
+		searchRange = 120
+		#Range: 0 ~ 20
+		searchVerticalRange = 10
+		#Range: > 0
+		searchDelayAfterNotFound = 400
+		#Range: > 0
+		harvestDelay = 40
+		#Range: 0.0 ~ 2.147483647E9
+		harvestDelayReducePerSkillLevel = 0.5
+		#Range: 0.0 ~ 2.147483647E9
+		moveSpeedBonusPerSkillLevel = 0.0015
+		#Range: > 64
+		actionsDoneUntilDumping = 128
+
+	[jobs.farmersCook]
+		#Reduce cooking ticsk by (int)(skillevel *  acceleratePerSkillLevel)
+		#Range: 0.0 ~ 2.147483647E9
+		acceleratePerSkillLevel = 0.2
+
+[modules]
+
+	#Immersive Engineering
+	[modules.immersiveengineering]
+
+		[modules.immersiveengineering.job]
+
+			[modules.immersiveengineering.job.gunner_revolver]
+				#Citizen will have reload time after every 8 shots
+				needReload = true
+				#Range: 0 ~ 600
+				reloadDuration = 60
+				#Nearby monsters will come to the Citizen
+				#Also Warden and Sculk blocks can may listen noise
+				occurNoise = true
+				#If revolver has 'Precision Scope', search/attack range will be multiply this
+				#Range: 1.0 ~ 2.5
+				scopeRangeMultiplier = 1.25
+
+				[modules.immersiveengineering.job.gunner_revolver.attackDelay]
+					#Range: 10 ~ 200
+					base = 60
+					#Range: 0.0 ~ 200.0
+					decreasePerSkillLevel = 1.0
+					#Range: 0.0 ~ 200.0
+					decreasePerBuildingLevel = 0.0
+
+				[modules.immersiveengineering.job.gunner_revolver.defaultBulletDamage]
+					#Range: 0.0 ~ 2.147483647E9
+					base = 2.0
+					#Range: 0.0 ~ 2.147483647E9
+					increasePerSkillLevel = 0.2
+					#Range: 0.0 ~ 2.147483647E9
+					increasePerBuildingLevel = 0.0
+					#Range: 1.0 ~ 3.0
+					headshotMultiplier = 1.5
+
+	#Reliquary Reincarnations
+	[modules.reliquary]
+
+		[modules.reliquary.job]
+
+			[modules.reliquary.job.gunner_handgun]
+				#Citizen will have reload time after every 8 shots
+				#Range: 0 ~ 600
+				reloadDuration = 60
+
+				[modules.reliquary.job.gunner_handgun.attackDelay]
+					#Range: 10 ~ 200
+					base = 60
+					#Range: 0.0 ~ 200.0
+					decreasePerSkillLevel = 1.0
+					#Range: 0.0 ~ 200.0
+					decreasePerBuildingLevel = 0.0
+
+				[modules.reliquary.job.gunner_handgun.defaultBulletDamage]
+					#Range: 0.0 ~ 2.147483647E9
+					base = 2.0
+					#Range: 0.0 ~ 2.147483647E9
+					increasePerSkillLevel = 0.2
+					#Range: 0.0 ~ 2.147483647E9
+					increasePerBuildingLevel = 0.0
+
+	#Refined Storage
+	[modules.refinedstorage]
+
+		#Citizen Grid
+		[modules.refinedstorage.citizenGrid]
+			#Range: > 0
+			energyUsage = 0
+
