@@ -5,11 +5,14 @@ const { $MobSpawnType } = require("packages/net/minecraft/world/entity/$MobSpawn
 const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$ChunkStatus")
 const { CustomRaidEntityType } = require("../../model/custom_raid_entity")
 const { $PathfinderMob } = require("packages/net/minecraft/world/entity/$PathfinderMob")
-const { $UUID } = require("packages/java/util/$UUID")
+const { $ServerLevel } = require("packages/net/minecraft/server/level/$ServerLevel")
+const { $EntityType } = require("packages/net/minecraft/world/entity/$EntityType")
 
 
 ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
-    let { target, level, item, player } = event
+    let { target, item, player } = event
+    /**@type {$ServerLevel} */
+    let level = event.level
     if (target.type != 'minecolonies:citizen') return
 
     let colony = GetColonyByEntity(target)
@@ -22,7 +25,7 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
     let blockZ = spawnLocation.z % 16
 
     let targetChunk = level.getChunk(chunkX, chunkZ, $ChunkStatus.SURFACE, true)
-    let spawnY = targetChunk.getHeight('motion_blocking', blockX, blockZ) + 1
+    let spawnY = targetChunk.getHeight('motion_blocking', blockX, blockZ) + 2
 
     if (!(item.hasNBT() && item.nbt.contains('entityList'))) {
         player.tell(Text.translatable('msg.player.raid.can_not_summon_custom.1').red())
@@ -30,18 +33,38 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
     }
     let entityList = item.nbt.getCompound('entityList')
 
-    entityList.allKeys.forEach(entityTypeKey => {
-        let entityModelNbt = entityList.getCompound(entityTypeKey)
+    entityList.allKeys.forEach(entityIdentifier => {
+        let entityModelNbt = entityList.getCompound(entityIdentifier)
         let entityType = entityModelNbt.getString('entityType')
         let count = entityModelNbt.getInt('count')
+        
         let modifiers = entityModelNbt.getCompound('modifiers')
         let entityModel = new CustomRaidEntityType(entityType, count).readFromNbtModifiers(modifiers)
+        entityModel.nbt.putString('id', entityType)
+        if (entityModelNbt.contains('customNbt')) {
+            entityModel.nbt.merge(entityModelNbt.getString('customNbt'))
+        }
         for (let i = 0; i < count; i++) {
             /**@type {$PathfinderMob} */
-            let entity = level.createEntity(entityType)
-
+            let entity = $EntityType.loadEntityRecursive(entityModel.nbt, level, (tempEntity) => {
+                return tempEntity
+            })
+            // let entity = level.createEntity(entityType)
+            // if (!entityModel.nbt.isEmpty()) {
+            //     entity.mergeNbt(entityModel.nbt)
+            // }
+            
             entityModel.modifiers.forEach((value, key, map) => {
-                entity.modifyAttribute(value.name, value.identifier, value.amount, value.operation)
+                switch (value.operation) {
+                    case 'addition_persisent':
+                        entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
+                        break
+                    case 'multiply_persisent':
+                        entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
+                        break
+                    default:
+                        entity.modifyAttribute(value.name, key, value.amount, value.operation)
+                }
             })
 
             entity.heal(entity.getMaxHealth())
@@ -52,8 +75,11 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
             SetLongDistancePatrolGoal(entity)
 
             entity.setPersistenceRequired()
-            entity.setPos(spawnLocation.x + Math.random() * 3, spawnY, spawnLocation.z + Math.random() * 3)
+            entity.setPos(spawnLocation.x + Math.random() * 5, spawnY, spawnLocation.z + Math.random() * 5)
             entity.finalizeSpawn(level, level.getCurrentDifficultyAt(spawnLocation), $MobSpawnType.PATROL, null, null)
+            if (!level.noCollision(entity)) {
+                entity.setPos(spawnLocation.x, spawnY, spawnLocation.z)
+            }
             level.addFreshEntityWithPassengers(entity)
 
         }
