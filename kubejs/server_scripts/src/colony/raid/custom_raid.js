@@ -43,7 +43,6 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
             entityModel.modifiers.forEach((value, key, map) => {
                 entity.modifyAttribute(value.name, value.identifier, value.amount, value.operation)
             })
-            entity.
 
             entity.heal(entity.getMaxHealth())
 

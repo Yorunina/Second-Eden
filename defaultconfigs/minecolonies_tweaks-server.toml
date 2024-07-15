@@ -12,9 +12,9 @@
 
 [jobs]
 	#Range: > 0
-	blockMiningDelay = 200
+	blockMiningDelay = 300
 	#Range: > 0
-	blockBuildingDelay = 10
+	blockBuildingDelay = 20
 
 	[jobs.builder]
 		#builder's blockMiningDelay = commonBlockingMiningDelay * buff

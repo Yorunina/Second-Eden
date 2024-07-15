@@ -14,6 +14,7 @@ export function CustomRaidEntityType(entityType, count) {
     this.count = count
     /**@type {Map<$Attribute$Type,AttributeModifier>} */
     this.modifiers = new Map()
+    this.nbt = new $CompoundTag()
 }
 
 CustomRaidEntityType.prototype = {
@@ -34,7 +35,7 @@ CustomRaidEntityType.prototype = {
      * @param {$AttributeModifier$Operation_} operation 
      * @returns {CustomRaidEntityType}
      */
-    setAttrModifier(name, identifier, amount, operation) { 
+    setAttrModifier(name, identifier, amount, operation) {
         this.modifiers.set(String(identifier), { 'name': name, 'identifier': identifier, 'amount': amount, 'operation': operation })
         return this
     },
