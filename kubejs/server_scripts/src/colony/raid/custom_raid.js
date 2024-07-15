@@ -6,7 +6,6 @@ const { $ChunkStatus } = require("packages/net/minecraft/world/level/chunk/$Chun
 const { CustomRaidEntityType } = require("../../model/custom_raid_entity")
 const { $PathfinderMob } = require("packages/net/minecraft/world/entity/$PathfinderMob")
 const { $ServerLevel } = require("packages/net/minecraft/server/level/$ServerLevel")
-const { $EntityType } = require("packages/net/minecraft/world/entity/$EntityType")
 
 
 ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
@@ -42,24 +41,22 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
         let entityModel = new CustomRaidEntityType(entityType, count).readFromNbtModifiers(modifiers)
         entityModel.nbt.putString('id', entityType)
         if (entityModelNbt.contains('customNbt')) {
-            entityModel.nbt.merge(entityModelNbt.getString('customNbt'))
+            entityModel.nbt.merge(NBT.toTagCompound(entityModelNbt.getString('customNbt')))
         }
+        
         for (let i = 0; i < count; i++) {
             /**@type {$PathfinderMob} */
-            let entity = $EntityType.loadEntityRecursive(entityModel.nbt, level, (tempEntity) => {
-                return tempEntity
-            })
-            // let entity = level.createEntity(entityType)
-            // if (!entityModel.nbt.isEmpty()) {
-            //     entity.mergeNbt(entityModel.nbt)
-            // }
+            let entity = level.createEntity(entityType)
+            if (!entityModel.nbt.isEmpty()) {
+                entity.mergeNbt(entityModel.nbt)
+            }
             
             entityModel.modifiers.forEach((value, key, map) => {
                 switch (value.operation) {
-                    case 'addition_persisent':
+                    case 'addition_persistent':
                         entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
                         break
-                    case 'multiply_persisent':
+                    case 'multiply_persistent':
                         entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
                         break
                     default:
@@ -77,11 +74,7 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
             entity.setPersistenceRequired()
             entity.setPos(spawnLocation.x + Math.random() * 5, spawnY, spawnLocation.z + Math.random() * 5)
             entity.finalizeSpawn(level, level.getCurrentDifficultyAt(spawnLocation), $MobSpawnType.PATROL, null, null)
-            if (!level.noCollision(entity)) {
-                entity.setPos(spawnLocation.x, spawnY, spawnLocation.z)
-            }
             level.addFreshEntityWithPassengers(entity)
-
         }
     })
 

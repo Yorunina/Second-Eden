@@ -15,10 +15,17 @@ ItemEvents.tooltip((tooltip) => {
             let modifiers = entityModelNbt.getCompound('modifiers')
             let entityModel = new CustomRaidEntityType(entityType, count).readFromNbtModifiers(modifiers)
 
-            text.add(initNum++, `${Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`)} x ${entityModel.count}`)
+            text.add(initNum++,
+                Text.of('☆ ').gray()
+                    .append(Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`).yellow())
+                    .append(Text.gray(' x '))
+                    .append(Text.gray(entityModel.count.toFixed(0))))
+
             if (tooltip.isShift()) {
-                entityModel.modifiers.forEach((attributeModifier, attributeIdentifier, map) => {
-                    text.add(initNum++, `    - ${Text.translatable(`attribute.identifier.kubejs.${attributeIdentifier}`, attributeModifier.amount)}`)
+                entityModel.modifiers.forEach((attributeModifier, attributeIdentifier) => {
+                    text.add(initNum++,
+                        Text.of('   - ').gray()
+                            .append(Text.translatable(`attribute.identifier.kubejs.${attributeIdentifier}`, attributeModifier.amount).gray()))
                 })
             }
         })
@@ -27,28 +34,25 @@ ItemEvents.tooltip((tooltip) => {
     tooltip.addAdvanced('#kubejs:specific_raid_orb', (item, advanced, text) => {
         let initNum = 1
         if (!item.hasNBT()) return
-        /** @type {$CompoundTag} */
-        let count = item.nbt.contains('count') ? item.nbt.getCompound('count') : 1
-        text.add(initNum++, `${Text.translatable(`tooltip.item.kubejs.specific_raid_orb.1`)} x ${count}`)
-        if (tooltip.isShift()) {
-            let customNbt = item.nbt.contains('customNbt') ? item.nbt.getCompound('customNbt') : '{}'
-            text.add(initNum++, `${Text.translatable(`tooltip.item.kubejs.specific_raid_orb.2`)} ${customNbt}`)
-        }
+        let count = item.nbt.contains('count') ? item.nbt.getInt('count') : 1
+        text.add(initNum++,
+            Text.of('☆ ').gray()
+                .append(Text.translatable(`tooltip.item.kubejs.specific_raid_orb.1`).gray())
+                .append(Text.gold(count.toFixed(0))))
     })
 
     tooltip.addAdvanced('kubejs:custom_raid_orb', (item, advanced, text) => {
         let initNum = 1
         if (!item.hasNBT()) return
         if (!item.nbt.contains('identifier')) return
-        /** @type {$CompoundTag} */
-        let count = item.nbt.contains('count') ? item.nbt.getCompound('count') : 1
-        let entityIdentifier = item.nbt.getCompound('identifier')
-        entityIdentifier
-        text.add(initNum++, `${Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`)} x ${count}`)
-        if (tooltip.isShift()) {
-            let customNbt = item.nbt.contains('customNbt') ? item.nbt.getCompound('customNbt') : '{}'
-            text.add(initNum++, `${Text.translatable(`tooltip.item.kubejs.specific_raid_orb.2`)} ${customNbt}`)
-        }
+
+        let count = item.nbt.contains('count') ? item.nbt.getInt('count') : 1
+        let entityIdentifier = item.nbt.getString('identifier')
+        text.add(initNum++,
+            Text.of('☆ ').gray()
+                .append(Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`).yellow())
+                .append(Text.gray(' x '))
+                .append(Text.gray(count.toFixed(0))))
     })
 
     tooltip.addAdvanced('kubejs:raid_entity_modifier', (item, advanced, text) => {
@@ -57,11 +61,15 @@ ItemEvents.tooltip((tooltip) => {
         if (!item.nbt.contains('identifier') || !item.nbt.contains('modifiers')) return
         /** @type {$CompoundTag} */
         let modifiersNbt = item.nbt.getCompound('modifiers')
-        let entityIdentifier = item.nbt.getCompound('identifier')
-        text.add(initNum++, `${Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`)}`)
+        let entityIdentifier = item.nbt.getString('identifier')
+        text.add(initNum++,
+            Text.of('☆ ').gray()
+                .append(Text.translatable(`tooltip.item.kubejs.raid_entity_modifier.1`).gray())
+                .append(Text.translatable(`entity.identifier.kubejs.${entityIdentifier}`).yellow()))
         modifiersNbt.allKeys.forEach(attributeIdentifier => {
             let attributeNbt = modifiersNbt.getCompound(attributeIdentifier)
-            text.add(initNum++, `${Text.translatable(`attribute.identifier.kubejs.${attributeIdentifier}`, attributeNbt.getInt('amount'))}`)
+            text.add(initNum++, Text.of('   - ').gray()
+                .append(Text.translatable(`attribute.identifier.kubejs.${attributeIdentifier}`, attributeNbt.getDouble('amount')).gray()))
         })
     })
 })

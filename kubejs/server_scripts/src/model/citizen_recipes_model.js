@@ -1,3 +1,5 @@
+import { $ItemStack } from "packages/net/minecraft/world/item/$ItemStack"
+
 // priority: 1000
 export const $ColonyCrafter_ = 'alchemist_crafting' || 'baker_crafting' || 'baker_smelting' || 'blacksmith_crafting' || 'concretemixer_custom' || 'crusher_custom' || 'dyer_crafting' || 'enchanter_custom' || 'farmer_crafting' || 'fletcher_crafting' || 'lumberjack_custom' || 'mechanic_crafting' || 'netherworker_custom' || 'sifter_custom' || 'stonemason_crafting' || 'smelter_custom'
 export const $ColonyToolRequire_ = 'axe'
@@ -77,6 +79,17 @@ ColonyCraftRecipes.prototype = {
      */
     setTool(tool) {
         this['tool'] = tool
+        return this
+    },
+    /**
+     * @param {$ItemStack[]} items 
+     * @returns {ColonyCraftRecipes}
+     */
+    setAdditionalOutput(items) {
+        this['additional-output'] = []
+        items.forEach(item => {
+            this['additional-output'].push({'item': item.id})
+        })
         return this
     }
 }

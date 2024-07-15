@@ -77,7 +77,8 @@ CustomRaidEntityType.prototype = {
         let nbt = NBT.toTagCompound({
             'entityType': NBT.stringTag(this.entityType),
             'count': NBT.intTag(this.count),
-            'modifiers': modifiersNbt
+            'modifiers': modifiersNbt,
+            'customNbt': this.nbt.toString()
         })
         return nbt
     },
@@ -89,7 +90,7 @@ CustomRaidEntityType.prototype = {
     readFromNbtModifiers(nbt) {
         nbt.allKeys.forEach(key => {
             let attributeNbt = nbt.getCompound(key)
-            this.setAttrModifier(attributeNbt.getString('name'), attributeNbt.getDouble('amount'), attributeNbt.getString('operation'))
+            this.setAttrModifier(attributeNbt.getString('name'), key, attributeNbt.getDouble('amount'), attributeNbt.getString('operation'))
         })
         return this
     }

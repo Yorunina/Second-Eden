@@ -37,7 +37,9 @@ ServerEvents.recipes(event => {
             .modifyResult((/** @type { $ModifyRecipeCraftingGrid_ }*/grid,/** @type { $ItemStack_ }*/ stack) => {
                 let orb = grid.find(`kubejs:${minecraftEntityType}_orb`, 0)
                 let addCount = (orb.hasNBT() && orb.nbt.contains('count')) ? orb.nbt.getInt('count') : 1
-                let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? orb.nbt.getCompound('customNbt') : new $CompoundTag()
+
+                let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
+
                 let raidBook = grid.find('kubejs:custom_raid_book', 0)
                 return CustomRaidBookAddEntityCount(raidBook, minecraftEntityType, `minecraft:${minecraftEntityType}`, addCount, customNbt)
             })
@@ -45,7 +47,6 @@ ServerEvents.recipes(event => {
 
     event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:custom_raid_orb`])
         .modifyResult((/** @type { $ModifyRecipeCraftingGrid_ }*/grid,/** @type { $ItemStack_ }*/ stack) => {
-
             let orb = grid.find(`kubejs:custom_raid_orb`, 0)
             if (!orb.hasNBT()) return Item.of('minecraft:air')
             if (!orb.nbt.contains('entityType')) return Item.of('minecraft:air')
@@ -54,7 +55,9 @@ ServerEvents.recipes(event => {
             let entityIdentifier = orb.nbt.getString('identifier')
 
             let addCount = orb.nbt.contains('count') ? orb.nbt.getInt('count') : 1
-            let customNbt = orb.nbt.contains('customNbt') ? orb.nbt.getCompound('customNbt') : new $CompoundTag()
+
+            let customNbt = orb.nbt.contains('customNbt') ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
+
             let raidBook = grid.find('kubejs:custom_raid_book', 0)
             return CustomRaidBookAddEntityCount(raidBook, entityIdentifier, entityType, addCount, customNbt)
         })
@@ -125,7 +128,7 @@ function CustomRaidBookEntityListNbtModifier(entityListNbt, modifierListNbt, ent
         }
         entityModel.setAttrModifier(attributeNbt.getString('name'), identifier, amount + attributeNbt.getDouble('amount'), attributeNbt.getString('operation'))
     })
-    entityListNbt.put(entityType, entityModel.writeAsNbt())
+    entityListNbt.put(entityIdentifier, entityModel.writeAsNbt())
     return entityListNbt
 }
 

@@ -118,6 +118,13 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/infinitywirelessaccess', true))
 
-
+    // 中子素收集器
+    // todo fix
+    event.addJson(`kubejs:crafterrecipes/sifter/neutron_pile.json`,
+        new ColonyCraftRecipes('sifter_custom', Item.of('kubejs:neutron_pile', 1), [Item.of('minecraft:soul_sand', 1), Item.of('kubejs:sifter_mesh_netherite', 1)])
+            .setAdditionalOutput(['kubejs:neutron_pile'])
+            .setLootTable('kubejs:recipes/netherite/soul_sand')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/infinitywirelessaccess', true))
 })
 

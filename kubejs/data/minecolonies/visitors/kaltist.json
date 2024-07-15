@@ -1,0 +1,10 @@
+{
+  "texture": "1b27428d-2f66-477c-8353-a3c06da9c4f0",
+  "citizensuffix": "_w",
+  "name": "Kal'tist",
+  "chance": 0.02,
+  "storylangkey": "chat.kubejs.colony.visitor.kaltist",
+  "recruitcost": "minecraft:lime_dye",
+  "recruitcostcount": 12,
+  "gender": "female"
+}

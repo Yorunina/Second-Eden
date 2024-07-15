@@ -7,7 +7,7 @@ const { $Vec3 } = require("packages/net/minecraft/world/phys/$Vec3")
  * @param {$PathfinderMob_} entity 
  */
 export function SetLongDistancePatrolGoal(entity) {
-    entity.goalSelector.addGoal(3, new $CustomGoal(
+    entity.goalSelector.addGoal(10, new $CustomGoal(
         'long_distance_patrol',
         entity,
         /** @param {$PathfinderMob_} mob **/ mob => {
@@ -22,7 +22,7 @@ export function SetLongDistancePatrolGoal(entity) {
             // 能否继续使用 
             let target = mob.persistentData.get('patrolTarget')
             let blockPos = new $Vec3(target.getFloat('x'), target.getFloat('y'), target.getFloat('z'))
-            if (mob.getPosition(1.0).distanceTo(blockPos) <= 10) {
+            if (mob.getPosition(1.0).distanceTo(blockPos) <= 16) {
                 return false
             }
             return true

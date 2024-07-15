@@ -23,7 +23,7 @@
 	holidayfeatures = true
 	#挖掘圆石或石头（默认设置，可以使用数据包扩展使用其他材料）时，矿工获得矿石的几率。该数值为百分比值。（要修改矿工能获取的矿石，参见“幸运矿物列表”。） [默认：1，最小：0，最大：100]
 	#Range: 0 ~ 100
-	luckyblockchance = 10
+	luckyblockchance = 5
 	#市政厅至少需要多少级才可启用传送至盟友殖民地功能。 [默认：3，最小：0，最大：5]
 	#Range: 0 ~ 5
 	minthleveltoteleport = 2

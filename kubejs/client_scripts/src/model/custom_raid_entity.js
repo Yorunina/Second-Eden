@@ -89,7 +89,7 @@ CustomRaidEntityType.prototype = {
     readFromNbtModifiers(nbt) {
         nbt.allKeys.forEach(key => {
             let attributeNbt = nbt.getCompound(key)
-            this.setAttrModifier(attributeNbt.getString('name'), attributeNbt.getDouble('amount'), attributeNbt.getString('operation'))
+            this.setAttrModifier(attributeNbt.getString('name'), key, attributeNbt.getDouble('amount'), attributeNbt.getString('operation'))
         })
         return this
     }
