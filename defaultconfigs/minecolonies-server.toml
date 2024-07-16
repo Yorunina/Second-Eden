@@ -124,7 +124,7 @@
 	guardDamageMultiplier = 1.0
 	#所有卫兵的生命值加成。 [默认：1.000000，最小：0.100000，最大：5.000000
 	#Range: 0.1 ~ 5.0
-	guardhealthmult = 2.5
+	guardhealthmult = 2.0
 	#开启PVP模式 (在特定情况下，殖民地可以被摧毁、损坏)。 [默认: false]
 	pvp_mode = true
 

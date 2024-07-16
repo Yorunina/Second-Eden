@@ -7,7 +7,7 @@ ItemEvents.entityInteracted('kubejs:force_work_book', event => {
 
     let colony = GetColonyByEntity(target)
 
-    if (!CheckColonyOwner(colony, player)) {
+    if (!CheckColonyMember(colony, player)) {
         player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
         return
     }

@@ -78,6 +78,19 @@ ServerEvents.highPriorityData(event => {
     )
     event.addJson(`kubejs:researches/effects/creativediskunlock.json`, { "effect": true })
 
+    // 光速交易论坛
+    event.addJson(`kubejs:researches/overlimit/lightspeedtradingforum.json`,
+        new ColonyResearchModel('kubejs:overlimit', 3, [
+            new ItemRequirementModel(['minecraft:iron_block'], 8),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+        ])
+            .setSortOrder(200)
+            .setEffects([{ 'kubejs:effects/lightspeedtradingforum': 1 }])
+            .setParentResearch('kubejs:overlimit/infinitywirelessaccess')
+            .setSubtitle('com.kubejs.research.overlimit.lightspeedtradingforum.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/lightspeedtradingforum.json`, { "effect": true })
+
     // 中子材料应用
     event.addJson(`kubejs:researches/overlimit/neutronmaterialapplication.json`,
         new ColonyResearchModel('kubejs:overlimit', 4, [
@@ -107,20 +120,6 @@ ServerEvents.highPriorityData(event => {
     )
     event.addJson(`kubejs:researches/effects/infinitycatalyst.json`, { "effect": true })
 
-    // 超高压奇点
-    event.addJson(`kubejs:researches/overlimit/neutronsingulize.json`,
-        new ColonyResearchModel('kubejs:overlimit', 4, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
-        ])
-            .setSortOrder(0)
-            .setParentResearch('kubejs:overlimit/neutronpilesift')
-            .setEffects([{ 'kubejs:effects/neutronsingulize': 1 }])
-            .setSubtitle('com.kubejs.research.overlimit.neutronsingulize.subtitle')
-    )
-    event.addJson(`kubejs:researches/effects/neutronsingulize.json`, { "effect": true })
-
     // 无穷起源
     event.addJson(`kubejs:researches/overlimit/infinityorigin.json`,
         new ColonyResearchModel('kubejs:overlimit', 5, [
@@ -129,7 +128,7 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['minecraft:magma_cream'], 16),
         ])
             .setSortOrder(0)
-            .setParentResearch('kubejs:overlimit/neutronsingulize')
+            .setParentResearch('kubejs:overlimit/neutronmaterialapplication')
             .setEffects([{ 'kubejs:effects/infinityorigin': 1 }])
             .setSubtitle('com.kubejs.research.overlimit.infinityorigin.subtitle')
     )

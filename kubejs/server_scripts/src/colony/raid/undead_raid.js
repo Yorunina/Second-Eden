@@ -1,6 +1,6 @@
 // priority: 100
 
-const { GetColonyByEntity, CheckColonyOwner } = require("../../utils/colony")
+const { GetColonyByEntity, CheckColonyMember } = require("../../utils/colony")
 const { $TGEntities } = require("packages/com/lion/graveyard/init/$TGEntities")
 const { $MobSpawnType } = require("packages/net/minecraft/world/entity/$MobSpawnType")
 const { RandomGet } = require("../../utils/common")
@@ -17,7 +17,7 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
 
     let colony = GetColonyByEntity(target)
     if (!colony) return
-    if (!CheckColonyOwner(colony, player)) {
+    if (!CheckColonyMember(colony, player)) {
         player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
         return
     }

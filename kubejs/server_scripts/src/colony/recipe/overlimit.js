@@ -133,51 +133,96 @@ ServerEvents.highPriorityData(event => {
 
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_helmet'), [Item.of('kubejs:neutron_ingot', 1)])
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_helmet'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_chestplate'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_chestplate.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_chestplate'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_leggings'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_leggings.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_leggings'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_boots'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_boots.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_boots'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_sword'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_sword.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_sword'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_pickaxe'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_pickaxe.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_pickaxe'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_axe'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_axe.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_axe'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_hoe'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_hoe.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_hoe'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
-    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_shovel'), [Item.of('kubejs:neutron_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_shovel.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:neutron_shovel'), [Item.of('kubejs:neutron_ingot', 1)])
             .setTool('sizing_machinery')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronmaterialapplication', true))
 
+    // 光速交易论坛
+    event.addJson(`kubejs:crafterrecipes/mechanic/cash_register.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:cash_register'), [Item.of('minecraft:iron_ingot', 8), Item.of('kubejs:echo_crystal', 1), Item.of('lightmanscurrency:trading_core', 3)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_server_sml.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_server_sml'), [Item.of('minecraft:iron_ingot', 16), Item.of('kubejs:echo_crystal', 2), Item.of('minecraft:ender_chest', 1), Item.of('lightmanscurrency:trading_core', 3)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_server_med.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_server_med'), [Item.of('minecraft:iron_ingot', 16), Item.of('lightmanscurrency:item_trader_server_sml', 1), Item.of('kubejs:echo_crystal', 2), Item.of('minecraft:ender_chest', 1), Item.of('lightmanscurrency:trading_core', 3)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_server_lrg.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_server_lrg'), [Item.of('minecraft:iron_ingot', 32), Item.of('lightmanscurrency:item_trader_server_med', 1), Item.of('kubejs:echo_crystal', 4), Item.of('minecraft:ender_chest', 2), Item.of('lightmanscurrency:trading_core', 6)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_server_lrg.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_server_lrg'), [Item.of('minecraft:iron_ingot', 48), Item.of('lightmanscurrency:item_trader_server_med', 1), Item.of('kubejs:echo_crystal', 6), Item.of('minecraft:ender_chest', 3), Item.of('lightmanscurrency:trading_core', 9)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_server_xlrg.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_server_xlrg'), [Item.of('minecraft:iron_ingot', 64), Item.of('lightmanscurrency:item_trader_server_lrg', 1), Item.of('kubejs:echo_crystal', 8), Item.of('minecraft:ender_chest', 4), Item.of('lightmanscurrency:trading_core', 12)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/gem_terminal.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:gem_terminal'), [Item.of('amethyst_shard', 16), Item.of('kubejs:echo_crystal', 1), Item.of('lightmanscurrency:trading_core', 3)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/terminal.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:terminal'), [Item.of('minecraft:smooth_stone', 16), Item.of('kubejs:echo_crystal', 1), Item.of('lightmanscurrency:trading_core', 3)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
+
+    event.addJson(`kubejs:crafterrecipes/mechanic/item_trader_interface.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_interface'), [Item.of('lightmanscurrency:terminal', 1), Item.of('kubejs:echo_crystal', 4), Item.of('lightmanscurrency:trading_core', 9)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/lightspeedtradingforum', true))
 })
 
 

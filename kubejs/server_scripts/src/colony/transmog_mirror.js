@@ -1,4 +1,4 @@
-const { GetColonyByEntity, CheckColonyOwner, GetCitizenFromEntity } = require("../utils/colony")
+const { GetColonyByEntity, CheckColonyMember, GetCitizenFromEntity } = require("../utils/colony")
 
 ItemEvents.entityInteracted('kubejs:transmog_mirror', event => {
     let { entity, item, target } = event
@@ -18,7 +18,7 @@ ItemEvents.entityInteracted('kubejs:transmog_mirror', event => {
         if (!item.nbt || !item.nbt.getString('uuid')) return
         let citizen = GetCitizenFromEntity(target)
         let colony = GetColonyByEntity(target)
-        if (!CheckColonyOwner(colony, entity)) {
+        if (!CheckColonyMember(colony, entity)) {
             entity.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
             return
         }

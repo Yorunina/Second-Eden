@@ -35,7 +35,6 @@ export function GetCitizenFromEntity(target) {
  * @param {$ServerPlayer_} player 
  * @returns {boolean}
  */
-export function CheckColonyOwner(colony, player) {
-    let uuid = colony.getPermissions().getOwner().toString()
-    return uuid == player.uuid.toString()
+export function CheckColonyMember(colony, player) {
+    return colony.getPermissions().isColonyMember(player)
 }

@@ -12,14 +12,14 @@
 
 [jobs]
 	#Range: > 0
-	blockMiningDelay = 300
+	blockMiningDelay = 100
 	#Range: > 0
 	blockBuildingDelay = 20
 
 	[jobs.builder]
 		#builder's blockMiningDelay = commonBlockingMiningDelay * buff
 		#Range: 0.0 ~ 1.0
-		blockMiningDelayBuff = 0.5
+		blockMiningDelayBuff = 0.25
 
 	[jobs.crafing]
 		#craftingTicks = progressMultiplier / craftSkillLevel * hittingTime

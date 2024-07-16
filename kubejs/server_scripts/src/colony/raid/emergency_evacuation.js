@@ -6,7 +6,7 @@ ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
 
     let colony = GetColonyByEntity(target)
 
-    if (!CheckColonyOwner(colony, player)) {
+    if (!CheckColonyMember(colony, player)) {
         player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
         return
     } 
