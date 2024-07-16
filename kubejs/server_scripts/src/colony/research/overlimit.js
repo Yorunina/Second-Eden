@@ -34,7 +34,7 @@ ServerEvents.highPriorityData(event => {
 
     // 中子开采协议
     event.addJson(`kubejs:researches/overlimit/neutronpilesift.json`,
-        new ColonyResearchModel('kubejs:overlimit', 2, [
+        new ColonyResearchModel('kubejs:overlimit', 3, [
             new BuildingRequirementModel('sifter', 5),
             new ItemRequirementModel(['minecraft:soul_lantern'], 1),
             new ItemRequirementModel(['minecraft:bone_block'], 32),
@@ -77,4 +77,61 @@ ServerEvents.highPriorityData(event => {
             .setSubtitle('com.kubejs.research.overlimit.creativediskunlock.subtitle')
     )
     event.addJson(`kubejs:researches/effects/creativediskunlock.json`, { "effect": true })
+
+    // 中子材料应用
+    event.addJson(`kubejs:researches/overlimit/neutronmaterialapplication.json`,
+        new ColonyResearchModel('kubejs:overlimit', 4, [
+            new BuildingRequirementModel('mechanic', 5),
+            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
+            new ItemRequirementModel(['minecraft:bone_block'], 32),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+        ])
+            .setSortOrder(100)
+            .setParentResearch('kubejs:overlimit/neutronpilesift')
+            .setEffects([{ 'kubejs:effects/neutronmaterialapplication': 1 }])
+            .setSubtitle('com.kubejs.research.overlimit.neutronmaterialapplication.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/neutronmaterialapplication.json`, { "effect": true })
+
+    // 无尽催化
+    event.addJson(`kubejs:researches/overlimit/infinitycatalyst.json`,
+        new ColonyResearchModel('kubejs:overlimit', 3, [
+            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
+            new ItemRequirementModel(['minecraft:bone_block'], 32),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+        ])
+            .setSortOrder(100)
+            .setParentResearch('kubejs:overlimit/singulize')
+            .setEffects([{ 'kubejs:effects/infinitycatalyst': 1 }])
+            .setSubtitle('com.kubejs.research.overlimit.infinitycatalyst.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/infinitycatalyst.json`, { "effect": true })
+
+    // 超高压奇点
+    event.addJson(`kubejs:researches/overlimit/neutronsingulize.json`,
+        new ColonyResearchModel('kubejs:overlimit', 4, [
+            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
+            new ItemRequirementModel(['minecraft:bone_block'], 32),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+        ])
+            .setSortOrder(0)
+            .setParentResearch('kubejs:overlimit/neutronpilesift')
+            .setEffects([{ 'kubejs:effects/neutronsingulize': 1 }])
+            .setSubtitle('com.kubejs.research.overlimit.neutronsingulize.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/neutronsingulize.json`, { "effect": true })
+
+    // 无穷起源
+    event.addJson(`kubejs:researches/overlimit/infinityorigin.json`,
+        new ColonyResearchModel('kubejs:overlimit', 5, [
+            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
+            new ItemRequirementModel(['minecraft:bone_block'], 32),
+            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+        ])
+            .setSortOrder(0)
+            .setParentResearch('kubejs:overlimit/neutronsingulize')
+            .setEffects([{ 'kubejs:effects/infinityorigin': 1 }])
+            .setSubtitle('com.kubejs.research.overlimit.infinityorigin.subtitle')
+    )
+    event.addJson(`kubejs:researches/effects/infinityorigin.json`, { "effect": true })
 })

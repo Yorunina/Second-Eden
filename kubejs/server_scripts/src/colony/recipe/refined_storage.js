@@ -62,7 +62,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:fluid_interface' })
     event.shapeless('refinedstorage:fluid_interface', ['refinedstorage:interface', 'minecraft:bucket'])
 
-    // todo 自动制作管理缺少部分配方
     event.remove({ output: 'refinedstorage:crafter' })
     event.remove({ output: 'refinedstorage:pattern_grid' })
     event.remove({ output: 'refinedstorage:pattern' })

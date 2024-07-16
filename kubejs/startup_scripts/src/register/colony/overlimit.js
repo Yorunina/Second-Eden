@@ -1,7 +1,7 @@
 const { OVERLIMIT } = require("../../utils/itemborder")
 
 StartupEvents.registry('item', event => {
-    event.create('singulize_potion', 'basic').maxStackSize(1).maxDamage(1).tag(OVERLIMIT).texture('kubejs:item/singulize_potion')
+    event.create('singulize_potion', 'basic').maxStackSize(1).maxDamage(8).tag(OVERLIMIT).texture('kubejs:item/singulize_potion')
 
     event.create('singularity_copper', 'basic').maxStackSize(64).color(0xE47B55).tag(OVERLIMIT)
     event.create('singularity_iron', 'basic').maxStackSize(64).color(0xFCFCFC).tag(OVERLIMIT)
@@ -21,8 +21,7 @@ StartupEvents.registry('item', event => {
 
     event.create('infinity_ingot', 'basic').maxStackSize(64).tag(OVERLIMIT)
     event.create('infinity_nugget', 'basic').maxStackSize(64).tag(OVERLIMIT)
+
+    event.create('neutron_sizing_machinery', 'basic').maxDamage(8).maxStackSize(64).tag(OVERLIMIT)
     
-    event.create('neutron_ingot', 'basic').maxStackSize(64).tag(OVERLIMIT)
-    event.create('neutron_nugget', 'basic').maxStackSize(64).tag(OVERLIMIT)
-    event.create('neutron_pile', 'basic').maxStackSize(64).tag(OVERLIMIT)
 })

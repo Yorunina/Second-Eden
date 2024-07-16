@@ -4,7 +4,7 @@ const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 ServerEvents.highPriorityData(event => {
     // 奇点化
     event.addJson(`kubejs:crafterrecipes/alchemist/singulize_potion.json`,
-        new ColonyCraftRecipes('alchemist_crafting', Item.of('kubejs:singulize_potion'), [Item.of('graveyard:corruption', 24), Item.of('minecraft:nether_wart', 24), Item.of('cagedmobs:nether_star_fragment', 1)])
+        new ColonyCraftRecipes('alchemist_crafting', Item.of('kubejs:singulize_potion'), [Item.of('graveyard:corruption', 24), Item.of('minecraft:nether_wart', 24), Item.of('minecraft:nether_star', 1)])
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/singulize', true))
 
@@ -118,13 +118,66 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/infinitywirelessaccess', true))
 
-    // 中子素收集器
-    // todo fix
-    event.addJson(`kubejs:crafterrecipes/sifter/neutron_pile.json`,
-        new ColonyCraftRecipes('sifter_custom', Item.of('kubejs:neutron_pile', 1), [Item.of('minecraft:soul_sand', 1), Item.of('kubejs:sifter_mesh_netherite', 1)])
-            .setAdditionalOutput(['kubejs:neutron_pile'])
-            .setLootTable('kubejs:recipes/netherite/soul_sand')
+    // 中子素收集
+    // todo 需要测试配方以及合理性，补充低级别配方奖励
+    event.addJson(`kubejs:crafterrecipes/blacksmith/sifter_mesh_netherite.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:sifter_mesh_netherite', 1), [Item.of('minecraft:netherite_ingot', 1)])
             .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/infinitywirelessaccess', true))
+            .setResearchId('kubejs:effects/neutronpilesift', true))
+
+    // 中子材料应用
+    event.addJson(`kubejs:crafterrecipes/mechanic/neutron_sizing_machinery.json`,
+        new ColonyCraftRecipes('mechanic_crafting', Item.of('kubejs:neutron_sizing_machinery'), [Item.of('kubejs:neutron_ingot', 1), Item.of('kubejs:iridium_ingot', 3), Item.of('immersive_aircraft:eco_engine', 8), Item.of('kubejs:singulize_potion', 1)])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+
+
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_helmet'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_chestplate'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_leggings'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_boots'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_sword'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_pickaxe'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_axe'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_hoe'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+    event.addJson(`kubejs:crafterrecipes/blacksmith/neutron_helmet.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('neutron_shovel'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('sizing_machinery')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronmaterialapplication', true))
+
 })
+
 

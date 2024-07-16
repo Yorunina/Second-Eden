@@ -28,9 +28,7 @@ import { $EntityType$Type } from "packages/net/minecraft/world/entity/$EntityTyp
 //      - amount -> Double
 //      - operation -> String
 
-// todo 自定义袭击这一页需要重新进行一次测试
 ServerEvents.recipes(event => {
-
     // 仅限原版生物的快捷添加方法
     ['zombie', 'skeleton', 'cave_spider', 'creeper', 'blaze', 'husk', 'pillager', 'ravager', 'evoker', 'wither_skeleton', 'vindicator'].forEach(minecraftEntityType => {
         event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:${minecraftEntityType}_orb`])
@@ -61,10 +59,7 @@ ServerEvents.recipes(event => {
             let raidBook = grid.find('kubejs:custom_raid_book', 0)
             return CustomRaidBookAddEntityCount(raidBook, entityIdentifier, entityType, addCount, customNbt)
         })
-
 })
-
-
 
 ServerEvents.recipes(event => {
     event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', 'kubejs:raid_entity_modifier'])

@@ -88,7 +88,7 @@ ColonyCraftRecipes.prototype = {
     setAdditionalOutput(items) {
         this['additional-output'] = []
         items.forEach(item => {
-            this['additional-output'].push({'item': item.id})
+            this['additional-output'].push({ 'item': item.id })
         })
         return this
     }
