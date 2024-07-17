@@ -1,0 +1,18 @@
+{
+    "type": "recipe",
+    "count": 1,
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:bone"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": "farmersdelight:bone_broth",
+    "min-building-level": 4
+  }

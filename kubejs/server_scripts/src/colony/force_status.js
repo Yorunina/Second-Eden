@@ -13,16 +13,13 @@ ItemEvents.entityInteracted('kubejs:force_work_book', event => {
     }
 
     let citizen = GetCitizenFromEntity(target)
-    let optCitizenEntity = citizen.getEntity()
-    if (!optCitizenEntity.present)  return
-    let citizenEntity = optCitizenEntity.get()
 
-    if (citizenEntity.persistentData.getString('status') == 'guardLike') {
+    if (citizen.getForceStatus() == 'guardLike') {
         player.setStatusMessage(Text.translatable('msg.force_work_book.stop.1').gold())
-        citizenEntity.persistentData.putString('status', 'None')
+        citizen.setForceStatus('none')
     } else {
         player.setStatusMessage(Text.translatable('msg.force_work_book.start.1').gold())
-        citizenEntity.persistentData.putString('status', 'guardLike')
+        citizen.setForceStatus('guardLike')
     }
     
     player.addItemCooldown(item, 20 * 30)

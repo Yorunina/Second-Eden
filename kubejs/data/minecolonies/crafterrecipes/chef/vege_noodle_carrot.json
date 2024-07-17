@@ -1,0 +1,24 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:raw_pasta"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:carrot",
+        "count": 2
+      },
+      {
+        "item": "farmersdelight:cabbage_leaf"
+      }
+    ],
+    "result": "farmersdelight:vegetable_noodles",
+    "min-building-level": 5
+}

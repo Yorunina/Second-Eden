@@ -1,0 +1,23 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:fried_egg"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:raw_pasta"
+      },
+      {
+        "item": "minecraft:dried_kelp"
+      },
+      {
+        "item": "farmersdelight:bacon"
+      }
+    ],
+    "result": "farmersdelight:noodle_soup",
+    "min-building-level": 5
+}

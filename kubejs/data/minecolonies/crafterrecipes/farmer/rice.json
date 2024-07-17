@@ -1,0 +1,12 @@
+{
+	"type": "recipe",
+	"crafter": "farmer_crafting",
+	"inputs": [
+		{
+			"item":"farmersdelight:rice_panicle"
+		}
+	],
+	"intermediate": "minecraft:air",
+	"count":"1",
+	"result":"farmersdelight:rice"
+}

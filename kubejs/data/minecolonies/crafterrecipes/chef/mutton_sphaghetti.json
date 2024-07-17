@@ -1,0 +1,25 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:tomato_sauce"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:raw_pasta"
+      },
+      {
+        "item": "farmersdelight:mutton_chops"
+      }
+    ],
+    "result": "farmersdelight:pasta_with_mutton_chop",
+    "additional-output":[
+    {
+      "item": "minecraft:bowl"
+    }
+   ],
+    "min-building-level": 4
+}

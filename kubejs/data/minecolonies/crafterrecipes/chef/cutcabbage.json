@@ -1,0 +1,13 @@
+{
+	"type": "recipe",
+	"crafter": "chef_crafting",
+	"inputs": [
+		{
+			"item":"farmersdelight:cabbage"
+		}
+	],
+	"count":"2",
+	"result":"farmersdelight:cabbage_leaf",
+	"intermediate": "minecraft:air",
+	"tool": "knives"
+}

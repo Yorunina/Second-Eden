@@ -1,0 +1,13 @@
+{
+	"type": "recipe",
+	"crafter": "chef_crafting",
+	"inputs": [
+		{
+			"item":"minecraft:beef"
+		}
+	],
+	"intermediate": "minecraft:air",
+	"count":"2",
+	"result":"farmersdelight:minced_beef",
+	"tool": "knives"
+}

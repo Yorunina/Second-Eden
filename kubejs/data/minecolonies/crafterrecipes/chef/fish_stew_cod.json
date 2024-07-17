@@ -1,0 +1,25 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:tomato_sauce"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:cod_slice"
+      },
+      {
+        "item": "farmersdelight:onion"
+      }
+    ],
+    "result": "farmersdelight:fish_stew",
+    "additional-output":[
+    {
+      "item": "minecraft:bowl"
+    }
+   ],
+    "min-building-level": 4
+}

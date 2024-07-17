@@ -1,0 +1,15 @@
+{
+    "type": "recipe",
+    "count": 4,
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:stuffed_pumpkin_block"
+      },
+      {
+        "item": "minecraft:bowl",
+        "count": 4
+      }
+    ],
+    "result": "farmersdelight:stuffed_pumpkin" 
+  }

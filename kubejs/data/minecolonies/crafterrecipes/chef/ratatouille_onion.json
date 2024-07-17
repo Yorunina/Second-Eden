@@ -1,0 +1,21 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:beetroot"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:tomato"
+      },
+      {
+        "item": "farmersdelight:onion",
+        "count": 2
+      }
+    ],
+    "result": "farmersdelight:ratatouille",
+    "min-building-level": 5
+}

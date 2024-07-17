@@ -1,0 +1,29 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:rice"
+      },
+      {
+        "item": "farmersdelight:onion"
+      },
+      {
+        "item": "minecraft:pumpkin"
+      },
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:sweet_berries"
+      },
+      {
+        "item": "farmersdelight:tomato"
+      }
+    ],
+    "result": "farmersdelight:stuffed_pumpkin_block",
+    "min-building-level": 5
+}

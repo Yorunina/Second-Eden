@@ -1,0 +1,12 @@
+{
+	"type": "recipe",
+	"crafter": "farmer_crafting",
+	"inputs": [
+		{
+			"item":"farmersdelight:red_mushroom_colony"
+		}
+	],
+	"intermediate": "farmersdelight:cutting_board",
+	"count":"5",
+	"result":"minecraft:red_mushroom"
+}

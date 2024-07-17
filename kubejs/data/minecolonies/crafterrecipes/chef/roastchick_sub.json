@@ -1,0 +1,20 @@
+{
+    "type": "recipe",
+    "count": 4,
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:roast_chicken_block"
+      },
+      {
+        "item": "minecraft:bowl",
+        "count": 3
+      }
+    ],
+    "result": "farmersdelight:roast_chicken",
+    "additional-output":[
+    {
+      "item":"minecraft:bone_meal"
+    }
+  ]
+ }

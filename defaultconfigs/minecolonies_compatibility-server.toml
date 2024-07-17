@@ -60,10 +60,17 @@
 		#Range: > 64
 		actionsDoneUntilDumping = 128
 
-	[jobs.farmersCook]
-		#Reduce cooking ticsk by (int)(skillevel *  acceleratePerSkillLevel)
+	[jobs.fluidManager]
+		#Range: 0 ~ 240
+		searchRange = 120
+		#Range: 0 ~ 20
+		searchVerticalRange = 10
+		#Range: > 0
+		searchDelayAfterNotFound = 400
+		#Range: > 0
+		pickupDelay = 80
 		#Range: 0.0 ~ 2.147483647E9
-		acceleratePerSkillLevel = 0.2
+		pickupDelayReducePerSkillLevel = 0.5
 
 [modules]
 

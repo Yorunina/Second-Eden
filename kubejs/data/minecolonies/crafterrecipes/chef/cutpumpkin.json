@@ -1,0 +1,13 @@
+{
+	"type": "recipe",
+	"crafter": "chef_crafting",
+	"inputs": [
+		{
+			"item":"minecraft:pumpkin"
+		}
+	],
+	"count":"4",
+	"result":"farmersdelight:pumpkin_slice",
+	"intermediate": "minecraft:air",
+	"tool": "knives"
+}

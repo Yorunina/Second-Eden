@@ -1,0 +1,23 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:cabbage_leaf"
+      },
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    "result": "farmersdelight:vegetable_soup",
+    "min-building-level": 5
+}

@@ -1,0 +1,15 @@
+{
+    "type": "recipe",
+    "count": 1,
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "farmersdelight:tomato",
+        "count": 2
+      },
+      {
+        "item": "minecraft:bowl"
+      }
+    ],
+    "result": "farmersdelight:tomato_sauce"
+  }

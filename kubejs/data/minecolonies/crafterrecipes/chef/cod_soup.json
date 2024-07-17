@@ -1,0 +1,23 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:potato"
+      },
+      {
+        "item": "minecraft:bowl"
+      },
+      {
+        "item": "farmersdelight:cod_slice"
+      },
+      {
+        "item": "farmersdelight:tomato"
+      },
+      {
+        "item": "minecraft:egg"
+      }
+    ],
+    "result": "farmersdelight:baked_cod_stew",
+    "min-building-level": 5
+}

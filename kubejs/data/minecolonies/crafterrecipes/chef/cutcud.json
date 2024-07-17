@@ -1,0 +1,18 @@
+{
+	"type": "recipe",
+	"crafter": "chef_crafting",
+	"inputs": [
+		{
+			"item":"minecraft:cod"
+		}
+	],
+	"count":"2",
+	"result":"farmersdelight:cod_slice",
+	"additional-output":[
+		{
+			"item":"minecraft:bone_meal"
+		}
+	],
+	"intermediate": "minecraft:air",
+	"tool": "knives"
+}

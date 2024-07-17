@@ -1,0 +1,20 @@
+{
+  "type": "recipe",
+    "crafter": "chef_crafting",
+    "inputs": [
+      {
+        "item": "minecraft:sugar"
+      },
+      {
+        "item": "minecraft:glow_berries"
+      },
+      {
+        "item": "minecraft:egg"
+      },
+      {
+        "item": "farmersdelight:milk_bottle"
+      }
+    ],
+    "result": "farmersdelight:glow_berry_custard",
+    "min-building-level": 4
+}

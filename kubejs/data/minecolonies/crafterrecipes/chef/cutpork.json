@@ -1,0 +1,13 @@
+{
+	"type": "recipe",
+	"crafter": "chef_crafting",
+	"inputs": [
+		{
+			"item":"minecraft:porkchop"
+		}
+	],
+	"count":"2",
+	"result":"farmersdelight:bacon",
+	"intermediate": "minecraft:air",
+	"tool": "knives"
+}

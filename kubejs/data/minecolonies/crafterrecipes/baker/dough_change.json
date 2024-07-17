@@ -1,0 +1,12 @@
+{
+	"type": "recipe",
+	"crafter": "baker_crafting",
+	"inputs": [
+		{
+			"item":"minecolonies:bread_dough"
+		}
+	],
+	"count":"1",
+	"result":"farmersdelight:wheat_dough",
+	"intermediate": "minecraft:air"
+}
