@@ -15,12 +15,11 @@ StartupEvents.registry('block', event => {
     event.create('neutron_block', 'basic')
         .soundType("netherite_block")
         .textureAll('kubejs:block/neutron_block')
-        .resistance(3000)
-        .hardness(8)
+        .resistance(8000)
+        .hardness(20)
         .requiresTool(true)
         .tagBlock('minecraft:mineable/pickaxe')
 })
-
 
 StartupEvents.registry('item', event => {
     event.create('neutron_ingot', 'basic').tag(OVERLIMIT).texture('kubejs:item/neutron_ingot')
@@ -31,7 +30,7 @@ StartupEvents.registry('item', event => {
 ItemEvents.armorTierRegistry(event => {
     event.add('neutron', tier => {
         tier.durabilityMultiplier = 300
-        tier.slotProtections = [8, 12, 15, 6]
+        tier.slotProtections = [7, 10, 12, 5]
         tier.enchantmentValue = 20
         tier.equipSound = 'minecraft:item.armor.equip_iron'
         tier.toughness = 1.5

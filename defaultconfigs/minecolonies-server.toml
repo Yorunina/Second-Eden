@@ -126,7 +126,7 @@
 	#Range: 0.1 ~ 5.0
 	guardhealthmult = 2.0
 	#开启PVP模式 (在特定情况下，殖民地可以被摧毁、损坏)。 [默认: false]
-	pvp_mode = true
+	pvp_mode = false
 
 #所有权限配置选项
 [permissions]

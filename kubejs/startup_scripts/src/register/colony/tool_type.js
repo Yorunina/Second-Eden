@@ -11,5 +11,6 @@ StartupEvents.registry('item', event => {
 
     event.create('overlimit_coin_engraving', 'basic').texture('kubejs:item/coin_engraving').tag(OVERLIMIT).maxStackSize(1)
 
-    event.create('sifter_mesh_netherite', 'basic').texture('kubejs:item/sifter_mesh_netherite').tag(OVERLIMIT).maxStackSize(1)
+    // 合金筛网并不属于ToolType，但是其性质类似于ToolType，用于筛沙工的工作流程
+    event.create('sifter_mesh_netherite', 'basic').setNoRepair().maxDamage(3000).texture('kubejs:item/sifter_mesh_netherite').tag(OVERLIMIT).maxStackSize(1)
 })
