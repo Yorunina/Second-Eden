@@ -1,9 +1,9 @@
 // priority: 100
-const { GetCitizenFromEntity } = require("../utils/colony")
+const { GetCitizenFromEntity, GetColonyByEntity } = require("../utils/colony")
 
-// todo更换材质
 ItemEvents.entityInteracted('kubejs:force_work_alarm', event => {
     let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
     if (target.type != 'minecolonies:citizen') return
 
     let colony = GetColonyByEntity(target)
@@ -22,13 +22,61 @@ ItemEvents.entityInteracted('kubejs:force_work_alarm', event => {
         player.setStatusMessage(Text.translatable('msg.force_work_alarm.start.1').gold())
         citizen.setForceStatus('guardLike')
     }
-    
-    player.addItemCooldown(item, 20 * 30)
+
+    player.addItemCooldown(item, 20 * 10)
 })
 
-// todo 没做完
+
+ItemEvents.entityInteracted('kubejs:emotion_block_bell', event => {
+    let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
+    if (target.type != 'minecolonies:citizen') return
+
+    let colony = GetColonyByEntity(target)
+
+    if (!CheckColonyMember(colony, player)) {
+        player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
+        return
+    }
+
+    if (colony.getDisableMourn()) {
+        player.setStatusMessage(Text.translatable('msg.emotion_block_bell.stop.1').gold())
+        colony.setDisableMourn(false)
+    } else {
+        player.setStatusMessage(Text.translatable('msg.emotion_block_bell.start.1').gold())
+        colony.setDisableMourn(true)
+    }
+
+    player.addItemCooldown(item, 20 * 10)
+})
+
+
+ItemEvents.entityInteracted('kubejs:force_work_bell', event => {
+    let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
+    if (target.type != 'minecolonies:citizen') return
+
+    let colony = GetColonyByEntity(target)
+
+    if (!CheckColonyMember(colony, player)) {
+        player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
+        return
+    }
+
+    if (colony.getUnderEmergencyProtocol()) {
+        player.setStatusMessage(Text.translatable('msg.force_work_bell.stop.1').gold())
+        colony.setUnderEmergencyProtocol(false)
+    } else {
+        player.setStatusMessage(Text.translatable('msg.force_work_bell.start.1').gold())
+        colony.setUnderEmergencyProtocol(true)
+    }
+
+    player.addItemCooldown(item, 20 * 10)
+})
+
 ItemEvents.entityInteracted('kubejs:bind_armor_protocol', event => {
     let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
     if (target.type != 'minecolonies:citizen') return
 
     let colony = GetColonyByEntity(target)
@@ -47,6 +95,6 @@ ItemEvents.entityInteracted('kubejs:bind_armor_protocol', event => {
         player.setStatusMessage(Text.translatable('msg.bind_armor_protocol.start.1').gold())
         citizen.setDisableTakeOffArmor(true)
     }
-    
-    player.addItemCooldown(item, 20 * 30)
+
+    player.addItemCooldown(item, 20 * 10)
 })

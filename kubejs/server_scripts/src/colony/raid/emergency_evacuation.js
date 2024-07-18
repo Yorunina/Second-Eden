@@ -2,6 +2,7 @@ const { GetColonyByEntity } = require("../../utils/colony")
 
 ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
     let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
     if (target.type != 'minecolonies:citizen') return
 
     let colony = GetColonyByEntity(target)
@@ -19,5 +20,5 @@ ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
         player.setStatusMessage(Text.translatable('msg.emergency_evacuation_bell.start.1').gold())
         colony.getRaiderManager().setPassThroughRaidTime(20 * 60 * 20)
     }
-    player.addItemCooldown(item, 20 * 30)
+    player.addItemCooldown(item, 20 * 10)
 })

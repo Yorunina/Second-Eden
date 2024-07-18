@@ -28,6 +28,7 @@ ItemEvents.rightClicked('kubejs:building_gift_box', event => {
 
 BlockEvents.rightClicked(event => {
     let { player, block, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
     if (item.id != 'kubejs:building_gift_box') return
     if (item.hasNBT() && item.nbt.getInt('force') == 1) return
     if (!block || !block.entityData.contains('blueprintDataProvider')) return
@@ -39,5 +40,5 @@ BlockEvents.rightClicked(event => {
     } else {
         item.nbt.merge({ 'path': blueprintPath, 'pack': blueprintPack })
     }
-    player.addItemCooldown(item, 20 * 5)
+    player.addItemCooldown(item, 20 * 10)
 })

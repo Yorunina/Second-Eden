@@ -22,6 +22,9 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
     let atlasItem = atlasStacks.getStackInSlot(0)
 
     if (!AtlasActiveStrategy[atlasItem.id]) return
+
+    if (player.cooldowns.isOnCooldown(atlasItem)) return
+
     if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return
     let airdropPos = AtlasActiveStrategy[atlasItem.id](event, atlasItem)
     if (!airdropPos) return

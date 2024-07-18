@@ -528,17 +528,6 @@
         "value": 100
       }
     },
-    "puffish_attributes:player.stamina": {
-      "enabled": false,
-      "min": {
-        "default": 0,
-        "value": 0
-      },
-      "max": {
-        "default": 1024,
-        "value": 1024
-      }
-    },
     "forge:nametag_distance": {
       "enabled": false,
       "min": {
@@ -548,6 +537,17 @@
       "max": {
         "default": 64,
         "value": 64
+      }
+    },
+    "puffish_attributes:player.stamina": {
+      "enabled": false,
+      "min": {
+        "default": 0,
+        "value": 0
+      },
+      "max": {
+        "default": 1024,
+        "value": 1024
       }
     },
     "puffish_attributes:player.knockback": {
