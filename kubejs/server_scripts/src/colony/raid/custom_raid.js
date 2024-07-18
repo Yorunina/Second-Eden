@@ -57,7 +57,7 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
                         entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
                         break
                     case 'multiply_persistent':
-                        entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) + value.amount)
+                        entity.setAttributeBaseValue(value.name, entity.getAttributeBaseValue(value.name) * value.amount)
                         break
                     default:
                         entity.modifyAttribute(value.name, key, value.amount, value.operation)
