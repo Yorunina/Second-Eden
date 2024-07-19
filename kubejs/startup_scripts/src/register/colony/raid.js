@@ -40,6 +40,12 @@ StartupEvents.registry('item', event => {
     event.create('wither_skeleton_orb', 'basic').color(0x302F33).maxStackSize(64).tag('kubejs:specific_raid_orb').tag(EPIC).texture('kubejs:item/raid_orb')
     event.create('vindicator_orb', 'basic').color(0xBA362F).maxStackSize(64).tag('kubejs:specific_raid_orb').tag(EPIC).texture('kubejs:item/raid_orb')
 
+    // takesapillage
+    event.create('archer_orb', 'basic').color(0x00944A).maxStackSize(64).tag('kubejs:specific_raid_orb').tag(EPIC).texture('kubejs:item/raid_orb')
+    event.create('legioner_orb', 'basic').color(0xC0C4C4).maxStackSize(64).tag('kubejs:specific_raid_orb').tag(EPIC).texture('kubejs:item/raid_orb')
+    event.create('skirmisher_orb', 'basic').color(0x694600).maxStackSize(64).tag('kubejs:specific_raid_orb').tag(EPIC).texture('kubejs:item/raid_orb')
+
+
     // 通用方案
     event.create('custom_raid_orb', 'basic').maxStackSize(64).tag(LEGENDARY).texture('kubejs:item/raid_orb')
 

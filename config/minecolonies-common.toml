@@ -1,11 +1,11 @@
 
-#All configuration items related to the core gameplay
+#所有的配置选项都与核心玩法有关
 [gameplay]
-	#Whether to generate supply ships and camps in loot chests. [Default: true]
+	#是否在战利品箱内生成 补给船 和 补给营地 战利品 [默认: true]
 	generatesupplyloot = false
 
-#All configurations related to the request system
+#所有与请求系统有关的配置
 [requestsystem]
-	#Should the request system show debug information in the debug.log? Useful if malfunctioning. [Default: false]
+	#是否在debug.log中显示请求系统的调试信息？出现问题时建议开启。 [默认: false]
 	enabledebuglogging = false
 

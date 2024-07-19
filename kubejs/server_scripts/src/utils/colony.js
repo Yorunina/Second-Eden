@@ -1,9 +1,10 @@
 // priority: 1000
 import { $IColony } from "packages/com/minecolonies/api/colony/$IColony"
 import { $IBuilding } from "packages/com/minecolonies/api/colony/buildings/$IBuilding"
-import { $AbstractBuildingGuards } from "packages/com/minecolonies/core/colony/buildings/$AbstractBuildingGuards"
+import { $ItemScrollGuardHelp } from "packages/com/minecolonies/core/items/$ItemScrollGuardHelp"
 import { $BlockPos } from "packages/net/minecraft/core/$BlockPos"
 import { $ServerPlayer } from "packages/net/minecraft/server/level/$ServerPlayer"
+import { $Level } from "packages/net/minecraft/world/level/$Level"
 
 const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
 
@@ -46,7 +47,7 @@ export function CheckColonyMember(colony, player) {
 
 /**
  * 根据玩家获取可能的殖民地
- * @param {level} level 
+ * @param {$Level} level 
  * @param {$ServerPlayer} player 
  * @returns {$IColony}
  */
@@ -63,4 +64,17 @@ export function GetColonyByPlayer(level, player) {
  */
 export function GetBuildingByPos(colony, blockPos) {
     return colony.getBuildingManager().getBuilding(blockPos)
+}
+
+
+/**
+ * 召唤卫兵塔中的卫兵跟随玩家
+ * @param {$Level} level 
+ * @param {$ServerPlayer} player 
+ * @param {$IBuilding} building 
+ * @param {$IColony} colony 
+ * @param {Number} ticks 
+ */
+export function SummonGuardFollowPlayer(level, player, building, colony, ticks) {
+    $ItemScrollGuardHelp.summonGuardFollowPlayer(level, player, building, colony, ticks)
 }

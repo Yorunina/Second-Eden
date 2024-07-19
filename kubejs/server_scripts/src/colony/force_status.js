@@ -98,3 +98,27 @@ ItemEvents.entityInteracted('kubejs:bind_armor_protocol', event => {
 
     player.addItemCooldown(item, 20 * 10)
 })
+
+
+ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
+    let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
+    if (target.type != 'minecolonies:citizen') return
+
+    let colony = GetColonyByEntity(target)
+
+    if (!CheckColonyMember(colony, player)) {
+        player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
+        return
+    }
+
+    if (colony.getUnderEmergencyEvacuation()) {
+        player.setStatusMessage(Text.translatable('msg.emergency_evacuation_bell.stop.1').gold())
+        colony.setUnderEmergencyEvacuation(false)
+    } else {
+        player.setStatusMessage(Text.translatable('msg.emergency_evacuation_bell.start.1').gold())
+        colony.setUnderEmergencyEvacuation(true)
+    }
+
+    player.addItemCooldown(item, 20 * 10)
+})

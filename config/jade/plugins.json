@@ -57,9 +57,10 @@
     "lightroom": true,
     "photograph_frame": true
   },
-  "crockpot": {
-    "birdcage": true,
-    "crock_pot": true
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
   },
   "touhou_little_maid": {
     "maid": true,

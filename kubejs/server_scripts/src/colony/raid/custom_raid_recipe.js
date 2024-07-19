@@ -30,19 +30,37 @@ import { $EntityType$Type } from "packages/net/minecraft/world/entity/$EntityTyp
 
 ServerEvents.recipes(event => {
     // 仅限原版生物的快捷添加方法
-    ['zombie', 'skeleton', 'cave_spider', 'creeper', 'blaze', 'husk', 'pillager', 'ravager', 'evoker', 'wither_skeleton', 'vindicator'].forEach(minecraftEntityType => {
-        event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:${minecraftEntityType}_orb`])
+    ['zombie', 'skeleton', 'cave_spider', 'creeper', 'blaze', 'husk', 'pillager', 'ravager', 'evoker', 'wither_skeleton', 'vindicator'].forEach(entityType => {
+        event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:${entityType}_orb`])
             .modifyResult((/** @type { $ModifyRecipeCraftingGrid_ }*/grid,/** @type { $ItemStack_ }*/ stack) => {
-                let orb = grid.find(`kubejs:${minecraftEntityType}_orb`, 0)
+                let orb = grid.find(`kubejs:${entityType}_orb`, 0)
                 let addCount = (orb.hasNBT() && orb.nbt.contains('count')) ? orb.nbt.getInt('count') : 1
 
                 let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
 
                 let raidBook = grid.find('kubejs:custom_raid_book', 0)
-                return CustomRaidBookAddEntityCount(raidBook, minecraftEntityType, `minecraft:${minecraftEntityType}`, addCount, customNbt)
+                return CustomRaidBookAddEntityCount(raidBook, entityType, `minecraft:${entityType}`, addCount, customNbt)
             })
     })
+})
 
+ServerEvents.recipes(event => {
+    // takesapillage
+    ['archer', 'legioner', 'skirmisher'].forEach(entityType => {
+        event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:${entityType}_orb`])
+            .modifyResult((/** @type { $ModifyRecipeCraftingGrid_ }*/grid,/** @type { $ItemStack_ }*/ stack) => {
+                let orb = grid.find(`kubejs:${entityType}_orb`, 0)
+                let addCount = (orb.hasNBT() && orb.nbt.contains('count')) ? orb.nbt.getInt('count') : 1
+
+                let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
+
+                let raidBook = grid.find('kubejs:custom_raid_book', 0)
+                return CustomRaidBookAddEntityCount(raidBook, entityType, `takesapillage:${entityType}`, addCount, customNbt)
+            })
+    })
+})
+
+ServerEvents.recipes(event => {
     event.shapeless('kubejs:custom_raid_book', ['kubejs:custom_raid_book', `kubejs:custom_raid_orb`])
         .modifyResult((/** @type { $ModifyRecipeCraftingGrid_ }*/grid,/** @type { $ItemStack_ }*/ stack) => {
             let orb = grid.find(`kubejs:custom_raid_orb`, 0)

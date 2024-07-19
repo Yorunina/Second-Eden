@@ -30,15 +30,23 @@ BlockEvents.rightClicked(event => {
     let { player, block, item } = event
     if (player.cooldowns.isOnCooldown(item)) return
     if (item.id != 'kubejs:building_gift_box') return
+
     if (item.hasNBT() && item.nbt.getInt('force') == 1) return
+
     if (!block || !block.entityData.contains('blueprintDataProvider')) return
     let blueprintDataProvider = block.entityData.getCompound('blueprintDataProvider')
     let blueprintPath = blueprintDataProvider.getString('path')
     let blueprintPack = blueprintDataProvider.getString('pack')
+
+    if (item.hasNBT() && item.nbt.contains('rePattern')) {
+        let rePattern = item.nbt.getString('rePattern')
+        if (!new RegExp(rePattern).test(blueprintPath)) return
+    }
+
     if (!item.hasNBT()) {
-        item.setNbt({ 'path': blueprintPath, 'pack': blueprintPack })
+        item.setNbt({ 'path': blueprintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
     } else {
-        item.nbt.merge({ 'path': blueprintPath, 'pack': blueprintPack })
+        item.nbt.merge({ 'path': blueprintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
     }
     player.addItemCooldown(item, 20 * 10)
 })
