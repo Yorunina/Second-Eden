@@ -12,9 +12,19 @@ LootJS.modifiers(event => {
         .apply(ctx => {
             let { entity } = ctx
             let customLootType = entity.persistentData.getString('custom_loot')
-            if (EntityCustomLootStrategies[customLootType]) {
-                EntityCustomLootStrategies[customLootType](ctx)
+
+
+            if (killer && killer.getType() == 'minecolonies:citizen') {
+                if (CitizenCustomLootStrategies[customLootType]) {
+                    CitizenCustomLootStrategies[customLootType](ctx)
+                }
+                citizenRaidCommonLoot(ctx)
+            } else {
+                if (CitizenCustomLootStrategies[customLootType]) {
+                    CitizenCustomLootStrategies[customLootType](ctx)
+                }
             }
+
         })
 })
 
@@ -23,13 +33,35 @@ LootJS.modifiers(event => {
  * @constant
  * @type {Object<string,function($LootContextJS):void>}
  */
-const EntityCustomLootStrategies = {
+const CitizenCustomLootStrategies = {
     'undead_raid': function (event) {
         let { damageSource } = event
-        let killer = damageSource.actual
-        if (killer && killer.getType() == 'minecolonies:citizen') {
-            event.addLoot('minecraft:diamond')
-        }
         event.addLoot('lightmanscurrency:coin_iron')
     },
+}
+
+/**
+ * @constant
+ * @type {Object<string,function($LootContextJS):void>}
+ */
+const OthersCustomLootStrategies = {
+    'undead_raid': function (event) {
+        let { damageSource } = event
+        event.addLoot('lightmanscurrency:coin_iron')
+    },
+}
+
+
+// todo 填入
+/**
+ * 常规市民击杀战利品
+ * @param {$LootContextJS} event 
+ */
+function citizenRaidCommonLoot(event) {
+    let random = Math.random()
+    switch (true) {
+        case random < 0.01:
+            event.addLoot('minecraft:gold_ingot')
+            break
+    }
 }

@@ -29,7 +29,7 @@
 	minthleveltoteleport = 2
 	#食物消耗系数 [默认：1.000000，最小：0.100000，最大：100.000000
 	#Range: 0.1 ~ 100.0
-	foodmodifier = 1.2
+	foodmodifier = 1.0
 	#疾病发生频率。1 = 非常常见，100 = 非常罕见。 [默认：5，最小：1，最大：100]
 	#Range: 1 ~ 100
 	diseasemodifier = 10

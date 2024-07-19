@@ -1,8 +1,12 @@
 // priority: 1000
 import { $IColony } from "packages/com/minecolonies/api/colony/$IColony"
+import { $IBuilding } from "packages/com/minecolonies/api/colony/buildings/$IBuilding"
+import { $AbstractBuildingGuards } from "packages/com/minecolonies/core/colony/buildings/$AbstractBuildingGuards"
+import { $BlockPos } from "packages/net/minecraft/core/$BlockPos"
 import { $ServerPlayer } from "packages/net/minecraft/server/level/$ServerPlayer"
 
 const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColonyManager")
+
 
 /**
  * 通过实体获取colonyId进而获取colony
@@ -48,4 +52,15 @@ export function CheckColonyMember(colony, player) {
  */
 export function GetColonyByPlayer(level, player) {
     return $IColonyManager.getInstance().getIColonyByOwner(level, player)
+}
+
+
+/**
+ * 根据BlockPos获取建筑
+ * @param {$IColony} colony 
+ * @param {$BlockPos} blockPos 
+ * @returns {$IBuilding}
+ */
+export function GetBuildingByPos(colony, blockPos) {
+    return colony.getBuildingManager().getBuilding(blockPos)
 }
