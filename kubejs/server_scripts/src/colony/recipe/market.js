@@ -63,6 +63,24 @@ ServerEvents.highPriorityData(event => {
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/intermedeconomics', true))
 
+    event.addJson(`kubejs:crafterrecipes/enchanter/rare_coin_engraving.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:rare_coin_engraving'), [Item.of('kubejs:common_coin_engraving'), Item.of('minecraft:diamond')])
+            .setResearchId('kubejs:effects/intermedeconomics', true))
+
+    event.addJson(`kubejs:crafterrecipes/enchanter/epic_coin_engraving.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:epic_coin_engraving'), [Item.of('kubejs:rare_coin_engraving'), Item.of('minecraft:netherite_ingot')])
+            .setMinBuildingLevel(2)
+            .setResearchId('kubejs:effects/intermedeconomics', true))
+
+    event.addJson(`kubejs:crafterrecipes/enchanter/legendary_coin_engraving.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:legendary_coin_engraving'), [Item.of('kubejs:epic_coin_engraving'), Item.of('kubejs:iridium_ingot')])
+            .setMinBuildingLevel(3)
+            .setResearchId('kubejs:effects/intermedeconomics', true))
+
+    event.addJson(`kubejs:crafterrecipes/enchanter/overlimit_coin_engraving.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:overlimit_coin_engraving'), [Item.of('kubejs:legendary_coin_engraving'), Item.of('kubejs:neutron_ingot')])
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/intermedeconomics', true))
     // 高级经济学
     event.addJson(`kubejs:crafterrecipes/mechanic/auction_stand_dark_oak.json`,
         new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:auction_stand_dark_oak'), [Item.of('minecraft:dark_oak_log', 3), Item.of('minecraft:glass', 8), Item.of('lightmanscurrency:trading_core')])

@@ -5,8 +5,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/basicaircraftunlock.json`,
         new ColonyResearchModel('minecolonies:technology', 3, [
             new BuildingRequirementModel('mechanic', 1),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['minecraft:piston'], 32),
+            new ItemRequirementModel(['minecraft:blaze_powder'], 16)
         ])
             .setEffects([{ 'kubejs:effects/basicaircraftunlock': 1 }])
             .setParentResearch('minecolonies:technology/whatyaneed')
@@ -17,8 +17,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/advancedaircraftunlock.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('mechanic', 3),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['immersive_aircraft:engine'], 16),
+            new ItemRequirementModel(['immersive_aircraft:cargo_airship'], 3)
         ])
             .setEffects([{ 'kubejs:effects/advancedaircraftunlock': 1 }])
             .setParentResearch('kubejs:technology/basicaircraftunlock')
@@ -29,8 +29,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/aircraftaddition.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('blacksmith', 4),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['immersive_aircraft:boiler'], 16),
+            new ItemRequirementModel(['minecraft:copper_ingot'], 64)
         ])
             .setEffects([{ 'kubejs:effects/aircraftaddition': 1 }])
             .setParentResearch('kubejs:technology/basicaircraftunlock')
@@ -41,8 +41,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/airweaponpower.json`,
         new ColonyResearchModel('minecolonies:technology', 5, [
             new BuildingRequirementModel('blacksmith', 5),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['minecraft:crossbow'], 3),
+            new ItemRequirementModel(['immersive_aircraft:nether_engine'], 16)
         ])
             .setEffects([{ 'kubejs:effects/airweaponpower': 1 }])
             .setParentResearch('kubejs:technology/aircraftaddition')

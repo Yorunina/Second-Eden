@@ -4,6 +4,8 @@
 	],
 	"rewards": [
 		"colony_rews",
-		"atlas_rews"
+		"atlas_rews",
+		"building_rews",
+		"colony_rews"
 	]
 }

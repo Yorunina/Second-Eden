@@ -7,8 +7,6 @@ StartupEvents.registry('item', event => {
         .tag('minecolonies:hide_citizen_data')
         .texture('kubejs:item/emergency_evacuation_bell')
 
-
-
     event.create('raid_book', 'basic')
         .maxStackSize(1)
         .tag(RARE)

@@ -7,9 +7,9 @@ ServerEvents.highPriorityData(event => {
         new ColonyResearchModel('kubejs:overlimit', 1, [
             new BuildingRequirementModel('townhall', 5),
             new BuildingRequirementModel('library', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:iridium_ingot'], 16),
+            new ItemRequirementModel(['minecraft:echo_shard'], 64),
+            new ItemRequirementModel(['minecraft:end_crystal'], 16),
         ])
             .setEffects([{ 'kubejs:effects/infinityintroduce': 1 }])
             .setSubtitle('com.kubejs.research.overlimit.infinityintroduce.subtitle')
@@ -21,9 +21,8 @@ ServerEvents.highPriorityData(event => {
         new ColonyResearchModel('kubejs:overlimit', 2, [
             new BuildingRequirementModel('blacksmith', 5),
             new BuildingRequirementModel('alchemist', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:iron_ingot'], 1024),
+            new ItemRequirementModel(['minecraft:nether_star'], 4),
         ])
             .setSortOrder(0)
             .setParentResearch('kubejs:overlimit/infinityintroduce')
@@ -36,9 +35,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/overlimit/neutronpilesift.json`,
         new ColonyResearchModel('kubejs:overlimit', 3, [
             new BuildingRequirementModel('sifter', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecolonies:sifter_mesh_diamond'], 3),
+            new ItemRequirementModel(['minecraft:netherite_ingot'], 3),
         ])
             .setSortOrder(0)
             .setParentResearch('kubejs:overlimit/singulize')
@@ -51,9 +49,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/overlimit/infinitywirelessaccess.json`,
         new ColonyResearchModel('kubejs:overlimit', 2, [
             new BuildingRequirementModel('deliveryman', 10),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:singularity_redstone'], 1),
+            new ItemRequirementModel(['refinedstorage:range_upgrade'], 64),
         ])
             .setSortOrder(100)
             .setEffects([{ 'kubejs:effects/infinitywirelessaccess': 1 }])
@@ -67,9 +64,8 @@ ServerEvents.highPriorityData(event => {
         new ColonyResearchModel('kubejs:overlimit', 2, [
             new BuildingRequirementModel('enchanter', 5),
             new BuildingRequirementModel('netherworker', 10),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:singularity_copper'], 1),
+            new ItemRequirementModel(['refinedstorage:64k_storage_part'], 4),
         ])
             .setSortOrder(200)
             .setEffects([{ 'kubejs:effects/creativediskunlock': 1 }])
@@ -81,8 +77,8 @@ ServerEvents.highPriorityData(event => {
     // 光速交易论坛
     event.addJson(`kubejs:researches/overlimit/lightspeedtradingforum.json`,
         new ColonyResearchModel('kubejs:overlimit', 3, [
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['kubejs:singularity_amethyst'], 1),
+            new ItemRequirementModel(['minecraft:recovery_compass'], 16)
         ])
             .setSortOrder(200)
             .setEffects([{ 'kubejs:effects/lightspeedtradingforum': 1 }])
@@ -95,9 +91,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/overlimit/neutronmaterialapplication.json`,
         new ColonyResearchModel('kubejs:overlimit', 4, [
             new BuildingRequirementModel('mechanic', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:neutron_ingot'], 1),
+            new ItemRequirementModel(['kubejs:singulize_potion'], 3),
         ])
             .setSortOrder(100)
             .setParentResearch('kubejs:overlimit/neutronpilesift')
@@ -109,9 +104,8 @@ ServerEvents.highPriorityData(event => {
     // 无尽催化
     event.addJson(`kubejs:researches/overlimit/infinitycatalyst.json`,
         new ColonyResearchModel('kubejs:overlimit', 3, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:crying_obsidian'], 32),
+            new ItemRequirementModel(['graveyard:corruption'], 64),
         ])
             .setSortOrder(100)
             .setParentResearch('kubejs:overlimit/singulize')
@@ -123,9 +117,7 @@ ServerEvents.highPriorityData(event => {
     // 无穷起源
     event.addJson(`kubejs:researches/overlimit/infinityorigin.json`,
         new ColonyResearchModel('kubejs:overlimit', 5, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:iridium_ingot'], 16),
         ])
             .setSortOrder(0)
             .setParentResearch('kubejs:overlimit/neutronmaterialapplication')

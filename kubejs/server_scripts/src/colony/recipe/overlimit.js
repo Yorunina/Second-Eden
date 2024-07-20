@@ -51,7 +51,7 @@ ServerEvents.highPriorityData(event => {
             .setResearchId('kubejs:effects/singulize', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/singularity_prismarine.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_prismarine'), [Item.of('minecraft:prismarine', 1024)])
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_prismarine'), [Item.of('minecraft:prismarine_shard', 1024)])
             .setTool('singulize_potion')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/singulize', true))
@@ -69,13 +69,13 @@ ServerEvents.highPriorityData(event => {
             .setResearchId('kubejs:effects/singulize', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/singularity_redstone.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_redstone'), [Item.of('minecraft:redstone_block', 1024)])
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_redstone'), [Item.of('minecraft:redstone', 1024)])
             .setTool('singulize_potion')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/singulize', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/singularity_glowstone.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_glowstone'), [Item.of('minecraft:glowstone', 1024)])
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:singularity_glowstone'), [Item.of('minecraft:glowstone_dust', 1024)])
             .setTool('singulize_potion')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/singulize', true))
@@ -223,6 +223,20 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:item_trader_interface'), [Item.of('lightmanscurrency:terminal', 1), Item.of('kubejs:echo_crystal', 4), Item.of('lightmanscurrency:trading_core', 9)])
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/lightspeedtradingforum', true))
-})
 
+    // 无尽催化剂
+    event.addJson(`kubejs:crafterrecipes/alchemist/item_trader_interface.json`,
+        new ColonyCraftRecipes('alchemist_crafting', Item.of('kubejs:infinity_catalyst'), [Item.of('kubejs:singularity_copper', 1), Item.of('kubejs:singularity_iron', 1), Item.of('kubejs:singularity_gold', 1), Item.of('kubejs:singularity_netherite', 1), Item.of('kubejs:singularity_diamond', 1), Item.of('kubejs:singularity_emerald', 1), Item.of('kubejs:singularity_amethyst', 1), Item.of('kubejs:singularity_prismarine', 1), Item.of('kubejs:singularity_quartz', 1), Item.of('kubejs:singularity_lapis', 1), Item.of('kubejs:singularity_redstone', 1), Item.of('kubejs:singularity_glowstone', 1), Item.of('kubejs:singularity_coal', 1),])
+            .setTool('singulize_potion')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/infinitycatalyst', true))
+
+    // 无穷起源
+    event.addJson(`kubejs:crafterrecipes/alchemist/item_trader_interface.json`,
+        new ColonyCraftRecipes('alchemist_crafting', Item.of('kubejs:infinity_ingot'), [Item.of('kubejs:neutron_ingot', 1)])
+            .setTool('infinity_catalyst')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/infinitycatalyst', true))
+
+})
 

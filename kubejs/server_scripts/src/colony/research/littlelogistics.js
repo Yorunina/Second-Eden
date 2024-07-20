@@ -5,9 +5,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/littlelogisticsunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 3, [
             new BuildingRequirementModel('mechanic', 1),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:iron_block'], 9),
+            new ItemRequirementModel(['minecraft:powered_rail'], 32),
         ])
             .setEffects([{ 'kubejs:effects/littlelogisticsunlock': 1 }])
             .setParentResearch('minecolonies:civilian/rails')

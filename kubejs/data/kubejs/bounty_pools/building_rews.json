@@ -1,7 +1,7 @@
 {
     "_comment": "建筑礼物盒奖励",
     "content": {
-        "building_rews_urban_savanna_residence": {
+        "building_rews_building_gift_box": {
             "type": "item",
             "content": "kubejs:building_gift_box",
             "amount": {
@@ -9,6 +9,7 @@
                 "max": 1
             },
             "unitWorth": 1500,
+            "rarity": "UNCOMMON",
             "nbt": "{levelReq:\"1\",rePattern:\"\\\\S+1\\\\.blueprint\"}"
         }
     }

@@ -5,9 +5,9 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/usefulbackpackupgrade.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
             new BuildingRequirementModel('hospital', 1),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:leather'], 32),
+            new ItemRequirementModel(['minecraft:iron_ingot'], 32),
+            new ItemRequirementModel(['minecraft:loom'], 4),
         ])
             .setEffects([{ 'kubejs:effects/usefulbackpackupgrade': 1 }])
             .setParentResearch('minecolonies:civilian/firstaid')

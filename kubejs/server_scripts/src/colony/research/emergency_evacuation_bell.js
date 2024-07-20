@@ -4,9 +4,8 @@ const { ColonyResearchModel, ItemRequirementModel } = require("../../model/colon
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/eebunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:bell'], 4),
+            new ItemRequirementModel(['transmog:void_fragment'], 8),
         ])
             .setEffects([{ 'kubejs:effects/eebunlock': 1 }])
             .setParentResearch('minecolonies:civilian/firstaid')
@@ -16,9 +15,9 @@ ServerEvents.highPriorityData(event => {
 
     event.addJson(`kubejs:researches/civilian/fwaunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 3, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:bell'], 4),
+            new ItemRequirementModel(['minecraft:ghast_tear'], 1),
+            new ItemRequirementModel(['minecraft:turtle_helmet'], 1),
         ])
             .setEffects([{ 'kubejs:effects/fwaunlock': 1 }])
             .setParentResearch('kubejs:civilian/eebunlock')
@@ -28,9 +27,9 @@ ServerEvents.highPriorityData(event => {
 
     event.addJson(`kubejs:researches/civilian/bapunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:book'], 16),
+            new ItemRequirementModel(['minecraft:honey_block'], 8),
+            new ItemRequirementModel(['minecraft:quartz_block'], 8),
         ])
             .setEffects([{ 'kubejs:effects/bapunlock': 1 }])
             .setParentResearch('kubejs:civilian/eebunlock')
@@ -40,9 +39,9 @@ ServerEvents.highPriorityData(event => {
 
     event.addJson(`kubejs:researches/civilian/fwbunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 4, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:bell'], 4),
+            new ItemRequirementModel(['minecraft:ghast_tear'], 4),
+            new ItemRequirementModel(['minecraft:nether_star'], 1),
         ])
             .setEffects([{ 'kubejs:effects/fwbunlock': 1 }])
             .setParentResearch('kubejs:civilian/fwaunlock')
@@ -52,12 +51,12 @@ ServerEvents.highPriorityData(event => {
 
     event.addJson(`kubejs:researches/civilian/ebbunlock.json`,
         new ColonyResearchModel('minecolonies:civilian', 4, [
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:bell'], 4),
+            new ItemRequirementModel(['minecraft:pufferfish'], 16),
+            new ItemRequirementModel(['minecraft:echo_shard'], 8),
         ])
             .setEffects([{ 'kubejs:effects/ebbunlock': 1 }])
-            .setParentResearch('kubejs:civilian/fwaunlock')
+            .setParentResearch('kubejs:civilian/bapunlock')
             .setSubtitle('com.kubejs.research.civilian.ebbunlock.subtitle')
     )
     event.addJson(`kubejs:researches/effects/ebbunlock.json`, { "effect": true })

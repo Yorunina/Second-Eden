@@ -1,6 +1,6 @@
 
 [tools]
-	customTypes = ["{\"name\": \"coin_engraving\", \"hasVariableMaterials\": false}", "{\"name\": \"singulize_potion\", \"hasVariableMaterials\": false}", "{\"name\": \"sizing_machinery\", \"hasVariableMaterials\": false}"]
+	customTypes = ["{\"name\": \"coin_engraving\", \"hasVariableMaterials\": false}", "{\"name\": \"singulize_potion\", \"hasVariableMaterials\": false}", "{\"name\": \"sizing_machinery\", \"hasVariableMaterials\": false}", "{\"name\": \"infinity_catalyst\", \"hasVariableMaterials\": false}"]
 
 [worldGens]
 	#Range: 0.0 ~ 1.0

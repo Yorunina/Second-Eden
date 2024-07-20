@@ -15,5 +15,6 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:neutron_nugget', ['PPP', 'PPP', 'PPP'], {
         P: 'kubejs:neutron_pile'
     })
+
     event.shapeless(Item.of('kubejs:neutron_pile', 9), ['kubejs:neutron_nugget'])
 })

@@ -6,9 +6,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/advancedquartzuseage.json`,
         new ColonyResearchModel('minecolonies:technology', 2, [
             new BuildingRequirementModel('blacksmith', 3),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['kubejs:steel_ingot'], 16),
+            new ItemRequirementModel(['minecraft:redstone'], 64),
         ])
             .setEffects([{ 'kubejs:effects/advancedquartzuseage': 1 }])
             .setParentResearch('minecolonies:technology/hittingiron')
@@ -21,9 +20,8 @@ ServerEvents.highPriorityData(event => {
         new ColonyResearchModel('minecolonies:technology', 3, [
             new BuildingRequirementModel('enchanter', 3),
             new BuildingRequirementModel('mechanic', 3),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:ender_chest'], 4),
+            new ItemRequirementModel(['refinedstorage:silicon'], 32),
         ])
             .setEffects([{ 'kubejs:effects/multidimstoragetheory': 1 }])
             .setParentResearch('kubejs:technology/advancedquartzuseage')
@@ -35,9 +33,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/autocraftmanager.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('school', 3),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:lodestone'], 3),
+            new ItemRequirementModel(['refinedstorage:silicon'], 32),
         ])
             .setEffects([{ 'kubejs:effects/autocraftmanager': 1 }])
             .setParentResearch('kubejs:technology/multidimstoragetheory')
@@ -50,9 +47,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/morediskunlock.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('enchanter', 4),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['refinedstorage:4k_storage_part'], 4),
+            new ItemRequirementModel(['refinedstorage:quartz_enriched_iron'], 64),
         ])
             .setEffects([{ 'kubejs:effects/morediskunlock': 1 }])
             .setParentResearch('kubejs:technology/multidimstoragetheory')
@@ -64,9 +60,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/wirelessaccess.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('deliveryman', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:ender_eye'], 12),
+            new ItemRequirementModel(['refinedstorage:quartz_enriched_iron'], 32),
         ])
             .setEffects([{ 'kubejs:effects/wirelessaccess': 1 }])
             .setParentResearch('kubejs:technology/multidimstoragetheory')

@@ -12,7 +12,7 @@ export const $ColonyResearchRequirement_ = ItemRequirementModel || BuildingRequi
 export function ColonyResearchModel(branch, researchLevel, requirements) {
     this.branch = branch
     this.requirements = requirements
-    this.researchLevel = researchLevel.toFixed()
+    this.researchLevel = researchLevel
 }
 
 ColonyResearchModel.prototype = {
@@ -69,7 +69,7 @@ export function ItemRequirementModel(items, quantity) {
     this.item = {
         'items': items
     }
-    this.quantity = quantity.toFixed()
+    this.quantity = quantity
 }
 
 /**

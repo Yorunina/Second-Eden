@@ -16,7 +16,9 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
 
     let colony = GetColonyByEntity(target)
     if (!colony) return
-    let spawnLocation = colony.getRaiderManager().calculateSpawnLocation()
+    let spawnLocation = colony.getRaiderManager().calculateSpawnLocationWithParam(32, false)
+
+    if (!spawnLocation) return
 
     let chunkX = Math.floor(spawnLocation.x / 16)
     let chunkZ = Math.floor(spawnLocation.z / 16)
@@ -67,7 +69,8 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
             entity.heal(entity.getMaxHealth())
 
             entity.persistentData.put('patrolTarget', { 'patrolling': NBT.intTag(1), 'x': NBT.floatTag(target.block.pos.x), 'y': NBT.floatTag(target.block.pos.y), 'z': NBT.floatTag(target.block.pos.z) })
-            entity.persistentData.put('custom_loot', 'custom_raid')
+            entity.persistentData.putString('custom_loot', 'custom_raid')
+            entity.persistentData.putDouble('entity_score', entityModel.calculateRaidEntityScore())
 
             SetLongDistancePatrolGoal(entity)
 

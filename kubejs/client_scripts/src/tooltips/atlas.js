@@ -17,9 +17,10 @@ ItemEvents.tooltip((tooltip) => {
     })
 
     tooltip.addAdvanced('kubejs:atlas_theme_nametag', (item, advanced, text) => {
-        text.add(1, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.1`,
+        let lineNum = 1
+        text.add(lineNum++, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.1`,
             Text.gold((item.hasNBT() && item.nbt.contains('itemId')) ? Item.of(item.nbt.getString('itemId')).getHoverName() : Text.translatable('tooltip.item.kubejs.atlas_theme_nametag.2'))).gray())
-        text.add(1, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.3`,
+        text.add(lineNum++, Text.translatable(`tooltip.item.kubejs.atlas_theme_nametag.3`,
             Text.gold((item.hasNBT() && item.nbt.contains('theme')) ? item.nbt.getString('theme') : 'random')).gray())
     })
 

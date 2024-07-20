@@ -1,0 +1,7 @@
+{
+  "block.permanentsponges.aqueous_sponge": "持续型海绵",
+  "block.permanentsponges.magmatic_sponge": "持续型岩浆海绵",
+  "item.permanentsponges.aqueous_sponge_on_a_stick": "吸水海绵棒",
+  "item.permanentsponges.magmatic_sponge_on_a_stick": "吸岩浆海绵棒",
+  "itemGroup.permanentsponges.main": "持续海绵"
+}

@@ -5,9 +5,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/technology/iridiumunlock.json`,
         new ColonyResearchModel('minecolonies:technology', 4, [
             new BuildingRequirementModel('alchemist', 3),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:dragon_breath'], 8),
+            new ItemRequirementModel(['minecolonies:magicpotion'], 16),
         ])
             .setEffects([{ 'kubejs:effects/iridiumunlock': 1 }])
             .setParentResearch('minecolonies:technology/alchemist')

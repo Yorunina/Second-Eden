@@ -3,6 +3,9 @@
 		"airdrop_objs"
 	],
 	"rewards": [
-		"airdrop_rews"
+		"colony_rews",
+		"atlas_rews",
+		"building_rews",
+		"colony_rews"
 	]
 }

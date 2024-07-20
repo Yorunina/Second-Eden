@@ -6,22 +6,32 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:cactus",
-          "weight": 15
+          "weight": 60
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:sugar_cane",
-          "weight": 15
+          "weight": 60
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_nugget",
-          "weight": 15
+          "weight": 60
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:cocoa_beans",
-          "weight": 15
+          "weight": 60
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:raw_iridium",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 5
         }
       ],
       "rolls": 1.0

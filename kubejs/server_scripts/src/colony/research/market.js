@@ -4,8 +4,7 @@ const { ColonyResearchModel, BuildingRequirementModel, ItemRequirementModel } = 
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/introeconomics.json`,
         new ColonyResearchModel('minecolonies:civilian', 1, [
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['minecraft:writable_book'], 16),
         ])
             .setEffects([{ 'kubejs:effects/introeconomics': 1 }])
             .setSubtitle('com.kubejs.research.civilian.introeconomics.subtitle')
@@ -16,8 +15,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/intermedeconomics.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
             new BuildingRequirementModel('townhall', 2),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['minecraft:gold_ingot'], 32),
+            new ItemRequirementModel(['minecraft:glowstone'], 8)
         ])
             .setEffects([{ 'kubejs:effects/intermedeconomics': 1 }])
             .setParentResearch('kubejs:civilian/introeconomics')
@@ -29,8 +28,8 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/adveconomics.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
             new BuildingRequirementModel('townhall', 3),
-            new ItemRequirementModel(['minecraft:iron_block'], 8),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16)
+            new ItemRequirementModel(['minecraft:netherite_ingot'], 8),
+            new ItemRequirementModel(['lightmanscurrency:coin_gold'], 16)
         ])
             .setEffects([{ 'kubejs:effects/adveconomics': 1 }])
             .setParentResearch('kubejs:civilian/intermedeconomics')

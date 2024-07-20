@@ -5,9 +5,7 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/nightowl3.json`,
         new ColonyResearchModel('minecolonies:civilian', 5, [
             new BuildingRequirementModel('hospital', 3),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:golden_carrot'], 125),
         ])
             .setEffects([{ 'minecolonies:effects/workingdayhaddition': 3 }])
             .setParentResearch('minecolonies:civilian/nightowl2')
@@ -17,9 +15,7 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:researches/civilian/nightowl4.json`,
         new ColonyResearchModel('minecolonies:civilian', 5, [
             new BuildingRequirementModel('hospital', 5),
-            new ItemRequirementModel(['minecraft:soul_lantern'], 1),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-            new ItemRequirementModel(['minecraft:magma_cream'], 16),
+            new ItemRequirementModel(['minecraft:golden_carrot'], 175),
         ])
             .setEffects([{ 'minecolonies:effects/workingdayhaddition': 4 }])
             .setParentResearch('kubejs:civilian/nightowl3')

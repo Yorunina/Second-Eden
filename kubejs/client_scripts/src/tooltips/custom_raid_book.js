@@ -28,6 +28,9 @@ ItemEvents.tooltip((tooltip) => {
                             .append(Text.translatable(`attribute.identifier.kubejs.${attributeIdentifier}`, attributeModifier.amount).gray()))
                 })
             }
+            if (tooltip.isCtrl()) {
+                text.add(initNum++, Text.of('   - ').gray().append(Text.translatable('tooltip.item.kubejs.custom_raid_book.1', Text.gold(entityModel.calculateRaidEntityScore())).gray()))
+            }
         })
     })
 
@@ -35,10 +38,20 @@ ItemEvents.tooltip((tooltip) => {
         let initNum = 1
         if (!item.hasNBT()) return
         let count = item.nbt.contains('count') ? item.nbt.getInt('count') : 1
+
+        if (item.nbt.contains('identifier')) {
+            text.add(initNum++,
+                Text.of('☆ ').gray()
+                    .append(Text.translatable(`tooltip.item.kubejs.specific_raid_orb.1`).gray())
+                    .append(Text.translatable(`entity.identifier.kubejs.${item.nbt.getString('identifier')}`).yellow()))
+        }
+
         text.add(initNum++,
             Text.of('☆ ').gray()
-                .append(Text.translatable(`tooltip.item.kubejs.specific_raid_orb.1`).gray())
+                .append(Text.translatable(`tooltip.item.kubejs.specific_raid_orb.2`).gray())
                 .append(Text.gold(count.toFixed(0))))
+
+
     })
 
     tooltip.addAdvanced('kubejs:custom_raid_orb', (item, advanced, text) => {

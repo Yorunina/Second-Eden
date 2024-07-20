@@ -1,0 +1,22 @@
+{
+	"minecolonies_tweaks.gui.updating": "更新中",
+	"minecolonies_tweaks.gui.assigned_counts": "分配数量：%1$s / %2$s",
+	"minecolonies_tweaks.gui.up_all": "全部上移",
+	"minecolonies_tweaks.gui.down_all": "全部下移",
+	"minecolonies_tweaks.gui.assign_all_automatically": "自动分配全部",
+	"minecolonies_tweaks.gui.clear_assignments": "清除分配",
+	"minecolonies_tweaks.gui.dont_repair": "不修理",
+	"minecolonies_tweaks.gui.mark_all_dont_repair": "标记全部为'不修理'",
+	"minecolonies_tweaks.gui.clear_dont_repair": "清除'不修理'",
+	"minecolonies_tweaks.gui.toogle_in_current": "切换过滤",
+	"minecolonies_tweaks.gui.reset_in_current": "重置过滤",
+	"minecolonies_tweaks.gui.buildings": "建筑",
+	"minecolonies_tweaks.gui.assigned_builder_name": "建筑者：%s",
+	"minecolonies_tweaks.gui.builder_name_with_level": "等级 %2$s - %1$s",
+	"minecolonies_tweaks.gui.builder_no_assigned": "未分配",
+	"minecolonies_tweaks.gui.assigned_count_with_value": "已分配计数：%s",
+	"minecolonies_tweaks.gui.exceptOpenablesOnlyChanged": "除了门和活板门之外的建筑只有变更",
+	"minecolonies_tweaks.gui.available_builders": "可用建筑者",
+	"minecolonies_tweaks.gui.repair_resources": "修理资源",
+	"minecolonies_tweaks.gui.townhall.batch_repair": "修理所有建筑"
+}

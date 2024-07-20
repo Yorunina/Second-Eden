@@ -39,7 +39,8 @@ ServerEvents.recipes(event => {
                 let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
 
                 let raidBook = grid.find('kubejs:custom_raid_book', 0)
-                return CustomRaidBookAddEntityCount(raidBook, entityType, `minecraft:${entityType}`, addCount, customNbt)
+                let identifier = (orb.hasNBT() && orb.nbt.contains('identifier')) ? orb.nbt.getString('identifier') : entityType
+                return CustomRaidBookAddEntityCount(raidBook, identifier, `minecraft:${entityType}`, addCount, customNbt)
             })
     })
 })
@@ -55,7 +56,8 @@ ServerEvents.recipes(event => {
                 let customNbt = (orb.hasNBT() && orb.nbt.contains('customNbt')) ? NBT.toTagCompound(orb.nbt.getString('customNbt')) : new $CompoundTag()
 
                 let raidBook = grid.find('kubejs:custom_raid_book', 0)
-                return CustomRaidBookAddEntityCount(raidBook, entityType, `takesapillage:${entityType}`, addCount, customNbt)
+                let identifier = (orb.hasNBT() && orb.nbt.contains('identifier')) ? orb.nbt.getString('identifier') : entityType
+                return CustomRaidBookAddEntityCount(raidBook, identifier, `minecraft:${entityType}`, addCount, customNbt)
             })
     })
 })
