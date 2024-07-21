@@ -1,0 +1,158 @@
+{
+    "content": {
+        "raid_orb_rews_zombie_orb": {
+            "type": "item",
+            "content": "kubejs:zombie_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 150,
+            "weightMult": 0.2,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_skeleton_orb": {
+            "type": "item",
+            "content": "kubejs:skeleton_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 300,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_cave_spider_orb": {
+            "type": "item",
+            "content": "kubejs:cave_spider_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 300,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_creeper_orb": {
+            "type": "item",
+            "content": "kubejs:creeper_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 600,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_blaze_orb": {
+            "type": "item",
+            "content": "kubejs:blaze_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 900,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_husk_orb": {
+            "type": "item",
+            "content": "kubejs:husk_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 300,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_pillager_orb": {
+            "type": "item",
+            "content": "kubejs:pillager_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 600,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_ravager_orb": {
+            "type": "item",
+            "content": "kubejs:ravager_orb",
+            "amount": {
+                "min": 1,
+                "max": 2
+            },
+            "unitWorth": 1800,
+            "weightMult": 0.05,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_evoker_orb": {
+            "type": "item",
+            "content": "kubejs:evoker_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 900,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_wither_skeleton_orb": {
+            "type": "item",
+            "content": "kubejs:wither_skeleton_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_vindicator_orb": {
+            "type": "item",
+            "content": "kubejs:vindicator_orb",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_archer_orb": {
+            "type": "item",
+            "content": "kubejs:archer_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 900,
+            "weightMult": 0.15,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_legioner_orb": {
+            "type": "item",
+            "content": "kubejs:legioner_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        },
+        "raid_orb_rews_skirmisher_orb": {
+            "type": "item",
+            "content": "kubejs:skirmisher_orb",
+            "amount": {
+                "min": 1,
+                "max": 5
+            },
+            "unitWorth": 1200,
+            "weightMult": 0.1,
+            "nbt": "{count:3}"
+        }
+    }
+}

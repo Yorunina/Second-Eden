@@ -1,0 +1,112 @@
+{
+    "content": {
+        "ore_objs_iron_ingot": {
+            "type": "item",
+            "content": "minecraft:iron_ingot",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 30
+        },
+        "ore_objs_copper_ingot": {
+            "type": "item",
+            "content": "minecraft:copper_ingot",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 30
+        },
+        "ore_objs_gold_ingot": {
+            "type": "item",
+            "content": "minecraft:gold_ingot",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 50
+        },
+        "ore_objs_netherite_ingot": {
+            "type": "item",
+            "content": "minecraft:netherite_ingot",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 300
+        },
+        "ore_objs_amethyst_shard": {
+            "type": "item",
+            "content": "minecraft:amethyst_shard",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 30
+        },
+        "ore_objs_quartz": {
+            "type": "item",
+            "content": "minecraft:quartz",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 15
+        },
+        "ore_objs_coal": {
+            "type": "item",
+            "content": "minecraft:coal",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 10
+        },
+        "ore_objs_lapis_lazuli": {
+            "type": "item",
+            "content": "minecraft:lapis_lazuli",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 20
+        },
+        "ore_objs_emerald": {
+            "type": "item",
+            "content": "minecraft:emerald",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 15
+        },
+        "ore_objs_glowstone_dust": {
+            "type": "item",
+            "content": "minecraft:glowstone_dust",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 15
+        },
+        "ore_objs_redstone": {
+            "type": "item",
+            "content": "minecraft:redstone",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 15
+        },
+        "ore_objs_diamond": {
+            "type": "item",
+            "content": "minecraft:diamond",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 100
+        }
+    }
+}

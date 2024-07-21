@@ -16,7 +16,7 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
 
     let colony = GetColonyByEntity(target)
     if (!colony) return
-    let spawnLocation = colony.getRaiderManager().calculateSpawnLocationWithParam(32, false)
+    let spawnLocation = colony.getRaiderManager().calculateSpawnLocationWithParam(32)
 
     if (!spawnLocation) return
 

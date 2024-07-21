@@ -1,0 +1,67 @@
+{
+    "content": {
+        "slay_objs_zombie_50": {
+            "type": "entity",
+            "content": "minecraft:zombie",
+            "amount": {
+                "min": 40,
+                "max": 80
+            },
+            "unitWorth": 35
+        },
+        "slay_objs_zombie_0": {
+            "type": "entity",
+            "content": "minecraft:zombie",
+            "amount": {
+                "min": 1,
+                "max": 40
+            },
+            "unitWorth": 50
+        },
+        "slay_objs_skeleton_50": {
+            "type": "entity",
+            "content": "minecraft:skeleton",
+            "amount": {
+                "min": 40,
+                "max": 80
+            },
+            "unitWorth": 35
+        },
+        "slay_objs_skeleton_0": {
+            "type": "entity",
+            "content": "minecraft:skeleton",
+            "amount": {
+                "min": 1,
+                "max": 40
+            },
+            "unitWorth": 50
+        },
+        "slay_objs_creeper_0": {
+            "type": "entity",
+            "content": "minecraft:creeper",
+            "amount": {
+                "min": 1,
+                "max": 30
+            },
+            "unitWorth": 70
+        },
+        "slay_objs_spider_0": {
+            "type": "entity",
+            "content": "minecraft:spider",
+            "amount": {
+                "min": 1,
+                "max": 30
+            },
+            "unitWorth": 70
+        },
+        "slay_objs_warden_0": {
+            "type": "entity",
+            "content": "minecraft:warden",
+            "amount": {
+                "min": 1,
+                "max": 3
+            },
+            "unitWorth": 2000
+        }
+    }
+}

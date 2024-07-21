@@ -1,5 +1,4 @@
 {
-    "_comment": "袭击书奖励",
     "content": {
         "raid_book_rews_custom_raid_book": {
             "type": "item",
@@ -8,18 +7,18 @@
                 "min": 1,
                 "max": 1
             },
-            "unitWorth": 1500,
-            "rarity": "UNCOMMON"
+            "weightMult": 0.5,
+            "unitWorth": 3000
         },
         "raid_book_rews_random_health_add_5_modifier": {
             "type": "item",
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 800,
-            "rarity": "UNCOMMON",
             "nbt": "{identifier:\"random\",modifiers:{MaxHealthAdditionPersistent:{amount:5.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_random_health_add_10_modifier": {
@@ -27,8 +26,9 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 1500,
             "rarity": "UNCOMMON",
             "nbt": "{identifier:\"random\",modifiers:{MaxHealthAdditionPersistent:{amount:10.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
@@ -38,10 +38,11 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
-            "rarity": "RARE",
+            "rarity": "EPIC",
             "nbt": "{identifier:\"random\",modifiers:{MaxHealthAdditionPersistent:{amount:20.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_random_health_multi_01_modifier": {
@@ -49,21 +50,22 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
             "rarity": "RARE",
-            "nbt": "{identifier:\"random\",modifiers:{MaxHealthAdditionPersistent:{amount:0.1d,name:\"minecraft:generic.max_health\",operation:\"multiply_persistent\"}}}"
+            "nbt": "{identifier:\"random\",modifiers:{MaxHealthMultiplyPersistent:{amount:0.1d,name:\"minecraft:generic.max_health\",operation:\"multiply_persistent\"}}}"
         },
         "raid_book_rews_all_health_add_5_modifier": {
             "type": "item",
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 1500,
-            "rarity": "UNCOMMON",
             "nbt": "{identifier:\"all\",modifiers:{MaxHealthAdditionPersistent:{amount:5.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_all_health_add_10_modifier": {
@@ -71,10 +73,11 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
-            "rarity": "RARE",
+            "rarity": "UNCOMMON",
             "nbt": "{identifier:\"all\",modifiers:{MaxHealthAdditionPersistent:{amount:10.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_all_health_add_20_modifier": {
@@ -82,8 +85,9 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 3000,
             "rarity": "EPIC",
             "nbt": "{identifier:\"all\",modifiers:{MaxHealthAdditionPersistent:{amount:20.0d,name:\"minecraft:generic.max_health\",operation:\"addition_persistent\"}}}"
@@ -93,21 +97,22 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
             "rarity": "RARE",
-            "nbt": "{identifier:\"all\",modifiers:{MaxHealthAdditionPersistent:{amount:0.1d,name:\"minecraft:generic.max_health\",operation:\"multiply_persistent\"}}}"
+            "nbt": "{identifier:\"all\",modifiers:{MaxHealthMultiplyPersistent:{amount:0.1d,name:\"minecraft:generic.max_health\",operation:\"multiply_persistent\"}}}"
         },
         "raid_book_rews_random_attack_add_1_modifier": {
             "type": "item",
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 800,
-            "rarity": "UNCOMMON",
             "nbt": "{identifier:\"random\",modifiers:{AttackAdditionPersistent:{amount:1.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_random_attack_add_2_modifier": {
@@ -115,8 +120,9 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 1500,
             "rarity": "UNCOMMON",
             "nbt": "{identifier:\"random\",modifiers:{AttackAdditionPersistent:{amount:2.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
@@ -126,10 +132,11 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
-            "rarity": "RARE",
+            "rarity": "EPIC",
             "nbt": "{identifier:\"random\",modifiers:{AttackAdditionPersistent:{amount:4.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_random_attack_multi_01_modifier": {
@@ -137,21 +144,22 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
             "rarity": "RARE",
-            "nbt": "{identifier:\"random\",modifiers:{AttackAdditionPersistent:{amount:0.1d,name:\"minecraft:generic.attack_damage\",operation:\"multiply_persistent\"}}}"
+            "nbt": "{identifier:\"random\",modifiers:{AttackMultiplyPersistent:{amount:0.1d,name:\"minecraft:generic.attack_damage\",operation:\"multiply_persistent\"}}}"
         },
         "raid_book_rews_all_attack_add_1_modifier": {
             "type": "item",
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 800,
-            "rarity": "UNCOMMON",
             "nbt": "{identifier:\"all\",modifiers:{AttackAdditionPersistent:{amount:1.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
         },
         "raid_book_rews_all_attack_add_2_modifier": {
@@ -159,8 +167,9 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 1500,
             "rarity": "UNCOMMON",
             "nbt": "{identifier:\"all\",modifiers:{AttackAdditionPersistent:{amount:2.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
@@ -170,8 +179,9 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 3000,
             "rarity": "EPIC",
             "nbt": "{identifier:\"all\",modifiers:{AttackAdditionPersistent:{amount:4.0d,name:\"minecraft:generic.attack_damage\",operation:\"addition_persistent\"}}}"
@@ -181,11 +191,12 @@
             "content": "kubejs:raid_entity_modifier",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "weightMult": 0.3,
             "unitWorth": 2000,
             "rarity": "RARE",
-            "nbt": "{identifier:\"all\",modifiers:{AttackAdditionPersistent:{amount:0.1d,name:\"minecraft:generic.attack_damage\",operation:\"multiply_persistent\"}}}"
+            "nbt": "{identifier:\"all\",modifiers:{AttackMultiplyPersistent:{amount:0.1d,name:\"minecraft:generic.attack_damage\",operation:\"multiply_persistent\"}}}"
         }
     }
 }

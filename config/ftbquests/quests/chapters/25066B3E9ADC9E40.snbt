@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "25066B3E9ADC9E40"
+	group: "67C8A7FC113DA84A"
+	icon: "farmersdelight:stove"
+	id: "25066B3E9ADC9E40"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "农夫乐事"
+}

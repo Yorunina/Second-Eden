@@ -1,14 +1,14 @@
 {
-    "_comment": "地图册奖励",
     "content": {
         "altas_rews_advanced_atlas": {
             "type": "item",
             "content": "kubejs:advanced_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 500,
+            "weightMult": 0.6,
             "nbt": "{Damage:0}"
         },
         "altas_rews_common_atlas": {
@@ -16,9 +16,10 @@
             "content": "kubejs:common_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 250,
+            "weightMult": 1,
             "nbt": "{Damage:0}"
         },
         "altas_rews_sociality_atlas": {
@@ -26,9 +27,10 @@
             "content": "kubejs:sociality_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
-            }   ,
+                "max": 1
+            },
             "unitWorth": 800,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_wood_atlas": {
@@ -36,9 +38,10 @@
             "content": "kubejs:wood_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 600,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_stone_atlas": {
@@ -46,9 +49,10 @@
             "content": "kubejs:stone_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 600,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_ore_atlas": {
@@ -56,9 +60,10 @@
             "content": "kubejs:ore_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 1000,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_luxury_atlas": {
@@ -66,9 +71,10 @@
             "content": "kubejs:luxury_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 1200,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_huge_atlas": {
@@ -76,9 +82,10 @@
             "content": "kubejs:huge_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
             "unitWorth": 1200,
+            "weightMult": 0.2,
             "nbt": "{Damage:0}"
         },
         "altas_rews_ultra_atlas": {
@@ -86,20 +93,12 @@
             "content": "kubejs:ultra_atlas",
             "amount": {
                 "min": 1,
-                "max": 3
+                "max": 1
             },
+            "rarity": "RARE",
             "unitWorth": 1500,
+            "weightMult": 0.1,
             "nbt": "{Damage:0}"
-        },
-        "altas_rews_atlas_theme_nametag": {
-            "type": "item",
-            "content": "kubejs:atlas_theme_nametag",
-            "amount": {
-                "min": 1,
-                "max": 3
-            },
-            "unitWorth": 1000,
-            "nbt": "{theme:0, itemId: }"
         }
     }
 }

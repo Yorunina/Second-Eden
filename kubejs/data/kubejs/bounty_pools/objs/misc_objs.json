@@ -1,0 +1,87 @@
+{
+    "content": {
+        "misc_objs_saplings": {
+            "type": "item_tag",
+            "content": "minecraft:saplings",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 5
+        },
+        "misc_objs_string": {
+            "type": "item",
+            "content": "minecraft:string",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 10
+        },
+        "misc_objs_rotten_flesh": {
+            "type": "item",
+            "content": "minecraft:rotten_flesh",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 10
+        },
+        "misc_objs_feather": {
+            "type": "item",
+            "content": "minecraft:feather",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 10
+        },
+        "misc_objs_flint": {
+            "type": "item",
+            "content": "minecraft:flint",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 15
+        },
+        "misc_objs_gunpowder": {
+            "type": "item",
+            "content": "minecraft:gunpowder",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 10
+        },
+        "misc_objs_rabbit_hide": {
+            "type": "item",
+            "content": "minecraft:rabbit_hide",
+            "amount": {
+                "min": 1,
+                "max": 128
+            },
+            "unitWorth": 30
+        },
+        "misc_objs_leather": {
+            "type": "item",
+            "content": "minecraft:leather",
+            "amount": {
+                "min": 1,
+                "max": 128
+            },
+            "unitWorth": 15
+        },
+        "misc_objs_seeds": {
+            "type": "item_tag",
+            "content": "forge:seeds",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 5
+        }
+    }
+}
+
+

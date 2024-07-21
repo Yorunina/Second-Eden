@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "59EDD8CE0AF5EE03"
+	group: "1492FD99DC676F44"
+	icon: "cagedmobs:mob_cage"
+	id: "59EDD8CE0AF5EE03"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "笼中生物"
+}

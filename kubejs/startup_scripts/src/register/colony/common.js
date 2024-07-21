@@ -24,4 +24,9 @@ StartupEvents.registry('item', event => {
         .tag(EPIC)
         .tag('minecolonies:hide_citizen_data')
         .texture('kubejs:item/bind_armor_protocol')
+
+    event.create('go_camping', 'basic')
+        .maxStackSize(1)
+        .tag(LEGENDARY)
+        .texture('kubejs:item/go_camping')
 })

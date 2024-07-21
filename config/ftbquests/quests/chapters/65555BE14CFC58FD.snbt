@@ -1,0 +1,72 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "65555BE14CFC58FD"
+	group: ""
+	icon: "kubejs:building_gift_box"
+	id: "65555BE14CFC58FD"
+	images: [{
+		alpha: 200
+		height: 10.0d
+		image: "kubejs:textures/task/go_camping_logo.png"
+		rotation: 0.0d
+		width: 14.9d
+		x: -0.75d
+		y: -4.25d
+	}]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&6制作团队：GoCampingTeam ( 译名：露营组 ) &r"
+				""
+				"{\"text\":\"点击前往B站主页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/3493263256324592\"}}"
+				""
+				"{\"text\":\"点击前往团队介绍页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/author/31248.html\"}}"
+				""
+				"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/New-Colony\"}}"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:go_camping"
+				tag: { }
+			}
+			id: "0E3B5BC6A471679E"
+			shape: "rsquare"
+			subtitle: "制作团队：GoCamping！"
+			tasks: [{
+				id: "517BC679DC3C0E6C"
+				title: "制作团队"
+				type: "checkmark"
+			}]
+			x: -1.25d
+			y: 0.0d
+		}
+		{
+			description: [
+				"本整合包中的教程大量参考了中文McMod站点中各位先驱者的资料和文章。"
+				""
+				"本整合包中的kubejs魔改部分大量参考了kubejs Discord频道中其他研究者的提问和示例。"
+				""
+				"本整合包中的部分Mod修改得益于各位Mod开发者对自己代码无私的公开，感谢开源精神。"
+				""
+				"本整合包中的魔改使用部分材质引用了其他Mod，但尽可能的保留了它们原本的用途以使得玩家能够识别出来它们原本来自于哪些Mod。后续这类材质会被逐渐替换掉以避免可能出现的冲突。感谢这些材质和Mod作者们的优秀主意和美术设计。"
+				""
+				"本整合包借助了广大传媒和部分心理学效应以为人所知，感谢宝贵的机会。"
+			]
+			icon: "kubejs:force_work_bell"
+			id: "64EA255C062BB895"
+			shape: "rsquare"
+			subtitle: "外部鸣谢"
+			tasks: [{
+				id: "1B62C7838335B033"
+				title: "额外鸣谢"
+				type: "checkmark"
+			}]
+			x: -3.75d
+			y: 0.0d
+		}
+	]
+	title: "制作人名单"
+}

@@ -23,7 +23,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
 
     if (!AtlasActiveStrategy[atlasItem.id]) return
 
-    if (player.cooldowns.isOnCooldown(atlasItem)) return
+    // if (player.cooldowns.isOnCooldown(atlasItem)) return
 
     if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return
     let airdropPos = AtlasActiveStrategy[atlasItem.id](event, atlasItem)
@@ -39,6 +39,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()
     let mapItem = getMapItem(level, airdropPos)
+    player.tell(0)
     // 监听戒指事件
     level.getPlayers().forEach(entityItem => {
         if (!entityItem instanceof $ServerPlayer) return
@@ -47,13 +48,10 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
         let decodeAbility = thisPlayer.getAttribute('kubejs:decode_ability').getValue()
         let thisCurios = getCuriosHandler(thisPlayer)
         if (!thisCurios) return
-
-        let isSpoon = thisCurios.isEquipped(item => {
-            return item.hasTag('kubejs:snoop')
-        })
+        let isSpoon = thisCurios.isEquipped('kubejs:snoop_ring')
         if (!isSpoon) return
         if (Math.random() * encodeAbility < decodeAbility - encodeAbility) {
-            player.give(mapItem)
+            thisPlayer.give(mapItem)
         }
     })
 })

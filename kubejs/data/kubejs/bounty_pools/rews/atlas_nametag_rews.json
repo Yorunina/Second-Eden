@@ -1,5 +1,4 @@
 {
-    "_comment": "地图册标签奖励",
     "content": {
         "atlas_nametag_rews_wood_atlas_wood&sapling": {
             "type": "item",
@@ -9,7 +8,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:wood_atlas\",theme:\"wood&sapling\"}"
         },
         "atlas_nametag_rews_wood_atlas_only_wood": {
@@ -30,7 +29,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:stone_atlas\",theme:\"stone\"}"
         },
         "atlas_nametag_rews_stone_atlas_sand": {
@@ -41,7 +40,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:stone_atlas\",theme:\"sand\"}"
         },
         "atlas_nametag_rews_ore_atlas_raw_ore": {
@@ -52,7 +51,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:ore_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_ore_atlas_gem": {
@@ -63,7 +62,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:ore_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_luxury_atlas_curios": {
@@ -74,7 +73,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:luxury_atlas\",theme:\"curios\"}"
         },
         "atlas_nametag_rews_common_atlas_common_wood": {
@@ -85,7 +84,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"common_wood\"}"
         },
         "atlas_nametag_rews_common_atlas_all_wood": {
@@ -96,7 +95,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"all_wood\"}"
         },
         "atlas_nametag_rews_common_atlas_stone": {
@@ -107,7 +106,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"stone\"}"
         },
         "atlas_nametag_rews_common_atlas_raw_ore": {
@@ -118,7 +117,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_common_atlas_wool": {
@@ -129,7 +128,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"wool\"}"
         },
         "atlas_nametag_rews_common_atlas_dye": {
@@ -140,7 +139,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"dye\"}"
         },
         "atlas_nametag_rews_common_atlas_gem": {
@@ -151,7 +150,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_common_atlas_altas": {
@@ -162,7 +161,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "COMMON",
+            "weightMult": 0.5,
             "nbt": "{itemId:\"kubejs:common_atlas\",theme:\"altas\"}"
         },
         "atlas_nametag_rews_advanced_atlas_relics": {
@@ -173,7 +172,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"relics\"}"
         },
         "atlas_nametag_rews_advanced_atlas_curios": {
@@ -184,7 +183,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"curios\"}"
         },
         "atlas_nametag_rews_advanced_atlas_backpack": {
@@ -195,7 +194,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"backpack\"}"
         },
         "atlas_nametag_rews_advanced_atlas_gem": {
@@ -206,7 +205,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_advanced_atlas_raw_ore": {
@@ -217,7 +216,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_advanced_atlas_altas": {
@@ -228,7 +227,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"altas\"}"
         },
         "atlas_nametag_rews_advanced_atlas_lantern": {
@@ -239,7 +238,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"lantern\"}"
         },
         "atlas_nametag_rews_advanced_atlas_coin": {
@@ -250,7 +249,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "RARE",
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:advanced_atlas\",theme:\"coin\"}"
         },
         "atlas_nametag_rews_ultra_atlas_lantern": {
@@ -261,7 +260,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:ultra_atlas\",theme:\"relics\"}"
         },
         "atlas_nametag_rews_ultra_atlas_gem": {
@@ -272,7 +271,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:ultra_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_ultra_atlas_raw_ore": {
@@ -283,7 +282,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:ultra_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_ultra_atlas_altas": {
@@ -294,7 +293,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:ultra_atlas\",theme:\"altas\"}"
         },
         "atlas_nametag_rews_huge_atlas_wood&sapling": {
@@ -305,7 +304,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"wood&sapling\"}"
         },
         "atlas_nametag_rews_huge_atlas_only_wood": {
@@ -316,7 +315,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"only_wood\"}"
         },
         "atlas_nametag_rews_huge_atlas_stone": {
@@ -327,7 +326,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"stone\"}"
         },
         "atlas_nametag_rews_huge_atlas_raw_ore": {
@@ -338,7 +337,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_huge_atlas_wool": {
@@ -349,7 +348,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"wool\"}"
         },
         "atlas_nametag_rews_huge_atlas_dye": {
@@ -360,7 +359,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"dye\"}"
         },
         "atlas_nametag_rews_huge_atlas_gem": {
@@ -371,7 +370,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "EPIC",
+            "weightMult": 0.05,
             "nbt": "{itemId:\"kubejs:huge_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_sociality_atlas_common_wood": {
@@ -382,7 +381,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"common_wood\"}"
         },
         "atlas_nametag_rews_sociality_atlas_all_wood": {
@@ -393,7 +392,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"all_wood\"}"
         },
         "atlas_nametag_rews_sociality_atlas_stone": {
@@ -404,7 +403,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"stone\"}"
         },
         "atlas_nametag_rews_sociality_atlas_raw_ore": {
@@ -415,7 +414,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"raw_ore\"}"
         },
         "atlas_nametag_rews_sociality_atlas_wool": {
@@ -426,7 +425,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"wool\"}"
         },
         "atlas_nametag_rews_sociality_atlas_dye": {
@@ -437,7 +436,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"dye\"}"
         },
         "atlas_nametag_rews_sociality_atlas_gem": {
@@ -448,7 +447,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"gem\"}"
         },
         "atlas_nametag_rews_sociality_atlas_altas": {
@@ -459,7 +458,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "rarity": "UNCOMMON",
+            "weightMult": 0.3,
             "nbt": "{itemId:\"kubejs:sociality_atlas\",theme:\"altas\"}"
         }
     }

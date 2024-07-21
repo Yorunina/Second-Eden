@@ -1,0 +1,38 @@
+{
+    "content": {
+        "player_interacted_objs_touhou_little_maid": {
+            "icon": "touhou_little_maid:model_switcher",
+            "type": "criteria",
+            "content": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "touhou_little_maid:maid"
+                }
+            },
+            "amount": {
+                "min": 1,
+                "max": 30
+            },
+            "rarity": "UNCOMMON",
+            "unitWorth": 50
+        },
+        "player_interacted_objs_milk_cow": {
+            "icon": "minecraft:milk_bucket",
+            "type": "criteria",
+            "content": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "item": {
+                    "item": "minecraft:bucket"
+                },
+                "entity": {
+                    "type": "minecraft:cow"
+                }
+            },
+            "amount": {
+                "min": 1,
+                "max": 15
+            },
+            "unitWorth": 50
+        }
+    }
+}

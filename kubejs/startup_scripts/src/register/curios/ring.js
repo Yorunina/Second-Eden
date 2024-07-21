@@ -16,7 +16,6 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag(EPIC)
         .tag('curios:ring')
-        .tag('kubejs:snoop')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:decode_ability', 'SnoopRingDecodeAbility', 3, 'addition')

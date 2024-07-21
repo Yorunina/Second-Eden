@@ -1,11 +1,21 @@
 {
 	"objectives": [
-		"airdrop_objs"
+		"fishing_objs",
+		"enchant_objs",
+		"player_interacted_objs",
+		"slay_objs",
+		"ore_objs",
+		"misc_objs"
 	],
 	"rewards": [
 		"colony_rews",
 		"atlas_rews",
 		"building_rews",
-		"colony_rews"
+		"colony_rews",
+		"atlas_nametag_rews",
+		"raid_book_rews",
+		"raid_orb_rews",
+		"skill_book_rews",
+		"misc_rews"
 	]
 }

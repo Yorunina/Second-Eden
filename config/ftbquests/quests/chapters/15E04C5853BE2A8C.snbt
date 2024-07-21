@@ -25,13 +25,14 @@
 			]
 			icon: "kubejs:master_certificate"
 			id: "6A8DF9B51A9B903B"
+			size: 2.0d
 			subtitle: "写在最前面"
 			tasks: [{
 				id: "5E180DC1685F8084"
 				title: "放在前面"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 0.0d
 		}
 		{
@@ -54,6 +55,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
+			size: 2.0d
 			subtitle: "怀揣地图，呼叫支援"
 			tasks: [{
 				id: "5B64A75BDE482865"
@@ -107,6 +109,7 @@
 					type: "item"
 				}
 			]
+			size: 2.0d
 			subtitle: "更快捷的资源获取"
 			tasks: [{
 				id: "309712DB6344642B"
@@ -123,8 +126,8 @@
 				type: "item"
 			}]
 			title: "更多地图册"
-			x: 4.0d
-			y: -1.5d
+			x: 3.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["12B4A667D16DFF5E"]
@@ -149,6 +152,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
+			size: 2.0d
 			subtitle: "我就要这个！立刻！"
 			tasks: [{
 				id: "7A6A1F0D3D606316"
@@ -162,8 +166,8 @@
 				weak_nbt_match: true
 			}]
 			title: "地图主题牌"
-			x: 6.0d
-			y: -1.5d
+			x: 7.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -183,6 +187,7 @@
 				item: "kubejs:skill_forget_book"
 				type: "item"
 			}]
+			size: 2.0d
 			subtitle: "获取技能点数！"
 			tasks: [{
 				icon: "kubejs:skill_book_strength"
@@ -212,7 +217,7 @@
 			}]
 			title: "技能之书"
 			x: 3.0d
-			y: 2.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -225,7 +230,7 @@
 				""
 				"在后续的发展过程中，大量类似的操作会被涉及，我们会在后面详细的描述如何正确使用它。"
 				""
-				"点击右下角以翻页。"
+				"&7点击右下角以翻页。&r"
 				""
 				"{@pagebreak}"
 				"在你右键地面放置补给营地时，其会弹出一个提示框，来询问你是否需要选择某种&2风格包&r，以及是否&2确认放置位置&r。"
@@ -233,21 +238,29 @@
 				"{image:kubejs:textures/task/supply_camp_deploy_1.png width:180 height:115 align:1}"
 				""
 				"{@pagebreak}"
-				"风格包：即&2建筑风格&r。同种类型的建筑，会在不同的建筑包里面有着完全不同的外观和材料需求。选择该选项之后，你可以根据你的喜好来选择不同的风格包。"
+				"&c--风格包--&r"
 				""
-				"通过点击&2选择按钮&r，你可以将后续&6确认放置位置&r中预览的建筑类型切换为该风格包的类型。"
+				"即&2建筑风格&r。同种类型的建筑，会在不同的风格包里有完全不同的&2外观&r和&2材料需求&r。你可以在此处挑选你喜欢的风格。"
+				""
+				"点击&2选择按钮&r，你便可以将该建筑改为选中的风格。"
 				""
 				"{image:kubejs:textures/task/supply_camp_deploy_2.png width:180 height:100 align:1}"
 				"{@pagebreak}"
-				"确认放置位置：在你选择了&2建筑风格&r之后，你会在世界上预览到建筑的建造结果。通过右侧的&6操作面板&r，你可以控制建筑的具体位置。最好在确认位置无误后再选择放置营地！"
+				"&c--确认放置位置--&r"
 				""
-				"&6橙色&r位置：&6固体占位符&r，顾名思义，蓝图中该位置并不存在方块，其允许任何种类的固体方块放置在此处。这通常用于保证蓝图被放置在一个合法的位置。"
+				"进入&2确认放置位置&r界面，你可以在此界面控制建筑的具体位置。&c最好在确认位置无误后再选择放置营地！&r"
 				""
-				"&e黄色&r位置：&6操作面板&r，可以在这里对蓝图进行旋转、上下位移、左右前后位移的操作。"
+				"&e选择风格&r：点击此处，你可以&2更换风格包&r并预览。"
 				""
-				"&c红色&r位置：确认无误后进行直接建造。"
+				"&6操作面板&r：可以在这里对蓝图进行&2水平位移、上下位移、旋转&r的操作。"
 				""
-				"{image:kubejs:textures/task/supply_camp_deploy_3.png width:180 height:108 align:1}"
+				"&b固体占位符&r：顾名思义，&2蓝图中该位置并不存在方块&r，其允许任何种类的固体方块放置在此处。这通常用于保证蓝图被放置在一个合法的位置。"
+				""
+				"&c取消建造&r：取消此次建造。&7（如果你只是想要操控自身角色移动，按ESC键即可，无需取消建造。之后只需再手持补给营地右键即可再次打开该界面。）&r"
+				""
+				"&a开始建造&r：点击后&2直接进行建造&r。"
+				""
+				"{image:kubejs:textures/task/supply_camp_deploy_3.png width:180 height:134 align:1}"
 			]
 			icon: "minecolonies:supplycampdeployer"
 			id: "3B3395C72863B7EC"
@@ -257,6 +270,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
+			size: 2.0d
 			subtitle: "这是属于我的土地"
 			tasks: [{
 				icon: "minecolonies:supplycampdeployer"
@@ -282,50 +296,7 @@
 			}]
 			title: "补给营地"
 			x: 5.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["3B3395C72863B7EC"]
-			description: [
-				"当然，你也完全可以不用建造补给营地/补给船。"
-				""
-				"补给营地存在的一个重要意义就是直接给予玩家&6建筑工具&r和&6市政厅&r——然而你也完全可以自己制作，并且制作材料也相当便宜。"
-				""
-				"通过使用建筑工具，你可以同之前放置营地一样，选择建筑风格，而后预览结果，选择是否需要放置。"
-				""
-				"但请注意，构建殖民地建筑时，会涉及到所谓&2等级&r的概念。"
-				""
-				"点击右下角翻页。"
-				""
-				"{@pagebreak}"
-				"在你使用&6建筑工具&r右键任意地面时，可以打开一个这样的页面。"
-				""
-				"在&6橙色&r区域，可以选择你要创建的建造模板，可以通过翻阅来了解你可以在该风格包下面建造的建筑类型。"
-				""
-				"在&c红色&r区域，则是该类型建筑允许的建筑等级。初始情况下，你只能够创建等级1的蓝图。更高等级的则是需要在低等级的基础上通过核心方块升级得到。"
-				""
-				"{image:kubejs:textures/task/struct_tool_1.png width:180 height:118 align:1}"
-			]
-			id: "593F122390F4C36E"
-			rewards: [{
-				id: "676B706083EE3218"
-				item: {
-					Count: 1
-					id: "lightmanscurrency:wallet_gold"
-					tag: {
-						AutoConvert: 1b
-					}
-				}
-				type: "item"
-			}]
-			subtitle: "使用建筑工具"
-			tasks: [{
-				id: "16755F258ECC344B"
-				item: "structurize:sceptergold"
-				type: "item"
-			}]
-			x: 7.5d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -345,6 +316,7 @@
 				title: "随机灵魂宝石"
 				type: "random"
 			}]
+			size: 2.0d
 			subtitle: "我命你为将军，那你即是将军"
 			tasks: [{
 				id: "6A249311BCD0D6BE"
@@ -352,8 +324,8 @@
 				type: "item"
 			}]
 			title: "大师认证"
-			x: 4.5d
-			y: 1.5d
+			x: 5.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["13BCDD950336C1F4"]
@@ -365,6 +337,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
+			size: 2.0d
 			subtitle: "一忘皆空"
 			tasks: [{
 				id: "4C10F6504C606D90"
@@ -372,8 +345,8 @@
 				type: "item"
 			}]
 			title: "遗忘之书"
-			x: 5.0d
-			y: 3.5d
+			x: 7.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["00449E381E9DED1E"]
@@ -397,6 +370,7 @@
 				}
 				type: "item"
 			}]
+			size: 2.0d
 			subtitle: "向你的灵魂中灌注知识"
 			tasks: [{
 				icon: "kubejs:soul_gem_agility"
@@ -457,183 +431,8 @@
 				type: "item"
 			}]
 			title: "灵魂宝石"
-			x: 6.5d
-			y: 1.5d
-		}
-		{
-			id: "2A8F30740DED8523"
-			tasks: [{
-				id: "26131E54252C8BF2"
-				item: "minecolonies:blockhuttownhall"
-				type: "item"
-			}]
-			x: 9.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["2A8F30740DED8523"]
-			id: "0E140DD8AE0C7D73"
-			tasks: [{
-				id: "38E6A109C96FF5E6"
-				item: "minecolonies:blockhutbuilder"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0E140DD8AE0C7D73"]
-			id: "6D2B476F5249B190"
-			tasks: [{
-				id: "7D891A36483B0CA5"
-				item: "minecolonies:blockhuttavern"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -3.5d
-		}
-		{
-			dependencies: ["6D2B476F5249B190"]
-			id: "32018DC20C638773"
-			tasks: [{
-				id: "558C31F63B7EDF49"
-				item: "minecolonies:blockhutcitizen"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["0E140DD8AE0C7D73"]
-			id: "70BA5EED06637D51"
-			tasks: [{
-				id: "7BC4F3A3475E4704"
-				item: "minecolonies:blockhutlumberjack"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["70BA5EED06637D51"]
-			id: "6F8DAFCF66C2D539"
-			tasks: [{
-				id: "283442BA14C51221"
-				item: "minecolonies:blockhutdeliveryman"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -0.5d
-		}
-		{
-			dependencies: ["6F8DAFCF66C2D539"]
-			id: "2B93D294528EE78F"
-			tasks: [{
-				id: "4F3D783ED5DE35C7"
-				item: "minecolonies:blockhutwarehouse"
-				type: "item"
-			}]
-			x: 14.5d
-			y: -0.5d
-		}
-		{
-			dependencies: ["70BA5EED06637D51"]
-			id: "4F82E3AEA7448084"
-			tasks: [{
-				id: "33D7223F767E4847"
-				item: "minecolonies:blockhutsawmill"
-				type: "item"
-			}]
-			x: 14.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["70BA5EED06637D51"]
-			id: "19A82DA478C4E234"
-			tasks: [{
-				id: "058429F59574ECBE"
-				item: "minecolonies:blockhutminer"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["70BA5EED06637D51"]
-			id: "34749243B92836B9"
-			tasks: [{
-				id: "2B673526C75BB940"
-				item: "minecolonies:simplequarry"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["34749243B92836B9"]
-			id: "20FC6394B95B770D"
-			tasks: [{
-				id: "78B881390BC84A05"
-				item: "minecolonies:mediumquarry"
-				type: "item"
-			}]
-			x: 15.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["32018DC20C638773"]
-			id: "2550EECC9D8DB83E"
-			tasks: [{
-				id: "3ADEA5CD062B1221"
-				item: "minecolonies:blockhutguardtower"
-				type: "item"
-			}]
-			x: 11.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["32018DC20C638773"]
-			id: "518371A4BC7C4E86"
-			tasks: [{
-				id: "1CA3FCAC26B07040"
-				item: "minecolonies:blockhutcook"
-				type: "item"
-			}]
-			x: 13.0d
-			y: -6.5d
-		}
-		{
-			dependencies: ["4F82E3AEA7448084"]
-			id: "73EBA454E698D18A"
-			tasks: [{
-				id: "4E8CFB2859EF5832"
-				item: "minecolonies:blockhutuniversity"
-				type: "item"
-			}]
-			x: 17.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["73EBA454E698D18A"]
-			id: "38988CC31A7198BA"
-			tasks: [{
-				id: "1EBB6A534F903D00"
-				item: "minecolonies:blockhutblacksmith"
-				type: "item"
-			}]
-			x: 19.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["73EBA454E698D18A"]
-			id: "08B83005F6BD25A8"
-			tasks: [{
-				id: "07D8F7D4F71DFEB3"
-				item: "minecolonies:blockhuthospital"
-				type: "item"
-			}]
-			x: 19.0d
-			y: -3.5d
+			x: 9.0d
+			y: 2.0d
 		}
 	]
 	title: "引入"

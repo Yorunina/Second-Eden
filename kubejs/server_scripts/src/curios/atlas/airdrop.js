@@ -3,7 +3,7 @@ const { GetItemListFromPoolItems, GetThemePackFromPool, PopItemFromAirdrop } = r
 
 EntityEvents.death(event => {
     let { entity } = event
-    if (!entity.type.contains('airdrop')) return
+    if (entity.type.indexOf('airdrop') < 0) return
     let type = entity.persistentData.getString('type')
     if (!type) return
     if (!AirdropDeathStrategy[type]) return
@@ -44,6 +44,7 @@ const AirdropDeathStrategy = {
     },
     'ultra': function (event) {
         let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
         let theme = entity.persistentData.getString('theme')
         let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['ultra'], theme)
         let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
@@ -51,8 +52,41 @@ const AirdropDeathStrategy = {
     },
     'huge': function (event) {
         let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
         let theme = entity.persistentData.getString('theme')
         let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['huge'], theme)
+        let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
+        PopItemFromAirdrop(level, entity, itemList)
+    },
+    'wood': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let theme = entity.persistentData.getString('theme')
+        let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['wood'], theme)
+        let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
+        PopItemFromAirdrop(level, entity, itemList)
+    },
+    'stone': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let theme = entity.persistentData.getString('theme')
+        let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['stone'], theme)
+        let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
+        PopItemFromAirdrop(level, entity, itemList)
+    },
+    'ore': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let theme = entity.persistentData.getString('theme')
+        let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['ore'], theme)
+        let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
+        PopItemFromAirdrop(level, entity, itemList)
+    },
+    'luxury': function (event) {
+        let { level, entity } = event
+        let fortune = entity.persistentData.getInt('fortune')
+        let theme = entity.persistentData.getString('theme')
+        let itemPoolTheme = GetThemePackFromPool(global.AirdropPool['luxury'], theme)
         let itemList = GetItemListFromPoolItems(itemPoolTheme, fortune)
         PopItemFromAirdrop(level, entity, itemList)
     },

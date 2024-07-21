@@ -1,5 +1,4 @@
 {
-    "_comment": "常规殖民地相关奖励",
 	"content": {
         "colony_rews_master_certificate": {
             "type": "item",
@@ -8,6 +7,8 @@
                 "min": 1,
                 "max": 3
             },
+            "weightMult": 0.05,
+            "rarity": "RARE",
             "unitWorth": 3000
         },
         "colony_rews_soul_gem_adaptability": {
@@ -15,99 +16,120 @@
             "content": "kubejs:soul_gem_adaptability",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_agility": {
             "type": "item",
             "content": "kubejs:soul_gem_agility",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_athletics": {
             "type": "item",
             "content": "kubejs:soul_gem_athletics",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_creativity": {
             "type": "item",
             "content": "kubejs:soul_gem_creativity",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_dexterity": {
             "type": "item",
             "content": "kubejs:soul_gem_dexterity",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_focus": {
             "type": "item",
             "content": "kubejs:soul_gem_focus",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_intelligence": {
             "type": "item",
             "content": "kubejs:soul_gem_intelligence",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_knowledge": {
             "type": "item",
             "content": "kubejs:soul_gem_knowledge",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_mana": {
             "type": "item",
             "content": "kubejs:soul_gem_mana",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_stamina": {
             "type": "item",
             "content": "kubejs:soul_gem_stamina",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
         },
         "colony_rews_soul_gem_strength": {
             "type": "item",
             "content": "kubejs:soul_gem_strength",
             "amount": {
                 "min": 1,
-                "max": 10
+                "max": 3
             },
-            "unitWorth": 300
+            "weightMult": 0.5,
+            "unitWorth": 150
+        },
+        "colony_rews_book_of_enlight": {
+            "type": "item",
+            "content": "kubejs:book_of_enlight",
+            "amount": {
+                "min": 1,
+                "max": 64
+            },
+            "weightMult": 0.5,
+            "unitWorth": 50
         }
 	}
 }

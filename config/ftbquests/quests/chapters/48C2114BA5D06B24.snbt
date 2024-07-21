@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "48C2114BA5D06B24"
+	group: "67C8A7FC113DA84A"
+	icon: "xercamusic:bass_guitar"
+	id: "48C2114BA5D06B24"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "乐器与绘画"
+}
