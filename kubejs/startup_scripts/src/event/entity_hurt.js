@@ -6,7 +6,7 @@ const { $LivingHurtEvent } = require("packages/net/minecraftforge/event/entity/l
  * 用于替换原有EntityEvents.hurt事件
  */
 ForgeEvents.onEvent($LivingHurtEvent, event => {
-    global.LivingHurt(event);
+    global.LivingHurtEvent(event);
 })
 
 
@@ -15,5 +15,5 @@ ForgeEvents.onEvent($LivingHurtEvent, event => {
  * 用于替换原有EntityEvents.hurt事件
  */
 ForgeEvents.onEvent($LivingDamageEvent, event => {
-    global.LivingDamage(event);
+    global.LivingDamageEvent(event);
 })

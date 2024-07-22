@@ -349,90 +349,13 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["00449E381E9DED1E"]
-			description: [
-				"作为&c大师凭证&r的下位替代，你可以使用灵魂宝石定向的提升镇民的属性。"
-				""
-				"灵魂宝石默认情况下仅能够一次提升镇民的对应等级1级，但是这个数值会受玩家的&2教育能力&r以及&6灵魂宝石&r的阶级影响。"
-				""
-				"玩家每有1&2教育能力&r，则可以额外提升镇民1级的对应等级；&6灵魂宝石&r每有1阶级，则会额外提升镇民对应等级1级。"
-			]
-			icon: "kubejs:soul_gem_agility"
-			id: "23F6E3B65FF3CAFA"
-			rewards: [{
-				id: "796E8FA3AEB40083"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"curios:item": { }
-					}
-					id: "kubejs:common_citrine_ring"
-				}
-				type: "item"
-			}]
-			size: 2.0d
-			subtitle: "向你的灵魂中灌注知识"
+			id: "13BD292F0E5DC4EB"
 			tasks: [{
-				icon: "kubejs:soul_gem_agility"
-				id: "543D15D354F5CF0C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_mana"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_intelligence"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_dexterity"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_focus"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_athletics"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_creativity"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_agility"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_strength"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_knowledge"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_stamina"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_adaptability"
-							}
-						]
-					}
-				}
-				title: "任意灵魂宝石"
-				type: "item"
+				id: "7517F3F042BD742B"
+				type: "custom"
 			}]
-			title: "灵魂宝石"
-			x: 9.0d
-			y: 2.0d
+			x: 17.0d
+			y: -2.5d
 		}
 	]
 	title: "引入"

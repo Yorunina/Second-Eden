@@ -13,13 +13,12 @@ LootJS.modifiers(event => {
         .apply(ctx => {
             let { entity } = ctx
             if (entity.persistentData.contains('custom_loot')) {
-                let customLootType = entity.persistentData.getString('custom_loot')
+                let customLootType = String(entity.persistentData.getString('custom_loot'))
                 if (CitizenCustomLootStrategies[customLootType]) {
                     CitizenCustomLootStrategies[customLootType](ctx)
                 }
-            } else {
-                citizenRaidCommonLoot(ctx)
             }
+            citizenRaidCommonLoot(ctx)
         })
 
 
@@ -51,8 +50,35 @@ LootJS.modifiers(event => {
  * @type {Object<string,function($LootContextJS):void>}
  */
 const CitizenCustomLootStrategies = {
-    'undead_raid': function (event) {
-        event.addLoot('lightmanscurrency:coin_iron')
+    'custom_raid': function (event) {
+        let entityKilled = event.getEntity()
+        let entityScore = 0
+        if (entityKilled.persistentData.contains('entity_score')) {
+            entityScore = entityKilled.persistentData.getDouble('entity_score')
+        }
+        switch (true) {
+            case entityScore >= 0:
+                event.addLoot(LootEntry.of('minecraft:raw_iron').withChance(0.2).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:raw_copper').withChance(0.1).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:coal').withChance(0.3).applyLootingBonus([1, 2, 3]))
+            case entityScore >= 10:
+                event.addLoot(LootEntry.of('minecraft:raw_gold').withChance(0.2).applyLootingBonus([1, 2, 3]))
+            case entityScore >= 30:
+                event.addLoot(LootEntry.of('minecraft:lapis_lazuli').withChance(0.1).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:redstone_dust').withChance(0.15).applyLootingBonus([1, 3, 6]))
+            case entityScore >= 50:
+                event.addLoot(LootEntry.of('minecraft:amethyst_shard').withChance(0.1).applyLootingBonus([1, 3, 6]))
+                event.addLoot(LootEntry.of('minecraft:diamond').withChance(0.05).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:prismarine_shard').withChance(0.1).applyLootingBonus([1, 3, 6]))
+                event.addLoot(LootEntry.of('minecraft:blaze_rod').withChance(0.1).applyLootingBonus([1, 2, 3]))
+            case entityScore >= 100:
+                event.addLoot(LootEntry.of('minecraft:quartz').withChance(0.3).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:diamond').withChance(0.1).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:netherite_scrap').withChance(0.1).applyLootingBonus([1, 2, 3]))
+            case entityScore >= 150:
+                event.addLoot(LootEntry.of('minecraft:prismarine_shard').withChance(0.5).applyLootingBonus([1, 2, 3]))
+                event.addLoot(LootEntry.of('minecraft:netherite_scrap').withChance(0.2).applyLootingBonus([1, 2, 3]))
+        }
     },
 }
 
@@ -74,12 +100,13 @@ const OthersCustomLootStrategies = {
 function citizenRaidCommonLoot(event) {
     let { entity } = event
     let entityTypeStringt = String(entity.type)
-    if (EntityOrbMap.has(entityTypeStringt) && Math.random() < 1) {
+    if (EntityOrbMap.has(entityTypeStringt) && Math.random() < 0.1) {
         event.addLoot(EntityOrbMap.get(entityTypeStringt))
     }
 }
 
-const EntityOrbMap = new Map().set('minecraft:zombie', 'kubejs:zombie_orb')
+const EntityOrbMap = new Map()
+    .set('minecraft:zombie', 'kubejs:zombie_orb')
     .set('minecraft:skeleton', 'kubejs:skeleton_orb')
     .set('minecraft:cave_spider', 'kubejs:cave_spider_orb')
     .set('minecraft:creeper', 'kubejs:creeper_orb')

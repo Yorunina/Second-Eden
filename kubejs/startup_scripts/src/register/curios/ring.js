@@ -32,7 +32,7 @@ StartupEvents.registry('item', event => {
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:encode_ability', 'EveningPrimroseEncodeAbility', -10, 'addition')
             .modifyAttribute('puffish_attributes:player.fortune', 'EveningPrimroseFortune', 1, 'addition')
-            .modifyAttribute('kubejs:treasure_fortune', 'EveningPrimroseTreasureFortune', 4, 'addition')
+            .modifyAttribute('kubejs:treasure_fortune', 'EveningPrimroseTreasureFortune', 3, 'addition')
             .modifyAttribute('kubejs:treasure_distance', 'EveningPrimroseTreasureDistance', 500, 'addition')
         )
         .texture('kubejs:item/curios/evening_primrose_ring')
@@ -44,7 +44,7 @@ StartupEvents.registry('item', event => {
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 1, 'addition')
+            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 0.5, 'addition')
         )
         .texture('kubejs:item/curios/ruby_ring')
 
@@ -54,7 +54,7 @@ StartupEvents.registry('item', event => {
         .tag('curios:ring')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
-            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 1.5, 'addition')
+            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 1, 'addition')
         )
         .texture('kubejs:item/curios/ruby_ring')
 
@@ -65,7 +65,7 @@ StartupEvents.registry('item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('attributeslib:crit_chance', 'RubyRingCritChance', 0.05, 'addition')
-            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 2, 'addition')
+            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 1.5, 'addition')
         )
         .texture('kubejs:item/curios/ruby_ring')
 
@@ -76,7 +76,7 @@ StartupEvents.registry('item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('attributeslib:crit_chance', 'RubyRingCritChance', 0.08, 'addition')
-            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 3, 'addition')
+            .modifyAttribute('kubejs:treasure_fortune', 'RubyRingTreasureFortune', 2, 'addition')
         )
         .texture('kubejs:item/curios/ruby_ring')
 

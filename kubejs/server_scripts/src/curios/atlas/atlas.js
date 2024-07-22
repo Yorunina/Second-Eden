@@ -39,7 +39,6 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()
     let mapItem = getMapItem(level, airdropPos)
-    player.tell(0)
     // 监听戒指事件
     level.getPlayers().forEach(entityItem => {
         if (!entityItem instanceof $ServerPlayer) return

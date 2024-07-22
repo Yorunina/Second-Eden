@@ -1,6 +1,7 @@
 // priority: 1000
 export const $ColonyResearchBranch_ = 'minecolonies:technology' || 'minecolonies:combat' || 'minecolonies:civilian'
-export const $ColonyBuilding_ = 'townhall' || 'library' || 'cook' || 'graveyard' || 'school' || 'residence' || 'deliveryman' || 'hospital' || 'guardtower' || 'archery' || 'combatacademy' || 'smeltery' || 'barracks' || 'miner' || 'sawmill' || 'plantation' || 'crusher' || 'composter' || 'netherworker' || 'beekeeper' || 'fletcher' || 'enchanter' || 'fisherman' || 'blacksmith' || 'stonemason' || 'lumberjack' || 'baker' || 'mechanic' || 'alchemist' || 'sifter'
+export const $ColonyBuilding_ = 'archery' || 'baker' || 'barracks' || 'barrackstower' || 'blacksmith' || 'builder' || 'chickenherder' || 'combatacademy' || 'composter' || 'cook' || 'cowboy' || 'crusher' || 'deliveryman' || 'farmer' || 'fisherman' || 'guardtower' || 'residence' || 'library' || 'lumberjack' || 'miner' || 'sawmill' || 'shepherd' || 'sifter' || 'smeltery' || 'stonemason' || 'stonesmeltery' || 'swineherder' || 'townhall' || 'warehouse' || 'postbox' || 'florist' || 'enchanter' || 'university' || 'hospital' || 'stash' || 'school' || 'glassblower' || 'dyer' || 'fletcher' || 'mechanic' || 'plantation' || 'tavern' || 'concretemixer' || 'rabbithutch' || 'beekeeper' || 'mysticalsite' || 'graveyard' || 'netherworker' || 'simplequarry' || 'mediumquarry' || 'largequarry' || 'alchemist'
+
 
 export const $ColonyResearchRequirement_ = ItemRequirementModel || BuildingRequirementModel
 /**

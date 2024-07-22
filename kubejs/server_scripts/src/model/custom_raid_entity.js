@@ -128,8 +128,7 @@ CustomRaidEntityType.prototype = {
                     break
             }
         })
-        entityScore = entityScore * entityScoreModifier
-        let totalScore = entityScore * this.count
+        let totalScore = entityScore * entityScoreModifier
         return totalScore
     }
 }
