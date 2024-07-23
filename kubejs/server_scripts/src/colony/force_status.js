@@ -1,5 +1,7 @@
 // priority: 100
+const { $AbstractBuildingGuards } = require("packages/com/minecolonies/core/colony/buildings/$AbstractBuildingGuards")
 const { GetCitizenFromEntity, GetColonyByEntity } = require("../utils/colony")
+const { $GuardTaskSetting } = require("packages/com/minecolonies/core/colony/buildings/modules/settings/$GuardTaskSetting")
 
 ItemEvents.entityInteracted('kubejs:force_work_alarm', event => {
     let { target, player, item } = event
@@ -119,6 +121,23 @@ ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
         player.setStatusMessage(Text.translatable('msg.emergency_evacuation_bell.start.1').gold())
         colony.setUnderEmergencyEvacuation(true)
     }
+
+    player.addItemCooldown(item, 20 * 10)
+})
+
+
+// todo 新增一个物品
+ItemEvents.entityInteracted('stick', event => {
+    let { target, player, item } = event
+    if (player.cooldowns.isOnCooldown(item)) return
+    if (target.type != 'minecolonies:citizen') return
+
+    let colony = GetColonyByEntity(target)
+    let citizen = GetCitizenFromEntity(target)
+    let building = citizen.getHomeBuilding()
+    building.getSetting($AbstractBuildingGuards.GUARD_TASK).set($GuardTaskSetting.PATROL)
+    citizen.getEntity().ifPresent(e => e.remove('discarded'))
+    colony.getPackageManager().removeCloseSubscriber(player)
 
     player.addItemCooldown(item, 20 * 10)
 })

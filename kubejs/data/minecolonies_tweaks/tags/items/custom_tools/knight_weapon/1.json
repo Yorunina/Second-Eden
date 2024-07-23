@@ -1,0 +1,15 @@
+{
+    "values": [
+        "miapi:modular_sword",
+        "miapi:modular_longsword",
+        "miapi:modular_katana",
+        "miapi:modular_rapier",
+        "miapi:modular_greatsword",
+        "miapi:modular_dagger",
+        "miapi:modular_sickle",
+        "miapi:modular_throwing_knife",
+        "miapi:modular_katars",
+        "miapi:modular_tonfa",
+        "miapi:modular_knuckles"
+    ]
+}

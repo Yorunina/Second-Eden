@@ -5,5 +5,5 @@
 	escToReturn = true
 	#Add close button what can return previous window.
 	#Applies at Hut/Citizen inventory and Recipe Teach window.
-	addCloseButton = false
+	addCloseButton = true
 

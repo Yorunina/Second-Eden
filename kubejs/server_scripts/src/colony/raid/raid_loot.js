@@ -13,7 +13,7 @@ LootJS.modifiers(event => {
         .apply(ctx => {
             let { entity } = ctx
             if (entity.persistentData.contains('custom_loot')) {
-                let customLootType = String(entity.persistentData.getString('custom_loot'))
+                let customLootType = entity.persistentData.getString('custom_loot')
                 if (CitizenCustomLootStrategy[customLootType]) {
                     CitizenCustomLootStrategy[customLootType](ctx)
                 }
@@ -57,27 +57,38 @@ const CitizenCustomLootStrategy = {
             entityScore = entityKilled.persistentData.getDouble('entity_score')
         }
         switch (true) {
-            case entityScore >= 0:
-                event.addLoot(LootEntry.of('minecraft:raw_iron').withChance(0.2).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:raw_copper').withChance(0.1).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:coal').withChance(0.3).applyLootingBonus([1, 2, 3]))
-            case entityScore >= 10:
-                event.addLoot(LootEntry.of('minecraft:raw_gold').withChance(0.2).applyLootingBonus([1, 2, 3]))
-            case entityScore >= 30:
-                event.addLoot(LootEntry.of('minecraft:lapis_lazuli').withChance(0.1).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:redstone_dust').withChance(0.15).applyLootingBonus([1, 3, 6]))
-            case entityScore >= 50:
-                event.addLoot(LootEntry.of('minecraft:amethyst_shard').withChance(0.1).applyLootingBonus([1, 3, 6]))
-                event.addLoot(LootEntry.of('minecraft:diamond').withChance(0.05).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:prismarine_shard').withChance(0.1).applyLootingBonus([1, 3, 6]))
-                event.addLoot(LootEntry.of('minecraft:blaze_rod').withChance(0.1).applyLootingBonus([1, 2, 3]))
-            case entityScore >= 100:
-                event.addLoot(LootEntry.of('minecraft:quartz').withChance(0.3).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:diamond').withChance(0.1).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:netherite_scrap').withChance(0.1).applyLootingBonus([1, 2, 3]))
-            case entityScore >= 150:
-                event.addLoot(LootEntry.of('minecraft:prismarine_shard').withChance(0.5).applyLootingBonus([1, 2, 3]))
-                event.addLoot(LootEntry.of('minecraft:netherite_scrap').withChance(0.2).applyLootingBonus([1, 2, 3]))
+            case entityScore <= 20:
+                event.addLoot(LootEntry.of('minecraft:raw_gold').when(c => c.randomChance(0.3)))
+                event.addLoot(LootEntry.of('minecraft:raw_iron').when(c => c.randomChance(0.5)))
+                event.addLoot(LootEntry.of('minecraft:raw_copper').when(c => c.randomChance(0.2)))
+                event.addLoot(LootEntry.of('minecraft:coal').when(c => c.randomChance(0.5)))
+                break
+            case entityScore <= 50:
+                event.addLoot(LootEntry.of('minecraft:raw_gold').when(c => c.randomChance(0.4)))
+                event.addLoot(LootEntry.of('minecraft:raw_iron').when(c => c.randomChance(0.8)))
+                event.addLoot(LootEntry.of('minecraft:raw_copper').when(c => c.randomChance(0.3)))
+                event.addLoot(LootEntry.of('minecraft:coal').when(c => c.randomChance(0.5)))
+                event.addLoot(LootEntry.of('minecraft:lapis_lazuli').when(c => c.randomChance(0.6)))
+                event.addLoot(LootEntry.of('minecraft:redstone_dust').when(c => c.randomChance(0.6)))
+                break
+            case entityScore <= 100:
+                event.addLoot(LootEntry.of('minecraft:raw_gold').when(c => c.randomChance(0.5)))
+                event.addLoot(LootEntry.of('minecraft:raw_iron').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:lapis_lazuli').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:redstone_dust').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:diamond').when(c => c.randomChance(0.2)))
+                break
+            case entityScore <= 150:
+                event.addLoot(LootEntry.of('minecraft:raw_gold').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:raw_iron').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:lapis_lazuli').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:redstone_dust').when(c => c.randomChance(1)))
+                event.addLoot(LootEntry.of('minecraft:diamond').when(c => c.randomChance(0.25)))
+                event.addLoot(LootEntry.of('minecraft:netherite_scrap').when(c => c.randomChance(0.1)))
+            case entityScore > 150:
+                event.addLoot(LootEntry.of('minecraft:diamond').when(c => c.randomChance(0.5)))
+                event.addLoot(LootEntry.of('minecraft:netherite_scrap').when(c => c.randomChance(0.2)))
+                break
         }
     },
 }
@@ -87,9 +98,7 @@ const CitizenCustomLootStrategy = {
  * @type {Object<string,function($LootContextJS):void>}
  */
 const OthersCustomLootStrategy = {
-    'undead_raid': function (event) {
-        event.addLoot('lightmanscurrency:coin_iron')
-    },
+
 }
 
 
