@@ -71,7 +71,7 @@
 	#是否允许玩家使用 /mc colony info 命令？ [默认: true]
 	canplayeruseshowcolonyinfocommand = true
 	#是否允许玩家使用 /mc citizens kill 命令？ [默认: false]
-	canplayerusekillcitizenscommand = false
+	canplayerusekillcitizenscommand = true
 	#是否允许玩家使用 /mc colony addOfficer 命令？ [默认: true]
 	canplayeruseaddofficercommand = true
 	#是否允许玩家使用 /mc colony delete 命令？ [默认: false]

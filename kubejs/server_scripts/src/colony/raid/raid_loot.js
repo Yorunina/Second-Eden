@@ -14,8 +14,8 @@ LootJS.modifiers(event => {
             let { entity } = ctx
             if (entity.persistentData.contains('custom_loot')) {
                 let customLootType = String(entity.persistentData.getString('custom_loot'))
-                if (CitizenCustomLootStrategies[customLootType]) {
-                    CitizenCustomLootStrategies[customLootType](ctx)
+                if (CitizenCustomLootStrategy[customLootType]) {
+                    CitizenCustomLootStrategy[customLootType](ctx)
                 }
             }
             citizenRaidCommonLoot(ctx)
@@ -38,8 +38,8 @@ LootJS.modifiers(event => {
         .apply(ctx => {
             let { entity } = ctx
             let customLootType = entity.persistentData.getString('custom_loot')
-            if (OthersCustomLootStrategies[customLootType]) {
-                OthersCustomLootStrategies[customLootType](ctx)
+            if (OthersCustomLootStrategy[customLootType]) {
+                OthersCustomLootStrategy[customLootType](ctx)
             }
         })
 })
@@ -49,7 +49,7 @@ LootJS.modifiers(event => {
  * @constant
  * @type {Object<string,function($LootContextJS):void>}
  */
-const CitizenCustomLootStrategies = {
+const CitizenCustomLootStrategy = {
     'custom_raid': function (event) {
         let entityKilled = event.getEntity()
         let entityScore = 0
@@ -86,7 +86,7 @@ const CitizenCustomLootStrategies = {
  * @constant
  * @type {Object<string,function($LootContextJS):void>}
  */
-const OthersCustomLootStrategies = {
+const OthersCustomLootStrategy = {
     'undead_raid': function (event) {
         event.addLoot('lightmanscurrency:coin_iron')
     },
