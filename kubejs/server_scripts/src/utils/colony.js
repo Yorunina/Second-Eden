@@ -52,7 +52,7 @@ export function CheckColonyMember(colony, player) {
  * @returns {$IColony}
  */
 export function GetColonyByPlayer(level, player) {
-    return $IColonyManager.getInstance().getIColonyByOwner(level, player)
+    return $IColonyManager.getInstance()['getIColonyByOwner(net.minecraft.world.level.Level,net.minecraft.world.entity.player.Player)'](level, player)
 }
 
 

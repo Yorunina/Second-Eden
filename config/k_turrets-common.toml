@@ -1,0 +1,105 @@
+
+[Common]
+	#Gauss bullet speed is 3x of this
+	#Range: 0.1 ~ 50.0
+	"Turret and drone projectile speed" = 50.0
+	#List of mob ids to be excluded from default targets
+	"Target list exceptions" = ["minecraft:zombified_piglin"]
+	"Set ownership automatically" = true
+
+["Turret stats"]
+
+	["Turret stats"."Arrow turret"]
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 8.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		"Base damage" = 6
+		"Use custom ammo" = false
+		Ammo = "minecraft:arrow"
+
+	["Turret stats"."Bullet turret"]
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 8.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		"Iron bullet damage" = 8
+		#Range: 1 ~ 100
+		"Gold bullet damage" = 7
+		#If true, uses iron bullet damage
+		"Use custom ammo" = false
+		Ammo = "minecraft:iron_nugget"
+
+	["Turret stats"."Fire charge turret"]
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 8.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		Damage = 6
+		Ammo = "k_turrets:explosive_powder"
+
+	["Turret stats"."Brick turret"]
+		#If true, will use nether brick damage
+		"Use custom ammo" = false
+		Ammo = "minecraft:brick"
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 8.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		"Brick damage" = 9
+		#Range: 1 ~ 100
+		"Nether brick damage" = 10
+
+	["Turret stats"."Gauss turret"]
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 8.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		Damage = 12
+		Ammo = "k_turrets:gauss_bullet"
+
+	["Turret stats"."Cobble turret"]
+		#Range: 10.0 ~ 1.7976931348623157E308
+		Health = 60.0
+		#Range: 0.0 ~ 100.0
+		Range = 32.0
+		#Range: 0.0 ~ 100.0
+		Armor = 3.0
+		#In ticks
+		#Range: 1 ~ 60
+		"Fire rate" = 20
+		#Range: 1 ~ 100
+		Damage = 3
+		"Use custom ammo" = false
+		Ammo = "minecraft:cobblestone"
+

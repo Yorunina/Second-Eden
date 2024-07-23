@@ -9,7 +9,7 @@
 	#是否允许玩家放弃他的殖民地并创造新的殖民地？注意：这可能会出现未知的问题！ [默认: false]
 	allowinfinitecolonies = true
 	#是否允许在其他维度创建殖民地？ [默认: true]
-	allowotherdimcolonies = true
+	allowotherdimcolonies = false
 	#单殖民地最大公民数量 [默认：250，最小：100，最大：500]
 	#Range: 100 ~ 500
 	maxcitizenpercolony = 250
