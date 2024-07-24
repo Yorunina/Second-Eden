@@ -1,0 +1,16 @@
+{
+  "name": "导向扳手",
+  "icon": "littlelogistics:conductors_wrench",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:conductors_wrench",
+      "text": "拿在手中，导向扳手会显示当前注册的机车和拖船的位置。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "右键点击任何轨道将使其变换各种轨道形状。"
+    }
+  ]
+}

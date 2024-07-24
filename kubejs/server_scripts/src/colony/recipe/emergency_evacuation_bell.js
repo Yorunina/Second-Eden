@@ -31,6 +31,4 @@ ServerEvents.highPriorityData(event => {
             Item.of('kubejs:emotion_block_bell'),
             [Item.of('minecraft:iron_ingot', 4), Item.of('minecraft:gray_dye', 1), Item.of('minecraft:bell', 1)])
             .setResearchId('kubejs:effects/ebbunlock', true))
-
-
 })

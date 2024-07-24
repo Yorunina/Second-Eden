@@ -1,11 +1,6 @@
 const { RARE, EPIC, LEGENDARY } = require("../../utils/itemborder")
 
 StartupEvents.registry('item', event => {
-    event.create('emergency_evacuation_bell', 'basic')
-        .maxStackSize(1)
-        .tag(EPIC)
-        .tag('minecolonies:hide_citizen_data')
-        .texture('kubejs:item/emergency_evacuation_bell')
 
     event.create('raid_book', 'basic')
         .maxStackSize(1)

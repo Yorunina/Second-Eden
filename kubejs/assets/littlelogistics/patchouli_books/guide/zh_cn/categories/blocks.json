@@ -1,0 +1,5 @@
+{
+  "name": "方块",
+  "description": "有两种类型的方块：码头和导轨。码头可以用来装卸船只；导轨应该用在狭窄的水道周围，以防止船只卡住。",
+  "icon": "littlelogistics:tug_dock"
+}

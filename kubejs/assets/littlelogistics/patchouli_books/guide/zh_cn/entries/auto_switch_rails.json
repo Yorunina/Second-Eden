@@ -1,0 +1,23 @@
+{
+  "name": "自动换向铁轨",
+  "icon": "littlelogistics:automatic_switch_rail",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "这种类型的切换轨道会在列车接近时自动改变方向。方向的改变取决于当前循环中尚未访问的最近的目的地在 $(l:loco_route)列车路线$() 中的位置。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "自动换向铁轨",
+      "recipe": "littlelogistics:automatic_switch_rail",
+      "text": "在直行或左/右转弯之间切换。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "T型自动换向铁轨",
+      "recipe": "littlelogistics:automatic_tee_junction_rail",
+      "text": "在左/右转弯之间切换。"
+    }
+  ]
+}

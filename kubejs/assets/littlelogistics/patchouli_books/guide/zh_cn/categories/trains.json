@@ -1,0 +1,5 @@
+{
+  "name": "列车",
+  "description": "列车车厢类似于矿车，但可以用 $(l:spring)载具锁链$() 连接起来。连接一个列车车头来拉动列车前进。",
+  "icon": "littlelogistics:steam_locomotive"
+}

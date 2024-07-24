@@ -1,0 +1,38 @@
+{
+    "key": "prismarine_alloy",
+    "translation": "kubejs.miapi.material.prismarine_alloy",
+    "icon": {
+        "type": "item",
+        "item": "composite_material:prismarine_alloy_ingot"
+    },
+    "groups": [
+        "metal"
+    ],
+    "hardness": 8,
+    "density": 1.5,
+    "flexibility": 5,
+    "durability": 432,
+    "mining_speed": 6,
+    "mining_level": 2,
+    "color_palette": {
+        "type": "grayscale_map",
+        "colors": {
+            "0": "082a27",
+            "36": "062524",
+            "72": "21776c",
+            "108": "3cb3a1",
+            "144": "59d3be",
+            "180": "bdfaf4",
+            "216": "e0fcf9",
+            "252": "f0fafa",
+            "255": "f0fafa"
+        },
+        "filler": "interpolate"
+    },
+    "items": [
+        {
+            "item": "composite_material:prismarine_alloy_ingot",
+            "value": 1
+        }
+    ]
+}

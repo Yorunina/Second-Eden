@@ -1,0 +1,12 @@
+{
+  "name": "载具充能器",
+  "icon": "littlelogistics:vessel_charger",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:vessel_charger",
+      "text": "用于 $(l:energy_tug)能量拖船$() 和 $(l:energy_locomotive)能量车头$() 的充电器，连接到任何FE能量电缆即可为充电器供电。放置在码头上方以便在停靠时为船只充电，或放置在列车停靠轨道旁边为火车充电。"
+    }
+  ]
+}

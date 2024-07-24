@@ -1,0 +1,19 @@
+{
+  "name": "车厢",
+  "icon": "littlelogistics:seater_car",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:seater_car",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "一个简单的列车车厢，可以供一个玩家或生物乘坐。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:seater_car",
+      "text": "就像普通的矿车一样，这个车厢可以通过激活轨道来卸载。"
+    }
+  ]
+}

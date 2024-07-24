@@ -265,9 +265,12 @@
   "repurposed_structures:witch_hut_oak",
   "repurposed_structures:witch_hut_taiga",
   "supplementaries:way_sign",
+  "takesapillage:bastille",
+  "takesapillage:pillager_camp",
   "taxtg:giant_cherryblossom_tree",
   "taxtg:giant_jungle_tree",
   "taxtg:giant_oak_tree",
   "taxtg:giant_spruce_tree",
+  "trials:trialstowers",
   "vsrevamped:village_cherry"
 ]

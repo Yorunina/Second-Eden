@@ -1,0 +1,12 @@
+{
+  "name": "拖船导轨",
+  "icon": "littlelogistics:guide_rail_tug",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:guide_rail_tug",
+      "text": "放置在水下一格，工作原理类似于普通的动力轨道。可以用来强制拖船走特定路线。对驳船无影响。按住Shift右键点击进行旋转。"
+    }
+  ]
+}

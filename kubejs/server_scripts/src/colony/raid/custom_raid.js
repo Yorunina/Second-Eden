@@ -38,21 +38,21 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
         let entityModelNbt = entityList.getCompound(entityIdentifier)
         let entityType = entityModelNbt.getString('entityType')
         let count = entityModelNbt.getInt('count')
-        
+
         let modifiers = entityModelNbt.getCompound('modifiers')
         let entityModel = new CustomRaidEntityType(entityType, count).readFromNbtModifiers(modifiers)
         entityModel.nbt.putString('id', entityType)
         if (entityModelNbt.contains('customNbt')) {
             entityModel.nbt.merge(NBT.toTagCompound(entityModelNbt.getString('customNbt')))
         }
-        
+
         for (let i = 0; i < count; i++) {
             /**@type {$PathfinderMob} */
             let entity = level.createEntity(entityType)
             if (!entityModel.nbt.isEmpty()) {
                 entity.mergeNbt(entityModel.nbt)
             }
-            
+
             entityModel.modifiers.forEach((value, key, map) => {
                 switch (value.operation) {
                     case 'addition_persistent':
@@ -68,7 +68,7 @@ ItemEvents.entityInteracted('kubejs:custom_raid_book', event => {
 
             entity.heal(entity.getMaxHealth())
 
-            entity.persistentData.put('patrolTarget', { 'patrolling': NBT.intTag(1), 'x': NBT.floatTag(target.block.pos.x), 'y': NBT.floatTag(target.block.pos.y), 'z': NBT.floatTag(target.block.pos.z) })
+            entity.persistentData.put('patrolTarget', { 'patrolling': NBT.intTag(1), 'x': NBT.floatTag(target.block.pos.x + (5 - Math.random() * 10)), 'y': NBT.floatTag(target.block.pos.y), 'z': NBT.floatTag(target.block.pos.z + (5 - Math.random() * 10)) })
             entity.persistentData.putString('custom_loot', 'custom_raid')
             entity.persistentData.putDouble('entity_score', entityModel.calculateRaidEntityScore())
 

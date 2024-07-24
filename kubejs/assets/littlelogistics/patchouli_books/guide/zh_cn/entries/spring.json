@@ -1,0 +1,12 @@
+{
+  "name": "载具锁链",
+  "icon": "littlelogistics:spring",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:spring",
+      "text": "用于将船只或列车车厢连接在一起。分别右键点击两个厢体，以创建一个船只/列车整体。一个整体只能有一个拖船/车头，并且不能有循环。如果厢体相隔太远将会断开连接。"
+    }
+  ]
+}

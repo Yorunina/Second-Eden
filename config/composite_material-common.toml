@@ -1,0 +1,91 @@
+
+#AllaySteel
+[allaySteel]
+	#Define the max area attack range of Allay Steel Tools.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	attackRange = 7.0
+	#Define the max area break range of Allay Steel Tools.
+	#Range: > 0
+	breakRange = 7
+	#Define the max area break amount of Allay Steel Tools.
+	#Range: > 0
+	breakLimit = 64
+	#Define the heal amount in each second when player equipped full set.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	healAmount = 2.0
+
+#DungeonSteel
+[dungeonSteel]
+	#Define the damage multiple rate of Disc Axe.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	damageRate = 500.0
+	#Define the base chance to get special drops for Disc Sword.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	enchantRate = 10.0
+	#Define the extra chance to get special drops for Disc Sword by enchantment each level.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	extraDamage = 5.0
+
+#Disc
+[disc]
+	#Define the base chance to get special drops for Dungeon Axe.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	baseRate = 10.0
+	#Define the extra chance to get special drops for Dungeon Sword by enchantment each level.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	enchantRate = 5.0
+	#Define the extra damage of Dungeon Hammer per block.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	extraDamage = 3.0
+
+#Echoium
+[echoium]
+	#Define the extra damage dealt by Echoium Tools based on the percentage of target's armor value.
+	#Range: > 0
+	percentage = 50
+	#Define the max extra damage dealt by Echoium Tools, 0 means no limitation.
+	#Range: > 0
+	maxExtraDamage = 0
+	#Define if player can stop Warden spawning when player equipped full set.
+	spawn = true
+
+#Etherite
+[etherite]
+	#Define the extra damage dealt by Etherite Tools based on the percentage of target's lost Health.
+	#Range: > 0
+	percentage = 25
+	#Define the max extra damage dealt by Etherite Tools, 0 means no limitation.
+	#Range: > 0
+	maxExtraDamage = 0
+	#Define the heal amount in each second when player equipped full set.
+	#Range: 0.0 ~ 1.7976931348623157E308
+	healAmount = 1.0
+	#Define if player can get the creative flight ability when player equipped full set.
+	flight = false
+
+#MagicItems
+[magicItems]
+	#Define the amount of damage can be repaired by Obsidian Steel Nugget.
+	#Range: > 0
+	repairAmount = 100
+	#Define the max extra level which Reinforce Book can upgrade.
+	#Range: > 0
+	maxReinforceLevel = 4
+
+#Misc
+[misc]
+	#Define the chance of converting Dungeon Steel Ingot.
+	#Range: 0 ~ 100
+	chance = 30
+	#Define the cool-down of Totem Of Unbreaking.
+	#Range: > 0
+	cooldown = 1000
+	#Define the damage of Sonic Boom Wand.
+	#Range: > 0
+	damage = 10
+	#Define the max attack range of Sonic Boom Wand.
+	#Range: > 0
+	range = 20
+	#Define if Sonic Boom Wand can destroy dropped items.
+	destroyItems = false
+

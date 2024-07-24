@@ -1,0 +1,19 @@
+{
+  "name": "能量车头",
+  "icon": "littlelogistics:energy_locomotive",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:energy_locomotive",
+      "scale": 0.4,
+      "offset": 0.5,
+      "text": "一种由FE能量驱动的列车车头，当与$(l:vessel_charger)载具充能器$()对接时可以充电。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:energy_locomotive",
+      "text": "该车头拥有一个额外的能源物品槽位，这在机车在途中耗尽能量并需要重新充电时非常有用。"
+    }
+  ]
+} 

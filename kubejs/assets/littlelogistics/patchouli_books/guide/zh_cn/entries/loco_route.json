@@ -1,0 +1,16 @@
+{
+  "name": "车头路线配置器",
+  "icon": "littlelogistics:locomotive_route",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:locomotive_route",
+      "text": "这个物品用来设置机车的目的地/路径点。列车将始终尝试前往当前循环中尚未访问的最近目的地。需要与 $(l:auto_switch_rails)自动换向铁轨$() 结合使用。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "右键点击轨道来添加/移除它们作为目的地。可以在合成格中复制或重置。"
+    }
+  ]
+}

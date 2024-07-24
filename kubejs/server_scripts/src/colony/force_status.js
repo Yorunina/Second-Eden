@@ -126,8 +126,8 @@ ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
 })
 
 
-// todo 新增一个物品
-ItemEvents.entityInteracted('stick', event => {
+// todo 缺乏进一步的可用性回归
+ItemEvents.entityInteracted('kubejs:disband_canes', event => {
     let { target, player, item } = event
     if (player.cooldowns.isOnCooldown(item)) return
     if (target.type != 'minecolonies:citizen') return
@@ -135,9 +135,23 @@ ItemEvents.entityInteracted('stick', event => {
     let colony = GetColonyByEntity(target)
     let citizen = GetCitizenFromEntity(target)
     let building = citizen.getHomeBuilding()
+
+    if (!CheckColonyMember(colony, player)) {
+        player.setStatusMessage(Text.translatable('msg.player.common.not_colony_owner').gold())
+        return
+    }
+
+    if (!citizen.getJob().isGuard()) {
+        player.setStatusMessage(Text.translatable('msg.disband_canes.cannot_stop.1').gold())
+        return
+    }
+
     building.getSetting($AbstractBuildingGuards.GUARD_TASK).set($GuardTaskSetting.PATROL)
     citizen.getEntity().ifPresent(e => e.remove('discarded'))
     colony.getPackageManager().removeCloseSubscriber(player)
+
+    player.setStatusMessage(Text.translatable('msg.disband_canes.stop.1').gold())
+    colony.setUnderEmergencyEvacuation(false)
 
     player.addItemCooldown(item, 20 * 10)
 })

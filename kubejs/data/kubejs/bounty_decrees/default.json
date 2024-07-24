@@ -2,7 +2,6 @@
 	"objectives": [
 		"fishing_objs",
 		"enchant_objs",
-		"player_interacted_objs",
 		"slay_objs",
 		"ore_objs",
 		"misc_objs"

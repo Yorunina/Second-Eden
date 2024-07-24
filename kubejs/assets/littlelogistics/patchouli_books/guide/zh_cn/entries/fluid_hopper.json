@@ -1,0 +1,12 @@
+{
+  "name": "流体漏斗",
+  "icon": "littlelogistics:fluid_hopper",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:fluid_hopper",
+      "text": "一种漏斗，但用于流体，可以从顶部导入并从侧面导出。可以用桶右键点击来装载。可以用来装载和卸载船只和列车车厢。"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "换向铁轨",
+  "icon": "littlelogistics:switch_rail",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "这些类型的切换轨道需要红石信号来切换。与检测轨道配合使用效果良好。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "换向铁轨",
+      "recipe": "littlelogistics:switch_rail",
+      "text": "在直行或左/右转弯之间切换。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "title": "T型换向铁轨",
+      "recipe": "littlelogistics:tee_junction_rail",
+      "text": "在左/右转弯之间切换。"
+    }
+  ]
+}

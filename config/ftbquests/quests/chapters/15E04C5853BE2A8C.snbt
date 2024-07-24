@@ -25,28 +25,38 @@
 			]
 			icon: "kubejs:master_certificate"
 			id: "6A8DF9B51A9B903B"
-			size: 2.0d
+			size: 1.0d
 			subtitle: "写在最前面"
 			tasks: [{
 				id: "5E180DC1685F8084"
 				title: "放在前面"
 				type: "checkmark"
 			}]
-			x: -1.0d
-			y: 0.0d
+			x: -3.5d
+			y: -2.0d
 		}
 		{
+			dependencies: ["779E65894BD0E534"]
 			description: [
-				"通过将新手地图册装备在饰品栏：地图册，你可以使用&2呼叫空投按键&r（默认x）来消耗地图册的耐久，以在世界的某处生成一个&6空投热气球&r。"
+				"通过将&6新手地图册&r装备在&d饰品栏：地图册&r，你可以&2呼叫空投&r。&7（默认X键）&r"
 				""
-				"不同的地图册会有不同的主题池，对于新手地图册来说，其主题池包含了land（陆地）和sea（海洋）两种。&2不同的主题池，有着不同的掉落内容&r。"
+				"&2呼叫空投&r会消耗地图册的耐久，以在世界的某处生成一个&6空投热气球&r。击落热气球将会获得&e资源补给&r。"
 				""
-				"以&6新手地图册&r为例，陆地主题会掉落地面上便于放置的&6补给营地&r，而海洋主题会掉落便于海上放置的&6补给船&r。"
-				""
-				"其余的地图册也有着各种各样不同的主题。一般来说，主题的出现是完全等概率随机的，你可以通过&6主题命名牌&r来强制修改某个地图册的主题到某个具体类型。"
-				""
+				"&7点击右下角以翻页&r"
 				"{@pagebreak}"
-				"但是请注意！主题命名牌有些时候会拥有某个地图册不拥有的主题，如果地图册不拥有这个主题，会随机选择一个主题生成！"
+				"&c——不同的地图册会有不同的主题池：&r"
+				""
+				"对于&6新手地图册&r来说，其主题池包含了&2land（陆地）&r和&2sea（海洋）&r两种。"
+				""
+				"其余地图册也有着各种各样不同的主题。"
+				""
+				"&c——不同的主题池，有着不同的掉落内容：&r"
+				""
+				"以&6新手地图册&r为例，"
+				""
+				"&2陆地主题：&r会掉落地面上便于放置的&6补给营地&r。"
+				""
+				"&2海洋主题：&r会掉落便于海上放置的&6补给船&r。"
 			]
 			id: "48FD6C4DE7C8B59A"
 			rewards: [{
@@ -55,7 +65,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "怀揣地图，呼叫支援"
 			tasks: [{
 				id: "5B64A75BDE482865"
@@ -72,21 +82,21 @@
 				type: "item"
 			}]
 			title: "新手地图册"
-			x: 2.0d
-			y: 0.0d
+			x: 0.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
 			description: [
-				"地图册添加的本意就是为了提供一个将探索与发展结合的方式，避免了长期的挖矿/伐木的无聊过程。"
+				"&7——地图册添加的本意就是为了提供一个将探索与发展结合的方式，避免了长期的挖矿/伐木的无聊过程。&r"
 				""
-				"在&6新手地图册&r的奖励中，你可以获取到&6普通地图册&r。普通地图册拥有着&26点地图册耐久&r，并且可以呼叫&2相对比较全的主题奖励&r。"
+				"在&6新手地图册&r的奖励中，你可以获取到普通的&6地图册&r。该地图册拥有着&26点地图册耐久&r，并且可以呼叫&2相对比较全的主题奖励&r。"
 				""
-				"但是，普通地图册的&5奖励系数&r并不高，且一次只能呼叫一个空投气球，收集效率较低。你可以通过将其升级为&6社群地图册&r，一次性呼叫多个空投气球。"
+				"但是，这种普通地图册的&5奖励系数&r并不高，且一次只能呼叫一个空投气球，收集效率较低。"
 				""
-				"&6社群地图册&r是通过普通地图册在铁砧中使用金胡萝卜升级而成，且要求&6普通地图册&r必须为满耐久（如果不为满，你可以使用书本修复它）。"
+				"你可以在铁砧中通过&6金胡萝卜&r升级&6满耐久的普通地图册&r，得到&6社群地图册&r。&7（你可以使用书本修复普通地图册的耐久）&r"
 				""
-				"但是社群地图册不能使用书本进行修复，且耐久更低。"
+				"&6社群地图册&r可以&e一次性呼叫多个空投气球&r，但是其不能使用书本进行修复，且耐久更低。"
 			]
 			id: "12B4A667D16DFF5E"
 			rewards: [
@@ -109,22 +119,38 @@
 					type: "item"
 				}
 			]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "更快捷的资源获取"
-			tasks: [{
-				id: "309712DB6344642B"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"curios:item": { }
+			tasks: [
+				{
+					id: "1AC4BE01F0E7A0E1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"curios:item": { }
+						}
+						id: "kubejs:common_atlas"
+						tag: {
+							Damage: 0
+						}
 					}
-					id: "kubejs:sociality_atlas"
-					tag: {
-						Damage: 0
-					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "79C9462CF0A438A9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"curios:item": { }
+						}
+						id: "kubejs:sociality_atlas"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			title: "更多地图册"
 			x: 3.0d
 			y: -4.0d
@@ -132,18 +158,30 @@
 		{
 			dependencies: ["12B4A667D16DFF5E"]
 			description: [
-				"在某些特殊场景下，你可能会获取到一种名为&6地图主题牌&r的特殊物品。它的功能正如名字所描述的，可以直接定义一个&6地图册&r的主题类型，而避免随机到不想要的类型。"
+				"&7——传言，地图册主题的出现是完全等概率随机的。&r"
 				""
-				"&6地图主题牌&r有着两个属性规定了它的使用范围，即：定义的&2主题类型&r和能够使用的&2地图册类型&r。"
+				"在某些特殊场景下，你可能会获取到一种名为&6地图主题牌&r的特殊物品。它可以&2强制修改&r一个地图册的&5主题类型&r，而避免随机到不想要的类型。"
 				""
-				"&6地图主题牌&r与其描述相对应的地图册合成之后，&6地图册&r就会携带主题牌所描述的主题。请注意，有一些主题牌是允许所有地图册与其合成，但其规定的主题，只有少部分地图册拥有。"
+				"&6地图主题牌&r有着&e两个属性&r规定了它的&e使用范围&r，即："
 				""
-				"当一个地图册被定义了自己不能满足的主题时，其呼唤空投的结果仍将是随机！你可以通过EMI来查看一个地图册允许的所有主题。"
+				"——能够被修改的地图册类型"
+				""
+				"——定义的主题类型"
+				""
+				"&6地图主题牌&r与其描述相对应的地图册合成之后，&6地图册&r就会携带主题牌所描述的主题。"
+				"{@pagebreak}"
+				"&c请注意，有一些主题牌是允许所有地图册与其合成，但其规定的主题，只有少部分地图册拥有。&r"
+				""
+				"当一个地图册被定义了自己不能满足的主题时，其呼唤空投的结果&c仍将是随机&r！你可以通过EMI来查看一个地图册允许的所有主题。&7（如下图）&r"
+				""
+				"{image:kubejs:textures/task/atlas_1.png width:120 height:116 align:1}"
 				""
 				"{@pagebreak}"
-				"将主题牌使用在社群地图册上是一个非常好的主意，因为社群地图册会一次性召唤多个空投气球，相当于能够成倍的提高主题牌的效率。"
+				"将&6地图主题牌&r使用在&6社群地图册&r上是一个非常好的主意。"
 				""
-				"但是社群地图册其空投内容与常规地图册的空投内容一致，因此不能用此种方法大量获取高级地图册的稀有资源。"
+				"因为社群地图册会一次性召唤多个空投气球，相当于能够&e成倍的提高主题牌的效率&r。"
+				""
+				"但是社群地图册其空投内容与普通地图册的空投内容一致，因此&2不能用此种方法大量获取高级地图册的稀有资源&r。"
 			]
 			id: "3113C02082E4DDB6"
 			rewards: [{
@@ -152,7 +190,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "我就要这个！立刻！"
 			tasks: [{
 				id: "7A6A1F0D3D606316"
@@ -187,7 +225,7 @@
 				item: "kubejs:skill_forget_book"
 				type: "item"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "获取技能点数！"
 			tasks: [{
 				icon: "kubejs:skill_book_strength"
@@ -217,7 +255,7 @@
 			}]
 			title: "技能之书"
 			x: 3.0d
-			y: 4.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -270,7 +308,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "这是属于我的土地"
 			tasks: [{
 				icon: "minecolonies:supplycampdeployer"
@@ -295,8 +333,8 @@
 				type: "item"
 			}]
 			title: "补给营地"
-			x: 5.0d
-			y: -2.0d
+			x: 3.0d
+			y: -2.5d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -316,7 +354,7 @@
 				title: "随机灵魂宝石"
 				type: "random"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "我命你为将军，那你即是将军"
 			tasks: [{
 				id: "6A249311BCD0D6BE"
@@ -324,12 +362,12 @@
 				type: "item"
 			}]
 			title: "大师认证"
-			x: 5.0d
-			y: 2.0d
+			x: 3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["13BCDD950336C1F4"]
-			description: ["通过右键遗忘之书，你可以重置现在已经分配的所有技能点数。"]
+			description: ["通过&2右键&r使用&6遗忘之书&r，你可以重置现在已经分配的所有技能点数。"]
 			id: "4A4AC7A1A063772E"
 			rewards: [{
 				id: "130C76C3A0D7FA4D"
@@ -337,7 +375,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 2.0d
+			size: 1.0d
 			subtitle: "一忘皆空"
 			tasks: [{
 				id: "4C10F6504C606D90"
@@ -346,16 +384,160 @@
 			}]
 			title: "遗忘之书"
 			x: 7.0d
-			y: 4.0d
+			y: 0.5d
 		}
 		{
-			id: "13BD292F0E5DC4EB"
-			tasks: [{
-				id: "7517F3F042BD742B"
-				type: "custom"
+			dependencies: ["00449E381E9DED1E"]
+			description: [
+				"作为&c大师凭证&r的下位替代，你可以使用灵魂宝石定向的提升镇民的属性。"
+				""
+				"灵魂宝石默认情况下仅能够一次提升镇民的对应等级1级，但是这个数值会受玩家的&2教育能力&r以及&6灵魂宝石&r的阶级影响。"
+				""
+				"玩家每有1&2教育能力&r，则可以额外提升镇民1级的对应等级；&6灵魂宝石&r每有1阶级，则会额外提升镇民对应等级1级。"
+			]
+			icon: "kubejs:soul_gem_agility"
+			id: "23F6E3B65FF3CAFA"
+			rewards: [{
+				id: "796E8FA3AEB40083"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"curios:item": { }
+					}
+					id: "kubejs:common_citrine_ring"
+				}
+				type: "item"
 			}]
-			x: 17.0d
-			y: -2.5d
+			size: 1.0d
+			subtitle: "向你的灵魂中灌注知识"
+			tasks: [{
+				icon: "kubejs:soul_gem_agility"
+				id: "543D15D354F5CF0C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_mana"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_intelligence"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_dexterity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_focus"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_athletics"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_creativity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_agility"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_strength"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_knowledge"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_stamina"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_adaptability"
+							}
+						]
+					}
+				}
+				title: "任意灵魂宝石"
+				type: "item"
+			}]
+			title: "灵魂宝石"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["12B4A667D16DFF5E"]
+			description: [
+				"&b《遗物》&r是一个&e饰品模组&r，添加了超过25个遗物，这些遗物有着独特且丰富的机制，既能帮助你&2应对成堆的怪物&r，也能在&2日常的休闲生活中发挥作用&r。"
+				""
+				"你需要通过&6“先进地图册”&r来寻找这些&6遗物&r。"
+				""
+				"将&6遗物&r放置在&6研究台&r上，按住&2“潜行键”&r&e右键&r&6研究台&r，可以打开交互界面，来&2确认遗物的信息&r或&2对遗物进行升级&r。"
+				""
+				"&7你需要在研究台的交互界面，先将原版经验转换为遗物经验，才能使用遗物经验对遗物进行升级等操作。&r"
+			]
+			icon: "relics:researching_table"
+			id: "04B804D914706505"
+			tasks: [{
+				id: "4BE4E9EF18B5CBE3"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "relics"
+					}
+				}
+				type: "item"
+			}]
+			title: "神秘的遗物"
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6A8DF9B51A9B903B"]
+			description: [
+				"本整合包中，对任务的外框形状进行了分类区分："
+				""
+				"&2圆形：&r普通任务。"
+				""
+				"&e菱形：&r提示类文本，一般为某些内容说明。"
+				""
+				"&6齿轮形：&r代表本任务为某个玩法类目的开端。"
+				""
+				"&c正方形：&r关键任务，代表该任务十分重要。"
+			]
+			icon: "ftbquests:book"
+			id: "779E65894BD0E534"
+			tasks: [{
+				id: "5BE9A882EAA28B97"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "任务分类指引"
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48FD6C4DE7C8B59A"]
+			description: ["你可以通过在&6附魔台&r中为&6地图册&r附魔&5“修复类附魔”&r而使其可以恢复耐久。"]
+			icon: "minecraft:oak_hanging_sign"
+			id: "387D762CB9FA7CA6"
+			shape: "diamond"
+			tasks: [{
+				id: "01B8FADB76626F36"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "再利用"
+			x: 0.5d
+			y: -4.0d
 		}
 	]
 	title: "引入"

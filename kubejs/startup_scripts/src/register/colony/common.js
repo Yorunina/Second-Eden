@@ -29,4 +29,16 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag(LEGENDARY)
         .texture('kubejs:item/go_camping')
+
+    event.create('emergency_evacuation_bell', 'basic')
+        .maxStackSize(1)
+        .tag(EPIC)
+        .tag('minecolonies:hide_citizen_data')
+        .texture('kubejs:item/emergency_evacuation_bell')
+
+    event.create('disband_canes', 'basic')
+        .maxStackSize(1)
+        .tag(EPIC)
+        .tag('minecolonies:hide_citizen_data')
+        .texture('kubejs:item/disband_canes')
 })

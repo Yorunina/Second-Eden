@@ -1,0 +1,12 @@
+{
+  "name": "载具探测器",
+  "icon": "littlelogistics:vessel_detector",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:vessel_detector",
+      "text": "当船只/列车位于目标方向内3格范围内时发出红石信号。"
+    }
+  ]
+}

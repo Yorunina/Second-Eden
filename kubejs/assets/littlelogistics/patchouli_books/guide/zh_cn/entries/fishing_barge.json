@@ -1,0 +1,19 @@
+{
+  "name": "捕鱼驳船",
+  "icon": "littlelogistics:fishing_barge",
+  "category": "littlelogistics:vessels",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:fishing_barge",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "自动进行钓鱼，使用普通钓鱼竿的战利品表。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:fishing_barge",
+      "text": "需要在开阔的水域中才能投放网。在开放海域的长途路线上使用，以避免“浅水”和“过度捕捞”的惩罚。在自动钓鱼驳船后面连接一个箱子驳船，因为自动钓鱼驳船本身不提供库存。"
+    }
+  ]
+}

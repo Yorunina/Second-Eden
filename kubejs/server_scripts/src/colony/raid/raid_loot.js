@@ -91,6 +91,11 @@ const CitizenCustomLootStrategy = {
                 break
         }
     },
+    'undead_raid_leader': function (event) {
+        let entityKilled = event.getEntity()
+        let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
+        event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(rank + 1) }))
+    }
 }
 
 /**
@@ -98,7 +103,11 @@ const CitizenCustomLootStrategy = {
  * @type {Object<string,function($LootContextJS):void>}
  */
 const OthersCustomLootStrategy = {
-
+    'undead_raid_leader': function (event) {
+        let entityKilled = event.getEntity()
+        let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
+        event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(rank + 1) }))
+    }
 }
 
 

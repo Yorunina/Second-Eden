@@ -1,0 +1,16 @@
+{
+  "name": "船舶转角导轨",
+  "icon": "littlelogistics:guide_rail_corner",
+  "category": "littlelogistics:blocks",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:guide_rail_corner",
+      "text": "帮助船只在急转弯处导航，应始终用于急转弯处或狭窄水道入口附近（例如码头处）。影响拖船和驳船。按住Shift右键点击以翻转方向。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "正上方不能有完整的实体方块（即不能是石头、木板等。栅栏柱、标志等可以）。"
+    }
+  ]
+}

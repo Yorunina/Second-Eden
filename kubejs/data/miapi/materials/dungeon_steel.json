@@ -1,0 +1,38 @@
+{
+    "key": "dungeon_steel",
+    "translation": "kubejs.miapi.material.dungeon_steel",
+    "icon": {
+        "type": "item",
+        "item": "composite_material:dungeon_steel_ingot"
+    },
+    "groups": [
+        "metal"
+    ],
+    "hardness": 8,
+    "density": 3.5,
+    "flexibility": 2.5,
+    "durability": 620,
+    "mining_speed": 8,
+    "mining_level": 3,
+    "color_palette": {
+        "type": "grayscale_map",
+        "colors": {
+            "0": "05080a",
+            "36": "0f191d",
+            "72": "111d22",
+            "108": "335464",
+            "144": "3c5d74",
+            "180": "35586d",
+            "216": "4b7186",
+            "252": "a4c2db",
+            "255": "a4c2db"
+        },
+        "filler": "interpolate"
+    },
+    "items": [
+        {
+            "item": "composite_material:dungeon_steel_ingot",
+            "value": 1
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "能量拖船",
+  "icon": "littlelogistics:energy_tug",
+  "category": "littlelogistics:vessels",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:energy_tug",
+      "scale": 0.4,
+      "offset": 0.5,
+      "text": "一种由FE能量驱动的拖船，当与$(l:vessel_charger)载具充能器$()对接时可以充电。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:energy_tug",
+      "text": "拖船拥有一个额外的电容槽位，这在拖船在途中耗尽能量并需要重新充电时非常有用。"
+    }
+  ]
+}

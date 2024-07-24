@@ -11,6 +11,18 @@
             "weightMult": 0.1,
             "rarity": "RARE",
             "nbt": "{levelReq:\"1\",rePattern:\"\\\\S+1\\\\.blueprint\"}"
+        },
+        "building_rews_building_gift_box_2": {
+            "type": "item",
+            "content": "kubejs:building_gift_box",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2500,
+            "weightMult": 0.05,
+            "rarity": "EPIC",
+            "nbt": "{levelReq:\"2\",rePattern:\"\\\\S+2\\\\.blueprint\"}"
         }
     }
 }

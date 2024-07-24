@@ -1,0 +1,19 @@
+{
+  "name": "物品收集驳船",
+  "icon": "littlelogistics:vacuum_barge",
+  "category": "littlelogistics:vessels",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:vacuum_barge",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "自动收集一定半径内的物品"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:vacuum_barge",
+      "text": "在物品收集驳船后面连接一个运输驳船，因为物品收集驳船本身不提供自己的库存。"
+    }
+  ]
+}

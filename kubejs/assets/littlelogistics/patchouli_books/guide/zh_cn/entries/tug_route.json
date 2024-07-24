@@ -1,0 +1,16 @@
+{
+  "name": "拖船路线配置器",
+  "icon": "littlelogistics:tug_route",
+  "category": "littlelogistics:items",
+  "pages": [
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:tug_route",
+      "text": "这个物品用来设置拖船的路线。当该物品放置在拖船的路线槽中时，拖船将按照从节点0开始的顺序遵循路线。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在任何坐标处右键点击以在拖船路线的末尾添加一个节点（不能添加到中间）。在任何现有节点的位置右键点击以移除它。当物品在主手中时，节点会通过光束指示。"
+    }
+  ]
+}

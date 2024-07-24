@@ -1,0 +1,19 @@
+{
+  "name": "蒸汽车头",
+  "icon": "littlelogistics:steam_locomotive",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:steam_locomotive",
+      "scale": 0.4,
+      "offset": 0.5,
+      "text": "一种基本的列车车头，可以使用任何熔炉燃料运行。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:steam_locomotive",
+      "text": "燃料可以通过放置在停靠轨道旁边的漏斗来装载。"
+    }
+  ]
+}

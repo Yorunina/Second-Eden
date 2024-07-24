@@ -1,0 +1,19 @@
+{
+  "name": "运输车厢",
+  "icon": "littlelogistics:chest_car",
+  "category": "littlelogistics:trains",
+  "pages": [
+    {
+      "type": "patchouli:entity",
+      "entity": "littlelogistics:chest_car",
+      "scale": 0.6,
+      "offset": 0.5,
+      "text": "一个简单的列车车厢，可以存放物品，类似于箱子矿车。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "littlelogistics:chest_car",
+      "text": "这个车厢必须属于列车的一部分，并且当列车停下，才能与漏斗交互。"
+    }
+  ]
+}

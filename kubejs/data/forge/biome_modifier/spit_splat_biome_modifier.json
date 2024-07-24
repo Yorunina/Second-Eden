@@ -1,0 +1,17 @@
+{
+  "replace": true,
+  "type": "forge:add_spawns",
+  "biomes": [
+    "deep_ocean",
+    "lukewarm_ocean",
+    "ocean",
+    "warm_ocean",
+    "cold_ocean"
+  ],
+  "spawners": {
+    "type": "splat:spit_splat",
+    "weight": 2,
+    "minCount": 1,
+    "maxCount": 2
+  }
+}
