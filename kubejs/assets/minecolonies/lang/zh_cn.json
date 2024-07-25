@@ -2553,7 +2553,7 @@
     "com.minecolonies.research.effects.buildermodeunlock.description": "添加选项以允许为你的建筑工选择不同的建筑模式",
     "com.minecolonies.research.effects.citizencapaddition.description": "最大公民数+%2$s人",
     "com.minecolonies.research.effects.citizeninvslotsaddition.description": "公民背包容量 +%s 个格子",
-    "com.minecolonies.research.effects.consumearrowsunlock.description": "弓箭手使用箭时 +2 伤害",
+    "com.minecolonies.research.effects.consumearrowsunlock.description": "弓箭手使用箭时 +6 伤害",
     "com.minecolonies.research.effects.consumepotions.description": "德鲁伊会请求魔法药水来解锁新的能力",
     "com.minecolonies.research.effects.crushing11unlock.description": "粉碎工消耗 -50%",
     "com.minecolonies.research.effects.doublearrowsmultiplier.description": "弓箭手多重射击 +%3$s%%",

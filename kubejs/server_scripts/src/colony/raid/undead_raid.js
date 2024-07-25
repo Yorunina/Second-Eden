@@ -26,13 +26,11 @@ ItemEvents.entityInteracted('kubejs:undead_raid_book', event => {
         return
     }
 
-    let spawnLocation = spawnUndeadRaidEntities(rank, target, level, colony)
-    player.tell(Text.translatable('msg.undead_raid_book.using.1', Text.gold(spawnLocation.x), Text.gold(spawnLocation.z)))
-
-    if (rank >= 5) {
-        spawnLocation = spawnUndeadRaidEntities(rank, target, level, colony)
-        player.tell(Text.translatable('msg.undead_raid_book.using.2', Text.gold(spawnLocation.x), Text.gold(spawnLocation.z)))
+    for (let i = 0; i < Math.ceil(rank / 5); i++) {
+        let spawnLocation = spawnUndeadRaidEntities(rank, target, level, colony)
+        player.tell(Text.translatable('msg.undead_raid_book.using.1', Text.gold(spawnLocation.x), Text.gold(spawnLocation.z)))
     }
+
     item.shrink(1)
 })
 
@@ -76,7 +74,7 @@ function spawnUndeadRaidEntities(rank, target, level, colony) {
     leaderEntity.finalizeSpawn(level, level.getCurrentDifficultyAt(spawnLocation), $MobSpawnType.PATROL, null, null)
     level.addFreshEntityWithPassengers(leaderEntity)
 
-    let entityAmount = 4 + 4 * rank
+    let entityAmount = Math.min(4 + 4 * rank, 30)
     let entityList = [$TGEntities.GHOUL]
     let typeRandom = Math.random()
     if (typeRandom < 0.6) {

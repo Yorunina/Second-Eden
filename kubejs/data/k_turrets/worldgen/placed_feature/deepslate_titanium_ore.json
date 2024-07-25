@@ -1,0 +1,22 @@
+{
+  "replace": true,
+  "feature": "k_turrets:deepslate_titanium_ore",
+  "placement": [
+    {
+      "type": "minecraft:in_square",
+      "count": 26
+    },
+    {
+      "type": "minecraft:height_range",
+      "height": {
+        "type": "minecraft:trapezoid",
+        "min_inclusive": {
+          "absolute": -63
+        },
+        "max_inclusive": {
+          "absolute": 0
+        }
+      }
+    }
+  ]
+}

@@ -14,6 +14,18 @@
         "tag": "curios:atlas"
       },
       "enchantment": "lightmanscurrency:money_mending"
+    },
+    {
+      "baseItem": {
+        "tag": "kubejs:coin_engraving"
+      },
+      "enchantment": "minecraft:mending"
+    },
+    {
+      "baseItem": {
+        "tag": "kubejs:coin_engraving"
+      },
+      "enchantment": "lightmanscurrency:money_mending"
     }
   ]
 }

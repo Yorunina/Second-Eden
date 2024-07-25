@@ -19,7 +19,6 @@
   "item.k_turrets.firecharge_drone_item": "火球无人机",
   "item.k_turrets.titanium_ingot": "钛锭",
   "item.k_turrets.raw_titanium": "粗钛",
-
   "k_turrets.targets": "目标：",
   "k_turrets.added": "已添加到目标",
   "k_turrets.add.entity.type": "将新的实体类型添加到目标列表",
