@@ -41,4 +41,16 @@ StartupEvents.registry('item', event => {
         .tag(EPIC)
         .tag('minecolonies:hide_citizen_data')
         .texture('kubejs:item/disband_canes')
+
+    event.create('transmog_mirror', 'basic')
+        .tag(RARE)
+        .tag('minecolonies:hide_citizen_data')
+        .maxStackSize(1)
+        .texture('kubejs:item/transmog_mirror')
+
+    event.create('building_gift_box', 'basic')
+        .tag(LEGENDARY)
+        .tag('minecolonies:hide_citizen_data')
+        .texture('kubejs:item/building_gift_box')
+        .maxStackSize(1)
 })
