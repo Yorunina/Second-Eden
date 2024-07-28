@@ -89,6 +89,13 @@
     "registry_name": "OFF",
     "mod_name": true
   },
+  "alekiships": {
+    "furnace": true,
+    "jukebox": true,
+    "brewing_stand": true,
+    "block": true,
+    "note_block": true
+  },
   "waystones": {
     "waystone": true
   }

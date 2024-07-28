@@ -1,6 +1,7 @@
 // priority: 900
 
 import { $ColonyInformationChangedEvent } from "packages/com/minecolonies/api/colony/event/$ColonyInformationChangedEvent"
+import { $Player } from "packages/net/minecraft/world/entity/player/$Player"
 
 /**
  * 建筑完成事件关联FTBQuest
@@ -11,6 +12,7 @@ export function BuildRequestCompletedQuest(event) {
     if (!building) return
     let buildingType = building.getBuildingType().getRegistryName().toString()
     event.colony.getMessagePlayerEntities().forEach(/**@param {$Player} player*/player => {
+        player.tell(buildingType)
         if (BuildTypeToFTBQuest.has(buildingType)) {
             let questData = FTBQuests.getServerDataFromPlayer(player)
             let questId = ResearchIdToFTBQuest.get(buildingType)

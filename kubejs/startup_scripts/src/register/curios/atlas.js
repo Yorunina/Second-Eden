@@ -10,7 +10,7 @@ StartupEvents.registry('item', event => {
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:treasure_fortune', 'NewerAtlasTreasureFortune', 2, 'addition')
-            .modifyAttribute('kubejs:treasure_distance', 'NewerAtlasTreasureDistance', 1000, 'addition')
+            .modifyAttribute('kubejs:treasure_distance', 'NewerAtlasTreasureDistance', 500, 'addition')
             .modifyAttribute('kubejs:encode_ability', 'NewerAtlasEncodeAbility', 100, 'addition')
         ).texture('kubejs:item/curios/newer_atlas')
 

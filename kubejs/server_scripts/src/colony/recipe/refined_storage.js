@@ -62,6 +62,10 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'refinedstorage:fluid_interface' })
     event.shapeless('refinedstorage:fluid_interface', ['refinedstorage:interface', 'minecraft:bucket'])
 
+    event.remove({ output: 'minecolonies_compatibility:citizen_grid' })
+    event.shapeless('minecolonies_compatibility:citizen_grid', [Ingredient.of('#refinedstorage:grid'), 'minecolonies:blockhutwarehouse'])
+    
+
     event.remove({ output: 'refinedstorage:crafter' })
     event.remove({ output: 'refinedstorage:pattern_grid' })
     event.remove({ output: 'refinedstorage:pattern' })

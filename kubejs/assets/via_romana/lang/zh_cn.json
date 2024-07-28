@@ -1,0 +1,21 @@
+{
+  "too_close_node_message": "离前一个节点太近",
+  "path_invalid_maximum": "路径太长",
+  "invalid_dimension": "不允许的维度",
+  "sign_unlinked_message": "路径未连接",
+  "effect.via_romana.travellers_fatigue": "旅行疲劳",
+  "advancements.a_strand_type_game.title": "一种链式游戏",
+  "advancements.a_strand_type_game.descr": "使用路标连接世界",
+  "sign_already_linked": "路标已连接",
+  "via_romana.landing": "Via Romana 引入了一个快速旅行系统，玩家可以通过在路径上连接路标，实现即时传送。",
+  "low_quality_message": "路径开发不足",
+  "cancel_path_message": "路径已取消",
+  "key.via_romana.interact_key": "Via Romana - 互动",
+  "item.via_romana.guide": "Via Romana 指南书",
+  "cannot_warp_when_recording": "记录时不能传送",
+  "config.via_romana.config_server": "via_romana配置",
+  "path_invalid_minimum": "路径太短",
+  "too_far_from_node_message": "偏离路径太远",
+  "entity_not_allowed": "不允许的车辆",
+  "advancements.a_strand_type_game.descr.": "使用路标连接世界"
+}

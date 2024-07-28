@@ -18,6 +18,9 @@ ForgeEvents.onEvent($ColonyInformationChangedEvent, event => {
         case $ColonyInformationChangedEvent$Type.RESEARCH_COMPLETED:
             global.ColonyResearchCompletedEvent(event)
             break
+        case $ColonyInformationChangedEvent$Type.SPECIAL_BUILD_REQUEST_COMPLETED:
+            global.ColonySpecialBuildRequestCompletedEvent(event)
+            break
     }
 })
 

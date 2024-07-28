@@ -83,7 +83,7 @@
 [claims]
 	#殖民地的最大领地范围。半径，以区块为单位。 [默认：20，最小：1，最大：250]
 	#Range: 1 ~ 250
-	maxColonySize = 20
+	maxColonySize = 30
 	#殖民地之间的最小间距 (以区块为单位)。 [默认：8，最小：1，最大：200]
 	#Range: 1 ~ 200
 	minColonyDistance = 8

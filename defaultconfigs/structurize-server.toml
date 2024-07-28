@@ -19,7 +19,7 @@
 	maxBlocksChecked = 1000
 	#structurize.config.schematicblocklimit.comment [Default: 100000, min: 1000, max: 1000000]
 	#Range: 1000 ~ 1000000
-	schematicBlockLimit = 100000
+	schematicBlockLimit = 1000000
 	#Currently supports 'default', 'inwardcircle', 'hilbert', 'random' and 'inwardcircleheight1' to 'inwardcircleheight4' [Default: default]
 	iteratorType = "default"
 

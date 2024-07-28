@@ -1,0 +1,31 @@
+{
+	"name": "Via Romana",
+	"icon": "minecraft:oak_sign",
+	"sortnum": 2,
+	"priority": true,
+	"category": "via_romana:default",
+	"pages": [
+		{
+			"type": "patchouli:text",
+			"text": "这本指南将教你如何通过连接两个点来构建Via Romana的传送路径，并在它们之间进行传送。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:dirt_path",
+			"text": "要使路径有效，你必须达到一定的$(thing)路面方块$()的阈值。如果你的路径中有太多的自然块，它将不会有效。"
+		},
+		{
+			"type": "patchouli:spotlight",
+			"item": "minecraft:oak_sign",
+			"text": "如果你连接它们的路径有效，你可以将任何两个未连接的指示牌在任何距离上进行连接。$(br2)要连接一个指示牌，先对想要连接的指示牌进行$(thing)潜行并点击$()，然后对想要连接到的指示牌进行$(thing)潜行并点击$()。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "如果路径有任何问题，将会显示警告。$(br2)如果路径有效，完成操作后指示牌将会被连接。要在使用了连接的两个指示牌之间进行传送，只需$(thing)左键点击$()一个已连接的指示牌，你就会被传送到另一个已连接的指示牌那里。"
+		},
+		{
+			"type": "patchouli:text",
+			"text": "要破坏已连接的指示牌，你可以先解除它们的连接，然后在站立状态下摧毁它们；或者在潜行状态下摧毁你想要破坏的指示牌。如果使用辅助性的指示牌柱，你需要将两个指示牌都连接起来或者都解除连接才能破坏该块，因为在部分连接的状态下它不能被破坏。"
+		}
+	]
+}

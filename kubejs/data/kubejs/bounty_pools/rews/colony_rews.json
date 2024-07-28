@@ -130,16 +130,6 @@
             },
             "weightMult": 0.5,
             "unitWorth": 50
-        },
-        "colony_rews_ancienttome": {
-            "type": "item",
-            "content": "kubejs:ancienttome",
-            "amount": {
-                "min": 1,
-                "max": 64
-            },
-            "weightMult": 0.05,
-            "unitWorth": 1000
         }
 	}
 }

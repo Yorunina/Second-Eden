@@ -34,6 +34,14 @@ ColonyResearchModel.prototype = {
         return this
     },
     /**
+     * @param {Boolean} hidden 
+     * @returns {ColonyResearchModel}
+     */
+    setHidden(hidden) {
+        this.hidden = hidden
+        return this
+    },
+    /**
      * @param {$ResourceLocation_} parentResearch 
      * @returns {ColonyResearchModel}
      */
