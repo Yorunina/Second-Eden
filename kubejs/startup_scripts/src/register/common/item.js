@@ -19,4 +19,7 @@ StartupEvents.registry('item', event => {
             return itemstack
         })
         .texture('kubejs:item/eternal_steak')
+
+    event.create('kubejs:linear_propulsion', 'basic').texture('kubejs:item/linear_propulsion')
+    event.create('kubejs:obsidian_boiler', 'basic').texture('kubejs:item/obsidian_boiler')
 })

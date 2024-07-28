@@ -6,7 +6,6 @@ import { $ColonyInformationChangedEvent } from "packages/com/minecolonies/api/co
 import { $IGlobalResearchTree } from "packages/com/minecolonies/api/research/$IGlobalResearchTree"
 import { $IResearchEffect } from "packages/com/minecolonies/api/research/effects/$IResearchEffect"
 import { $ResearchState } from "packages/com/minecolonies/api/research/util/$ResearchState"
-import { $Player } from "packages/net/minecraft/world/entity/player/$Player"
 import { $LocalResearch } from "packages/com/minecolonies/core/research/$LocalResearch"
 
 
@@ -19,7 +18,11 @@ export function SpecialBuildRequestCompletedQuest(event) {
 
     let bluePrintResourceLocation = bluePrint.getPackName() + '/' + bluePrint.getFileName()
     if (SpecialBuildRequestCompletedStrategy[bluePrintResourceLocation]) {
-        SpecialBuildRequestCompletedStrategy[bluePrintResourceLocation](event)
+        if (SpecialBuildRequestCompletedStrategy[bluePrintResourceLocation](event)) {
+            Utils.getServer().getPlayers().forEach(/** @param {$Player} player */player => {
+                player.tell(Text.translatable('msg.player.landmarks.research_finish.1', event.colony.getName(), bluePrint.getFileName()).gray())
+            })
+        }
     }
 
 }
@@ -33,37 +36,45 @@ export function SpecialBuildRequestCompletedQuest(event) {
  */
 const SpecialBuildRequestCompletedStrategy = {
     'ColonyLandMarks/SakuraMoon': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/sakuramoon', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/sakuramoon', 1)) return false
+        return true
     },
     'ColonyLandMarks/KokotoniTower': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/kokotonitower', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/kokotonitower', 1)) return false
+        return true
     },
     'ColonyLandMarks/LeavesMaze': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/leavesmaze', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/leavesmaze', 1)) return false
+        return true
     },
     'ColonyLandMarks/TreeHouse': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/treehouse', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/treehouse', 1)) return false
+        return true
     },
     'ColonyLandMarks/EiffelTower1': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower1', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower1', 1)) return false
         if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/eiffeltower1', 'kubejs:landmarks/eiffeltower2', 'kubejs:landmarks/eiffeltower3'])) {
-            finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)
+            if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)) return false
         }
+        return true
     },
     'ColonyLandMarks/EiffelTower2': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower2', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower2', 1)) return false
         if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/eiffeltower1', 'kubejs:landmarks/eiffeltower2', 'kubejs:landmarks/eiffeltower3'])) {
-            finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)
+            if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)) return false
         }
+        return true
     },
     'ColonyLandMarks/EiffelTower3': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower3', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower3', 1)) return false
         if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/eiffeltower1', 'kubejs:landmarks/eiffeltower2', 'kubejs:landmarks/eiffeltower3'])) {
-            finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)
+            if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)) return false
         }
+        return true
     },
     'ColonyLandMarks/Pantheon': (event) => {
-        finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/pantheon', 1)
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/pantheon', 1)) return false
+        return true
     },
 }
 
@@ -91,7 +102,7 @@ function finishResearch(colony, branchId, researchId, depth) {
     let branch = new ResourceLocation(branchId)
     let research = new ResourceLocation(researchId)
     if (colony.getResearchManager().getResearchTree().isComplete(research)) {
-        return
+        return false
     }
 
     let tree = colony.getResearchManager().getResearchTree()
@@ -111,7 +122,5 @@ function finishResearch(colony, branchId, researchId, depth) {
             citizen.applyResearchEffects()
         })
     }
-    colony.getMessagePlayerEntities().forEach(/** @param {$Player} player */player => {
-        player.tell(Text.translatable(''))
-    })
+    return true
 }
