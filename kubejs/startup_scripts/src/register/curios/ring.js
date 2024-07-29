@@ -22,6 +22,36 @@ StartupEvents.registry('item', event => {
         )
         .texture('kubejs:item/curios/snoop_ring')
 
+    // 誓约之戒
+    event.create('friend_to_the_end')
+        .maxStackSize(1)
+        .tag('curios:ring')
+        .tag(EPIC)
+        .useAnimation('bow')
+        .texture('kubejs:item/curios/friend_to_the_end')
+        .useDuration(itemStack => 30)
+        .use((level, player, hand) => {
+            return true;
+        })
+        .finishUsing((itemstack, level, entity) => {
+            if (level.isClientSide()) return itemstack
+            if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
+                let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
+                if (friend && friend.isLiving()) {
+                    let targetDim = friend.level.getDimension()
+                    entity.teleportTo(targetDim, friend.x, friend.y, friend.z, 0, 0)
+                    entity.addItemCooldown(itemstack, 20 * 10)
+                } else {
+                    entity.tell(Text.translatable('msg.curios.friend_to_the_end.1').gray())
+                }
+            } else {
+                entity.tell(Text.translatable('msg.curios.friend_to_the_end.2').gray())
+                itemstack.setNbt({ friendName: entity.getUsername() })
+                return itemstack;
+            }
+            return itemstack;
+        })
+
 
     // 月见草之语
     event.create('evening_primrose_ring')

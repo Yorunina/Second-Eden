@@ -1,0 +1,61 @@
+{
+  "replace": true,
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "trials:banner_pattern_flow",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:banner_pattern_guster",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:bolt_template",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:flow_template",
+          "weight": 8
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:music_disc_creator",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:music_disc_creator_box",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:music_disc_precipice",
+          "weight": 6
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:flow_pottery_sherd",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:guster_pottery_sherd",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:scrape_pottery_sherd",
+          "weight": 2
+        }
+      ]
+    }
+  ]
+}

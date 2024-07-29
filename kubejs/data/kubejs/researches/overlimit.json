@@ -1,5 +1,5 @@
 {
-  "base-time": 0.5,
+  "base-time": 1,
   "branch-name": "com.kubejs.research.overlimit.name",
-  "sortOrder": 250
+  "sortOrder": 1000
 }

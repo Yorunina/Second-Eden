@@ -1,0 +1,61 @@
+{
+  "replace": true,
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:heavy_core",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:heart_of_the_sea",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:loot_table",
+          "name": "trials:gameplay/diamond_armor",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:skill_forget_book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:master_certificate",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:echo_crystal",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:undead_raid_book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "trials:trial_key",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:raw_iridium",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
