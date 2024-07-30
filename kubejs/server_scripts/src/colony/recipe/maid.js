@@ -2,13 +2,13 @@
 const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.highPriorityData(event => {
-    event.addJson(`kubejs:crafterrecipes/enchanter/scroll_maid.json`,
-        new ColonyCraftRecipes('enchanter_custom', Item.of('touhou_little_maid:entity_placeholder', '{RecipeId:"touhou_little_maid:altar/spawn_box"}'), [Item.of('minecraft:totem_of_undying'), Item.of('minecraft:rotten_flesh', 16), Item.of('minecraft:armor_stand', 1)])
+    event.addJson(`kubejs:crafterrecipes/enchanter/spawn_maid_box.json`,
+        new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:spawn_maid_box'), [Item.of('minecraft:totem_of_undying'), Item.of('minecraft:rotten_flesh', 16), Item.of('minecraft:armor_stand', 1)])
             .setResearchId('kubejs:effects/scrollmaidunlock', true))
 })
 
 ServerEvents.recipes(event => {
-    event.remove({ type: 'touhou_little_maid:altar_crafting' })
+    // event.remove({ type: 'touhou_little_maid:altar_crafting' })
 
     event.shaped('touhou_little_maid:bookshelf', ['P P', 'PBP', 'PDP'], { P: Ingredient.of('#minecraft:planks'), B: Item.of('minecraft:book'), D: Item.of('minecraft:diamond') })
 

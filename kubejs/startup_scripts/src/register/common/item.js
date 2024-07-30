@@ -22,4 +22,6 @@ StartupEvents.registry('item', event => {
 
     event.create('kubejs:linear_propulsion', 'basic').texture('kubejs:item/linear_propulsion')
     event.create('kubejs:obsidian_boiler', 'basic').texture('kubejs:item/obsidian_boiler')
+    
+    event.create('kubejs:spawn_maid_box', 'basic').maxStackSize(1).tag(EPIC).texture('kubejs:item/spawn_maid_box')
 })

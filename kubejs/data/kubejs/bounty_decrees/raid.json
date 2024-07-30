@@ -1,0 +1,13 @@
+{
+	"objectives": [
+		"fishing_objs",
+		"enchant_objs",
+		"slay_objs",
+		"ore_objs",
+		"misc_objs"
+	],
+	"rewards": [
+		"raid_book_rews",
+		"raid_orb_rews"
+	]
+}

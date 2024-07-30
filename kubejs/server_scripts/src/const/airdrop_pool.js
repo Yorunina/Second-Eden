@@ -1,7 +1,8 @@
-// priority: 1000
+// priority: 999
 const { AirdropPoolItem } = require("../model/airdrop_pool_model")
 
 global.AirdropPool = {}
+// 加主题要在赏金内同步增加对应的主题修饰符
 const NewerAirdropPool = new Map()
     .set('land', [
         new AirdropPoolItem('minecolonies:supplycampdeployer').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
@@ -72,11 +73,18 @@ const StoneAirdropPool = new Map()
         new AirdropPoolItem('minecraft:smooth_stone').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.25),
     ]).set('sand', [
         new AirdropPoolItem('minecraft:sand').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(1),
-        new AirdropPoolItem('minecraft:red_sand').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(0.8),
-        new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(1),
-        new AirdropPoolItem('minecraft:stone_bricks').setMinCount(16).setMaxCount(128).setFortuneCoe(1.5).setChance(0.8),
-        new AirdropPoolItem('minecraft:clay').setMinCount(16).setMaxCount(128).setFortuneCoe(1.5).setChance(1),
+        new AirdropPoolItem('minecraft:sandstone').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(1),
+        new AirdropPoolItem('minecraft:red_sand').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(0.6),
+        new AirdropPoolItem('minecraft:red_sandstone').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(0.6),
+        new AirdropPoolItem('minecraft:gravel').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:stone_bricks').setMinCount(16).setMaxCount(128).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:clay').setMinCount(16).setMaxCount(128).setFortuneCoe(1.5).setChance(0.5),
+    ]).set('variant_stone', [
+        new AirdropPoolItem('minecraft:andesite').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(1),
+        new AirdropPoolItem('minecraft:diorite').setMinCount(32).setMaxCount(256).setFortuneCoe(1.5).setChance(1),
     ])
+
+
 
 const OreAirdropPool = new Map()
     .set('raw_ore', [

@@ -7,8 +7,8 @@
                 "min": 1,
                 "max": 1
             },
-            "unitWorth": 1500,
-            "weightMult": 0.1,
+            "unitWorth": 2000,
+            "weightMult": 0.2,
             "rarity": "RARE",
             "nbt": "{levelReq:\"1\",rePattern:\"\\\\S+1\\\\.blueprint\"}"
         },
@@ -19,8 +19,8 @@
                 "min": 1,
                 "max": 1
             },
-            "unitWorth": 2500,
-            "weightMult": 0.05,
+            "unitWorth": 3000,
+            "weightMult": 0.025,
             "rarity": "EPIC",
             "nbt": "{levelReq:\"2\",rePattern:\"\\\\S+2\\\\.blueprint\"}"
         }

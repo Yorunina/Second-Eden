@@ -7,10 +7,10 @@ moneyCostPerHundredMeter = 10
 roundUp = true
 #每单次传送所需的最低消耗
 #Range: > -1
-minimumCost = 50
+minimumCost = 30
 #每单次传送所的最大消耗上限
 #Range: > -1
-maximumCost = 100000
+maximumCost = 10000
 #是否启用控制台日志
 enableConsoleLog = true
 #是否启用传送消耗提示

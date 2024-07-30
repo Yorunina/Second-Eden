@@ -1,0 +1,13 @@
+{
+	"objectives": [
+		"fishing_objs",
+		"enchant_objs",
+		"slay_objs",
+		"ore_objs",
+		"misc_objs"
+	],
+	"rewards": [
+		"atlas_rews",
+		"atlas_nametag_rews"
+	]
+}

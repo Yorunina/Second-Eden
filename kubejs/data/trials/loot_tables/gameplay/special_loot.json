@@ -21,11 +21,6 @@
           "weight": 1
         },
         {
-          "type": "minecraft:loot_table",
-          "name": "trials:gameplay/diamond_armor",
-          "weight": 1
-        },
-        {
           "type": "minecraft:item",
           "name": "kubejs:skill_forget_book",
           "weight": 1

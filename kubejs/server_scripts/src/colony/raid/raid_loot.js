@@ -1,6 +1,7 @@
 const { $LootContextJS } = require("packages/com/almostreliable/lootjs/kube/$LootContextJS")
 const { $AbstractCivilianEntity } = require("packages/com/minecolonies/api/entity/citizen/$AbstractCivilianEntity")
 const { $LivingEntity } = require("packages/net/minecraft/world/entity/$LivingEntity")
+const { EntityOrbMap } = require("../../const/entity_orb")
 
 LootJS.modifiers(event => {
     event.addLootTypeModifier(LootType.ENTITY)
@@ -28,12 +29,6 @@ LootJS.modifiers(event => {
                 return entity.persistentData.contains('custom_loot')
             }
             return false
-        })
-        .killerPredicate(killer => {
-            if (killer instanceof $AbstractCivilianEntity) {
-                return false
-            }
-            return true
         })
         .apply(ctx => {
             let { entity } = ctx
@@ -94,7 +89,20 @@ const CitizenCustomLootStrategy = {
     'undead_raid_leader': function (event) {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
-        event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(rank + 1) }))
+        event.addLoot(LootEntry.of('composite_material:creative_reinforced_book', 1).when(c => c.randomChance(0.025 * rank)))
+        event.addLoot(LootEntry.of('composite_material:etherite_totem', 1).when(c => c.randomChance(0.025 * rank)))
+    },
+    'undead_raid': function (event) {
+        let entityKilled = event.getEntity()
+        let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
+        event.addLoot(LootEntry.of('kubejs:raw_iridium', 1).when(c => c.randomChance(0.01 * rank)))
+        event.addLoot(LootEntry.of('kubejs:echo_crystal', 1).when(c => c.randomChance(0.005 * rank)))
+        event.addLoot(LootEntry.of('kubejs:netherite_scrap', 1).when(c => c.randomChance(0.005 * rank)))
+        event.addLoot(LootEntry.of('composite_material:reinforced_book', 1).when(c => c.randomChance(0.01 * rank)))
+        event.addLoot(LootEntry.of('composite_material:sepachanted_book', 1).when(c => c.randomChance(0.02 * rank)))
+        event.addLoot(LootEntry.of('composite_material:purifichanted_book', 1).when(c => c.randomChance(0.02 * rank)))
+        event.addLoot(LootEntry.of('composite_material:duplichanted_book', 1).when(c => c.randomChance(0.008 * rank)))
+        event.addLoot(LootEntry.of('composite_material:disenchanted_book', 1).when(c => c.randomChance(0.02 * rank)))
     }
 }
 
@@ -107,6 +115,29 @@ const OthersCustomLootStrategy = {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
         event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(rank + 1) }))
+        event.addLoot(LootEntry.of('minecraft:netherite_scrap', 1).when(c => c.randomChance(0.01 * rank)))
+        event.addLoot(LootEntry.of('minecraft:diamond', Math.ceil(rank / 5)).when(c => c.randomChance(0.01 * rank)))
+    },
+    /**
+     * 
+     * @param {$LootContextJS} event 
+     */
+    'undead_raid': function (event) {
+        let entityKilled = event.getEntity()
+        let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
+
+        event.addLoot(LootEntry.of('minecraft:iron_ingot', Math.ceil(rank / 3)).when(c => c.randomChance(0.2 + 0.05 * rank)))
+        event.addLoot(LootEntry.of('minecraft:copper_ingot', Math.ceil(rank / 3)).when(c => c.randomChance(0.2 + 0.05 * rank)))
+        event.addLoot(LootEntry.of('minecraft:gold_ingot', Math.ceil(rank / 5)).when(c => c.randomChance(0.1 + 0.02 * rank)))
+
+        let killer = event.getKillerEntity()
+        if (killer && killer.isPlayer()) return
+
+        event.addLoot(LootEntry.of('minecraft:diamond', Math.ceil(rank / 5)).when(c => c.randomChance(0.05 + 0.01 * rank)))
+        event.addLoot(LootEntry.of('minecraft:emerald', Math.ceil(rank / 3)).when(c => c.randomChance(0.05 + 0.01 * rank)))
+        event.addLoot(LootEntry.of('minecraft:netherite_scrap', 1).when(c => c.randomChance(0.025 + 0.01 * rank)))
+        event.addLoot(LootEntry.of('minecraft:amethyst_shard', Math.ceil(rank / 2)).when(c => c.randomChance(0.05 + 0.02 * rank)))
+        event.addLoot(LootEntry.of('minecraft:quartz', Math.ceil(rank / 2)).when(c => c.randomChance(0.05 + 0.01 * rank)))
     }
 }
 
@@ -122,21 +153,3 @@ function citizenRaidCommonLoot(event) {
         event.addLoot(EntityOrbMap.get(entityTypeStringt))
     }
 }
-
-const EntityOrbMap = new Map()
-    .set('minecraft:zombie', 'kubejs:zombie_orb')
-    .set('minecraft:skeleton', 'kubejs:skeleton_orb')
-    .set('minecraft:cave_spider', 'kubejs:cave_spider_orb')
-    .set('minecraft:creeper', 'kubejs:creeper_orb')
-    .set('minecraft:blaze', 'kubejs:blaze_orb')
-    .set('minecraft:husk', 'kubejs:husk_orb')
-    .set('minecraft:pillager', 'kubejs:pillager_orb')
-    .set('minecraft:ravager', 'kubejs:ravager_orb')
-    .set('minecraft:evoker', 'kubejs:evoker_orb')
-    .set('minecraft:wither_skeleton', 'kubejs:wither_skeleton_orb')
-    .set('minecraft:vindicator', 'kubejs:vindicator_orb')
-    .set('takesapillage:archer', 'kubejs:archer_orb')
-    .set('takesapillage:legioner', 'kubejs:legioner_orb')
-    .set('takesapillage:skirmisher', 'kubejs:skirmisher_orb')
-
-

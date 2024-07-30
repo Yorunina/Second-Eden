@@ -1,0 +1,17 @@
+// priority: 1000
+
+export const EntityOrbMap = new Map()
+    .set('minecraft:zombie', 'kubejs:zombie_orb')
+    .set('minecraft:skeleton', 'kubejs:skeleton_orb')
+    .set('minecraft:cave_spider', 'kubejs:cave_spider_orb')
+    .set('minecraft:creeper', 'kubejs:creeper_orb')
+    .set('minecraft:blaze', 'kubejs:blaze_orb')
+    .set('minecraft:husk', 'kubejs:husk_orb')
+    .set('minecraft:pillager', 'kubejs:pillager_orb')
+    .set('minecraft:ravager', 'kubejs:ravager_orb')
+    .set('minecraft:evoker', 'kubejs:evoker_orb')
+    .set('minecraft:wither_skeleton', 'kubejs:wither_skeleton_orb')
+    .set('minecraft:vindicator', 'kubejs:vindicator_orb')
+    .set('takesapillage:archer', 'kubejs:archer_orb')
+    .set('takesapillage:legioner', 'kubejs:legioner_orb')
+    .set('takesapillage:skirmisher', 'kubejs:skirmisher_orb')
