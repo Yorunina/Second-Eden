@@ -8,7 +8,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:baked_potato",
-          "weight": 12,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",
@@ -22,7 +22,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:bread",
-          "weight": 12,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",
@@ -36,7 +36,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:arrow",
-          "weight": 12,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",
@@ -50,7 +50,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:iron_ingot",
-          "weight": 8,
+          "weight": 6,
           "functions": [
             {
               "function": "set_count",
@@ -64,7 +64,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:gold_ingot",
-          "weight": 8,
+          "weight": 4,
           "functions": [
             {
               "function": "set_count",
@@ -78,7 +78,7 @@
         {
           "type": "minecraft:item",
           "name": "trials:breeze_rod",
-          "weight": 6,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",
@@ -92,7 +92,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:golden_carrot",
-          "weight": 4,
+          "weight": 1,
           "functions": [
             {
               "function": "set_count",

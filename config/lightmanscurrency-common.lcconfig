@@ -39,6 +39,10 @@ debugLevel=0
 		#Disabling will not remove any existing Money Chest Magnet Upgrades from the world, nor prevent their use.
 		canCraftMagnetUpgrade=true
 		
+		#Whether the Money Chest Bank Upgrade can be crafted.
+		#Disabling will not remove any existing Money Chest Bank Upgrades from the world, nor prevent their use.
+		canCraftBankUpgrade=true
+		
 		#Whether the Money Chest Security Upgrades can be crafted.
 		#Disabling will not remove any existing Money Chest Security Upgrades from the world, nor prevent their use.
 		canCraftSecurityUpgrade=true

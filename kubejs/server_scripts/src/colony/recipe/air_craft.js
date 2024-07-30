@@ -133,6 +133,18 @@ ServerEvents.highPriorityData(event => {
             [Item.of('kubejs:steel_ingot', 8), Item.of('immersive_aircraft:hull', 1), Item.of('minecraft:obsidian', 3)])
             .setResearchId('kubejs:effects/aircraftaddition', true))
 
+    event.addJson(`kubejs:crafterrecipes/blacksmith/obsidian_boiler.json`,
+        new ColonyCraftRecipes('blacksmith_crafting',
+            Item.of('kubejs:obsidian_boiler'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('immersive_aircraft:nether_engine', 1), Item.of('minecraft:obsidian', 16)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
+    event.addJson(`kubejs:crafterrecipes/blacksmith/linear_propulsion.json`,
+        new ColonyCraftRecipes('blacksmith_crafting',
+            Item.of('kubejs:linear_propulsion'),
+            [Item.of('kubejs:steel_ingot', 8), Item.of('immersive_aircraft:improved_landing_gear', 1), Item.of('minecraft:quartz_block', 8)])
+            .setResearchId('kubejs:effects/aircraftaddition', true))
+
     // 制空权
     event.addJson(`kubejs:crafterrecipes/mechanic/warship.json`,
         new ColonyCraftRecipes('mechanic_crafting',
