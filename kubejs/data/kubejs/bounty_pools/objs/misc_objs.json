@@ -80,8 +80,42 @@
                 "max": 256
             },
             "unitWorth": 5
+        },
+        "misc_objs_logs": {
+            "type": "item_tag",
+            "content": "minecraft:logs",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 5
+        },
+        "misc_objs_wool": {
+            "type": "item_tag",
+            "content": "minecraft:wool",
+            "amount": {
+                "min": 1,
+                "max": 512
+            },
+            "unitWorth": 3
+        },
+        "misc_objs_dirt": {
+            "type": "item_tag",
+            "content": "minecraft:dirt",
+            "amount": {
+                "min": 1,
+                "max": 512
+            },
+            "unitWorth": 2
+        },
+        "misc_objs_cobblestone": {
+            "type": "item_tag",
+            "content": "forge:cobblestone",
+            "amount": {
+                "min": 1,
+                "max": 512
+            },
+            "unitWorth": 2
         }
     }
 }
-
-
