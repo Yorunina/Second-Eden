@@ -9,7 +9,7 @@
 	#% of blocks required to be path blocks in a 3x3 region of ground.
 	"Path Quality Threshold" = 0.6
 	#The minimum length for a path to be valid in blocks from start to finish
-	"Minimum Path Distance" = 50.0
+	"Minimum Path Distance" = 30.0
 	#The maximum length for a path to be valid in blocks from start to finish
 	"Maximum Path Distance" = 100000.0
 	#Amount of ticks for teleport cooldown effect (enter 0 to disable)

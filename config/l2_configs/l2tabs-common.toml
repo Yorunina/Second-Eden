@@ -5,5 +5,5 @@ syncAllEntityAttributeName = false
 #Show all attribute on attribute tab, like Apothic
 generateAllAttributes = false
 #Show all attribute on attribute tab and hide the unchanged
-generateAllAttributesHideUnchanged = false
+generateAllAttributesHideUnchanged = true
 
