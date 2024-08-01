@@ -1,7 +1,7 @@
 // priority: 500
 
 const { $AltarRecipe } = require("packages/com/github/tartaricacid/touhoulittlemaid/crafting/$AltarRecipe")
-const { $EntityType } = require("packages/net/minecraft/world/entity/$EntityType")
+const { $InitRecipes } = require("packages/com/github/tartaricacid/touhoulittlemaid/init/$InitRecipes")
 
 ItemEvents.rightClicked('kubejs:spawn_maid_box', event => {
     let { item, player, level } = event

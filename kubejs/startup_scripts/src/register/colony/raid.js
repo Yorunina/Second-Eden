@@ -42,6 +42,6 @@ StartupEvents.registry('item', event => {
     // 通用方案，即上文所说的同一物品不同NBT区分
     event.create('custom_raid_orb', 'basic').maxStackSize(64).tag(LEGENDARY).texture('kubejs:item/raid_orb')
 
-    event.create('raid_entity_modifier', 'basic').maxStackSize(64).tag(LEGENDARY).texture('kubejs:item/raid_entity_modifier')
+    event.create('raid_entity_modifier', 'basic').maxStackSize(1).tag(LEGENDARY).texture('kubejs:item/raid_entity_modifier')
 
 })

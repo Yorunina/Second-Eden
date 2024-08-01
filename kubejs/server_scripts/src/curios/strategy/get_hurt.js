@@ -34,10 +34,10 @@ const CuriosGetHurtStrategy = {
         if (curios.hasNBT() && curios.nbt.friendName) {
             let friend = Utils.getServer().getPlayer(curios.nbt.friendName)
             if (friend && friend.isLiving()) {
-                event.entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, 0, 0)
+                entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, [], entity.yaw, entity.pitch)
                 curios.setCount(0)
                 entity.tell(Text.translatable('msg.curios.friend_to_the_end.3').gray())
-                event.entity.setHealth(1)
+                entity.setHealth(1)
                 event.amount = 0
             }
         }
