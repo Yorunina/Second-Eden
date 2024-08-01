@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "51E38D674C18A492"
+	group: "4C55D48871BDCD2F"
+	icon: "trials:trial_key"
+	id: "51E38D674C18A492"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "试炼之塔"
+}

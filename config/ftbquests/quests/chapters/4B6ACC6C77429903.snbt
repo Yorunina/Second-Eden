@@ -1,0 +1,565 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4B6ACC6C77429903"
+	group: "3C78FA35C49B788B"
+	icon: "minecolonies:blockhutbarracks"
+	id: "4B6ACC6C77429903"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d卫兵塔&r是初期可以获得的&2提供武装力量&r的建筑，你可以在此处雇佣公民成为&b卫兵&r。"
+				""
+				"&2巡逻&r：&a自由的活动模式&r，卫兵的巡逻范围取决于卫兵塔的等级。"
+				""
+				"&2跟随&r：允许卫兵&a跟随并保护&r玩家，距离取决于卫兵塔等级。"
+				""
+				"&2守卫&r：在&6卫兵塔方块&r的&2“选区工具”页面&r，点击得到&6卫兵权杖&r，右击选择一个位置让卫兵&a驻守那里，直到血量低时才会返回&r。"
+			]
+			hide: true
+			id: "2550EECC9D8DB83E"
+			size: 1.0d
+			subtitle: "保护你的殖民地"
+			tasks: [{
+				id: "3ADEA5CD062B1221"
+				item: "minecolonies:blockhutguardtower"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d《Truly－Modular》模组&r是一个旨在让玩家能自由地以全新的方式&a研究、制造模块化装备&r的模组。"
+				""
+				"它不仅能够提升玩家个人的战斗能力，同时还能&e作为殖民地卫兵的装备&r，更好的保护你的殖民地。"
+				""
+				"&7请注意，卫兵并不能使用该模组提供的所有武器，仅类似原版剑、斧、弓、弩类武器能够使用，护甲装备则没有太多限制，请玩家妥善尝试&r"
+			]
+			hide: true
+			id: "2F4F3082E7F059E0"
+			shape: "gear"
+			subtitle: "另一个四面体"
+			tasks: [{
+				id: "605BCC4B0C134A11"
+				item: "miapi:modular_work_bench"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d兵营&r是&2殖民地防线的核心所在&r。"
+				""
+				"&d兵营&r达到&23级&r时，你可以在此&2雇佣间谍&r，来更好的在袭击开始时，&e高亮显示袭击者的位置&r。"
+				""
+				"随&d兵营&r等级提升，每座兵营最多可拥有四座&6兵营塔&r。"
+				""
+				"&7兵营塔的描述请见下一个任务。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "4CEFDDDE95DF8FF6"
+			size: 1.0d
+			subtitle: "沙盘博弈"
+			tasks: [{
+				id: "3DD5F38D57EECE2C"
+				item: "minecolonies:blockhutbarracks"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"兵营升级时，会在兵营内部自动放置&6兵营塔方块&r&7（你不需要准备该方块）&r，玩家需要在此基础上&2额外委托建造&r兵营塔。"
+				""
+				"&d兵营塔&r每级提供一个&e额外的公民&r作为&b卫兵&r，他们会居住在兵营塔内部，&2无需额外提供住处&r。"
+			]
+			icon: "minecolonies:blockhutbarrackstower"
+			id: "33FBA16E16658C4F"
+			size: 1.0d
+			subtitle: "驻守营地"
+			tasks: [{
+				id: "350255C24B3E67A1"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "兵营塔"
+			x: -8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"供公民练习剑术，提供&b骑士侍从&r岗位。&7（不算作守卫，无法守护殖民地）&r"
+				""
+				"&d练兵场&r等级影响岗位数量。"
+			]
+			id: "751C9FEFCB4CA504"
+			size: 1.0d
+			subtitle: "骑士预备役"
+			tasks: [{
+				id: "73C9343C3404D209"
+				item: "minecolonies:blockhutcombatacademy"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"供公民练习弓术，提供&b弓箭手侍从&r岗位。&7（不算作守卫，无法守护殖民地）&r"
+				""
+				"&d靶场&r等级影响岗位数量。"
+			]
+			hide_dependency_lines: true
+			id: "542D4A28ADEEAD71"
+			size: 1.0d
+			subtitle: "弓箭手预备役"
+			tasks: [{
+				id: "3DC295370D9BDEC6"
+				item: "minecolonies:blockhutarchery"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"或许你认为需要&2更强硬的手腕&r来限制你的公民，从而&a提高殖民地的运转效率&r。"
+				""
+				"本整合包提供了一些相关作用的物品供你使用。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			icon: "minecraft:bell"
+			id: "44C91C61874915AB"
+			shape: "gear"
+			tasks: [{
+				id: "28C02915C6CAF30D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "铁腕统治"
+			x: -10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["44C91C61874915AB"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "0CE71360FC619E85"
+			tasks: [{
+				id: "77E5B9A3CDCCA2FD"
+				item: "kubejs:emergency_evacuation_bell"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0CE71360FC619E85"]
+			description: [
+				"手持该物品对&b卫兵&r右键，即可&e该目标卫兵生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "2E73C778DB25FE0A"
+			tasks: [{
+				id: "576FD606BCDCC209"
+				item: "kubejs:bind_armor_protocol"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0CE71360FC619E85"]
+			description: [
+				"手持该物品对&b公民&r右键，即可&e该目标公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "334A990FC5EBED79"
+			tasks: [{
+				id: "4C0533839BCF42A1"
+				item: "kubejs:force_work_alarm"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["334A990FC5EBED79"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "461F5EFEDFEAB659"
+			tasks: [{
+				id: "066FC2851DF14B1E"
+				item: "kubejs:force_work_bell"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2E73C778DB25FE0A"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "415B5D2B8CA1D5A5"
+			tasks: [{
+				id: "7CA7A3A9ED7A5CEC"
+				item: "kubejs:emotion_block_bell"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
+			id: "10D6DC8248011CB2"
+			subtitle: "似曾相识"
+			tasks: [{
+				id: "06D6546D747083CD"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "伤害测试假人"
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["56D64129207D0604"]
+			description: [
+				"&d《K式炮台（K-Turrets）》模组&r增加了一些&6炮塔&r和&6战斗无人机&r，以击落你的敌人并保护区域免受侵害。"
+				""
+				"&7所有炮塔和无人机都有可配置的目标生物类型，默认目标包括所有攻击性生物。&r"
+			]
+			icon: "k_turrets:gauss_bullet"
+			id: "1CD76A47D36C3941"
+			shape: "gear"
+			x: -4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: [
+				"&6无人机&r放置后，通过&2潜行键+右键&r打开配置菜单，可以设置具体内容。"
+				""
+				"&e固定的/移动的：&r影响无人机是否可以被推动。"
+				""
+				"&e拆除：&r拆除无人机。&7（你只能通过这个按键回收已放置的无人机）&r"
+				""
+				"&e跟随主人/停留/守卫区域：&r影响无人机的&a运作模式&r。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "5F7550610911EEB3"
+			tasks: [{
+				id: "232585D36493A7FB"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "无人机说明"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: ["对&e受损的炮台/无人机&r，手持&6钛锭&r并&2潜行键+右键&r，可以&a修复炮台/无人机&r。"]
+			id: "1243AB6111542101"
+			tasks: [{
+				id: "04C9DB99B9836466"
+				item: "k_turrets:titanium_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: [
+				"&6炮台&r放置后，通过&2潜行键+右键&r打开配置菜单，可以设置具体内容。"
+				""
+				"&e固定的/移动的：&r影响炮台是否可以被推动。"
+				""
+				"&e拆除：&r拆除炮台。&7（你只能通过这个按键回收已放置的炮台）&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "5C584F4481574B61"
+			tasks: [{
+				id: "21EAC476D9F6F18A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "炮台说明"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: ["较普通的炮台，使用&6圆石&r作为&2弹药&r。"]
+			id: "390EB61A12052C58"
+			tasks: [{
+				id: "436B482F09F4917C"
+				item: "k_turrets:cobble_turret_item"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: ["较普通的无人机，使用&6圆石&r作为&2弹药&r。"]
+			id: "636FFF92960972C9"
+			tasks: [{
+				id: "1BA8364D4DA14297"
+				item: "k_turrets:cobble_drone_item"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: ["以一个&6炮台/无人机&r&2为标准&r，&a批量更改&r其他&6炮台/无人机&r的&2设置&r。"]
+			hide_dependency_lines: true
+			id: "1EAD0D398DCA82BC"
+			tasks: [{
+				id: "1344E973BAFC76A1"
+				item: {
+					Count: 1
+					id: "k_turrets:wrench"
+					tag: {
+						Filters: {
+							Count: 48
+							"Target#0": "minecolonies:drownedpirate"
+							"Target#1": "minecolonies:mummy"
+							"Target#10": "minecraft:drowned"
+							"Target#11": "minecraft:elder_guardian"
+							"Target#12": "minecraft:ender_dragon"
+							"Target#13": "minecraft:enderman"
+							"Target#14": "minecraft:endermite"
+							"Target#15": "minecraft:evoker"
+							"Target#16": "minecraft:ghast"
+							"Target#17": "minecraft:giant"
+							"Target#18": "minecraft:guardian"
+							"Target#19": "minecraft:hoglin"
+							"Target#2": "minecolonies:norsemenarcher"
+							"Target#20": "minecraft:husk"
+							"Target#21": "minecraft:illusioner"
+							"Target#22": "minecraft:magma_cube"
+							"Target#23": "minecraft:phantom"
+							"Target#24": "minecraft:piglin"
+							"Target#25": "minecraft:piglin_brute"
+							"Target#26": "minecraft:pillager"
+							"Target#27": "minecraft:ravager"
+							"Target#28": "minecraft:shulker"
+							"Target#29": "minecraft:silverfish"
+							"Target#3": "minecolonies:norsemenchief"
+							"Target#30": "minecraft:skeleton"
+							"Target#31": "minecraft:slime"
+							"Target#32": "minecraft:spider"
+							"Target#33": "minecraft:stray"
+							"Target#34": "minecraft:vex"
+							"Target#35": "minecraft:vindicator"
+							"Target#36": "minecraft:warden"
+							"Target#37": "minecraft:witch"
+							"Target#38": "minecraft:wither"
+							"Target#39": "minecraft:wither_skeleton"
+							"Target#4": "minecolonies:pharao"
+							"Target#40": "minecraft:zoglin"
+							"Target#41": "minecraft:zombie"
+							"Target#42": "minecraft:zombie_villager"
+							"Target#43": "takesapillage:archer"
+							"Target#44": "takesapillage:legioner"
+							"Target#45": "takesapillage:skirmisher"
+							"Target#46": "touhou_little_maid:fairy"
+							"Target#47": "trials:bogged"
+							"Target#5": "minecolonies:pirate"
+							"Target#6": "minecolonies:shieldmaiden"
+							"Target#7": "minecraft:blaze"
+							"Target#8": "minecraft:cave_spider"
+							"Target#9": "minecraft:creeper"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: ["使用&6爆炸粉末&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "54B3D83555D0BF46"
+			tasks: [{
+				id: "07932C268BA44C73"
+				item: "k_turrets:firecharge_drone_item"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: ["使用&6爆炸粉末&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "29365CD48FEF8558"
+			tasks: [{
+				id: "062D6B1AA6EB297C"
+				item: "k_turrets:firecharge_turret_item"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: ["使用&6下界砖&r或&6红砖&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "774FD535122300D7"
+			tasks: [{
+				id: "42A1BCA7BD1DA965"
+				item: "k_turrets:brick_turret_item"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: ["使用&6下界砖&r或&6红砖&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "7547DD6FF032B7B0"
+			tasks: [{
+				id: "5231AA8580C674EC"
+				item: "k_turrets:brick_drone_item"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: ["使用&6铁粒&r或&6金粒&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "0AA75F1B10162845"
+			tasks: [{
+				id: "7F1BBA51687602AE"
+				item: "k_turrets:bullet_drone_item"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: ["使用&6铁粒&r或&6金粒&r作为&2弹药&r。"]
+			hide_dependency_lines: true
+			id: "4DE350823742C777"
+			tasks: [{
+				id: "7981165F34839081"
+				item: "k_turrets:bullet_turret_item"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: [
+				"使用&6箭&r作为&2弹药&r的炮台，你需要给它装备&6弓&r或&6弩&r。"
+				""
+				"&8你可以尝试给弓/弩附魔。&r"
+			]
+			hide_dependency_lines: true
+			id: "2F69D1D3653A0AF0"
+			tasks: [{
+				id: "24903D9FC1987847"
+				item: "k_turrets:arrow_turret_item"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: [
+				"使用&6箭&r作为&2弹药&r的炮台，你需要给它装备&6弓&r或&6弩&r。"
+				""
+				"&8你可以尝试给弓/弩附魔。&r"
+			]
+			hide_dependency_lines: true
+			id: "20B81790703CD5AB"
+			tasks: [{
+				id: "6D29CF853F16F22E"
+				item: "k_turrets:arrow_drone_item"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: ["使用&6高斯子弹&r作为&2弹药&r，拥有极高的伤害。"]
+			hide_dependency_lines: true
+			id: "374F1608A8F7B81A"
+			tasks: [{
+				id: "10B2FEDE70D4EA7C"
+				item: "k_turrets:gauss_turret_item"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: ["使用&6高斯子弹&r作为&2弹药&r，拥有极高的伤害。"]
+			hide_dependency_lines: true
+			id: "0C5952AEC7DB5913"
+			tasks: [{
+				id: "052661F7F1A96227"
+				item: "k_turrets:gauss_drone_item"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["44C91C61874915AB"]
+			description: ["对&2跟随在身旁&r的&b守卫&r使用，能够&a强制遣返&r。"]
+			id: "43E29A08D549E654"
+			tasks: [{
+				id: "2362551AB9932B1F"
+				item: "kubejs:disband_canes"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 2.0d
+		}
+	]
+	title: "领地军事化"
+}

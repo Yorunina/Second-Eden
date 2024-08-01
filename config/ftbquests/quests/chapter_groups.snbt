@@ -1,8 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "79532240B8DF47A9", title: "冒险与战斗" }
-		{ id: "1492FD99DC676F44", title: "科技与魔法" }
-		{ id: "46D2990B36110C2A", title: "交通" }
-		{ id: "67C8A7FC113DA84A", title: "休闲" }
+		{ id: "2850793BEA39A36A", title: "生存" }
+		{ id: "3C78FA35C49B788B", title: "发展" }
+		{ id: "60027A637173BAE6", title: "交流" }
+		{ id: "4C55D48871BDCD2F", title: "试炼" }
 	]
 }

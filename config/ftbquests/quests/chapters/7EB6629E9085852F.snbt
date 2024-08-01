@@ -2,11 +2,158 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "7EB6629E9085852F"
-	group: "79532240B8DF47A9"
+	group: "4C55D48871BDCD2F"
 	icon: "graveyard:leaning_skeleton"
 	id: "7EB6629E9085852F"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d旧哨塔&r是一座高耸的、由石砖组成的塔状结构，塔底是包含矿道状的陷阱结构，塔顶包含&6不祥的骨杖碎片&r之一。"
+				""
+				"{image:kubejs:textures/task/graveyard_2.png width:200 height:110 align:center}"
+			]
+			hide: true
+			icon: "minecraft:writable_book"
+			id: "57F99A48DBA797B9"
+			tasks: [{
+				id: "7DB831891C9DA213"
+				item: "graveyard:upper_bone_staff"
+				type: "item"
+			}]
+			title: "其一：旧哨塔"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d破败营地&r是由两个帐篷组成的结构，包含&6不祥的骨杖碎片&r之一。"
+				""
+				"{image:kubejs:textures/task/graveyard_3.png width:200 height:110 align:center}"
+			]
+			hide: true
+			icon: "minecraft:writable_book"
+			id: "3C67166DA10FC4DC"
+			tasks: [{
+				id: "3A0186D2BDF4009B"
+				item: "graveyard:lower_bone_staff"
+				type: "item"
+			}]
+			title: "其三：破败营地"
+			x: -4.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"血祀坑是凹陷的丘陵结构，包含&6不祥的骨杖碎片&r之一。"
+				""
+				"{image:kubejs:textures/task/graveyard_1.png width:200 height:110 align:center}"
+			]
+			hide: true
+			icon: "minecraft:writable_book"
+			id: "3405CF98C6601E31"
+			tasks: [{
+				id: "414A219013020662"
+				item: "graveyard:middle_bone_staff"
+				type: "item"
+			}]
+			title: "其二：血祀坑"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"57F99A48DBA797B9"
+				"3405CF98C6601E31"
+				"3C67166DA10FC4DC"
+			]
+			description: [
+				"&d巫妖监狱&r自然生成在&2海洋生物群系&r里的&2天空&r中，是一座&a巨型浮岛结构&r。"
+				""
+				"岛上包含&e召唤巫妖的祭坛结构&r和一个巨大的骨头结构。"
+				""
+				"{image:kubejs:textures/task/graveyard_4.png width:200 height:110 align:center}"
+			]
+			icon_scale: 1.35d
+			id: "18F123C992807362"
+			tasks: [{
+				icon: "graveyard:skeleton_hand"
+				id: "68E466201EF04493"
+				structure: "graveyard:lich_prison"
+				type: "structure"
+			}]
+			title: "寻找巫妖监狱"
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"010E7360F9179E83"
+				"18F123C992807362"
+			]
+			description: ["想要生成&b巫妖&r，必须在&a夜晚&r依次将上、中、下共三个&6不祥的骨杖碎片&r，依次&2从左至右&r放置于&d祭坛&r前的&e碎裂深石中心&r，然后将一瓶&6血&r倒在&d祭坛&r中央的&e祭坛方块&r上。"]
+			id: "3D62A30F21C60C4B"
+			subtitle: "召唤并击败巫妖"
+			tasks: [{
+				entity: "graveyard:lich"
+				icon: "graveyard:leaning_skeleton"
+				id: "055EAABC787DE16F"
+				type: "kill"
+				value: 1L
+			}]
+			title: "月夜下的低语"
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"57F99A48DBA797B9"
+				"3405CF98C6601E31"
+				"3C67166DA10FC4DC"
+			]
+			description: ["&2主手&r持&6骨头匕首&r，&2副手&r持空的&6玻璃瓶&r，击杀&b村民&r会将血液装入&6玻璃瓶&r，需要&a多次击杀&r直至&e血瓶装满&r。"]
+			hide_dependency_lines: true
+			hide_dependent_lines: true
+			icon: {
+				Count: 1
+				id: "graveyard:vial_of_blood"
+				tag: {
+					Blood: 0.8000001f
+				}
+			}
+			id: "010E7360F9179E83"
+			tasks: [
+				{
+					id: "0DF8CC244F795D01"
+					item: {
+						Count: 1
+						id: "graveyard:bone_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3BE6F05D99DAA880"
+					item: {
+						Count: 1
+						id: "graveyard:vial_of_blood"
+						tag: {
+							Blood: 0.8000001f
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "血液收集"
+			x: -1.0d
+			y: 1.5d
+		}
+	]
 	title: "墓园"
 }

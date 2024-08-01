@@ -1,0 +1,279 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "60085708E8EE9912"
+	group: "2850793BEA39A36A"
+	icon: "minecolonies:blockhutcitizen"
+	id: "60085708E8EE9912"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d面包房&r可以雇佣工人制作&a曲奇，蛋糕，面包，南瓜派等食物&r。"
+				""
+				"你需要&2设置配方&r，并且&2提供对应的原料&r。"
+			]
+			hide: true
+			id: "494F2734B1E9620C"
+			rewards: [{
+				count: 10
+				id: "47DF5BACA8F7197F"
+				item: "minecraft:melon_slice"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "1F8C6F3E947CDE45"
+				item: "minecolonies:blockhutbaker"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d餐厅&r用于给殖民地居民&a提供食物&r，公民感到饥饿时会&2主动前往餐厅&r。"
+				""
+				"&d餐厅&r提供了两种厨师职位——&b原版厨师&r和&b农夫乐事厨师&r，他们的工作并不能相通。"
+				""
+				"&c你必须在餐厅方块中为厨师提供某食物的配方，并为他们提供燃料，才能令其生产该食物。&r"
+				""
+				"{image:kubejs:textures/task/restaurant_1.png width:180 height:202 align:1}"
+			]
+			hide: true
+			id: "4153CA3DBEAFD200"
+			rewards: [{
+				count: 10
+				id: "096CB73010DE636F"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			size: 1.0d
+			subtitle: "民以食为本"
+			tasks: [{
+				id: "7D9A71834FD1EA0C"
+				item: "minecolonies:blockhutcook"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0E140DD8AE0C7D73"
+				"4153CA3DBEAFD200"
+			]
+			description: [
+				"&7——现在你可以为殖民地的餐厅雇佣“农夫乐事厨师”了。&r"
+				""
+				"&d《农夫乐事》模组&r主要丰富了&a耕作&r与&a烹饪&r方面的内容，并为现有的物品和方块提供了&2更多用途&r。"
+				""
+				"其&a烹饪方面&r的内容&e均有合成配方可供查询&r，所以你可以在&dJEI搜素框&r中输入&d“@farmer”&r来查询该模组的食物及配方。"
+			]
+			hide: true
+			icon: "farmersdelight:stove"
+			id: "791CA5DF667A96A5"
+			rewards: [{
+				count: 10
+				id: "6C5D05FDB0116A7F"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			shape: "gear"
+			tasks: [{
+				id: "4C7E9AE35392811A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "农夫乐事"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&2招募功能&r：&d酒馆&r中会出现外来的客人，你可以选择招募他们。&a酒馆等级越高，客人等级和属性越高&r。"
+				""
+				"&2人口相关&r：&d酒馆&r能提供四个居住空间。"
+				""
+				"&c一个殖民地只能建造一个酒馆&r。此外，与其他建筑不同，酒馆只能升到三级。"
+				""
+				"&7如果在建筑工具中没找到酒馆的建造选项，请更换风格包。&r"
+			]
+			hide: true
+			id: "3F16BC87620698EB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24FD8428AFD5B177"
+				table_id: 7517863136333816811L
+				type: "choice"
+			}]
+			size: 1.0d
+			subtitle: "并容偏覆"
+			tasks: [{
+				id: "2CA255F5A05DEC82"
+				item: "minecolonies:blockhuttavern"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"不同于酒馆，&d住宅&r没有数量上限。"
+				""
+				"&d住宅&r可以&a提高人口上限&r，升级住宅可以提高其提供的上限。"
+				""
+				"将一男一女两位公民安排到同一个住宅，可以生成&b幼年公民&r。"
+				""
+				"&c请注意，居民数量到达一定数值后需要在大学内完成相关研究才能再提升上限。&r"
+			]
+			hide: true
+			id: "570F07C47C8097A5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "12A97C2C965A9C61"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 1.0d
+			subtitle: "更多的人口"
+			tasks: [{
+				id: "03CAEA8E55A6759D"
+				item: "minecolonies:blockhutcitizen"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d图书馆&r会提高被分配&b公民&r的&a智力属性&r。&7（智力属性会影响工作中其他属性的提高速度）&r"
+				""
+				"你需要为他们提供&6纸&r或&6书&r，这会增加智力提升速度。&7（快递员会自动送货）&r"
+				""
+				"公民的&a幸福度&r也会影响在图书馆时的智力提升速度。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "4F76BA638A58E005"
+			rewards: [{
+				id: "3D847E4514295571"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "0CED4D9D2DF616BD"
+				item: "minecolonies:blockhutlibrary"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"建造&6学校&r后，可以雇佣&b教师&r帮助提升&b幼年公民&r的属性。"
+				""
+				"使用&6纸&r可以加快孩子们升级的速度。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "097471CA1331FC92"
+			rewards: [{
+				id: "6CBF78A7C51A21C9"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "44F0EB7D2F910DDD"
+				item: "minecolonies:blockhutschool"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d墓地&r是&b送葬者&r安葬&2已故公民&r的地方。"
+				""
+				"墓地的等级影响坟墓的数量。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "0446B946C1B01038"
+			rewards: [{
+				id: "13FA220657FBB387"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "27069757E1A61D6D"
+				item: "minecolonies:blockhutgraveyard"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d神秘地点&r是一个较为简单的建筑，&2它不需要工人&r，仅凭自身存在就可以提高殖民地公民整体&a幸福度&r。"
+				""
+				"此外，当&2没有公民需要埋葬&r时，&d墓地&r的&b送葬者&r将拜访此建筑，以提高他们的法力，增加&2复活死亡市民&r的机会。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "2C2F1635069196EB"
+			rewards: [{
+				id: "28D0F365EFD1819C"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "2AB5DAF6681C7567"
+				item: "minecolonies:blockhutmysticalsite"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d医院&r提供&b医生&r岗位，&3医生&r可以通过各式各样的物品&2治疗受伤和染疾的病人&r。"
+				""
+				"&6医院&r的等级越高，可供住院的&2床位&r也越多。"
+				""
+				"&7公民生病时会有缓慢效果，对话时会有提示，请多多注意。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "5EA52A6BD51F2CE1"
+			rewards: [{
+				id: "6EE957619A3F475F"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "076B5CFAACAA995D"
+				item: "minecolonies:blockhuthospital"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+	]
+	title: "公民与基础建设"
+}

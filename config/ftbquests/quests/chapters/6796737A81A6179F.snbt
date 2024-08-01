@@ -1,0 +1,439 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6796737A81A6179F"
+	group: "3C78FA35C49B788B"
+	icon: "refinedstorage:creative_controller"
+	id: "6796737A81A6179F"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7EEABD8A13DE4354"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d《精致存储》模组&r提供了一套&2网络化存储&r和&2自动化&r系统。"
+				""
+				"首先你需要一个&6控制器&r，这是游玩精致存储的开始。"
+			]
+			id: "0CD36B4E1865155A"
+			shape: "gear"
+			tasks: [{
+				id: "521B1FB225318868"
+				item: "refinedstorage:controller"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0CD36B4E1865155A"]
+			description: ["提供了该网络的&2交互面板&r，多数情况下你需要&2右击&r该方块进行存放和拿取物品。"]
+			id: "0D6B80C34F685874"
+			tasks: [{
+				id: "09DB6C34123863DF"
+				item: "refinedstorage:grid"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D6B80C34F685874"]
+			description: [
+				"你可以在&6样板终端&r中设置配方，并用&6模板&r保存该配方。"
+				""
+				"之后将存有配方的&6模板&r放入拥有&6合成升级&r的&6输出总线&r中，即可&a自动合成该物品&r。"
+			]
+			hide_dependency_lines: true
+			icon: "refinedstorage:pattern_grid"
+			id: "526974BCE4064BE5"
+			tasks: [
+				{
+					id: "10F2E6E70BC7A93E"
+					item: "refinedstorage:pattern_grid"
+					type: "item"
+				}
+				{
+					id: "23F0541C0DA599AD"
+					item: "refinedstorage:pattern"
+					type: "item"
+				}
+			]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0D6B80C34F685874"]
+			description: ["如果你的网络中有能够存储液体的空间，那便可以通过&6流体终端&r将液体存放在网络中。"]
+			hide_dependency_lines: true
+			id: "4B40192B36237818"
+			tasks: [{
+				id: "6180FA7217C9FA3C"
+				item: "refinedstorage:fluid_grid"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0D6B80C34F685874"]
+			description: ["存放&6磁盘&r的容器。"]
+			id: "5254614E77F91356"
+			tasks: [{
+				id: "0571F8C2B2C4B7D8"
+				item: "refinedstorage:disk_drive"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D6B80C34F685874"]
+			description: ["现在你的&6终端&r自带&2工作台面板&r了，你可以&a更便捷的合成物品&r。"]
+			id: "1EDD91CA0E1B7C28"
+			tasks: [{
+				id: "62088DC2311BEF2D"
+				item: "refinedstorage:crafting_grid"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0D6B80C34F685874"]
+			description: ["容量最小的物品存储方块，可以存储1000个物品。"]
+			id: "15F27F62A6B2F823"
+			tasks: [{
+				id: "7596BF6CED396D59"
+				item: "refinedstorage:1k_storage_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["15F27F62A6B2F823"]
+			description: ["容量最小的流体存储方块，可以装64000mB的流体，无流体种类限制。"]
+			id: "7D21EA1697793909"
+			tasks: [{
+				id: "027FB2A85C8FD888"
+				item: "refinedstorage:64k_fluid_storage_block"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5254614E77F91356"]
+			description: ["容量最小的存储磁盘，可以存储1000个物品。"]
+			id: "5F73D36BB38406F1"
+			tasks: [{
+				id: "42540159713944E5"
+				item: {
+					Count: 1
+					id: "refinedstorage:1k_storage_disk"
+					tag: {
+						Id: [I;
+							970911708
+							-1040364859
+							-1359469122
+							-2099674139
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5F73D36BB38406F1"]
+			description: ["容量最小的流体存储磁盘，可以装64000mB的流体，无流体种类限制。"]
+			id: "72EEB5550138ACA6"
+			tasks: [{
+				id: "57ACECE582F1A092"
+				item: {
+					Count: 1
+					id: "refinedstorage:64k_fluid_storage_disk"
+					tag: {
+						Id: [I;
+							-1266793107
+							221661736
+							-1998997586
+							-835298391
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			description: ["能够&a破坏&r前方的方块，同时也能吸收前方的掉落物。"]
+			id: "4D0563FA99767C37"
+			tasks: [{
+				id: "5A7842D2B51C6875"
+				item: "refinedstorage:destructor"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"5254614E77F91356"
+				"15F27F62A6B2F823"
+			]
+			dependency_requirement: "one_completed"
+			description: ["用于连接机器和控制器。"]
+			id: "4A55F0BFF5C2FB32"
+			tasks: [{
+				id: "6E403D0A469981AC"
+				item: "refinedstorage:cable"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			description: ["向网络中输入物品。"]
+			id: "22B763CEBB4B062A"
+			tasks: [{
+				id: "15479A74C1DD2C77"
+				item: "refinedstorage:importer"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1D8CB44536C47B52"
+				"22B763CEBB4B062A"
+			]
+			description: ["汇总了&6输入总线&r和&6输出总线&r的功能。"]
+			id: "1FEA923A156FF4E0"
+			tasks: [{
+				id: "1FEFAEFB5B76DE25"
+				item: "refinedstorage:interface"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1FEA923A156FF4E0"]
+			description: ["同&6物品传输接口&r，用以传输流体。"]
+			id: "780C975DAC14CE3A"
+			tasks: [{
+				id: "508BF8044BA8A3A4"
+				item: "refinedstorage:fluid_interface"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			description: ["从网络中输出物品。"]
+			id: "1D8CB44536C47B52"
+			tasks: [{
+				id: "14903F34A9CCE76C"
+				item: "refinedstorage:exporter"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			description: ["将连接的容器并入网络。"]
+			id: "22C059C89D01D89C"
+			tasks: [{
+				id: "1F7D3344F906F65B"
+				item: "refinedstorage:external_storage"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			dependency_requirement: "one_completed"
+			description: [
+				"将该方块放置在&d殖民地仓库&r内部，并用&6线缆&r接入网络。"
+				""
+				"并且用&6外部存储总线&r将&6仓库小屋方块&r接入网络。"
+				""
+				"&c注意，一个网络只能连接一个仓库！&r"
+				""
+				"{image:kubejs:textures/task/refined_2.png width:200 height:168 align:1}"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"之后需要在&d仓库&r的交互页面按如下图操作，在点击&e“refreshing”&r后，会出现如图&b蓝色框&r中的内容。"
+				""
+				"&c目前存在BUG，如果没有出现蓝色框内容，只要保证前面的操作正确，实际上仍能正常使用。&r"
+				""
+				"{image:kubejs:textures/task/refined_1.png width:180 height:202 align:1}"
+			]
+			id: "7B213278B14E0CC0"
+			tasks: [{
+				id: "6E4B5C45490B9C05"
+				item: "minecolonies_compatibility:citizen_grid"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4A55F0BFF5C2FB32"]
+			description: ["&a放置&r标记的物品或流体。正常工作时前方不能有任何方块。"]
+			hide_dependency_lines: true
+			id: "0EEF9CBC35901FF5"
+			tasks: [{
+				id: "3D48C4594B5F2513"
+				item: "refinedstorage:constructor"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7B213278B14E0CC0"]
+			description: ["本模组有非常多的&6升级道具&r，你可以将他们放入对应的机器内，他们有的会提供&2更高的效率&r，有的则是提供&2新的功能&r。"]
+			id: "3E75FC094CB75BF4"
+			tasks: [{
+				id: "47D54ED6035A9F22"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "refinedstorage:speed_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:range_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:crafting_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:stack_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:silk_touch_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:fortune_1_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:fortune_3_upgrade"
+							}
+							{
+								Count: 1b
+								id: "refinedstorage:regulator_upgrade"
+							}
+							{
+								Count: 1b
+								id: "rsinfinitybooster:infinity_card"
+							}
+							{
+								Count: 1b
+								id: "rsinfinitybooster:dimension_card"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "更多升级"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B213278B14E0CC0"]
+			description: [
+				"只能放置在线缆上。放置后通过与控制器绑定的&6无线合成监控器&r和&6无线通用终端&r能够无线访问网络。"
+				""
+				"默认范围只有16格方块。能够通过放置范围升级来扩大范围。"
+			]
+			id: "7F1B60295A58DA92"
+			tasks: [{
+				id: "4323D6C31C871AA4"
+				item: "refinedstorage:wireless_transmitter"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B213278B14E0CC0"]
+			description: [
+				"这是一种可以&a远程构建网络&r的方法，将&6网络变送器&r接入原网络。"
+				""
+				"在远处放置&6网络接收器&r，用&6网卡&r右键&6网络接收器&r，再将标记好的网卡放入&6网络变送器&r。"
+				""
+				"此时你便可以将&6网络接收器&r作为媒介放置各种机器来使用原网络。"
+			]
+			icon: "refinedstorage:network_transmitter"
+			id: "68F349EC914BB49D"
+			tasks: [
+				{
+					id: "5600C140EE6AE558"
+					item: "refinedstorage:network_card"
+					type: "item"
+				}
+				{
+					id: "4B11077E9D92D521"
+					item: "refinedstorage:network_transmitter"
+					type: "item"
+				}
+				{
+					id: "3D5E95CA9026DC34"
+					item: "refinedstorage:network_receiver"
+					type: "item"
+				}
+			]
+			title: "远程网络"
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7F1B60295A58DA92"]
+			description: [
+				"手持该物品，按住&2“潜行键”&r右键&6终端&r，即可绑定。"
+				""
+				"之后便可&a远程打开终端&r。"
+			]
+			id: "4B40EAEAD71243F2"
+			tasks: [{
+				id: "6EC3C305F989EFA7"
+				item: {
+					Count: 1
+					id: "universalgrid:creative_wireless_universal_grid"
+					tag: {
+						gridType: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 6.5d
+			y: 1.5d
+		}
+	]
+	title: "网络存储"
+}

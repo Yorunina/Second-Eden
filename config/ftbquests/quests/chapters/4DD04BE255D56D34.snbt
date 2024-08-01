@@ -1,0 +1,572 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4DD04BE255D56D34"
+	group: "3C78FA35C49B788B"
+	icon: "minecolonies:blockhutenchanter"
+	id: "4DD04BE255D56D34"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["将附近的成年动物杀死，由此被杀死的动物只会掉落经验。"]
+			hide_dependency_lines: true
+			id: "6263377A1647B9B2"
+			tasks: [{
+				id: "0678488582F4BEC6"
+				item: "arcanelanterns:brilliant_lantern"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["使灯笼周围的作物生长的更快。"]
+			hide_dependency_lines: true
+			id: "525E9D5EA3C8A444"
+			tasks: [{
+				id: "2F429BE6C8B6054D"
+				item: "arcanelanterns:life_lantern"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["使周围的生物获得缓降效果。"]
+			hide_dependency_lines: true
+			id: "7B025F7278DEC593"
+			tasks: [{
+				id: "4C6D3481AB040EC5"
+				item: "arcanelanterns:cloud_lantern"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["减慢附近生物和玩家的速度，同时扑灭燃烧的生物。"]
+			hide_dependency_lines: true
+			id: "1AAF7E9D29200D95"
+			tasks: [{
+				id: "49E294F77B2AEBC6"
+				item: "arcanelanterns:boreal_lantern"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["使周围的生物获得凋零效果。"]
+			hide_dependency_lines: true
+			id: "2BA28735574D5275"
+			tasks: [{
+				id: "5CBE43A7B5A7FC8C"
+				item: "arcanelanterns:withering_lantern"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["将除玩家以外的所有试图离开自身照明范围内的生物拉到身边。"]
+			hide_dependency_lines: true
+			id: "324E2BF43B205EB4"
+			tasks: [{
+				id: "1642EF2376AFB190"
+				item: "arcanelanterns:containing_lantern"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["将除玩家外的所有生物推开。"]
+			id: "0E5F103A32C5362B"
+			tasks: [{
+				id: "2865CA05AF004E3F"
+				item: "arcanelanterns:warding_lantern"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: [
+				"通过生成火花照亮一个巨大的区域。"
+				""
+				"生成足够的火花后，灯笼就会停止。"
+				""
+				"只要灯笼存在，火花就会一直停留在世界中。"
+			]
+			id: "117B6B778B8C52E8"
+			tasks: [{
+				id: "7088835DC1713B6A"
+				item: "arcanelanterns:feral_lantern"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: ["使附近的生物陷入爱河。"]
+			hide_dependency_lines: true
+			id: "7A92C08D001111DF"
+			tasks: [{
+				id: "7E77BD9E6B88C961"
+				item: "arcanelanterns:love_lantern"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A516FDBB7C617B9"]
+			description: [
+				"如果你靠近灯笼，灯笼会哭泣。"
+				""
+				"如果更加靠近，灯笼会尖叫并施加眩晕效果。"
+			]
+			hide_dependency_lines: true
+			id: "4A1DD689EF546CB4"
+			tasks: [{
+				id: "51EBB7DAC0424FEB"
+				item: "arcanelanterns:wailing_lantern"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["22DD54825EBE5210"]
+			description: [
+				"当玩家放置&6传送石盘&r后，在其中会合成&6调谐燧石&r，该燧石将于当前的&6传送石盘&r进行绑定。"
+				""
+				"将其中的&6调谐燧石&r和&2另一个传送石盘中的调谐燧石&r进行互换，&e两个传送石盘将互相绑定&r。"
+				""
+				"当实体站在上面，将进行石盘间的传送。"
+				""
+				"&8可以传送物品&r"
+			]
+			id: "09365AD64830FE74"
+			tasks: [{
+				id: "67AC1F5E7574A63C"
+				item: "waystones:warp_plate"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1ECD98AFC0203C66"]
+			description: [
+				"你需要放入一种&6物品&r用于&a设置环境&r，让其中的生物有一种宾至如归的感觉，让它们感觉自己并没有被囚禁。环境例如："
+				""
+				"1.&b农场中的动物&r或&b中立生物&r——&6干草块/草方块&r。"
+				""
+				"2.&b喜欢在洞穴中游荡的怪物&r——&6石头/钻石矿&r。"
+				""
+				"3.&b下界生物&r——&6岩浆块/镶金黑石&r。"
+				""
+				"4.&b末地生物&r——&6末地石/紫颂花&r。"
+				""
+				"5.&b寒冷生物群系中的生物&r——&6雪块/蓝冰&r。"
+				""
+				"6.生成于&b沙漠中的生物&r——&6沙子/红沙&r。"
+				""
+				"7.&b水生生物&r——&6沙子/红沙&r并&a用水覆盖笼子&r。&7（将笼子直接放到水中或手持水桶“潜行键”+右键笼子）&r"
+			]
+			icon: "minecraft:grass_block"
+			id: "2071CE96134E6DE8"
+			tasks: [{
+				id: "5A924BE3DE339047"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "笼中环境"
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2071CE96134E6DE8"]
+			description: [
+				"设置好相应的环境后，你可以放入一个&a该环境支持&r的&6生物样本&r。"
+				""
+				"制作一个&6DNA采样器&r并用它&2攻击&r你想要采集的实体，以获得该生物的&6生物样本&r。"
+				""
+				"切记，某些生物需要&2更强大的采集器&r。"
+			]
+			id: "22F2BA2574616B8A"
+			tasks: [{
+				id: "1AFA9CD8321DE68C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:dna_sampler"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:diamond_dna_sampler"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:netherite_dna_sampler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "DNA采样器"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["22F2BA2574616B8A"]
+			description: [
+				"还可以为笼子提供各种&2升级&r。"
+				""
+				"它们拥有不同的效果，能&a让你的笼子拥有更多功能&r。"
+			]
+			id: "2C96F5FDCAB1110E"
+			tasks: [{
+				id: "249529ED7AAB4041"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:speed_i_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:speed_ii_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:speed_iii_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:looting_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:arrow_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:cooking_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:lightning_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:experience_upgrade"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "更多的升级"
+			x: -0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"建造&d附魔小屋&r后，你便可以委托&b附魔师&r制作&6附魔书&r和&6魔法卷轴&r。"
+				""
+				"平时你需要为&b附魔师&r提供&6书&r，并在&6附魔小屋&r中设置&2“收集对象”&r，来使其&a收集经验&r。"
+				""
+				"附魔小屋等级影响&2附魔等级上限&r和&2附魔失败概率&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"你需要在&6信箱&r中选择对应&2附魔书&r或&2卷轴&r，才能使&6附魔师&r制作相应物品。附魔书的制作需要提供&6古籍&r，卷轴的制作需要&2在信箱中查看所需材料&r。"
+				""
+				"{image:kubejs:textures/task/enchanter_tower_1.png width:200 height:113 align:1}"
+			]
+			hide: true
+			icon: "minecolonies:blockhutenchanter"
+			id: "454B2E001427F930"
+			size: 1.0d
+			tasks: [{
+				id: "7BB5EB70C9CAA6FE"
+				item: "minecolonies:blockhutenchanter"
+				type: "item"
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["454B2E001427F930"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d《传送石碑》模组&r，让玩家免去了长途跋涉的烦恼。"
+				""
+				"玩家可通过瞬移卷轴、传送石等回到传送石碑。"
+			]
+			id: "22DD54825EBE5210"
+			secret: true
+			shape: "gear"
+			tasks: [{
+				id: "55DB1C55347939CE"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["454B2E001427F930"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d《车万女仆》模组&r添加了功能全面的&b女仆&r，卖萌的同时还能帮助玩家&a完成各种辅助工作&r。同时围绕女仆也添加了大量其他趣味性内容，诸如雕像、手办、坐垫等内容。"
+				""
+				"本模组拥有&a十分详细并完全汉化&r的&6指引书&r，根据&6指引书&r即可熟练游玩该模组内容。"
+			]
+			id: "415AB8BAAD892C25"
+			secret: true
+			shape: "gear"
+			tasks: [{
+				id: "353F6CB78CF7B9CF"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["454B2E001427F930"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d《奥术灯笼（Arcane-Lanterns）》模组&r能够让你利用灯笼的力量！"
+			]
+			hide_dependency_lines: false
+			icon: "arcanelanterns:lantern_maker"
+			id: "2A516FDBB7C617B9"
+			secret: true
+			shape: "gear"
+			tasks: [{
+				id: "77E30825E7939BB5"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "奥术灯笼"
+			x: -4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0446B946C1B01038"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&b《笼中生物》模组&r添加了&6生物笼&r和相关物品，你可以将生物囚禁在笼中，&2不断获取他们的掉落物&r。"
+				""
+				"首先，你需要制作本模组中两种生物笼中的一种——"
+				""
+				"&6普通生物笼&r，你需要手动收获掉落物；"
+				""
+				"&6漏式生物笼&r，带漏斗功能的生物笼，它可以将掉落物放入到下方容器中。"
+			]
+			hide: true
+			id: "1ECD98AFC0203C66"
+			shape: "gear"
+			tasks: [{
+				id: "70E00C520892FBDF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:mob_cage"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:hopping_mob_cage"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "笼中生物"
+			x: -6.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d炼金塔（炼金实验室）&r提供&b炼金术师&r岗位，可以通过&2传授配方&r，让炼金术师&a酿造药水&r。"
+				""
+				"此外，&3炼金术师&r还可以收集&6下界疣&r和&6槲寄生&r。&7（最开始需要玩家种植第一批下界疣）&r"
+				""
+				"小屋等级影响&2记录配方数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "21F43A479091E425"
+			size: 1.0d
+			tasks: [{
+				id: "6943B47F2D3AD0B1"
+				item: "minecolonies:blockhutalchemist"
+				type: "item"
+			}]
+			title: "炼金塔（炼金实验室）"
+			x: -6.5d
+			y: 6.0d
+		}
+		{
+			description: [
+				"&d《遗物》&r是一个&e饰品模组&r，添加了超过25个遗物，这些遗物有着独特且丰富的机制，既能帮助你&2应对成堆的怪物&r，也能在&2日常的休闲生活中发挥作用&r。"
+				""
+				"你需要通过&6“先进地图册”&r来寻找这些&6遗物&r。"
+				""
+				"将&6遗物&r放置在&6研究台&r上，按住&2“潜行键”&r右键&6研究台&r，可以打开交互界面，来&a确认遗物的信息&r或&a对遗物进行升级&r。"
+				""
+				"&7你需要在研究台的交互界面，先将原版经验转换为遗物经验，才能使用遗物经验对遗物进行升级等操作。&r"
+			]
+			icon: "relics:researching_table"
+			id: "04B804D914706505"
+			secret: true
+			shape: "gear"
+			tasks: [{
+				id: "4BE4E9EF18B5CBE3"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "relics"
+					}
+				}
+				type: "item"
+			}]
+			title: "神秘的遗物"
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			description: [
+				"你似乎曾在&2海洋&r中与一种奇怪的生物相遇了，它的名字叫&b唾溅兽&r，来自&d《Spit－Splat》模组&r。"
+				""
+				"你可以使用&6海带&r喂养并驯服它，在驯服之后，对其&a右键&r，可以切换它的&e行动模式&r：&2跟随玩家移动 / 原地待命（守卫）&r。"
+				""
+				"&3唾溅兽&r&2无法繁殖&r，但是对驯服后的唾溅兽使用&6海带&r，可以为其&2恢复血量&r。"
+				""
+				"它的生命十分脆弱，但拥有&2出色的攻击方式&r，或许会成为你&e殖民地的忠诚守卫&r。"
+			]
+			icon: "splat:raw_spit_splat"
+			id: "36651ED1E2A55006"
+			rewards: [{
+				count: 2
+				id: "3CE83A1BC4B4BB86"
+				item: "splat:cooked_spit_splat"
+				type: "item"
+			}]
+			secret: true
+			shape: "gear"
+			subtitle: "牢笼！飞起来喽！"
+			tasks: [{
+				icon: "splat:raw_spit_splat"
+				id: "56A8863AA8B8BFE6"
+				observe_type: 5
+				timer: 0L
+				title: "亲眼所见"
+				to_observe: "splat:spit_splat"
+				type: "observation"
+			}]
+			title: "奇怪的生物"
+			x: -6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["36651ED1E2A55006"]
+			description: ["一把可以让你拥有&2唾溅兽攻击方式&r的&e武器&r。"]
+			id: "4754AA2220E71BE9"
+			rewards: [{
+				count: 2
+				id: "3977E2AD7A75D704"
+				item: "splat:cooked_spit_splat"
+				type: "item"
+			}]
+			subtitle: "引力乱流！"
+			tasks: [{
+				id: "5636942AFFFDBAB1"
+				item: "splat:splatter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["36651ED1E2A55006"]
+			description: [
+				"——你可以将&6泼溅图腾&r视为一种&2主动使用&r的&e范围型武器&r。"
+				""
+				"手持该物品&a右键&r使用，对水花经过触碰的&2非驯服生物&r施加&e“泡牢”&r效果。"
+			]
+			hide_dependency_lines: true
+			id: "16D129B87C097B97"
+			rewards: [{
+				count: 2
+				id: "70FDC3DAACC16428"
+				item: "splat:cooked_spit_splat"
+				type: "item"
+			}]
+			subtitle: "万变水波"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "splat:splat_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "225EF654DEE74545"
+				item: {
+					Count: 1
+					id: "splat:splat_totem"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+	]
+	title: "魔法观测"
+}

@@ -19,12 +19,17 @@
 	quests: [
 		{
 			description: [
-				"New-Colony（中文名：地平线）是一款完全围绕MineColonies（模拟殖民地）的主题向整合包。"
+				"&dNew-Colony（中文名：地平线）&r是一款完全围绕MineColonies（模拟殖民地）的主题向整合包。"
 				""
 				"整个整合包流程围绕模拟殖民地展开，通过筛选相关Mod，并且进行前、中、后期的内容微调，使得整个模拟殖民地的发展流程更为顺滑、轻松。"
 			]
 			icon: "kubejs:master_certificate"
 			id: "6A8DF9B51A9B903B"
+			rewards: [{
+				id: "444A18FC96A4A5D8"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
 			size: 1.0d
 			subtitle: "写在最前面"
 			tasks: [{
@@ -33,7 +38,7 @@
 				type: "checkmark"
 			}]
 			x: -3.5d
-			y: -2.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["779E65894BD0E534"]
@@ -58,17 +63,24 @@
 				""
 				"&2海洋主题：&r会掉落便于海上放置的&6补给船&r。"
 			]
+			icon: {
+				Count: 1
+				id: "kubejs:newer_atlas"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "48FD6C4DE7C8B59A"
 			rewards: [{
-				id: "00A0AE1CA95A0FF1"
-				table_id: 3054476279840700017L
-				title: "随机技能书"
-				type: "random"
+				id: "2D0F2C9039E1564C"
+				item: "kubejs:skill_book_agility"
+				type: "item"
 			}]
+			shape: "gear"
 			size: 1.0d
 			subtitle: "怀揣地图，呼叫支援"
 			tasks: [{
-				id: "5B64A75BDE482865"
+				id: "16B41D0A6441E832"
 				item: {
 					Count: 1
 					ForgeCaps: {
@@ -82,180 +94,8 @@
 				type: "item"
 			}]
 			title: "新手地图册"
-			x: 0.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: [
-				"&7——地图册添加的本意就是为了提供一个将探索与发展结合的方式，避免了长期的挖矿/伐木的无聊过程。&r"
-				""
-				"在&6新手地图册&r的奖励中，你可以获取到普通的&6地图册&r。该地图册拥有着&26点地图册耐久&r，并且可以呼叫&2相对比较全的主题奖励&r。"
-				""
-				"但是，这种普通地图册的&5奖励系数&r并不高，且一次只能呼叫一个空投气球，收集效率较低。"
-				""
-				"你可以在铁砧中通过&6金胡萝卜&r升级&6满耐久的普通地图册&r，得到&6社群地图册&r。&7（你可以使用书本修复普通地图册的耐久）&r"
-				""
-				"&6社群地图册&r可以&e一次性呼叫多个空投气球&r，但是其不能使用书本进行修复，且耐久更低。"
-			]
-			id: "12B4A667D16DFF5E"
-			rewards: [
-				{
-					id: "0141515097A870AA"
-					table_id: 3054476279840700017L
-					title: "随机地图册"
-					type: "random"
-				}
-				{
-					id: "7121CE406A4E9D32"
-					item: {
-						Count: 1
-						id: "kubejs:atlas_theme_nametag"
-						tag: {
-							itemId: "kubejs:sociality_atlas"
-							theme: "raw_ore"
-						}
-					}
-					type: "item"
-				}
-			]
-			size: 1.0d
-			subtitle: "更快捷的资源获取"
-			tasks: [
-				{
-					id: "1AC4BE01F0E7A0E1"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"curios:item": { }
-						}
-						id: "kubejs:common_atlas"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "79C9462CF0A438A9"
-					item: {
-						Count: 1
-						ForgeCaps: {
-							"curios:item": { }
-						}
-						id: "kubejs:sociality_atlas"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
-			title: "更多地图册"
-			x: 3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["12B4A667D16DFF5E"]
-			description: [
-				"&7——传言，地图册主题的出现是完全等概率随机的。&r"
-				""
-				"在某些特殊场景下，你可能会获取到一种名为&6地图主题牌&r的特殊物品。它可以&2强制修改&r一个地图册的&5主题类型&r，而避免随机到不想要的类型。"
-				""
-				"&6地图主题牌&r有着&e两个属性&r规定了它的&e使用范围&r，即："
-				""
-				"——能够被修改的地图册类型"
-				""
-				"——定义的主题类型"
-				""
-				"&6地图主题牌&r与其描述相对应的地图册合成之后，&6地图册&r就会携带主题牌所描述的主题。"
-				"{@pagebreak}"
-				"&c请注意，有一些主题牌是允许所有地图册与其合成，但其规定的主题，只有少部分地图册拥有。&r"
-				""
-				"当一个地图册被定义了自己不能满足的主题时，其呼唤空投的结果&c仍将是随机&r！你可以通过EMI来查看一个地图册允许的所有主题。&7（如下图）&r"
-				""
-				"{image:kubejs:textures/task/atlas_1.png width:120 height:116 align:1}"
-				""
-				"{@pagebreak}"
-				"将&6地图主题牌&r使用在&6社群地图册&r上是一个非常好的主意。"
-				""
-				"因为社群地图册会一次性召唤多个空投气球，相当于能够&e成倍的提高主题牌的效率&r。"
-				""
-				"但是社群地图册其空投内容与普通地图册的空投内容一致，因此&2不能用此种方法大量获取高级地图册的稀有资源&r。"
-			]
-			id: "3113C02082E4DDB6"
-			rewards: [{
-				id: "3B9673E79FD2067D"
-				table_id: 3054476279840700017L
-				title: "随机技能书"
-				type: "random"
-			}]
-			size: 1.0d
-			subtitle: "我就要这个！立刻！"
-			tasks: [{
-				id: "7A6A1F0D3D606316"
-				item: {
-					Count: 1
-					id: "kubejs:atlas_theme_nametag"
-					tag: { }
-				}
-				match_nbt: false
-				type: "item"
-				weak_nbt_match: true
-			}]
-			title: "地图主题牌"
-			x: 7.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: [
-				"在任务奖励和一部分赏金的悬赏奖励中，你会获取到&c力量之书&r、&2敏捷之书&r、&b智力之书&r的奖励。"
-				""
-				"手持书本右键，你可以获取一个技能点数，通过按下&2打开技能树按键&r（默认K），在对应的技能树中，你可以消耗技能点数来提高某些方面的属性。"
-				""
-				"每个技能树允许的&2技能点数上限为30&r（包含根节点31），技能总共分为4个Tier，每个技能树包含6个大的分支方向。"
-				""
-				"如果需要突破技能点数上限的限制，你需要在&4超限&r节点中研发对应的科技，并且制作出超限技能书。"
-			]
-			icon: "kubejs:skill_book_strength"
-			id: "13BCDD950336C1F4"
-			rewards: [{
-				id: "26416B4AA598045D"
-				item: "kubejs:skill_forget_book"
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "获取技能点数！"
-			tasks: [{
-				icon: "kubejs:skill_book_strength"
-				id: "322A744D07AD3DFF"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:skill_book_intelligence"
-							}
-							{
-								Count: 1b
-								id: "kubejs:skill_book_agility"
-							}
-							{
-								Count: 1b
-								id: "kubejs:skill_book_strength"
-							}
-						]
-					}
-				}
-				title: "任意技能书"
-				type: "item"
-			}]
-			title: "技能之书"
-			x: 3.0d
-			y: 0.5d
+			x: 1.5d
+			y: -7.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
@@ -264,50 +104,21 @@
 				""
 				"通过手持&6补给船&r/&6补给营地&r，你可以直接放置一个前期可用的&2营地建筑&r。"
 				""
-				"&c慢着，先不要着急放置营地！&r在你放置之前，有一些必要的知识是你需要了解的。"
+				"&c慢着，先不要着急放置营地！&r在你放置之前，有一些&a必要的知识&r是你需要了解的。"
 				""
-				"在后续的发展过程中，大量类似的操作会被涉及，我们会在后面详细的描述如何正确使用它。"
+				"在后续的发展过程中，大量类似的操作会被涉及，我们会在&d《主线－模拟殖民地》章节&r中详细描述如何正确使用它。"
 				""
-				"&7点击右下角以翻页。&r"
-				""
-				"{@pagebreak}"
-				"在你右键地面放置补给营地时，其会弹出一个提示框，来询问你是否需要选择某种&2风格包&r，以及是否&2确认放置位置&r。"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_1.png width:180 height:115 align:1}"
-				""
-				"{@pagebreak}"
-				"&c--风格包--&r"
-				""
-				"即&2建筑风格&r。同种类型的建筑，会在不同的风格包里有完全不同的&2外观&r和&2材料需求&r。你可以在此处挑选你喜欢的风格。"
-				""
-				"点击&2选择按钮&r，你便可以将该建筑改为选中的风格。"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_2.png width:180 height:100 align:1}"
-				"{@pagebreak}"
-				"&c--确认放置位置--&r"
-				""
-				"进入&2确认放置位置&r界面，你可以在此界面控制建筑的具体位置。&c最好在确认位置无误后再选择放置营地！&r"
-				""
-				"&e选择风格&r：点击此处，你可以&2更换风格包&r并预览。"
-				""
-				"&6操作面板&r：可以在这里对蓝图进行&2水平位移、上下位移、旋转&r的操作。"
-				""
-				"&b固体占位符&r：顾名思义，&2蓝图中该位置并不存在方块&r，其允许任何种类的固体方块放置在此处。这通常用于保证蓝图被放置在一个合法的位置。"
-				""
-				"&c取消建造&r：取消此次建造。&7（如果你只是想要操控自身角色移动，按ESC键即可，无需取消建造。之后只需再手持补给营地右键即可再次打开该界面。）&r"
-				""
-				"&a开始建造&r：点击后&2直接进行建造&r。"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_3.png width:180 height:134 align:1}"
+				"&c详细内容请前往《主线－模拟殖民地》中查看。&r"
 			]
 			icon: "minecolonies:supplycampdeployer"
 			id: "3B3395C72863B7EC"
 			rewards: [{
-				id: "4E566A64A3E5197D"
-				table_id: 3054476279840700017L
-				title: "随机技能书"
-				type: "random"
+				count: 8
+				id: "71C28242968861D8"
+				item: "farmersdelight:fruit_salad"
+				type: "item"
 			}]
+			shape: "gear"
 			size: 1.0d
 			subtitle: "这是属于我的土地"
 			tasks: [{
@@ -333,172 +144,8 @@
 				type: "item"
 			}]
 			title: "补给营地"
-			x: 3.0d
-			y: -2.5d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: [
-				"在&6新手地图册&r中，你会获得名为&6大师认证&r的特殊物品。"
-				""
-				"在你完成市政厅的放置之后，你可以手持&6大师认证&r，&2右键任意镇民&r，使其属性得到巨大的提升。"
-				""
-				"&6大师认证&r将会随机选取市民的三个属性，并将其设置为50级。"
-				""
-				"大师认证是一种&4超限&r物品，在后续你会了解到更多关于&4超限&r物品的信息。"
-			]
-			id: "00449E381E9DED1E"
-			rewards: [{
-				id: "1BDD24A28CBD1437"
-				table_id: 7517863136333816811L
-				title: "随机灵魂宝石"
-				type: "random"
-			}]
-			size: 1.0d
-			subtitle: "我命你为将军，那你即是将军"
-			tasks: [{
-				id: "6A249311BCD0D6BE"
-				item: "kubejs:master_certificate"
-				type: "item"
-			}]
-			title: "大师认证"
-			x: 3.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["13BCDD950336C1F4"]
-			description: ["通过&2右键&r使用&6遗忘之书&r，你可以重置现在已经分配的所有技能点数。"]
-			id: "4A4AC7A1A063772E"
-			rewards: [{
-				id: "130C76C3A0D7FA4D"
-				table_id: 3054476279840700017L
-				title: "随机技能书"
-				type: "random"
-			}]
-			size: 1.0d
-			subtitle: "一忘皆空"
-			tasks: [{
-				id: "4C10F6504C606D90"
-				item: "kubejs:skill_forget_book"
-				type: "item"
-			}]
-			title: "遗忘之书"
-			x: 7.0d
-			y: 0.5d
-		}
-		{
-			dependencies: ["00449E381E9DED1E"]
-			description: [
-				"作为&c大师凭证&r的下位替代，你可以使用灵魂宝石定向的提升镇民的属性。"
-				""
-				"灵魂宝石默认情况下仅能够一次提升镇民的对应等级1级，但是这个数值会受玩家的&2教育能力&r以及&6灵魂宝石&r的阶级影响。"
-				""
-				"玩家每有1&2教育能力&r，则可以额外提升镇民1级的对应等级；&6灵魂宝石&r每有1阶级，则会额外提升镇民对应等级1级。"
-			]
-			icon: "kubejs:soul_gem_agility"
-			id: "23F6E3B65FF3CAFA"
-			rewards: [{
-				id: "796E8FA3AEB40083"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"curios:item": { }
-					}
-					id: "kubejs:common_citrine_ring"
-				}
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "向你的灵魂中灌注知识"
-			tasks: [{
-				icon: "kubejs:soul_gem_agility"
-				id: "543D15D354F5CF0C"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_mana"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_intelligence"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_dexterity"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_focus"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_athletics"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_creativity"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_agility"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_strength"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_knowledge"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_stamina"
-							}
-							{
-								Count: 1b
-								id: "kubejs:soul_gem_adaptability"
-							}
-						]
-					}
-				}
-				title: "任意灵魂宝石"
-				type: "item"
-			}]
-			title: "灵魂宝石"
-			x: 7.0d
-			y: -1.0d
-		}
-		{
-			dependencies: ["12B4A667D16DFF5E"]
-			description: [
-				"&b《遗物》&r是一个&e饰品模组&r，添加了超过25个遗物，这些遗物有着独特且丰富的机制，既能帮助你&2应对成堆的怪物&r，也能在&2日常的休闲生活中发挥作用&r。"
-				""
-				"你需要通过&6“先进地图册”&r来寻找这些&6遗物&r。"
-				""
-				"将&6遗物&r放置在&6研究台&r上，按住&2“潜行键”&r&e右键&r&6研究台&r，可以打开交互界面，来&2确认遗物的信息&r或&2对遗物进行升级&r。"
-				""
-				"&7你需要在研究台的交互界面，先将原版经验转换为遗物经验，才能使用遗物经验对遗物进行升级等操作。&r"
-			]
-			icon: "relics:researching_table"
-			id: "04B804D914706505"
-			tasks: [{
-				id: "4BE4E9EF18B5CBE3"
-				item: {
-					Count: 1
-					id: "itemfilters:mod"
-					tag: {
-						value: "relics"
-					}
-				}
-				type: "item"
-			}]
-			title: "神秘的遗物"
-			x: 3.0d
-			y: -6.0d
+			x: 4.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6A8DF9B51A9B903B"]
@@ -509,35 +156,52 @@
 				""
 				"&e菱形：&r提示类文本，一般为某些内容说明。"
 				""
-				"&6齿轮形：&r代表本任务为某个玩法类目的开端。"
+				"&d齿轮形：&r代表本任务为某个玩法类目的开端。"
 				""
 				"&c正方形：&r关键任务，代表该任务十分重要。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"本整合包中，对除特殊情况下的任务文本的颜色使用做了规范："
+				""
+				"白色：普通正文文本。"
+				""
+				"&2暗绿色：&r三级强调文本。"
+				""
+				"&a亮绿色：&r次级强调文本。"
+				""
+				"&e亮黄色：&r高级强调文本。"
+				""
+				"&4暗红色：&r次级警示。"
+				""
+				"&c亮红色：&r高级警示。"
+				""
+				"&d亮紫色：&r引用模组名称、专有名词，或者是殖民地小屋结构&7（而非小屋方块）&r。"
+				""
+				"&6橙色：&r方块、物品。"
+				""
+				"&b亮蓝色：&r某实体第一次于该页中出现。"
+				""
+				"&3暗蓝色：&r某实体第二次即之后于该页中出现。"
+				""
+				"&7灰色：&r标注与解释。"
 			]
 			icon: "ftbquests:book"
 			id: "779E65894BD0E534"
+			rewards: [{
+				id: "307FF1218BE5FBE4"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}]
+			subtitle: "图形与文本规范"
 			tasks: [{
 				id: "5BE9A882EAA28B97"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "任务分类指引"
-			x: -1.5d
-			y: -2.0d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: ["你可以通过在&6附魔台&r中为&6地图册&r附魔&5“修复类附魔”&r而使其可以恢复耐久。"]
-			icon: "minecraft:oak_hanging_sign"
-			id: "387D762CB9FA7CA6"
-			shape: "diamond"
-			tasks: [{
-				id: "01B8FADB76626F36"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "再利用"
-			x: 0.5d
-			y: -4.0d
+			x: -1.0d
+			y: -7.0d
 		}
 	]
 	title: "引入"

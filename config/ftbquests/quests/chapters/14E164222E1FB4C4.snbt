@@ -1,0 +1,319 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "14E164222E1FB4C4"
+	group: "3C78FA35C49B788B"
+	icon: "minecolonies:blockhutminer"
+	id: "14E164222E1FB4C4"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d矿井&r可以提供两种岗位——&b采石工&r和&b矿工&r。"
+				""
+				"&d矿井&r的运作需要提供&2填充方块、台阶、栅栏、火把和梯子&r。"
+				""
+				"&c需要在卫兵塔中安排守卫巡逻矿井，避免矿工受到怪物攻击。&r"
+			]
+			hide: true
+			id: "19A82DA478C4E234"
+			size: 1.0d
+			subtitle: "探索与挖掘"
+			tasks: [{
+				id: "058429F59574ECBE"
+				item: "minecolonies:blockhutminer"
+				type: "item"
+			}]
+			x: -16.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["19A82DA478C4E234"]
+			description: [
+				"&d简易采石场&r是玩家可以雇佣&b采石工&r挖掘&6圆石&r的建筑。"
+				""
+				"&c请注意，你必须先从矿井雇佣采石工，然后将他们分配到采石场。&r"
+				""
+				"&7简易采石场只会产出它挖出的方块，它不会像矿井一样产生额外的矿石方块。&r"
+				""
+				"&7如果在建筑工具页面没有找到采石场，请尝试切换主题包。&r"
+			]
+			id: "34749243B92836B9"
+			size: 1.0d
+			tasks: [{
+				id: "2B673526C75BB940"
+				item: "minecolonies:simplequarry"
+				type: "item"
+			}]
+			x: -14.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["34749243B92836B9"]
+			description: ["用途同&b简易采石场&r，&2提供的挖掘区域更大&r。"]
+			id: "20FC6394B95B770D"
+			size: 1.0d
+			tasks: [{
+				id: "78B881390BC84A05"
+				item: "minecolonies:mediumquarry"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d石匠小屋&r提供&b石匠&r岗位，可以通过&2传授配方&r，委托制作&a以石材为主的&r相关建筑方块。"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "18F90940D1149A7C"
+			size: 1.0d
+			tasks: [{
+				id: "12B6D45D977B408E"
+				item: "minecolonies:blockhutstonemason"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["18F90940D1149A7C"]
+			description: [
+				"&d石材冶炼厂&r提供&b冶石工&r岗位，可以通过&2传授配方&r，提供燃料和物品，委托&a以石材为主的相关冶炼&r。&7（例如把圆石变成石头，石砖变成裂石砖，粘土变成红砖，粘土块变成陶瓦）&r"
+				""
+				"小屋等级影响&2熔炉数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+				""
+				"&8也许你可以尝试冶炼原木？&r"
+			]
+			id: "3A9912D003A39F1A"
+			size: 1.0d
+			tasks: [{
+				id: "4352F048D1BED03B"
+				item: "minecolonies:blockhutstonesmeltery"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["18F90940D1149A7C"]
+			description: [
+				"&d粉碎工小屋&r提供&b粉碎工&r岗位，可以&a粉碎部分方块得到新的方块&r。&7（如粉碎圆石得到沙砾）&r"
+				""
+				"小屋等级影响&2每日产量上限&r。"
+			]
+			id: "0BF1FF78E076D298"
+			size: 1.0d
+			tasks: [{
+				id: "564C497F0BB60B57"
+				item: "minecolonies:blockhutcrusher"
+				type: "item"
+			}]
+			title: "粉碎工小屋"
+			x: -12.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["0BF1FF78E076D298"]
+			description: ["&d混凝土小屋&r提供&b混凝土工人&r岗位，可进行各种&a混凝土粉末和混凝土&r的制作。"]
+			id: "5CDBAD64446E28DF"
+			size: 1.0d
+			tasks: [{
+				id: "11C72D628FD6C41C"
+				item: "minecolonies:blockhutconcretemixer"
+				type: "item"
+			}]
+			x: -10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"73EBA454E698D18A"
+				"19A82DA478C4E234"
+			]
+			description: [
+				"&d冶炼厂&r提供&b冶炼工人&r岗位，可以通过&2传授配方&r，提供燃料和矿石，委托&a冶炼矿物&r。"
+				""
+				"小屋等级影响&2熔炉数量&r和&2多倍矿物产出的概率&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide: true
+			id: "3F88645467A477F1"
+			size: 1.0d
+			tasks: [{
+				id: "48BFDAC31776DCDF"
+				item: "minecolonies:blockhutsmeltery"
+				type: "item"
+			}]
+			title: "冶炼厂"
+			x: -14.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3F88645467A477F1"]
+			description: [
+				"&d玻璃工小屋&r提供&b玻璃工&r岗位，可以通过&2传授配方&r，提供燃料和沙子，委托炼制&2玻璃&r，并且&d玻璃工&r可以制作&a玻璃相关&r的建筑方块。"
+				""
+				"小屋等级影响&2熔炉数量&r和&2记录配方数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "6DCAD4D5FA9F6D82"
+			size: 1.0d
+			tasks: [{
+				id: "0985D49419EEDDB3"
+				item: "minecolonies:blockhutglassblower"
+				type: "item"
+			}]
+			x: -12.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d铁匠铺&r提供&b铁匠&r岗位，可以通过&2传授配方&r，委托制作&a以金属矿石为主&r的各种工具、装备和方块。"
+				""
+				"小屋等级影响当前记载配方的数量。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "7EEABD8A13DE4354"
+			size: 1.0d
+			tasks: [{
+				id: "23B1FFAD500222B7"
+				item: "minecolonies:blockhutblacksmith"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7EEABD8A13DE4354"]
+			description: [
+				"&d机械师小屋&r提供&b机械师&r岗位，可以通过&2传授配方&r，委托制作&a以红石机械为主&r的各种方块。"
+				""
+				"小屋等级影响当前记载配方的数量。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "56D64129207D0604"
+			size: 1.0d
+			tasks: [{
+				id: "36F1CDE220B6955E"
+				item: "minecolonies:blockhutmechanic"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["56D64129207D0604"]
+			description: [
+				"&6城门&r只能由&d机械师小屋&r的&b机械师&r制作。"
+				""
+				"&6城门&r就像门一样，但&2对袭击者来说更难破坏&r。"
+				""
+				"&6铁质城门&r比&6木质城门&r需要更长的时间才能被袭击者破坏。"
+			]
+			icon: "minecolonies:gate_wood"
+			id: "2B39DF27B78AF40E"
+			size: 1.0d
+			tasks: [{
+				id: "3497E40754E81942"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecolonies:gate_wood"
+							}
+							{
+								Count: 1b
+								id: "minecolonies:gate_iron"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "城门"
+			x: -10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d下界矿井&r提供&b下界矿工&r岗位，&d下界矿工&r会开启下界传送门以&2前往下界工作&r，并获取&e下界特有的资源&r。"
+				""
+				"小屋等级决定着下界矿工回来时带回的物品。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "74D9FE95B7D5133F"
+			size: 1.0d
+			tasks: [{
+				id: "402B2532E1C2EBDF"
+				item: "minecolonies:blockhutnetherworker"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&d锯木厂&r提供&b木匠&r岗位，可以通过&2传授配方&r，委托制作&a以木材为主的&r相关建筑方块。"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "4F82E3AEA7448084"
+			size: 1.0d
+			tasks: [{
+				id: "33D7223F767E4847"
+				item: "minecolonies:blockhutsawmill"
+				type: "item"
+			}]
+			x: -14.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4F82E3AEA7448084"]
+			description: [
+				"&d制箭工小屋&r提供&b制箭工&r岗位，可以通过&2传授配方&r，委托制作&a以“线”或“羊毛”为主的&r各种工具和方块。&7（例如弓、箭、鱼竿、画等）&r"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "69B8A61F664E3FEB"
+			size: 1.0d
+			tasks: [{
+				id: "587626F715575114"
+				item: "minecolonies:blockhutfletcher"
+				type: "item"
+			}]
+			x: -12.5d
+			y: 7.0d
+		}
+	]
+	title: "重型工业"
+}
