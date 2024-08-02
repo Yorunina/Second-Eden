@@ -1,0 +1,30 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:skill_book_intelligence",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:skill_book_strength",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:skill_book_agility",
+                    "weight": 10
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "kubejs:skill_forget_book",
+                    "weight": 3
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "random_sequence": "kubejs:loot_tables/trial_modifier/skill_book"
+}

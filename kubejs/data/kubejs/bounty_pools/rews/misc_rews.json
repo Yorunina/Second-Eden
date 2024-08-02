@@ -8,7 +8,7 @@
                 "max": 16
             },
             "unitWorth": 150,
-            "weightMult": 0.4
+            "weightMult": 0.5
         },
         "misc_rews_shulker_shell": {
             "type": "item",
@@ -29,7 +29,7 @@
                 "max": 16
             },
             "unitWorth": 300,
-            "weightMult": 0.2,
+            "weightMult": 0.3,
             "rarity": "UNCOMMON"
         },
         "misc_rews_heart_of_the_sea": {

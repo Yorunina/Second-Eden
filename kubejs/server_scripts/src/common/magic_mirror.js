@@ -25,19 +25,19 @@ global.MagicMirrorFinishUsing = (itemstack, level, entity) => {
         playerPosCompound.putString('dim', level.getDimension().toString())
         nbt.merge(playerPosCompound)
         itemstack.setNbt(nbt)
-        player.setStatusMessage(Text.translatable('msg.curios.magic_mirror.1', Number(playerPos.x()).toFixed(2), Number(playerPos.y()).toFixed(2), Number(playerPos.z()).toFixed(2)))
+        player.setStatusMessage(Text.translatable('msg.item.magic_mirror.1', Number(playerPos.x()).toFixed(2), Number(playerPos.y()).toFixed(2), Number(playerPos.z()).toFixed(2)))
         player.addItemCooldown(itemstack.id, 20 * 10)
         return itemstack
     }
     /**@type {$CompoundTag} */
     if (!itemstack.hasNBT()) {
-        player.setStatusMessage(Text.translatable('msg.curios.magic_mirror.3'))
+        player.setStatusMessage(Text.translatable('msg.item.magic_mirror.3'))
         return itemstack
     }
     let dimKey = new ResourceLocation(nbt.getString('dim'))
     let dim = Utils.getServer().getLevel(dimKey)
     player.teleportTo(dim, nbt.getDouble('x'), nbt.getDouble('y'), nbt.getDouble('z'), [], player.yaw, player.pitch)
-    player.setStatusMessage(Text.translatable('msg.curios.magic_mirror.2'))
+    player.setStatusMessage(Text.translatable('msg.item.magic_mirror.2'))
     player.addItemCooldown(itemstack.id, 20 * 5)
     return itemstack
 }

@@ -145,12 +145,12 @@
 			}
 		]
 	},
-	"healing_add_025": {
+	"healing_received_add_025": {
 		"title": {
-			"translate": "kubejs.puffskill.def.healing_add_025.title"
+			"translate": "kubejs.puffskill.def.healing_received_add_025.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.healing"
+			"translate": "kubejs.puffskill.exdesc.healing_received"
 		},
 		"frame": {
 			"type": "texture",
@@ -162,26 +162,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/healing.png"
+				"texture": "kubejs:textures/skill/healing_received.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.healing",
+					"attribute": "attributeslib:healing_received",
 					"value": 0.25,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"healing_add_05": {
+	"healing_received_add_05": {
 		"title": {
-			"translate": "kubejs.puffskill.def.healing_add_05.title"
+			"translate": "kubejs.puffskill.def.healing_received_add_05.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.healing"
+			"translate": "kubejs.puffskill.exdesc.healing_received"
 		},
 		"frame": {
 			"type": "texture",
@@ -193,14 +193,14 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/healing.png"
+				"texture": "kubejs:textures/skill/healing_received.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.healing",
+					"attribute": "attributeslib:healing_received",
 					"value": 0.25,
 					"operation": "addition"
 				}
@@ -269,12 +269,12 @@
 			}
 		]
 	},
-	"melee_damage_add_05": {
+	"attack_damage_add_05": {
 		"title": {
-			"translate": "kubejs.puffskill.def.melee_damage_add_05.title"
+			"translate": "kubejs.puffskill.def.attack_damage_add_05.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.melee_damage"
+			"translate": "kubejs.puffskill.exdesc.attack_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -286,26 +286,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/melee_damage.png"
+				"texture": "kubejs:textures/skill/attack_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "minecraft:generic.attack_damage",
 					"value": 0.5,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"melee_damage_add_1": {
+	"attack_damage_add_1": {
 		"title": {
-			"translate": "kubejs.puffskill.def.melee_damage_add_1.title"
+			"translate": "kubejs.puffskill.def.attack_damage_add_1.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.melee_damage"
+			"translate": "kubejs.puffskill.exdesc.attack_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -317,26 +317,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/melee_damage.png"
+				"texture": "kubejs:textures/skill/attack_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "minecraft:generic.attack_damage",
 					"value": 1,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"melee_damage_add_2": {
+	"attack_damage_add_2": {
 		"title": {
-			"translate": "kubejs.puffskill.def.melee_damage_add_2.title"
+			"translate": "kubejs.puffskill.def.attack_damage_add_2.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.melee_damage"
+			"translate": "kubejs.puffskill.exdesc.attack_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -348,26 +348,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/melee_damage.png"
+				"texture": "kubejs:textures/skill/attack_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "minecraft:generic.attack_damage",
 					"value": 2,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"melee_damage_multiply_base_025": {
+	"attack_damage_multiply_base_025": {
 		"title": {
-			"translate": "kubejs.puffskill.def.melee_damage_multiply_base_025.title"
+			"translate": "kubejs.puffskill.def.attack_damage_multiply_base_025.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.melee_damage"
+			"translate": "kubejs.puffskill.exdesc.attack_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -379,14 +379,14 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/melee_damage.png"
+				"texture": "kubejs:textures/skill/attack_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_skills:player.melee_damage",
+					"attribute": "minecraft:generic.attack_damage",
 					"value": 0.25,
 					"operation": "multiply_base"
 				}

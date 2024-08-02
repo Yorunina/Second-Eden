@@ -48,37 +48,37 @@
 		"root": false
 	},
 	"0k1fhgewre2ocp8b": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 36.95041722813605,
 		"y": 0,
 		"root": false
 	},
 	"8ik7igohv0plvoho": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 110.85125168440814,
 		"y": 0,
 		"root": false
 	},
 	"a1c11y6qwdm49x01": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 184.75208614068023,
 		"y": 0,
 		"root": false
 	},
 	"0mu1b4iykjlpad7p": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 258.6529205969523,
 		"y": 0,
 		"root": false
 	},
 	"qy3y2l298c07qo91": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 73.9008344562721,
 		"y": 0,
 		"root": false
 	},
 	"x8wljn46x7py1w89": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 221.70250336881628,
 		"y": 0,
 		"root": false
@@ -96,49 +96,49 @@
 		"root": false
 	},
 	"nxpznyyl0cf5hkn7": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -18.475208614068023,
 		"y": -32,
 		"root": false
 	},
 	"qb22h80rqwra0ppp": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -55.42562584220407,
 		"y": -96,
 		"root": false
 	},
 	"l1w39q4s5nh44mcl": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -92.37604307034012,
 		"y": -160,
 		"root": false
 	},
 	"uwgy8m5g6i4a0c7h": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -129.32646029847615,
 		"y": -224,
 		"root": false
 	},
 	"ibmexjuq88c9rx9p": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -36.95041722813605,
 		"y": -64,
 		"root": false
 	},
 	"w9cx3d8kue4k0cr5": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -110.85125168440814,
 		"y": -192,
 		"root": false
 	},
 	"bv0zi58jx2ija90a": {
-		"definition": "melee_damage_add_2",
+		"definition": "attack_damage_add_2",
 		"x": -73.9008344562721,
 		"y": -128,
 		"root": false
 	},
 	"9ymf2oh0ywlfo8ps": {
-		"definition": "melee_damage_multiply_base_025",
+		"definition": "attack_damage_multiply_base_025",
 		"x": -147.8016689125442,
 		"y": -256,
 		"root": false
@@ -312,25 +312,25 @@
 		"root": false
 	},
 	"uyes9zbg3rap00ut": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -129.32646029847615,
 		"y": -96,
 		"root": false
 	},
 	"qqrvkslglkoo14dc": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -18.475208614068023,
 		"y": -160,
 		"root": false
 	},
 	"gz1djvykxfmn7t38": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -166.27687752661222,
 		"y": -160,
 		"root": false
 	},
 	"vfv8d8sufqbqeqt3": {
-		"definition": "melee_damage_add_1",
+		"definition": "attack_damage_add_1",
 		"x": -55.425625842204056,
 		"y": -224,
 		"root": false
@@ -348,25 +348,25 @@
 		"root": false
 	},
 	"2uqrbxpm1s0w2ad5": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 147.8016689125442,
 		"y": -64,
 		"root": false
 	},
 	"qy439zb51bcnnelb": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 147.8016689125442,
 		"y": 64,
 		"root": false
 	},
 	"a6tgsjogj875f0yi": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 221.70250336881628,
 		"y": 64,
 		"root": false
 	},
 	"c471imzbr4pvvq7b": {
-		"definition": "healing_add_05",
+		"definition": "healing_received_add_05",
 		"x": 221.70250336881625,
 		"y": -64,
 		"root": false
@@ -432,7 +432,7 @@
 		"root": false
 	},
 	"xkhxz8e063ckqnoy": {
-		"definition": "melee_damage_add_2",
+		"definition": "attack_damage_add_2",
 		"x": 221.70250336881628,
 		"y": 128,
 		"root": false
@@ -480,7 +480,7 @@
 		"root": false
 	},
 	"g9lz0m7dfmp1gnzj": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -110.85125168440814,
 		"y": -64,
 		"root": false
@@ -492,7 +492,7 @@
 		"root": false
 	},
 	"15p7tsl6pibu5czg": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 110.85125168440814,
 		"y": -64,
 		"root": false
@@ -510,7 +510,7 @@
 		"root": false
 	},
 	"1kwqceqpmrhhaf89": {
-		"definition": "melee_damage_add_05",
+		"definition": "attack_damage_add_05",
 		"x": -166.27687752661222,
 		"y": -96,
 		"root": false
@@ -522,7 +522,7 @@
 		"root": false
 	},
 	"yzf8kjaw7om7kvk2": {
-		"definition": "healing_add_025",
+		"definition": "healing_received_add_025",
 		"x": 166.27687752661222,
 		"y": -96,
 		"root": false

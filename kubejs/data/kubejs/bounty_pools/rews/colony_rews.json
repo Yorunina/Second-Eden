@@ -7,8 +7,8 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.05,
-            "rarity": "RARE",
+            "weightMult": 0.1,
+            "rarity": "EPIC",
             "unitWorth": 3000
         },
         "colony_rews_soul_gem_adaptability": {
@@ -18,7 +18,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_agility": {
@@ -28,7 +28,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_athletics": {
@@ -38,7 +38,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_creativity": {
@@ -48,7 +48,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_dexterity": {
@@ -58,7 +58,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_focus": {
@@ -68,7 +68,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_intelligence": {
@@ -78,7 +78,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_knowledge": {
@@ -88,7 +88,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_mana": {
@@ -98,7 +98,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_stamina": {
@@ -108,7 +108,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_soul_gem_strength": {
@@ -118,7 +118,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 150
         },
         "colony_rews_book_of_enlight": {
@@ -128,7 +128,7 @@
                 "min": 1,
                 "max": 64
             },
-            "weightMult": 0.5,
+            "weightMult": 0.6,
             "unitWorth": 50
         },
         "colony_rews_ancienttome": {
@@ -138,7 +138,7 @@
                 "min": 1,
                 "max": 3
             },
-            "weightMult": 0.1,
+            "weightMult": 0.2,
             "unitWorth": 800
         }
     }

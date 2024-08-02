@@ -8,7 +8,7 @@
                 "max": 1
             },
             "unitWorth": 500,
-            "weightMult": 0.6,
+            "weightMult": 0.4,
             "nbt": "{Damage:0}"
         },
         "altas_rews_common_atlas": {
@@ -19,7 +19,7 @@
                 "max": 1
             },
             "unitWorth": 250,
-            "weightMult": 1,
+            "weightMult": 0.6,
             "nbt": "{Damage:0}"
         },
         "altas_rews_sociality_atlas": {
@@ -30,7 +30,7 @@
                 "max": 1
             },
             "unitWorth": 800,
-            "weightMult": 0.4,
+            "weightMult": 0.3,
             "nbt": "{Damage:0}"
         },
         "altas_rews_wood_atlas": {
@@ -84,8 +84,9 @@
                 "min": 1,
                 "max": 1
             },
+            "rarity": "RARE",
             "unitWorth": 1200,
-            "weightMult": 0.2,
+            "weightMult": 0.1,
             "nbt": "{Damage:0}"
         },
         "altas_rews_ultra_atlas": {
@@ -95,7 +96,7 @@
                 "min": 1,
                 "max": 1
             },
-            "rarity": "RARE",
+            "rarity": "EPIC",
             "unitWorth": 1500,
             "weightMult": 0.1,
             "nbt": "{Damage:0}"

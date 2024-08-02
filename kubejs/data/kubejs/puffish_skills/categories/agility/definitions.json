@@ -145,12 +145,12 @@
 			}
 		]
 	},
-	"ranged_damage_add_05": {
+	"projectile_damage_add_005": {
 		"title": {
-			"translate": "kubejs.puffskill.def.ranged_damage_add_05.title"
+			"translate": "kubejs.puffskill.def.projectile_damage_add_005.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+			"translate": "kubejs.puffskill.exdesc.projectile_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -162,26 +162,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/ranged_damage.png"
+				"texture": "kubejs:textures/skill/projectile_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_attributes:player.ranged_damage",
-					"value": 0.5,
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.05,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"ranged_damage_add_1": {
+	"projectile_damage_add_01": {
 		"title": {
-			"translate": "kubejs.puffskill.def.ranged_damage_add_1.title"
+			"translate": "kubejs.puffskill.def.projectile_damage_add_01.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+			"translate": "kubejs.puffskill.exdesc.projectile_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -193,26 +193,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/ranged_damage.png"
+				"texture": "kubejs:textures/skill/projectile_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_attributes:player.ranged_damage",
-					"value": 1,
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.1,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"ranged_damage_add_2": {
+	"projectile_damage_add_02": {
 		"title": {
-			"translate": "kubejs.puffskill.def.ranged_damage_add_2.title"
+			"translate": "kubejs.puffskill.def.projectile_damage_add_02.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+			"translate": "kubejs.puffskill.exdesc.projectile_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -224,26 +224,26 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/ranged_damage.png"
+				"texture": "kubejs:textures/skill/projectile_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_attributes:player.ranged_damage",
-					"value": 2,
+					"attribute": "attributeslib:arrow_damage",
+					"value": 0.2,
 					"operation": "addition"
 				}
 			}
 		]
 	},
-	"ranged_damage_multiply_base_025": {
+	"projectile_damage_multiply_base_025": {
 		"title": {
-			"translate": "kubejs.puffskill.def.ranged_damage_multiply_base_025.title"
+			"translate": "kubejs.puffskill.def.projectile_damage_multiply_base_025.title"
 		},
 		"extra_description": {
-			"translate": "kubejs.puffskill.exdesc.ranged_damage"
+			"translate": "kubejs.puffskill.exdesc.projectile_damage"
 		},
 		"frame": {
 			"type": "texture",
@@ -255,14 +255,14 @@
 		"icon": {
 			"type": "texture",
 			"data": {
-				"texture": "kubejs:textures/skill/ranged_damage.png"
+				"texture": "kubejs:textures/skill/projectile_damage.png"
 			}
 		},
 		"rewards": [
 			{
 				"type": "puffish_skills:attribute",
 				"data": {
-					"attribute": "puffish_attributes:player.ranged_damage",
+					"attribute": "attributeslib:arrow_damage",
 					"value": 0.25,
 					"operation": "multiply_base"
 				}

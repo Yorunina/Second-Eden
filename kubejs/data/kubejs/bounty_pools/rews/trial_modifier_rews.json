@@ -1,0 +1,100 @@
+{
+    "content": {
+        "trial_modifier_rews_building_gift_box": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.05,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/building_gift_box\",lootTableIdentifier:\"building_gift_box\"}"
+        },
+        "trial_modifier_rews_wool": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/wool\",lootTableIdentifier:\"wool\"}"
+        },
+        "trial_modifier_rews_wood": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/wood\",lootTableIdentifier:\"wood\"}"
+        },
+        "trial_modifier_rews_stone": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/stone\",lootTableIdentifier:\"stone\"}"
+        },
+        "trial_modifier_rews_ore": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/ore\",lootTableIdentifier:\"ore\"}"
+        },
+        "trial_modifier_rews_skill_book": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/skill_book\",lootTableIdentifier:\"skill_book\"}"
+        },
+        "trial_modifier_rews_nether": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\",lootTable:\"kubejs:trial_modifier/nether\",lootTableIdentifier:\"nether\"}"
+        },
+        "trial_modifier_rews_default": {
+            "type": "item",
+            "content": "kubejs:trial_modifier",
+            "amount": {
+                "min": 1,
+                "max": 1
+            },
+            "unitWorth": 2000,
+            "weightMult": 0.1,
+            "rarity": "RARE",
+            "nbt": "{applyType:\"trial_vault\"}"
+        }
+    }
+}

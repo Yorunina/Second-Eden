@@ -8,7 +8,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "weightMult": 0.2
+            "weightMult": 0.5
         },
         "skill_book_rews_skill_book_intelligence": {
             "type": "item",
@@ -18,7 +18,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "weightMult": 0.2
+            "weightMult": 0.5
         },
         "skill_book_rews_skill_book_agility": {
             "type": "item",
@@ -28,7 +28,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
-            "weightMult": 0.2
+            "weightMult": 0.5
         }
     }
 }

@@ -78,73 +78,73 @@
 		"root": false
 	},
 	"okyqj7i9480uwzs7": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 36.95041722813605,
 		"y": 0,
 		"root": false
 	},
 	"v28wfsq4oytca3yj": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 110.85125168440814,
 		"y": 0,
 		"root": false
 	},
 	"ke8eugy5vxa4byo7": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 184.75208614068023,
 		"y": 0,
 		"root": false
 	},
 	"3xqeuywmjjju9bs8": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 258.6529205969523,
 		"y": 0,
 		"root": false
 	},
 	"8lsc00r8c82ydeea": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 73.9008344562721,
 		"y": 0,
 		"root": false
 	},
 	"w4d2i7abey7wj1y3": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 221.70250336881628,
 		"y": 0,
 		"root": false
 	},
 	"2i5hlyl9j7ncog4e": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 221.70250336881628,
 		"y": 64,
 		"root": false
 	},
 	"yleacf5kqqbncyh5": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 221.70250336881625,
 		"y": -64,
 		"root": false
 	},
 	"kzmi1e4mn01sfnfx": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 147.8016689125442,
 		"y": -64,
 		"root": false
 	},
 	"k8teyyqlxqiwpd8p": {
-		"definition": "ranged_damage_add_1",
+		"definition": "projectile_damage_add_01",
 		"x": 147.8016689125442,
 		"y": 64,
 		"root": false
 	},
 	"rcjmclo9kvy98ia3": {
-		"definition": "ranged_damage_add_2",
+		"definition": "projectile_damage_add_02",
 		"x": 147.8016689125442,
 		"y": 0,
 		"root": false
 	},
 	"26m18gzkg4bnk4r3": {
-		"definition": "ranged_damage_multiply_base_025",
+		"definition": "projectile_damage_multiply_base_025",
 		"x": 295.6033378250884,
 		"y": 0,
 		"root": false
@@ -468,7 +468,7 @@
 		"root": false
 	},
 	"pyg8a6bhxc3fh1al": {
-		"definition": "ranged_damage_add_2",
+		"definition": "projectile_damage_add_02",
 		"x": -221.70250336881628,
 		"y": 128,
 		"root": false
@@ -504,13 +504,13 @@
 		"root": false
 	},
 	"620jfdamcuzjsdnc": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 166.27687752661222,
 		"y": -96,
 		"root": false
 	},
 	"curyuqoq5pykwc1y": {
-		"definition": "ranged_damage_add_05",
+		"definition": "projectile_damage_add_005",
 		"x": 110.85125168440814,
 		"y": 64,
 		"root": false

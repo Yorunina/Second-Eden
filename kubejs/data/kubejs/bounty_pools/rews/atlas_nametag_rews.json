@@ -19,6 +19,7 @@
                 "max": 1
             },
             "unitWorth": 1000,
+            "weightMult": 0.2,
             "nbt": "{itemId:\"kubejs:wood_atlas\",theme:\"only_wood\"}"
         },
         "atlas_nametag_rews_stone_atlas_stone": {

@@ -1,0 +1,11 @@
+{
+  "list": [
+    {
+      "id": "puffish_attributes:player.healing",
+      "intrinsic": 0.0,
+      "order": 11000,
+      "usePercent": false
+    }
+  ]
+}
+

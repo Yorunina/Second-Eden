@@ -9,9 +9,9 @@ ItemEvents.tooltip((tooltip) => {
 
     tooltip.addAdvanced('kubejs:friend_to_the_end', (item, advanced, text) => {
         if (item.nbt && item.nbt.friendName) {
-            text.add([Text.translatable("tooltips.kubejs.friend_to_the_end.1").gray(), Text.gold(item.nbt.friendName)]);
+            text.add([Text.translatable("tooltip.kubejs.friend_to_the_end.1").gray(), Text.gold(item.nbt.friendName)]);
         } else {
-            text.add([Text.translatable("tooltips.kubejs.friend_to_the_end.2").gray()]);
+            text.add([Text.translatable("tooltip.kubejs.friend_to_the_end.2").gray()]);
         }
     })
 })
