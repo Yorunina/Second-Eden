@@ -7,6 +7,8 @@
             "green": "00ff00ff"
         },
         "other": {
+            // If Glint should render on Modular Items at all
+            "enchanting_glint": true,
             // Whether Miapi materials can be animated
             "animated_materials": true,
             // Whether Miapi displays "Modular Material" when no groups are present
