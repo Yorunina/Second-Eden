@@ -103,14 +103,32 @@ ServerEvents.highPriorityData(event => {
     // 冶炼厂冶炼时，如果触发了双倍，那么会变成三倍；如果触发了三倍，那么会变成五倍
     event.addJson(`kubejs:researches/effects/smeltingmaster.json`, { "effect": true })
 
-    event.addJson(`kubejs:researches/landmarks/enderTower.json`,
+    event.addJson(`kubejs:researches/landmarks/greencastle1.json`,
         new ColonyResearchModel('kubejs:landmarks', 1, [
             new BuildingRequirementModel('townhall', 6),
             new ItemRequirementModel(['minecraft:nether_star', 1])
         ])
             .setHidden(false)
+            .setSubtitle('com.kubejs.research.landmarks.greencastle1.subtitle')
+    )
+    event.addJson(`kubejs:researches/landmarks/greencastle2.json`,
+        new ColonyResearchModel('kubejs:landmarks', 2, [
+            new BuildingRequirementModel('townhall', 6),
+            new ItemRequirementModel(['minecraft:nether_star', 1])
+        ])
+            .setParentResearch('kubejs:landmarks/greencastle1')
+            .setHidden(false)
+            .setSubtitle('com.kubejs.research.landmarks.greencastle2.subtitle')
+    )
+    event.addJson(`kubejs:researches/landmarks/greencastle.json`,
+        new ColonyResearchModel('kubejs:landmarks', 3, [
+            new BuildingRequirementModel('townhall', 6),
+            new ItemRequirementModel(['minecraft:nether_star', 1])
+        ])
+            .setParentResearch('kubejs:landmarks/greencastle2')
+            .setHidden(false)
             .setEffects([{ 'kubejs:effects/enderpostman': 1 }])
-            .setSubtitle('com.kubejs.research.landmarks.enderTower.subtitle')
+            .setSubtitle('com.kubejs.research.landmarks.greencastle.subtitle')
     )
     // 快递员总会在递送的时候尝试使用末影能量传送到目标建筑的方块地点
     event.addJson(`kubejs:researches/effects/enderpostman.json`, { "effect": true })

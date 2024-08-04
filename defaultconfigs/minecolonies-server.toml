@@ -89,13 +89,13 @@
 	minColonyDistance = 8
 	#殖民地的初始领地范围。半径，以区块为单位。 [默认：4，最小：1，最大：15]
 	#Range: 1 ~ 15
-	initialColonySize = 4
+	initialColonySize = 5
 	#殖民地距离世界出生点的最大距离 (单位：方块) [默认：30000，最小：1000，最大：2147483647]
 	#Range: > 1000
-	maxdistancefromworldspawn = 30000
+	maxdistancefromworldspawn = 300000
 	#殖民地距离世界出生点的最小距离 (单位：方块) [默认：0，最小：0，最大：1000]
 	#Range: 0 ~ 1000
-	mindistancefromworldspawn = 0
+	mindistancefromworldspawn = 300
 
 #所有的配置选项均与模拟殖民地的战斗元素有关
 [combat]

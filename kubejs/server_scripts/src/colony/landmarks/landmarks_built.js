@@ -76,6 +76,20 @@ const SpecialBuildRequestCompletedStrategy = {
         if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/pantheon', 1)) return false
         return true
     },
+    'ColonyLandMarks/GreenCastle1': (event) => {
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/greencastle1', 1)) return false
+        if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/greencastle1', 'kubejs:landmarks/greencastle2'])) {
+            if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/greencastle', 1)) return false
+        }
+        return true
+    },
+    'ColonyLandMarks/GreenCastle2': (event) => {
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/greencastle2', 1)) return false
+        if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/greencastle1', 'kubejs:landmarks/greencastle2'])) {
+            if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/greencastle', 1)) return false
+        }
+        return true
+    },
 }
 
 

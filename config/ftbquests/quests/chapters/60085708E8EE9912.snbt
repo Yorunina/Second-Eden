@@ -5,7 +5,7 @@
 	group: "2850793BEA39A36A"
 	icon: "minecolonies:blockhutcitizen"
 	id: "60085708E8EE9912"
-	order_index: 0
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,14 +23,14 @@
 				item: "minecraft:melon_slice"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "1F8C6F3E947CDE45"
 				item: "minecolonies:blockhutbaker"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: -8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -51,15 +51,15 @@
 				item: "minecraft:sweet_berries"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "民以食为本"
 			tasks: [{
 				id: "7D9A71834FD1EA0C"
 				item: "minecolonies:blockhutcook"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -69,7 +69,7 @@
 			description: [
 				"&7——现在你可以为殖民地的餐厅雇佣“农夫乐事厨师”了。&r"
 				""
-				"&d《农夫乐事》模组&r主要丰富了&a耕作&r与&a烹饪&r方面的内容，并为现有的物品和方块提供了&2更多用途&r。"
+				"&d<农夫乐事>模组&r主要丰富了&a耕作&r与&a烹饪&r方面的内容，并为现有的物品和方块提供了&2更多用途&r。"
 				""
 				"其&a烹饪方面&r的内容&e均有合成配方可供查询&r，所以你可以在&dJEI搜素框&r中输入&d“@farmer”&r来查询该模组的食物及配方。"
 			]
@@ -83,14 +83,15 @@
 				type: "item"
 			}]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "4C7E9AE35392811A"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "农夫乐事"
-			x: 3.5d
-			y: 1.0d
+			x: 12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -111,15 +112,15 @@
 				table_id: 7517863136333816811L
 				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "并容偏覆"
 			tasks: [{
 				id: "2CA255F5A05DEC82"
 				item: "minecolonies:blockhuttavern"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 1.0d
+			x: -8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -140,15 +141,15 @@
 				table_id: 7517863136333816811L
 				type: "loot"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "更多的人口"
 			tasks: [{
 				id: "03CAEA8E55A6759D"
 				item: "minecolonies:blockhutcitizen"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 1.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -163,18 +164,19 @@
 			hide_dependency_lines: true
 			id: "4F76BA638A58E005"
 			rewards: [{
-				id: "3D847E4514295571"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "1D3B8A1035927AF2"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "0CED4D9D2DF616BD"
 				item: "minecolonies:blockhutlibrary"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 4.0d
+			x: 4.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -187,18 +189,19 @@
 			hide_dependency_lines: true
 			id: "097471CA1331FC92"
 			rewards: [{
-				id: "6CBF78A7C51A21C9"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "20B12A78E40C60FF"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "44F0EB7D2F910DDD"
 				item: "minecolonies:blockhutschool"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 4.0d
+			x: -8.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -211,18 +214,19 @@
 			hide_dependency_lines: true
 			id: "0446B946C1B01038"
 			rewards: [{
-				id: "13FA220657FBB387"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "770337E538073876"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "27069757E1A61D6D"
 				item: "minecolonies:blockhutgraveyard"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.5d
+			x: -8.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -235,18 +239,19 @@
 			hide_dependency_lines: true
 			id: "2C2F1635069196EB"
 			rewards: [{
-				id: "28D0F365EFD1819C"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "08C1A97D18798920"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "2AB5DAF6681C7567"
 				item: "minecolonies:blockhutmysticalsite"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 5.5d
+			x: -2.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -261,19 +266,20 @@
 			hide_dependency_lines: true
 			id: "5EA52A6BD51F2CE1"
 			rewards: [{
-				id: "6EE957619A3F475F"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "7750DEE49D2F0468"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			size: 1.0d
+			size: 4.0d
 			tasks: [{
 				id: "076B5CFAACAA995D"
 				item: "minecolonies:blockhuthospital"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 4.0d
+			x: -2.0d
+			y: 10.0d
 		}
 	]
-	title: "公民与基础建设"
+	title: "&3公民与基础建设&r"
 }

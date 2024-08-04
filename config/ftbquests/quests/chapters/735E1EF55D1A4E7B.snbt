@@ -21,14 +21,20 @@
 			hide_dependency_lines: true
 			icon: "minecolonies:blockhutfarmer"
 			id: "08D157B06A70DAE5"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A17B584F3383FFD"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "2145F2A087FF186A"
 				item: "minecolonies:blockhutfarmer"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 6.0d
+			x: -12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["08D157B06A70DAE5"]
@@ -42,14 +48,20 @@
 			]
 			icon: "minecolonies:blockhutfield"
 			id: "0240BC60693B4004"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65F5ABB7BDB743B3"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "3CF65953A440FC10"
 				item: "minecolonies:blockhutfield"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 6.0d
+			x: -6.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -62,14 +74,20 @@
 			]
 			hide: true
 			id: "7031C2F542F45F0B"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BD63BF4BBF0D70B"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "479B1B168103DF85"
 				item: "minecolonies:blockhutshepherd"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 3.0d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -83,14 +101,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "4D9B31BA50E0ADFD"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DA69C02AA6EA4AC"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "4F9BB04189386976"
 				item: "minecolonies:blockhutchickenherder"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 3.0d
+			x: -12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -104,14 +128,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "15451D62750D643A"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C13D4C8E9BBD825"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "0FF0BAEF25CFC7FD"
 				item: "minecolonies:blockhutrabbithutch"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 4.5d
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -125,14 +155,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "133DB3E04EE28397"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C31CE0C4DD65787"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "4206B919043D5386"
 				item: "minecolonies:blockhutcowboy"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -146,14 +182,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "72C52C33BBE98EF9"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B51F7F57A62266E"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "211826E2BD9CAB35"
 				item: "minecolonies:blockhutswineherder"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 3.0d
+			x: 6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -165,14 +207,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "4419C9845823F38F"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "468B334CAA88DF47"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "0A0C4FECBDA03220"
 				item: "minecolonies:blockhutbeekeeper"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 4.5d
+			x: -6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -186,14 +234,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "1CC9C602F4D7353C"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C122CFD65491ABB"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "164CD98326F2B473"
 				item: "minecolonies:blockhutcomposter"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 9.0d
+			x: -12.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["1CC9C602F4D7353C"]
@@ -203,14 +257,20 @@
 				"小屋等级影响&2花艺师的每日产出&r。"
 			]
 			id: "5D2E815ECB08489F"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1233DA783BCC044E"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "79E71C22CA70A9A2"
 				item: "minecolonies:blockhutflorist"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 9.0d
+			x: -6.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["1CC9C602F4D7353C"]
@@ -222,14 +282,20 @@
 				"&7你可以通过信箱委托进行制作。&r"
 			]
 			id: "6BD8D7B1BB5D1DF9"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F413C8A70A9FE12"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "6EE676F528DA95C8"
 				item: "minecolonies:blockhutdyer"
 				type: "item"
 			}]
-			x: -5.5d
-			y: 10.5d
+			x: -6.0d
+			y: 28.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -244,14 +310,42 @@
 			]
 			hide: true
 			id: "3D27E2160A2C100E"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "307891E9D1C6455B"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "7110612A547A3AB3"
 				item: "minecolonies:blockhutplantation"
 				type: "item"
 			}]
-			x: -7.5d
-			y: 7.5d
+			x: -12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["4419C9845823F38F"]
+			description: ["你可以手持&6花&r吸引&b蜜蜂&r带回殖民地，或者使用&6拴绳&r。"]
+			icon: "minecraft:bee_nest"
+			id: "28A10A956C0484DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E7AE3EB34E68E24"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "将蜜蜂带回殖民地"
+			tasks: [{
+				id: "721508CDE6035778"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "蜜蜂指南"
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "农牧业"

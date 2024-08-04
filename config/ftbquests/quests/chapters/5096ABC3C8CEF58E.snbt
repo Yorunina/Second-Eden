@@ -1,0 +1,45 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5096ABC3C8CEF58E"
+	group: "5CBDF06DE32D253F"
+	icon: {
+		Count: 1
+		id: "minecolonies:build_goggles"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5096ABC3C8CEF58E"
+	images: [{
+		height: 58.0d
+		image: "kubejs:textures/task/main_3.png"
+		rotation: 0.0d
+		width: 70.0d
+		x: -1.5d
+		y: -5.0d
+	}]
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["0E140DD8AE0C7D73"]
+		hide: true
+		icon: "minecolonies:blockhutbuilder"
+		id: "5BAF7E3D5CCA4150"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "46107601DC277E93"
+			table_id: 7517863136333816811L
+			type: "loot"
+		}]
+		size: 4.0d
+		tasks: [{
+			id: "27A138C594BE7487"
+			title: "我已浏览"
+			type: "checkmark"
+		}]
+		x: 25.0d
+		y: -26.0d
+	}]
+	title: "&7殖民地－建筑工小屋&r"
+}

@@ -5,16 +5,13 @@
 	group: "2850793BEA39A36A"
 	icon: {
 		Count: 1
-		ForgeCaps: {
-			"curios:item": { }
-		}
 		id: "kubejs:newer_atlas"
 		tag: {
 			Damage: 0
 		}
 	}
 	id: "64F69B5510E73BFB"
-	order_index: 1
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
@@ -26,14 +23,20 @@
 			]
 			hide: true
 			id: "5E20F811C15B7422"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07E0EA60118A00D5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "3E3446AD082EDA29"
 				item: "minecolonies:blockhutfisherman"
 				type: "item"
 			}]
-			x: -8.0d
-			y: 1.5d
+			x: -12.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -46,7 +49,13 @@
 			]
 			hide: true
 			id: "651B42EA92797021"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49642A519DFFCBFE"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			subtitle: "伐伐伐伐伐木工"
 			tasks: [{
 				id: "4D54E4D0ADAB7CD6"
@@ -54,7 +63,7 @@
 				type: "item"
 			}]
 			x: -6.0d
-			y: 1.5d
+			y: 10.0d
 		}
 		{
 			dependencies: [
@@ -74,139 +83,24 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "01B5F051F38FCE05"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0726E6ADC20D66D5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "251878E00DB272B7"
 				item: "minecolonies:blockhutsifter"
 				type: "item"
 			}]
 			title: "筛沙工小屋"
-			x: -4.0d
-			y: 1.5d
+			x: 0.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["0E140DD8AE0C7D73"]
-			description: [
-				"&d《简单村民（Easy－Villagers）》模组&r使你能够&2更方便地进行与村民相关的操作&r。"
-				""
-				"该模组多数工作方块都可与&6漏斗&r等物流设备进行交互。"
-				""
-				"&7点击右下角以翻页。&r"
-				"{@pagebreak}"
-				"&c——操作方式——&r"
-				""
-				"&2Shift+右键&r或按下&2快捷键（默认V键）&r即可拾起村民。"
-				""
-				"&2右键&r任意位置即可放出。"
-				""
-				"手持村民&2右键&r该模组的&6各类工作方块&r，即可将其放入。"
-				""
-				"对内部装有村民的方块&2Shift+右键&r，即可取出。"
-			]
-			hide: true
-			icon: "easy_villagers:villager"
-			id: "38F1A6A4DF6F2402"
-			shape: "gear"
-			tasks: [{
-				id: "405BD3104B24394E"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "简易村民"
-			x: -8.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b村民&r和对应的&6职业方块&r，便可与村民交易。"]
-			id: "2A7DC2AAE0EDA2C0"
-			tasks: [{
-				id: "5466D44070A23908"
-				item: "easy_villagers:trader"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b2个村民&r后，放入&6食物&r，一段时间后即可繁殖出幼年村民。"]
-			hide_dependency_lines: true
-			id: "1D5398042710CA9C"
-			tasks: [{
-				id: "6E4AB36BAE709E3F"
-				item: "easy_villagers:breeder"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b村民&r后，每隔一段时间会生成&a铁傀儡的掉落物&r。"]
-			hide_dependency_lines: true
-			id: "6B7030470E895833"
-			tasks: [{
-				id: "20BEB559AD2A87A6"
-				item: "easy_villagers:iron_farm"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.5d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b村民&r和对应的&6职业方块&r，便可&a自动&r与村民交易。"]
-			hide_dependency_lines: true
-			id: "00817A647361801C"
-			tasks: [{
-				id: "47981A15E931C1F7"
-				item: "easy_villagers:auto_trader"
-				type: "item"
-			}]
-			x: -4.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["将&b幼年村民&r放入可以使其成长。"]
-			id: "0EA8560C967791EA"
-			tasks: [{
-				id: "428E147A4A94892B"
-				item: "easy_villagers:incubator"
-				type: "item"
-			}]
-			x: -6.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b农民&r和&6种子&r，一段时间后即可取出产物。&7（未绑定职业的村民自动转换为农民）&r"]
-			hide_dependency_lines: true
-			id: "6C792B6F041E4A8B"
-			tasks: [{
-				id: "42486CDAAA817C39"
-				item: "easy_villagers:farmer"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 3.5d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
-			description: ["放入&b村民&r、&6金苹果&r、&6喷溅型虚弱药水&r，转化器可自动完成村民转化，完成转化的村民&a交易会出现折扣&r。"]
-			hide_dependency_lines: true
-			id: "65CE9E4D8D58218A"
-			tasks: [{
-				id: "5ECB1D3BD40AA6EC"
-				item: "easy_villagers:converter"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 5.0d
-		}
-		{
-			dependencies: ["38F1A6A4DF6F2402"]
+			dependencies: ["74932D4C8CBD30E3"]
 			description: [
 				"&6附魔盆&r提供了一种&a新的村民职业&r——&b神秘学家&r。"
 				""
@@ -220,17 +114,20 @@
 				item: "farmersdelight:glow_berry_custard"
 				type: "item"
 			}]
+			secret: true
+			size: 4.0d
+			subtitle: "VillagersPlus"
 			tasks: [{
 				id: "7DE18166B4682F0E"
 				item: "villagersplus:occultist_table"
 				type: "item"
 			}]
 			title: "神秘学家"
-			x: -6.0d
-			y: 6.5d
+			x: 4.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["38F1A6A4DF6F2402"]
+			dependencies: ["74932D4C8CBD30E3"]
 			description: [
 				"&6炼金桌&r提供了一种&a新的村民职业&r——&b炼金术士&r。"
 				""
@@ -238,7 +135,6 @@
 				""
 				"&7艺术就是爆炸！&r"
 			]
-			hide_dependency_lines: true
 			id: "4F0B4626AB5DB718"
 			rewards: [{
 				count: 3
@@ -246,17 +142,20 @@
 				item: "delightful:cantaloupe_bread"
 				type: "item"
 			}]
+			secret: true
+			size: 4.0d
+			subtitle: "VillagersPlus"
 			tasks: [{
 				id: "06DC5D77A2EC6AA4"
 				item: { Count: 64, id: "villagersplus:alchemist_table" }
 				type: "item"
 			}]
 			title: "炼金术士"
-			x: -4.5d
-			y: 6.5d
+			x: 0.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["38F1A6A4DF6F2402"]
+			dependencies: ["74932D4C8CBD30E3"]
 			description: [
 				"&6水族馆&r提供了一种&a新的村民职业&r——&b海洋学家&r。"
 				""
@@ -270,17 +169,20 @@
 				item: "delightful:cantaloupe_bread"
 				type: "item"
 			}]
+			secret: true
+			size: 4.0d
+			subtitle: "VillagersPlus"
 			tasks: [{
 				id: "3989C5D7E55925A1"
 				item: { Count: 64, id: "villagersplus:oceanographer_table" }
 				type: "item"
 			}]
 			title: "海洋学家"
-			x: -3.0d
-			y: 6.5d
+			x: 8.0d
+			y: 16.0d
 		}
 		{
-			dependencies: ["38F1A6A4DF6F2402"]
+			dependencies: ["74932D4C8CBD30E3"]
 			description: [
 				"&6花盆&r提供了一种&a新的村民职业&r——&b园艺家&r。"
 				""
@@ -295,6 +197,9 @@
 				item: "delightful:cantaloupe_bread"
 				type: "item"
 			}]
+			secret: true
+			size: 4.0d
+			subtitle: "VillagersPlus"
 			tasks: [{
 				id: "61B359C8995D1D8E"
 				item: {
@@ -352,14 +257,12 @@
 				type: "item"
 			}]
 			title: "园艺家"
-			x: -1.5d
-			y: 6.5d
+			x: 12.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
 			description: [
-				"&7——地图册添加的本意就是为了提供一个将探索与发展结合的方式，避免了长期的挖矿/伐木的无聊过程。&r"
-				""
 				"在&6新手地图册&r的奖励中，你可以获取到普通的&6地图册&r。该地图册拥有着&26点地图册耐久&r，并且可以呼叫&2相对比较全的主题奖励&r。"
 				""
 				"但是，这种普通地图册的&5奖励系数&r并不高，且一次只能呼叫一个空投气球，收集效率较低。"
@@ -368,6 +271,7 @@
 				""
 				"&6社群地图册&r可以&e一次性呼叫多个空投气球&r，但是其不能使用书本进行修复，且耐久更低。"
 			]
+			hide: true
 			hide_dependency_lines: true
 			id: "12B4A667D16DFF5E"
 			rewards: [
@@ -390,7 +294,7 @@
 					type: "item"
 				}
 			]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "更快捷的资源获取"
 			tasks: [
 				{
@@ -423,7 +327,7 @@
 				}
 			]
 			title: "更多地图册"
-			x: -8.0d
+			x: -12.0d
 			y: -2.0d
 		}
 		{
@@ -433,26 +337,7 @@
 				""
 				"在某些特殊场景下，你可能会获取到一种名为&6地图主题牌&r的特殊物品。它可以&2强制修改&r一个地图册的&5主题类型&r，而避免随机到不想要的类型。"
 				""
-				"&6地图主题牌&r有着&e两个属性&r规定了它的&e使用范围&r，即："
-				""
-				"——能够被修改的地图册类型"
-				""
-				"——定义的主题类型"
-				""
-				"&6地图主题牌&r与其描述相对应的地图册合成之后，&6地图册&r就会携带主题牌所描述的主题。"
-				"{@pagebreak}"
-				"&c请注意，有一些主题牌是允许所有地图册与其合成，但其规定的主题，只有少部分地图册拥有。&r"
-				""
-				"当一个地图册被定义了自己不能满足的主题时，其呼唤空投的结果&c仍将是随机&r！你可以通过EMI来查看一个地图册允许的所有主题。&7（如下图）&r"
-				""
-				"{image:kubejs:textures/task/atlas_1.png width:120 height:116 align:1}"
-				""
-				"{@pagebreak}"
-				"将&6地图主题牌&r使用在&6社群地图册&r上是一个非常好的主意。"
-				""
-				"因为社群地图册会一次性召唤多个空投气球，相当于能够&e成倍的提高主题牌的效率&r。"
-				""
-				"但是社群地图册其空投内容与普通地图册的空投内容一致，因此&2不能用此种方法大量获取高级地图册的稀有资源&r。"
+				"&c更多关于地图册主题的内容，请查看教学引导章节的地图册进阶篇。&r"
 			]
 			id: "3113C02082E4DDB6"
 			rewards: [{
@@ -461,7 +346,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "我就要这个！立刻！"
 			tasks: [{
 				id: "7A6A1F0D3D606316"
@@ -475,16 +360,27 @@
 				weak_nbt_match: true
 			}]
 			title: "地图主题牌"
-			x: -6.0d
+			x: 0.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["3113C02082E4DDB6"]
+			dependencies: ["48FD6C4DE7C8B59A"]
 			description: [
-				"你可以在&6悬赏板&r中完成任务以&a获取新的地图册&r。"
+				"&c——悬赏是获得地图册、地图册主题牌、建筑礼物盒等资源的主要方式。&r"
 				""
-				"在&6悬赏板&r的&2右侧栏位&r中放入&6悬赏令&r，便可&2增加新的任务&r。"
+				"你可以在村庄中发现&6悬赏板&r。"
+				""
+				"&a将任务取出带在身上才累计进度&r，完成任务后手持任务&2右键&r&6悬赏板&r即可&e兑换奖励&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&6悬赏板&r中的&a任务类型&r与其&2右侧栏位&r中的&6悬赏令&r&a类型&r相关。"
+				""
+				"在&6悬赏板&r中放入各类&6悬赏令&r，即可&e在任务刷新时生成对应类型的任务&r。"
+				""
+				"&7如一个悬赏板中存在多张悬赏令，则任务刷新时会匹配所有与放入的悬赏令相关的任务。&r"
 			]
+			hide: true
 			icon: "bountiful:bountyboard"
 			id: "0459DEEBB651A740"
 			rewards: [{
@@ -494,59 +390,34 @@
 				type: "item"
 			}]
 			shape: "circle"
-			tasks: [
-				{
-					id: "7DF419D6241DDF39"
-					item: "bountiful:bountyboard"
-					type: "item"
-				}
-				{
-					id: "428A9E259D38E107"
-					item: {
-						Count: 1
-						id: "bountiful:decree"
-						tag: {
-							"bountiful:decree_data": "{}"
-						}
+			size: 4.0d
+			tasks: [{
+				id: "428A9E259D38E107"
+				item: {
+					Count: 1
+					id: "bountiful:decree"
+					tag: {
+						"bountiful:decree_data": "{}"
 					}
-					type: "item"
 				}
-			]
-			title: "赏金猎人"
-			x: -4.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["3113C02082E4DDB6"]
-			description: ["你可以通过在&6附魔台&r中为&6地图册&r附魔&5“修复类附魔”&r而使其可以恢复耐久。"]
-			icon: "minecraft:oak_hanging_sign"
-			id: "387D762CB9FA7CA6"
-			rewards: [{
-				id: "437D57E586CD3AD1"
-				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
-			shape: "diamond"
-			tasks: [{
-				id: "01B8FADB76626F36"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "再利用"
-			x: -4.0d
-			y: -0.5d
+			title: "赏金猎人"
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["48FD6C4DE7C8B59A"]
 			description: [
 				"在任务奖励和一部分赏金的悬赏奖励中，你会获取到&c力量之书&r、&2敏捷之书&r、&b智力之书&r的奖励。"
 				""
-				"手持书本右键，你可以获取一个技能点数，通过按下&2打开技能树按键&r（默认K），在对应的技能树中，你可以消耗技能点数来提高某些方面的属性。"
+				"手持技能书&2右键&r，你可以获取一个&2技能点数&r，通过按下&2打开技能树按键&r&7（默认K键）&r，在对应的技能树中，你可以&e消耗技能点数来提高某些方面的属性&r。"
 				""
-				"每个技能树允许的&2技能点数上限为30&r（包含根节点31），技能总共分为4个Tier，每个技能树包含6个大的分支方向。"
+				"每个技能树允许的&2技能点数上限为30&r。"
 				""
-				"如果需要突破技能点数上限的限制，你需要在&4超限&r节点中研发对应的科技，并且制作出超限技能书。"
+				"如果需要突破技能点数上限的限制，你需要在&d大学&r的&c超限&r节点中研发对应的科技，并且制作出&6超限技能书&r。"
 			]
+			hide: true
 			hide_dependency_lines: true
 			icon: "kubejs:skill_book_strength"
 			id: "13BCDD950336C1F4"
@@ -555,7 +426,7 @@
 				item: "kubejs:skill_forget_book"
 				type: "item"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "获取技能点数！"
 			tasks: [{
 				icon: "kubejs:skill_book_strength"
@@ -584,7 +455,7 @@
 				type: "item"
 			}]
 			title: "技能之书"
-			x: -2.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -597,7 +468,7 @@
 				title: "随机技能书"
 				type: "random"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "一忘皆空"
 			tasks: [{
 				id: "4C10F6504C606D90"
@@ -605,7 +476,7 @@
 				type: "item"
 			}]
 			title: "遗忘之书"
-			x: 0.0d
+			x: 14.0d
 			y: -2.0d
 		}
 		{
@@ -617,8 +488,9 @@
 				""
 				"&6大师认证&r将会随机选取市民的三个属性，并将其设置为50级。"
 				""
-				"大师认证是一种&4超限&r物品，在后续你会了解到更多关于&4超限&r物品的信息。"
+				"大师认证是一种&c超限&r物品，在后续你会了解到更多关于&c超限&r物品的信息。"
 			]
+			hide: true
 			hide_dependency_lines: true
 			id: "00449E381E9DED1E"
 			rewards: [{
@@ -627,7 +499,7 @@
 				title: "随机灵魂宝石"
 				type: "random"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "我命你为将军，那你即是将军"
 			tasks: [{
 				id: "6A249311BCD0D6BE"
@@ -635,8 +507,8 @@
 				type: "item"
 			}]
 			title: "大师认证"
-			x: -2.0d
-			y: -0.5d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["00449E381E9DED1E"]
@@ -660,7 +532,7 @@
 				}
 				type: "item"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "向你的灵魂中灌注知识"
 			tasks: [{
 				icon: "kubejs:soul_gem_agility"
@@ -721,9 +593,316 @@
 				type: "item"
 			}]
 			title: "灵魂宝石"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6海洋研究站&r是&b海洋学家&r的工作站点方块。"
+				""
+				"&7海洋研究站可以在工作台上合成。&r"
+			]
+			id: "1FE0BD0516B8EC47"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7564DD5A4995B9E2"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "38246BDFA497CF46"
+				item: "morevillagers:oceanography_table"
+				type: "item"
+			}]
+			title: "海洋学家"
 			x: 0.0d
-			y: -0.5d
+			y: 22.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6林业站&r是&b林务员&r的工作站点方块。"
+				""
+				"&7林业站可以在工作台上合成。&r"
+			]
+			id: "0078910DBFA4C1D2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EA161E0C0E36CC5"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "1BA9452E62674BBE"
+				item: "morevillagers:woodworking_table"
+				type: "item"
+			}]
+			title: "林务员"
+			x: 0.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6紫颂坛&r是&b末地学家&r的工作站点方块。"
+				""
+				"&7紫颂坛可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "5933209B3767B88A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C7DBA51023286C2"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "1B9582ED88BB2E28"
+				item: "morevillagers:purpur_altar"
+				type: "item"
+			}]
+			title: "末地学家"
+			x: 4.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6腐化工作台&r是&b下界学家&r的工作站点方块。"
+				""
+				"&7腐化工作台可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "45A7998BC0A3C31C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "275200513A092D47"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "1BC26A2A9C59AFC6"
+				item: "morevillagers:decayed_workbench"
+				type: "item"
+			}]
+			title: "下界学家"
+			x: 4.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6绘图桌&r是&b工程师&r的工作站点方块。"
+				""
+				"&7绘图桌可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "77E40534DD3A2553"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F4FA8539F130850"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "2D4828485EAF1D52"
+				item: "morevillagers:blueprint_table"
+				type: "item"
+			}]
+			title: "工程师"
+			x: 8.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6园艺站&r是&b花匠&r的工作站点方块。"
+				""
+				"&7园艺站可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "198300F9996EDEFE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5BB1368898C1CA53"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "2452EEE6522C39E9"
+				item: "morevillagers:gardening_table"
+				type: "item"
+			}]
+			title: "花匠"
+			x: 8.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6狩猎站&r是&b猎人&r的工作站点方块。"
+				""
+				"&7狩猎站可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "665033D16BCD2C8E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "32BC1C956A6C8414"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "78AF3DAD15137E11"
+				item: "morevillagers:hunting_post"
+				type: "item"
+			}]
+			title: "猎人"
+			x: 12.0d
+			y: 26.0d
+		}
+		{
+			dependencies: ["14C35106B4BD5728"]
+			description: [
+				"&6矿业站&r是&b矿工&r的工作站点方块。"
+				""
+				"&7矿业站可以在工作台上合成。&r"
+			]
+			hide_dependency_lines: true
+			id: "16C1C993373D7E7E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "218EE7B9EF4000A6"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "More－Villagers"
+			tasks: [{
+				id: "2E2160332B6BF3B3"
+				item: "morevillagers:mining_bench"
+				type: "item"
+			}]
+			title: "矿工"
+			x: 12.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"本整合包通过&d<VillagersPlus>&r和&d<More－Villagers>&r提供了&2更多职业的村民&r。"
+				""
+				"你可以通过它们&a完善、丰富你的殖民地物资运转&r。"
+				""
+				"同时，现在你可以通过手持&6桶&r右键&b村民&r，来更便捷的&e转移村民&r。"
+			]
+			hide: true
+			id: "6E89693450142ACE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08065AC9F0AF7333"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "1F610E27C8CA2F5E"
+				item: "villagerinabucket:villager_in_a_bucket"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6E89693450142ACE"]
+			description: [
+				"该任务分支下的村民职业来自&d<More－Villagers>模组&r。"
+				""
+				"&7请注意，部分职业名称与<VillagersPlus>模组的相同，但实际上其村民形象与功能不同。&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "74932D4C8CBD30E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0884CBB3A404E274"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "29723AFB13D72AEC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "<VillagersPlus>"
+			x: -6.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["6E89693450142ACE"]
+			description: [
+				"该任务分支下的村民职业来自&d<VillagersPlus>模组&r。"
+				""
+				"&7请注意，部分职业名称与<More－Villagers>模组的相同，但实际上其村民形象与功能不同。&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "14C35106B4BD5728"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "543D74D054DDE6FD"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "687D957DF2B8F17C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "<More－Villagers>"
+			x: -6.0d
+			y: 22.0d
+		}
+		{
+			description: [
+				"&7——你获得了一份定制的礼物。&r"
+				""
+				"手持&6建筑礼物盒&r&2潜行键+右键&r&6殖民地小屋方块&r，即可将礼物盒的奖励转化为&2该小屋目前等级&r所需的全部材料。"
+				""
+				"指定奖励后，&2右键&r即可使用。"
+			]
+			id: "7849F0A0EDF0A23D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28F9FD8CA6A47689"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			secret: true
+			size: 4.0d
+			tasks: [{
+				id: "432203C7B2B52612"
+				item: "kubejs:building_gift_box"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
 		}
 	]
-	title: "基础资源收集"
+	title: "&3资源收集&r"
 }

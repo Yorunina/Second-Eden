@@ -1,8 +1,8 @@
 {
 	chapter_groups: [
-		{ id: "2850793BEA39A36A", title: "生存" }
-		{ id: "3C78FA35C49B788B", title: "发展" }
-		{ id: "60027A637173BAE6", title: "交流" }
-		{ id: "4C55D48871BDCD2F", title: "试炼" }
+		{ id: "389CFB35E1AD9BED", title: "&e主线任务&r" }
+		{ id: "2850793BEA39A36A", title: "&e生存&r" }
+		{ id: "3C78FA35C49B788B", title: "&e发展&r" }
+		{ id: "5CBDF06DE32D253F", title: "&e教学引导&r" }
 	]
 }

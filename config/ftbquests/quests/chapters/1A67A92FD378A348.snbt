@@ -1,0 +1,39 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1A67A92FD378A348"
+	group: "5CBDF06DE32D253F"
+	id: "1A67A92FD378A348"
+	images: [{
+		height: 66.0d
+		image: "kubejs:textures/task/main_2.png"
+		rotation: 0.0d
+		width: 70.0d
+		x: -4.5d
+		y: -6.0d
+	}]
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		dependencies: ["593F122390F4C36E"]
+		hide: true
+		icon: "structurize:sceptergold"
+		id: "41A81C93DE8D4472"
+		rewards: [{
+			exclude_from_claim_all: true
+			id: "15B418C1AC646ED5"
+			table_id: 7517863136333816811L
+			type: "loot"
+		}]
+		size: 4.0d
+		tasks: [{
+			id: "209B6C2922EDD880"
+			title: "我已浏览"
+			type: "checkmark"
+		}]
+		title: "殖民地引导－其二"
+		x: 21.0d
+		y: -30.5d
+	}]
+	title: "&7殖民地－建筑工具&r"
+}

@@ -2,14 +2,14 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "2FC130F39C57EFC5"
-	group: ""
+	group: "389CFB35E1AD9BED"
 	icon: "minecolonies:blockhuttownhall"
 	id: "2FC130F39C57EFC5"
-	order_index: 4
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3E044E020C3C1134"]
+			dependencies: ["5A567E7FCDFBECC8"]
 			description: [
 				"&7——当你完成该任务时，请查看各个FTB任务界面，原本隐藏的任务将会浮现。&r"
 				""
@@ -28,127 +28,15 @@
 				type: "item"
 			}]
 			shape: "rsquare"
-			size: 1.0d
+			size: 4.0d
 			subtitle: "求知若渴"
 			tasks: [{
 				id: "4E8CFB2859EF5832"
 				item: "minecolonies:blockhutuniversity"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.5d
-		}
-		{
-			dependencies: [
-				"3B3395C72863B7EC"
-				"015DEE0E96971AB7"
-			]
-			description: [
-				"&6补给营地&r存在的一个重要意义就是直接给予玩家&6建筑工具&r和&6市政厅&r小屋方块——然而你也完全可以自己制作，并且制作材料也相当便宜。"
-				""
-				"通过使用&6建筑工具&r，你&a可以同之前放置营地一样，选择建筑风格，而后预览结果，选择是否需要放置&r。"
-				""
-				"但请注意，与补给营地不同的是，&e构建殖民地建筑时，你将涉及到更多内容。&r"
-				""
-				"&7点击右下角翻页。&r"
-				""
-				"{@pagebreak}"
-				"在你使用&6建筑工具&r右键任意地面时，可以打开一个这样的页面。"
-				""
-				"&c红色框选&r区域中，显示了该&d风格包&r下所有建筑的&2类别&r，点击其中一个图标，可以&2查看该类别中的具体建筑&r。"
-				""
-				"可以看到图中有些建筑的名称后带有&e特殊标识&r，这代表在本风格包中，该建筑&2有多种外观可供选择&r。"
-				""
-				"{image:kubejs:textures/task/struct_tool_1.png width:200 height:115 align:1}"
-				"{@pagebreak}"
-				"选择具体建筑后，如图&e黄色框选&r中，是该建筑所有等级情况下的外观，你可以通过左键点击去&2预览各等级外观&r。"
-				""
-				"初始情况下，&2你只能够创建等级1的蓝图&r。更高等级的则是需要在低等级的基础上通过核心方块&2升级&r得到。"
-				""
-				"{image:kubejs:textures/task/struct_tool_2.png width:200 height:137 align:1}"
-			]
-			id: "593F122390F4C36E"
-			rewards: [{
-				id: "676B706083EE3218"
-				item: {
-					Count: 1
-					id: "lightmanscurrency:wallet_gold"
-					tag: {
-						AutoConvert: 1b
-					}
-				}
-				type: "item"
-			}]
-			size: 1.0d
-			subtitle: "使用建筑工具"
-			tasks: [{
-				id: "16755F258ECC344B"
-				item: "structurize:sceptergold"
-				type: "item"
-			}]
-			title: "建筑工具"
-			x: -15.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["593F122390F4C36E"]
-			description: [
-				"&b建造殖民地&r是一个需要&c极大占地面积&r的事情，&e请合理规划好你的最初选址，这十分重要！&r"
-				""
-				"当你开始殖民地的建设后，无论此地风景如何、地形如何，你和你的殖民地公民都将长期生活于此。"
-				""
-				"不过不用担心，殖民地并&2没有必须的选址要求&r，你只需要&e遵循你的审美喜好即可&r。"
-				""
-				"&7《模拟殖民地》模组提供了建筑的搬迁功能，但这并不方便。&r"
-			]
-			icon: "minecraft:bamboo_hanging_sign"
-			id: "715589CF7ED303D7"
-			rewards: [{
-				id: "19E7EAD82642F7A1"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "九层之台，起于累土"
-			tasks: [{
-				id: "3F2DD934CDD660EA"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "合理的选址"
-			x: -13.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["593F122390F4C36E"]
-			description: [
-				"需要注意的是，很多&d风格包&r并没有完整提供&b《模拟殖民地》模组&r的所有&e功能性建筑&r。"
-				""
-				"&c如果在某风格包中没有找到某样建筑，请更换其他风格包查看。&r"
-				""
-				"&7在Minecolonies标题（如下图）之下的风格包中，你可以更容易找到其他风格包缺失的建筑。&r"
-				""
-				"{image:kubejs:textures/task/remind_2.png width:200 height:116 align:1}"
-			]
-			icon: "minecraft:oak_hanging_sign"
-			id: "35284ADB197ECCDC"
-			rewards: [{
-				id: "73229FFC6D0BCF12"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			shape: "diamond"
-			size: 1.0d
-			subtitle: "合理的选择"
-			tasks: [{
-				id: "28D87ABEA5B34D00"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "随机应变"
-			x: -15.5d
-			y: -2.5d
+			x: 20.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["2A8F30740DED8523"]
@@ -166,7 +54,7 @@
 				type: "loot"
 			}]
 			shape: "diamond"
-			size: 1.0d
+			size: 4.0d
 			subtitle: "善良的君主"
 			tasks: [{
 				id: "174E665A7783ABC4"
@@ -174,11 +62,11 @@
 				type: "checkmark"
 			}]
 			title: "倾听民心"
-			x: -9.5d
-			y: -2.5d
+			x: -8.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["0903950D16DF0E00"]
+			dependencies: ["593F122390F4C36E"]
 			description: [
 				"&6市政厅&r是你&e建造殖民地的开始&r，在补给营地的各种箱子中，你大概率能找到它，也可以通过&2合成&r获得。"
 				""
@@ -195,58 +83,20 @@
 			id: "2A8F30740DED8523"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "0BD56EC6512DA653"
+				id: "080AA0C47931A4CA"
 				table_id: 7517863136333816811L
-				type: "loot"
+				type: "random"
 			}]
 			shape: "rsquare"
-			size: 1.0d
+			size: 4.0d
 			subtitle: "开始劳苦的一生"
 			tasks: [{
 				id: "26131E54252C8BF2"
 				item: "minecolonies:blockhuttownhall"
 				type: "item"
 			}]
-			x: -9.5d
-			y: -4.5d
-		}
-		{
-			dependencies: ["2A8F30740DED8523"]
-			description: [
-				"&6市政厅&r方块中有很多功能，在&e多人游玩&r的情况下，你可能会用到&2“权限页”&r的内容。"
-				""
-				"在第一页中可以&2添加玩家的权限等级&r。"
-				""
-				"而在第二页中（如下图），你可以&2具体设置每个权限等级的具体权限&r，也可以通过加号新增自定义的权限等级。"
-				""
-				"{image:kubejs:textures/task/town_hall_1.png width:200 height:125 align:1}"
-				"{@pagebreak}"
-				"在第三页中，你可以设置在殖民地中&2未获得权限的玩家可以交互的方块&r，你可以直接添加方块名，也可以通过点击图中左侧的&c红框&r中&2权限权杖图标&r，获得&6权限权杖&r。"
-				""
-				"手持&6权限权杖&r，&2右键&r某方块，便可以指定殖民地中所有该方块加入可交互列表。"
-				""
-				"&7请不要轻易用权限权杖右击如草方块等数量极多的方块，可能导致卡顿，如不小心点到，请去市政厅权限页取消该方块。&r"
-				""
-				"{image:kubejs:textures/task/town_hall_2.png width:200 height:125 align:1}"
-			]
-			icon: "minecraft:writable_book"
-			id: "5BAB19102074E341"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6EC89BE2D3B2AB19"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
-			size: 1.0d
-			subtitle: "共治、盟友、中立、敌人"
-			tasks: [{
-				id: "331B5DAE29E8CEF6"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "外交权限与开放政策"
-			x: -9.5d
-			y: -6.5d
+			x: -8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["7E0E05D6E89F84C1"]
@@ -262,7 +112,7 @@
 				table_id: 7517863136333816811L
 				type: "loot"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "更便捷的查阅方式"
 			tasks: [{
 				id: "3A05863545C54048"
@@ -275,49 +125,17 @@
 				}
 				type: "item"
 			}]
-			x: -9.5d
-			y: -0.5d
+			x: -8.0d
+			y: 10.0d
 		}
 		{
-			dependencies: ["2A8F30740DED8523"]
+			dependencies: ["38D79A89B549CDD3"]
 			description: [
 				"&c在建造任何其他建筑之前，你都必须先建造建筑工小屋。否则，建筑工将无法建造其他建筑。&r"
 				""
 				"通过&6工作台&r合成制作一个&6建筑工小屋&r方块，并使用&6建筑工具&r选择合适的位置，选择建造一个&d建筑工小屋&r吧。"
 				""
-				"接下来将以&d建筑工小屋&r为例，&e介绍殖民地小屋的部分通用内容&r。"
-				""
-				"&7点击右下角以翻页。&r"
-				"{@pagebreak}"
-				"&d管理工人&r：管理负责该小屋的工人。"
-				""
-				"&d召回工人&r：将该小屋的工人召集到小屋方块处。"
-				""
-				"&d建筑选项&r：对该建筑进行&2建造/升级/打包&r。"
-				""
-				"&c帮助&r：模组自带的&2信息说明与指导&r，推荐查看。"
-				""
-				"&b物品栏&r：将物品放在此处，&2供工人交互&r。&7（如建筑所需材料等）&r"
-				""
-				"&e建筑物品栏概要&r：仅限查看本建筑&2自带的&r储存方块中的物品信息。"
-				""
-				"{image:kubejs:textures/task/builder_hut_1.png width:180 height:202 align:1}"
-				"{@pagebreak}"
-				"&c——管理工人页面——&r"
-				""
-				"在此页面，你可以&2雇佣/暂停/解雇&r工人，请根据居民的属性，合理分配岗位。"
-				""
-				"&d建筑雇佣模式&r：影响该小屋的雇佣是否为自动进行。&7（如果你想停止该小屋的运作，请选择“手动”）&r"
-				""
-				"{image:kubejs:textures/task/builder_hut_2.png width:200 height:140 align:1}"
-				"{@pagebreak}"
-				"&c——建筑工小屋所需资源页面——&r"
-				""
-				"请注意，&2建造其他建筑&r时需要提供的资源，需在&2建筑工小屋的该页面&r提交，&e使资源进入建筑工小屋方块的物品栏&r，待&d建筑工人&r来取。"
-				""
-				"你也可以在&d建筑工人&r的&2请求界面&r中提交他需要的资源，&e使物品直接进入该工人的物品栏&r。"
-				""
-				"{image:kubejs:textures/task/builder_hut_3.png width:200 height:226 align:1}"
+				"&c——完成任务会解锁&r&d“教学引导－殖民地－建筑工小屋”&r&c章节，如有需要请前往该章节查看引导和提示。&r"
 			]
 			id: "0E140DD8AE0C7D73"
 			rewards: [{
@@ -326,35 +144,35 @@
 				table_id: 3054476279840700017L
 				type: "random"
 			}]
-			size: 1.0d
+			size: 4.0d
 			subtitle: "基建的开始"
 			tasks: [{
 				id: "38E6A109C96FF5E6"
 				item: "minecolonies:blockhutbuilder"
 				type: "item"
 			}]
-			x: -7.5d
-			y: -4.5d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
 			description: [
-				"&b《模拟殖民地》模组&r存在大量细节的信息，在查看FTB任务的同时，请记得点击下图中框选的&c红色问号&r&2查看更多细节信息&r。"
+				"&b<模拟殖民地>模组&r存在大量细节的信息，在查看FTB任务的同时，请记得点击下图中框选的&c红色问号&r&2查看更多细节信息&r。"
 				""
 				"以及该模组的每一种小屋方块都含有&e不同的交互界面&r，请不要忽视它们。"
 				""
 				"{image:kubejs:textures/task/remind_1.png width:180 height:202 align:1}"
 			]
-			icon: "minecraft:bamboo_hanging_sign"
+			icon: "minecraft:oak_hanging_sign"
 			id: "3E044E020C3C1134"
 			rewards: [{
-				count: 5
-				id: "2B609A4B6AB5B8D8"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "7A1BA8D56D508451"
+				table_id: 7517863136333816811L
+				type: "random"
 			}]
 			shape: "diamond"
-			size: 1.0d
+			size: 4.0d
 			subtitle: "怀有学徒之心"
 			tasks: [{
 				id: "53B81169CC8F913D"
@@ -362,8 +180,8 @@
 				type: "checkmark"
 			}]
 			title: "学无止境"
-			x: -5.5d
-			y: -4.5d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -372,6 +190,8 @@
 				""
 				"一般来说，这意味着袭击者会在殖民地之外生成，但是&a如果你的建筑分散开，袭击者可能会在建筑之间生成&r，并变得更加麻烦！"
 				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
 				"&c——发生时间——&r"
 				""
 				"&c袭击&r只会在&2夜晚开始时&r发生，且袭击将要发生的当天白天，玩家物品栏中的&6古籍&r会产生附魔特效。"
@@ -383,13 +203,12 @@
 			icon: "minecraft:mangrove_hanging_sign"
 			id: "7D863AE63787CE9F"
 			rewards: [{
-				count: 5
-				id: "3E174E0A5F450561"
-				item: "lightmanscurrency:coin_copper"
+				id: "76785F6A4093C5D7"
+				item: "minecolonies:ancienttome"
 				type: "item"
 			}]
 			shape: "diamond"
-			size: 1.0d
+			size: 4.0d
 			subtitle: "野蛮入侵"
 			tasks: [{
 				id: "196A689A7034D330"
@@ -397,13 +216,13 @@
 				type: "checkmark"
 			}]
 			title: "敌对袭击"
-			x: -7.5d
-			y: -6.5d
+			x: 4.0d
+			y: -14.0d
 		}
 		{
-			dependencies: ["715589CF7ED303D7"]
+			dependencies: ["593F122390F4C36E"]
 			description: [
-				"&b《轻松建造（Effortless－Building）》模组&r为玩家提供了一个高效&e破坏、放置方块&r的方式。"
+				"&b<轻松建造（Effortless－Building）>模组&r为玩家提供了一个高效&e破坏、放置方块&r的方式。"
 				""
 				"按下&2alt键&r，你可以看到如下交互界面，在这个界面中选择对应的&2基础选项&r与&2详细分支&r，即可开始使用。"
 				""
@@ -411,7 +230,13 @@
 				""
 				"{image:kubejs:textures/task/building_1.png width:200 height:115 align:1}"
 			]
-			icon: "minecraft:scaffolding"
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "2848AAEE1EA43969"
 			rewards: [{
 				id: "3036C402834483FD"
@@ -419,65 +244,15 @@
 				type: "item"
 			}]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "4D2DC17F3A2E39AE"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "轻松建造"
-			x: -13.5d
-			y: -6.5d
-		}
-		{
-			dependencies: ["3B3395C72863B7EC"]
-			description: [
-				"在你右键地面放置&6补给营地&r时，其会弹出一个提示框，来询问你是否需要选择某种&d风格包&r，以及是否&a确认放置位置&r。"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_1.png width:180 height:115 align:1}"
-				""
-				"{@pagebreak}"
-				"&c--风格包--&r"
-				""
-				"即&a建筑风格&r。同种类型的建筑，会在不同的风格包里有完全不同的&2外观&r和&2材料需求&r。&7（补给营地/船没有材料需求）&r"
-				""
-				"你可以在此处挑选你喜欢的风格。点击&2选择&r按钮，你便可以将该建筑改为选中的风格。"
-				""
-				"&c请注意，风格包不一定包含所有类型的建筑，这意味着你可能在选择某个风格包后，不显示补给营地的预览，此时你需要尝试换一个风格包。&r"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_2.png width:180 height:100 align:1}"
-				"{@pagebreak}"
-				"&c--确认放置位置--&r"
-				""
-				"进入&a确认放置位置&r界面，你可以在此界面控制建筑的具体位置。&c最好在确认位置无误后再选择放置营地！&r"
-				""
-				"&e选择风格&r：点击此处，你可以&a更换风格包&r并预览。"
-				""
-				"&6操作面板&r：可以在这里对蓝图进行&2水平位移、上下位移、旋转&r的操作。"
-				""
-				"&b固体占位符&r：顾名思义，&2蓝图中该位置并不存在方块&r，其允许任何种类的固体方块放置在此处。这通常用于保证蓝图被放置在一个合法的位置。"
-				""
-				"&c取消建造&r：取消此次建造。&7（如果你只是想要操控自身角色移动，按ESC键即可，无需取消建造。之后只需再手持补给营地右键即可再次打开该界面。）&r"
-				""
-				"&a开始建造&r：点击后&a直接进行建造&r。"
-				""
-				"{image:kubejs:textures/task/supply_camp_deploy_3.png width:180 height:134 align:1}"
-			]
-			icon: "minecolonies:supplycampdeployer"
-			id: "015DEE0E96971AB7"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "08104D6A6EED134D"
-				table_id: 3054476279840700017L
-				type: "choice"
-			}]
-			tasks: [{
-				id: "1BAC23104848870E"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "故事的开始"
-			x: -17.5d
-			y: -4.5d
+			x: -16.0d
+			y: -14.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -497,6 +272,7 @@
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
+			size: 4.0d
 			tasks: [{
 				id: "12A5D6A20CDE765F"
 				item: {
@@ -508,8 +284,8 @@
 				}
 				type: "item"
 			}]
-			x: -7.5d
-			y: -2.5d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -542,43 +318,235 @@
 				item: "lightmanscurrency:coin_iron"
 				type: "item"
 			}]
+			size: 4.0d
 			tasks: [{
 				id: "74D0DB4F1E9278EF"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "建筑工工作模式"
-			x: -6.5d
-			y: -2.5d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
-			dependencies: ["715589CF7ED303D7"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
-				"&c风格包的选择决定了模拟殖民地的游玩难度。&r"
+				"请按照引导建造自己的&6补给营地/补给船&r吧！"
 				""
-				"&d风格包&r内的&2建筑规模越大、材料需求越复杂&r，就意味着你需要&2花费更多的精力和时间&r。"
-				""
-				"虽然本整合包已经大幅降低了殖民地前期的肝度，但是如果你仍不满意，&e可以选择如下图所示的两个风格包&r——它们&a拥有极简的风格和较小的规模&r，你会获得最轻松舒适的游玩体验。"
-				""
-				"{image:kubejs:textures/task/9_9.png width:200 height:116 align:1}"
+				"&c——完成任务会解锁&r&d“教学引导－殖民地－补给营地”&r&c章节，如有需要请前往该章节查看引导和提示。&r"
 			]
-			icon: "minecraft:grass_block"
-			id: "0903950D16DF0E00"
+			icon: "minecolonies:supplycampdeployer"
+			id: "015DEE0E96971AB7"
 			rewards: [{
-				id: "6D3DF8C95CEFB7BE"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "08104D6A6EED134D"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
-			subtitle: "抉择"
+			size: 4.0d
 			tasks: [{
-				id: "6B871862729ABB25"
+				id: "1BAC23104848870E"
 				title: "我已了解"
 				type: "checkmark"
 			}]
-			title: "“自定义”难度"
-			x: -11.5d
-			y: -4.5d
+			title: "故事的开始"
+			x: -24.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"3B3395C72863B7EC"
+				"015DEE0E96971AB7"
+			]
+			description: [
+				"选择心仪的位置，通过&6建筑工具&r创建你的殖民地吧！"
+				""
+				"&c——完成任务会解锁&r&d“教学引导－殖民地－建筑工具”&r&c章节，如有需要请前往该章节查看引导和提示。&r"
+			]
+			id: "593F122390F4C36E"
+			rewards: [
+				{
+					id: "676B706083EE3218"
+					item: {
+						Count: 1
+						id: "lightmanscurrency:wallet_gold"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 5
+					id: "4AB31654FE271666"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			subtitle: "使用建筑工具"
+			tasks: [{
+				id: "16755F258ECC344B"
+				item: "structurize:sceptergold"
+				type: "item"
+			}]
+			title: "建筑工具"
+			x: -16.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"按下&2潜行键+右键&r&6建筑工小屋&r，可以&a与该建筑工小屋绑定&r。"
+				""
+				"手持&6资源卷轴&r&2右键&r，可以&e随时查看绑定建筑工小屋所需的资源&r。"
+			]
+			hide: true
+			hide_dependency_lines: true
+			id: "6EFAF9A48B9B964E"
+			size: 4.0d
+			tasks: [{
+				id: "7241DEC0AC877E1F"
+				item: {
+					Count: 1
+					id: "minecolonies:resourcescroll"
+					tag: {
+						builder: {
+							x: -960
+							y: -60
+							z: -113
+						}
+						colony: 1
+						version: { }
+						wo_hash: ""
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2A8F30740DED8523"]
+			description: [
+				"按下&2潜行键+右键&r&6市政厅&r，可以&a与该殖民地绑定&r。"
+				""
+				"手持&6剪切板&r&2右键&r，可以&e随时查看绑定殖民地的公民请求&r。"
+			]
+			id: "16163DDD1FB70564"
+			size: 4.0d
+			tasks: [{
+				id: "6AC53A3391C1ED3A"
+				item: {
+					Count: 1
+					id: "minecolonies:clipboard"
+					tag: {
+						colony: 1
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"当你&2完成建筑工小屋&r后，你的&dFTB任务界面&r将&a解锁许多新的任务&r。"
+				""
+				"你可以先放慢脚步，根据任务指引建造更多建筑，&e先丰富你的殖民地设施，再建造大学&r。"
+			]
+			icon: "minecraft:bamboo_hanging_sign"
+			id: "5A567E7FCDFBECC8"
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "2571610B9AA27F08"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "完善基础设施"
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2A8F30740DED8523"]
+			description: [
+				"基于&d<FTB－Chunks>模组&r，你可以实现&e认领、强制加载区块&r功能。"
+				""
+				"打开地图&7（默认M键）&r，点击左上角的&2“声明区块”&r。"
+				""
+				"在该界面，&2鼠标左键&r可以&a认领区块&r，在已被自己认领的区块上&2shift+右键&r，即可&a强制加载该区块&r。"
+				""
+				"&7被强制加载的区块中会处理所有的游戏内容，当你远离你的殖民地时，保证你的殖民地仍正常运作。&r"
+			]
+			icon: "minecraft:map"
+			id: "38D79A89B549CDD3"
+			size: 4.0d
+			subtitle: "认领与强制加载"
+			tasks: [{
+				id: "0DD696DF0C7525C6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "领地掌控"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"当殖民地&d市政厅&r以及大部分建筑都到了&a5级&r，并且已经&2研究了大部分科技&r时，你便可以在&d大学&r中开始研究&c超限节点&r了。"
+				""
+				"超限可以使你解锁新的内容，如&e网络交易&r、&e无线访问&r、&e更强大的装备&r等。"
+			]
+			icon: "kubejs:singularity_netherite"
+			id: "3E3F48BB1C4741B0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E735D702C499D27"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "1F077D5C5E571162"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "超限"
+			x: 28.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["73EBA454E698D18A"]
+			description: [
+				"&7——你的殖民地需要经过漫长的发展，才可以进行该任务。&r"
+				""
+				"当你的&d市政厅&r到达&a6级&r，便可以在&d大学&r中研究并解锁&d地标&r的&a建造权限&r。"
+				""
+				"&d地标&r是一类大型建筑，它们在建成后会为你的殖民地&e提供各种增益加成&r。"
+				""
+				"在委托建筑工建造地标时，你可以佩戴&6建筑工护目镜&r，在&2有需要的时候&r帮助建筑工搭建&6脚手架&r。"
+			]
+			icon: "minecraft:scaffolding"
+			id: "7655520F92D81D97"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77B9048B44861ED2"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "6647A5A13946C10B"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "奇观地标"
+			x: 28.0d
+			y: -2.0d
 		}
 	]
-	title: "主线－模拟殖民地"
+	title: "&3主线－模拟殖民地&r"
 }

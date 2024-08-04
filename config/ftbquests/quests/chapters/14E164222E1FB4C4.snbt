@@ -19,15 +19,21 @@
 			]
 			hide: true
 			id: "19A82DA478C4E234"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74DB0BBB0AF09D94"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			subtitle: "探索与挖掘"
 			tasks: [{
 				id: "058429F59574ECBE"
 				item: "minecolonies:blockhutminer"
 				type: "item"
 			}]
-			x: -16.5d
-			y: -2.0d
+			x: -18.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["19A82DA478C4E234"]
@@ -41,27 +47,39 @@
 				"&7如果在建筑工具页面没有找到采石场，请尝试切换主题包。&r"
 			]
 			id: "34749243B92836B9"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19CC9C55E31A7111"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "2B673526C75BB940"
 				item: "minecolonies:simplequarry"
 				type: "item"
 			}]
-			x: -14.5d
-			y: -2.0d
+			x: -10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["34749243B92836B9"]
 			description: ["用途同&b简易采石场&r，&2提供的挖掘区域更大&r。"]
 			id: "20FC6394B95B770D"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A014F2FA63E5316"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "78B881390BC84A05"
 				item: "minecolonies:mediumquarry"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -2.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -75,14 +93,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "18F90940D1149A7C"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FFC58B5ADBECDDA"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "12B6D45D977B408E"
 				item: "minecolonies:blockhutstonemason"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 4.0d
+			x: -18.0d
+			y: 28.0d
 		}
 		{
 			dependencies: ["18F90940D1149A7C"]
@@ -96,14 +120,20 @@
 				"&8也许你可以尝试冶炼原木？&r"
 			]
 			id: "3A9912D003A39F1A"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A97BC712FEAB48D"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "4352F048D1BED03B"
 				item: "minecolonies:blockhutstonesmeltery"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 4.0d
+			x: -10.0d
+			y: 28.0d
 		}
 		{
 			dependencies: ["18F90940D1149A7C"]
@@ -113,28 +143,40 @@
 				"小屋等级影响&2每日产量上限&r。"
 			]
 			id: "0BF1FF78E076D298"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "761E1B98A9E584E9"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "564C497F0BB60B57"
 				item: "minecolonies:blockhutcrusher"
 				type: "item"
 			}]
 			title: "粉碎工小屋"
-			x: -12.5d
-			y: 5.5d
+			x: -10.0d
+			y: 34.0d
 		}
 		{
 			dependencies: ["0BF1FF78E076D298"]
 			description: ["&d混凝土小屋&r提供&b混凝土工人&r岗位，可进行各种&a混凝土粉末和混凝土&r的制作。"]
 			id: "5CDBAD64446E28DF"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19566966440F878A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "11C72D628FD6C41C"
 				item: "minecolonies:blockhutconcretemixer"
 				type: "item"
 			}]
-			x: -10.5d
-			y: 5.5d
+			x: -2.0d
+			y: 34.0d
 		}
 		{
 			dependencies: [
@@ -148,17 +190,22 @@
 				""
 				"&7你可以通过信箱委托进行制作。&r"
 			]
-			hide: true
 			id: "3F88645467A477F1"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B8D66174AB0F09A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "48BFDAC31776DCDF"
 				item: "minecolonies:blockhutsmeltery"
 				type: "item"
 			}]
 			title: "冶炼厂"
-			x: -14.5d
-			y: -0.5d
+			x: -10.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["3F88645467A477F1"]
@@ -170,14 +217,20 @@
 				"&7你可以通过信箱委托进行制作。&r"
 			]
 			id: "6DCAD4D5FA9F6D82"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A6E2DF69EC27A91"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "0985D49419EEDDB3"
 				item: "minecolonies:blockhutglassblower"
 				type: "item"
 			}]
-			x: -12.5d
-			y: -0.5d
+			x: -2.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -191,14 +244,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "7EEABD8A13DE4354"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77374DBB4F631DC6"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "23B1FFAD500222B7"
 				item: "minecolonies:blockhutblacksmith"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 1.0d
+			x: -18.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["7EEABD8A13DE4354"]
@@ -210,14 +269,20 @@
 				"&7你可以通过信箱委托进行制作。&r"
 			]
 			id: "56D64129207D0604"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25FC80A5C8724DFC"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "36F1CDE220B6955E"
 				item: "minecolonies:blockhutmechanic"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 1.0d
+			x: -10.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["56D64129207D0604"]
@@ -230,7 +295,13 @@
 			]
 			icon: "minecolonies:gate_wood"
 			id: "2B39DF27B78AF40E"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34D43DA4334633D7"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "3497E40754E81942"
 				item: {
@@ -252,8 +323,8 @@
 				type: "item"
 			}]
 			title: "城门"
-			x: -10.5d
-			y: 1.0d
+			x: -2.0d
+			y: 16.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -265,14 +336,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "74D9FE95B7D5133F"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "691659A474BA7964"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "402B2532E1C2EBDF"
 				item: "minecolonies:blockhutnetherworker"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 2.5d
+			x: -18.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -286,14 +363,20 @@
 			hide: true
 			hide_dependency_lines: true
 			id: "4F82E3AEA7448084"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18BDB51125F9B2CC"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "33D7223F767E4847"
 				item: "minecolonies:blockhutsawmill"
 				type: "item"
 			}]
-			x: -14.5d
-			y: 7.0d
+			x: -18.0d
+			y: 40.0d
 		}
 		{
 			dependencies: ["4F82E3AEA7448084"]
@@ -305,14 +388,20 @@
 				"&7你可以通过信箱委托进行制作。&r"
 			]
 			id: "69B8A61F664E3FEB"
-			size: 1.0d
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BBB513FC510FB85"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "587626F715575114"
 				item: "minecolonies:blockhutfletcher"
 				type: "item"
 			}]
-			x: -12.5d
-			y: 7.0d
+			x: -10.0d
+			y: 40.0d
 		}
 	]
 	title: "重型工业"

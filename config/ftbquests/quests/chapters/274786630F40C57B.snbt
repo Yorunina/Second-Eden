@@ -9,34 +9,43 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["0E140DD8AE0C7D73"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
 				"&7——一个爱好广泛的绅士需要重视他的打扮。&r"
 				""
-				"&d《幻化》模组&r可以让你&a任意改变物品的外观&r甚至完全隐形，而物品的原本属性不会有任何变化，对于盔甲架和生物同样有效。"
+				"&d<幻化>模组&r可以让你&a任意改变物品的外观&r甚至完全隐形，而物品的原本属性不会有任何变化，对于盔甲架和生物同样有效。"
 				""
 				"只需要在&6幻化台&r中放入&6紫水晶&r作为能源，并在&2左侧格子&r放入&a原物品&r，在&2右侧格子&r放入&a外观物品&r，即&e可改变原物品的外观&r。"
 			]
 			hide: true
 			id: "4F33D347ACE7F259"
-			rewards: [{
-				count: 5
-				id: "284D515B203FE8E3"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "284D515B203FE8E3"
+					item: "lightmanscurrency:coin_copper"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2C1A253CE7A4EDA2"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "gear"
+			size: 4.0d
 			subtitle: "幻化多端"
 			tasks: [{
 				id: "3AE3F788657913F2"
 				item: "transmog:transmogrification_table"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -4.0d
+			y: 14.0d
 		}
 		{
-			dependencies: ["0E140DD8AE0C7D73"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
 				"&7——在管理殖民地之余，或许你可以尝试培养一些兴趣爱好。&r"
 				""
@@ -49,26 +58,35 @@
 			hide: true
 			icon: "xercamusic:bass_guitar"
 			id: "7BCDA2D0B6CD8921"
-			rewards: [{
-				count: 5
-				id: "3E04EBE150BBF2C1"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 5
+					id: "3E04EBE150BBF2C1"
+					item: "lightmanscurrency:coin_copper"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46DD79DAC8502349"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "3FF255B5B9561073"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "乐器与绘画"
-			x: -3.5d
-			y: 2.0d
+			x: -4.0d
+			y: 8.0d
 		}
 		{
-			dependencies: ["0E140DD8AE0C7D73"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
-				"&d《Exposure》&r是一个注重美学与工艺的&2相机模组&r，为游戏添加了&a更为真实的照相技术&r。"
+				"&d<Exposure>&r是一个注重美学与工艺的&2相机模组&r，为游戏添加了&a更为真实的照相技术&r。"
 				""
 				"你可以在&dJEI搜索框&r里输入&d“@Exposure”&r来查看本模组的具体内容，并且本整合包也会粗略介绍该模组的游玩流程。"
 				""
@@ -84,15 +102,22 @@
 			]
 			hide: true
 			id: "48FBE84E0FC0EFD0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0343A4CFEC853C7E"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "53FFB61DC221F96E"
 				item: "exposure:camera"
 				type: "item"
 			}]
 			title: "摄影"
-			x: -3.5d
-			y: 0.5d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["48FBE84E0FC0EFD0"]
@@ -102,6 +127,13 @@
 				"&6黑白胶卷&r需要一瓶普通的&6水瓶&r，而&6彩色胶卷&r需要&6平凡的药水&r、&6粗制的药水&r、&6浓稠的药水&r。"
 			]
 			id: "38B96600FBC480B7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2FC1A2899F692283"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "074C8218D91ABF9E"
 				item: {
@@ -123,26 +155,40 @@
 				type: "item"
 			}]
 			title: "胶卷"
-			x: -1.5d
-			y: 0.5d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["38B96600FBC480B7"]
 			description: ["将&6已冲洗的胶卷&r放入&6暗房&r中，装配&6纸&r和相应所需的&6染料&r，即可&a打印成照片&r。"]
 			id: "0F150C41037B7A56"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16DA47428723BA6C"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "1E7CDFD22AC6FC62"
 				item: "exposure:lightroom"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 0.5d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0F150C41037B7A56"]
 			description: ["你可以将照片放入&6相册&r或&6相框&r中。"]
 			icon: "exposure:photograph_frame"
 			id: "67E63D4973689F96"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FFE2DD66ABE739E"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [
 				{
 					id: "05FA87EE6AE62F57"
@@ -155,8 +201,8 @@
 					type: "item"
 				}
 			]
-			x: 2.5d
-			y: 0.5d
+			x: 14.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["73EBA454E698D18A"]
@@ -172,12 +218,13 @@
 			icon: "sophisticatedbackpacks:backpack"
 			id: "1F3BAF6557DC9DD3"
 			rewards: [{
-				count: 5
-				id: "7B76AA85CCA1F793"
-				item: "lightmanscurrency:coin_copper"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "7A934606E3ECC373"
+				table_id: 7517863136333816811L
+				type: "random"
 			}]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "0D8AF3AC963032D3"
 				item: {
@@ -190,15 +237,15 @@
 				type: "item"
 			}]
 			title: "精妙背包—升级"
-			x: 0.5d
-			y: -1.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["593F122390F4C36E"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
 				"&7——准备好建造一座没有天花板的海底城市了吗？&r"
 				""
-				"&d《Permanent－Sponges》模组&r为游戏加入了两种新的&6持续型海绵&r以及对应的&6海绵棒&r，大大方便了玩家的&2排水工作&r："
+				"&d<Permanent－Sponges>模组&r为游戏加入了两种新的&6持续型海绵&r以及对应的&6海绵棒&r，大大方便了玩家的&2排水工作&r："
 				""
 				"&6持续型海绵&r可以帮助玩家&a在较大的范围内清除液体&r，并且&a只要其存在，就能一直阻止液体进入其范围&r。"
 				""
@@ -213,7 +260,14 @@
 				}
 			}
 			id: "359832642E80C840"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55787FBE3B1335D7"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
 			shape: "gear"
+			size: 4.0d
 			subtitle: "填海造陆"
 			tasks: [{
 				id: "21B377AEEA2B40E9"
@@ -250,13 +304,13 @@
 				type: "item"
 			}]
 			title: "神奇海绵"
-			x: -3.5d
-			y: -2.5d
+			x: -4.0d
+			y: -10.0d
 		}
 		{
-			dependencies: ["593F122390F4C36E"]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
-				"&d《工具皮带（Tool－Belt）》模组&r添加了一个可以快速交换工具的&6皮带&r。"
+				"&d<工具皮带（Tool－Belt）>模组&r添加了一个可以快速交换工具的&6皮带&r。"
 				""
 				"手持&6皮带&r，&2潜行键+右键&r打开&a皮带存储空间&r，可以将物品放入其中。"
 				""
@@ -270,7 +324,14 @@
 			]
 			hide: true
 			id: "35217380A42DC86D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A5B4AA2C3D58618"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
 			shape: "gear"
+			size: 4.0d
 			tasks: [{
 				id: "2CA63529D9E9F6A8"
 				item: {
@@ -280,20 +341,27 @@
 				}
 				type: "item"
 			}]
-			x: -3.5d
-			y: -1.0d
+			x: -4.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["35217380A42DC86D"]
 			description: ["在&6铁砧&r中，&2左侧&r放入&6皮带&r，&2右侧&r放入&6皮带袋&r，可以&a升级皮带的存储栏位上限&r。&7（可多次升级）&r"]
 			id: "1FA52393CFEA961A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "673A8B1E1CD8799F"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
 			tasks: [{
 				id: "4E10FF471FDAE750"
 				item: "toolbelt:pouch"
 				type: "item"
 			}]
-			x: -1.5d
-			y: -1.0d
+			x: 2.0d
+			y: -4.0d
 		}
 	]
 	title: "工具装备"
