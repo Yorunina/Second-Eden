@@ -114,7 +114,8 @@ const OthersCustomLootStrategy = {
     'undead_raid_leader': function (event) {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
-        event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(rank + 1) }))
+        let nextRank = Math.max(rank + 1, 10)
+        event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(nextRank) }))
         event.addLoot(LootEntry.of('minecraft:netherite_scrap', 1).when(c => c.randomChance(0.01 * rank)))
         event.addLoot(LootEntry.of('minecraft:diamond', Math.ceil(rank / 5)).when(c => c.randomChance(0.01 * rank)))
     },
