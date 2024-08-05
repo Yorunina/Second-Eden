@@ -440,6 +440,7 @@
 		{
 			dependencies: ["7B213278B14E0CC0"]
 			description: ["本模组有非常多的&6升级道具&r，你可以将他们放入对应的机器内，他们有的会提供&2更高的效率&r，有的则是提供&2新的功能&r。"]
+			icon: "refinedstorage:stack_upgrade"
 			id: "3E75FC094CB75BF4"
 			rewards: [{
 				exclude_from_claim_all: true

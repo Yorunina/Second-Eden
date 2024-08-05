@@ -528,6 +528,12 @@
 				"&d地标&r是一类大型建筑，它们在建成后会为你的殖民地&e提供各种增益加成&r。"
 				""
 				"在委托建筑工建造地标时，你可以佩戴&6建筑工护目镜&r，在&2有需要的时候&r帮助建筑工搭建&6脚手架&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"解锁地标后，你需要选择下图中的&d风格包&r，才能委托建造&d地标&r。"
+				""
+				"{image:kubejs:textures/task/landmark_1.png width:180 height:82 align:center}"
 			]
 			icon: "minecraft:scaffolding"
 			id: "7655520F92D81D97"

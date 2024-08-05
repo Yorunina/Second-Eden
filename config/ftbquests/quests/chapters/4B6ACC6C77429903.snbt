@@ -398,10 +398,11 @@
 			}]
 			size: 4.0d
 			tasks: [{
-				id: "04C9DB99B9836466"
-				item: "k_turrets:titanium_ingot"
+				id: "15C61BAAF72C5BE6"
+				item: "kubejs:steel_ingot"
 				type: "item"
 			}]
+			title: "钢锭的另一用途"
 			x: 8.0d
 			y: -2.0d
 		}
@@ -775,7 +776,11 @@
 		}
 		{
 			dependencies: ["2550EECC9D8DB83E"]
-			description: ["可以&2集结或解散&r你的&b卫兵&r。"]
+			description: [
+				"可以&2集结或解散&r你的&b卫兵&r。"
+				""
+				"这使得你可以随意的在殖民地范围内集结武装力量，不过他们不能离开殖民地！"
+			]
 			id: "48225406680D995B"
 			rewards: [{
 				exclude_from_claim_all: true

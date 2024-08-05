@@ -24,7 +24,7 @@ StartupEvents.registry('block', event => {
 
 
 StartupEvents.registry('item', event => {
-    event.create('steel_ingot', 'basic').tag(RARE).texture('kubejs:item/steel_ingot')
+    event.create('steel_ingot', 'basic').tag(RARE).tag('forge:ingots/titanium').texture('kubejs:item/steel_ingot')
 })
 
 ItemEvents.armorTierRegistry(event => {
