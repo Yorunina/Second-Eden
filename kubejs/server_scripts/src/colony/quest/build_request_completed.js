@@ -25,4 +25,4 @@ export function BuildRequestCompletedQuest(event) {
 // 'archery' || 'baker' || 'barracks' || 'barrackstower' || 'blacksmith' || 'builder' || 'chickenherder' || 'combatacademy' || 'composter' || 'cook' || 'cowboy' || 'crusher' || 'deliveryman' || 'farmer' || 'fisherman' || 'guardtower' || 'residence' || 'library' || 'lumberjack' || 'miner' || 'sawmill' || 'shepherd' || 'sifter' || 'smeltery' || 'stonemason' || 'stonesmeltery' || 'swineherder' || 'townhall' || 'warehouse' || 'postbox' || 'florist' || 'enchanter' || 'university' || 'hospital' || 'stash' || 'school' || 'glassblower' || 'dyer' || 'fletcher' || 'mechanic' || 'plantation' || 'tavern' || 'concretemixer' || 'rabbithutch' || 'beekeeper' || 'mysticalsite' || 'graveyard' || 'netherworker' || 'simplequarry' || 'mediumquarry' || 'largequarry' || 'alchemist'
 
 const BuildTypeToFTBQuest = new Map()
-    .set('minecraft:glassblower', '13BD292F0E5DC4EB') // 添加建筑示例
+    // .set('minecraft:glassblower', '13BD292F0E5DC4EB') // 添加建筑示例

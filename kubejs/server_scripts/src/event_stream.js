@@ -5,7 +5,7 @@ const { CuriosHurtOthers } = require("./curios/strategy/hurt_others")
 const { $ColonyInformationChangedEvent } = require("packages/com/minecolonies/api/colony/event/$ColonyInformationChangedEvent")
 const { ResearchCompletedQuest } = require("./colony/quest/research_complete")
 const { BuildRequestCompletedQuest } = require("./colony/quest/build_request_completed")
-const { AnyBuildRequestCompletedQuest } = require("./colony/landmarks/landmarks_built")
+const { SpecialBuildRequestCompletedQuest } = require("./colony/landmarks/landmarks_built")
 
 /**
  * 事件流，用于某些事件的连续处理
@@ -46,29 +46,29 @@ global.ColonyCreatedEvent = event => {
 }
 
 /**
- * 殖民地创建事件总线
+ * 殖民地建筑完成事件总线
  */
 /**
  * @param {$ColonyInformationChangedEvent} event
  * @returns 
  */
 global.ColonyBuildRequestCompletedEvent = event => {
-    BuildRequestCompletedQuest(event)
+    // BuildRequestCompletedQuest(event)
 }
 
 /**
- * 殖民地创建事件总线
+ * 殖民地研究完成事件总线
  */
 /**
  * @param {$ColonyInformationChangedEvent} event
  * @returns 
  */
 global.ColonyResearchCompletedEvent = event => {
-    ResearchCompletedQuest(event)
+    // ResearchCompletedQuest(event)
 }
 
 /**
- * 殖民地创建事件总线
+ * 殖民地特殊建筑类型处理
  */
 /**
  * @param {$ColonyInformationChangedEvent} event

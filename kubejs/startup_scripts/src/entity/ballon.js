@@ -61,12 +61,12 @@ EntityJSEvents.attributes(event => {
             attribute.add('minecraft:generic.attack_damage', 0.0)
         })
         event.modify(`kubejs:med_${type}`, attribute => {
-            attribute.add('minecraft:generic.max_health', 50)
+            attribute.add('minecraft:generic.max_health', 30)
             attribute.add('minecraft:generic.movement_speed', 0.0)
             attribute.add('minecraft:generic.attack_damage', 0.0)
         })
         event.modify(`kubejs:adv_${type}`, attribute => {
-            attribute.add('minecraft:generic.max_health', 100)
+            attribute.add('minecraft:generic.max_health', 40)
             attribute.add('minecraft:generic.movement_speed', 0.0)
             attribute.add('minecraft:generic.attack_damage', 0.0)
         })

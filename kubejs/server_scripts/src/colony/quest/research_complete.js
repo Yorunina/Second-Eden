@@ -21,4 +21,4 @@ export function ResearchCompletedQuest(event) {
 }
 
 const ResearchIdToFTBQuest = new Map()
-    .set('kubejs:overlimit/singular', '3113C02082E4DDB6') // 添加研究任务示例
+    // .set('kubejs:overlimit/singular', '3113C02082E4DDB6') // 添加研究任务示例

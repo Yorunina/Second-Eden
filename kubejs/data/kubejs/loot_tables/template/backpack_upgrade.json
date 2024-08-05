@@ -1,0 +1,211 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "bonus_rolls": 0,
+        "entries": [
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:anvil_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:auto_blasting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:tank_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:auto_smoking_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:inception_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:magnet_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:void_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:deposit_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:restock_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:refill_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:everlasting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:smelting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:blasting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:smoking_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:auto_smelting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:stonecutter_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:crafting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:stack_upgrade_starter_tier"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:xp_pump_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:pump_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:battery_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:tool_swapper_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:pickup_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:filter_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 5,
+                "name": "sophisticatedbackpacks:feeding_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_magnet_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_pickup_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_feeding_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_filter_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_tool_swapper_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_pump_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_deposit_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_refill_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_restock_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_compacting_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:advanced_void_upgrade"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 1,
+                "name": "sophisticatedbackpacks:stack_upgrade_tier_4"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 2,
+                "name": "sophisticatedbackpacks:stack_upgrade_tier_3"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 3,
+                "name": "sophisticatedbackpacks:stack_upgrade_tier_2"
+            },
+            {
+                "type": "minecraft:item",
+                "weight": 4,
+                "name": "sophisticatedbackpacks:stack_upgrade_tier_1"
+            }
+        ]
+      }
+    ]
+  }

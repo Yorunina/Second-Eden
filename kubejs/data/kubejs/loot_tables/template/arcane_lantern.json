@@ -1,0 +1,61 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+        {
+            "rolls": 1,
+            "bonus_rolls": 0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:cloud_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:boreal_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:warding_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:containing_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:feral_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:wailing_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 5,
+                    "name": "arcanelanterns:brilliant_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "arcanelanterns:life_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "arcanelanterns:love_lantern"
+                },
+                {
+                    "type": "minecraft:item",
+                    "weight": 3,
+                    "name": "arcanelanterns:withering_lantern"
+                }
+            ]
+        }
+    ]
+}

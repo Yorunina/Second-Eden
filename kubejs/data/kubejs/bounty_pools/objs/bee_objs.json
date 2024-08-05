@@ -1,0 +1,22 @@
+{
+    "content": {
+        "bee_objs_honeycomb": {
+            "type": "item",
+            "content": "minecraft:honeycomb",
+            "amount": {
+                "min": 16,
+                "max": 256
+            },
+            "unitWorth": 30
+        },
+        "bee_objs_candles": {
+            "type": "item_tag",
+            "content": "minecraft:candles",
+            "amount": {
+                "min": 1,
+                "max": 256
+            },
+            "unitWorth": 50
+        }
+    }
+}

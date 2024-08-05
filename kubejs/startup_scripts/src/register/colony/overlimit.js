@@ -22,5 +22,5 @@ StartupEvents.registry('item', event => {
     event.create('infinity_ingot', 'basic').maxStackSize(64).tag(OVERLIMIT)
     event.create('infinity_nugget', 'basic').maxStackSize(64).tag(OVERLIMIT)
 
-    event.create('neutron_sizing_machinery', 'basic').maxDamage(8).maxStackSize(64).tag(OVERLIMIT)
+    event.create('neutron_sizing_machinery', 'basic').maxDamage(8).maxStackSize(1).tag(OVERLIMIT)
 })

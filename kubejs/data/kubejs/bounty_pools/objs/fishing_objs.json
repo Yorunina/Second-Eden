@@ -15,21 +15,6 @@
             },
             "unitWorth": 50
         },
-        "fishing_objs_fishing_rod_hooked_pufferfish": {
-            "icon": "minecraft:fishing_rod",
-            "type": "criteria",
-            "content": "minecraft:fishing_rod_hooked",
-            "conditions": {
-                "item": {
-                    "item": "minecraft:pufferfish"
-                }
-            },
-            "amount": {
-                "min": 1,
-                "max": 10
-            },
-            "unitWorth": 200
-        },
         "fishing_objs_fishes": {
             "type": "item_tag",
             "content": "minecraft:fishes",

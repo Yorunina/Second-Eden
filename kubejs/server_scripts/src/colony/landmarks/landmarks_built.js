@@ -27,9 +27,8 @@ export function SpecialBuildRequestCompletedQuest(event) {
 
 }
 
-
 /**
- * 饰品受伤策略
+ * 地标完成策略
  * @constant
  * @type {Object<string,function($ColonyInformationChangedEvent):void>}
  * @returns {$BlockPos_}

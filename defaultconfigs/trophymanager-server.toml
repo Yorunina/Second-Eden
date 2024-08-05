@@ -1,7 +1,7 @@
 
 [General]
 	#Should trophies drop from players when killed by another player?
-	dropFromPlayers = false
+	dropFromPlayers = true
 	#Should trophies drop from mobs when killed by a player?
 	dropFromMobs = false
 	#Looting enchant will increase drop change
