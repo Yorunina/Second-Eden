@@ -308,6 +308,7 @@
     "block.kubejs.steel_block": "§3钢块",
     "block.kubejs.neutron_block": "§c中子块",
     "_comment.item": "注册物品",
+    "item.kubejs.trophy_sword": "§6奖杯剑",
     "item.kubejs.trial_modifier": "§5试炼修饰符",
     "item.kubejs.magic_mirror": "回溯魔镜",
     "item.kubejs.spawn_maid_box": "箱中女仆",

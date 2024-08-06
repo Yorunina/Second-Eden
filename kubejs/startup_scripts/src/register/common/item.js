@@ -1,4 +1,4 @@
-const { EPIC, COMMON } = require("../../utils/itemborder");
+const { EPIC, COMMON, LEGENDARY } = require("../../utils/itemborder");
 
 StartupEvents.registry('item', event => {
     event.create('echo_crystal', 'basic').tag(EPIC).texture('kubejs:item/echo_crystal')
@@ -55,5 +55,5 @@ StartupEvents.registry('item', event => {
         .speed(4.0)
         .maxDamage(32)
         .maxStackSize(1)
-        .tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/trophy_sword').tag(EPIC)
+        .tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/trophy_sword').tag(LEGENDARY)
 })

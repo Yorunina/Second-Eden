@@ -9,4 +9,8 @@ ServerEvents.recipes(event => {
         I: 'minecraft:iron_ingot',
         D: 'minecraft:diamond',
     })
+    event.shaped('kubejs:trophy_sword', ['  C', ' C ', 'D '], {
+        C: 'minecraft:copper_ingot',
+        D: 'minecraft:diamond',
+    })
 })
