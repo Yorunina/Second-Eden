@@ -12,7 +12,6 @@ export function BuildRequestCompletedQuest(event) {
     if (!building) return
     let buildingType = building.getBuildingType().getRegistryName().toString()
     event.colony.getMessagePlayerEntities().forEach(/**@param {$Player} player*/player => {
-        player.tell(buildingType)
         if (BuildTypeToFTBQuest.has(buildingType)) {
             let questData = FTBQuests.getServerDataFromPlayer(player)
             let questId = ResearchIdToFTBQuest.get(buildingType)

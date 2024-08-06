@@ -8,7 +8,6 @@ ItemEvents.rightClicked('trophymanager:trophy', event => {
     let anotherHand = hand == 'MAIN_HAND' ? 'OFF_HAND' : 'MAIN_HAND'
     let itemBase = player.getItemInHand(anotherHand)
     if (!itemBase || !itemBase.isBlock()) return
-    player.tell(itemBase)
     let itemLocation = itemBase.getIdLocation()
     let baseBlock = $ForgeRegistries.BLOCKS.getValue(itemLocation)
     if (item.hasNBT() && baseBlock) {
