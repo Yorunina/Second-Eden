@@ -17,5 +17,3 @@ ServerEvents.highPriorityData(event => {
             [Item.of('minecraft:book'), Item.of('minecraft:glowstone_dust')])
             .setMinBuildingLevel(3))
 })
-
-

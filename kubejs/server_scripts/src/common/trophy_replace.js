@@ -27,3 +27,17 @@ ItemEvents.entityInteracted('trophymanager:trophy', event => {
         player.setItemInHand(hand, itemTro)
     }
 })
+
+LootJS.modifiers(event => {
+    event.addLootTypeModifier(LootType.ENTITY)
+        .matchEquip('mainhand', Item.of('kubejs:trophy_sword'))
+        .apply(ctx => {
+            let { entity } = ctx
+            let itemTro = $TrophyBlock.createTrophy(entity, entity.getNbt())
+            if (itemTro) {
+                itemTro.nbt.putString('BaseBlock', 'minecraft:smooth_stone_slab')
+                ctx.addLoot(itemTro)
+            }
+        }
+    )
+})

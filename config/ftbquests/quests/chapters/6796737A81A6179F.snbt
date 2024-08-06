@@ -19,10 +19,9 @@
 			]
 			id: "0CD36B4E1865155A"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "1DC1033EBFF782EB"
-				table_id: 7517863136333816811L
-				type: "loot"
+				id: "4743D906DBBBC013"
+				item: "simplehats:hatbag_epic"
+				type: "item"
 			}]
 			shape: "gear"
 			size: 4.0d

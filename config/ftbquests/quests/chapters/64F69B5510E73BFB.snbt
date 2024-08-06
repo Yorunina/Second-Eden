@@ -811,12 +811,6 @@
 			]
 			hide: true
 			id: "6E89693450142ACE"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "08065AC9F0AF7333"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
 			size: 4.0d
 			tasks: [{
 				id: "1F610E27C8CA2F5E"
@@ -900,6 +894,124 @@
 			}]
 			x: 0.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["48FD6C4DE7C8B59A"]
+			description: [
+				"&d<Truly－Modular>模组&r是一个旨在让玩家能自由地以全新的方式&a研究、制造模块化装备&r的模组。"
+				""
+				"它不仅能够提升玩家个人的战斗能力，同时还能&e作为殖民地卫兵的装备&r，更好的保护你的殖民地。"
+				""
+				"&7请注意，卫兵并不能使用该模组提供的所有武器，仅类似原版剑、斧、弓、弩类武器能够使用，护甲装备则没有太多限制，请玩家妥善尝试&r"
+			]
+			hide: true
+			id: "2F4F3082E7F059E0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27A63E4051071577"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "另一个四面体"
+			tasks: [{
+				id: "605BCC4B0C134A11"
+				item: "miapi:modular_work_bench"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
+			id: "10D6DC8248011CB2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2D3F5F9AF5ED0455"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			subtitle: "似曾相识"
+			tasks: [{
+				id: "06D6546D747083CD"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "伤害测试假人"
+			x: -18.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——伐木斧可以让你更快的砍伐树木，高效率收集木材。&r"
+				""
+				"&6伐木斧&r的&2制作方法与锤子相同&r，仅在最后一步选择制造&a“锤子”&r即可。"
+			]
+			hide_dependency_lines: true
+			id: "294FB78060A8492F"
+			rewards: [{
+				id: "4F5B15FD62296AE6"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "420E9E63E8A7567D"
+				item: {
+					Count: 1
+					id: "miapi:modular_axe"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——锤子可以让你更大范围的破坏石制方块，增加你的采矿效率。&r"
+				""
+				"接下来将通过&2文字简略描述&r，以&6锤子&r为例，如何通过&6模块化工作台&r制作一把&a工具/武器/装备&r。"
+				""
+				"1.在创建界面选择本次制作的类型，选择&a“工具”&r。"
+				""
+				"2.工具柄界面放入材料。"
+				""
+				"3.&2空工具头槽&r中选择&a“工具适配器”&r。"
+				""
+				"4.新的&2空工具头槽&r中选择&a“锤头”&r。"
+			]
+			id: "6E6FC319BAE7DB80"
+			rewards: [{
+				id: "1730827F4BFF9FA5"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "09BE33827BB52D4E"
+				item: {
+					Count: 1
+					id: "miapi:modular_hammer"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
 		}
 	]
 	title: "&3资源收集&r"

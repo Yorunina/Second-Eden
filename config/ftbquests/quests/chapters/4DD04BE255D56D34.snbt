@@ -428,10 +428,9 @@
 			]
 			id: "22DD54825EBE5210"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "45D7C12EC794B630"
-				table_id: 7517863136333816811L
-				type: "random"
+				id: "7726DA9515E90E8D"
+				item: "simplehats:hatbag_halloween"
+				type: "item"
 			}]
 			shape: "gear"
 			size: 4.0d
@@ -455,9 +454,9 @@
 			id: "415AB8BAAD892C25"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "78D17AB13396472D"
+				id: "35141D265DF27F76"
 				table_id: 7517863136333816811L
-				type: "loot"
+				type: "random"
 			}]
 			shape: "gear"
 			size: 4.0d
@@ -487,9 +486,9 @@
 			id: "2A516FDBB7C617B9"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "3C494E9FB9ECA035"
+				id: "20FD8637B6635050"
 				table_id: 7517863136333816811L
-				type: "loot"
+				type: "random"
 			}]
 			shape: "gear"
 			size: 4.0d
@@ -516,12 +515,19 @@
 				"&6漏式生物笼&r，带漏斗功能的生物笼，它可以将掉落物放入到下方容器中。"
 			]
 			id: "1ECD98AFC0203C66"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0C1AEB53B0756CFC"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C1AEB53B0756CFC"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					id: "3B92D92DDC5A4061"
+					item: "simplehats:hatbag_halloween"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 4.0d
 			tasks: [{
@@ -1208,12 +1214,19 @@
 				"&7你需要在研究台的交互界面，先将原版经验转换为遗物经验，才能使用遗物经验对遗物进行升级等操作。&r"
 			]
 			id: "1354DCDABF356FBD"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "558374579CEA7AA6"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "558374579CEA7AA6"
+					table_id: 7517863136333816811L
+					type: "loot"
+				}
+				{
+					id: "4833F4B336764A9C"
+					item: "simplehats:hatbag_uncommon"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			tasks: [{
 				id: "33964D770DB95A60"
@@ -1231,12 +1244,19 @@
 				"你现在需要委托对应的&d殖民地小屋&r来制作各种&a原本需要祭坛合成的道具&r。"
 			]
 			id: "6AE3FD6BE9D216B9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "65DBD7145461D452"
-				table_id: 3054476279840700017L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65DBD7145461D452"
+					table_id: 3054476279840700017L
+					type: "choice"
+				}
+				{
+					id: "490C83975D0ED916"
+					item: "simplehats:hatbag_festive"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			tasks: [{
 				id: "52FE8C650B3C03B1"

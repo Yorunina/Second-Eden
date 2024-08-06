@@ -126,7 +126,6 @@ ItemEvents.entityInteracted('kubejs:emergency_evacuation_bell', event => {
 })
 
 
-// todo 缺乏进一步的可用性回归
 ItemEvents.entityInteracted('kubejs:disband_canes', event => {
     let { target, player, item } = event
     if (player.cooldowns.isOnCooldown(item)) return

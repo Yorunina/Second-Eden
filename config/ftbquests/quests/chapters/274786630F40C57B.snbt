@@ -19,20 +19,12 @@
 			]
 			hide: true
 			id: "4F33D347ACE7F259"
-			rewards: [
-				{
-					count: 5
-					id: "284D515B203FE8E3"
-					item: "lightmanscurrency:coin_copper"
-					type: "item"
-				}
-				{
-					exclude_from_claim_all: true
-					id: "2C1A253CE7A4EDA2"
-					table_id: 7517863136333816811L
-					type: "random"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C1A253CE7A4EDA2"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "幻化多端"
@@ -184,9 +176,9 @@
 			id: "67E63D4973689F96"
 			rewards: [{
 				exclude_from_claim_all: true
-				id: "1FFE2DD66ABE739E"
-				table_id: 7517863136333816811L
-				type: "random"
+				id: "79B532A3414D1821"
+				table_id: 3054476279840700017L
+				type: "choice"
 			}]
 			size: 4.0d
 			tasks: [
@@ -325,10 +317,9 @@
 			hide: true
 			id: "35217380A42DC86D"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "0A5B4AA2C3D58618"
-				table_id: 7517863136333816811L
-				type: "random"
+				id: "662DE1D7EB5AA14E"
+				item: "simplehats:hatbag_rare"
+				type: "item"
 			}]
 			shape: "gear"
 			size: 4.0d
@@ -349,10 +340,9 @@
 			description: ["在&6铁砧&r中，&2左侧&r放入&6皮带&r，&2右侧&r放入&6皮带袋&r，可以&a升级皮带的存储栏位上限&r。&7（可多次升级）&r"]
 			id: "1FA52393CFEA961A"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "673A8B1E1CD8799F"
-				table_id: 7517863136333816811L
-				type: "random"
+				id: "7B4B1C49D3A0ECE1"
+				item: "simplehats:hatbag_rare"
+				type: "item"
 			}]
 			size: 4.0d
 			tasks: [{

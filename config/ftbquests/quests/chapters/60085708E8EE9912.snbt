@@ -58,8 +58,8 @@
 				item: "minecolonies:blockhutcook"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -2.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -90,8 +90,8 @@
 				type: "checkmark"
 			}]
 			title: "农夫乐事"
-			x: 12.0d
-			y: -2.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0E140DD8AE0C7D73"]
@@ -106,12 +106,20 @@
 			]
 			hide: true
 			id: "3F16BC87620698EB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "24FD8428AFD5B177"
-				table_id: 7517863136333816811L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24FD8428AFD5B177"
+					table_id: 7517863136333816811L
+					type: "choice"
+				}
+				{
+					count: 8
+					id: "257775010B7144CE"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "并容偏覆"
 			tasks: [{
@@ -135,12 +143,20 @@
 			]
 			hide: true
 			id: "570F07C47C8097A5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "12A97C2C965A9C61"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12A97C2C965A9C61"
+					table_id: 7517863136333816811L
+					type: "loot"
+				}
+				{
+					count: 6
+					id: "13A2BF58E5A1D131"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "更多的人口"
 			tasks: [{
@@ -279,6 +295,99 @@
 			}]
 			x: -2.0d
 			y: 10.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&7——用风铃装饰你的殖民地吧！将铃声带到你的领地！&r"
+				""
+				"&d《Chimes》模组&r添加了可以悬挂的&6风铃&r，它给殖民地提供了一个惬意的氛围，并且可以&2阻挡幻翼的靠近&r！"
+				""
+				"&7潜行时，空手对着风铃右击可以将风铃捆上，使它不再发出声音。&r"
+			]
+			hide: true
+			icon: "chimes:bamboo_chimes"
+			id: "03532851E80C85BE"
+			rewards: [{
+				id: "6AD9D96858CE5436"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "悠久之风"
+			tasks: [{
+				id: "1762958086E19352"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "chimes:glass_bells"
+							}
+							{
+								Count: 1b
+								id: "chimes:bamboo_chimes"
+							}
+							{
+								Count: 1b
+								id: "chimes:iron_chimes"
+							}
+							{
+								Count: 1b
+								id: "chimes:carved_bamboo_chimes"
+							}
+							{
+								Count: 1b
+								id: "chimes:copper_chimes"
+							}
+							{
+								Count: 1b
+								id: "chimes:amethyst_chimes"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "风铃"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"570F07C47C8097A5"
+				"3F16BC87620698EB"
+			]
+			dependency_requirement: "one_completed"
+			description: [
+				"&7——作为殖民地领主，你拥有更便捷的方法为你的公民命名。&r"
+				""
+				"现在你可以在手持&6命名牌&r时，&2潜行键+右键&r直接&a编辑命名牌&r。"
+				""
+				"&7这不需要使用铁砧，也不需要经验。&r"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:name_tag"
+			id: "7617CF08A1D8AB61"
+			rewards: [{
+				count: 12
+				id: "7521136FBD67A547"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "自定义公民名称"
+			tasks: [{
+				id: "1C96571C0B08744C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "文明"
+			x: 4.0d
+			y: -2.0d
 		}
 	]
 	title: "&3公民与基础建设&r"

@@ -45,4 +45,15 @@ StartupEvents.registry('item', event => {
 
     // 试炼高塔兼容
     event.create('kubejs:trial_modifier', 'basic').maxStackSize(1).tag(EPIC).texture('kubejs:item/trial_modifier')
+
+    // 奖杯剑
+    event.create('kubejs:trophy_sword', 'sword')
+        .tier('diamond')
+        .attackDamageBaseline(2.0)
+        .attackDamageBonus(3.0)
+        .speedBaseline(-2.5)
+        .speed(4.0)
+        .maxDamage(32)
+        .maxStackSize(1)
+        .tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/trophy_sword').tag(EPIC)
 })

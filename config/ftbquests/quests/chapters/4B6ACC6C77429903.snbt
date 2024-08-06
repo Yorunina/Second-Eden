@@ -38,34 +38,6 @@
 			y: -20.0d
 		}
 		{
-			dependencies: ["0E140DD8AE0C7D73"]
-			description: [
-				"&d<Truly－Modular>模组&r是一个旨在让玩家能自由地以全新的方式&a研究、制造模块化装备&r的模组。"
-				""
-				"它不仅能够提升玩家个人的战斗能力，同时还能&e作为殖民地卫兵的装备&r，更好的保护你的殖民地。"
-				""
-				"&7请注意，卫兵并不能使用该模组提供的所有武器，仅类似原版剑、斧、弓、弩类武器能够使用，护甲装备则没有太多限制，请玩家妥善尝试&r"
-			]
-			hide: true
-			id: "2F4F3082E7F059E0"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "27A63E4051071577"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
-			shape: "gear"
-			size: 4.0d
-			subtitle: "另一个四面体"
-			tasks: [{
-				id: "605BCC4B0C134A11"
-				item: "miapi:modular_work_bench"
-				type: "item"
-			}]
-			x: -16.0d
-			y: -14.0d
-		}
-		{
 			dependencies: ["73EBA454E698D18A"]
 			description: [
 				"&d兵营&r是&2殖民地防线的核心所在&r。"
@@ -314,27 +286,6 @@
 			}]
 			x: 2.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["2F4F3082E7F059E0"]
-			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
-			id: "10D6DC8248011CB2"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "2D3F5F9AF5ED0455"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
-			size: 4.0d
-			subtitle: "似曾相识"
-			tasks: [{
-				id: "06D6546D747083CD"
-				item: "dummmmmmy:target_dummy"
-				type: "item"
-			}]
-			title: "伤害测试假人"
-			x: -10.0d
-			y: -14.0d
 		}
 		{
 			dependencies: ["56D64129207D0604"]

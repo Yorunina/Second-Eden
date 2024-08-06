@@ -233,6 +233,40 @@
 			x: -10.0d
 			y: 14.0d
 		}
+		{
+			dependencies: ["48FD6C4DE7C8B59A"]
+			description: [
+				"&7——奖杯是你旅途的见证者，收集奖杯，并自主定制他们的外观，装饰你的殖民地吧！&r"
+				""
+				"你甚至可以通过将&6奖杯&r放置于&2“头部装备栏”&r或者&2“饰品栏：首饰”&r，从而&a把奖杯戴在头上&r。"
+				""
+				"{image:kubejs:textures/task/trophy_1.png width:200 height:79 align:center}"
+			]
+			hide: true
+			id: "1E10171D8B073FB5"
+			rewards: [{
+				id: "573FA873717FA667"
+				item: "supplementaries:jar"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "旅途的见证"
+			tasks: [{
+				id: "66E6E842C1CCE794"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "trophymanager"
+					}
+				}
+				title: "奖杯"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 14.0d
+		}
 	]
-	title: "冒险试炼"
+	title: "&7冒险试炼&r"
 }

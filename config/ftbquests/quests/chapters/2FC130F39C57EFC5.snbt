@@ -516,42 +516,7 @@
 			}]
 			title: "超限"
 			x: 28.0d
-			y: -10.0d
-		}
-		{
-			dependencies: ["73EBA454E698D18A"]
-			description: [
-				"&7——你的殖民地需要经过漫长的发展，才可以进行该任务。&r"
-				""
-				"当你的&d市政厅&r到达&a6级&r，便可以在&d大学&r中研究并解锁&d地标&r的&a建造权限&r。"
-				""
-				"&d地标&r是一类大型建筑，它们在建成后会为你的殖民地&e提供各种增益加成&r。"
-				""
-				"在委托建筑工建造地标时，你可以佩戴&6建筑工护目镜&r，在&2有需要的时候&r帮助建筑工搭建&6脚手架&r。"
-				""
-				"&7点击右下角以翻页。&r"
-				"{@pagebreak}"
-				"解锁地标后，你需要选择下图中的&d风格包&r，才能委托建造&d地标&r。"
-				""
-				"{image:kubejs:textures/task/landmark_1.png width:180 height:82 align:center}"
-			]
-			icon: "minecraft:scaffolding"
-			id: "7655520F92D81D97"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "77B9048B44861ED2"
-				table_id: 3054476279840700017L
-				type: "choice"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "6647A5A13946C10B"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "奇观地标"
-			x: 28.0d
-			y: -2.0d
+			y: -6.0d
 		}
 	]
 	title: "&3主线－模拟殖民地&r"

@@ -179,10 +179,7 @@
 			y: 34.0d
 		}
 		{
-			dependencies: [
-				"73EBA454E698D18A"
-				"19A82DA478C4E234"
-			]
+			dependencies: ["73EBA454E698D18A"]
 			description: [
 				"&d冶炼厂&r提供&b冶炼工人&r岗位，可以通过&2传授配方&r，提供燃料和矿石，委托&a冶炼矿物&r。"
 				""
@@ -190,6 +187,7 @@
 				""
 				"&7你可以通过信箱委托进行制作。&r"
 			]
+			hide: true
 			id: "3F88645467A477F1"
 			rewards: [{
 				exclude_from_claim_all: true

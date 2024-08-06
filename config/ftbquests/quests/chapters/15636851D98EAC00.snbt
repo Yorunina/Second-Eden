@@ -25,12 +25,19 @@
 			}
 		}
 		id: "25DC060DF356A689"
-		rewards: [{
-			count: 5
-			id: "7EE6FEE5D07AFBEF"
-			item: "lightmanscurrency:coin_iron"
-			type: "item"
-		}]
+		rewards: [
+			{
+				count: 5
+				id: "7EE6FEE5D07AFBEF"
+				item: "lightmanscurrency:coin_iron"
+				type: "item"
+			}
+			{
+				id: "3CF776ACF20A0DAB"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}
+		]
 		size: 4.0d
 		tasks: [{
 			id: "411E2279DD8BEEC7"
