@@ -381,12 +381,19 @@
 			hide: true
 			icon: "bountiful:bountyboard"
 			id: "0459DEEBB651A740"
-			rewards: [{
-				count: 3
-				id: "16287585DB4F4548"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "16287585DB4F4548"
+					item: "lightmanscurrency:coin_iron"
+					type: "item"
+				}
+				{
+					id: "3C36E146203B8C42"
+					item: "bountiful:bountyboard"
+					type: "item"
+				}
+			]
 			shape: "circle"
 			size: 4.0d
 			tasks: [{

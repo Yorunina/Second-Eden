@@ -98,12 +98,19 @@
 			]
 			icon: "minecolonies:supplycampdeployer"
 			id: "3B3395C72863B7EC"
-			rewards: [{
-				count: 8
-				id: "71C28242968861D8"
-				item: "farmersdelight:fruit_salad"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "71C28242968861D8"
+					item: "farmersdelight:fruit_salad"
+					type: "item"
+				}
+				{
+					id: "0D2A27AAD44A16D2"
+					item: "kubejs:magic_mirror"
+					type: "item"
+				}
+			]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "这是属于我的土地"

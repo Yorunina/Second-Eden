@@ -1,3 +1,7 @@
 // priority: 950
-event.addLootTypeModifier(LootType.ENTITY)
-    .removeLoot('@simplehats')
+
+LootJS.modifiers(event => {
+    event.addLootTypeModifier(LootType.ENTITY)
+        .removeLoot('@simplehats')
+})
+

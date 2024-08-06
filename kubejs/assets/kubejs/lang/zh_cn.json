@@ -500,6 +500,7 @@
     "tooltip.item.kubejs.trial_modifier.trial_spawner": "试炼刷怪笼",
     "tooltip.item.kubejs.trial_modifier.trial_vault": "试炼金库",
     "tooltip.item.kubejs.trial_modifier.2": "战利品表：",
+    "tooltip.item.kubejs.magic_mirror.1": "潜行长按右键以记录地点，长按右键以回溯地点",
     "_comment.puffskill": "puffskill技能",
     "kubejs.puffskill.strength.title": "力量",
     "kubejs.puffskill.agility.title": "敏捷",

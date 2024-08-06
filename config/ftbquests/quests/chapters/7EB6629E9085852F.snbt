@@ -238,6 +238,8 @@
 			description: [
 				"&7——奖杯是你旅途的见证者，收集奖杯，并自主定制他们的外观，装饰你的殖民地吧！&r"
 				""
+				"使用&6奖杯剑&r击杀任意实体，可以获得一个对应实体的奖杯。"
+				""
 				"你甚至可以通过将&6奖杯&r放置于&2“头部装备栏”&r或者&2“饰品栏：首饰”&r，从而&a把奖杯戴在头上&r。"
 				""
 				"{image:kubejs:textures/task/trophy_1.png width:200 height:79 align:center}"
@@ -252,18 +254,31 @@
 			shape: "gear"
 			size: 4.0d
 			subtitle: "旅途的见证"
-			tasks: [{
-				id: "66E6E842C1CCE794"
-				item: {
-					Count: 1
-					id: "itemfilters:mod"
-					tag: {
-						value: "trophymanager"
+			tasks: [
+				{
+					id: "66E6E842C1CCE794"
+					item: {
+						Count: 1
+						id: "itemfilters:mod"
+						tag: {
+							value: "trophymanager"
+						}
 					}
+					title: "奖杯"
+					type: "item"
 				}
-				title: "奖杯"
-				type: "item"
-			}]
+				{
+					id: "14920175CF71CCFE"
+					item: {
+						Count: 1
+						id: "kubejs:trophy_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
 			x: -4.0d
 			y: 14.0d
 		}

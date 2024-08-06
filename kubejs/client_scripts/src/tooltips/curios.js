@@ -1,4 +1,9 @@
+
 ItemEvents.tooltip((tooltip) => {
+    tooltip.addAdvanced('kubejs:waypointer_necklace', (item, advanced, text) => {
+        text.add(1, Text.translatable('tooltip.item.kubejs.waypointer_necklace.1').gray())
+    })
+
     tooltip.addAdvanced('kubejs:evening_primrose_ring', (item, advanced, text) => {
         text.add(1, Text.translatable('tooltip.item.kubejs.evening_primrose_ring.1').green())
     })

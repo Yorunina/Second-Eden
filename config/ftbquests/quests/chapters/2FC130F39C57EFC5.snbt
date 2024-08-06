@@ -382,6 +382,18 @@
 					item: "lightmanscurrency:coin_iron"
 					type: "item"
 				}
+				{
+					id: "742066DE0434B5AE"
+					item: {
+						Count: 1
+						id: "kubejs:building_gift_box"
+						tag: {
+							levelReq: "1"
+							rePattern: "\\S+1\\.blueprint"
+						}
+					}
+					type: "item"
+				}
 			]
 			size: 4.0d
 			subtitle: "使用建筑工具"

@@ -17,6 +17,7 @@
 				""
 				"首先你需要一个&6控制器&r，这是游玩精致存储的开始。"
 			]
+			icon: "refinedstorage:creative_controller"
 			id: "0CD36B4E1865155A"
 			rewards: [{
 				id: "4743D906DBBBC013"

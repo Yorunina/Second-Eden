@@ -25,7 +25,7 @@
 				""
 				"{\"text\":\"点击前往团队介绍页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/author/31248.html\"}}"
 				""
-				"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/New-Colony\"}}"
+				"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/Second-Eden\"}}"
 			]
 			icon: {
 				Count: 1

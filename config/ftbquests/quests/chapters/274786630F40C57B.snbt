@@ -118,6 +118,7 @@
 				""
 				"&6黑白胶卷&r需要一瓶普通的&6水瓶&r，而&6彩色胶卷&r需要&6平凡的药水&r、&6粗制的药水&r、&6浓稠的药水&r。"
 			]
+			icon: "exposure:color_film"
 			id: "38B96600FBC480B7"
 			rewards: [{
 				exclude_from_claim_all: true

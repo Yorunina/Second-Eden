@@ -5,12 +5,16 @@ ServerEvents.recipes(event => {
 
     event.shapeless(Item.of('minecraft:string', 4), [Ingredient.of('#minecraft:wool'), Ingredient.of('#forge:tools/knives')]).damageIngredient('#forge:tools/knives', 1)
 
-    event.shaped('kubejs:friend_to_the_end', ['IDI', 'I I', 'III'], {
+    event.shaped('kubejs:friend_to_the_end', ['IRI', 'I I', 'III'], {
         I: 'minecraft:iron_ingot',
+        R: 'minecraft:redstone',
+    })
+    event.shaped('kubejs:trophy_sword', ['  C', ' C ', 'D  '], {
+        C: 'minecraft:copper_ingot',
         D: 'minecraft:diamond',
     })
-    event.shaped('kubejs:trophy_sword', ['  C', ' C ', 'D '], {
-        C: 'minecraft:copper_ingot',
+    event.shaped('kubejs:magic_mirror', ['III', 'IDI', 'III'], {
+        I: 'minecraft:iron_ingot',
         D: 'minecraft:diamond',
     })
 })

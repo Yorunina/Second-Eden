@@ -339,7 +339,7 @@
 		}
 		{
 			dependencies: ["1CD76A47D36C3941"]
-			description: ["对&e受损的炮台/无人机&r，手持&6钛锭&r并&2潜行键+右键&r，可以&a修复炮台/无人机&r。"]
+			description: ["对&e受损的炮台/无人机&r，手持&6钢锭&r并&2潜行键+右键&r，可以&a修复炮台/无人机&r。"]
 			id: "1243AB6111542101"
 			rewards: [{
 				exclude_from_claim_all: true

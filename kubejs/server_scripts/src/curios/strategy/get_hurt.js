@@ -31,11 +31,13 @@ const CuriosGetHurtStrategy = {
     },
     'kubejs:friend_to_the_end': function (event, curiosHandler, curios) {
         let { entity } = event
+        if (entity.getHealth() - event.amount > 0) return
         if (curios.hasNBT() && curios.nbt.friendName) {
             let friend = Utils.getServer().getPlayer(curios.nbt.friendName)
             if (friend && friend.isLiving()) {
-                entity.teleportTo(friend.level.getDimension(), friend.x, friend.y, friend.z, [], entity.yaw, entity.pitch)
+                let dim = Utils.getServer().getLevel(friend.level.getDimension())
                 curios.setCount(0)
+                entity.teleportTo(dim, friend.x, friend.y, friend.z, [], entity.yaw, entity.pitch)
                 entity.tell(Text.translatable('msg.curios.friend_to_the_end.3').gray())
                 entity.setHealth(1)
                 event.amount = 0

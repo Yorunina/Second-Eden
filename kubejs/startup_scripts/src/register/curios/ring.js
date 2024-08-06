@@ -38,8 +38,8 @@ StartupEvents.registry('item', event => {
             if (itemstack.hasNBT() && itemstack.nbt.friendName && entity.isPlayer()) {
                 let friend = Utils.server.getPlayer(itemstack.nbt.friendName)
                 if (friend && friend.isLiving()) {
-                    let targetDim = friend.level.getDimension()
-                    entity.teleportTo(targetDim, friend.x, friend.y, friend.z, [], entity.yaw, entity.pitch)
+                    let dim = Utils.getServer().getLevel(friend.level.getDimension())
+                    entity.teleportTo(dim, friend.x, friend.y, friend.z, [], entity.yaw, entity.pitch)
                     entity.addItemCooldown(itemstack, 20 * 10)
                 } else {
                     entity.tell(Text.translatable('msg.curios.friend_to_the_end.1').gray())
