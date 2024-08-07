@@ -10,7 +10,7 @@ player = {}
 	#Should allow players to place blocks using this mod.
 	allowPlaceBlocks = true
 	#Should allow players to interact blocks using this mod.
-	allowInteractBlocks = true
+	allowInteractBlocks = false
 	#Should allow players to copy and paste structures using this mod.
 	allowCopyPasteStructure = true
 	#Should allow players to break blocks with proper tools only in survival mode.
