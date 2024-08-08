@@ -2,6 +2,8 @@
   "tooltip.relics.researching.general.leveling_point.title": "升级点数:",
   "tooltip.relics.researching.general.leveling_point.extra_info": "升级赚取升级点数并用其提升遗物的能力E。",
 
+"tooltip.relics.researching.info": "按住 [Shift] 以进行研究...",
+
   "tooltip.relics.researching.relic.card.low_level": "你需要升级遗物的等级至%1$s以解锁!",
   "tooltip.relics.researching.relic.card.no_stats": "这个能力没有可升级属性，并且不影响遗物的品质!",
   "tooltip.relics.researching.relic.card.ready_to_upgrade": "此能力可以升级了!",

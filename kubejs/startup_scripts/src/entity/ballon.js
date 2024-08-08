@@ -1,8 +1,16 @@
+const { $InteractionHand } = require("packages/net/minecraft/world/$InteractionHand")
+
 const AirDropBalloonType = ['airdrop_balloon', 'airdrop_balloon_red', 'airdrop_balloon_blue', 'airdrop_balloon_yellow']
 
 StartupEvents.registry('entity_type', event => {
     AirDropBalloonType.forEach(type => {
         event.create(type, 'entityjs:mob')
+            .onInteract(ctx => {
+                if (ctx.hand != $InteractionHand.MAIN_HAND) return
+                if (!ctx.player.isCrouching()) return
+                global.AirdropGetDrop(ctx.player, ctx.entity)
+                ctx.entity.kill()
+            })
             .mobCategory('misc')
             .noEggItem()
             .setRenderType('translucent')
@@ -19,6 +27,12 @@ StartupEvents.registry('entity_type', event => {
             })
 
         event.create(`med_${type}`, 'entityjs:mob')
+            .onInteract(ctx => {
+                if (ctx.hand != $InteractionHand.MAIN_HAND) return
+                if (!ctx.player.isCrouching()) return
+                global.AirdropGetDrop(ctx.player, ctx.entity)
+                ctx.entity.kill()
+            })
             .mobCategory('misc')
             .noEggItem()
             .setRenderType('translucent')
@@ -35,6 +49,12 @@ StartupEvents.registry('entity_type', event => {
             })
 
         event.create(`adv_${type}`, 'entityjs:mob')
+            .onInteract(ctx => {
+                if (ctx.hand != $InteractionHand.MAIN_HAND) return
+                if (!ctx.player.isCrouching()) return
+                global.AirdropGetDrop(ctx.player, ctx.entity)
+                ctx.entity.kill()
+            })
             .mobCategory('misc')
             .noEggItem()
             .setRenderType('translucent')

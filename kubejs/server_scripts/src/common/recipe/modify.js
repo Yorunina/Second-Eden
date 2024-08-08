@@ -18,5 +18,7 @@ ServerEvents.recipes(event => {
         D: 'minecraft:diamond',
     })
 
-    event.smithing('kubejs:sociality_atlas', 'minecraft:golden_carrot', 'kubejs:common_atlas', 'minecraft:diamond')
+    event.smithing('kubejs:sociality_atlas', 'kubejs:common_atlas', 'kubejs:common_atlas', 'kubejs:common_atlas')
+
+    event.shapeless(Item.of('minecraft:leather', 4), ['sophisticatedbackpacks:backpack'])
 })

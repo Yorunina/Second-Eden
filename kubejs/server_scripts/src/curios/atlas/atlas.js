@@ -23,7 +23,7 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
 
     if (!AtlasActiveStrategy[atlasItem.id]) return
 
-    // if (player.cooldowns.isOnCooldown(atlasItem)) return
+    if (player.cooldowns.isOnCooldown(atlasItem)) return
 
     if (!atlasItem || atlasItem.getDamageValue() + 1 > atlasItem.getMaxDamage()) return
     let airdropPos = AtlasActiveStrategy[atlasItem.id](event, atlasItem)
@@ -34,7 +34,11 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
         CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFAED34)
     }
 
-    atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+    if (atlasItem.getDamageValue() + 1 >= atlasItem.getMaxDamage()) {
+        atlasItem.shrink(1)
+    } else {
+        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+    }
     player.addItemCooldown(atlasItem, 20 * 30)
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()

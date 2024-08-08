@@ -231,14 +231,14 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.3),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.02),
     ]).set('altas', [
-        new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.8),
+        new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.5),
         new AirdropPoolItem('kubejs:advanced_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
         new AirdropPoolItem('kubejs:ultra_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
-        new AirdropPoolItem('kubejs:wood_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.25),
-        new AirdropPoolItem('kubejs:stone_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.25),
-        new AirdropPoolItem('kubejs:ore_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.25),
-        new AirdropPoolItem('kubejs:sociality_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
-        new AirdropPoolItem('kubejs:luxury_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.25),
+        new AirdropPoolItem('kubejs:wood_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
+        new AirdropPoolItem('kubejs:stone_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
+        new AirdropPoolItem('kubejs:ore_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
+        new AirdropPoolItem('kubejs:sociality_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
+        new AirdropPoolItem('kubejs:luxury_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
         new AirdropPoolItem('kubejs:huge_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.05),
     ])
 
@@ -353,7 +353,7 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('kubejs:wood_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:stone_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:ore_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
-        new AirdropPoolItem('kubejs:sociality_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.5),
+        new AirdropPoolItem('kubejs:sociality_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),
         new AirdropPoolItem('kubejs:luxury_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:huge_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
     ]).set('lantern', [
@@ -368,8 +368,8 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('arcanelanterns:warding_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
         new AirdropPoolItem('arcanelanterns:withering_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
     ]).set('coin', [
-        new AirdropPoolItem('kubejs:common_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.9),
-        new AirdropPoolItem('kubejs:rare_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.2),
+        new AirdropPoolItem('kubejs:common_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.5),
+        new AirdropPoolItem('kubejs:rare_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
         new AirdropPoolItem('kubejs:epic_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.05),
         new AirdropPoolItem('lightmanscurrency:coin_iron').setMinCount(16).setMaxCount(64).setFortuneCoe(1).setChance(0.9),
         new AirdropPoolItem('lightmanscurrency:coin_gold').setMinCount(4).setMaxCount(16).setFortuneCoe(1).setChance(0.5),
@@ -422,13 +422,12 @@ const UltraAirdropPool = new Map()
         new AirdropPoolItem('kubejs:raw_iridium').setMinCount(1).setMaxCount(8).setFortuneCoe(1.5).setChance(0.5),
         new AirdropPoolItem('minecraft:netherite_scrap').setMinCount(4).setMaxCount(32).setFortuneCoe(1.5).setChance(0.5),
     ]).set('altas', [
-        new AirdropPoolItem('kubejs:advanced_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.9),
-        new AirdropPoolItem('kubejs:ultra_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.5),
+        new AirdropPoolItem('kubejs:ultra_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
         new AirdropPoolItem('kubejs:wood_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:stone_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:ore_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
         new AirdropPoolItem('kubejs:luxury_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
-        new AirdropPoolItem('kubejs:huge_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
+        new AirdropPoolItem('kubejs:huge_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
     ]).set('curios', [
         new AirdropPoolItem('kubejs:transmog_mirror').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
         new AirdropPoolItem('kubejs:waypointer_necklace').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.15),

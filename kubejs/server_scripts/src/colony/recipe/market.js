@@ -65,16 +65,17 @@ ServerEvents.highPriorityData(event => {
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/rare_coin_engraving.json`,
         new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:rare_coin_engraving'), [Item.of('kubejs:common_coin_engraving'), Item.of('minecraft:diamond')])
+            .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/intermedeconomics', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/epic_coin_engraving.json`,
         new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:epic_coin_engraving'), [Item.of('kubejs:rare_coin_engraving'), Item.of('minecraft:netherite_ingot')])
-            .setMinBuildingLevel(2)
+            .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/intermedeconomics', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/legendary_coin_engraving.json`,
         new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:legendary_coin_engraving'), [Item.of('kubejs:epic_coin_engraving'), Item.of('kubejs:iridium_ingot')])
-            .setMinBuildingLevel(3)
+            .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/intermedeconomics', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/overlimit_coin_engraving.json`,
