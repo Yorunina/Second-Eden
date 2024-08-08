@@ -15,7 +15,7 @@ StartupEvents.registry('item', event => {
         ).texture('kubejs:item/curios/newer_atlas')
 
     // 地图册
-    event.create('common_atlas').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(COMMON)
+    event.create('common_atlas').maxStackSize(1).maxDamage(6).tag('curios:atlas').tag(COMMON).tag('kubejs:book_repair')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:treasure_distance', 'CommonAtlasTreasureDistance', 1000, 'addition')

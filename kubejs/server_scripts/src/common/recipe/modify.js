@@ -17,4 +17,6 @@ ServerEvents.recipes(event => {
         I: 'minecraft:iron_ingot',
         D: 'minecraft:diamond',
     })
+
+    event.smithing('kubejs:sociality_atlas', 'minecraft:golden_carrot', 'kubejs:common_atlas', 'minecraft:diamond')
 })
