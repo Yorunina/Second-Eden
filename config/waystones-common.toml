@@ -45,7 +45,7 @@
 	#If enabled, only the owner of a waystone (the one who placed it) can rename it.
 	restrictRenameToOwner = false
 	#If enabled, waystones generated in worldgen are unbreakable.
-	generatedWaystonesUnbreakable = true
+	generatedWaystonesUnbreakable = false
 	#If enabled, leashed mobs will be teleported with you
 	transportLeashed = true
 	#Whether to take leashed mobs with you when teleporting between dimensions
@@ -106,7 +106,7 @@
 	worldGenStyle = "BIOME"
 	#Approximate chunk distance between waystones generated freely in world generation. Set to 0 to disable generation.
 	#Range: > -2147483648
-	frequency = 0
+	frequency = 30
 	#List of dimensions that waystones are allowed to spawn in through world gen. If left empty, all dimensions except those in worldGenDimensionDenyList are used.
 	dimensionAllowList = ["minecraft:overworld", "minecraft:the_nether", "minecraft:the_end"]
 	#List of dimensions that waystones are not allowed to spawn in through world gen. Only used if worldGenDimensionAllowList is empty.

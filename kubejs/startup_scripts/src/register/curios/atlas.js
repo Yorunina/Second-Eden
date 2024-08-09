@@ -6,7 +6,7 @@ StartupEvents.registry('item', event => {
 
     // 地图册
     // 初心地图册
-    event.create('newer_atlas').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(EPIC)
+    event.create('newer_atlas').maxStackSize(1).maxDamage(3).tag('curios:atlas').tag(EPIC).tag('minecraft:keep_on_death')
         .attachCapability(CuriosCapabilityBuilder.CURIOS.itemStack()
             .canEquip((item, slotContext) => onlyPlayerCanEquip(item, slotContext))
             .modifyAttribute('kubejs:treasure_fortune', 'NewerAtlasTreasureFortune', 2, 'addition')

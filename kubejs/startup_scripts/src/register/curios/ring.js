@@ -27,6 +27,7 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
         .tag('curios:ring')
         .tag(EPIC)
+        .tag('minecraft:keep_on_death')
         .useAnimation('bow')
         .texture('kubejs:item/curios/friend_to_the_end')
         .useDuration(itemStack => 30)
