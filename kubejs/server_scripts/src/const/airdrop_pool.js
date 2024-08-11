@@ -16,7 +16,6 @@ const NewerAirdropPool = new Map()
         new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
-        new AirdropPoolItem('kubejs:master_certificate').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     ]).set('sea', [
         new AirdropPoolItem('minecolonies:supplychestdeployer').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
         new AirdropPoolItem('minecraft:oak_log').setMinCount(64).setMaxCount(64).setFortuneCoe(1),
@@ -30,7 +29,6 @@ const NewerAirdropPool = new Map()
         new AirdropPoolItem('minecraft:dirt').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('sophisticatedbackpacks:backpack').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
-        new AirdropPoolItem('kubejs:master_certificate').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     ])
 
 const WoodAirdropPool = new Map()
