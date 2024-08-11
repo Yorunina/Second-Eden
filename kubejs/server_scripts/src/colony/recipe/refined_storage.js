@@ -102,12 +102,12 @@ ServerEvents.recipes(event => {
 
 ServerEvents.highPriorityData(event => {
     // 石英进阶应用理论
-    event.addJson(`kubejs:crafterrecipes/smelter/quartz_enriched_iron.json`,
-        new ColonyCraftRecipes('smelter_custom', Item.of('refinedstorage:quartz_enriched_iron', 3), [Item.of('kubejs:steel_ingot', 1), Item.of('minecraft:iron_ingot', 2), Item.of('refinedstorage:silicon', 1)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/quartz_enriched_iron.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('refinedstorage:quartz_enriched_iron', 3), [Item.of('kubejs:steel_ingot', 1), Item.of('minecraft:iron_ingot', 2), Item.of('refinedstorage:silicon', 1)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/advancedquartzuseage', true))
-    event.addJson(`kubejs:crafterrecipes/smelter/silicon.json`,
-        new ColonyCraftRecipes('smelter_custom', Item.of('refinedstorage:silicon', 1), [Item.of('minecraft:quartz', 2)])
+    event.addJson(`kubejs:crafterrecipes/blacksmith/silicon.json`,
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('refinedstorage:silicon', 1), [Item.of('minecraft:quartz', 2)])
             .setMinBuildingLevel(3)
             .setResearchId('kubejs:effects/advancedquartzuseage', true))
 

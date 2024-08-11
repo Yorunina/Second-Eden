@@ -83,6 +83,7 @@
     "attribute.kubejs.decode_ability": "解密能力",
     "attribute.kubejs.player_damage_reduction": "玩家伤害减免",
     "_comment.message": "消息",
+    "msg.item.building_gift_box.1": "蓝图不存在，无法获取蓝图信息！",
     "msg.item.trial_spawner.modify.1": "已将修饰符的战利品表应用于刷怪笼！",
     "msg.item.trial_vault.modify.1": "已将修饰符的战利品表应用于金库！",
     "msg.item.trial_modifier.1": "方块与试炼修饰符的应用类型不匹配！",
@@ -323,7 +324,7 @@
     "item.kubejs.skill_book_agility": "§6敏捷之书",
     "item.kubejs.skill_book_intelligence": "§6智力之书",
     "item.kubejs.hiking_boots": "§3登山靴",
-    "item.kubejs.waypointer_necklace": "§5坐标指明者",
+    "item.kubejs.waypointer_necklace": "§5坐标指明项链",
     "item.kubejs.skill_forget_book": "§6遗忘之书",
     "item.kubejs.undead_raid_book": "§5不死侵袭之书",
     "item.kubejs.master_certificate": "§c大师认证",
@@ -453,9 +454,8 @@
     "tooltip.item.trophymanager.trophy.2": "手持奖杯右击任意实体，可以将实体类型修改为对应类型",
     "tooltip.item.kubejs.building_gift_box.1": "主题：",
     "tooltip.item.kubejs.building_gift_box.2": "类型：",
-    "tooltip.item.kubejs.building_gift_box.3": "类型匹配规则：",
-    "tooltip.item.kubejs.building_gift_box.4": "只匹配等级 %s 的建筑方块",
-    "tooltip.item.kubejs.building_gift_box.5": "禁止变更",
+    "tooltip.item.kubejs.building_gift_box.3": "只匹配等级 %s 的建筑方块",
+    "tooltip.item.kubejs.building_gift_box.4": "禁止变更",
     "tooltip.item.kubejs.specific_raid_orb.1": "特殊生成类型：",
     "tooltip.item.kubejs.specific_raid_orb.2": "生成数量：",
     "tooltip.item.kubejs.custom_raid_orb.1": "自定义NBT：",
@@ -631,5 +631,12 @@
     "minecolonies_tweaks.custom_tooltype.knives": "厨刀",
     "minecolonies_tweaks.custom_tooltype.coin_engraving": "铸币模板",
     "minecolonies_tweaks.custom_tooltype.singulize_potion": "奇点稳定药剂",
-    "minecolonies_tweaks.custom_tooltype.sizing_machinery": "塑形机械"
+    "minecolonies_tweaks.custom_tooltype.sizing_machinery": "塑形机械",
+    "_comment.structurize": "结构化",
+    "structurize.pack.author.Authors": "作者：",
+    "structurize.pack.category.Local": "本地",
+    "structurize.pack.category.AllStyleColonies": "更多风格包",
+    "structurize.pack.name.Cliffs": "悬崖殖民地",
+    "structurize.pack.desc.Cliffs": "悬崖殖民地描述"
+    
 }

@@ -131,12 +131,13 @@ function getMapItem(level, pos) {
 /**
  * 地图册策略，注册地图册物品之后需要实现其对应的策略，而后去注册AtlasTypeMapping中地图册对应的airdrop type
  * @constant
- * @type {Object<string,function($NetworkEventJS_, $ItemStack_):void>}
- * @returns {$BlockPos}
+ * @type {Object<string,function($NetworkEventJS_, $ItemStack_):$BlockPos>}
+ * @returns
  */
 const AtlasActiveStrategy = {
     'kubejs:newer_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:adv_airdrop_balloon'))
@@ -148,6 +149,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:common_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem))
@@ -159,6 +161,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:advanced_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_blue'))
@@ -170,6 +173,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:ultra_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_yellow'))
@@ -181,6 +185,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:wood_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
@@ -192,6 +197,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:stone_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
@@ -203,6 +209,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:ore_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
@@ -214,6 +221,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:luxury_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:airdrop_balloon_red'))
@@ -225,6 +233,7 @@ const AtlasActiveStrategy = {
     },
     'kubejs:huge_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
 
         let airdropEntity = getAirdropEntity(level, player, airdropPos, new AirdropEntityConfig(atlasItem).setEntityType('kubejs:adv_airdrop_balloon_blue'))
@@ -236,9 +245,10 @@ const AtlasActiveStrategy = {
     },
     'kubejs:sociality_atlas': function (event, atlasItem) {
         let { level, player } = event
+        if (level.getDimension().toString() != 'minecraft:overworld') return null
         let airdropPos = getSpawnLocation(level, player)
         let entityConfig = new AirdropEntityConfig(atlasItem)
-        let amount = Math.floor(Math.random() * 8) + 2
+        let amount = Math.floor(Math.random() * 6) + 2
         for (let i = 0; i < amount; i++) {
             airdropPos = airdropPos.offset(Math.random() * 8 + 2, Math.random() * 3, Math.random() * 8 + 2)
             let airdropEntity = getAirdropEntity(level, player, airdropPos, entityConfig)

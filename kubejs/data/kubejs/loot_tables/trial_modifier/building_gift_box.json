@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "set_nbt",
-                            "tag": "{levelReq:\"1\",rePattern:\"\\\\S+1\\\\.blueprint\"}"
+                            "tag": "{levelReq:\"1\"}"
                         }
                     ]
                 },

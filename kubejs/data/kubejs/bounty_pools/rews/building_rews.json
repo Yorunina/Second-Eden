@@ -10,7 +10,7 @@
             "unitWorth": 1500,
             "weightMult": 0.25,
             "rarity": "RARE",
-            "nbt": "{levelReq:\"1\",rePattern:\"\\\\S+1\\\\.blueprint\"}"
+            "nbt": "{levelReq:\"1\"}"
         },
         "building_rews_building_gift_box_2": {
             "type": "item",
@@ -22,7 +22,7 @@
             "unitWorth": 2000,
             "weightMult": 0.05,
             "rarity": "EPIC",
-            "nbt": "{levelReq:\"2\",rePattern:\"\\\\S+2\\\\.blueprint\"}"
+            "nbt": "{levelReq:\"2\"}"
         }
     }
 }

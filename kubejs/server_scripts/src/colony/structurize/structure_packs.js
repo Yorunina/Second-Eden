@@ -17,7 +17,10 @@ ItemEvents.rightClicked('kubejs:building_gift_box', event => {
 
     /**@type {$Blueprint} */
     let bluePrint = $StructurePacks['getBlueprint(java.lang.String,java.lang.String,boolean)'](blueprintPack, blueprintPath, true)
-    if (!bluePrint) return
+    if (!bluePrint) {
+        player.setStatusMessage(Text.of('msg.item.building_gift_box.1'))
+        return
+    }
     let analyzationResult = $SchemAnalyzerUtil.analyzeSchematic(bluePrint)
     analyzationResult.differentBlocks.forEach(/** @param {$ItemStorage} itemStorage*/(itemStorage) => {
         player.give(itemStorage.getItemStack().withCount(itemStorage.getAmount()))
@@ -37,16 +40,19 @@ BlockEvents.rightClicked(event => {
     let blueprintDataProvider = block.entityData.getCompound('blueprintDataProvider')
     let blueprintPath = blueprintDataProvider.getString('path')
     let blueprintPack = blueprintDataProvider.getString('pack')
+    let targetBluePrintPath = blueprintPath
 
-    if (item.hasNBT() && item.nbt.contains('rePattern')) {
-        let rePattern = item.nbt.getString('rePattern')
-        if (!new RegExp(rePattern).test(blueprintPath)) return
+    if (item.hasNBT() && item.nbt.contains('levelReq')) {
+        let reg = new RegExp(/(\S+)([0-5])\.blueprint/)
+        if (!reg.test(blueprintPath)) return
+        let levelReq = item.nbt.getString('levelReq')
+        targetBluePrintPath = RegExp.$1 + levelReq + '.blueprint'
     }
 
     if (!item.hasNBT()) {
-        item.setNbt({ 'path': blueprintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
+        item.setNbt({ 'path': targetBluePrintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
     } else {
-        item.nbt.merge({ 'path': blueprintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
+        item.nbt.merge({ 'path': targetBluePrintPath, 'pack': blueprintPack, 'blockName': block.getItem().getHoverName().getString() })
     }
     player.addItemCooldown(item, 20 * 10)
 })

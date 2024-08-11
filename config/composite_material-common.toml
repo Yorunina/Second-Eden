@@ -3,7 +3,7 @@
 [allaySteel]
 	#Define the max area attack range of Allay Steel Tools.
 	#Range: 0.0 ~ 1.7976931348623157E308
-	attackRange = 7.0
+	attackRange = 5.0
 	#Define the max area break range of Allay Steel Tools.
 	#Range: > 0
 	breakRange = 7

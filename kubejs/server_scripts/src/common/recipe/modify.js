@@ -21,4 +21,6 @@ ServerEvents.recipes(event => {
     event.smithing('kubejs:sociality_atlas', 'kubejs:common_atlas', 'kubejs:common_atlas', 'kubejs:common_atlas')
 
     event.shapeless(Item.of('minecraft:leather', 4), ['sophisticatedbackpacks:backpack'])
+
+    event.shapeless(Item.of('minecraft:clay_ball', 4), [Item.of('minecraft:clay', 1)])
 })

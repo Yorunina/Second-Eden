@@ -389,7 +389,6 @@
 						id: "kubejs:building_gift_box"
 						tag: {
 							levelReq: "1"
-							rePattern: "\\S+1\\.blueprint"
 						}
 					}
 					type: "item"
