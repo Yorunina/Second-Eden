@@ -19,7 +19,6 @@ ServerEvents.tick(event => {
         hadGivenGiftSet.add(colonyId)
 
         let day = colony.getDay()
-        player.tell(day)
         let overallHappiness = colony.getOverallHappiness()
 
         let townHallBuilding = colony.getBuildingManager().getTownHall()
@@ -48,7 +47,7 @@ ServerEvents.tick(event => {
                     break
                 case 5:
                     if (randomCitizen) {
-                        let item = Item.of('lightmanscurrency:coin_gold', 16)
+                        let item = Item.of('torchmaster:megatorch', 1)
                         buildingItemCap.insertItem(item, false)
 
                         player.tell(Text.translate('msg.colony.daily_rews_3.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))

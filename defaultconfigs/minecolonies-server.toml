@@ -136,7 +136,7 @@
 	#Allowed Values: DAMAGE_NOTHING, DAMAGE_PLAYERS, DAMAGE_ENTITIES, DAMAGE_EVERYTHING
 	turnoffexplosionsincolonies = "DAMAGE_ENTITIES"
 	#可供玩家在任意殖民地进行交互的方块（例如：自动贩卖机） 
-	freetointeractblocks = []
+	freetointeractblocks = ['simpletomb:tombstone']
 
 #所有的配置选项均与模组兼容性有关
 [compatibility]

@@ -1,0 +1,30 @@
+{
+  "simpletomb.grave.grave_simple": "简单坟墓",
+  "simpletomb.grave.grave_cross": "十字坟墓",
+  "simpletomb.grave.grave_normal": "普通坟墓",
+  "simpletomb.grave.tombstone": "墓碑",
+
+  "item.simpletomb.grave_key": "墓穴钥匙",
+
+  "simpletomb.commands.null": "无效的子命令，示例: /simpletomb latest",
+  "simpletomb.commands.latest.null": "未找到最新的坟墓",
+
+  "simpletomb.message.rip": "安息吧。",
+
+  "simpletomb.message.open_grave.success": "坟墓消失了！",
+  "simpletomb.message.open_grave.need_owner": "只有墓穴的主人可以打开这个",
+  "simpletomb.message.recover_lost_items": "您已找回您丢失的物品",
+  "simpletomb.message.open_grave.need_key": "你需要一把钥匙！",
+  "simpletomb.message.open_grave.wrong_key": "这是错误的钥匙！",
+  "simpletomb.message.no_loot_for_grave": "没有物品存储，因此没有出现坟墓",
+  "simpletomb.message.no_grave_location": "您的物品散落在地上；这个地方不适合建造坟墓",
+  "simpletomb.message.no_place_for_grave": "找不到放置坟墓的地方！",
+  "simpletomb.message.fail_to_place_grave": "无法放置坟墓！",
+  "simpletomb.message.new_grave": "坟墓创建于: %s",
+  "simpletomb.message.journeymap": "[name:\"Grave\", x:%d, y:%d, z:%d, dim:\"%d\"]",
+
+  "simpletomb.message.no_save_to_restore": "没有保存的数据可以恢复",
+
+  "simpletomb.message.day": "天数: %d",
+  "simpletomb.message.distance": "距离: %d [%d, %d, %d] 在维度 %d"
+}
