@@ -634,6 +634,7 @@
     "kubejs.miapi.material.iridium": "铱",
     "kubejs.miapi.material.neutron": "中子素",
     "miapi.module.vein_pickaxe": "矿脉镐",
+    "miapi.arsenal.vein_mining": "连锁采集",
     "miapi.arsenal.vein_mining.description": "一次连锁采集的数量",
     "miapi.module.vein_pickaxe.name": "[translation.[material.translation]]矿脉镐",
     "miapi.module.vein_pickaxe.description": "专为大范围挖掘设计的镐子，可以连锁破坏大量的石材/矿石等。",

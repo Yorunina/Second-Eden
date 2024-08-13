@@ -89,20 +89,15 @@ const CitizenCustomLootStrategy = {
     'undead_raid_leader': function (event) {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
-        // event.addLoot(LootEntry.of('composite_material:creative_reinforced_book', 1).when(c => c.randomChance(0.025 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:etherite_totem', 1).when(c => c.randomChance(0.025 * rank)))
+        event.addLoot(LootEntry.of('trials:trial_vault', 1).when(c => c.randomChance(0.05 * rank)))
+        event.addLoot(LootEntry.of('trials:trial_spawner', 1).when(c => c.randomChance(0.025 * rank)))
     },
     'undead_raid': function (event) {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
         event.addLoot(LootEntry.of('kubejs:raw_iridium', 1).when(c => c.randomChance(0.01 * rank)))
-        event.addLoot(LootEntry.of('kubejs:echo_crystal', 1).when(c => c.randomChance(0.005 * rank)))
-        event.addLoot(LootEntry.of('kubejs:netherite_scrap', 1).when(c => c.randomChance(0.005 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:reinforced_book', 1).when(c => c.randomChance(0.01 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:sepachanted_book', 1).when(c => c.randomChance(0.02 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:purifichanted_book', 1).when(c => c.randomChance(0.02 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:duplichanted_book', 1).when(c => c.randomChance(0.008 * rank)))
-        // event.addLoot(LootEntry.of('composite_material:disenchanted_book', 1).when(c => c.randomChance(0.02 * rank)))
+        event.addLoot(LootEntry.of('kubejs:echo_crystal', 1).when(c => c.randomChance(0.01 * rank)))
+        event.addLoot(LootEntry.of('kubejs:netherite_scrap', 1).when(c => c.randomChance(0.01 * rank)))
     }
 }
 
@@ -114,10 +109,12 @@ const OthersCustomLootStrategy = {
     'undead_raid_leader': function (event) {
         let entityKilled = event.getEntity()
         let rank = entityKilled.persistentData.contains('rank') ? entityKilled.persistentData.getInt('rank') : 1
-        let nextRank = Math.max(rank + 1, 10)
+        let nextRank = Math.min(rank + 1, 10)
         event.addLoot(Item.of('kubejs:undead_raid_book', 1, { 'rank': NBT.intTag(nextRank) }))
         event.addLoot(LootEntry.of('minecraft:netherite_scrap', 1).when(c => c.randomChance(0.01 * rank)))
         event.addLoot(LootEntry.of('minecraft:diamond', Math.ceil(rank / 5)).when(c => c.randomChance(0.01 * rank)))
+        event.addLoot(LootEntry.of('trials:trial_vault', 1).when(c => c.randomChance(0.025 * rank)))
+        event.addLoot(LootEntry.of('trials:trial_spawner', 1).when(c => c.randomChance(0.01 * rank)))
     },
     /**
      * 

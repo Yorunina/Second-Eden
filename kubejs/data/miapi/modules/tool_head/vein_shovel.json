@@ -23,7 +23,7 @@
             }
         },
         {
-            "path": "miapi:models/item/tool/head/vein_shovel/[material.texture].json",
+            "path": "kubejs:models/item/tool/head/vein_shovel/[material.texture].json",
             "transform": {
                 "rotation": {
                     "x": 0.0,
@@ -55,6 +55,9 @@
     "allowedInSlots": [
         "tool_head"
     ],
+    "abilities": [
+        "shovel_ability"
+    ],
     "enchantments": {
         "allowed": [
             "miapi:tool",
@@ -65,7 +68,7 @@
         "ht_treechop_gui": {
             "value": "ceil( min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))-0.5)",
             "min": 0,
-            "max": 100,
+            "max": 200,
             "header": {
                 "translate": "miapi.arsenal.vein_mining"
             },
@@ -78,7 +81,7 @@
         {
             "condition": {
                 "type": "block_tag",
-                "tags": ["forge:sand","forge:gravel","minecraft:dirt"]
+                "tags": ["minecraft:mineable/shovel"]
             },
             "modifiers": {
                 "require_same": true

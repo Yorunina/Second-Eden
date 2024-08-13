@@ -72,12 +72,12 @@
         "ht_treechop_gui": {
             "value": "ceil( min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))-0.5)",
             "min": 0,
-            "max": 100,
+            "max": 200,
             "header": {
-                "translate": "miapi.arsenal.tree_mining"
+                "translate": "miapi.arsenal.vein_mining"
             },
             "description": {
-                "translate": "miapi.arsenal.tree_mining.description"
+                "translate": "miapi.arsenal.vein_mining.description"
             }
         }
     },
@@ -85,7 +85,7 @@
         {
             "condition": {
                 "type": "block_tag",
-                "tags": ["minecraft:logs"]
+                "tags": ["minecraft:mineable/axe"]
             },
             "modifiers": {
                 "require_same": true

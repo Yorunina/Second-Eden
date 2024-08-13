@@ -3,7 +3,7 @@ const { ColonyCraftRecipes } = require("../../model/citizen_recipes_model")
 
 ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/blacksmith/coal_coke.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:coal_coke'), [Item.of('minecraft:bone_meal')])
+        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:coal_coke'), [Item.of('minecraft:bone_meal'), Item.of('minecraft:coal', 1)])
             .setResearchId('kubejs:effects/coalcokeunlock', true))
 
     event.addJson(`kubejs:crafterrecipes/blacksmith/steel_ingot.json`,
