@@ -1,0 +1,144 @@
+{
+    "name": "vein_pickaxe",
+    "texture": [
+        {
+            "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
+            "color_provider": "parent",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/tool/head/vein_pickaxe/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -8.0,
+                    "y": -7.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "priority": 1,
+    "repairPriority": -1,
+    "materialProperty": [
+        "default",
+        "handheld",
+        "pickaxe",
+        "tool",
+        "head"
+    ],
+    "allowedInSlots": [
+        "tool_head"
+    ],
+    "enchantments": {
+        "allowed": [
+            "miapi:tool",
+            "miapi:pickaxe"
+        ]
+    },
+    "gui_stat": {
+        "ht_treechop_gui": {
+            "value": "ceil( min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))-0.5)",
+            "min": 0,
+            "max": 100,
+            "header": {
+                "translate": "miapi.arsenal.vein_mining"
+            },
+            "description": {
+                "translate": "miapi.arsenal.vein_mining.description"
+            }
+        }
+    },
+    "mining_shape": [
+        {
+            "condition": {
+                "type": "block_tag",
+                "tags": ["forge:stone","forge:end_stone","forge:sand_stone","forge:netherrack","forge:ores"]
+            },
+            "modifiers": {
+                "require_same": true
+            },
+            "collapseMode": {
+                "type": "staggered"
+            },
+            "shape": {
+                "type": "vein",
+                "size": 50,
+                "max": " min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))"
+            }
+        }
+    ],
+    "allowedMaterial": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 2
+    },
+    "mining_level": {
+        "pickaxe": "[material.mining_level]-1"
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.mining_speed.pickaxe",
+            "value": "[material.mining_speed] * 0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": " - 1.0",
+            "operation": "+",
+            "slot": "mainhand",
+            "uuid": "F7007D71-6520-454F-89CC-1275B697D1B1"
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "displayName": "miapi.module.vein_pickaxe.name",
+    "tag": [
+        "tool_head"
+    ],
+    "itemId": "miapi:modular_pickaxe"
+}

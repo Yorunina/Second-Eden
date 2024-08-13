@@ -1,0 +1,158 @@
+{
+    "replace": true,
+    "name": "axe_cutter",
+    "texture": [
+        {
+            "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
+            "color_provider": "parent",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/tool/head/axe_cutter/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -8.0,
+                    "y": -7.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "priority": 1,
+    "repairPriority": -1,
+    "materialProperty": [
+        "default",
+        "handheld",
+        "axe",
+        "tool",
+        "head"
+    ],
+    "better_combat_config": {
+        "parent": "bettercombat:axe"
+    },
+    "allowedInSlots": [
+        "tool_head"
+    ],
+    "abilities": [
+        "axe_ability"
+    ],
+    "enchantments": {
+        "allowed": [
+            "miapi:tool",
+            "miapi:axe"
+        ]
+    },
+    "gui_stat": {
+        "ht_treechop_gui": {
+            "value": "ceil( min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))-0.5)",
+            "min": 0,
+            "max": 100,
+            "header": {
+                "translate": "miapi.arsenal.tree_mining"
+            },
+            "description": {
+                "translate": "miapi.arsenal.tree_mining.description"
+            }
+        }
+    },
+    "mining_shape": [
+        {
+            "condition": {
+                "type": "block_tag",
+                "tags": ["minecraft:logs"]
+            },
+            "modifiers": {
+                "require_same": true
+            },
+            "collapseMode": {
+                "type": "staggered"
+            },
+            "shape": {
+                "type": "vein",
+                "size": 50,
+                "max": " min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))"
+            }
+        }
+    ],
+    "allowedMaterial": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 2
+    },
+    "mining_level": {
+        "axe": "[material.mining_level]"
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.mining_speed.axe",
+            "value": "[material.mining_speed]* 0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "floor((([material.hardness]-3.4)*2.3)^(1/3))+7 + [material.axe_damage] * 0.6",
+            "operation": "+",
+            "slot": "mainhand",
+            "uuid": "CB3F55D3-645C-4F38-A497-9C13A33DB5CF"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "( ( ceil( ( [material.mining_speed]-6 ) ^ (1/5) -0.5 ) )/10 ) - 0.1 - 0.6",
+            "operation": "+",
+            "slot": "mainhand",
+            "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "displayName": "miapi.module.axe_cutter.name",
+    "tag": [
+        "tool_head"
+    ],
+    "itemId": "miapi:modular_axe"
+}

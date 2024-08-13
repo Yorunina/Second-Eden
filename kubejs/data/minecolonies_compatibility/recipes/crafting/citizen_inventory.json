@@ -1,0 +1,29 @@
+{
+    "replace": true,
+	"type": "minecraft:crafting_shaped",
+	"conditions": [
+		{
+			"type": "forge:item_exists",
+			"item": "minecolonies_compatibility:citizen_inventory"
+		}
+	],
+	"pattern": [
+		"dkd",
+		"kck",
+		"dkd"
+	],
+	"key": {
+		"k": {
+			"item": "minecolonies:blockhutwarehouse"
+		},
+		"d": {
+			"tag": "forge:ingots/gold"
+		},
+		"c": {
+			"item": "storagenetwork:inventory"
+		}
+	},
+	"result": {
+		"item": "minecolonies_compatibility:citizen_inventory"
+	}
+}

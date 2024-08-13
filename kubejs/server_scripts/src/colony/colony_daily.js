@@ -118,6 +118,7 @@ const OverallHappinessGiftList1 = [
     Item.of('kubejs:soul_gem_mana', 3),
     Item.of('kubejs:soul_gem_strength', 3),
     Item.of('kubejs:soul_gem_stamina', 3),
+    Item.of('minecraft:diamond', 3)
 ]
 
 
@@ -137,7 +138,9 @@ const OverallHappinessGiftList2 = [
     Item.of('kubejs:wood_atlas', '{Damage:0}'),
     Item.of('kubejs:ore_atlas', '{Damage:0}'),
     Item.of('kubejs:luxury_atlas', '{Damage:0}'),
-    Item.of('waystones:warp_stone', '{Damage:0}')
+    Item.of('waystones:warp_stone', '{Damage:0}'),
+    Item.of('minecraft:diamond', 8),
+    Item.of('minecraft:emerald', 16)
 ]
 
 const OverallHappinessGiftList3 = [
@@ -148,5 +151,6 @@ const OverallHappinessGiftList3 = [
     Item.of('kubejs:epic_citrine_ring', 1),
     Item.of('kubejs:raw_iridium', 1),
     Item.of('kubejs:echo_crystal', 1),
-    Item.of('simplehats:hatbag_epic', 1)
+    Item.of('simplehats:hatbag_epic', 1),
+    Item.of('minecraft:diamond', 16)
 ]

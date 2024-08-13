@@ -1,0 +1,151 @@
+{
+    "name": "vein_shovel",
+    "texture": [
+        {
+            "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
+            "color_provider": "parent",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": 2.0,
+                    "y": 2.0,
+                    "z": 0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/tool/head/vein_shovel/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                },
+                "translation": {
+                    "x": -8.0,
+                    "y": -7.0,
+                    "z": 0.0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "priority": 2,
+    "repairPriority": -1,
+    "materialProperty": [
+        "default",
+        "handheld",
+        "shovel",
+        "tool",
+        "head"
+    ],
+    "allowedInSlots": [
+        "tool_head"
+    ],
+    "enchantments": {
+        "allowed": [
+            "miapi:tool",
+            "miapi:shovel"
+        ]
+    },
+    "gui_stat": {
+        "ht_treechop_gui": {
+            "value": "ceil( min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))-0.5)",
+            "min": 0,
+            "max": 100,
+            "header": {
+                "translate": "miapi.arsenal.vein_mining"
+            },
+            "description": {
+                "translate": "miapi.arsenal.vein_mining.description"
+            }
+        }
+    },
+    "mining_shape": [
+        {
+            "condition": {
+                "type": "block_tag",
+                "tags": ["forge:sand","forge:gravel","minecraft:dirt"]
+            },
+            "modifiers": {
+                "require_same": true
+            },
+            "collapseMode": {
+                "type": "staggered"
+            },
+            "shape": {
+                "type": "vein",
+                "size": 50,
+                "max": " min(200,(([material.mining_level] + [material.hardness] / 10 ) ^ 3 + 8))"
+            }
+        }
+    ],
+    "allowedMaterial": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 1
+    },
+    "mining_level": {
+        "shovel": "[material.mining_level]"
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.mining_speed.shovel",
+            "value": "[material.mining_speed]",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "max(1,[material.hardness]*1.0-1.5)",
+            "operation": "+",
+            "slot": "mainhand",
+            "uuid": "3FE51A42-92AE-496F-946B-2F5D3843F460"
+        },
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": " - 0.5",
+            "operation": "+",
+            "slot": "mainhand",
+            "uuid": "FA233E1C-4180-4865-B01B-BCCE9785ACA3"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "displayName": "miapi.module.vein_shovel.name",
+    "tag": [
+        "tool_head"
+    ],
+    "itemId": "miapi:modular_shovel"
+}
