@@ -7,7 +7,7 @@ StartupEvents.registry('entity_type', event => {
         event.create(type, 'entityjs:mob')
             .onInteract(ctx => {
                 if (ctx.hand != $InteractionHand.MAIN_HAND) return
-                if (!ctx.player.isCrouching()) return
+                if (ctx.player.isCrouching()) return
                 global.AirdropGetDrop(ctx.player, ctx.entity)
                 ctx.entity.kill()
             })
@@ -29,7 +29,7 @@ StartupEvents.registry('entity_type', event => {
         event.create(`med_${type}`, 'entityjs:mob')
             .onInteract(ctx => {
                 if (ctx.hand != $InteractionHand.MAIN_HAND) return
-                if (!ctx.player.isCrouching()) return
+                if (ctx.player.isCrouching()) return
                 global.AirdropGetDrop(ctx.player, ctx.entity)
                 ctx.entity.kill()
             })
@@ -51,7 +51,7 @@ StartupEvents.registry('entity_type', event => {
         event.create(`adv_${type}`, 'entityjs:mob')
             .onInteract(ctx => {
                 if (ctx.hand != $InteractionHand.MAIN_HAND) return
-                if (!ctx.player.isCrouching()) return
+                if (ctx.player.isCrouching()) return
                 global.AirdropGetDrop(ctx.player, ctx.entity)
                 ctx.entity.kill()
             })

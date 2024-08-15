@@ -50,7 +50,13 @@ StartupEvents.registry('item', event => {
 
     event.create('building_gift_box', 'basic')
         .tag(LEGENDARY)
-        .tag('minecolonies:hide_citizen_data')
+        .tag('minecolonies:hide_hut_gui')
         .texture('kubejs:item/building_gift_box')
+        .maxStackSize(1)
+
+    event.create('rack_relate_wand', 'basic')
+        .tag(RARE)
+        .tag('minecolonies:hide_hut_gui')
+        .texture('kubejs:item/rack_relate_wand')
         .maxStackSize(1)
 })

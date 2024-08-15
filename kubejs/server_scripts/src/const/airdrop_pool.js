@@ -417,8 +417,8 @@ const UltraAirdropPool = new Map()
         new AirdropPoolItem('minecraft:raw_copper').setMinCount(64).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
         new AirdropPoolItem('minecraft:raw_gold').setMinCount(64).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
         new AirdropPoolItem('minecraft:quartz').setMinCount(64).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
-        new AirdropPoolItem('kubejs:raw_iridium').setMinCount(1).setMaxCount(4).setFortuneCoe(1).setChance(0.25),
-        new AirdropPoolItem('minecraft:netherite_scrap').setMinCount(2).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
+        new AirdropPoolItem('kubejs:raw_iridium').setMinCount(1).setMaxCount(4).setFortuneCoe(1).setChance(0.2),
+        new AirdropPoolItem('minecraft:netherite_scrap').setMinCount(2).setMaxCount(16).setFortuneCoe(1.5).setChance(0.2),
     ]).set('altas', [
         new AirdropPoolItem('kubejs:ultra_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.1),
         new AirdropPoolItem('kubejs:wood_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.3),
