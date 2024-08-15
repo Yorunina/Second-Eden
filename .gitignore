@@ -18,7 +18,8 @@
 /TrashSlotSaveState.json
 /lightspeed-cache/
 /config/oculus.properties
-/config/inventoryprofilesnext
+/config/inventoryprofilesnext/*
+!/config/inventoryprofilesnext/inventoryprofiles.json
 /config/xaerominimap_entities.json
 /*-natives
 /quests_structures

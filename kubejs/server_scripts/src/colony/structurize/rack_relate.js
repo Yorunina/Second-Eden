@@ -17,8 +17,14 @@ BlockEvents.rightClicked(event => {
         if (!colony) return null
         let building = colony.getBuildingManager().getBuilding(targetBlockPos)
         if (!building) return null
-        building.addContainerPosition(block.pos)
-        player.addItemCooldown(item, 20 * 3)
+        if (player.isCrouching()) {
+            building.removeContainerPosition(block.pos)
+            player.tell(Text.translatable('msg.item.rack_relate_wand.3', Text.gold(block.pos.x), Text.gold(block.pos.y), Text.gold(block.pos.z)))
+        } else {
+            building.addContainerPosition(block.pos)
+            player.tell(Text.translatable('msg.item.rack_relate_wand.4', Text.gold(block.pos.x), Text.gold(block.pos.y), Text.gold(block.pos.z)))
+        }
+        player.addItemCooldown(item, 10)
     } else if (block.entityData.contains('blueprintDataProvider')) {
         let colonyId = block.entityData.getInt('colony')
         if (!colonyId) return null
@@ -49,12 +55,12 @@ ItemEvents.rightClicked('kubejs:rack_relate_wand', event => {
     if (!colony) return null
     let building = colony.getBuildingManager().getBuilding(targetBlockPos)
     if (!building) return null
-    let containsTextList = [Text.translatable('msg.building.related_racks.1')]
+
+    let textLine = Text.translatable('msg.item.rack_relate_wand.1')
     let i = 1
     building.getContainers().forEach(/** @param {$BlockPos} container */container => {
-        containsTextList.push(Text.translatable('msg.building.related_racks.2', i, container.x, container.y, container.z))
+        textLine.append('\n').append(Text.translatable('msg.item.rack_relate_wand.2', Text.white(i.toFixed()), Text.gold(container.x), Text.gold(container.y), Text.gold(container.z)))
         i++
     })
-    player.tell(containsTextList.join('\n'))
-
+    player.tell(textLine)
 })

@@ -55,7 +55,6 @@ StartupEvents.registry('item', event => {
         .maxStackSize(1)
 
     event.create('rack_relate_wand', 'basic')
-        .tag(RARE)
         .tag('minecolonies:hide_hut_gui')
         .texture('kubejs:item/rack_relate_wand')
         .maxStackSize(1)
