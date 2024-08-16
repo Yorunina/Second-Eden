@@ -1025,33 +1025,33 @@
 			]
 			icon: "bountiful:bountyboard"
 			id: "0459DEEBB651A740"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "57767DC697D69C39"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
-			shape: "gear"
-			size: 6.0d
-			subtitle: "解决产能过剩"
-			tasks: [
+			rewards: [
 				{
-					id: "428A9E259D38E107"
-					item: {
-						Count: 1
-						id: "bountiful:decree"
-						tag: {
-							"bountiful:decree_data": "{}"
-						}
-					}
-					type: "item"
+					exclude_from_claim_all: true
+					id: "57767DC697D69C39"
+					table_id: 3054476279840700017L
+					type: "random"
 				}
 				{
-					id: "399DD17C3445D72D"
+					id: "05621E7B1D56DA9A"
 					item: "bountiful:bountyboard"
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 6.0d
+			subtitle: "解决产能过剩"
+			tasks: [{
+				id: "428A9E259D38E107"
+				item: {
+					Count: 1
+					id: "bountiful:decree"
+					tag: {
+						"bountiful:decree_data": "{}"
+					}
+				}
+				type: "item"
+			}]
 			title: "赏金猎人"
 			x: 8.0d
 			y: -2.0d

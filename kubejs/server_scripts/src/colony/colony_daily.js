@@ -66,7 +66,9 @@ ServerEvents.tick(event => {
         }
 
         switch (true) {
-            case overallHappiness > 5 && overallHappiness < 7:
+            case overallHappiness < 5:
+                break
+            case overallHappiness < 7:
                 if (Math.random() > 0.2) return
                 if (randomCitizen) {
                     let item = RandomGet(OverallHappinessGiftList1)
