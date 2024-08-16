@@ -1147,25 +1147,6 @@
 		}
 		{
 			dependencies: ["751C216B9FBB5C80"]
-			description: ["最普通的袭击之书，&a只能对自己的殖民地使用&r。"]
-			id: "4768EF75CCC6C31F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6BD078400B40600B"
-				table_id: 3054476279840700017L
-				type: "loot"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "0BB49A834F53D62B"
-				item: "kubejs:raid_book"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["751C216B9FBB5C80"]
 			description: [
 				"&a只能对自己的殖民地使用&r，该次袭击会生成大于一个的&c首领&r单位，请保护好你的殖民地。"
 				""
@@ -1185,7 +1166,7 @@
 				item: "kubejs:undead_raid_book"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 8.0d
 			y: 10.0d
 		}
 		{
@@ -1225,8 +1206,8 @@
 				item: "kubejs:custom_raid_book"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 14.0d
+			x: 4.0d
+			y: 10.0d
 		}
 		{
 			dependencies: ["751C216B9FBB5C80"]

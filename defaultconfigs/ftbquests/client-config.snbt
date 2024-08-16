@@ -1,4 +1,21 @@
 # Default config file that will be copied to local\ftbquests\client-config.snbt if it doesn't exist!
 # Just copy any values you wish to override in here!
 
-{ }
+{
+	ui: {
+		# Default: false
+		old_scroll_wheel: true
+		
+		# Default: 2
+		# Range: -∞ ~ +∞
+		pinned_quests_inset_x: 2
+		
+		# Default: 2
+		# Range: -∞ ~ +∞
+		pinned_quests_inset_y: 2
+		
+		# Default: "right"
+		# Valid values: "top_left", "top", "top_right", "right", "bottom_right", "bottom", "bottom_left", "left"
+		pinned_quests_pos: "right"
+	}
+}

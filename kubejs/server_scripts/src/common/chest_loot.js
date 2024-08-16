@@ -5,7 +5,7 @@ LootJS.modifiers(event => {
     event.removeGlobalModifier("touhou_little_maid:shrine")
 
     event.addLootTypeModifier(LootType.CHEST)
-        .addLoot(LootEntry.of('kubejs:common_atlas').when((c) => c.randomChance(0.03)))
+        .addLoot(LootEntry.of('kubejs:common_atlas').when((c) => c.randomChance(0.05)))
         .addLoot(LootEntry.of('kubejs:wood_atlas').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:stone_atlas').when((c) => c.randomChance(0.02)))
         .addLoot(LootEntry.of('kubejs:ore_atlas').when((c) => c.randomChance(0.02)))

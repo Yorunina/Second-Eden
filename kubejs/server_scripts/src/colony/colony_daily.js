@@ -50,7 +50,7 @@ ServerEvents.tick(event => {
                         let item = Item.of('torchmaster:megatorch', 1)
                         buildingItemCap.insertItem(item, false)
 
-                        player.tell(Text.translate('msg.colony.daily_rews_3.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                        player.tell(Text.translate('msg.colony.daily_rews_5.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                     }
                     break
                 case 7:
@@ -58,7 +58,7 @@ ServerEvents.tick(event => {
                         let item = Item.of('kubejs:snoop_ring', 1)
                         buildingItemCap.insertItem(item, false)
 
-                        player.tell(Text.translate('msg.colony.daily_rews_3.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                        player.tell(Text.translate('msg.colony.daily_rews_7.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                     }
                     break
             }
@@ -74,25 +74,25 @@ ServerEvents.tick(event => {
                     let item = RandomGet(OverallHappinessGiftList1)
                     buildingItemCap.insertItem(item, false)
 
-                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_5_7.1', Text.gold(day), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_5_7.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
             case overallHappiness < 9:
-                if (Math.random() > 0.15) return
+                if (Math.random() > 1) return
                 if (randomCitizen) {
                     let item = RandomGet(OverallHappinessGiftList2)
                     buildingItemCap.insertItem(item, false)
 
-                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_7_9.1', Text.gold(day), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_7_9.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
             case overallHappiness < 10:
-                if (Math.random() > 0.1) return
+                if (Math.random() > 1) return
                 if (randomCitizen) {
                     let item = RandomGet(OverallHappinessGiftList3)
                     buildingItemCap.insertItem(item, false)
 
-                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_9_10.1', Text.gold(day), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    player.tell(Text.translate('msg.colony.daily_overallHappiness_rews_9_10.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
         }

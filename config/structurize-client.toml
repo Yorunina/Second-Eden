@@ -6,7 +6,7 @@
 		#If disabled show placeholders as normal blocks, if enabled render: any (light) -> nothing, fluid (blue) -> dimension default fluid, solid (brown) -> worldgen block, tag (transparent) -> content block. Fluid and solid only work in singleplayer/for LAN owner, else it's just best guess. Currently without auto-updating [Default: false]
 		render_placeholders_nice = false
 		#Enabling this will send most of your active previews to nearby players [Default: false]
-		share_previews = false
+		share_previews = true
 		#Once enabled you will see previews from other players within sensible distance [Default: false]
 		see_shared_previews = false
 		#-1 for same as current vanilla world, 0 to 15 (min to max) for static light level [Default: 15, min: -1, max: 15]

@@ -119,9 +119,15 @@ ServerEvents.highPriorityData(event => {
             .setResearchId('kubejs:effects/infinitywirelessaccess', true))
 
     // 中子素收集
-    // todo 需要测试配方以及合理性，补充低级别配方奖励
-    event.addJson(`kubejs:crafterrecipes/blacksmith/sifter_mesh_netherite.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:sifter_mesh_netherite', 1), [Item.of('minecraft:netherite_ingot', 1)])
+    event.addJson(`kubejs:crafterrecipes/cursher/neutron_cobblestone.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('kubejs:neutron_pile', 1), [Item.of('minecraft:cobblestone', 32)])
+            .setIntermediate('minecraft:air')
+            .setMinBuildingLevel(5)
+            .setResearchId('kubejs:effects/neutronpilesift', true))
+
+    event.addJson(`kubejs:crafterrecipes/cursher/neutron_cobbled_deepslate.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('kubejs:neutron_pile', 1), [Item.of('minecraft:cobbled_deepslate', 16)])
+            .setIntermediate('minecraft:air')
             .setMinBuildingLevel(5)
             .setResearchId('kubejs:effects/neutronpilesift', true))
 

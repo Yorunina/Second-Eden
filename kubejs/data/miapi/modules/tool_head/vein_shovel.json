@@ -145,7 +145,7 @@
             "slot": "mainhand"
         }
     ],
-    "durability": "[material.durability]* 0.5",
+    "durability": "[material.durability]* 0.8",
     "displayName": "miapi.module.vein_shovel.name",
     "tag": [
         "tool_head"

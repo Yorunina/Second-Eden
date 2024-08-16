@@ -15,8 +15,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 25.0,
-                "min": 5.0
+                "max": 64.0,
+                "min": 32.0
               },
               "function": "minecraft:set_count"
             }
@@ -31,8 +31,8 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 7.0,
-                "min": 1.0
+                "max": 32.0,
+                "min": 12.0
               },
               "function": "minecraft:set_count"
             }
@@ -47,14 +47,14 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 2.0,
+                "max": 3.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"
             }
           ],
           "name": "kubejs:echo_crystal",
-          "weight": 1
+          "weight": 5
         },
         {
           "type": "minecraft:item",
@@ -63,7 +63,7 @@
               "add": false,
               "count": {
                 "type": "minecraft:uniform",
-                "max": 5.0,
+                "max": 12.0,
                 "min": 1.0
               },
               "function": "minecraft:set_count"

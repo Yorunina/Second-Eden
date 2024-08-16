@@ -204,7 +204,6 @@
 			y: -6.0d
 		}
 		{
-			can_repeat: true
 			dependencies: ["464C44DF3DD32851"]
 			description: [
 				"&d<模拟殖民地>&r是一个需要&a消耗大量资源&r的模组，虽然整合包为此做了&2大量的魔改和平衡&r，增加了&2多种玩法可以额外获取资源&r。"

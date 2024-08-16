@@ -9,10 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"3B3395C72863B7EC"
-				"61F98C9136C63379"
-			]
+			dependencies: ["3B3395C72863B7EC"]
 			description: [
 				"&7——玩家个体只能放置一次补给营地/补给船。&r"
 				""

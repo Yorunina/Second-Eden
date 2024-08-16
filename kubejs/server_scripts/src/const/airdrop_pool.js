@@ -90,7 +90,7 @@ const OreAirdropPool = new Map()
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:raw_copper').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:raw_gold').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.6),
-        new AirdropPoolItem('minecraft:quartz').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.5),
+        new AirdropPoolItem('minecraft:quartz').setMinCount(32).setMaxCount(64).setFortuneCoe(1.5).setChance(0.5),
         new AirdropPoolItem('kubejs:raw_iridium').setMinCount(1).setMaxCount(4).setFortuneCoe(1.5).setChance(0.05),
         new AirdropPoolItem('minecraft:netherite_scrap').setMinCount(4).setMaxCount(16).setFortuneCoe(1.5).setChance(0.1),
     ]).set('gem', [

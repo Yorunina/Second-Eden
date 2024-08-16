@@ -16,4 +16,17 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('enchanter_custom', Item.of('kubejs:book_of_enlight', 1),
             [Item.of('minecraft:book'), Item.of('minecraft:glowstone_dust')])
             .setMinBuildingLevel(3))
+
+    event.addJson(`kubejs:crafterrecipes/cursher/nether_star.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:quartz', 64), [Item.of('minecraft:nether_star', 1)])
+            .setIntermediate('minecraft:air')
+            .setMinBuildingLevel(5))
+
+    event.addJson(`kubejs:crafterrecipes/cursher/soul_soil.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:soul_sand', 3), [Item.of('minecraft:soul_soil', 1)])
+            .setIntermediate('minecraft:air'))
+
+    event.addJson(`kubejs:crafterrecipes/cursher/nether_brick.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:soul_soil', 3), [Item.of('minecraft:nether_brick', 1)])
+            .setIntermediate('minecraft:air'))
 })

@@ -15,11 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: [
-				"2679901B66DC08AB"
-				"1C73D3C14C8D1ABF"
-				"0424C963CD3D9BC2"
-			]
+			dependencies: ["6A8DF9B51A9B903B"]
 			description: [
 				"&7——无法完成该任务？先看一下“引入”章节吧！&r"
 				""
@@ -38,9 +34,10 @@
 			}
 			id: "48FD6C4DE7C8B59A"
 			rewards: [{
-				id: "2D0F2C9039E1564C"
-				item: "kubejs:skill_book_agility"
-				type: "item"
+				exclude_from_claim_all: true
+				id: "2BCB352CE6B9BC33"
+				table_id: 3054476279840700017L
+				type: "random"
 			}]
 			shape: "gear"
 			size: 6.0d
@@ -64,7 +61,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["288A70B2455C4F63"]
+			dependencies: ["48FD6C4DE7C8B59A"]
 			description: [
 				"就在刚刚，你获得了一本“技能书”——&6敏捷之书&r，除此之外还有&6力量之书&r、&6智力之书&r。"
 				""
@@ -111,7 +108,7 @@
 				type: "item"
 			}]
 			title: "技能之书"
-			x: -10.0d
+			x: -16.0d
 			y: 2.0d
 		}
 		{
@@ -132,7 +129,7 @@
 				type: "item"
 			}]
 			title: "遗忘之书"
-			x: -10.0d
+			x: -16.0d
 			y: 8.0d
 		}
 		{
@@ -204,7 +201,7 @@
 				type: "item"
 			}]
 			title: "寻找热气球"
-			x: -4.0d
+			x: -10.0d
 			y: 2.0d
 		}
 		{
@@ -242,7 +239,7 @@
 				type: "checkmark"
 			}]
 			title: "合适的呼叫地点"
-			x: -4.0d
+			x: -10.0d
 			y: -4.0d
 		}
 		{
@@ -308,7 +305,7 @@
 				type: "item"
 			}]
 			title: "精妙背包"
-			x: 2.0d
+			x: -4.0d
 			y: 8.0d
 		}
 		{
@@ -344,7 +341,7 @@
 				type: "item"
 			}]
 			title: "铁制背包"
-			x: -4.0d
+			x: -10.0d
 			y: 8.0d
 		}
 		{
@@ -398,7 +395,7 @@
 				}
 			]
 			title: "更多地图册"
-			x: 14.0d
+			x: 8.0d
 			y: 8.0d
 		}
 		{
@@ -431,7 +428,7 @@
 				weak_nbt_match: true
 			}]
 			title: "地图主题牌"
-			x: 26.0d
+			x: 20.0d
 			y: 8.0d
 		}
 		{
@@ -475,7 +472,7 @@
 				value: 1L
 			}]
 			title: "使用一次社群地图册"
-			x: 20.0d
+			x: 14.0d
 			y: 8.0d
 		}
 		{
@@ -503,7 +500,7 @@
 				type: "checkmark"
 			}]
 			title: "主题牌－进阶"
-			x: 26.0d
+			x: 20.0d
 			y: 14.0d
 		}
 		{
@@ -535,7 +532,7 @@
 				type: "checkmark"
 			}]
 			title: "强化社群地图册"
-			x: 32.0d
+			x: 26.0d
 			y: 8.0d
 		}
 		{
@@ -570,7 +567,7 @@
 				}
 				type: "item"
 			}]
-			x: 2.0d
+			x: -4.0d
 			y: 14.0d
 		}
 		{
@@ -588,7 +585,7 @@
 				item: "toolbelt:pouch"
 				type: "item"
 			}]
-			x: 8.0d
+			x: 2.0d
 			y: 14.0d
 		}
 		{
@@ -1116,7 +1113,7 @@
 				type: "item"
 			}]
 			title: "神秘的遗物"
-			x: 20.0d
+			x: 14.0d
 			y: 14.0d
 		}
 		{
@@ -1143,7 +1140,7 @@
 				type: "checkmark"
 			}]
 			title: "遗物强化"
-			x: 20.0d
+			x: 14.0d
 			y: 20.0d
 		}
 		{
@@ -1189,11 +1186,11 @@
 				type: "item"
 			}]
 			title: "补给营地"
-			x: 2.0d
+			x: -4.0d
 			y: 2.0d
 		}
 		{
-			dependencies: ["288A70B2455C4F63"]
+			dependencies: ["13BCDD950336C1F4"]
 			description: [
 				"如果你要和你的朋友开始旅程，却&2苦于没有互相传送的方式&r，不如试试&a约定誓约&r。"
 				""
@@ -1223,69 +1220,6 @@
 			title: "和朋友一起远征"
 			x: -16.0d
 			y: -4.0d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: [
-				"&7——获得原木，制作工作台与工具吧！"
-				"&r"
-				"在追寻空投补给的过程中，你或许需要一艘&6船&r。"
-			]
-			icon: "minecraft:oak_boat"
-			id: "288A70B2455C4F63"
-			rewards: [{
-				id: "7935E725BBBD4A23"
-				type: "xp"
-				xp: 50
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "39D6E3C34C3B3CE4"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecraft:oak_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:spruce_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:birch_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:jungle_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:acacia_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:dark_oak_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:mangrove_boat"
-							}
-							{
-								Count: 1b
-								id: "minecraft:cherry_boat"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "冒险启程"
-			x: -16.0d
-			y: 2.0d
 		}
 		{
 			dependencies: ["6CB0D6C95710E071"]
@@ -1331,7 +1265,7 @@
 				type: "item"
 			}]
 			title: "升级你的装备！"
-			x: 8.0d
+			x: 2.0d
 			y: 8.0d
 		}
 		{
@@ -1351,7 +1285,7 @@
 				type: "checkmark"
 			}]
 			title: "附魔－地图册"
-			x: 14.0d
+			x: 8.0d
 			y: 2.0d
 		}
 		{
@@ -1385,7 +1319,7 @@
 				type: "item"
 			}]
 			title: "悬挂式滑翔翼"
-			x: 8.0d
+			x: 2.0d
 			y: 2.0d
 		}
 	]
