@@ -39,7 +39,7 @@
 					type: "item"
 				}
 			]
-			size: 8.0d
+			size: 6.0d
 			tasks: [{
 				id: "1BAC23104848870E"
 				title: "我已了解"
@@ -585,11 +585,18 @@
 			dependencies: ["2F4F3082E7F059E0"]
 			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
 			id: "10D6DC8248011CB2"
-			rewards: [{
-				id: "39846FC074638E27"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "39846FC074638E27"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "514B37272E411EA0"
+					item: "kubejs:transmog_mirror"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "似曾相识"
 			tasks: [{

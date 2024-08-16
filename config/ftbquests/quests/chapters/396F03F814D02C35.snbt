@@ -43,7 +43,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 8.0d
+			size: 6.0d
 			subtitle: "怀揣地图，呼叫支援"
 			tasks: [{
 				id: "16B41D0A6441E832"
@@ -1292,14 +1292,31 @@
 			description: [
 				"通过空投补给获得了大量的物资，现在你可以升级一下自己的装备了。"
 				""
-				"&7除了铁制工具，你还可以升级一下你的背包。&r"
+				"&7除了铁制工具，你可以在后续了解到如何使用模块化工作台制作更多更好用的物品——比如任务奖励中允许连锁采集的矿脉镐。&r"
+				""
+				"&7但在此之前，为什么不先升级一下你的背包呢？&r"
 			]
 			id: "5F041F79CCFD8CE6"
-			rewards: [{
-				id: "098493942BA7D0EC"
-				type: "xp"
-				xp: 60
-			}]
+			rewards: [
+				{
+					id: "098493942BA7D0EC"
+					type: "xp"
+					xp: 60
+				}
+				{
+					id: "442E20517E79FB3B"
+					item: {
+						Count: 1
+						id: "miapi:modular_pickaxe"
+						tag: {
+							Damage: 0
+							miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"wood_oak\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+							modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"wood_oak\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						}
+					}
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "感谢馈赠"
 			tasks: [{

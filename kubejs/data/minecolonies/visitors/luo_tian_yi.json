@@ -1,0 +1,12 @@
+{
+  "texture": "d5585917-9354-4412-bebb-212c1744c10a",
+  "citizensuffix": "_w",
+  "name": "LuoTianyi",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.luoTianYi",
+  "recruitcost": "minecraft:cake",
+  "recruitcostcount": 1,
+  "gender": "female",
+  "primaryskill": "Mana",
+  "secondaryskill": "Creativity"
+}

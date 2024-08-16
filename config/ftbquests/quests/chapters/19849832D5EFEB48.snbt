@@ -33,7 +33,7 @@
 				type: "random"
 			}]
 			shape: "rsquare"
-			size: 8.0d
+			size: 6.0d
 			subtitle: "升本？！"
 			tasks: [{
 				id: "66AC462FCF1565F0"

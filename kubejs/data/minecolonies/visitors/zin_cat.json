@@ -1,0 +1,12 @@
+{
+  "texture": "3aa3624a-2d60-438c-ba61-46882609239b",
+  "citizensuffix": "_w",
+  "name": "ZinCat",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.zinCat",
+  "recruitcost": "minecraft:redstone_torch",
+  "recruitcostcount": 16,
+  "gender": "female",
+  "primaryskill": "Creativity",
+  "secondaryskill": "Mana"
+}

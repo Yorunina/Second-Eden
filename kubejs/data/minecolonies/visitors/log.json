@@ -1,0 +1,12 @@
+{
+  "texture": "8bcc33ef-67ab-4e6e-85ad-7edf66a5e86d",
+  "citizensuffix": "_w",
+  "name": "Log",
+  "chance": 0.001,
+  "storylangkey": "chat.kubejs.colony.visitor.log",
+  "recruitcost": "minecraft:golden_carrot",
+  "recruitcostcount": 16,
+  "gender": "female",
+  "primaryskill": "Mana",
+  "secondaryskill": "Adaptability"
+}

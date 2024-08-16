@@ -1,0 +1,12 @@
+{
+  "texture": "ed249705-7418-41b3-be0d-4a539c9400fb",
+  "citizensuffix": "_w",
+  "name": "Prunus persica",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.prunusPersica",
+  "recruitcost": "minecraft:wheat_seeds",
+  "recruitcostcount": 32,
+  "gender": "female",
+  "primaryskill": "Knowledge",
+  "secondaryskill": "Mana"
+}

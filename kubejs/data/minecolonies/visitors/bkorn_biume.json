@@ -1,0 +1,12 @@
+{
+  "texture": "b20b5e38-28d4-41e4-93b0-b58cb25ce508",
+  "citizensuffix": "_w",
+  "name": "Bkornbiume",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.bkornBiume",
+  "recruitcost": "minecraft:cornflower",
+  "recruitcostcount": 3,
+  "gender": "male",
+  "primaryskill": "Creativity",
+  "secondaryskill": "Intelligence"
+}

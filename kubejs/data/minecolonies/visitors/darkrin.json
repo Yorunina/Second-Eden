@@ -1,0 +1,12 @@
+{
+  "texture": "91168b33-a6c4-492c-b81f-0ed7151a97b3",
+  "citizensuffix": "_w",
+  "name": "Darkrin",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.darkrin",
+  "recruitcost": "farmersdelight:roasted_mutton_chops",
+  "recruitcostcount": 1,
+  "gender": "male",
+  "primaryskill": "Stamina",
+  "secondaryskill": "Adaptability"
+}

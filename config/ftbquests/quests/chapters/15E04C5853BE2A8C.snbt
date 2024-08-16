@@ -40,7 +40,7 @@
 					type: "item"
 				}
 			]
-			size: 8.0d
+			size: 5.0d
 			subtitle: "写在最前面"
 			tasks: [{
 				id: "5E180DC1685F8084"
@@ -204,6 +204,7 @@
 			y: -6.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["464C44DF3DD32851"]
 			description: [
 				"&d<模拟殖民地>&r是一个需要&a消耗大量资源&r的模组，虽然整合包为此做了&2大量的魔改和平衡&r，增加了&2多种玩法可以额外获取资源&r。"
@@ -213,9 +214,16 @@
 				"将该段指令输入至聊天框 ：&e/gamerule builderInfResources true&r"
 				""
 				"即可让你的殖民地&a建造/升级房屋不再消耗任何资源&r。"
+				""
+				"如果你是在多人服务器，则需要对应的权限才可以运行。请咨询你的服主以了解更多信息。"
 			]
 			icon: "minecolonies:scan_analyzer"
 			id: "1C73D3C14C8D1ABF"
+			rewards: [{
+				command: "/gamerule builderInfResources true"
+				id: "2D57E163103072B3"
+				type: "command"
+			}]
 			size: 4.0d
 			subtitle: "没关就是开了？"
 			tasks: [{

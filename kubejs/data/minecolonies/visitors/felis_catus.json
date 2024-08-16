@@ -1,0 +1,12 @@
+{
+  "texture": "f7e3ecb0-1059-4eb7-b7fd-f2d1d7e4ccaa",
+  "citizensuffix": "_w",
+  "name": "Felis catus",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.felisCatus",
+  "recruitcost": "minecraft:cod",
+  "recruitcostcount": 8,
+  "gender": "female",
+  "primaryskill": "Mana",
+  "secondaryskill": "Knowledge"
+}

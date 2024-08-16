@@ -1,0 +1,12 @@
+{
+  "texture": "c12dcef4-18e3-40bb-a39f-d0fe078dfdcd",
+  "citizensuffix": "_w",
+  "name": "Firefly",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.fireFly",
+  "recruitcost": "minecraft:cake",
+  "recruitcostcount": 3,
+  "gender": "female",
+  "primaryskill": "Strength",
+  "secondaryskill": "Agility"
+}

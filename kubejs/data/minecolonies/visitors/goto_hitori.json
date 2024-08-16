@@ -1,0 +1,10 @@
+{
+  "texture": "54d1ad4c-c062-4de7-a3c5-fbb3ce806184",
+  "citizensuffix": "_w",
+  "name": "Goto Hitori",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.gotoHitori",
+  "recruitcost": "xercamusic:guitar",
+  "recruitcostcount": 1,
+  "gender": "female"
+}

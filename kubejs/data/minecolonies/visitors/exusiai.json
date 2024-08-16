@@ -1,0 +1,12 @@
+{
+  "texture": "4d3d467b-8c01-4dbc-97a8-a0a54ff54acb",
+  "citizensuffix": "_w",
+  "name": "Exusiai",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.exusiai",
+  "recruitcost": "farmersdelight:hamburger",
+  "recruitcostcount": 1,
+  "gender": "female",
+  "primaryskill": "Adaptability",
+  "secondaryskill": "Knowledge"
+}

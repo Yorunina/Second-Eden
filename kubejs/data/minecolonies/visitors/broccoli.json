@@ -1,0 +1,12 @@
+{
+  "texture": "6131925a-ce58-4d59-b47d-9edddbed3218",
+  "citizensuffix": "_w",
+  "name": "Broccoli",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.broccoli",
+  "recruitcost": "minecraft:iron_hoe",
+  "recruitcostcount": 1,
+  "gender": "male",
+  "primaryskill": "Agility",
+  "secondaryskill": "Dexterity"
+}

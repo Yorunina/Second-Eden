@@ -1,0 +1,12 @@
+{
+  "texture": "b62a1c81-fbd7-42f4-968d-985a13028417",
+  "citizensuffix": "_w",
+  "name": "Yan Vismok",
+  "chance": 0.001,
+  "storylangkey": "chat.kubejs.colony.visitor.yanVismok",
+  "recruitcost": "farmersdelight:hot_cocoa",
+  "recruitcostcount": 3,
+  "gender": "male",
+  "primaryskill": "Adaptability",
+  "secondaryskill": "Focus"
+}

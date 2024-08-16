@@ -7,5 +7,5 @@
 			"item": "kubejs:skill_book_strength"
 		}
 	},
-	"background": "kubejs:textures/gui/all_black.png"
+	"background": "minecraft:textures/gui/advancements/backgrounds/stone.png"
 }

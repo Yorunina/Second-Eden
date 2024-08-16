@@ -16,59 +16,37 @@
 	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [
-		{
-			description: [
-				"&6制作团队：GoCampingTeam ( 译名：露营组 ) &r"
-				""
-				"{\"text\":\"点击前往B站主页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/3493263256324592\"}}"
-				""
-				"{\"text\":\"点击前往团队介绍页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/author/31248.html\"}}"
-				""
-				"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/Second-Eden\"}}"
-			]
-			icon: {
-				Count: 1
-				id: "kubejs:go_camping"
-				tag: { }
-			}
-			id: "0E3B5BC6A471679E"
-			shape: "rsquare"
-			size: 8.0d
-			subtitle: "制作团队：GoCamping！"
-			tasks: [{
-				id: "517BC679DC3C0E6C"
-				title: "制作团队"
-				type: "checkmark"
-			}]
-			x: 8.0d
-			y: 8.0d
+	quests: [{
+		description: [
+			"&6制作团队：GoCampingTeam ( 译名：露营组 ) &r"
+			""
+			"{\"text\":\"点击前往B站主页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://space.bilibili.com/3493263256324592\"}}"
+			""
+			"{\"text\":\"点击前往团队介绍页\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://www.mcmod.cn/author/31248.html\"}}"
+			""
+			"{\"text\":\"该项目Git地址\",\"color\":\"yellow\",\"underlined\":\"true\",\"clickEvent\":{\"action\":\"open_url\",\"value\":\"https://github.com/Yorunina/Second-Eden\"}}"
+		]
+		icon: {
+			Count: 1
+			id: "kubejs:go_camping"
+			tag: { }
 		}
-		{
-			description: [
-				"本整合包中的教程大量参考了中文McMod站点中各位先驱者的资料和文章。"
-				""
-				"本整合包中的kubejs魔改部分大量参考了kubejs Discord频道中其他研究者的提问和示例。"
-				""
-				"本整合包中的部分Mod修改得益于各位Mod开发者对自己代码无私的公开，感谢开源精神。"
-				""
-				"本整合包中的魔改使用部分材质引用了其他Mod，但尽可能的保留了它们原本的用途以使得玩家能够识别出来它们原本来自于哪些Mod。后续这类材质会被逐渐替换掉以避免可能出现的冲突。感谢这些材质和Mod作者们的优秀主意和美术设计。"
-				""
-				"本整合包借助了广大传媒和部分心理学效应以为人所知，感谢宝贵的机会。"
-			]
-			icon: "kubejs:force_work_bell"
-			id: "64EA255C062BB895"
-			shape: "rsquare"
-			size: 8.0d
-			subtitle: "外部鸣谢"
-			tasks: [{
-				id: "1B62C7838335B033"
-				title: "额外鸣谢"
-				type: "checkmark"
-			}]
-			x: -4.0d
-			y: 8.0d
-		}
-	]
+		id: "0E3B5BC6A471679E"
+		rewards: [{
+			id: "72A9973B0729A09A"
+			item: "kubejs:go_camping"
+			type: "item"
+		}]
+		shape: "rsquare"
+		size: 6.0d
+		subtitle: "制作团队：GoCamping！"
+		tasks: [{
+			id: "517BC679DC3C0E6C"
+			title: "制作团队"
+			type: "checkmark"
+		}]
+		x: 3.0d
+		y: 6.0d
+	}]
 	title: "制作人名单"
 }

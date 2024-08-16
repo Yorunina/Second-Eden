@@ -25,7 +25,7 @@
 				item: "minecraft:cake"
 				type: "item"
 			}]
-			size: 8.0d
+			size: 6.0d
 			subtitle: "通过其他玩法完善你的殖民地"
 			tasks: [{
 				id: "717C19BB3BEFEDF9"
@@ -890,7 +890,7 @@
 				type: "item"
 			}]
 			shape: "gear"
-			size: 6.0d
+			size: 4.0d
 			subtitle: "另类的可持续获取资源途径"
 			tasks: [{
 				id: "521EA39AA4AD4DED"
@@ -916,7 +916,7 @@
 				type: "random"
 			}]
 			shape: "gear"
-			size: 6.0d
+			size: 4.0d
 			tasks: [{
 				id: "04738B8C38F926C3"
 				item: "kubejs:trial_modifier"

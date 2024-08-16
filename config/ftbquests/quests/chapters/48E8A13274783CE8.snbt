@@ -124,7 +124,7 @@
 				}
 				type: "item"
 			}]
-			size: 8.0d
+			size: 6.0d
 			subtitle: "第一步：破坏方块"
 			tasks: [{
 				id: "541F23CB61DEF96A"

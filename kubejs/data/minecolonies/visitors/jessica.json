@@ -1,0 +1,12 @@
+{
+  "texture": "f81d3193-532a-423e-9986-861907cf1a74",
+  "citizensuffix": "_w",
+  "name": "Jessica",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.jessica",
+  "recruitcost": "minecraft:diamond",
+  "recruitcostcount": 15,
+  "gender": "female",
+  "primaryskill": "Strength",
+  "secondaryskill": "Adaptability"
+}

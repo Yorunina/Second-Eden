@@ -1,0 +1,12 @@
+{
+  "texture": "af4ded26-fb39-4618-8c79-fa92a2dfd391",
+  "citizensuffix": "_w",
+  "name": "NanDao",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.nanDao",
+  "recruitcost": "minecraft:torchflower",
+  "recruitcostcount": 8,
+  "gender": "male",
+  "primaryskill": "Intelligence",
+  "secondaryskill": "Knowledge"
+}

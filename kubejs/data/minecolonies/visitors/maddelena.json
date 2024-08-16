@@ -1,0 +1,12 @@
+{
+  "texture": "4e944bbc-5735-4320-82a2-9220112c8696",
+  "citizensuffix": "_w",
+  "name": "Maddelena",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.maddelena",
+  "recruitcost": "minecraft:yellow_dye",
+  "recruitcostcount": 6,
+  "gender": "female",
+  "primaryskill": "Creativity",
+  "secondaryskill": "Intelligence"
+}

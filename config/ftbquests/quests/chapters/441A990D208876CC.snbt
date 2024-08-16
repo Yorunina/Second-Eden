@@ -180,7 +180,7 @@
 			description: [
 				"&7——树上的房子，在里面睡觉的时候，或许梦也会变得广阔一些？&r"
 				""
-				"&b建筑工&r的&2建筑距离&r提高&a10格&r。"
+				"&b建筑工&r的&2建筑距离&r额外提高&a10格&r。"
 			]
 			hide_dependency_lines: true
 			icon: "minecraft:oak_hanging_sign"

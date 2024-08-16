@@ -1,0 +1,12 @@
+{
+  "texture": "73a2c6f7-a178-42a5-bb76-692ff3c75eeb",
+  "citizensuffix": "_w",
+  "name": "Talloran",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.talloran",
+  "recruitcost": "minecraft:ink_sac",
+  "recruitcostcount": 9,
+  "gender": "female",
+  "primaryskill": "Knowledge",
+  "secondaryskill": "Intelligence"
+}

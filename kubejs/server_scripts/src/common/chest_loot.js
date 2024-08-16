@@ -20,4 +20,5 @@ LootJS.modifiers(event => {
             LootEntry.of('simplehats:hatbag_rare').when((c) => c.randomChance(0.03)),
             LootEntry.of('simplehats:hatbag_epic').when((c) => c.randomChance(0.02)),
         )
+        .addLoot(LootEntry.of('trials:trial_vault').when(c => c.randomChance(0.005)))
 })

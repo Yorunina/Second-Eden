@@ -1,0 +1,12 @@
+{
+  "texture": "2e462888-172d-49a3-826b-39818abfbf40",
+  "citizensuffix": "_w",
+  "name": "Tian Ye Yu",
+  "chance": 0.01,
+  "storylangkey": "chat.kubejs.colony.visitor.tianYeYu",
+  "recruitcost": "minecraft:blue_dye",
+  "recruitcostcount": 6,
+  "gender": "female",
+  "primaryskill": "Mana",
+  "secondaryskill": "Knowledge"
+}
