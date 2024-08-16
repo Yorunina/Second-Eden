@@ -5,9 +5,6 @@
 	group: ""
 	icon: {
 		Count: 1
-		ForgeCaps: {
-			"curios:item": { }
-		}
 		id: "kubejs:newer_atlas"
 		tag: {
 			Damage: 0
@@ -19,141 +16,48 @@
 	quests: [
 		{
 			description: [
-				"&dSecond-Eden（中文名：理想箱庭物语）&r是一款完全围绕MineColonies（模拟殖民地）的主题向整合包。"
+				"&dSecond-Eden（中文名：理想箱庭物语）&r是一款完全围绕MineColonies（模拟殖民地）模组的主题向整合包。"
 				""
 				"整个整合包流程围绕模拟殖民地展开，通过筛选相关Mod以及大量魔改，通过前、中、后期各个方面的内容微调，尽最大可能对模拟殖民地的内容进行了扩展。"
 			]
 			icon: "kubejs:master_certificate"
 			id: "6A8DF9B51A9B903B"
-			rewards: [{
-				id: "444A18FC96A4A5D8"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}]
-			size: 4.0d
+			rewards: [
+				{
+					id: "16628A10570324FA"
+					item: "lightmanscurrency:coin_gold"
+					type: "item"
+				}
+				{
+					id: "51E8887D585A745C"
+					item: {
+						Count: 1
+						id: "lightmanscurrency:wallet_gold"
+						tag: {
+							AutoConvert: 1b
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 8.0d
 			subtitle: "写在最前面"
 			tasks: [{
 				id: "5E180DC1685F8084"
 				title: "放在前面"
 				type: "checkmark"
 			}]
-			x: -8.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["779E65894BD0E534"]
-			description: [
-				"通过将&6新手地图册&r装备在&d饰品栏：地图册&r，你可以&2呼叫空投&r。&7（默认X键）&r"
-				""
-				"&2呼叫空投&r会消耗地图册的耐久，以在世界的某处生成一个&6空投热气球&r。击落热气球将会获得&e资源补给&r。"
-				""
-				"&c——完成任务会解锁&r&d“教学引导－地图册－入门”&r&c章节，如有需要请前往该章节查看引导和提示。&r"
-			]
-			icon: {
-				Count: 1
-				id: "kubejs:newer_atlas"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "48FD6C4DE7C8B59A"
-			rewards: [{
-				id: "2D0F2C9039E1564C"
-				item: "kubejs:skill_book_agility"
-				type: "item"
-			}]
-			shape: "gear"
-			size: 4.0d
-			subtitle: "怀揣地图，呼叫支援"
-			tasks: [{
-				id: "16B41D0A6441E832"
-				item: {
-					Count: 1
-					ForgeCaps: {
-						"curios:item": { }
-					}
-					id: "kubejs:newer_atlas"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			title: "新手地图册"
-			x: 4.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["48FD6C4DE7C8B59A"]
-			description: [
-				"在你获取了&6新手地图册&r中空投的奖励之后，你就可以开始尝试建造你的殖民地了。"
-				""
-				"通过手持&6补给船&r/&6补给营地&r，你可以直接放置一个前期可用的&2营地建筑&r。"
-				""
-				"&c慢着，先不要着急放置营地！&r在你放置之前，有一些&a必要的知识&r是你需要了解的。"
-				""
-				"在后续的发展过程中，大量类似的操作会被涉及，我们会在&d<主线－模拟殖民地>章节&r中详细描述如何正确使用它。"
-				""
-				"&c详细内容请前往<主线－模拟殖民地>中查看。&r"
-			]
-			icon: "minecolonies:supplycampdeployer"
-			id: "3B3395C72863B7EC"
-			rewards: [
-				{
-					count: 8
-					id: "71C28242968861D8"
-					item: "farmersdelight:fruit_salad"
-					type: "item"
-				}
-				{
-					id: "0D2A27AAD44A16D2"
-					item: "kubejs:magic_mirror"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 4.0d
-			subtitle: "这是属于我的土地"
-			tasks: [{
-				icon: "minecolonies:supplycampdeployer"
-				id: "3A45A1B65523DEB3"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "minecolonies:supplycampdeployer"
-							}
-							{
-								Count: 1b
-								id: "minecolonies:supplychestdeployer"
-							}
-						]
-					}
-				}
-				title: "补给营地/补给船"
-				type: "item"
-			}]
-			title: "补给营地"
-			x: 10.0d
+			x: 8.0d
 			y: -6.0d
 		}
 		{
 			dependencies: ["6A8DF9B51A9B903B"]
 			description: [
-				"本整合包中，对任务采取了&2初始隐藏&r、&2逐步解锁&r的设定："
-				""
-				"在你&2完成某个主线任务&r或&2获得某样物品&r的时候会&a解锁显示新的任务&r。"
-				""
-				"这让玩家不需要一开始面对庞大的任务列表，但是你可能需要&e多观察一下任务列表，查看是否有新任务浮现&r。"
-				""
-				"&7点击右下角以翻页。&r"
-				"{@pagebreak}"
 				"本整合包中，对任务的外框形状进行了分类区分："
 				""
 				"&2圆形：&r普通任务。"
+				""
+				"&a圆角正方型：&r与殖民地小屋建造/升级相关的任务。"
 				""
 				"&e菱形：&r提示类文本，一般为某些内容说明。"
 				""
@@ -188,8 +92,8 @@
 			icon: "ftbquests:book"
 			id: "779E65894BD0E534"
 			rewards: [{
-				id: "307FF1218BE5FBE4"
-				item: "lightmanscurrency:coin_iron"
+				id: "5170442FA0791814"
+				item: "lightmanscurrency:coin_gold"
 				type: "item"
 			}]
 			size: 4.0d
@@ -200,9 +104,129 @@
 				type: "checkmark"
 			}]
 			title: "任务分类指引"
-			x: -1.5d
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6A8DF9B51A9B903B"]
+			description: [
+				"&d<模拟殖民地（MineColonies）>模组&r是本整合包的&2核心模组&r，本整合包的所有内容均为此服务，所以我们需要在此处简单介绍一下该模组的玩法："
+				""
+				"1.&e自动化&r——通过为公民分配各种岗位，实现&2自动化收集－运输－合成物品&r。"
+				""
+				"2.&e战斗&r——培养卫兵在怪物与袭击中&2保护殖民地&r，并且可以将卫兵带出领地&2随你征战&r。"
+				""
+				"3.&e建筑&r——&2无需练习&r，便可以建造出各种风格的建筑，&2构建一个和谐美丽的城市&r。"
+				""
+				"4.&e城镇规划&r——你可以更科学的规划你的&2殖民地布局与交通&r，从而让公民们拥有更高的工作效率。"
+				""
+				"5.&e钻研&r——随着你的殖民地发展，你将在大学中&2解锁更多的模组&r，他们与殖民地结合，提供&2各式各样的玩法&r，为殖民地提供了新的活力。"
+				""
+				"6.&e自由&r——这是一个十分自由的整合包，&2耕耘一个世外桃源？还是打造一个强大帝国？或是成为世界交通枢纽？这都由你决定！&r"
+			]
+			icon: "minecolonies:supplycampdeployer"
+			id: "464C44DF3DD32851"
+			rewards: [{
+				id: "05EBD23EF5C16263"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "05B7AD9EC74EFFF8"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "模拟殖民地"
+			x: 8.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["6A8DF9B51A9B903B"]
+			description: [
+				"殖民地建造初期需要大量的资源，本整合包在改动殖民地模组本身的同时，也提供了一种&2新的资源获取途径&r——&e地图册与空投气球&r。"
+				""
+				"地图册有各种类型和主题，整合包为其做了&2丰富的奖池&r，它一定程度上&2解决了长期挖矿/砍树的无聊流程&r，是你&a前中期收集资源的核心方式&r！"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:newer_atlas"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2679901B66DC08AB"
+			rewards: [{
+				id: "0E6FCD824EA891B5"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "怀揣地图，呼叫支援"
+			tasks: [{
+				id: "1075E0843A5C2973"
+				title: "我已知晓"
+				type: "checkmark"
+			}]
+			title: "来自天空的补给"
+			x: 16.0d
 			y: -6.0d
 		}
+		{
+			dependencies: ["6A8DF9B51A9B903B"]
+			description: [
+				"整合包以&e“更好的游玩殖民地”&r为前提，精选了许多模组，它们&2部分需要在殖民地玩法中解锁&r。"
+				""
+				"这些模组涵盖了&2休闲、魔法、战斗、交通物流&r等领域，并且都是&e为殖民地模组服务&r。"
+			]
+			icon: {
+				Count: 1
+				id: "eccentrictome:tome"
+				tag: {
+					"eccentrictome:mods": { }
+				}
+			}
+			id: "0424C963CD3D9BC2"
+			rewards: [{
+				id: "02AEF91F2D1C4E7D"
+				item: "lightmanscurrency:coin_gold"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "为殖民地服务"
+			tasks: [{
+				id: "7E6D294D58871A97"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更多模组、更多玩法"
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["464C44DF3DD32851"]
+			description: [
+				"&d<模拟殖民地>&r是一个需要&a消耗大量资源&r的模组，虽然整合包为此做了&2大量的魔改和平衡&r，增加了&2多种玩法可以额外获取资源&r。"
+				""
+				"但是&a本整合包仍然提供了一种更为便捷的“方法”&r——"
+				""
+				"将该段指令输入至聊天框 ：&e/gamerule builderInfResources true&r"
+				""
+				"即可让你的殖民地&a建造/升级房屋不再消耗任何资源&r。"
+			]
+			icon: "minecolonies:scan_analyzer"
+			id: "1C73D3C14C8D1ABF"
+			size: 4.0d
+			subtitle: "没关就是开了？"
+			tasks: [{
+				id: "52410DA0ADE223A3"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "懒人模式"
+			x: 8.0d
+			y: -20.0d
+		}
 	]
-	title: "引入"
+	title: "&b引入"
 }

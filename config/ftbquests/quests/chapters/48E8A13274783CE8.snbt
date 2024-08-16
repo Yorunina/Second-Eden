@@ -1,0 +1,1524 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "48E8A13274783CE8"
+	group: "389CFB35E1AD9BED"
+	icon: "minecolonies:blockhutbuilder"
+	id: "48E8A13274783CE8"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7CF1F7FBF04ED5B3"]
+			description: [
+				"委托建造时，除了上一页的方法之外，你还有其他方法提交物资。"
+				""
+				"——放入&6建筑工小屋&r的物品栏。"
+				""
+				"——在&3建筑工人&r的&2请求页面&r提交物资。"
+				""
+				"——放入&3建筑工人&r的物品栏。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "7849F0A0EDF0A23D"
+			rewards: [{
+				id: "2EDBA46974B34EC7"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "73607104EC14AD9D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更多提交物资方法"
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7CF1F7FBF04ED5B3"]
+			description: [
+				"虽然按照&2下方的流程&r，代表&a建筑工小屋等级要超过“被建造小屋”的等级&r，但总之，模组&e允许直接建造1级建筑工小屋&r。"
+				""
+				"{image:kubejs:textures/task/builder_hut_5.png width:200 height:107 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "7AC699326CF74534"
+			rewards: [{
+				id: "23BEE3D28CFC4824"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "3C41F6484F47448F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "建造/升级－流程归纳详解"
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7CF1F7FBF04ED5B3"]
+			description: [
+				"&d管理工人：&r管理负责该小屋的工人。"
+				""
+				"&d召回工人：&r将该小屋的工人召集到小屋方块处。"
+				""
+				"&d建筑选项：&r对该建筑进行&2建造/打包/修理/升级/拆除&r，&c在该页面点击建造才能使建筑工开始建造该小屋！！&r"
+				""
+				"&c帮助：&r模组自带的&2信息说明与指导&r，&e推荐查看&r。"
+				""
+				"&b物品栏：&r将物品放在此处，&2供工人交互&r。&7（如将所需材料、工具等放置于此）"
+				""
+				"&e建筑物品栏概要：&r仅限查看本建筑&2自带的&r储存方块中的物品信息。"
+				""
+				"{image:kubejs:textures/task/builder_hut_1.png width:150 height:169 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "1115F85D44FC7652"
+			rewards: [{
+				id: "0220BB808FBF7120"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "以建筑工小屋为例"
+			tasks: [{
+				id: "120D3DBCEC341C65"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "小屋方块交互界面－内容详解"
+			x: -10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1ADDD64E5A657D5D"]
+			description: [
+				"&7——你已经建造了简陋的安全保护设施，现在我们可以正式开始建造建筑工小屋了。&r"
+				""
+				"&2右键&r&6建筑工小屋&r，进入&a“建筑选项”&r，&c点击“建造建筑物”开始建造！&r"
+				""
+				"如果此时施工范围内路面不平整，你需要为&b建筑工&r提供一套&6石制工具&r以平整路面，打好地基。&7（石制工具：石斧、石镐、石锹、石锄）"
+				"&r"
+				"如下图，在&d公民物品栏&r提供，或者&2潜行键+右键&r公民也可打开该物品栏。"
+				""
+				"{image:kubejs:textures/task/builder_hut_4.png width:160 height:108 align:center}"
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "3F394D81525D2DE3"
+			rewards: [{
+				id: "0D0E7726CEAC14CF"
+				item: {
+					Count: 1
+					id: "kubejs:building_gift_box"
+					tag: {
+						levelReq: "1"
+					}
+				}
+				type: "item"
+			}]
+			size: 8.0d
+			subtitle: "第一步：破坏方块"
+			tasks: [{
+				id: "541F23CB61DEF96A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "建造建筑工小屋－开始建造"
+			x: -18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2550EECC9D8DB83E"]
+			description: [
+				"&7——如果你想获得更高的效率，就要避免自动分配公民岗位。&r"
+				""
+				"你可以在建筑的&2管理工人页面&r，&a根据居民的属性&r，&e合理分配岗位&r。"
+				""
+				"&d建筑雇佣模式：&r影响该小屋的雇佣是否为自动进行。"
+				""
+				"&7如果你想停止该小屋的运作，请在解雇工人后，将雇佣模式改为“手动”。&r"
+				""
+				"{image:kubejs:textures/task/builder_hut_2.png width:200 height:136 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "4914F83B49996E2C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "291A20CCB5FCE17D"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "各司其职"
+			tasks: [{
+				id: "0A3898F367DBB4AA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更合理的岗位分配"
+			x: 26.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3F394D81525D2DE3"]
+			description: [
+				"当然，你需要&2提供建筑所需资源&r，不过你还记得之前获得的&6建筑礼物盒&r吗？"
+				""
+				"手持&6建筑礼物盒&r&2潜行键+右键&r&6建筑工小屋&r，即可将礼物盒的奖励转化为&2该小屋目前等级&r&e所需的全部材料&r。&7（也可作用于其他小屋）&r"
+				""
+				"转化后，手持再次&2右键&r即可打开礼物盒，获取物资。"
+				""
+				"接下来&2按照下图&r指示，在&6建筑工小屋&r的&2所需资源界面&r提交物资吧。"
+				""
+				"{image:kubejs:textures/task/builder_hut_3.png width:160 height:90 align:center}"
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "7CF1F7FBF04ED5B3"
+			rewards: [{
+				id: "4C5C7679C0599618"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "第二步：放置方块"
+			tasks: [{
+				id: "25147F7E7D04DAB7"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "建造建筑工小屋－提交物资"
+			x: -10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4914F83B49996E2C"]
+			description: [
+				"你可以使用&6灵魂宝石&r定向的提升&b公民&r的属性。"
+				""
+				"&6灵魂宝石&r默认情况下仅能够一次&a提升公民的对应属性1级&r，但是这个数值会受玩家的&2教育能力&r以及&6灵魂宝石&r的阶级影响。"
+				""
+				"——玩家每有1点&2教育能力&r，则可以额外提升公民1级的对应属性；"
+				""
+				"——&6灵魂宝石&r每有1点阶级，则可以额外提升公民1级的对应属性。"
+			]
+			icon: "kubejs:soul_gem_agility"
+			id: "23F6E3B65FF3CAFA"
+			rewards: [{
+				id: "796E8FA3AEB40083"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"curios:item": { }
+					}
+					id: "kubejs:common_citrine_ring"
+				}
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "向你的灵魂中灌注知识"
+			tasks: [{
+				icon: "kubejs:soul_gem_agility"
+				id: "543D15D354F5CF0C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_mana"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_intelligence"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_dexterity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_focus"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_athletics"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_creativity"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_agility"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_strength"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_knowledge"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_stamina"
+							}
+							{
+								Count: 1b
+								id: "kubejs:soul_gem_adaptability"
+							}
+						]
+					}
+				}
+				title: "任意灵魂宝石"
+				type: "item"
+			}]
+			title: "灵魂宝石"
+			x: 32.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BC31AE4D5CC9452"]
+			description: [
+				"按下&2潜行键+右键&r&6建筑工小屋&r，可以&a与该建筑工小屋绑定&r。"
+				""
+				"手持&6资源卷轴&r&2右键&r，可以&e随时查看绑定建筑工小屋所需的资源&r。"
+			]
+			id: "6EFAF9A48B9B964E"
+			rewards: [{
+				id: "7A5F3608A4D8114D"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "7241DEC0AC877E1F"
+				item: {
+					Count: 1
+					id: "minecolonies:resourcescroll"
+					tag: {
+						builder: {
+							x: -960
+							y: -60
+							z: -113
+						}
+						colony: 1
+						version: { }
+						wo_hash: ""
+					}
+				}
+				type: "item"
+			}]
+			x: 38.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["1BC31AE4D5CC9452"]
+			description: [
+				"&6建筑工护目镜&r是一种可以查看&a建筑工工作内容&r的装备。"
+				""
+				"它拥有一个快捷键设置——&e“切换护目镜预览”&r。&7（默认无键位绑定）&r"
+				""
+				"如果开启预览，可以&a预览&r建筑工正在施工的小屋&a完成时的外观&r。"
+				""
+				"另外按下&2潜行键（shift）&r可以查看建筑工&a正在放置哪个方块&r，&e如果建筑工长时间不工作，你可以通过此方法查看是否出现问题&r。&7（如行进路径被卡住等）&r"
+			]
+			id: "7AED887E0361F4FD"
+			rewards: [{
+				id: "4A21F9E32751E3AF"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "12A5D6A20CDE765F"
+				item: {
+					Count: 1
+					id: "minecolonies:build_goggles"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 38.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2B39314EAB45A5F4"]
+			description: [
+				"&d<模拟殖民地>模组&r存在大量细节的信息，在查看FTB任务的同时，请记得点击下图中框选的&c红色问号&r&2查看更多细节信息&r。"
+				""
+				"以及该模组的每一种小屋方块都含有&e不同的交互界面&r，请不要忽视它们。"
+				""
+				"{image:kubejs:textures/task/remind_1.png width:150 height:168 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "3E044E020C3C1134"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A1BA8D56D508451"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "怀有学徒之心"
+			tasks: [{
+				id: "53B81169CC8F913D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "学无止境"
+			x: 62.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2550EECC9D8DB83E"]
+			description: [
+				"随着你的殖民地的发展，你可能会遭到&c敌对势力的袭击&r，这些力量几乎可以&2在任何地方产生&r，除了你的建筑物附近。"
+				""
+				"一般来说，这意味着袭击者会在殖民地之外生成，但是&a如果你的建筑分散开，袭击者可能会在建筑之间生成&r，并变得更加麻烦！"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&c——发生时间——&r"
+				""
+				"&c袭击&r只会在&2夜晚开始时&r发生，且袭击将要发生的当天白天，玩家物品栏中的&6古籍&r会产生附魔特效。"
+				""
+				"&c袭击&r开始时会有一个&2聊天信息&r，给出袭击发生的&2大致方向&r。"
+				""
+				"&7你可以稍微放心的是，本整合包降低了袭击产生的概率。&r"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D863AE63787CE9F"
+			rewards: [{
+				id: "76785F6A4093C5D7"
+				item: "minecolonies:ancienttome"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "野蛮入侵"
+			tasks: [{
+				id: "196A689A7034D330"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "敌对袭击"
+			x: 32.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0459DEEBB651A740"]
+			description: [
+				"先来建造一个&d酒馆&r吧！"
+				""
+				"&c注意！在建筑工具界面，不要让“建筑显示的外框”重合！哪怕外框范围内什么都没有也不要这样做！这会影响你建筑后续的升级！&r"
+				""
+				"&d——建筑说明——&r"
+				""
+				"&c一个殖民地只能建造一个酒馆。&r"
+				""
+				"&d——建筑功能——&r"
+				""
+				"&2招募功能&r：&d酒馆&r中会出现外来的&b客人&r，你可以选择招募他们。&a酒馆等级越高，客人等级和属性越高&r。"
+				""
+				"&2人口相关&r：&d酒馆&r能提供四个居住空间。"
+				""
+				"&d——建筑升级——&r"
+				""
+				"酒馆等级越高，客人属性越高。"
+				""
+				"提供的人口不会随等级提升。"
+			]
+			id: "36F5FB0754A5D99A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F4B2B84412D99D5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "我们需要更多的人口"
+			tasks: [{
+				id: "3E71E7A1A8954E59"
+				item: "minecolonies:blockhuttavern"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["36F5FB0754A5D99A"]
+			description: [
+				"部分风格包会用到来自&d<Domum－Ornamentum>模组&r的方块，它们会标有&e“由建筑师切割机合成”&r。"
+				""
+				"仅需&a按照说明&r，放入&6建筑师切割机&r中制作合成即可。"
+				""
+				"{image:kubejs:textures/task/domum_1.png width:150 height:88 align:center}"
+				""
+				"如此图案例中的&6“小麦装饰性方块”&r，它&2并没有说明“由建筑师切割机合成”&r，其合成方法只需去&dEMI搜索框&r中搜索物品名即可查询。"
+				""
+				"{image:kubejs:textures/task/domum_2.png width:150 height:60 align:center}"
+			]
+			id: "6E95A4FB4D632F15"
+			rewards: [{
+				id: "294EC116A0D2596A"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			subtitle: "复杂的变种方块"
+			tasks: [{
+				id: "511BCB38ABE0A7E5"
+				item: "domum_ornamentum:architectscutter"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["36F5FB0754A5D99A"]
+			description: [
+				"如下图，你可以在&d市政厅&r查看你的人口数量。"
+				""
+				"人口上限受到两方面影响:"
+				""
+				"&e——建筑提供的床位。&r&7（1床位＝1人口）&r"
+				""
+				"&e——殖民地最高人口上限。&r&7（初始为25人）&r"
+				""
+				"如上所述，你在没有提升“最高人口上限”之前，即使建造再多的建筑，也&a只能达到25人口&r。"
+				""
+				"{image:kubejs:textures/task/town_hall_4.png width:150 height:175 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "6BB8D4AB4F05A9AF"
+			rewards: [{
+				id: "71AB616070BA0BBC"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "326B64DF194362A3"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "殖民地人口－详解"
+			x: 14.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0E140DD8AE0C7D73"
+				"6AAF1859CF4A5496"
+			]
+			description: [
+				"&d——建筑说明——&r"
+				""
+				"&d卫兵塔&r是初期可以获得的&2提供武装力量&r的建筑，你可以在此处雇佣公民成为&b卫兵&r。"
+				""
+				"&d卫兵塔&r还为&3卫兵&r提供了一个床位&7（1个人口上限）&r，成为卫兵的公民原本的床位会空出，转为在卫兵塔睡觉休息。"
+				""
+				"&d——建筑功能——&r"
+				""
+				"&2巡逻&r：&a自由的活动模式&r，卫兵的巡逻范围取决于卫兵塔的等级。"
+				""
+				"&2跟随&r：允许卫兵&a跟随并保护&r玩家，距离取决于卫兵塔等级。"
+				""
+				"&2守卫&r：在&6卫兵塔方块&r的&2“选区工具”页面&r，点击得到&6卫兵权杖&r，右击选择一个位置让卫兵&a驻守那里，直到血量低时才会返回&r。"
+				""
+				"&d——建筑升级——&r"
+				""
+				"&d卫兵塔&r的等级决定了卫兵&a能使用的最高武器/装备品质&r：&e1级－石制，2级－铁制，3级－钻石，4级－下界合金，5级－下界合金&r。"
+				""
+				"同时卫兵塔的等级还影响卫兵的&a属性提升速度&r。"
+			]
+			id: "2550EECC9D8DB83E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01B4F84D12F0A799"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "保护你的殖民地"
+			tasks: [{
+				id: "3ADEA5CD062B1221"
+				item: "minecolonies:blockhutguardtower"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2550EECC9D8DB83E"]
+			description: [
+				"可以&2集结或解散&r你的&b卫兵&r。"
+				""
+				"这使得你可以随意的在殖民地范围内集结武装力量，&e不过使用这种方法无法让他们离开殖民地！&r"
+			]
+			id: "48225406680D995B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13499B6DA44B07BB"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "3D73353ED57BCF11"
+				item: {
+					Count: 1
+					id: "minecolonies:banner_rally_guards"
+					tag: {
+						guardtowerpositions: [ ]
+						isActive: 0b
+					}
+				}
+				type: "item"
+			}]
+			x: 26.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4914F83B49996E2C"]
+			description: [
+				"你可以在市政厅的最下方&2设置页面&r中，关闭&2“自动雇佣工人”&r，这可以让你更&e自主地管理殖民地岗位&r。"
+				""
+				"请注意，关闭自动雇佣后，&c意味着每次新建筑建成，你都需要去手动分配工人!"
+				"&r"
+				"{image:kubejs:textures/task/town_hall_5.png width:130 height:126 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "18B840F9888A5827"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C0586886FB31299"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "进阶－高效人员管理"
+			tasks: [{
+				id: "7F9EB05B1463B331"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "市政厅全局雇佣设置"
+			x: 32.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["18B840F9888A5827"]
+			description: [
+				"你可能意识到了，&b建筑工&r并不是无时无刻都有工作的，那不如在&2没有建筑需求的时候&r，&a将建筑工人挪到别的岗位&r。"
+				""
+				"&d卫兵塔&r的&e骑士岗位&r是一个不错的选择，因为两个岗位的主要属性都有&a“适应”&r。"
+				""
+				"{image:kubejs:textures/task/text_5.png width:200 height:116 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "5CCDCEAD3892E550"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "747454C49008AF21"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "殖民地不养闲人"
+			tasks: [{
+				id: "30D4991AED7AD584"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "调岗"
+			x: 38.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7D863AE63787CE9F"]
+			description: [
+				"按照之前的任务，你拥有5个人口上限，2个工作岗位。"
+				""
+				"——&e人口上限：&r&d酒馆&r提供4个，&d卫兵塔&r提供1个。"
+				""
+				"——&e工作岗位：&r&b建筑工&r1位，&b卫兵&r1位。"
+				""
+				"我们需要建造更多&a提供岗位的建筑&r，满足公民的需求。&7（公民没有工作会降低幸福度）"
+				"&r"
+				"&c请先再建造一个1级建筑工小屋&r，这样我们可以更快的建造其他建筑。"
+			]
+			icon: "minecolonies:blockhutbuilder"
+			id: "1BC31AE4D5CC9452"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "32BBD4C93C4DCF2F"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "再建造一个1级建筑工小屋"
+			tasks: [{
+				id: "2CF1007536ADA939"
+				item: "minecolonies:blockhutbuilder"
+				title: "建造第二个建筑工小屋"
+				type: "item"
+			}]
+			title: "岗位！需要岗位！"
+			x: 38.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1BC31AE4D5CC9452"]
+			description: [
+				"&d——建筑功能——&r"
+				""
+				"&b农夫&r可以种植&a任何生长在农田中的作物&r。&7（甘蔗、仙人掌、竹子等不能种植，这是之后另一个建筑的功能）&r"
+				""
+				"他们还可以制作&2种子&r、&2雕刻过的南瓜&r、&2干草块&r、&2堆肥土&r和&2砂土&r。&7（目前该功能无实际作用，后续建立仓库时会再讲解）&r"
+				""
+				"&3农夫&r需要提供一些工具才能工作，请在他提出要求后&a查看并满足他的要求&r吧，同时，&e你必须让该农场承包至少一块农田&r。"
+				""
+				"&d——建筑升级——&r"
+				""
+				"农场等级决定了农夫&a能承包的农田数量&r。&7（每一级增加一块农田）&r"
+				""
+				"农场的等级决定了农夫&a能使用的最高工具品质&r：&e1级－石制，2级－铁制，3级－钻石，4级－下界合金，5级－下界合金&r。"
+				""
+				"同时农场的等级还影响农夫的&a属性提升速度&r。"
+			]
+			icon: "minecolonies:blockhutfarmer"
+			id: "08D157B06A70DAE5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A17B584F3383FFD"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "自动种植，并提供岗位"
+			tasks: [{
+				id: "2145F2A087FF186A"
+				item: "minecolonies:blockhutfarmer"
+				type: "item"
+			}]
+			x: 44.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["08D157B06A70DAE5"]
+			description: [
+				"&d农田&r是&a农场正常运转的必要前提条件&r，它可以帮助农夫识别农田的范围以及应当在其中种植的作物。"
+				""
+				"如下图，放置&6农田方块&r时，应确保&2其底部与作物根部高度一致&r，即比耕地高一格。"
+				""
+				"{image:kubejs:textures/task/field_2.png width:180 height:111 align:1}"
+				"{image:kubejs:textures/task/field_1.png width:180 height:125 align:1}"
+			]
+			icon: "minecolonies:blockhutfield"
+			id: "0240BC60693B4004"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65F5ABB7BDB743B3"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "3CF65953A440FC10"
+				item: "minecolonies:blockhutfield"
+				type: "item"
+			}]
+			x: 50.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["36F5FB0754A5D99A"]
+			description: [
+				"每日清晨，当公民&a总体幸福度大于5点&r，你就能收到公民的&d礼物&r。"
+				""
+				"&d礼物&r会被寄放在&2市政厅小屋方块的物品栏&r，&a空手潜行+右键&r&6市政厅&r方块，即可快速打开市政厅的物品栏。&7（其它建筑小屋和公民的物品栏都可以如此操作便捷打开）&r"
+				""
+				"如下图，你可以在&d市政厅&r查看&2总体幸福度&r，以及&2与幸福度相关的各方面状态&r。"
+				""
+				"{image:kubejs:textures/task/town_hall_6.png width:150 height:175 align:center}"
+			]
+			icon: "supplementaries:present"
+			id: "6AAF1859CF4A5496"
+			rewards: [{
+				id: "0D9C27E11A3E22EF"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "circle"
+			size: 4.0d
+			subtitle: "幸福度系统"
+			tasks: [{
+				id: "12766821EC8B525C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "来自公民的礼物"
+			x: 20.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0240BC60693B4004"]
+			description: [
+				"由于&d<静谧四季>模组&r的影响，现在&e不同的季节需要种植不同的作物&r。"
+				""
+				"作物在非规定种植季节，将&a不会生长&r。"
+				""
+				"可以在种子的“&a丰收时刻”&r信息中查看&a适宜播种的季节&r。"
+			]
+			icon: "sereneseasons:calendar"
+			id: "28E66D8E0BD1D4FA"
+			rewards: [
+				{
+					count: 10
+					id: "1C459A31D3408D63"
+					item: "farmersdelight:cabbage_seeds"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "6167ECF14B9752E3"
+					item: "minecraft:melon_seeds"
+					type: "item"
+				}
+				{
+					count: 10
+					id: "3BDDC3AD414FCDED"
+					item: "supplementaries:flax_seeds"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			subtitle: "春播秋种"
+			tasks: [{
+				id: "52DE732F731EB71D"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "四季对作物的影响"
+			x: 50.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["1BC31AE4D5CC9452"]
+			description: [
+				"&d——建筑说明——&r"
+				"因为&2击落空投补给&r最好的方法是用&6弓&r射击，所以你最好先建造一个&d养鸡人小屋&r。"
+				""
+				"你需要为工人提供&2所需的物品&r，并在最开始时&2提供两只鸡&r。&7（所需物品可等候工人提交请求，或在小屋方块的“帮助”中查看。）&r"
+				""
+				"&d——建筑功能——&r"
+				""
+				"&d养鸡人小屋&r提供&a养殖鸡&r的功能，工人会自动为鸡繁殖，超过养殖数量上限的鸡会被处理并获得掉落物。"
+				""
+				"&d——建筑升级——&r"
+				""
+				"小屋初&a始养殖鸡的数量上限为两只&r，每提升一级，就可以&2额外饲养两只鸡&r。"
+				""
+				"小屋等级还影响工人&a最高能使用的工具品质&r，并且提高&a工人属性提升速度&r，具体标准与之前&d卫兵塔&r的说明一致，不再赘述。"
+			]
+			id: "4D9B31BA50E0ADFD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DA69C02AA6EA4AC"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "探寻空投活动的后勤补充"
+			tasks: [{
+				id: "4F9BB04189386976"
+				item: "minecolonies:blockhutchickenherder"
+				type: "item"
+			}]
+			x: 44.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D9B31BA50E0ADFD"]
+			description: [
+				"&6笼子&r可以捕捉&b小型动物&r，你可以手持笼子&a右键&r野外遇到的鸡，将其带回殖民地。&7（再次手持笼子右键以放出内部的动物）&r"
+				""
+				"对于牛、猪、羊等大型动物，你可以&2先让其繁殖后代&r，将&b幼年动物&r用笼子带回。"
+			]
+			id: "56A929C487807003"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "14317311B33A14C5"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "将小型动物带回殖民地"
+			tasks: [{
+				id: "518B4984BD0A3848"
+				item: "supplementaries:cage"
+				type: "item"
+			}]
+			x: 50.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0240BC60693B4004"
+				"56A929C487807003"
+				"5E20F811C15B7422"
+			]
+			description: [
+				"&7——你已经安顿了全部公民的岗位，现在你需要增添新的人口了！"
+				""
+				"&d——建筑说明——&r"
+				""
+				"&2不同于酒馆&r，殖民地的&d住宅&r没有数量上限限制，这是你今后提供公民居住床位&7（人口上限）&r的主要方式。"
+				""
+				"&d——建筑功能——&r"
+				""
+				"——住宅可以&a提高人口上限&r。"
+				""
+				"——将&a一男一女两位公民&r安排到同一个住宅，可以生成&b幼年公民&r，幼年公民将一定程度&e继承父母的属性&r。"
+				""
+				"——住宅的等级影响了所居住公民的&e属性上限&r。&7（比如一个住在1级住宅中，在5级卫兵塔工作的公民，虽然卫兵塔等级提供了大量的属性提升速度，但是住宅会限制住他的属性上限。）"
+				"&r"
+				"&d——建筑升级——&r"
+				""
+				"住宅&e初始提供一个床位&r，每升一级多一个床位。"
+				""
+				"&d————补充———"
+				"&r"
+				"你可以通过&2观察公民外观&r判断性别，也可以如下图一般&2查看信息界面的图标&r。"
+				""
+				"{image:kubejs:textures/task/text_6.png width:200 height:62 align:center}"
+			]
+			id: "2B39314EAB45A5F4"
+			rewards: [{
+				count: 8
+				id: "38BA7CFC3B16C233"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "提升人口上限的常用建筑"
+			tasks: [{
+				id: "1CE8BB4A7E6D6229"
+				item: "minecolonies:blockhutcitizen"
+				title: "建造一个住宅"
+				type: "item"
+			}]
+			title: "住宅"
+			x: 56.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2B39314EAB45A5F4"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&7——作为殖民地领主，你拥有更便捷的方法为你的公民命名。&r"
+				""
+				"现在你可以在手持&6命名牌&r时，&2潜行键+右键&r直接&a编辑命名牌&r。"
+				""
+				"&7这不需要使用铁砧，也不需要经验。&r"
+			]
+			icon: "minecraft:name_tag"
+			id: "7617CF08A1D8AB61"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "073946E569D0B50D"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "自定义公民名称"
+			tasks: [{
+				id: "3DA8F3C22A9461A8"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			title: "文明"
+			x: 56.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4D9B31BA50E0ADFD"]
+			description: [
+				"按下&2潜行键+右键&r&6市政厅&r，可以&a与该殖民地绑定&r。"
+				""
+				"手持&6剪切板&r&2右键&r，可以&e随时查看绑定殖民地的公民请求&r。"
+				""
+				"&7公民请求与公民任务不同，请求是公民想要某个必需的物品，如养鸡人请求一把斧头以进行工作。&r"
+				""
+				"&7公民任务则是殖民地模组本身对玩家的引导，如某公民提醒你是否要建造一个住宅。&r"
+			]
+			id: "16163DDD1FB70564"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5234ECB05FC5CB84"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "6AC53A3391C1ED3A"
+				item: {
+					Count: 1
+					id: "minecolonies:clipboard"
+					tag: {
+						colony: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 44.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["38D79A89B549CDD3"]
+			description: [
+				"&c——悬赏是本整合包提供的一种“资源转化”方式，你可以独立完成，也可以解决工人的产能过剩问题。同时也是获得地图册、各种主题牌、建筑礼物盒等资源的主要方式。&r"
+				""
+				"你可以在村庄中发现&6悬赏板&r，趁着建筑工小屋在工作，外出找找吧！"
+				""
+				"&a将任务取出带在身上才累计进度&r，完成任务后手持任务&2右键&r&6悬赏板&r即可&e兑换奖励&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				""
+				"{image:kubejs:textures/task/bountiful_1.png width:200 height:94 align:center}"
+				"{@pagebreak}"
+				"&6悬赏板&r中的&a任务类型&r与其&2右侧栏位&r中的&6悬赏令&r&a类型&r相关。"
+				""
+				"在&6悬赏板&r中放入各类&6悬赏令&r，即可&e在任务刷新时生成对应类型的任务&r。"
+				""
+				"&7如一个悬赏板中存在多张悬赏令，则任务刷新时会匹配所有与放入的悬赏令相关的任务。&r"
+			]
+			icon: "bountiful:bountyboard"
+			id: "0459DEEBB651A740"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57767DC697D69C39"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 6.0d
+			subtitle: "解决产能过剩"
+			tasks: [
+				{
+					id: "428A9E259D38E107"
+					item: {
+						Count: 1
+						id: "bountiful:decree"
+						tag: {
+							"bountiful:decree_data": "{}"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "399DD17C3445D72D"
+					item: "bountiful:bountyboard"
+					type: "item"
+				}
+			]
+			title: "赏金猎人"
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0459DEEBB651A740"]
+			description: [
+				"&7——你可以在悬赏中获得各种袭击之书。"
+				"&r"
+				"在整合包中，你可以使用&e各种类型的袭击之书&r向自己或其他玩家的殖民地主动发动&d袭击&r。"
+				""
+				"作为代价，&2袭击之书产生的怪物，在击杀后有更丰富的掉落奖励&r。"
+				""
+				"袭击既可以作为&a单人模式下带有奖励的挑战&r，也可以在&a多人游戏中与其他玩家互动&r。"
+				""
+				"&7点击右下角以翻页，查看多人模式下的详细说明。&r"
+				""
+				"{@pagebreak}"
+				"在多人模式下，如果你不喜欢被袭击，也可以通过一些方法&a避免自己成为袭击的目标&r。&7(因此袭击他人殖民地更多情况下是一种双方已经知晓并认同才能做到的玩法)"
+				"&r"
+				"因为&d袭击&r是在&2殖民地外生成怪物&r，所以你可以&a设置障碍或围墙&r让生成的怪物不能进入殖民地。"
+				""
+				"或者通过权限&a让其他玩家不能接触到你的殖民地公民&r，这从根源杜绝了袭击生成的可能。"
+				"   "
+			]
+			id: "751C216B9FBB5C80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05959AD8D3173C6A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "一点小小的挑战..."
+			tasks: [{
+				id: "1AC4E05332BCB24E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:raid_book"
+							}
+							{
+								Count: 1b
+								id: "kubejs:custom_raid_book"
+							}
+							{
+								Count: 1b
+								id: "kubejs:undead_raid_book"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "主动袭击！"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"48FD6C4DE7C8B59A"
+				"0459DEEBB651A740"
+			]
+			description: [
+				"在&a悬赏板任务&r中，你会获得名为&6大师认证&r的特殊物品。"
+				""
+				"在你完成市政厅的放置之后，你可以手持&6大师认证&r，&2右键任意镇民&r，使其属性得到巨大的提升。"
+				""
+				"&6大师认证&r将会随机选取市民的三个属性，并将其设置为50级。"
+			]
+			id: "00449E381E9DED1E"
+			rewards: [{
+				id: "1BDD24A28CBD1437"
+				table_id: 7517863136333816811L
+				title: "随机灵魂宝石"
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "我命你为将军，那你即是将军"
+			tasks: [{
+				id: "6A249311BCD0D6BE"
+				item: "kubejs:master_certificate"
+				type: "item"
+			}]
+			title: "大师认证"
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["751C216B9FBB5C80"]
+			description: ["最普通的袭击之书，&a只能对自己的殖民地使用&r。"]
+			id: "4768EF75CCC6C31F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BD078400B40600B"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "0BB49A834F53D62B"
+				item: "kubejs:raid_book"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["751C216B9FBB5C80"]
+			description: [
+				"&a只能对自己的殖民地使用&r，该次袭击会生成大于一个的&c首领&r单位，请保护好你的殖民地。"
+				""
+				"&c首领&r死亡后会掉落下一个等级的&6不死侵袭之书&r。"
+			]
+			hide_dependency_lines: true
+			id: "50A33ABAC36605AB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6342EDE796B63BA3"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4A5DDC29BAEDFC2F"
+				item: "kubejs:undead_raid_book"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["751C216B9FBB5C80"]
+			description: [
+				"&a可以对自己或其他玩家的殖民地使用的袭击之书。&r"
+				""
+				"你需要通过&6袭击修饰符&r和&6怪物灵魂&r，自行配置该次袭击的怪物和强度。"
+				""
+				"配置方法为将&6无名袭击之书&r与&6袭击修饰符/怪物灵魂&r放入&6工作台&r合成。&7（一本无名袭击之书可以多次参与合成）&r"
+			]
+			hide_dependency_lines: true
+			id: "5F59CC9FE946A624"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5D91B2F04A6F4655"
+					table_id: 3054476279840700017L
+					type: "loot"
+				}
+				{
+					count: 3
+					id: "32B3AAA0A8D8D132"
+					item: "kubejs:zombie_orb"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "3EBF3C0B8275F3B4"
+					item: "kubejs:skeleton_orb"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			tasks: [{
+				id: "515A1B7CCB436A6F"
+				item: "kubejs:custom_raid_book"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["751C216B9FBB5C80"]
+			description: ["一般通过&6悬赏板&r的任务奖励获得，可以用来配置&6无名袭击之书&r。"]
+			hide_dependency_lines: true
+			id: "2F512643C562080F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B4B9CD336D9B4FB"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "04464DA780DD19E4"
+				item: "kubejs:raid_entity_modifier"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["751C216B9FBB5C80"]
+			description: [
+				"通过&6悬赏板&r的任务奖励获得。"
+				""
+				"或者殖民地&b卫兵&r&2击杀怪物&r概率掉落。"
+			]
+			hide_dependency_lines: true
+			id: "50A2234218878C44"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C862EB737F2FCC8"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "6C39ED98EA0D879A"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:wither_skeleton_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:vindicator_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:archer_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:legioner_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:skirmisher_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:custom_raid_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:pillager_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:ravager_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:evoker_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:creeper_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:blaze_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:husk_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:zombie_orb"
+							}
+							{
+								Count: 1b
+								id: "kubejs:skeleton_orb"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "怪物灵魂"
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["1BC31AE4D5CC9452"]
+			description: [
+				"&d——建筑说明——"
+				"&r"
+				"&d渔夫小屋&r是一个&a成本低且有明显收益&r的小屋，只需要给&b渔夫&r一根&6鱼竿&r，就可以&e源源不断的收获物资&r。"
+				""
+				"&d——建筑功能——"
+				"&r"
+				"提供&b渔夫&r工作岗位，需要为&3渔夫&r提供&6钓鱼竿&r。"
+				""
+				"&7需要附近有至少7×7×1的水池以供钓鱼。&r"
+				""
+				"&d——建筑升级——&r"
+				""
+				"小屋等级影响渔夫&e垂钓的战利品列表&r。"
+				""
+				"{image:kubejs:textures/task/fish_1.png width:150 height:155 align:center}"
+			]
+			id: "5E20F811C15B7422"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07E0EA60118A00D5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "3E3446AD082EDA29"
+				item: "minecolonies:blockhutfisherman"
+				type: "item"
+			}]
+			x: 44.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7AC699326CF74534"]
+			description: [
+				"基于&d<FTB－Chunks>模组&r，你可以实现&e认领、强制加载区块&r功能。"
+				""
+				"打开地图&7（默认M键）&r，点击左上角的&2“声明区块”&r。"
+				""
+				"在该界面，&2鼠标左键&r可以&a认领区块&r，在&2已被自己认领的区块&r上&2shift+右键&r，即可&a强制加载该区块&r。"
+				""
+				"&7被强制加载的区块中会处理所有的游戏内容，当你远离你的殖民地时，保证你的殖民地仍正常运作。&r"
+				""
+				"{image:kubejs:textures/task/ftb_chunks.png width:150 height:100 align:center}"
+			]
+			icon: "minecraft:map"
+			id: "38D79A89B549CDD3"
+			rewards: [{
+				id: "33858D4BFB265825"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "认领与强制加载"
+			tasks: [{
+				id: "0DD696DF0C7525C6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "领地掌控"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6AAF1859CF4A5496"]
+			description: [
+				"随着殖民地的扩张，你可能需要一个便捷的工具在殖民地边界&2提供照明&r，&a解决较远处的怪物刷新问题&r。"
+				""
+				"它与之前的&6超级火把&r同属一个模组，该模组还有其他物品，请自行用&dEMI搜索框&r搜索&d“@Torchmaster”&r查看。"
+			]
+			id: "66E14E354B770D51"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15B276732DB036E0"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "09CB7ABD8C75B919"
+				item: "torchmaster:feral_flare_lantern"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0459DEEBB651A740"]
+			description: [
+				"本整合包&e大多数资源都可以通过各种类型的地图册获取&r。"
+				""
+				"除了你接触过的那些，还有&a更多的地图册&r，在此任务的&e“任务目标”&r会列出它们。"
+				""
+				"点击任务目标选中某个地图册，会显示它的获取途径，此时鼠标指向地图册按下&2查看用途快捷键&r&7（默认U键）&r，切换到&2如下图页面&r&e查看其包含的主题&r。"
+				""
+				"{image:kubejs:textures/task/atlas_2.png width:150 height:146 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:huge_atlas"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3650A6211CA16A15"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "604BF34B986712E5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "4E5C4A6A330D5DAE"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:wood_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:ore_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:stone_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:luxury_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:ultra_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:advanced_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "kubejs:huge_atlas"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "更多地图册"
+			x: 8.0d
+			y: -8.0d
+		}
+	]
+	title: "第三章－生存"
+}

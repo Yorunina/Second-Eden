@@ -1,0 +1,799 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1C8B17A3ECE0FDEC"
+	group: "389CFB35E1AD9BED"
+	icon: "minecolonies:supplycampdeployer"
+	id: "1C8B17A3ECE0FDEC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"3B3395C72863B7EC"
+				"61F98C9136C63379"
+			]
+			description: [
+				"&7——玩家个体只能放置一次补给营地/补给船。&r"
+				""
+				"现在，你可以考虑建造一个自己的殖民地了。"
+				""
+				"通过手持&6补给船&r/&6补给营地&r，&2右键地面&r，你可以直接放置一个前期可用的&2营地建筑&r。"
+				""
+				"右键地面后，会出现如下界面，这会&e在接下来的任务中详细说明&r。"
+				""
+				"{image:kubejs:textures/task/supply_camp_deploy_1.png width:200 height:91 align:center}"
+			]
+			icon: "minecolonies:supplycampdeployer"
+			id: "015DEE0E96971AB7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "08104D6A6EED134D"
+					table_id: 3054476279840700017L
+					type: "choice"
+				}
+				{
+					id: "06B8E8B87F64FB01"
+					item: "kubejs:magic_mirror"
+					type: "item"
+				}
+			]
+			size: 8.0d
+			tasks: [{
+				id: "1BAC23104848870E"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "故事的开始"
+			x: -18.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["015DEE0E96971AB7"]
+			description: [
+				"风格包决定了两个内容："
+				""
+				"&e——该建筑的风格和外观"
+				""
+				"&e——该建筑的大小、所需提供材料"
+				""
+				"这意味着你&a并不能仅仅依凭喜好去选择风格包&r——不过不用担心，本整合包为所有风格包做了评测，你可以一定程度参考评测选择你的风格包。"
+				""
+				"不过放置&6补给营地/补给船&r不需要提供物资，并且在之后你也&c可以随时更改风格包的选择，所以不必一开始就完全做好决定&r。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "79DC1024B5007CD3"
+			rewards: [{
+				id: "4EAE9FFD4BC130E8"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "选择你的难度"
+			tasks: [{
+				id: "6E4C5C68C8DC44C0"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "风格包"
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["79DC1024B5007CD3"]
+			description: [
+				"进入&a确认放置位置&r界面，你可以在此界面控制建筑的具体位置。"
+				""
+				"&c请在放置位置确认无误后，再选择放置营地！&r"
+				""
+				"&e选择风格：&r点击此处，你可以&a更换风格包&r并预览。"
+				""
+				"&6操作面板：&r可以在这里对蓝图进行&2水平位移、上下位移、旋转&r的操作。"
+				""
+				"&b固体占位符：&r顾名思义，&2蓝图中该位置并不存在方块&r，其允许任何种类的固体方块放置在此处。这通常用于保证蓝图被放置在一个合法的位置。"
+				""
+				"&c取消建造：&r取消此次建造。&7（如果你只是想要操控自身角色移动，按ESC键即可，无需取消建造。之后只需再手持补给营地右键即可再次打开该界面。）"
+				"&r"
+				"&a开始建造：&r点击后&a直接进行建造&r。"
+				""
+				"{image:kubejs:textures/task/supply_camp_deploy_3.png width:200 height:149 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "16EFFE8AB1D2ECEB"
+			rewards: [{
+				id: "53251EB1875CCAFD"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "确认放置位置界面"
+			tasks: [{
+				id: "6645B465A677F50C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "放置你的营地"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["16EFFE8AB1D2ECEB"]
+			description: [
+				"&7——除了风格包的选择，你的殖民地选址也很重要。"
+				""
+				"建造殖民地是一个需要&c极大占地面积&r的事情，&e请合理规划好你的最初选址，这十分重要！&r"
+				""
+				"当你开始殖民地的建设后，无论此地风景如何、地形如何，&a你和你的殖民地公民都将长期生活于此&r。"
+				""
+				"你的&c选址一定程度被风格包影响&r，&e比如需要大量沙子作为建筑方块的风格包，你最好在沙漠中建造&r。"
+				""
+				"&7当然，《模拟殖民地》模组提供了建筑的搬迁功能，但这并不方便。&r"
+			]
+			icon: "minecraft:grass_block"
+			id: "11FB4AD3227103C3"
+			rewards: [{
+				count: 8
+				id: "32FF13FBA2D1A962"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "3BE2FADDE43C1CFA"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "殖民地选址"
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["11FB4AD3227103C3"]
+			description: [
+				"整合包添加了&d<静谧四季>模组&r，现在你的世界&2拥有春夏秋冬的四季变化&r。"
+				""
+				"对殖民地建设影响最大的是&d冬天&r，你的建筑工人必须一边铲雪一边建造，&e工作效率大幅降低&r。"
+				""
+				"&c请注意，本身下雪较多的生态群系也会存在这个问题！在殖民地选址时请考虑这一点。&r"
+			]
+			icon: "sereneseasons:calendar"
+			id: "32107509061AA58B"
+			rewards: [{
+				id: "710636E489C03352"
+				item: "sereneseasons:calendar"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "4831E639DB534089"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "静谧四季"
+			x: 2.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["11FB4AD3227103C3"]
+			description: [
+				"&7——如果你想在水下建造殖民地，或许你需要这个。&r"
+				""
+				"&d<Permanent－Sponges>模组&r为游戏加入了两种新的&6持续型海绵&r以及对应的&6海绵棒&r，大大方便了玩家的&2排水工作&r："
+				""
+				"&6持续型海绵&r可以帮助玩家&a在较大的范围内清除液体&r，并且&a只要其存在，就能一直阻止液体进入其范围&r。"
+				""
+				"你还可以制作对应的海绵棒&2随身携带&r，手持右键以清除液体。"
+			]
+			icon: {
+				Count: 1
+				id: "permanentsponges:aqueous_sponge_on_a_stick"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "359832642E80C840"
+			rewards: [{
+				id: "6B79E16888CD44A6"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "填海造陆"
+			tasks: [{
+				id: "21B377AEEA2B40E9"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "permanentsponges:aqueous_sponge"
+							}
+							{
+								Count: 1b
+								id: "permanentsponges:magmatic_sponge"
+							}
+							{
+								Count: 1b
+								id: "permanentsponges:aqueous_sponge_on_a_stick"
+								tag: {
+									Damage: 0
+								}
+							}
+							{
+								Count: 1b
+								id: "permanentsponges:magmatic_sponge_on_a_stick"
+								tag: {
+									Damage: 0
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "水下殖民地"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11FB4AD3227103C3"]
+			description: [
+				"在浏览了各种注意事项之后，放置你的&6补给营地/船&r吧！"
+				""
+				"营地内含有&2一笔物资补给&r，你可以在各种&6箱子&r、&6架子&r中找到它们。"
+			]
+			id: "716BD94686309FA1"
+			rewards: [{
+				id: "59071738247FF150"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			subtitle: "放置你的补给营地吧！"
+			tasks: [{
+				advancement: "minecolonies:minecolonies/root"
+				criterion: ""
+				id: "49884C6A944B162E"
+				type: "advancement"
+			}]
+			title: "最初的据点"
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["716BD94686309FA1"]
+			description: [
+				"&7一切就绪，通过建筑工具创建你的殖民地吧！"
+				""
+				"现在，&a在你的补给营地中翻找一下&r，看看里面能否找到&6建筑工具&r和&6市政厅&r方块。"
+				""
+				"如果没有找到的话，你也可以直接通过&6工作台&r合成。"
+				""
+				"{image:kubejs:textures/task/ftb_1.png width:130 height:54 align:center}"
+			]
+			icon: "structurize:sceptergold"
+			id: "593F122390F4C36E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A5DB7BAFD276239"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 4.0d
+			subtitle: "使用建筑工具"
+			tasks: [
+				{
+					id: "16755F258ECC344B"
+					item: "structurize:sceptergold"
+					type: "item"
+				}
+				{
+					id: "2A5C70D9A198C4C6"
+					item: "minecolonies:blockhuttownhall"
+					type: "item"
+				}
+			]
+			title: "建筑工具"
+			x: 14.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["593F122390F4C36E"]
+			description: [
+				"在你使用&6建筑工具&r&2右键任意地面&r时，可以打开一个这样的页面，它&2类似之前补给营地的放置面板，但是内容更多&r。"
+				""
+				"下图&c红色框选区域&r中，显示了该&d风格包&r下&a所有建筑的类别&r，点击其中一个图标，可以&a查看该类别中的具体建筑&r。"
+				""
+				"可以看到图中有些建筑的名称后带有&e特殊标识&r，这代表在本风格包中，该建筑&2有多种外观可供选择&r。"
+				""
+				"选择具体建筑后，如上图&e黄色框选&r中，是该建筑所有等级情况下的外观，你可以通过左键点击去&2预览各等级外观&r。"
+				""
+				"初始情况下，&a你只能够创建等级1的蓝图&r。"
+				""
+				"更高等级的则是需要在低等级的基础上通过&6核心小屋方块&r&2升级&r得到。"
+				""
+				"{image:kubejs:textures/task/struct_tool_1.png width:200 height:115 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "59348943E21BD31B"
+			rewards: [{
+				id: "352884FF4B1E9F04"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "内容更多的放置界面"
+			tasks: [{
+				id: "60CE13C57099C589"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "建筑工具界面引导"
+			x: 20.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["59348943E21BD31B"]
+			description: [
+				"当你&2背包&r中存在一个&6市政厅&r方块时，便可以通过&6建筑工具&r来选择&e建造市政厅&r，在&2选择风格包&r、&2调整放置位置&r后，即可点击&2绿色对号&r图标来确认建造。"
+				""
+				"成功放下市政厅后，找到你的&6市政厅&r方块并&a右键&r它，选择&e建立你的殖民地&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				""
+				"{@pagebreak}"
+				"虽然你可以在&6建筑工具&r的左上角&2切换风格包&r，但是你随时可以在&6市政厅方块&r的交互界面中&a更换殖民地默认的风格包&r，以更方便的切换风格包。&7（如下图红框处）&r"
+				""
+				"{image:kubejs:textures/task/town_hall_3.png width:200 height:125 align:1 fit:true}"
+			]
+			id: "2A8F30740DED8523"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "499147136BA540AA"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "开始劳苦的一生"
+			tasks: [{
+				advancement: "minecolonies:minecolonies/place_townhall"
+				criterion: ""
+				id: "2696D3C3EBBBC204"
+				type: "advancement"
+			}]
+			title: "建立你的殖民地"
+			x: 26.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2A8F30740DED8523"]
+			description: [
+				"&2留意公民的状态&r，如果他们有诉求、提醒，会在其&a头顶上显示对应的图标&r。"
+				""
+				"和他们对话，了解问题，解决他们的烦恼吧。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "7E0E05D6E89F84C1"
+			rewards: [{
+				id: "3D2AA341150168D9"
+				type: "xp"
+				xp: 80
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "善良的君主"
+			tasks: [{
+				id: "174E665A7783ABC4"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "倾听民心"
+			x: 26.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7E0E05D6E89F84C1"]
+			description: [
+				"本书记载了殖民地公民给你发布的任务，你可以从殖民地公民那里获得，也可以通过&2合成&r获得。"
+				""
+				"手持&6任务日志&r，&2按住潜行键的同时右键点击殖民地的市政厅方块&r，将其与该殖民地绑定，之后便可通过这本书查看该殖民地相关任务内容。"
+			]
+			id: "73D057A8FA124486"
+			rewards: [{
+				id: "0E0BF75E88AA0B18"
+				type: "xp"
+				xp: 80
+			}]
+			size: 4.0d
+			subtitle: "更便捷的查阅方式"
+			tasks: [{
+				id: "3A05863545C54048"
+				item: {
+					Count: 1
+					id: "minecolonies:questlog"
+					tag: {
+						colony: 1
+					}
+				}
+				type: "item"
+			}]
+			x: 26.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["2A8F30740DED8523"]
+			description: [
+				"&7——什么？你说为什么放下的市政厅只有一个方块和一圈围栏？"
+				""
+				"在&d<模拟殖民地>模组&r中，放下一个小屋方块只是开始，你还需要委托&b建筑工&r去建造它。"
+				""
+				"当只有小屋方块和一圈围栏的时候，这个小屋的等级为&20级&r，&a不能提供任何功能&r。"
+				""
+				"&c即使是1级市政厅，通常也需要花费数量可观的资源，你不必急于完成市政厅的建设。&r"
+				""
+				"&7你甚至可以将市政厅这片“工地”一直留到建造大学之后，不过最好还是在这之前，当材料有剩余时将它升至1级吧！&r"
+			]
+			icon: "minecolonies:blockconstructiontape"
+			id: "6C2AC452F062A58A"
+			rewards: [{
+				id: "5FE9C25476673DA6"
+				type: "xp"
+				xp: 80
+			}]
+			size: 4.0d
+			subtitle: "那就对了！"
+			tasks: [{
+				id: "3E2B25E7431B45FC"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "空空无也?"
+			x: 32.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6C2AC452F062A58A"]
+			description: [
+				"&c在建造任何其他建筑之前，你都必须先建造建筑工小屋。否则，建筑工将无法建造其他建筑。&r"
+				""
+				"通过&6工作台&r合成制作一个&6建筑工小屋&r方块，并使用&6建筑工具&r选择合适的位置，选择放置一个&d建筑工小屋&r吧。"
+				""
+				"现在你只需要将其放置为&a“围栏+小屋方块”&r的程度就可以了，不需要建造它。"
+			]
+			id: "0E140DD8AE0C7D73"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2538E08299A02F3F"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "准备工作"
+			tasks: [{
+				id: "4F2D56A6D99BDF71"
+				item: "minecolonies:blockhutbuilder"
+				type: "item"
+			}]
+			title: "放置建筑工小屋"
+			x: 38.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["716BD94686309FA1"]
+			description: [
+				"&b<轻松建造（Effortless－Building）>模组&r为玩家提供了一个高效&e破坏、放置方块&r的方式。"
+				""
+				"按下&2alt键&r，你可以看到如下交互界面，在这个界面中选择对应的&2基础选项&r与&2详细分支&r，即可开始使用。"
+				""
+				"选择好选项后，&a鼠标左键&r即可&a按照设置破坏方块&r，手持方块&a右键&r即可&a按照设置放置方块&r。"
+				""
+				"&7请注意，破坏的上限是16个方块，放置的上限是256个方块。你可以在下图左侧“齿轮”图标打开设置，调整该上限。&r"
+				""
+				"{image:kubejs:textures/task/building_1.png width:200 height:115 align:1}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:wooden_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2848AAEE1EA43969"
+			rewards: [{
+				id: "528BA539BFFD11BD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "或破坏..."
+			tasks: [{
+				id: "4D2DC17F3A2E39AE"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "轻松建造"
+			x: 8.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"先不要着急去研究建筑工小屋的交互页面，这将会在下一章介绍。"
+				""
+				"你需要立刻搭建一个简单的围墙，保护你的殖民地。"
+				""
+				"同时要制作一个&6超级火把&r，它可以&a禁止半径32格的范围内敌对生物的自然生成&r，以在前期更好的确保公民的安全。"
+				""
+				"如果你的物资不足以制作&6超级火把&r，请先简单围一圈&6栅栏&r暂时保护公民安全，&a外出寻找空投补给&r。"
+			]
+			id: "1ADDD64E5A657D5D"
+			rewards: [{
+				count: 16
+				id: "09D64A8A96538FE7"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "巨型火把？"
+			tasks: [{
+				id: "0B3228FDC64EC0E2"
+				item: "torchmaster:megatorch"
+				type: "item"
+			}]
+			title: "超级火把"
+			x: 44.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["2A8F30740DED8523"]
+			description: [
+				"&d<Truly－Modular>模组&r是一个旨在让玩家能自由地以全新的方式&a研究、制造模块化装备&r的模组。"
+				""
+				"它主要用于&a提升玩家个人的战斗/作业能力&r，但同时还能&e作为殖民地卫兵的装备&r，更好的保护你的殖民地。"
+				""
+				"&7请注意，卫兵并不能使用该模组提供的所有武器，仅类似原版剑、斧、弓、弩类武器能够使用，护甲装备则没有太多限制，请玩家妥善尝试&r"
+			]
+			id: "2F4F3082E7F059E0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27A63E4051071577"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "另一个四面体"
+			tasks: [{
+				id: "605BCC4B0C134A11"
+				item: "miapi:modular_work_bench"
+				type: "item"
+			}]
+			x: 26.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
+			id: "10D6DC8248011CB2"
+			rewards: [{
+				id: "39846FC074638E27"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 4.0d
+			subtitle: "似曾相识"
+			tasks: [{
+				id: "06D6546D747083CD"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "伤害测试假人"
+			x: 26.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——锤子可以让你更大范围的破坏石制方块，增加你的采矿效率。&r"
+				""
+				"接下来将通过&2文字简略描述&r，以&6锤子&r为例，如何通过&6模块化工作台&r制作一把&a工具/武器/装备&r。"
+				""
+				"1.在创建界面选择本次制作的类型，选择&a“工具”&r。"
+				""
+				"2.工具柄界面放入材料。"
+				""
+				"3.&2空工具头槽&r中选择&a“工具适配器”&r。"
+				""
+				"4.新的&2空工具头槽&r中选择&a“锤头”&r。"
+			]
+			id: "6E6FC319BAE7DB80"
+			rewards: [{
+				id: "1730827F4BFF9FA5"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "09BE33827BB52D4E"
+				item: {
+					Count: 1
+					id: "miapi:modular_hammer"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 32.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——伐木斧可以让你更快的砍伐树木，高效率收集木材。&r"
+				""
+				"&6伐木斧&r的&2制作方法与锤子相同&r，仅在最后一步选择制造&a“锤子”&r即可。"
+				""
+				"请查看制造铁锤子的FTB任务。"
+			]
+			id: "294FB78060A8492F"
+			rewards: [{
+				id: "4F5B15FD62296AE6"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "420E9E63E8A7567D"
+				item: {
+					Count: 1
+					id: "miapi:modular_axe"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3FDAC2A384B2D70F"]
+			description: [
+				"本模组添加了一个工具，允许玩家在行走时&e自动铺路&r。"
+				""
+				"手持该工具按&2潜行键+右键&r即可&e选择功能开关&r，&c该工具具有很强的“破坏力”，未熟练之前请不要在殖民地附近尝试&r。"
+				""
+				"&c红色框内容：&r选择铺路的主题方块。"
+				""
+				"&e黄色框内容：&r调整路的宽度。"
+				""
+				"&b蓝色框内容：&r选择是否替换空气。"
+				""
+				"在选择完成后，即可关闭该界面，设定将自行生效。"
+				""
+				"{image:kubejs:textures/task/pathfinder_1.png width:150 height:177 align:1}"
+			]
+			id: "4ECE5BF67BE0C21E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7672B0CEDA03298E"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "1D1100AD2A75C6B8"
+				item: "pathfinder:pathfinders_spade"
+				type: "item"
+			}]
+			title: "探路者的铁锹"
+			x: 38.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0E140DD8AE0C7D73"]
+			description: [
+				"&d<Via－Romana>&r是一个只有在&2连接目的地的道路建成&r后才允许&a快速旅行&r的模组，鼓励玩家建造道路和探索世界。"
+				""
+				"通过建造道路在各个路牌之间创造&e“链接”&r，从而进行&e快速传送&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&c——路径的绘制——&r"
+				""
+				"1.修筑一条&2不低于3格宽&r、由&2非自然方块构成&r的&e路径&r。"
+				""
+				"2.在路径的一端放下&6任意告示牌&r，通过&a潜行键+左键&r&e开始绘制路径&r。&7（再次进行该操作取消绘制）&r"
+				""
+				"3.&2沿着路径走到另一端&r放下&6任意告示牌&r，并同样&a潜行键+左键&r&e完成绘制&r。"
+				""
+				"4.&a左键&r被链接的告示牌，即可&e传送&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&c——提示说明——&r"
+				""
+				"&e“charting...”：&r说明你的路径正在正常绘制中。"
+				""
+				"&e“路径开发不足”：&r所处位置非自然方块不足，无法判定为模组要求的路径。"
+				""
+				"&e“路径太短”：&r路径距离不够。"
+			]
+			icon: "farmersdelight:yellow_hanging_canvas_sign"
+			id: "3FDAC2A384B2D70F"
+			rewards: [
+				{
+					id: "08284998C6B975EF"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "via_romana:guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B8DDDB7655186F4"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "7040F58721457056"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "基建路径"
+			x: 38.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E6FC319BAE7DB80"]
+			description: ["一种可以挖掘整条矿脉的镐子。"]
+			id: "25AC7C508E6A4BDF"
+			rewards: [{
+				id: "6AE49A6D84D6086F"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "连...连锁采集？"
+			tasks: [{
+				id: "1D153D7DB0048D4A"
+				item: {
+					Count: 1
+					id: "miapi:modular_pickaxe"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 32.0d
+			y: 6.0d
+		}
+	]
+	title: "第二章－启程"
+}

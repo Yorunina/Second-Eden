@@ -1,0 +1,2349 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "19849832D5EFEB48"
+	group: "389CFB35E1AD9BED"
+	icon: "minecolonies:blockhutuniversity"
+	id: "19849832D5EFEB48"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["1C1ACF270473E24C"]
+			description: [
+				"&7——如果说建筑工小屋标志着殖民地的开端，那大学就是殖民地的另一大节点！&r"
+				""
+				"&b大学&r是&a十分重要且需要大量材料&r的建筑，你可以在此处研究解锁各种&a科技树&r！"
+				""
+				"&e——解锁更多高级建筑！"
+				""
+				"&e——提升殖民地各方面的属性！"
+				""
+				"&e——为各种建筑和工人增加新的功能！"
+				""
+				"&e——解锁本整合包嵌入其中的其他玩法和模组，丰富你的殖民地玩法！"
+				""
+				"&7每当大学升一级时，就会多一个研究员，也能解锁更多东西。&r"
+			]
+			id: "54DD36A507196D4C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "161ED315B3739483"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 8.0d
+			subtitle: "升本？！"
+			tasks: [{
+				id: "66AC462FCF1565F0"
+				item: "minecolonies:blockhutuniversity"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["0036D65ECC44F706"]
+			dependency_requirement: "one_completed"
+			description: [
+				"&d筛沙工小屋&r提供&b筛沙工&r岗位，你需要为&3筛沙工&r提供筛子，让其从&2泥土、沙砾、沙子或者灵魂沙&r中进行&e“筛沙淘金”&r。"
+				""
+				"小屋的等级影响可使用的&2筛子材质等级&r，筛子材质等级越高，筛沙工找到“宝藏”的概率就越高。"
+				""
+				"&c筛子材质等级由低到高依次为线、燧石、铁、钻石、下界合金。分别需要制箭工、石匠、铁匠、机械师、铁匠制作，所以你至少要先解锁其中一个小屋。"
+			]
+			id: "01B5F051F38FCE05"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0726E6ADC20D66D5"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "251878E00DB272B7"
+				item: "minecolonies:blockhutsifter"
+				type: "item"
+			}]
+			title: "筛沙工小屋"
+			x: 54.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"建造&6学校&r后，可以雇佣&b教师&r帮助提升&b幼年公民&r的属性。"
+				""
+				"使用&6纸&r可以加快孩子们升级的速度。"
+			]
+			hide_dependency_lines: true
+			id: "097471CA1331FC92"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20B12A78E40C60FF"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "44F0EB7D2F910DDD"
+				item: "minecolonies:blockhutschool"
+				type: "item"
+			}]
+			x: 38.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&d墓地&r是&b送葬者&r安葬&2已故公民&r的地方。"
+				""
+				"墓地的等级影响坟墓的数量。"
+			]
+			hide_dependency_lines: true
+			id: "0446B946C1B01038"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "770337E538073876"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "27069757E1A61D6D"
+				item: "minecolonies:blockhutgraveyard"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&d医院&r提供&b医生&r岗位，&3医生&r可以通过各式各样的物品&2治疗受伤和染疾的病人&r。"
+				""
+				"&6医院&r的等级越高，可供住院的&2床位&r也越多。"
+				""
+				"&7公民生病时会有缓慢效果，对话时会有提示，请多多注意。&r"
+			]
+			id: "5EA52A6BD51F2CE1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7750DEE49D2F0468"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "076B5CFAACAA995D"
+				item: "minecolonies:blockhuthospital"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&d神秘地点&r是一个较为简单的建筑，&2它不需要工人&r，仅凭自身存在就可以提高殖民地公民整体&a幸福度&r。"
+				""
+				"此外，当&2没有公民需要埋葬&r时，&d墓地&r的&b送葬者&r将拜访此建筑，以提高他们的法力，增加&2复活死亡市民&r的机会。"
+			]
+			hide_dependency_lines: true
+			id: "2C2F1635069196EB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08C1A97D18798920"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "2AB5DAF6681C7567"
+				item: "minecolonies:blockhutmysticalsite"
+				type: "item"
+			}]
+			x: 38.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&d图书馆&r会提高被分配&b公民&r的&a智力属性&r。&7（智力属性会影响工作中其他属性的提高速度）&r"
+				""
+				"你需要为他们提供&6纸&r或&6书&r，这会增加智力提升速度。&7（快递员会自动送货）&r"
+				""
+				"公民的&a幸福度&r也会影响在图书馆时的智力提升速度。"
+			]
+			hide_dependency_lines: true
+			id: "4F76BA638A58E005"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D3B8A1035927AF2"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "0CED4D9D2DF616BD"
+				item: "minecolonies:blockhutlibrary"
+				type: "item"
+			}]
+			x: 38.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["0036D65ECC44F706"]
+			description: [
+				"&d种植园&r提供&b种植工&r岗位，可以种植&2仙人掌&r、&2甘蔗&r等作物。"
+				""
+				"你需要在最开始提供种植所需要的植物。"
+				""
+				"同时也可以通过&2传授配方&r的方式，让&3种植工&r制作&6纸&r、&6书&r等&a由其种植的作物合成的物品&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "3D27E2160A2C100E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "307891E9D1C6455B"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "7110612A547A3AB3"
+				item: "minecolonies:blockhutplantation"
+				type: "item"
+			}]
+			x: 58.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0036D65ECC44F706"]
+			description: [
+				"&d堆肥工小屋&r的&b堆肥工&r为农场提供&6堆肥&r。"
+				""
+				"&2桶的最大数量&r等于堆肥工小屋等级。"
+				""
+				"右击&6堆肥工小屋方块&r打开交互界面，在第二页可配置哪些物品可用来做&6堆肥&r。"
+			]
+			hide_dependency_lines: true
+			id: "1CC9C602F4D7353C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C122CFD65491ABB"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "164CD98326F2B473"
+				item: "minecolonies:blockhutcomposter"
+				type: "item"
+			}]
+			x: 58.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CC9C602F4D7353C"]
+			description: [
+				"&d花店&r提供&b花艺师&r岗位，只要为&3花艺师&r提供&6堆肥&r，就可让其进行&a花卉种植&r。"
+				""
+				"小屋等级影响&2花艺师的每日产出&r。"
+			]
+			id: "5D2E815ECB08489F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1233DA783BCC044E"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "79E71C22CA70A9A2"
+				item: "minecolonies:blockhutflorist"
+				type: "item"
+			}]
+			x: 62.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["568CA13EA1FDA6F3"]
+			description: [
+				"&d染坊&r提供&b染色工人&r岗位，可以通过&2传授配方&r，委托对物品进行&a染色&r，或者&a制作染料&r。"
+				""
+				"小屋等级影响&2熔炉数量&r和&2记录配方数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "6BD8D7B1BB5D1DF9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F413C8A70A9FE12"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "6EE676F528DA95C8"
+				item: "minecolonies:blockhutdyer"
+				type: "item"
+			}]
+			x: 54.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目的内容。&r"
+				""
+				"通过研究，你可以制作&2各种升级道具&r来改造你的&6精妙背包&r，让其&e拥有更强大的功能&r。"
+				""
+				"你可以在&dJEI搜索框&r中输入&d“@backpacks”&r来查看所有升级道具。"
+			]
+			hide_dependency_lines: true
+			icon: "sophisticatedbackpacks:backpack"
+			id: "1F3BAF6557DC9DD3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7A934606E3ECC373"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "0D8AF3AC963032D3"
+				item: {
+					Count: 1
+					id: "itemfilters:mod"
+					tag: {
+						value: "sophisticatedbackpacks"
+					}
+				}
+				type: "item"
+			}]
+			title: "精妙背包—升级"
+			x: 34.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["568CA13EA1FDA6F3"]
+			description: [
+				"&d铁匠铺&r提供&b铁匠&r岗位，可以通过&2传授配方&r，委托制作&a以金属矿石为主&r的各种工具、装备和方块。"
+				""
+				"小屋等级影响当前记载配方的数量。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "7EEABD8A13DE4354"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "77374DBB4F631DC6"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "23B1FFAD500222B7"
+				item: "minecolonies:blockhutblacksmith"
+				type: "item"
+			}]
+			x: 54.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["7EEABD8A13DE4354"]
+			description: [
+				"&d机械师小屋&r提供&b机械师&r岗位，可以通过&2传授配方&r，委托制作&a以红石机械为主&r的各种方块。"
+				""
+				"小屋等级影响当前记载配方的数量。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "56D64129207D0604"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "25FC80A5C8724DFC"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "36F1CDE220B6955E"
+				item: "minecolonies:blockhutmechanic"
+				type: "item"
+			}]
+			x: 58.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["56D64129207D0604"]
+			description: [
+				"&6城门&r只能由&d机械师小屋&r的&b机械师&r制作。"
+				""
+				"&6城门&r就像门一样，但&2对袭击者来说更难破坏&r。"
+				""
+				"&6铁质城门&r比&6木质城门&r需要更长的时间才能被袭击者破坏。"
+			]
+			icon: "minecolonies:gate_wood"
+			id: "2B39DF27B78AF40E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "34D43DA4334633D7"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "3497E40754E81942"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecolonies:gate_wood"
+							}
+							{
+								Count: 1b
+								id: "minecolonies:gate_iron"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "城门"
+			x: 62.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["568CA13EA1FDA6F3"]
+			description: [
+				"&d冶炼厂&r提供&b冶炼工人&r岗位，可以通过&2传授配方&r，提供燃料和矿石，委托&a冶炼矿物&r。"
+				""
+				"小屋等级影响&2熔炉数量&r和&2多倍矿物产出的概率&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "3F88645467A477F1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5B8D66174AB0F09A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "48BFDAC31776DCDF"
+				item: "minecolonies:blockhutsmeltery"
+				type: "item"
+			}]
+			title: "冶炼厂"
+			x: 54.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["3F88645467A477F1"]
+			description: [
+				"&d玻璃工小屋&r提供&b玻璃工&r岗位，可以通过&2传授配方&r，提供燃料和沙子，委托炼制&2玻璃&r，并且&d玻璃工&r可以制作&a玻璃相关&r的建筑方块。"
+				""
+				"小屋等级影响&2熔炉数量&r和&2记录配方数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			id: "6DCAD4D5FA9F6D82"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A6E2DF69EC27A91"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "0985D49419EEDDB3"
+				item: "minecolonies:blockhutglassblower"
+				type: "item"
+			}]
+			x: 58.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["0036D65ECC44F706"]
+			description: [
+				"&d下界矿井&r提供&b下界矿工&r岗位，&d下界矿工&r会开启下界传送门以&2前往下界工作&r，并获取&e下界特有的资源&r。"
+				""
+				"小屋等级决定着下界矿工回来时带回的物品。"
+			]
+			hide_dependency_lines: true
+			id: "74D9FE95B7D5133F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "691659A474BA7964"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "402B2532E1C2EBDF"
+				item: "minecolonies:blockhutnetherworker"
+				type: "item"
+			}]
+			x: 62.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["568CA13EA1FDA6F3"]
+			description: [
+				"&d石匠小屋&r提供&b石匠&r岗位，可以通过&2传授配方&r，委托制作&a以石材为主的&r相关建筑方块。"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "18F90940D1149A7C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FFC58B5ADBECDDA"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "12B6D45D977B408E"
+				item: "minecolonies:blockhutstonemason"
+				type: "item"
+			}]
+			x: 54.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["18F90940D1149A7C"]
+			description: [
+				"&d石材冶炼厂&r提供&b冶石工&r岗位，可以通过&2传授配方&r，提供燃料和物品，委托&a以石材为主的相关冶炼&r。&7（例如把圆石变成石头，石砖变成裂石砖，粘土变成红砖，粘土块变成陶瓦）&r"
+				""
+				"小屋等级影响&2熔炉数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+				""
+				"&8也许你可以尝试冶炼原木？&r"
+			]
+			id: "3A9912D003A39F1A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A97BC712FEAB48D"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "4352F048D1BED03B"
+				item: "minecolonies:blockhutstonesmeltery"
+				type: "item"
+			}]
+			x: 58.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["18F90940D1149A7C"]
+			description: [
+				"&d粉碎工小屋&r提供&b粉碎工&r岗位，可以&a粉碎部分方块得到新的方块&r。&7（如粉碎圆石得到沙砾）&r"
+				""
+				"小屋等级影响&2每日产量上限&r。"
+			]
+			id: "0BF1FF78E076D298"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "761E1B98A9E584E9"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "564C497F0BB60B57"
+				item: "minecolonies:blockhutcrusher"
+				type: "item"
+			}]
+			title: "粉碎工小屋"
+			x: 58.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0BF1FF78E076D298"]
+			description: [
+				"&d混凝土小屋&r提供&b混凝土工人&r岗位，可进行各种&a混凝土粉末和混凝土&r的制作。"
+				""
+				"小屋等级影响&2制作速度&r。"
+			]
+			id: "5CDBAD64446E28DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19566966440F878A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "11C72D628FD6C41C"
+				item: "minecolonies:blockhutconcretemixer"
+				type: "item"
+			}]
+			x: 62.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["0558E0117CEA9996"]
+			description: [
+				"&4——请首先在大学中的“科技”节点，解锁“木匠”科技树吧！"
+				""
+				"&d锯木厂&r提供&b木匠&r岗位，可以通过&2传授配方&r，委托制作&a以木材为主的&r相关建筑方块。"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+				""
+				"&7——你可以对背包或EMI中的小屋方块按U键以查看它所能制作的物品。"
+			]
+			id: "4F82E3AEA7448084"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "18BDB51125F9B2CC"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "殖民地自动化基础逻辑－建造锯木厂"
+			tasks: [{
+				id: "33D7223F767E4847"
+				item: "minecolonies:blockhutsawmill"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["568CA13EA1FDA6F3"]
+			description: [
+				"&d制箭工小屋&r提供&b制箭工&r岗位，可以通过&2传授配方&r，委托制作&a以“线”或“羊毛”为主的&r各种工具和方块。&7（例如弓、箭、鱼竿、画等）&r"
+				""
+				"小屋等级影响当前&2记载配方的数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "69B8A61F664E3FEB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BBB513FC510FB85"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "587626F715575114"
+				item: "minecolonies:blockhutfletcher"
+				type: "item"
+			}]
+			x: 54.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["54DD36A507196D4C"]
+			description: [
+				"经过前四章主线任务的&2“强制性引导”&r，你已经了解了&a殖民地的底层玩法&r。"
+				""
+				"&e接下来将不再强制玩家建造某个建筑，你的旅途是时候由你自己能决定......了嘛？&r"
+				""
+				"&a好吧，还有最后一次——《关于殖民地自动化基础逻辑－以锯木厂为例》。&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "0558E0117CEA9996"
+			rewards: [{
+				count: 8
+				id: "683AF9229B1F01BA"
+				item: "farmersdelight:melon_juice"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "谢幕...？"
+			tasks: [{
+				id: "125D62ED1865AEB6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "踏上属于你自己的旅途"
+			x: 6.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["4F82E3AEA7448084"]
+			description: [
+				"&7——还记得之前的矿工吗？这次的例子仍然需要他登场。"
+				""
+				"1.&b矿工&r工作需要用到&6梯子&r，当&2梯子不足&r时会发出&2“请求”&r。"
+				""
+				"2.&b快递员&r接到&2“请求”&r，将&d仓库&r剩余的&6梯子&r送到&d矿井&r。"
+				""
+				"3.&e现在你可以为锯木厂添加配方&r&7（如下图）&r——当仓库没有&6梯子&r时，&b木匠&r会接到任务&e自动制作梯子&r。"
+				""
+				"4.&d锯木厂&r可能没有&6木板&r，&3木匠&r发出&2“请求”&r，由&3快递员&r送来&6木板&r。"
+				""
+				"5.&3木匠&r制作出&6梯子&r，&3快递员&r将&6梯子&r送去&3矿工&r处。"
+				""
+				"{image:kubejs:textures/task/text_9.png width:120 height:137 align:center}"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "65F1EBFAB9B79721"
+			rewards: [{
+				id: "547801AAC0D5AD03"
+				item: "kubejs:skill_book_intelligence"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "殖民地自动化基础逻辑－自动补给"
+			tasks: [{
+				id: "6D1B7385E2154F2C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "矿工－快递员－木匠"
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["129428495A51E901"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"你可以在&6建筑工小屋方块&r的&2设置界面&r－&e“施工策略”&r中选择合适的施工模式。"
+				""
+				"&c——以下为模式详细介绍——&r"
+				""
+				"&eDefault：&r默认的施工模式。"
+				""
+				"&eHilbert：&r&a更科学的施工模式&r，可以让建筑工走更短的路，&a增加放置方块效率&r。"
+				""
+				"&eInward-Circle：&r建筑工位于建筑中心工作，一般适用于&2环形、圆形建筑&r。"
+				""
+				"&eInward-Circle-Height-1~4：&r基本原则同上，但效果略有不同。"
+				""
+				"&eRandom：&r随机放置。"
+			]
+			hide_dependency_lines: true
+			icon: "structurize:caliper"
+			id: "53B050629D51D314"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2C87739616919B8C"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "74D0DB4F1E9278EF"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "建筑工工作模式"
+			x: 42.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["65F1EBFAB9B79721"]
+			description: [
+				"&4——你必须在大学中解锁“科技－仓库大师”才能使用该内容。&r"
+				""
+				"解锁相应科技后，你可以在&d可配置配方的小屋&r中设置&d合成模式&r。"
+				""
+				"&e——优先级：以配方界面的位置，同产物的配方中，越往上的配方越优先使用。"
+				""
+				"&e——仓库库存：同产物的配方中，仓库中原材料越多的配方，越优先使用。"
+				""
+				"{image:kubejs:textures/task/text_10.png width:150 height:63 align:center}"
+				""
+				"{image:kubejs:textures/task/text_11.png width:160 height:96 align:center}"
+			]
+			icon: "minecraft:crafting_table"
+			id: "67C127DD1D278676"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F14F889576567AB"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "配置合成模式"
+			tasks: [{
+				id: "08E0FE8D3AA41BF8"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更智能的配方合成"
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F82E3AEA7448084"]
+			description: [
+				"随着殖民地的扩张，玩家作为领主所要处理的事务越来越多，再次提醒玩家时刻使用&6剪贴板&r来查看请求。"
+				""
+				"&7如果忘记了如何使用，可以回到第三章主线任务查看。&r"
+			]
+			id: "07E5C5CAC69F262B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E88788C1A8093A1"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "再次提醒"
+			tasks: [{
+				id: "05AC53788309B50E"
+				item: "minecolonies:clipboard"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["65F1EBFAB9B79721"]
+			description: [
+				"接下来我们将对科技树中解锁的&d建筑&r和&d玩法&r，采用&a分类的形式&r，进行介绍。"
+				""
+				"你可以通过&a任务的图标&r来分辨他们："
+				""
+				"&e——圆角正方形：殖民地小屋建筑。"
+				""
+				"&e——齿轮形：玩法。有的来自模组，有的是本整合包自行添加。"
+				""
+				"虽然从此开始不在&2强制化、流程化&r让玩家建造某个建筑，但如果你不知道该如何选择的话。"
+				""
+				"本整合包对于各个分类，基本按照&a“从左到右、从上到下”的规则，功能性由高到低排列，详情请阅读分类任务的介绍。&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "47659434E1BADEF1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7AC6F7296F3E803A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "期盼已久的自由"
+			tasks: [{
+				id: "1F37BCD745E10CF6"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "你的殖民地、你的旅途"
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——先从左到右，再从上到下。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "129428495A51E901"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4EE7B5DED6B388E1"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "281035752B92AB35"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "公民基础设施"
+			x: 28.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——从上到下。&7（同一行的前后任务仅代表大学科技树的前置要求）&r"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "568CA13EA1FDA6F3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3C8F4C3CD47380EF"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "5D8F155353038B05"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "自动化相关"
+			x: 48.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——无。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "0036D65ECC44F706"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28E6BA8801528689"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "535E6DB31A759694"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "资源获取"
+			x: 48.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0036D65ECC44F706"]
+			description: [
+				"&d炼金塔（炼金实验室）&r提供&b炼金术师&r岗位，可以通过&2传授配方&r，让炼金术师&a酿造药水&r。"
+				""
+				"此外，&3炼金术师&r还可以收集&6下界疣&r和&6槲寄生&r。&7（最开始需要玩家种植第一批下界疣）&r"
+				""
+				"小屋等级影响&2记录配方数量&r。"
+				""
+				"&7你可以通过信箱委托进行制作。&r"
+			]
+			hide_dependency_lines: true
+			id: "21F43A479091E425"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6EE15D6C5C5359D4"
+				table_id: 3054476279840700017L
+				type: "choice"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "6943B47F2D3AD0B1"
+				item: "minecolonies:blockhutalchemist"
+				type: "item"
+			}]
+			title: "炼金塔（炼金实验室）"
+			x: 54.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AFA19951EFD6DB9"]
+			description: [
+				"&d兵营&r是&2殖民地防线的核心所在&r。"
+				""
+				"&d兵营&r达到&23级&r时，你可以在此&2雇佣间谍&r，来更好的在袭击开始时，&e高亮显示袭击者的位置&r。"
+				""
+				"随&d兵营&r等级提升，每座兵营最多可拥有四座&6兵营塔&r。"
+				""
+				"&7兵营塔的描述请见下一个任务。&r"
+			]
+			id: "4CEFDDDE95DF8FF6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "69EAF0BF36D28B23"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "沙盘博弈"
+			tasks: [{
+				id: "3DD5F38D57EECE2C"
+				item: "minecolonies:blockhutbarracks"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"兵营升级时，会在兵营内部自动放置&6兵营塔方块&r&7（你不需要准备该方块）&r，玩家需要在此基础上&2额外委托建造&r兵营塔。"
+				""
+				"&d兵营塔&r每级提供一个&e额外的公民&r作为&b卫兵&r，他们会居住在兵营塔内部，&2无需额外提供住处&r。"
+			]
+			icon: "minecolonies:blockhutbarrackstower"
+			id: "33FBA16E16658C4F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3F24A0793EF0EF36"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "驻守营地"
+			tasks: [{
+				id: "350255C24B3E67A1"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "兵营塔"
+			x: 38.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"供公民练习剑术，提供&b骑士侍从&r岗位。&7（不算作守卫，无法守护殖民地）&r"
+				""
+				"&d练兵场&r等级影响岗位数量。"
+			]
+			id: "751C9FEFCB4CA504"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "000AA9BF215F11CC"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "骑士预备役"
+			tasks: [{
+				id: "73C9343C3404D209"
+				item: "minecolonies:blockhutcombatacademy"
+				type: "item"
+			}]
+			x: 38.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4CEFDDDE95DF8FF6"]
+			description: [
+				"供公民练习弓术，提供&b弓箭手侍从&r岗位。&7（不算作守卫，无法守护殖民地）&r"
+				""
+				"&d靶场&r等级影响岗位数量。"
+			]
+			hide_dependency_lines: true
+			id: "542D4A28ADEEAD71"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "60D9B62070C0DDF7"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "弓箭手预备役"
+			tasks: [{
+				id: "3DC295370D9BDEC6"
+				item: "minecolonies:blockhutarchery"
+				type: "item"
+			}]
+			x: 42.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——无。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "6AFA19951EFD6DB9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E8C8FB622D14A66"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "2599E059CE543B22"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "领地军事化"
+			x: 28.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["6AFA19951EFD6DB9"]
+			description: ["对&2跟随在身旁&r的&b守卫&r使用，能够&a强制遣返&r。"]
+			hide_dependency_lines: true
+			id: "43E29A08D549E654"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "289139D487D2267B"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "2362551AB9932B1F"
+				item: "kubejs:disband_canes"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AFA19951EFD6DB9"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			hide_dependency_lines: true
+			id: "0CE71360FC619E85"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62F2543543285F76"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "77E5B9A3CDCCA2FD"
+				item: "kubejs:emergency_evacuation_bell"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CE71360FC619E85"]
+			description: [
+				"手持该物品对&b卫兵&r右键，即可&e该目标卫兵生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "2E73C778DB25FE0A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A35B7011F8DB97B"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "576FD606BCDCC209"
+				item: "kubejs:bind_armor_protocol"
+				type: "item"
+			}]
+			x: 38.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0CE71360FC619E85"]
+			description: [
+				"手持该物品对&b公民&r右键，即可&e该目标公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "334A990FC5EBED79"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "01C89D7ED6087509"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4C0533839BCF42A1"
+				item: "kubejs:force_work_alarm"
+				type: "item"
+			}]
+			x: 38.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["334A990FC5EBED79"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "461F5EFEDFEAB659"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0C1EA4980E723CE2"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "066FC2851DF14B1E"
+				item: "kubejs:force_work_bell"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2E73C778DB25FE0A"]
+			description: [
+				"手持该物品对&b任意公民&r右键，即可&e对全体公民生效&r。"
+				""
+				"再次&2执行上述操作&r即可&a解除&r。"
+			]
+			id: "415B5D2B8CA1D5A5"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2800C4278D9D2F5C"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "7CA7A3A9ED7A5CEC"
+				item: "kubejs:emotion_block_bell"
+				type: "item"
+			}]
+			x: 42.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6AFA19951EFD6DB9"]
+			description: [
+				"&d<K式炮台（K-Turrets）>模组&r增加了一些&6炮塔&r和&6战斗无人机&r，以击落你的敌人并保护区域免受侵害。"
+				""
+				"&7所有炮塔和无人机都有可配置的目标生物类型，默认目标包括所有攻击性生物。&r"
+			]
+			hide_dependency_lines: true
+			icon: "k_turrets:gauss_bullet"
+			id: "1CD76A47D36C3941"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20BC926407D74FF6"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "37133DBF9214DA79"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "K式炮台"
+			x: 34.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: [
+				"&6炮台&r放置后，通过&2潜行键+右键&r打开配置菜单，可以设置具体内容。"
+				""
+				"&e固定的/移动的：&r影响炮台是否可以被推动。"
+				""
+				"&e拆除：&r拆除炮台。&7（你只能通过这个按键回收已放置的炮台）&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "5C584F4481574B61"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2117F764094A0F75"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "21EAC476D9F6F18A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "炮台说明"
+			x: 38.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: [
+				"&6无人机&r放置后，通过&2潜行键+右键&r打开配置菜单，可以设置具体内容。"
+				""
+				"&e固定的/移动的：&r影响无人机是否可以被推动。"
+				""
+				"&e拆除：&r拆除无人机。&7（你只能通过这个按键回收已放置的无人机）&r"
+				""
+				"&e跟随主人/停留/守卫区域：&r影响无人机的&a运作模式&r。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "5F7550610911EEB3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27E69C0B085E3939"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "232585D36493A7FB"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "无人机说明"
+			x: 38.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: ["对&e受损的炮台/无人机&r，手持&6钢锭&r并&2潜行键+右键&r，可以&a修复炮台/无人机&r。"]
+			hide_dependency_lines: true
+			id: "1243AB6111542101"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "430704FAE3568FEA"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "15C61BAAF72C5BE6"
+				item: "kubejs:steel_ingot"
+				type: "item"
+			}]
+			title: "钢锭的另一用途"
+			x: 38.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["1CD76A47D36C3941"]
+			description: ["以一个&6炮台/无人机&r&2为标准&r，&a批量更改&r其他&6炮台/无人机&r的&2设置&r。"]
+			hide_dependency_lines: true
+			id: "1EAD0D398DCA82BC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5EA8C96B10D6F323"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "1344E973BAFC76A1"
+				item: {
+					Count: 1
+					id: "k_turrets:wrench"
+					tag: {
+						Filters: {
+							Count: 48
+							"Target#0": "minecolonies:drownedpirate"
+							"Target#1": "minecolonies:mummy"
+							"Target#10": "minecraft:drowned"
+							"Target#11": "minecraft:elder_guardian"
+							"Target#12": "minecraft:ender_dragon"
+							"Target#13": "minecraft:enderman"
+							"Target#14": "minecraft:endermite"
+							"Target#15": "minecraft:evoker"
+							"Target#16": "minecraft:ghast"
+							"Target#17": "minecraft:giant"
+							"Target#18": "minecraft:guardian"
+							"Target#19": "minecraft:hoglin"
+							"Target#2": "minecolonies:norsemenarcher"
+							"Target#20": "minecraft:husk"
+							"Target#21": "minecraft:illusioner"
+							"Target#22": "minecraft:magma_cube"
+							"Target#23": "minecraft:phantom"
+							"Target#24": "minecraft:piglin"
+							"Target#25": "minecraft:piglin_brute"
+							"Target#26": "minecraft:pillager"
+							"Target#27": "minecraft:ravager"
+							"Target#28": "minecraft:shulker"
+							"Target#29": "minecraft:silverfish"
+							"Target#3": "minecolonies:norsemenchief"
+							"Target#30": "minecraft:skeleton"
+							"Target#31": "minecraft:slime"
+							"Target#32": "minecraft:spider"
+							"Target#33": "minecraft:stray"
+							"Target#34": "minecraft:vex"
+							"Target#35": "minecraft:vindicator"
+							"Target#36": "minecraft:warden"
+							"Target#37": "minecraft:witch"
+							"Target#38": "minecraft:wither"
+							"Target#39": "minecraft:wither_skeleton"
+							"Target#4": "minecolonies:pharao"
+							"Target#40": "minecraft:zoglin"
+							"Target#41": "minecraft:zombie"
+							"Target#42": "minecraft:zombie_villager"
+							"Target#43": "takesapillage:archer"
+							"Target#44": "takesapillage:legioner"
+							"Target#45": "takesapillage:skirmisher"
+							"Target#46": "touhou_little_maid:fairy"
+							"Target#47": "trials:bogged"
+							"Target#5": "minecolonies:pirate"
+							"Target#6": "minecolonies:shieldmaiden"
+							"Target#7": "minecraft:blaze"
+							"Target#8": "minecraft:cave_spider"
+							"Target#9": "minecraft:creeper"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 42.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["5F7550610911EEB3"]
+			description: [
+				"&e机枪无人机：&r基础无人机，使用&6铁粒&r或&6金粒&r作为&2弹药&r。"
+				""
+				"&e掷石无人机：&r较简单的无人机，使用&6圆石&r作为&2弹药&r。"
+				""
+				"&e掷砖无人机：&r使用&6下界砖&r或&6红砖&r作为&2弹药&r。"
+				""
+				"&e火焰弹无人机：&r使用&6爆炸粉末&r作为&2弹药&r。"
+				""
+				"&e自动弩无人机：&r使用&6箭&r作为&2弹药&r的炮台，你需要给它装备&6弓&r或&6弩&r。&8你可以尝试给弓/弩附魔。&r"
+				""
+				"&e电磁炮无人机：&r使用&6高斯子弹&r作为&2弹药&r，拥有极高的伤害。"
+			]
+			id: "636FFF92960972C9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6CB8AB22CDCDEC6A"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "3E546765C625D967"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "k_turrets:bullet_drone_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:cobble_drone_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:brick_drone_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:firecharge_drone_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:arrow_drone_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:gauss_drone_item"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "各类无人机"
+			x: 42.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["5C584F4481574B61"]
+			description: [
+				"&e炮塔：&r基础炮塔，使用&6铁粒&r或&6金粒&r作为&2弹药&r。"
+				""
+				"&e掷石炮台：&r较简单的炮台，使用&6圆石&r作为&2弹药&r。"
+				""
+				"&e掷砖炮台：&r使用&6下界砖&r或&6红砖&r作为&2弹药&r。"
+				""
+				"&e火焰弹炮台：&r使用&6爆炸粉末&r作为&2弹药&r。"
+				""
+				"&e箭塔：&r使用&6箭&r作为&2弹药&r的炮台，你需要给它装备&6弓&r或&6弩&r。&8你可以尝试给弓/弩附魔。&r"
+				""
+				"&e高斯炮塔：&r使用&6高斯子弹&r作为&2弹药&r，拥有极高的伤害。"
+			]
+			id: "390EB61A12052C58"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "301B03B6BC4ADF03"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "1088B0330C65F429"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "k_turrets:bullet_turret_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:cobble_turret_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:brick_turret_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:firecharge_turret_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:arrow_turret_item"
+							}
+							{
+								Count: 1b
+								id: "k_turrets:gauss_turret_item"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "各类炮台"
+			x: 42.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——无。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "36925F6212D5A004"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E6F604220B5A494"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "7DAC9C3259728B38"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "交通物流"
+			x: 48.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["36925F6212D5A004"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d<沉浸式飞机>模组&r增加了若干个&6飞行载具&r，供玩家在旅行、物品运输、地图探索中使用。"
+				""
+				"这些飞机不仅贴合我的世界&2原版风格和细节&r，而且&2具有多样的功能&r，并且&2制造方式也并不复杂&r。"
+			]
+			hide_dependency_lines: true
+			icon: "immersive_aircraft:biplane"
+			id: "356D78DB3354EBFA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6A2F08D5700B9F71"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "2BB5A5C89BC29D78"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "沉浸式飞机"
+			x: 54.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["36925F6212D5A004"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d<小物流（Little－Logistics）>模组&r添加了&6驳船&r和&6机车&r，能够打造基于&2水路&r与&2铁路&r的高效、实惠的&a长途物流系统&r。"
+				""
+				"本整合包为该模组的指引书提供了&d精翻汉化&r，&e请以该指引书为基础了解该模组&r。"
+				""
+				"&7本整合包禁用了电力驳船和机车，不过你还可以使用蒸汽作为动力。&r"
+			]
+			icon: {
+				Count: 1
+				id: "patchouli:guide_book"
+				tag: {
+					"patchouli:book": "littlelogistics:guide"
+				}
+			}
+			id: "4413559137EC3346"
+			rewards: [
+				{
+					id: "628DAE9CD36897C6"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "littlelogistics:guide"
+						}
+					}
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "194B7EF873EDC8DC"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "4D963EDFC6E3CF1E"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "“小物流”船舶与机车"
+			x: 54.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4413559137EC3346"]
+			description: [
+				"下图是一个简单的&e列车运输案例&r，通过该案例，结合&6指引书&r，更好的了解这个模组。&7（船只的逻辑与此相似）&r"
+				""
+				"&c铁轨①：&r车头对接铁轨"
+				""
+				"&b铁轨②：&r车厢对接铁轨"
+				""
+				"&e箱子A：&r为车厢输入货物"
+				""
+				"&e箱子B：&r为车头输入燃料"
+				""
+				"&e箱子C：&r车厢输出货物"
+				""
+				"在&c铁轨①&r处通过&6拉杆&r让列车停车并装货，在&b铁轨②&r处自动停车输出货物。"
+				""
+				"{image:kubejs:textures/task/little_logistics_1.png width:200 height:108 align:1}"
+			]
+			icon: "littlelogistics:conductors_wrench"
+			id: "21823E8CF04D6631"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05F965959068EAEC"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "485879DA0240F150"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "列车案例"
+			x: 58.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["356D78DB3354EBFA"]
+			description: ["你可以点击任务目标，查看所有&a飞机种类&r。"]
+			icon: "immersive_aircraft:warship"
+			id: "0710B42AA1454D40"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "275E8D46D878D005"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4BB9A28990E2985D"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersive_aircraft:airship"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:cargo_airship"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:warship"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:biplane"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:gyrodyne"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:quadrocopter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			x: 58.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["356D78DB3354EBFA"]
+			description: ["你可以点击任务目标，查看所有的&a飞机武器组件&r。"]
+			hide_dependency_lines: true
+			icon: "immersive_aircraft:heavy_crossbow"
+			id: "1AE3BBE563793E21"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D7F0EAC4A4F7E6B"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "46A1391B7ED77153"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersive_aircraft:rotary_cannon"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:heavy_crossbow"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:bomb_bay"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:telescope"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "飞机武器组件"
+			x: 58.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["356D78DB3354EBFA"]
+			description: ["你可以点击任务目标，查看所有的&a飞机升级组件&r。"]
+			hide_dependency_lines: true
+			icon: "kubejs:obsidian_boiler"
+			id: "1A5172B2F0BF4526"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F91DC3297020D6F"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "3ACDE156B74D1E9E"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "immersive_aircraft:improved_landing_gear"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:gyroscope"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:steel_boiler"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:eco_engine"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:nether_engine"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:industrial_gears"
+							}
+							{
+								Count: 1b
+								id: "kubejs:obsidian_boiler"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:sturdy_pipes"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:hull_reinforcement"
+							}
+							{
+								Count: 1b
+								id: "immersive_aircraft:enhanced_propeller"
+							}
+							{
+								Count: 1b
+								id: "kubejs:linear_propulsion"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "飞机升级组件"
+			x: 58.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["623086DAE8E08439"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d<奥术灯笼（Arcane-Lanterns）>模组&r能够让你利用灯笼的力量！"
+				""
+				"&e守护灯笼：&r将除玩家外的所有生物推开。"
+				""
+				"&e爱情灯笼：&r使附近的生物陷入爱河。"
+				""
+				"&e哀嚎灯笼：&r如果你靠近灯笼，灯笼会哭泣。如果更加靠近，灯笼会尖叫并施加眩晕效果。"
+				""
+				"&e生命灯笼：&r使灯笼周围的作物生长的更快。"
+				""
+				"&e云朵灯笼：&r使周围的生物获得缓降效果。"
+				""
+				"&e野性灯笼：&r通过生成火花照亮一个巨大的区域。生成足够的火花后，灯笼就会停止。只要灯笼存在，火花就会一直停留在世界中。"
+				""
+				"&e禁锢灯笼：&r将除玩家以外的所有试图离开自身照明范围内的生物拉到身边。"
+				""
+				"&e辉煌灯笼：&r将附近的成年动物杀死，由此被杀死的动物只会掉落经验。"
+				""
+				"&e凋零灯笼：&r使周围的生物获得凋零效果。"
+				""
+				"&e极地灯笼：&r减慢附近生物和玩家的速度，同时扑灭燃烧的生物。"
+			]
+			hide_dependency_lines: true
+			icon: "arcanelanterns:lantern_maker"
+			id: "2A516FDBB7C617B9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20FD8637B6635050"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "6E7C2AD1BFFBF660"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "arcanelanterns:cloud_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:life_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:feral_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:love_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:wailing_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:boreal_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:brilliant_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:warding_lantern"
+							}
+							{
+								Count: 1b
+								id: "arcanelanterns:containing_lantern"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "奥术灯笼"
+			x: 16.0d
+			y: 16.0d
+		}
+		{
+			dependencies: ["623086DAE8E08439"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d<车万女仆>模组&r添加了功能全面的&b女仆&r，卖萌的同时还能帮助玩家&a完成各种辅助工作&r。同时围绕女仆也添加了大量其他趣味性内容，诸如雕像、手办、坐垫等内容。"
+				""
+				"本模组拥有&a十分详细并完全汉化&r的&6指引书&r，根据&6指引书&r即可熟练游玩该模组内容。"
+			]
+			hide_dependency_lines: true
+			id: "415AB8BAAD892C25"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "35141D265DF27F76"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "353F6CB78CF7B9CF"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+					}
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["415AB8BAAD892C25"]
+			description: [
+				"在本整合包中，该模组的&2P点无法获得&r，并且&2祭坛的合成也无效化&r了。"
+				""
+				"你现在需要委托对应的&d殖民地小屋&r来制作各种&a原本需要祭坛合成的道具&r。"
+			]
+			id: "6AE3FD6BE9D216B9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65DBD7145461D452"
+					table_id: 3054476279840700017L
+					type: "choice"
+				}
+				{
+					id: "490C83975D0ED916"
+					item: "simplehats:hatbag_festive"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			tasks: [{
+				id: "52FE8C650B3C03B1"
+				item: "kubejs:spawn_maid_box"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["22DD54825EBE5210"]
+			description: [
+				"当玩家放置&6传送石盘&r后，在其中会合成&6调谐燧石&r，该燧石将于当前的&6传送石盘&r进行绑定。"
+				""
+				"将其中的&6调谐燧石&r和&2另一个传送石盘中的调谐燧石&r进行互换，&e两个传送石盘将互相绑定&r。"
+				""
+				"当实体站在上面，将进行石盘间的传送。"
+				""
+				"&8可以传送物品&r"
+			]
+			id: "09365AD64830FE74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "024CD4F8F744AA53"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "67AC1F5E7574A63C"
+				item: "waystones:warp_plate"
+				type: "item"
+			}]
+			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["623086DAE8E08439"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&d<传送石碑>模组&r，让玩家免去了长途跋涉的烦恼。"
+				""
+				"玩家可通过瞬移卷轴、传送石等回到传送石碑。"
+			]
+			id: "22DD54825EBE5210"
+			rewards: [{
+				id: "7726DA9515E90E8D"
+				item: "simplehats:hatbag_halloween"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "55DB1C55347939CE"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["623086DAE8E08439"]
+			description: [
+				"&4——你需要在大学中通过研究解锁该类目下的内容。&r"
+				""
+				"&b<笼中生物>模组&r添加了&6生物笼&r和相关物品，你可以将生物囚禁在笼中，&2不断获取他们的掉落物&r。"
+				""
+				"首先，你需要制作本模组中两种生物笼中的一种——"
+				""
+				"&6普通生物笼&r，你需要手动收获掉落物；"
+				""
+				"&6漏式生物笼&r，带漏斗功能的生物笼，它可以将掉落物放入到下方容器中。"
+			]
+			hide_dependency_lines: true
+			id: "1ECD98AFC0203C66"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C1AEB53B0756CFC"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					id: "3B92D92DDC5A4061"
+					item: "simplehats:hatbag_halloween"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "70E00C520892FBDF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:mob_cage"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:hopping_mob_cage"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "笼中生物"
+			x: 16.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["1ECD98AFC0203C66"]
+			description: [
+				"你需要放入一种&6物品&r用于&a设置环境&r，让其中的生物有一种宾至如归的感觉，让它们感觉自己并没有被囚禁。环境例如："
+				""
+				"1.&b农场中的动物&r或&b中立生物&r——&6干草块/草方块&r。"
+				""
+				"2.&b喜欢在洞穴中游荡的怪物&r——&6石头/钻石矿&r。"
+				""
+				"3.&b下界生物&r——&6岩浆块/镶金黑石&r。"
+				""
+				"4.&b末地生物&r——&6末地石/紫颂花&r。"
+				""
+				"5.&b寒冷生物群系中的生物&r——&6雪块/蓝冰&r。"
+				""
+				"6.生成于&b沙漠中的生物&r——&6沙子/红沙&r。"
+				""
+				"7.&b水生生物&r——&6沙子/红沙&r并&a用水覆盖笼子&r。&7（将笼子直接放到水中或手持水桶“潜行键”+右键笼子）&r"
+			]
+			icon: "minecraft:grass_block"
+			id: "2071CE96134E6DE8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4102136735396CA1"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "5A924BE3DE339047"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "笼中环境"
+			x: 20.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["2071CE96134E6DE8"]
+			description: [
+				"设置好相应的环境后，你可以放入一个&a该环境支持&r的&6生物样本&r。"
+				""
+				"制作一个&6DNA采样器&r并用它&2攻击&r你想要采集的实体，以获得该生物的&6生物样本&r。"
+				""
+				"切记，某些生物需要&2更强大的采集器&r。"
+			]
+			id: "22F2BA2574616B8A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57A7A9C44D909144"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "1AFA9CD8321DE68C"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:dna_sampler"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:diamond_dna_sampler"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:netherite_dna_sampler"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "DNA采样器"
+			x: 24.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["22F2BA2574616B8A"]
+			description: [
+				"还可以为笼子提供各种&2升级&r。"
+				""
+				"它们拥有不同的效果，能&a让你的笼子拥有更多功能&r。"
+			]
+			id: "2C96F5FDCAB1110E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08C7577787B27C39"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "249529ED7AAB4041"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "cagedmobs:speed_i_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:speed_ii_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:speed_iii_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:looting_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:arrow_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:cooking_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:lightning_upgrade"
+							}
+							{
+								Count: 1b
+								id: "cagedmobs:experience_upgrade"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "更多的升级"
+			x: 28.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["16EBDE5F720DB689"]
+			description: [
+				"&4——本功能性排列评价，仅对无法明确选择的玩家起到参考作用，非最优解。&r"
+				""
+				"本章节任务排列规则："
+				""
+				"——无。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "623086DAE8E08439"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "42E60DA6111C735B"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "6ACB4FF11D4DACC4"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "魔法观测"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["47659434E1BADEF1"]
+			description: [
+				"因为分类内容过多，&c第五章分为了上下两个篇章，你可以同时进行！&r"
+				""
+				"同样的，&c终章任务也已经解锁！&r"
+			]
+			icon: "structurize:sceptergold"
+			id: "16EBDE5F720DB689"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E6063AA3D93E0D4"
+				table_id: 3054476279840700017L
+				type: "loot"
+			}]
+			size: 6.0d
+			tasks: [{
+				id: "03CA0D7A44389A66"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "你可以同时开始第六章任务了！"
+			x: 20.0d
+			y: -8.0d
+		}
+	]
+	title: "第五章－智能－上篇"
+}

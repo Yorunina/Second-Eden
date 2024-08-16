@@ -7,12 +7,12 @@
 	id: "65555BE14CFC58FD"
 	images: [{
 		alpha: 200
-		height: 27.0d
+		height: 40.5d
 		image: "kubejs:textures/task/go_camping_logo.png"
 		rotation: 0.0d
-		width: 40.0d
-		x: -0.75d
-		y: -4.25d
+		width: 60.0d
+		x: 1.5d
+		y: -11.0d
 	}]
 	order_index: 1
 	quest_links: [ ]
@@ -34,14 +34,14 @@
 			}
 			id: "0E3B5BC6A471679E"
 			shape: "rsquare"
-			size: 4.0d
+			size: 8.0d
 			subtitle: "制作团队：GoCamping！"
 			tasks: [{
 				id: "517BC679DC3C0E6C"
 				title: "制作团队"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 8.0d
 			y: 8.0d
 		}
 		{
@@ -59,14 +59,14 @@
 			icon: "kubejs:force_work_bell"
 			id: "64EA255C062BB895"
 			shape: "rsquare"
-			size: 4.0d
+			size: 8.0d
 			subtitle: "外部鸣谢"
 			tasks: [{
 				id: "1B62C7838335B033"
 				title: "额外鸣谢"
 				type: "checkmark"
 			}]
-			x: -6.0d
+			x: -4.0d
 			y: 8.0d
 		}
 	]

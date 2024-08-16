@@ -1,0 +1,1376 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "396F03F814D02C35"
+	group: "389CFB35E1AD9BED"
+	icon: {
+		Count: 1
+		id: "kubejs:newer_atlas"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "396F03F814D02C35"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2679901B66DC08AB"
+				"1C73D3C14C8D1ABF"
+				"0424C963CD3D9BC2"
+			]
+			description: [
+				"&7——无法完成该任务？先看一下“引入”章节吧！&r"
+				""
+				"通过将&6新手地图册&r装备在&d饰品栏：地图册&r，你可以&2呼叫空投&r。&7（默认X键）&r"
+				""
+				"&2呼叫空投&r会消耗地图册的耐久，以在世界的某处生成一个&6空投热气球&r。击落热气球将会获得&e资源补给&r。"
+				""
+				"{image:kubejs:textures/task/atlas_1.png width:100 height:152 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:newer_atlas"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "48FD6C4DE7C8B59A"
+			rewards: [{
+				id: "2D0F2C9039E1564C"
+				item: "kubejs:skill_book_agility"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 8.0d
+			subtitle: "怀揣地图，呼叫支援"
+			tasks: [{
+				id: "16B41D0A6441E832"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"curios:item": { }
+					}
+					id: "kubejs:newer_atlas"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "新手地图册"
+			x: -24.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["288A70B2455C4F63"]
+			description: [
+				"就在刚刚，你获得了一本“技能书”——&6敏捷之书&r，除此之外还有&6力量之书&r、&6智力之书&r。"
+				""
+				"手持技能书&2右键&r，你可以获取一个&2技能点数&r。"
+				""
+				"通过按下&a打开技能树按键&r&7（默认K键）&r，在对应的技能树中，你可以&e消耗技能点数来提高某些方面的属性&r。"
+				""
+				"&7初始每个技能树允许的技能点数上限为30点，不过之后你可以在殖民地发展中解锁这一限制。&r"
+			]
+			icon: "kubejs:skill_book_strength"
+			id: "13BCDD950336C1F4"
+			rewards: [{
+				id: "26416B4AA598045D"
+				item: "kubejs:skill_forget_book"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "获取技能点数！"
+			tasks: [{
+				icon: "kubejs:skill_book_strength"
+				id: "322A744D07AD3DFF"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "kubejs:skill_book_intelligence"
+							}
+							{
+								Count: 1b
+								id: "kubejs:skill_book_agility"
+							}
+							{
+								Count: 1b
+								id: "kubejs:skill_book_strength"
+							}
+						]
+					}
+				}
+				title: "任意技能书"
+				type: "item"
+			}]
+			title: "技能之书"
+			x: -10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["13BCDD950336C1F4"]
+			description: ["通过&2右键&r使用&6遗忘之书&r，你可以重置现在已经分配的所有技能点数。"]
+			id: "4A4AC7A1A063772E"
+			rewards: [{
+				id: "130C76C3A0D7FA4D"
+				table_id: 3054476279840700017L
+				title: "随机技能书"
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "一忘皆空"
+			tasks: [{
+				id: "4C10F6504C606D90"
+				item: "kubejs:skill_forget_book"
+				type: "item"
+			}]
+			title: "遗忘之书"
+			x: -10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["13BCDD950336C1F4"]
+			description: [
+				"通过使用地图册&2呼叫空投&r，你获得了一本&6空投地图&r。"
+				""
+				"将它拿在手中，寻找你的补给吧！"
+				""
+				"{image:kubejs:textures/task/atlas_3.png width:150 height:140 align:center fit:true}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:filled_map"
+				tag: {
+					Decorations: [{
+						id: "+"
+						rot: 180.0d
+						type: 26b
+						x: -294.0d
+						z: -159.0d
+					}]
+					display: {
+						Name: "{\"translate\":\"item.map.kubejs.airdrop\"}"
+					}
+					map: 0
+				}
+			}
+			id: "03CD7B868798A834"
+			rewards: [
+				{
+					id: "3186CD573FA6F66E"
+					item: {
+						Count: 1
+						id: "minecraft:bow"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0CDE2027A8A608ED"
+					item: "minecraft:arrow"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			tasks: [{
+				id: "42681086F59C61A0"
+				item: {
+					Count: 1
+					id: "minecraft:filled_map"
+					tag: {
+						Decorations: [{
+							id: "+"
+							rot: 180.0d
+							type: 26b
+							x: -294.0d
+							z: -159.0d
+						}]
+						display: {
+							Name: "{\"translate\":\"item.map.kubejs.airdrop\"}"
+						}
+						map: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "寻找热气球"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["03CD7B868798A834"]
+			description: [
+				"&7——这里有一双皮革靴子，至少能让你免受细雪的迫害...&r"
+				""
+				"空投的生成是&2以呼叫位置为圆心&r的，距离受到&6地图册&r中的&e“宝藏距离”&r词条影响。"
+				""
+				"如果你不注意周围的环境，你的空投热气球可能生成在海上、雪山中、山顶等处，你大概率并不想见到这种情况的发生......"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D80666F3FB08EFA"
+			rewards: [{
+				id: "2FA17C9F3AD6ABDE"
+				item: {
+					Count: 1
+					id: "minecraft:leather_boots"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "7D532F2FCD24B045"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "合适的呼叫地点"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["03CD7B868798A834"]
+			description: [
+				"在空投补给中，你会获得一个&6背包&r，请将背包放入&d饰品栏：背饰&r，之后按下&a打开背包快捷键&r&7（默认B键）&r，即可快速打开位于饰品栏中的背包。"
+				""
+				"除了饰品栏的背包之外，你可以手持背包&2右键&r以打开，这相当于一个&2随身携带的箱子&r，这意味着你可以&2同时携带多个背包&r。"
+				""
+				"{image:kubejs:textures/task/backpack_1.png width:100 height:152 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "sophisticatedbackpacks:backpack"
+				tag: {
+					contentsUuid: [I;
+						-1576588393
+						1812350858
+						-1686243499
+						1926515753
+					]
+					inventorySlots: 27
+					renderInfo: {
+						upgradeItems: [{
+							Count: 1b
+							id: "minecraft:air"
+						}]
+					}
+					upgradeSlots: 1
+				}
+			}
+			id: "6CB0D6C95710E071"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75274C04FD8B760A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "负重前行"
+			tasks: [{
+				id: "1989BAA7744FA356"
+				item: {
+					Count: 1
+					id: "sophisticatedbackpacks:backpack"
+					tag: {
+						contentsUuid: [I;
+							-1576588393
+							1812350858
+							-1686243499
+							1926515753
+						]
+						inventorySlots: 27
+						renderInfo: {
+							upgradeItems: [{
+								Count: 1b
+								id: "minecraft:air"
+							}]
+						}
+						upgradeSlots: 1
+					}
+				}
+				type: "item"
+			}]
+			title: "精妙背包"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6CB0D6C95710E071"]
+			description: [
+				"你可以使用&a查看用途快捷键&r&7（默认U键）&r来查看如何&2升级背包&r，这会让你的背包&e获得更多的存储空间&r。"
+				""
+				"请注意，铁制背包仍然可以再次合成升级。"
+				""
+				"&c如果你不知道如何正确“查看用途”，请浏览任务中的&d“整合包新手指引”章节&r&c。&r"
+			]
+			id: "4922CF2E3A51EBE3"
+			rewards: [{
+				id: "537BC0A434B0B93A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						Parent: {
+							Items: [ ]
+							SelectedSlot: 0
+							Size: 6
+						}
+					}
+					id: "supplementaries:quiver"
+				}
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "更多的存储空间..."
+			tasks: [{
+				id: "4278594152DF9691"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			title: "铁制背包"
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["5F041F79CCFD8CE6"]
+			description: [
+				"在&6新手地图册&r的奖励中，你可以获取到普通的&6地图册&r。"
+				""
+				"但是，这种普通地图册的&5奖励系数&r并不高，且一次只能呼叫一个空投气球，收集效率较低。"
+				""
+				"这时候你便需要一种全新的地图册——&6社群地图册&r，它可以&e一次性呼叫多个空投气球&r，不过耐久较低。&7（在锻造台中合成，如下图）"
+				"&r"
+				"{image:kubejs:textures/task/atlas_4.png width:150 height:70 align:center}"
+			]
+			id: "12B4A667D16DFF5E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6F13C69CDCD266AE"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "更快捷的资源获取"
+			tasks: [
+				{
+					id: "1AC4BE01F0E7A0E1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"curios:item": { }
+						}
+						id: "kubejs:common_atlas"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "79C9462CF0A438A9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"curios:item": { }
+						}
+						id: "kubejs:sociality_atlas"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "更多地图册"
+			x: 14.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["15E42496DB35D8FA"]
+			description: [
+				"&7——传言，地图册主题的出现是完全等概率随机的。&r"
+				""
+				"&6地图主题牌&r可以&a强制修改&r一个地图册的&d主题类型&r。"
+				""
+				"只需要将其与&6对应的地图册&r在&e工作台进行合成&r之后，&a地图册就会携带主题牌所描述的主题&r。"
+			]
+			id: "3113C02082E4DDB6"
+			rewards: [{
+				id: "3B9673E79FD2067D"
+				table_id: 3054476279840700017L
+				title: "随机技能书"
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "我就要这个！立刻！"
+			tasks: [{
+				id: "7A6A1F0D3D606316"
+				item: {
+					Count: 1
+					id: "kubejs:atlas_theme_nametag"
+					tag: { }
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "地图主题牌"
+			x: 26.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["12B4A667D16DFF5E"]
+			description: [
+				"接下来引入一种&2新的内容&r——&d地图册的主题&r。"
+				""
+				"本整合包提供了很多&2不同种类的地图册&r，它们有&2不同的主题池&r，而&c不同的主题池意味着不同的掉落内容&r。"
+				""
+				"你可以鼠标指向地图册&2查看用途&r&7（默认U键）&r，切换到&2如下图页面&r&e查看其包含的主题&r。"
+				""
+				"{image:kubejs:textures/task/atlas_2.png width:150 height:146 align:center}"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "15E42496DB35D8FA"
+			rewards: [{
+				id: "6DC2C272B2417A89"
+				item: {
+					Count: 1
+					id: "kubejs:atlas_theme_nametag"
+					tag: {
+						itemId: "kubejs:sociality_atlas"
+						theme: "raw_ore"
+					}
+				}
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "并击落其生成的空投热气球"
+			tasks: [{
+				entity: "kubejs:airdrop_balloon"
+				id: "24464DAF9CA8AD72"
+				title: "击落一次“社群地图册”的空投热气球"
+				type: "kill"
+				value: 1L
+			}]
+			title: "使用一次社群地图册"
+			x: 20.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3113C02082E4DDB6"]
+			description: [
+				"&c正常情况下，你不需要阅读该任务。"
+				""
+				"&7地图主题牌有着两个属性规定了它的使用范围，即："
+				""
+				"&7——地图册类型：只能与该地图册合成"
+				""
+				"&7——携带主题：参与合成后携带的主题"
+				""
+				"&7这意味着在某些特殊情况下，有一些主题牌是允许所有地图册与其合成，但其规定的主题，只有少部分地图册拥有。"
+				""
+				"&7当一个地图册被定义了自己不能满足的主题时，其呼唤空投的结果仍将是随机！&r"
+			]
+			icon: "kubejs:atlas_theme_nametag"
+			id: "5C86D877FF8D085A"
+			size: 4.0d
+			subtitle: "更详细的主题牌机制介绍"
+			tasks: [{
+				id: "47545DF1D9BB545C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "主题牌－进阶"
+			x: 26.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3113C02082E4DDB6"]
+			description: [
+				"&6地图主题牌&r的&2用法是多样的&r，但&a对于新手开局来说&r，将地图主题牌使用在&6社群地图册&r上是一个&e非常好的主意&r。"
+				""
+				"因为&6社群地图册&r会&2一次性召唤多个空投气球&r，相当于能够&a成倍的提高主题牌的效率&r。"
+				""
+				"但是&2社群地图册其空投内容与普通地图册的空投内容一致&r，因此&e不能用此种方法大量获取高级地图册的稀有资源&r。"
+			]
+			icon: {
+				Count: 1
+				id: "kubejs:sociality_atlas"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61F98C9136C63379"
+			rewards: [{
+				id: "2604A15446508B4E"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4F2B0739CD41D08C"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "强化社群地图册"
+			x: 32.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["6CB0D6C95710E071"]
+			description: [
+				"&d<工具皮带（Tool－Belt）>模组&r添加了一个可以快速交换工具的&6皮带&r。"
+				""
+				"手持&6皮带&r，&2潜行键+右键&r打开&a皮带存储空间&r，可以将物品放入其中。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&c——快捷键名称与功能——&r"
+				""
+				"&e“打开工具皮带物品栏”：&r你可以在此界面&a装备&r&6皮带&r。"
+				""
+				"&e“交换工具”：&r如果你&2已经装备皮带&r，并且&2皮带内有物品&r，你可以打开一个&a轮盘&r交换手中的物品。"
+			]
+			id: "35217380A42DC86D"
+			rewards: [{
+				id: "662DE1D7EB5AA14E"
+				item: "simplehats:hatbag_rare"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "2CA63529D9E9F6A8"
+				item: {
+					Count: 1
+					id: "toolbelt:belt"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["35217380A42DC86D"]
+			description: ["在&6铁砧&r中，&2左侧&r放入&6皮带&r，&2右侧&r放入&6皮带袋&r，可以&a升级皮带的存储栏位上限&r。&7（可多次升级）&r"]
+			id: "1FA52393CFEA961A"
+			rewards: [{
+				id: "7B4B1C49D3A0ECE1"
+				item: "simplehats:hatbag_rare"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4E10FF471FDAE750"
+				item: "toolbelt:pouch"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["15E42496DB35D8FA"]
+			description: [
+				"&7——在探索村庄的时候，或许你会获得一些强大的遗物饰品。&r"
+				""
+				"&d<遗物>&r是一个&e饰品模组&r，添加了超过25个遗物，这些遗物有着独特且丰富的机制，既能帮助你&2应对成堆的怪物&r，也能在&2日常的休闲生活中发挥作用&r。"
+			]
+			icon: {
+				Count: 1
+				id: "relics:bastion_ring"
+				tag: {
+					abilities: {
+						trade: {
+							points: 0
+							stats: {
+								rolls: 0.01858d
+							}
+						}
+					}
+				}
+			}
+			id: "04B804D914706505"
+			rewards: [{
+				id: "20B4D703FFF5D35F"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "2C700AEBEA60D1CA"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "relics:aqua_walker"
+								tag: {
+									abilities: {
+										walking: {
+											points: 0
+											stats: {
+												time: 43.31025d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:bastion_ring"
+								tag: {
+									abilities: {
+										trade: {
+											points: 0
+											stats: {
+												rolls: 0.01858d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:blazing_flask"
+								tag: {
+									abilities: {
+										bonfire: {
+											points: 0
+											stats: {
+												height: 4.67725d
+												speed: 0.01901d
+												step: 1.49829d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:chorus_inhibitor"
+								tag: {
+									abilities: {
+										blink: {
+											points: 0
+											stats: {
+												cooldown: 9.39336d
+												distance: 24.94979d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:drowned_belt"
+								tag: {
+									abilities: {
+										anchor: {
+											points: 0
+											stats: {
+												sinking: 4.64329d
+												slowness: 0.25408d
+											}
+										}
+										pressure: {
+											points: 0
+											stats: {
+												damage: 1.49904d
+											}
+										}
+										riptide: {
+											points: 0
+											stats: {
+												cooldown: 8.97864d
+											}
+										}
+										slots: {
+											points: 0
+											stats: {
+												talisman: 1.71911d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:elytra_booster"
+								tag: {
+									abilities: {
+										boost: {
+											points: 0
+											stats: {
+												capacity: 56.46412d
+												speed: 1.28309d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:enders_hand"
+								tag: {
+									abilities: {
+										swap: {
+											points: 0
+											stats: {
+												distance: 31.16729d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:leather_belt"
+								tag: {
+									abilities: {
+										slots: {
+											points: 0
+											stats: {
+												talisman: 1.86031d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:magma_walker"
+								tag: {
+									abilities: {
+										pace: {
+											points: 0
+											stats: {
+												time: 44.11147d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:midnight_robe"
+								tag: {
+									abilities: {
+										backstab: {
+											points: 0
+											stats: {
+												damage: 1.40435d
+												distance: 16.22937d
+											}
+										}
+										vanish: {
+											points: 0
+											stats: {
+												light: 1.10834d
+												speed: 0.22712d
+											}
+											temp: {
+												ticking: 1b
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:horse_flute"
+								tag: {
+									abilities: {
+										heal: {
+											points: 0
+											stats: {
+												amount: 0.03658d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:hunter_belt"
+								tag: {
+									abilities: {
+										slots: {
+											points: 0
+											stats: {
+												talisman: 1.92432d
+											}
+										}
+										training: {
+											points: 0
+											stats: {
+												damage: 1.97032d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:ice_breaker"
+								tag: {
+									abilities: {
+										impact: {
+											points: 0
+											stats: {
+												damage: 3.4219d
+												size: 4.32064d
+											}
+										}
+										sustainability: {
+											points: 0
+											stats: {
+												modifier: 0.74156d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:ice_skates"
+								tag: {
+									abilities: {
+										ram: {
+											points: 0
+											stats: {
+												damage: 0.17968d
+											}
+										}
+										skating: {
+											points: 0
+											stats: {
+												duration: 28.89633d
+												speed: 0.03418d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:infinity_ham"
+								tag: {
+									abilities: {
+										autophagy: {
+											points: 0
+											stats: {
+												feed: 1.36527d
+											}
+										}
+										infusion: {
+											points: 0
+											stats: {
+												duration: 2.83553d
+											}
+										}
+									}
+									pieces: 10
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:jellyfish_necklace"
+								tag: {
+									abilities: {
+										paralysis: {
+											points: 0
+											stats: {
+												duration: 1.26721d
+											}
+										}
+										shock: {
+											points: 0
+											stats: {
+												damage: 2.08146d
+											}
+											temp: {
+												ticking: 1b
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:holy_locket"
+								tag: {
+									abilities: {
+										steal: {
+											points: 0
+											stats: {
+												amount: 0.19381d
+												radius: 2.65701d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:wool_mitten"
+								tag: {
+									abilities: {
+										mold: {
+											points: 0
+											stats: {
+												damage: 0.21572d
+												freeze: 1.27725d
+												size: 20.32268d
+												stun: 0.03609d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:spore_sack"
+								tag: {
+									abilities: {
+										buffer: {
+											points: 0
+											stats: {
+												capacity: 2.37467d
+												chance: 0.07016d
+											}
+										}
+										explosion: {
+											points: 0
+											stats: {
+												size: 0.22223d
+											}
+										}
+										multiplying: {
+											points: 0
+											stats: {
+												amount: 0.07911d
+												chance: 0.084d
+												size: 0.08818d
+											}
+										}
+										spore: {
+											points: 0
+											stats: {
+												cooldown: 13.26653d
+												damage: 0.32251d
+												duration: 3.12618d
+												size: 0.36615d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:reflection_necklace"
+								tag: {
+									abilities: {
+										explode: {
+											points: 0
+											stats: {
+												capacity: 41.60584d
+												damage: 0.49432d
+												stun: 0.17935d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:roller_skates"
+								tag: {
+									abilities: {
+										skating: {
+											points: 0
+											stats: {
+												duration: 25.72957d
+												speed: 0.00377d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:shadow_glaive"
+								tag: {
+									abilities: {
+										glaive: {
+											points: 0
+											stats: {
+												bounces: 4.22762d
+												damage: 4.16358d
+												radius: 4.94112d
+												recharge: 26.66692d
+											}
+										}
+										saw: {
+											points: 0
+											stats: {
+												damage: 0.75088d
+												speed: 17.18083d
+											}
+										}
+									}
+									charges: 8
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:space_dissector"
+								tag: {
+									abilities: {
+										dissection: {
+											points: 0
+											stats: {
+												distance: 26.17105d
+												time: 9.38722d
+											}
+										}
+									}
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:spatial_sign"
+								tag: {
+									abilities: {
+										seal: {
+											points: 0
+											stats: {
+												time: 3.77846d
+											}
+										}
+									}
+									pos: "[\"-951.4,-57.1,-74.7\"]"
+									world: "minecraft:overworld"
+								}
+							}
+							{
+								Count: 1b
+								id: "relics:rage_glove"
+								tag: {
+									abilities: {
+										phlebotomy: {
+											points: 0
+											stats: {
+												attack_speed: 0.0086d
+												heal: 2.1E-4d
+												movement_speed: 0.01058d
+											}
+										}
+										rage: {
+											points: 0
+											stats: {
+												dealt_damage: 0.07119d
+												duration: 3.41184d
+												incoming_damage: 0.03615d
+											}
+										}
+										spurt: {
+											points: 0
+											stats: {
+												cooldown: 15.20418d
+												damage: 0.12589d
+												distance: 5.83693d
+											}
+										}
+									}
+								}
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "神秘的遗物"
+			x: 20.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["04B804D914706505"]
+			description: [
+				"&7——本整合包更改的遗物模组的强化方式。&r"
+				""
+				"在背包中，将&2鼠标悬浮&r在&6遗物&r上，&2长按shift键&r以打开该遗物的&2研究页面&r。"
+				""
+				"你可以在该界面为遗物进行强化。"
+			]
+			icon: "relics:researching_table"
+			id: "1354DCDABF356FBD"
+			rewards: [{
+				id: "4833F4B336764A9C"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "可成长的饰品"
+			tasks: [{
+				id: "32059F67C651FA52"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "遗物强化"
+			x: 20.0d
+			y: 20.0d
+		}
+		{
+			dependencies: ["03CD7B868798A834"]
+			description: [
+				"&6新手地图册&r的空投奖励中，你会获得一个&6补给船&r/&6补给营地&r。"
+				""
+				"但&c请先不要放置补给船/补给营地！&r因为&c殖民地的选址极大程度影响你游玩本整合包的难度！&r并且建造殖民地也需要一定的物资积累。"
+				""
+				"所以&c请先完成主线第一章的全部任务&r，在&d主线第二章&r开始，本整合包会&e按流程引导如何构建自己的殖民地&r。"
+			]
+			icon: "minecolonies:supplycampdeployer"
+			id: "3B3395C72863B7EC"
+			rewards: [{
+				count: 8
+				id: "71C28242968861D8"
+				item: "farmersdelight:fruit_salad"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "这是属于我的土地"
+			tasks: [{
+				icon: "minecolonies:supplycampdeployer"
+				id: "3A45A1B65523DEB3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecolonies:supplycampdeployer"
+							}
+							{
+								Count: 1b
+								id: "minecolonies:supplychestdeployer"
+							}
+						]
+					}
+				}
+				title: "补给营地/补给船"
+				type: "item"
+			}]
+			title: "补给营地"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["288A70B2455C4F63"]
+			description: [
+				"如果你要和你的朋友开始旅程，却&2苦于没有互相传送的方式&r，不如试试&a约定誓约&r。"
+				""
+				"手持没有铭刻的&6誓约戒指&r长按右键，可以将你的姓名铭刻在上面。将戒指给予另一人，其就&2可以手持戒指长按以传送到你的身边&r。"
+				""
+				"除此之外，如果将该戒指佩戴在饰品栏，&2在遭遇生命危险时，会将你传送到铭刻目标的身旁&r，同时誓约戒指会退化为普通戒指。"
+			]
+			id: "06B3804C46CED21B"
+			rewards: [{
+				id: "268339D4CAE43154"
+				type: "xp"
+				xp: 50
+			}]
+			size: 4.0d
+			subtitle: "似曾相识的传承"
+			tasks: [{
+				id: "6138FA6CEBC84125"
+				item: {
+					Count: 1
+					id: "kubejs:friend_to_the_end"
+					tag: {
+						friendName: "Meatbalil"
+					}
+				}
+				type: "item"
+			}]
+			title: "和朋友一起远征"
+			x: -16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["48FD6C4DE7C8B59A"]
+			description: [
+				"&7——获得原木，制作工作台与工具吧！"
+				"&r"
+				"在追寻空投补给的过程中，你或许需要一艘&6船&r。"
+			]
+			icon: "minecraft:oak_boat"
+			id: "288A70B2455C4F63"
+			rewards: [{
+				id: "7935E725BBBD4A23"
+				type: "xp"
+				xp: 50
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "39D6E3C34C3B3CE4"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "minecraft:oak_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:spruce_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:birch_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:jungle_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:acacia_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:dark_oak_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:mangrove_boat"
+							}
+							{
+								Count: 1b
+								id: "minecraft:cherry_boat"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "冒险启程"
+			x: -16.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6CB0D6C95710E071"]
+			description: [
+				"通过空投补给获得了大量的物资，现在你可以升级一下自己的装备了。"
+				""
+				"&7除了铁制工具，你还可以升级一下你的背包。&r"
+			]
+			id: "5F041F79CCFD8CE6"
+			rewards: [{
+				id: "098493942BA7D0EC"
+				type: "xp"
+				xp: 60
+			}]
+			size: 4.0d
+			subtitle: "感谢馈赠"
+			tasks: [{
+				id: "4BF20311DC661086"
+				item: {
+					Count: 1
+					id: "minecraft:iron_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "升级你的装备！"
+			x: 8.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["12B4A667D16DFF5E"]
+			description: ["你可以在&6铁砧&r中，为&6地图册&r附魔——&a耐久、经验修补、金钱修补&r等附魔。"]
+			icon: "minecraft:anvil"
+			id: "074D1505699B55EF"
+			rewards: [{
+				id: "1BA0C6CD62770D4D"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "357EE4A855385A09"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "附魔－地图册"
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5F041F79CCFD8CE6"]
+			description: [
+				"&d<Hang-Glider>模组&r为本整合包加入了&6滑翔翼&r，玩家可以借它们来在空中翱翔。"
+				""
+				"只需从悬崖上跳下来，然后滑翔翼便会完成剩下的工作，玩家所要做的只有操控飞行方向。"
+				""
+				"滑翔翼的控制十分方便流畅，其模型也十分漂亮。"
+				""
+				"此外，如果你想要&2更快的速度&r，你还可以试着&a升级滑翔翼&r！"
+			]
+			id: "1F52A77EC46752E1"
+			rewards: [{
+				id: "3506567A022F5A91"
+				type: "xp"
+				xp: 100
+			}]
+			size: 4.0d
+			subtitle: "EUREKA SEVEN"
+			tasks: [{
+				id: "70535D4E877B11E8"
+				item: {
+					Count: 1
+					id: "hangglider:hang_glider"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "悬挂式滑翔翼"
+			x: 8.0d
+			y: 2.0d
+		}
+	]
+	title: "&7第一章－准备"
+}

@@ -1,0 +1,737 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "12022CCC7F9AB543"
+	group: "389CFB35E1AD9BED"
+	icon: "minecolonies:blockhutwarehouse"
+	id: "12022CCC7F9AB543"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["6AD287FF5DE1C63D"]
+			description: [
+				"&c本章节开始，你的殖民地将引入更多产生资源的建筑，并且增加了物流系统！"
+				"&r"
+				"这意味着你需要规划一下你的殖民地建筑群。"
+				""
+				"比如，&e对你目前了解的建筑来说&r："
+				""
+				"——将工作岗位分配给居住&a距离最近的公民&r，这会&e有效减少上下班的通勤时间&r。"
+				""
+				"——随着殖民地的扩张，卫兵的数量也要增加，你可以考虑&a将卫兵塔分散开&r，让卫兵们足以&e保护殖民地各个角落&r。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "17DEAC22459AB152"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19DFACAC896BFBE4"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 8.0d
+			subtitle: "规划你的殖民地"
+			tasks: [{
+				id: "542CADB7FE89250F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "展望未来"
+			x: -12.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["6A754715EE441E80"]
+			description: [
+				"&d林务员小屋&r会提供两种岗位——&b林务员&r和&b果园管理员&r。"
+				""
+				"&d林务员小屋&r的运作需要&2周围存在相关树木&r，你可以选择在靠近森林的位置建造林务员小屋，也可以自行在其周围种树。"
+				""
+				"&c请不要忘记查看林务员小屋的交互界面，根据需要设置选区（非必须），或者设置工作时的具体要求。&r"
+			]
+			id: "651B42EA92797021"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49642A519DFFCBFE"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "伐伐伐伐伐木工"
+			tasks: [{
+				id: "4D54E4D0ADAB7CD6"
+				item: "minecolonies:blockhutlumberjack"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d餐厅&r用于给殖民地居民&a提供食物&r，公民感到饥饿时会&a主动前往餐厅&r。"
+				""
+				"&d餐厅&r提供了两种厨师职位——&b原版厨师&r和&b农夫乐事厨师&r，他们的工作并不能相通。"
+				""
+				"&c你必须在餐厅方块中为厨师提供某食物的配方，并为他们提供燃料，才能令其生产该食物。&r"
+				""
+				"{image:kubejs:textures/task/restaurant_1.png width:180 height:202 align:1}"
+			]
+			id: "4153CA3DBEAFD200"
+			rewards: [{
+				count: 10
+				id: "096CB73010DE636F"
+				item: "minecraft:sweet_berries"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "民以食为本"
+			tasks: [{
+				id: "7D9A71834FD1EA0C"
+				item: "minecolonies:blockhutcook"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["4153CA3DBEAFD200"]
+			description: [
+				"&7——现在你可以为殖民地的餐厅雇佣“农夫乐事厨师”了。&r"
+				""
+				"&d<农夫乐事>模组&r主要丰富了&a耕作&r与&a烹饪&r方面的内容，并为现有的物品和方块提供了&2更多用途&r。"
+				""
+				"其&a烹饪方面&r的内容&e均有合成配方可供查询&r，所以你可以在&dJEI搜素框&r中输入&d“@farmer”&r来查询该模组的食物及配方。"
+			]
+			icon: "farmersdelight:stove"
+			id: "791CA5DF667A96A5"
+			rewards: [{
+				count: 10
+				id: "6C5D05FDB0116A7F"
+				item: "farmersdelight:melon_popsicle"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			tasks: [{
+				id: "4C7E9AE35392811A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "农夫乐事"
+			x: 14.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"&r&d牧羊人小屋&r提供&a养殖羊&r的功能。"
+				""
+				"你需要提供&2所需的物品&r，并在最开始时&2提供两只羊&r。&7（所需物品可等候工人提交请求，或在小屋方块的“帮助”中查看。）&r"
+				""
+				"&d——建筑升级——"
+				""
+				"小屋每提升一级，就可以&2额外饲养两只羊&r。"
+			]
+			id: "7031C2F542F45F0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BD63BF4BBF0D70B"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "479B1B168103DF85"
+				item: "minecolonies:blockhutshepherd"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"&d牧牛工小屋&r提供&a养殖牛&r的功能。"
+				""
+				"你需要提供&2所需的物品&r，并在最开始时&2提供两只牛&r。&7（所需物品可等候工人提交请求，或在小屋方块的“帮助”中查看。）&r"
+				""
+				"&d——建筑升级——"
+				""
+				"小屋每提升一级，就可以&2额外饲养两只牛&r。"
+			]
+			hide_dependency_lines: true
+			id: "133DB3E04EE28397"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C31CE0C4DD65787"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "4206B919043D5386"
+				item: "minecolonies:blockhutcowboy"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"&d猪圈&r提供&a养殖猪&r的功能。"
+				""
+				"你需要提供&2所需的物品&r，并在最开始时&2提供两只猪&r。&7（所需物品可等候工人提交请求，或在小屋方块的“帮助”中查看。）&r"
+				""
+				"&d——建筑升级——"
+				""
+				"小屋每提升一级，就可以&2额外饲养两只猪&r。"
+			]
+			hide_dependency_lines: true
+			id: "72C52C33BBE98EF9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B51F7F57A62266E"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "211826E2BD9CAB35"
+				item: "minecolonies:blockhutswineherder"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"&d养兔场&r提供&a养殖兔&r的功能。"
+				""
+				"你需要提供&2所需的物品&r，并在最开始时&2提供两只兔&r。&7（所需物品可等候工人提交请求，或在小屋方块的“帮助”中查看。）&r"
+				""
+				"&d——建筑升级——"
+				""
+				"小屋每提升一级，就可以&2额外饲养两只兔&r。"
+			]
+			hide_dependency_lines: true
+			id: "15451D62750D643A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C13D4C8E9BBD825"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "0FF0BAEF25CFC7FD"
+				item: "minecolonies:blockhutrabbithutch"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["540D37928023BA6C"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"在&d养蜂场&r中的&a蜜蜂与蜂巢需要玩家自行提供&r，需要通过右键&6养蜂场小屋方块&r，打开&2交互界面第二页&r获取&2“选区工具”&r，并右键放置的蜂巢即将其&e添加为工人的工作对象&r。"
+				""
+				"&d——建筑升级——"
+				""
+				"等级越高，工人&2可工作的对象蜂巢数量越多&r。"
+			]
+			hide_dependency_lines: true
+			id: "4419C9845823F38F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "468B334CAA88DF47"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "0A0C4FECBDA03220"
+				item: "minecolonies:blockhutbeekeeper"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -26.0d
+		}
+		{
+			dependencies: ["4153CA3DBEAFD200"]
+			description: [
+				"&d——建筑功能——"
+				""
+				"&d矿井&r可以提供两种岗位——&b采石工&r和&b矿工&r。&7（一个矿井只能雇佣一个工人）"
+				""
+				"&d矿井&r的运作需要提供&2填充方块、台阶、栅栏、火把和梯子&r。"
+				""
+				"&c需要在卫兵塔中安排守卫巡逻矿井，避免矿工受到怪物攻击。&r"
+				""
+				"&d——建筑升级——"
+				""
+				"矿井等级影响工人&a最高能使用的工具品质&r，也影响工人的&a最大开采深度&r。"
+			]
+			id: "19A82DA478C4E234"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74DB0BBB0AF09D94"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "探索与挖掘"
+			tasks: [{
+				id: "058429F59574ECBE"
+				item: "minecolonies:blockhutminer"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["19A82DA478C4E234"]
+			description: [
+				"&d简易采石场&r是玩家可以雇佣&b采石工&r挖掘&6圆石&r的建筑。"
+				""
+				"&c请注意，你必须先从矿井雇佣采石工，然后将他们分配到采石场。&r"
+				""
+				"&7简易采石场只会产出它挖出的方块，它不会像矿井一样产生额外的矿石方块。&r"
+				""
+				"&7如果在建筑工具页面没有找到采石场，请尝试切换主题包。&r"
+			]
+			id: "34749243B92836B9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19CC9C55E31A7111"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "2B673526C75BB940"
+				item: "minecolonies:simplequarry"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -22.0d
+		}
+		{
+			dependencies: ["34749243B92836B9"]
+			description: ["用途同&b简易采石场&r，&2提供的挖掘区域更大&r。"]
+			id: "20FC6394B95B770D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A014F2FA63E5316"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "78B881390BC84A05"
+				item: "minecolonies:mediumquarry"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -28.0d
+		}
+		{
+			dependencies: ["77B20D2549762804"]
+			description: [
+				"&7——你可以对背包或EMI中的小屋方块按U键以查看它所能制作的物品。"
+				""
+				"建造&d附魔小屋&r后，你便可以委托&b附魔师&r制作&6附魔书&r和&c魔法卷轴&r。"
+				""
+				"平时你需要为&b附魔师&r提供&6书&r，并在&6附魔小屋&r中设置&2“收集对象”&r，来使其&a收集经验&r。"
+				""
+				"附魔小屋等级影响&2附魔等级上限&r和&2附魔失败概率&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"你需要在&6信箱&r中选择对应&6附魔书&r或&6卷轴&r，才能使&b附魔师&r制作相应物品。附魔书的制作需要提供&6古籍&r，卷轴的制作需要&a在信箱中查看所需材料&r。"
+				""
+				"&6古籍&r可以在&6悬赏板&r中的任务奖励获得。"
+				""
+				"{image:kubejs:textures/task/enchanter_tower_1.png width:200 height:113 align:1}"
+			]
+			icon: "minecolonies:blockhutenchanter"
+			id: "454B2E001427F930"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "56EEEE72E3F04C7B"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			subtitle: "强大的魔法卷轴！"
+			tasks: [{
+				id: "7BB5EB70C9CAA6FE"
+				item: "minecolonies:blockhutenchanter"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["77B20D2549762804"]
+			description: [
+				"&d<模拟殖民地>模组&r中，很多功能建筑的运转，需要&2依赖其他建筑的工人提供原材料&r，所以你需要一个&d快递员小屋&r和&d仓库&r来&a自动周转这些材料&r。"
+				""
+				"&7点击右下角以翻页。&r"
+				"{@pagebreak}"
+				"&c——快递员小屋——&r"
+				""
+				"&b快递员&r会在&d仓库&r与各个建筑之间搬运物品。"
+				""
+				"&3快递员&r可以&2携带的物品数量&r取决于&2快递员小屋等级&r。"
+				"{@pagebreak}"
+				"&c——仓库——&r"
+				""
+				"依赖&b快递员&r来&a运送仓库内物品或存入仓库&r，你需要在&d仓库&r中设置&a雇佣快递员&r。"
+				""
+				"每间仓库可以&2同时允许多个快递员工作&r，数量取决于仓库等级。"
+				""
+				"升级还会提高仓库内架子的数量，从而提升库存空间。"
+				""
+				"&7如果你想便捷查看仓库存储内容，请善用交互界面里的“建筑物品栏概要”选项。&r"
+			]
+			icon: "minecolonies:blockhutdeliveryman"
+			id: "082FAB88FE33CBB3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "63FC56E5B5C7810A"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "rsquare"
+			size: 6.0d
+			subtitle: "主角登场！自动化的开始！"
+			tasks: [
+				{
+					id: "10E4D10DC47D5993"
+					item: "minecolonies:blockhutdeliveryman"
+					type: "item"
+				}
+				{
+					id: "65C3C4AFE7BB4FC3"
+					item: "minecolonies:blockhutwarehouse"
+					type: "item"
+				}
+			]
+			title: "物流与存储中心"
+			x: 34.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["082FAB88FE33CBB3"]
+			description: [
+				"与其他建筑不同，只占一格空间，可进入点击玩家&2需要的物品&r，&b快递员&r会在&a仓库中有存货的情况下&r将你需要的物品&2送至此处&r。"
+				""
+				"勾选&aDeliver-what's-available&r后，视为永久请求该物品直至玩家手动取消或信箱自带容量爆满。&7（每次退出信箱GUI后勾选自动取消，所以你需要在此界面挂机才能达到效果）&r"
+			]
+			id: "26F57776CEEB7597"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0637E36B13C5B88B"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "741718E03D9C9B0D"
+				item: "minecolonies:blockpostbox"
+				type: "item"
+			}]
+			x: 42.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["082FAB88FE33CBB3"]
+			description: [
+				"&2右键&r打开界面跟箱子一样，可以&2存放物品&r。"
+				""
+				"如果你有&b快递员&r和&d仓库&r，&b快递员&r会自动把里面的物品全部送到&d仓库&r。"
+			]
+			hide_dependency_lines: true
+			id: "7F35605653AAA39C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "459C69144E984A1F"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "280548403DCDFEBE"
+				item: "minecolonies:blockstash"
+				type: "item"
+			}]
+			x: 42.0d
+			y: -20.0d
+		}
+		{
+			dependencies: ["77B20D2549762804"]
+			description: [
+				"&7——你可以对背包或EMI中的小屋方块按U键以查看它所能制作的物品。"
+				""
+				"&d面包房&r可以雇佣工人制作&a曲奇，蛋糕，面包，南瓜派等食物&r。"
+				""
+				"你需要&2设置配方&r，并且&2提供对应的原料&r。"
+			]
+			hide_dependency_lines: true
+			id: "494F2734B1E9620C"
+			rewards: [{
+				count: 10
+				id: "47DF5BACA8F7197F"
+				item: "minecraft:melon_slice"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 4.0d
+			tasks: [{
+				id: "1F8C6F3E947CDE45"
+				item: "minecolonies:blockhutbaker"
+				type: "item"
+			}]
+			x: 26.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17DEAC22459AB152"]
+			description: [
+				"在本章节，我们将建造&a大量需要工人工作的小屋&r，所以你&e需要提高你的人口上限&r。"
+				""
+				"你有如下选择："
+				""
+				"——&e升级一个建筑工小屋&r，使其能够&a升级住宅&r，从而增加人口上限。"
+				""
+				"——&e建造新的住宅&r，并将他们分散开，以便缩短工人的通勤距离。"
+				""
+				"&c同时，在现在的阶段，你应该保证你的殖民地至少有2－3名卫兵！！！&r"
+			]
+			id: "6A754715EE441E80"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "04CBD3F900F985B9"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					count: 4
+					id: "7F5B3B841588345F"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			tasks: [
+				{
+					id: "3B122785652EFD34"
+					item: "minecolonies:blockhutcitizen"
+					title: "提高你的人口上限"
+					type: "item"
+				}
+				{
+					id: "5EF889A2F04FBD46"
+					item: "minecolonies:blockhutguardtower"
+					title: "再建造1－2个的卫兵塔"
+					type: "item"
+				}
+			]
+			title: "人口扩张政策"
+			x: -4.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["651B42EA92797021"]
+			description: [
+				"除了&d养鸡人小屋&r以外，还有其他的&a养殖类小屋&r，在&a上方的任务里&r你可以详细了解它们。"
+				""
+				"你&a不必一开始就全都建造完&r，挑选1－2个你认为需要的即可，甚至你也可以完全跳过，之后再建造他们。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "540D37928023BA6C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17CA6A96ECAEFC1F"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "215D35FD7CD05854"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "其他养殖小屋"
+			x: 8.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["19A82DA478C4E234"]
+			description: [
+				"在我们本章的“主角”出现之前，&2现阶段&r，你还有&2两种小屋&r可以建造。"
+				""
+				"它们的&a功能不是现阶段所必需的&r，可以在&a下方任务&r中了解，按你的喜好决定是否建造。"
+			]
+			id: "77B20D2549762804"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "757EE99DEFABEF70"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "由你自己决定"
+			tasks: [{
+				id: "2FA427CB363BB8A2"
+				item: "minecraft:oak_hanging_sign"
+				type: "item"
+			}]
+			title: "其他小屋"
+			x: 26.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["26F57776CEEB7597"]
+			description: [
+				"如果&2不做具体的设置&r，&b快递员&r的工作&a反而会扰乱你的殖民地发展&r："
+				""
+				"&7——比如当你给矿工预备了一把以上的镐子，矿工会将多余的镐子放入矿井小屋存储空间，然后快递员会不识相的拿走它们送回仓库！等矿工请求新的镐子再送回。这很明显是无用功！&r"
+				""
+				"所以在此，本整合包&a以矿井小屋与矿工为例&r，介绍&e如何避免这种情况&r，并引导如何&e更好的使用快递员与仓库&r。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "43BB214913EF7032"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "140418ECA082D958"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "以矿井为例"
+			tasks: [{
+				id: "03D69F92E16FE78A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "宏观调控"
+			x: 48.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["43BB214913EF7032"]
+			description: [
+				"对于&a具有物资产&r出的建筑小屋，会有一个&d“取货优先级”&r的选项——它分为&d“永不取货”&r和&d“1－10”&r合计11个等级，&e数字越大，代表快递员去取货的优先级越高&r。&7（不影响送货优先级，殖民地无送货优先级设置）&r"
+				""
+				"对于物资产出速度快的小屋，应该设置高优先级，反之则为低优先级。"
+				""
+				"{image:kubejs:textures/task/text_7.png width:150 height:125 align:center}"
+			]
+			icon: "minecraft:chest"
+			id: "4C3CFA03E255215F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20FC47177C242BC0"
+				table_id: 7517863136333816811L
+				type: "random"
+			}]
+			size: 4.0d
+			subtitle: "宏观调控－其一"
+			tasks: [{
+				id: "2ED5FF369A222C25"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "取货优先级"
+			x: 54.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["4C3CFA03E255215F"]
+			description: [
+				"同样的，多数小屋会有&d“最低存量”&r设置选项，我们以矿工为例："
+				""
+				"矿工的日常工作是需要&2梯子、台阶、火把&r等物品，&a假设&r将这些物品&a设置最低存量为1组&r。"
+				""
+				"&e——当矿井的存储空间内，这些物品的数量超过一组，快递员才会取回放到仓库。"
+				""
+				"&e——但请注意，当这些物品数量不足一组时，快递员并不理会，只有工人发出“请求”的时候，才会从仓库送来。&r"
+				""
+				"{image:kubejs:textures/task/text_8.png width:150 height:126 align:center}"
+			]
+			icon: "minecraft:chest"
+			id: "1C1ACF270473E24C"
+			rewards: [
+				{
+					id: "38B86EC04E67FBE7"
+					item: "minecolonies:clipboard"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5B4CE28DE4CA52BB"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
+			size: 4.0d
+			subtitle: "宏观调控－其二"
+			tasks: [{
+				id: "55C648D109BE50F1"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "最低存量限制"
+			x: 59.5d
+			y: -16.0d
+		}
+		{
+			dependencies: ["454B2E001427F930"]
+			description: ["你可以在某些地方获得&6启发之书&r，它是&6书&r的上位替代，&e更低的概率在图书馆被消耗，更高的概率为附魔师积累经验。&r"]
+			id: "4256EBD3643DFBA6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "043559081EAAE886"
+				table_id: 7517863136333816811L
+				type: "loot"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "7F35633100F98B16"
+				item: "kubejs:book_of_enlight"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -10.0d
+		}
+	]
+	title: "第四章－链动"
+}

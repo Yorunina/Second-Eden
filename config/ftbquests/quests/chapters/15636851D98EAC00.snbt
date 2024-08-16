@@ -2,7 +2,8 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "15636851D98EAC00"
-	group: "5CBDF06DE32D253F"
+	group: ""
+	icon: "kubejs:go_camping"
 	id: "15636851D98EAC00"
 	images: [{
 		height: 57.0d
@@ -12,41 +13,22 @@
 		x: -3.5d
 		y: -2.0d
 	}]
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [{
 		dependencies: ["6A8DF9B51A9B903B"]
-		description: ["&7本章节主要为整合包游玩经验不足的新手准备。&r"]
-		icon: {
-			Count: 1
-			id: "minecraft:diamond_pickaxe"
-			tag: {
-				Damage: 0
-			}
-		}
-		id: "25DC060DF356A689"
-		rewards: [
-			{
-				count: 5
-				id: "7EE6FEE5D07AFBEF"
-				item: "lightmanscurrency:coin_iron"
-				type: "item"
-			}
-			{
-				id: "3CF776ACF20A0DAB"
-				item: "simplehats:hatbag_uncommon"
-				type: "item"
-			}
-		]
+		icon: "minecraft:oak_hanging_sign"
+		id: "09FB8A0DF1FC2423"
 		size: 4.0d
+		subtitle: "感谢你的浏览"
 		tasks: [{
-			id: "411E2279DD8BEEC7"
+			id: "716D231FBA0C5C3C"
 			title: "我已浏览"
 			type: "checkmark"
 		}]
-		title: "整合包新手指引"
+		title: "整合包游玩－新手指引"
 		x: 23.0d
-		y: -23.0d
+		y: -23.5d
 	}]
 	title: "&3整合包新手指引&r"
 }

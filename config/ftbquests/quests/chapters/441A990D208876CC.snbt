@@ -1,23 +1,23 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "2E439305B88B2559"
-	group: "3C78FA35C49B788B"
-	icon: "minecraft:scaffolding"
-	id: "2E439305B88B2559"
-	order_index: 5
+	filename: "441A990D208876CC"
+	group: "389CFB35E1AD9BED"
+	icon: "minecraft:beacon"
+	id: "441A990D208876CC"
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["73EBA454E698D18A"]
+			dependencies: ["16EBDE5F720DB689"]
 			description: [
 				"&7——你的殖民地需要经过漫长的发展，或许需要一些地标性建筑，它们也会为你的殖民地带来新的福音。&r"
 				""
 				"&d地标&r是一类大型建筑，它们在建成后会为你的殖民地&e提供各种增益加成&r。"
 				""
-				"你可以在&d大学&r的研究分类中，看到&d“地标”&r一栏，但是它们正常情况下&2不能直接研究&r，而是需要&a委托建筑工建造对应的建筑&r。"
+				"你可以在&d大学&r的研究分类中，看到&d“地标”&r一栏，但是它们正常情况下&c不能直接研究&r，而是需要&a委托建筑工建造对应的建筑&r。"
 				""
-				"当地标&a完全建成&r后，你便可以在大学中的“地标”栏目中，&e解锁该建筑带来的增益&r。"
+				"&c当地标完全建成后，会直接解锁其增益属性。"
 				""
 				"在委托建筑工建造地标时，你可以佩戴&6建筑工护目镜&r，在&2有需要的时候&r帮助建筑工搭建&6脚手架&r。"
 				""
@@ -27,24 +27,23 @@
 				""
 				"{image:kubejs:textures/task/landmark_1.png width:180 height:82 align:center}"
 			]
-			hide: true
 			icon: "minecraft:scaffolding"
 			id: "7655520F92D81D97"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "77B9048B44861ED2"
-				table_id: 3054476279840700017L
-				type: "choice"
+				id: "62ABA23E2A958CC8"
+				type: "xp_levels"
+				xp_levels: 30
 			}]
-			size: 4.0d
+			shape: "gear"
+			size: 6.0d
 			tasks: [{
 				id: "6647A5A13946C10B"
 				title: "我已了解"
 				type: "checkmark"
 			}]
 			title: "奇观地标"
-			x: -14.0d
-			y: -4.0d
+			x: -12.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["7655520F92D81D97"]
@@ -53,6 +52,7 @@
 				""
 				"&d冶炼厂&r冶炼时，如果触发了&2双倍冶炼&r，那么现在会&a变成三倍&r；如果触发了&2三倍冶炼&r，那么会&a变成五倍&r。"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:oak_hanging_sign"
 			id: "7210623A9B469C67"
 			rewards: [{
@@ -68,86 +68,8 @@
 				type: "checkmark"
 			}]
 			title: "埃菲尔铁塔"
-			x: -8.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7655520F92D81D97"]
-			description: [
-				"&7——终于，成功了！绿植城堡更是末影原理在主世界的象征！借助这座城堡的力量，我们的快递员可以自由的使用末影能量了！&r"
-				""
-				"&b快递员&r在&2递送、准备递送、收集产物&r时，会尝试&a通过末影能量传送到目标地点&r而非步行。"
-			]
-			hide_dependency_lines: true
-			icon: "minecraft:oak_hanging_sign"
-			id: "2A874D6E1CF236CC"
-			rewards: [{
-				count: 2
-				id: "6B31A8B38E089909"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "4929F34EEC4742EE"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "绿植城堡"
-			x: -4.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7655520F92D81D97"]
-			description: [
-				"&7——这似乎是女巫曾经炼药的地方...我们的德鲁伊们似乎对此非常感兴趣。&r"
-				""
-				"&b德鲁伊&r使用&2魔法药水&r丢出的药水&a等级提高至5级&r。"
-			]
-			hide_dependency_lines: true
-			icon: "minecraft:oak_hanging_sign"
-			id: "7DA4DA6A0E33A7F2"
-			rewards: [{
-				count: 2
-				id: "6C6FAA9047FE5DB2"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "597CDE91449D938A"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "巫师塔"
-			x: 0.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7655520F92D81D97"]
-			description: [
-				"&7——这是一个巨大的迷宫，用作景观刚刚好。不过它需要了如此多的树叶，我们的伐木工对此有一些困扰。&r"
-				""
-				"&b伐木工&r产出的&6原木&r&a数量加倍&r。"
-			]
-			hide_dependency_lines: true
-			icon: "minecraft:oak_hanging_sign"
-			id: "3410B201226FBDFF"
-			rewards: [{
-				count: 2
-				id: "3F7CD98361BA726A"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "5DB29E1A8F2645D9"
-				title: "我已了解"
-				type: "checkmark"
-			}]
-			title: "树篱迷宫"
-			x: 4.0d
-			y: -4.0d
+			x: -12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["7655520F92D81D97"]
@@ -156,6 +78,7 @@
 				""
 				"&b弓箭手&r敏捷对伤害的影响&a大幅提高&r。"
 			]
+			hide_dependency_lines: true
 			icon: "minecraft:oak_hanging_sign"
 			id: "7275074F34F69BE8"
 			rewards: [{
@@ -171,8 +94,8 @@
 				type: "checkmark"
 			}]
 			title: "万神殿"
-			x: -8.0d
-			y: 0.0d
+			x: -12.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7655520F92D81D97"]
@@ -197,8 +120,60 @@
 				type: "checkmark"
 			}]
 			title: "樱花月"
-			x: -4.0d
-			y: 0.0d
+			x: -18.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7655520F92D81D97"]
+			description: [
+				"&7——终于，成功了！末影城堡更是末影原理在主世界的象征！借助这座城堡的力量，我们的快递员可以自由的使用末影能量了！&r"
+				""
+				"&b快递员&r在&2递送、准备递送、收集产物&r时，会尝试&a通过末影能量传送到目标地点&r而非步行。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "2A874D6E1CF236CC"
+			rewards: [{
+				count: 2
+				id: "6B31A8B38E089909"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "4929F34EEC4742EE"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "绿色城堡"
+			x: -6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7655520F92D81D97"]
+			description: [
+				"&7——这似乎是女巫曾经炼药的地方...我们的德鲁伊们似乎对此非常感兴趣。&r"
+				""
+				"&b德鲁伊&r使用&2魔法药水&r丢出的药水&a等级提高至5级&r。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "7DA4DA6A0E33A7F2"
+			rewards: [{
+				count: 2
+				id: "6C6FAA9047FE5DB2"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "597CDE91449D938A"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "巫师塔"
+			x: -6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["7655520F92D81D97"]
@@ -223,9 +198,61 @@
 				type: "checkmark"
 			}]
 			title: "树屋"
-			x: 0.0d
-			y: 0.0d
+			x: -18.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7655520F92D81D97"]
+			description: [
+				"&7——这是一个巨大的迷宫，用作景观刚刚好。不过它需要了如此多的树叶，我们的伐木工对此有一些困扰。&r"
+				""
+				"&b伐木工&r产出的&6原木&r&a数量加倍&r。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "3410B201226FBDFF"
+			rewards: [{
+				count: 2
+				id: "3F7CD98361BA726A"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "5DB29E1A8F2645D9"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "树篱迷宫"
+			x: -18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7655520F92D81D97"]
+			description: [
+				"&c正常情况下，你不需要阅读该任务。"
+				""
+				"如果你有一定的能力，你可以尝试添加自己的地标，并为其定制属性和机制。"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:oak_hanging_sign"
+			id: "7C9F395F2BC8E716"
+			rewards: [{
+				count: 2
+				id: "080F463F8A56E65E"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "27699F11549C2201"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "更多地标..."
+			x: -12.0d
+			y: 10.0d
 		}
 	]
-	title: "&7奇观地标&r"
+	title: "终章－理想乡"
 }
