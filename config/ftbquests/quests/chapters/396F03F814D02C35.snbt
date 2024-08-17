@@ -336,11 +336,60 @@
 			size: 4.0d
 			subtitle: "更多的存储空间..."
 			tasks: [{
-				id: "4278594152DF9691"
-				item: "sophisticatedbackpacks:iron_backpack"
+				id: "715AACF6E890312F"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:copper_backpack"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:iron_backpack"
+								tag: {
+									contentsUuid: [I;
+										649568246
+										300499112
+										-1813098165
+										1190534335
+									]
+									inventorySlots: 54
+									renderInfo: {
+										upgradeItems: [
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+											{
+												Count: 1b
+												id: "minecraft:air"
+											}
+										]
+									}
+									upgradeSlots: 2
+								}
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:gold_backpack"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:diamond_backpack"
+							}
+							{
+								Count: 1b
+								id: "sophisticatedbackpacks:netherite_backpack"
+							}
+						]
+					}
+				}
 				type: "item"
 			}]
-			title: "铁制背包"
+			title: "升级背包"
 			x: -10.0d
 			y: 8.0d
 		}
@@ -1225,6 +1274,8 @@
 			dependencies: ["6CB0D6C95710E071"]
 			description: [
 				"通过空投补给获得了大量的物资，现在你可以升级一下自己的装备了。"
+				""
+				"奖励赠送的&6铁矿脉镐&r是使用&6模块化工作台&r制作，这在&d第二章主线&r会有介绍。"
 				""
 				"&7除了铁制工具，你可以在后续了解到如何使用模块化工作台制作更多更好用的物品——比如任务奖励中允许连锁采集的矿脉镐。&r"
 				""

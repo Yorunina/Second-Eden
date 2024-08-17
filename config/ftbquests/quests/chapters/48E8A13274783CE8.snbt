@@ -34,7 +34,7 @@
 				type: "checkmark"
 			}]
 			title: "更多提交物资方法"
-			x: -10.0d
+			x: -4.0d
 			y: -8.0d
 		}
 		{
@@ -59,7 +59,7 @@
 				type: "checkmark"
 			}]
 			title: "建造/升级－流程归纳详解"
-			x: -4.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -95,11 +95,11 @@
 				type: "checkmark"
 			}]
 			title: "小屋方块交互界面－内容详解"
-			x: -10.0d
+			x: -4.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["1ADDD64E5A657D5D"]
+			dependencies: ["587DBFFF5FC88DAC"]
 			description: [
 				"&7——你已经建造了简陋的安全保护设施，现在我们可以正式开始建造建筑工小屋了。&r"
 				""
@@ -132,7 +132,7 @@
 				type: "checkmark"
 			}]
 			title: "建造建筑工小屋－开始建造"
-			x: -18.0d
+			x: -12.0d
 			y: -2.0d
 		}
 		{
@@ -197,7 +197,7 @@
 				type: "checkmark"
 			}]
 			title: "建造建筑工小屋－提交物资"
-			x: -10.0d
+			x: -4.0d
 			y: -2.0d
 		}
 		{
@@ -427,7 +427,7 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0459DEEBB651A740"]
+			dependencies: ["38D79A89B549CDD3"]
 			description: [
 				"先来建造一个&d酒馆&r吧！"
 				""
@@ -833,7 +833,7 @@
 			y: -14.0d
 		}
 		{
-			dependencies: ["1BC31AE4D5CC9452"]
+			dependencies: ["56A929C487807003"]
 			description: [
 				"&d——建筑说明——&r"
 				"因为&2击落空投补给&r最好的方法是用&6弓&r射击，所以你最好先建造一个&d养鸡人小屋&r。"
@@ -865,23 +865,31 @@
 				item: "minecolonies:blockhutchickenherder"
 				type: "item"
 			}]
-			x: 44.0d
+			x: 50.0d
 			y: 4.0d
 		}
 		{
-			dependencies: ["4D9B31BA50E0ADFD"]
+			dependencies: ["1BC31AE4D5CC9452"]
 			description: [
 				"&6笼子&r可以捕捉&b小型动物&r，你可以手持笼子&a右键&r野外遇到的鸡，将其带回殖民地。&7（再次手持笼子右键以放出内部的动物）&r"
 				""
 				"对于牛、猪、羊等大型动物，你可以&2先让其繁殖后代&r，将&b幼年动物&r用笼子带回。"
 			]
 			id: "56A929C487807003"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "14317311B33A14C5"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "14317311B33A14C5"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "36B357F350C80CEC"
+					item: "minecraft:egg"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "将小型动物带回殖民地"
 			tasks: [{
@@ -889,14 +897,14 @@
 				item: "supplementaries:cage"
 				type: "item"
 			}]
-			x: 50.0d
+			x: 44.0d
 			y: 4.0d
 		}
 		{
 			dependencies: [
 				"0240BC60693B4004"
-				"56A929C487807003"
 				"5E20F811C15B7422"
+				"4D9B31BA50E0ADFD"
 			]
 			description: [
 				"&7——你已经安顿了全部公民的岗位，现在你需要增添新的人口了！"
@@ -1001,321 +1009,8 @@
 				}
 				type: "item"
 			}]
-			x: 44.0d
+			x: 50.0d
 			y: 10.0d
-		}
-		{
-			dependencies: ["38D79A89B549CDD3"]
-			description: [
-				"&c——悬赏是本整合包提供的一种“资源转化”方式，你可以独立完成，也可以解决工人的产能过剩问题。同时也是获得地图册、各种主题牌、建筑礼物盒等资源的主要方式。&r"
-				""
-				"你可以在村庄中发现&6悬赏板&r，趁着建筑工小屋在工作，外出找找吧！"
-				""
-				"&a将任务取出带在身上才累计进度&r，完成任务后手持任务&2右键&r&6悬赏板&r即可&e兑换奖励&r。"
-				""
-				"&7点击右下角以翻页。&r"
-				""
-				"{image:kubejs:textures/task/bountiful_1.png width:200 height:94 align:center}"
-				"{@pagebreak}"
-				"&6悬赏板&r中的&a任务类型&r与其&2右侧栏位&r中的&6悬赏令&r&a类型&r相关。"
-				""
-				"在&6悬赏板&r中放入各类&6悬赏令&r，即可&e在任务刷新时生成对应类型的任务&r。"
-				""
-				"&7如一个悬赏板中存在多张悬赏令，则任务刷新时会匹配所有与放入的悬赏令相关的任务。&r"
-			]
-			icon: "bountiful:bountyboard"
-			id: "0459DEEBB651A740"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "57767DC697D69C39"
-					table_id: 3054476279840700017L
-					type: "random"
-				}
-				{
-					id: "05621E7B1D56DA9A"
-					item: "bountiful:bountyboard"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 6.0d
-			subtitle: "解决产能过剩"
-			tasks: [{
-				id: "428A9E259D38E107"
-				item: {
-					Count: 1
-					id: "bountiful:decree"
-					tag: {
-						"bountiful:decree_data": "{}"
-					}
-				}
-				type: "item"
-			}]
-			title: "赏金猎人"
-			x: 8.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["0459DEEBB651A740"]
-			description: [
-				"&7——你可以在悬赏中获得各种袭击之书。"
-				"&r"
-				"在整合包中，你可以使用&e各种类型的袭击之书&r向自己或其他玩家的殖民地主动发动&d袭击&r。"
-				""
-				"作为代价，&2袭击之书产生的怪物，在击杀后有更丰富的掉落奖励&r。"
-				""
-				"袭击既可以作为&a单人模式下带有奖励的挑战&r，也可以在&a多人游戏中与其他玩家互动&r。"
-				""
-				"&7点击右下角以翻页，查看多人模式下的详细说明。&r"
-				""
-				"{@pagebreak}"
-				"在多人模式下，如果你不喜欢被袭击，也可以通过一些方法&a避免自己成为袭击的目标&r。&7(因此袭击他人殖民地更多情况下是一种双方已经知晓并认同才能做到的玩法)"
-				"&r"
-				"因为&d袭击&r是在&2殖民地外生成怪物&r，所以你可以&a设置障碍或围墙&r让生成的怪物不能进入殖民地。"
-				""
-				"或者通过权限&a让其他玩家不能接触到你的殖民地公民&r，这从根源杜绝了袭击生成的可能。"
-				"   "
-			]
-			id: "751C216B9FBB5C80"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "05959AD8D3173C6A"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
-			shape: "gear"
-			size: 4.0d
-			subtitle: "一点小小的挑战..."
-			tasks: [{
-				id: "1AC4E05332BCB24E"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:raid_book"
-							}
-							{
-								Count: 1b
-								id: "kubejs:custom_raid_book"
-							}
-							{
-								Count: 1b
-								id: "kubejs:undead_raid_book"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "主动袭击！"
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: [
-				"48FD6C4DE7C8B59A"
-				"0459DEEBB651A740"
-			]
-			description: [
-				"在&a悬赏板任务&r中，你会获得名为&6大师认证&r的特殊物品。"
-				""
-				"在你完成市政厅的放置之后，你可以手持&6大师认证&r，&2右键任意镇民&r，使其属性得到巨大的提升。"
-				""
-				"&6大师认证&r将会随机选取市民的三个属性，并将其设置为50级。"
-			]
-			id: "00449E381E9DED1E"
-			rewards: [{
-				id: "1BDD24A28CBD1437"
-				table_id: 7517863136333816811L
-				title: "随机灵魂宝石"
-				type: "random"
-			}]
-			size: 4.0d
-			subtitle: "我命你为将军，那你即是将军"
-			tasks: [{
-				id: "6A249311BCD0D6BE"
-				item: "kubejs:master_certificate"
-				type: "item"
-			}]
-			title: "大师认证"
-			x: 2.0d
-			y: -8.0d
-		}
-		{
-			dependencies: ["751C216B9FBB5C80"]
-			description: [
-				"&a只能对自己的殖民地使用&r，该次袭击会生成大于一个的&c首领&r单位，请保护好你的殖民地。"
-				""
-				"&c首领&r死亡后会掉落下一个等级的&6不死侵袭之书&r。"
-			]
-			hide_dependency_lines: true
-			id: "50A33ABAC36605AB"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "6342EDE796B63BA3"
-				table_id: 3054476279840700017L
-				type: "loot"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "4A5DDC29BAEDFC2F"
-				item: "kubejs:undead_raid_book"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["751C216B9FBB5C80"]
-			description: [
-				"&a可以对自己或其他玩家的殖民地使用的袭击之书。&r"
-				""
-				"你需要通过&6袭击修饰符&r和&6怪物灵魂&r，自行配置该次袭击的怪物和强度。"
-				""
-				"配置方法为将&6无名袭击之书&r与&6袭击修饰符/怪物灵魂&r放入&6工作台&r合成。&7（一本无名袭击之书可以多次参与合成）&r"
-			]
-			hide_dependency_lines: true
-			id: "5F59CC9FE946A624"
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "5D91B2F04A6F4655"
-					table_id: 3054476279840700017L
-					type: "loot"
-				}
-				{
-					count: 3
-					id: "32B3AAA0A8D8D132"
-					item: "kubejs:zombie_orb"
-					type: "item"
-				}
-				{
-					count: 3
-					id: "3EBF3C0B8275F3B4"
-					item: "kubejs:skeleton_orb"
-					type: "item"
-				}
-			]
-			size: 4.0d
-			tasks: [{
-				id: "515A1B7CCB436A6F"
-				item: "kubejs:custom_raid_book"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 10.0d
-		}
-		{
-			dependencies: ["751C216B9FBB5C80"]
-			description: ["一般通过&6悬赏板&r的任务奖励获得，可以用来配置&6无名袭击之书&r。"]
-			hide_dependency_lines: true
-			id: "2F512643C562080F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7B4B9CD336D9B4FB"
-				table_id: 3054476279840700017L
-				type: "loot"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "04464DA780DD19E4"
-				item: "kubejs:raid_entity_modifier"
-				type: "item"
-			}]
-			x: 4.0d
-			y: 14.0d
-		}
-		{
-			dependencies: ["751C216B9FBB5C80"]
-			description: [
-				"通过&6悬赏板&r的任务奖励获得。"
-				""
-				"或者殖民地&b卫兵&r&2击杀怪物&r概率掉落。"
-			]
-			hide_dependency_lines: true
-			id: "50A2234218878C44"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7C862EB737F2FCC8"
-				table_id: 3054476279840700017L
-				type: "loot"
-			}]
-			size: 4.0d
-			tasks: [{
-				id: "6C39ED98EA0D879A"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:wither_skeleton_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:vindicator_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:archer_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:legioner_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:skirmisher_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:custom_raid_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:pillager_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:ravager_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:evoker_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:creeper_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:blaze_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:husk_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:zombie_orb"
-							}
-							{
-								Count: 1b
-								id: "kubejs:skeleton_orb"
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "怪物灵魂"
-			x: 8.0d
-			y: 14.0d
 		}
 		{
 			dependencies: ["1BC31AE4D5CC9452"]
@@ -1382,7 +1077,7 @@
 				type: "checkmark"
 			}]
 			title: "领地掌控"
-			x: 2.0d
+			x: 8.0d
 			y: -2.0d
 		}
 		{
@@ -1407,98 +1102,6 @@
 			}]
 			x: 20.0d
 			y: 4.0d
-		}
-		{
-			dependencies: ["0459DEEBB651A740"]
-			description: [
-				"本整合包&e大多数资源都可以通过各种类型的地图册获取&r。"
-				""
-				"除了你接触过的那些，还有&a更多的地图册&r，在此任务的&e“任务目标”&r会列出它们。"
-				""
-				"点击任务目标选中某个地图册，会显示它的获取途径，此时鼠标指向地图册按下&2查看用途快捷键&r&7（默认U键）&r，切换到&2如下图页面&r&e查看其包含的主题&r。"
-				""
-				"{image:kubejs:textures/task/atlas_2.png width:150 height:146 align:center}"
-			]
-			icon: {
-				Count: 1
-				id: "kubejs:huge_atlas"
-				tag: {
-					Damage: 0
-				}
-			}
-			id: "3650A6211CA16A15"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "604BF34B986712E5"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
-			shape: "gear"
-			size: 4.0d
-			tasks: [{
-				id: "4E5C4A6A330D5DAE"
-				item: {
-					Count: 1
-					id: "itemfilters:or"
-					tag: {
-						items: [
-							{
-								Count: 1b
-								id: "kubejs:wood_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:ore_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:stone_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:luxury_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:ultra_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:advanced_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-							{
-								Count: 1b
-								id: "kubejs:huge_atlas"
-								tag: {
-									Damage: 0
-								}
-							}
-						]
-					}
-				}
-				type: "item"
-			}]
-			title: "更多地图册"
-			x: 8.0d
-			y: -8.0d
 		}
 	]
 	title: "第三章－生存"
