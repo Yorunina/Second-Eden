@@ -112,6 +112,7 @@
     "msg.colony.daily_overallHappiness_rews_5_7.1": "殖民地第 %s 天，%s 为了表达对你亲力亲为建设殖民地的感激，为你送上了 %s 。",
     "msg.colony.daily_overallHappiness_rews_7_9.1": "殖民地第 %s 天，%s 为了感谢你赋予了居民安逸的生活，特别送上了 %s 作为礼物。",
     "msg.colony.daily_overallHappiness_rews_9_10.1": "殖民地第 %s 天，%s 非常感谢你能够赐予居民如此舒适的生活，费劲周章后准备了 %s 作为礼物。",
+    "msg.colony.daily_tax.1": "今天是 %s 的第 %s 天。\n        昨日纳税总额为： %s 巧克力铜币；\n        人均纳税额度为： %s 巧克力铜币",
     "msg.item.building_gift_box.1": "蓝图不存在，无法获取蓝图信息！",
     "msg.item.trial_spawner.modify.1": "已将修饰符的战利品表应用于刷怪笼！",
     "msg.item.trial_vault.modify.1": "已将修饰符的战利品表应用于金库！",
@@ -539,6 +540,7 @@
     "kubejs.puffskill.def.root_agility.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
     "kubejs.puffskill.def.root_intelligence.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
     "kubejs.puffskill.def.root_strength.desc": "对技能按下Shift可以查看技能所涉及到属性的额外信息",
+    "kubejs.puffskill.def.root_strength.title": "力量",
     "kubejs.puffskill.def.health_add_1.title": "生命值+1",
     "kubejs.puffskill.exdesc.health": "生命值：衡量玩家耐久程度的标准，默认玩家血量为20",
     "kubejs.puffskill.def.health_add_2.title": "生命值+2",
@@ -784,5 +786,7 @@
     "kubejs.tip.tip_8": "殖民地的边界是可扩张的，只需要在靠近边界的地方建造新的建筑。",
     "kubejs.tip.tip_9": "公民的属性上限受到其居住住宅等级的影响。",
     "kubejs.tip.tip_10": "9x9是最简单的风格包，没有之一！",
-    "kubejs.tip.tip_11": "工人在工作中会提高主要属性，也可能会降低某些属性，你可以在公民的职业界面查看。"
+    "kubejs.tip.tip_11": "工人在工作中会提高主要属性，也可能会降低某些属性，你可以在公民的职业界面查看。",
+    "_comment.farmingforblockheads": "贸易站",
+    "farmingforblockheads.tooltip.building_material":"建筑材料"
 }
