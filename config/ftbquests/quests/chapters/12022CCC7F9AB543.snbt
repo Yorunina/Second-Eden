@@ -47,15 +47,25 @@
 				""
 				"&d林务员小屋&r的运作需要&2周围存在相关树木&r，你可以选择在靠近森林的位置建造林务员小屋，也可以自行在其周围种树。"
 				""
-				"&c请不要忘记查看林务员小屋的交互界面，根据需要设置选区（非必须），或者设置工作时的具体要求。&r"
+				"不同树苗在不同的泥土上会有不同的生长模式，如果你仅仅需要原版的生长模式，你可以采用&6苔藓块&r作为树苗的基底。"
+				""
+				"&c请不要忘记查看林务员小屋的交互界面，尽量不要设置选区模式！这可能会导致一些未知的问题，除非你真的很了解殖民者的树木选择模式！&r"
 			]
 			id: "651B42EA92797021"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "49642A519DFFCBFE"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "49642A519DFFCBFE"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					count: 16
+					id: "5F871DAA19B5A02F"
+					item: "minecraft:moss_block"
+					type: "item"
+				}
+			]
 			size: 4.0d
 			subtitle: "伐伐伐伐伐木工"
 			tasks: [{

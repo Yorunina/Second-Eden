@@ -11,6 +11,7 @@ ServerEvents.tick(event => {
     let players = server.getPlayers()
     if (players.size() <= 0) return
     let hadGivenGiftSet = new Set()
+    
     players.forEach(/**@param {$ServerPlayer} player*/player => {
         let colony = GetColonyByPlayer(level, player)
         if (!colony) return

@@ -139,6 +139,8 @@
 				""
 				"将它拿在手中，寻找你的补给吧！"
 				""
+				"&6空投补给气球&r可以用&6弓&r击落，也可以靠近后&2空手右键&r热气球以获得奖励。"
+				""
 				"{image:kubejs:textures/task/atlas_3.png width:150 height:140 align:center fit:true}"
 			]
 			icon: {
@@ -512,11 +514,11 @@
 				type: "item"
 			}]
 			size: 4.0d
-			subtitle: "并击落其生成的空投热气球"
+			subtitle: "用弓箭击落一次社群热气球"
 			tasks: [{
 				entity: "kubejs:airdrop_balloon"
 				id: "24464DAF9CA8AD72"
-				title: "击落一次“社群地图册”的空投热气球"
+				title: "用弓箭击落一次社群热气球"
 				type: "kill"
 				value: 1L
 			}]
@@ -634,8 +636,8 @@
 				item: "toolbelt:pouch"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 14.0d
+			x: -4.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["15E42496DB35D8FA"]
@@ -1256,8 +1258,14 @@
 			size: 4.0d
 			subtitle: "似曾相识的传承"
 			tasks: [{
-				id: "4A71266F8FF80703"
-				item: "kubejs:friend_to_the_end"
+				id: "6138FA6CEBC84125"
+				item: {
+					Count: 1
+					id: "kubejs:friend_to_the_end"
+					tag: {
+						friendName: "Meatbalil"
+					}
+				}
 				type: "item"
 			}]
 			title: "和朋友一起远征"
@@ -1331,7 +1339,7 @@
 			}]
 			title: "附魔－地图册"
 			x: 8.0d
-			y: 2.0d
+			y: 14.0d
 		}
 		{
 			dependencies: ["5F041F79CCFD8CE6"]
@@ -1364,6 +1372,32 @@
 				type: "item"
 			}]
 			title: "悬挂式滑翔翼"
+			x: 2.0d
+			y: 14.0d
+		}
+		{
+			dependencies: ["3B3395C72863B7EC"]
+			description: [
+				"在获得&6补给营地/补给船&r之后，你便可以进行&d主线任务第二章－启程&r，建造殖民地了。"
+				""
+				"&7不过请不要忘记第一章的剩余主线任务。&r"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "273BDCF40896403D"
+			rewards: [{
+				id: "43F5D6D3F03E3D91"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 4.0d
+			subtitle: "如标题所示"
+			tasks: [{
+				id: "39EB14E1EC5AF882"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "现在你可以开启第二章任务了！"
 			x: 2.0d
 			y: 2.0d
 		}

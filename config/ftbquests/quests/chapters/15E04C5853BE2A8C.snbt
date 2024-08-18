@@ -219,20 +219,12 @@
 			]
 			icon: "minecolonies:scan_analyzer"
 			id: "1C73D3C14C8D1ABF"
-			rewards: [
-				{
-					command: "/gamerule builderInfResources true"
-					id: "2D57E163103072B3"
-					title: "开启简单模式"
-					type: "command"
-				}
-				{
-					command: "/gamerule builderInfResources false"
-					id: "23E7E770B44E1AF7"
-					title: "关闭简单模式"
-					type: "command"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31004CF5248A2A47"
+				table_id: 304820258407954337L
+				type: "choice"
+			}]
 			size: 4.0d
 			subtitle: "没关就是开了？"
 			tasks: [{

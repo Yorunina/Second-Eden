@@ -32,11 +32,18 @@
 			tag: { }
 		}
 		id: "0E3B5BC6A471679E"
-		rewards: [{
-			id: "72A9973B0729A09A"
-			item: "kubejs:go_camping"
-			type: "item"
-		}]
+		rewards: [
+			{
+				id: "72A9973B0729A09A"
+				item: "kubejs:go_camping"
+				type: "item"
+			}
+			{
+				id: "2096273BB3F8B9AB"
+				item: "kubejs:master_certificate"
+				type: "item"
+			}
+		]
 		shape: "rsquare"
 		size: 6.0d
 		subtitle: "制作团队：GoCamping！"

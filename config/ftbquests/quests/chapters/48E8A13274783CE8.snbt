@@ -906,6 +906,7 @@
 				"5E20F811C15B7422"
 				"4D9B31BA50E0ADFD"
 			]
+			dependency_requirement: "one_completed"
 			description: [
 				"&7——你已经安顿了全部公民的岗位，现在你需要增添新的人口了！"
 				""

@@ -1,0 +1,22 @@
+{
+	icon: "minecolonies:blockhutminer"
+	id: "043AF068F6BFB7A1"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{
+			command: "/gamerule builderInfResources true"
+			icon: "minecolonies:mediumquarry"
+			title: "开启简单模式"
+			type: "command"
+		}
+		{
+			command: "/gamerule builderInfResources false"
+			elevate_perms: true
+			icon: "minecolonies:simplequarry"
+			title: "关闭简单模式"
+			type: "command"
+		}
+	]
+	title: "简单模式"
+}
