@@ -47,7 +47,7 @@ StartupEvents.registry('item', event => {
 
     event.create('neutron_sword', 'sword').tag('minecraft:swords').tag('forge:tools').tag('minecraft:tools').texture('kubejs:item/neutron_sword').tier('neutron').tag(OVERLIMIT)
 
-    event.create('neutron_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('travelersbackpack:acceptable_tools').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/neutron_pickaxe').tier('neutron').tag(OVERLIMIT)
+    event.create('neutron_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/neutron_pickaxe').tier('neutron').tag(OVERLIMIT)
     event.create('neutron_axe', 'axe').tag('minecraft:axes').tag('forge:tools').tag('forge:tools/axes').tag('minecraft:tools').texture('kubejs:item/neutron_axe').tier('neutron').tag(OVERLIMIT)
     event.create('neutron_hoe', 'hoe').tag('minecraft:hoes').tag('forge:tools').tag('forge:tools/hoes').tag('minecraft:tools').texture('kubejs:item/neutron_hoe').tier('neutron').tag(OVERLIMIT)
     event.create('neutron_shovel', 'shovel').tag('minecraft:shovels').tag('forge:tools').tag('forge:tools/shovels').tag('minecraft:tools').texture('kubejs:item/neutron_shovel').tier('neutron').tag(OVERLIMIT)

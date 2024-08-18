@@ -231,7 +231,7 @@ ServerEvents.highPriorityData(event => {
             .setResearchId('kubejs:effects/lightspeedtradingforum', true))
 
     // 无尽催化剂
-    event.addJson(`kubejs:crafterrecipes/alchemist/item_trader_interface.json`,
+    event.addJson(`kubejs:crafterrecipes/alchemist/infinity_catalyst.json`,
         new ColonyCraftRecipes('alchemist_crafting', Item.of('kubejs:infinity_catalyst'), [Item.of('kubejs:singularity_copper', 1), Item.of('kubejs:singularity_iron', 1), Item.of('kubejs:singularity_gold', 1), Item.of('kubejs:singularity_netherite', 1), Item.of('kubejs:singularity_diamond', 1), Item.of('kubejs:singularity_emerald', 1), Item.of('kubejs:singularity_amethyst', 1), Item.of('kubejs:singularity_prismarine', 1), Item.of('kubejs:singularity_quartz', 1), Item.of('kubejs:singularity_lapis', 1), Item.of('kubejs:singularity_redstone', 1), Item.of('kubejs:singularity_glowstone', 1), Item.of('kubejs:singularity_coal', 1),])
             .setTool('singulize_potion')
             .setMinBuildingLevel(5)

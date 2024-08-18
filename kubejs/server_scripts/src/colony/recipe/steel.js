@@ -21,4 +21,5 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:steel_sword', [' S ', ' S ', ' T '], { S: 'kubejs:steel_ingot', T: 'minecraft:stick' })
     event.shaped('kubejs:steel_hoe', ['SS ', ' T ', ' T '], { S: 'kubejs:steel_ingot', T: 'minecraft:stick' })
     event.shaped('kubejs:steel_shovel', [' S ', ' T ', ' T '], { S: 'kubejs:steel_ingot', T: 'minecraft:stick' })
+    event.shaped('kubejs:steel_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:steel_ingot' })
 })

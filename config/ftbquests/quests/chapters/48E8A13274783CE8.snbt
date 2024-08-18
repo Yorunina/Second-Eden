@@ -943,7 +943,6 @@
 			tasks: [{
 				id: "1CE8BB4A7E6D6229"
 				item: "minecolonies:blockhutcitizen"
-				title: "建造一个住宅"
 				type: "item"
 			}]
 			title: "住宅"

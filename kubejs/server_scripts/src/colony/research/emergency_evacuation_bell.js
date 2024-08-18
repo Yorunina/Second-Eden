@@ -53,7 +53,7 @@ ServerEvents.highPriorityData(event => {
         new ColonyResearchModel('minecolonies:civilian', 4, [
             new ItemRequirementModel(['minecraft:bell'], 4),
             new ItemRequirementModel(['minecraft:pufferfish'], 16),
-            new ItemRequirementModel(['minecraft:echo_shard'], 8),
+            new ItemRequirementModel(['minecraft:echo_shard'], 4),
         ])
             .setEffects([{ 'kubejs:effects/ebbunlock': 1 }])
             .setParentResearch('kubejs:civilian/bapunlock')

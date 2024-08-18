@@ -5,7 +5,7 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/mechanic/gauss_bullet.json`,
         new ColonyCraftRecipes('mechanic_crafting', Item.of('k_turrets:gauss_bullet', 16), [Item.of('kubejs:steel_ingot', 1), Item.of('minecraft:green_dye', 1)])
             .setResearchId('kubejs:effects/kturrets', true))
-    event.addJson(`kubejs:crafterrecipes/mechanic/gauss_bullet.json`,
+    event.addJson(`kubejs:crafterrecipes/mechanic/explosive_powder.json`,
         new ColonyCraftRecipes('mechanic_crafting', Item.of('k_turrets:explosive_powder', 16), [Item.of('minecraft:blaze_powder', 1), Item.of('minecraft:gunpowder', 1)])
             .setResearchId('kubejs:effects/kturrets', true))
 

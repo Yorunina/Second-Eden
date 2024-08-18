@@ -18,5 +18,5 @@ ServerEvents.recipes(event => {
     event.shaped('kubejs:iridium_sword', [' S ', ' S ', ' T '], { S: 'kubejs:iridium_ingot', T: 'minecraft:stick' })
     event.shaped('kubejs:iridium_hoe', ['SS ', ' T ', ' T '], { S: 'kubejs:iridium_ingot', T: 'minecraft:stick' })
     event.shaped('kubejs:iridium_shovel', [' S ', ' T ', ' T '], { S: 'kubejs:iridium_ingot', T: 'minecraft:stick' })
-
+    event.shaped('kubejs:iridium_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:iridium_ingot' })
 })

@@ -6,8 +6,8 @@ global.AirdropPool = {}
 const NewerAirdropPool = new Map()
     .set('land', [
         new AirdropPoolItem('minecolonies:supplycampdeployer').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
-        new AirdropPoolItem('minecraft:oak_log').setMinCount(64).setMaxCount(64).setFortuneCoe(1),
-        new AirdropPoolItem('minecraft:cobblestone').setMinCount(64).setMaxCount(64).setFortuneCoe(1),
+        new AirdropPoolItem('minecraft:oak_log').setMinCount(32).setMaxCount(32).setFortuneCoe(1),
+        new AirdropPoolItem('minecraft:cobblestone').setMinCount(32).setMaxCount(32).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:iron_ingot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:gold_ingot').setMinCount(8).setMaxCount(8).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:diamond').setMinCount(1).setMaxCount(1).setFortuneCoe(1),
@@ -18,7 +18,7 @@ const NewerAirdropPool = new Map()
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
     ]).set('sea', [
         new AirdropPoolItem('minecolonies:supplychestdeployer').setMinCount(1).setMaxCount(1).setFortuneCoe(0),
-        new AirdropPoolItem('minecraft:oak_log').setMinCount(64).setMaxCount(64).setFortuneCoe(1),
+        new AirdropPoolItem('minecraft:oak_log').setMinCount(32).setMaxCount(32).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:cobblestone').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:iron_ingot').setMinCount(16).setMaxCount(16).setFortuneCoe(1),
         new AirdropPoolItem('minecraft:gold_ingot').setMinCount(8).setMaxCount(8).setFortuneCoe(1),
@@ -100,6 +100,7 @@ const OreAirdropPool = new Map()
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:nether_star').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.1),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(2).setMaxCount(8).setFortuneCoe(1.5).setChance(0.05),
+        new AirdropPoolItem('minecraft:amethyst_shard').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.5),
     ])
 
 const LuxuryAirdropPool = new Map()
@@ -228,6 +229,7 @@ const CommonAirdropPool = new Map()
         new AirdropPoolItem('minecraft:lapis_lazuli').setMinCount(8).setMaxCount(16).setFortuneCoe(1.5).setChance(0.25),
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.3),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.02),
+        new AirdropPoolItem('minecraft:amethyst_shard').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.3),
     ]).set('altas', [
         new AirdropPoolItem('kubejs:common_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.5),
         new AirdropPoolItem('kubejs:advanced_atlas').setMinCount(1).setMaxCount(1).setFortuneCoe(0).setChance(0.2),
@@ -337,6 +339,7 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:nether_star').setMinCount(1).setMaxCount(2).setFortuneCoe(1.5).setChance(0.1),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(4).setFortuneCoe(1.5).setChance(0.08),
+        new AirdropPoolItem('minecraft:amethyst_shard').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.5),
     ]).set('raw_ore', [
         new AirdropPoolItem('minecraft:coal').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(32).setMaxCount(128).setFortuneCoe(1.5).setChance(0.9),
@@ -411,6 +414,7 @@ const UltraAirdropPool = new Map()
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(1.5).setChance(0.8),
         new AirdropPoolItem('minecraft:nether_star').setMinCount(1).setMaxCount(8).setFortuneCoe(1.5).setChance(0.1),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(4).setFortuneCoe(1).setChance(0.25),
+        new AirdropPoolItem('minecraft:amethyst_shard').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.8),
     ]).set('raw_ore', [
         new AirdropPoolItem('minecraft:coal').setMinCount(128).setMaxCount(256).setFortuneCoe(1.5).setChance(0.9),
         new AirdropPoolItem('minecraft:raw_iron').setMinCount(64).setMaxCount(256).setFortuneCoe(1.5).setChance(0.9),
@@ -529,6 +533,7 @@ const HugeAirdropPool = new Map()
         new AirdropPoolItem('minecraft:lapis_lazuli').setMinCount(8).setMaxCount(16).setFortuneCoe(2).setChance(0.25),
         new AirdropPoolItem('minecraft:redstone').setMinCount(16).setMaxCount(64).setFortuneCoe(2).setChance(0.3),
         new AirdropPoolItem('kubejs:echo_crystal').setMinCount(1).setMaxCount(2).setFortuneCoe(2).setChance(0.02),
+        new AirdropPoolItem('minecraft:amethyst_shard').setMinCount(16).setMaxCount(32).setFortuneCoe(1.5).setChance(0.3),
     ])
 
 global.AirdropPool['newer'] = NewerAirdropPool

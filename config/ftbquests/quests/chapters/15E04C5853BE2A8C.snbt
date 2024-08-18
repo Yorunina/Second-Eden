@@ -204,6 +204,7 @@
 			y: -6.0d
 		}
 		{
+			can_repeat: true
 			dependencies: ["464C44DF3DD32851"]
 			description: [
 				"&d<模拟殖民地>&r是一个需要&a消耗大量资源&r的模组，虽然整合包为此做了&2大量的魔改和平衡&r，增加了&2多种玩法可以额外获取资源&r。"
@@ -218,11 +219,20 @@
 			]
 			icon: "minecolonies:scan_analyzer"
 			id: "1C73D3C14C8D1ABF"
-			rewards: [{
-				command: "/gamerule builderInfResources true"
-				id: "2D57E163103072B3"
-				type: "command"
-			}]
+			rewards: [
+				{
+					command: "/gamerule builderInfResources true"
+					id: "2D57E163103072B3"
+					title: "开启简单模式"
+					type: "command"
+				}
+				{
+					command: "/gamerule builderInfResources false"
+					id: "23E7E770B44E1AF7"
+					title: "关闭简单模式"
+					type: "command"
+				}
+			]
 			size: 4.0d
 			subtitle: "没关就是开了？"
 			tasks: [{

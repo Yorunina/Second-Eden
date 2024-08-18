@@ -1256,14 +1256,8 @@
 			size: 4.0d
 			subtitle: "似曾相识的传承"
 			tasks: [{
-				id: "6138FA6CEBC84125"
-				item: {
-					Count: 1
-					id: "kubejs:friend_to_the_end"
-					tag: {
-						friendName: "Meatbalil"
-					}
-				}
+				id: "4A71266F8FF80703"
+				item: "kubejs:friend_to_the_end"
 				type: "item"
 			}]
 			title: "和朋友一起远征"

@@ -26,6 +26,11 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:soul_sand', 3), [Item.of('minecraft:soul_soil', 1)])
             .setIntermediate('minecraft:air'))
 
+    event.addJson(`kubejs:crafterrecipes/cursher/echo_crystal.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:echo_shard', 3), [Item.of('kubejs:echo_crystal', 1)])
+            .setIntermediate('minecraft:air')
+            .setMinBuildingLevel(3))
+
     event.addJson(`kubejs:crafterrecipes/cursher/nether_brick.json`,
         new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:soul_soil', 3), [Item.of('minecraft:nether_brick', 1)])
             .setIntermediate('minecraft:air'))

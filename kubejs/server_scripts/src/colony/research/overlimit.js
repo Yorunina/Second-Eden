@@ -8,7 +8,7 @@ ServerEvents.highPriorityData(event => {
             new BuildingRequirementModel('townhall', 5),
             new BuildingRequirementModel('library', 5),
             new ItemRequirementModel(['kubejs:iridium_ingot'], 16),
-            new ItemRequirementModel(['minecraft:echo_shard'], 64),
+            new ItemRequirementModel(['kubejs:echo_crystal'], 16),
             new ItemRequirementModel(['minecraft:end_crystal'], 16),
         ])
             .setEffects([{ 'kubejs:effects/infinityintroduce': 1 }])

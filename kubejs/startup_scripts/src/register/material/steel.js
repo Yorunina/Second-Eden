@@ -48,7 +48,7 @@ StartupEvents.registry('item', event => {
 
     event.create('steel_sword', 'sword').tag('minecraft:swords').tag('forge:tools').tag(RARE).tag('minecraft:tools').texture('kubejs:item/steel_sword').tier('steel')
 
-    event.create('steel_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('travelersbackpack:acceptable_tools').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/steel_pickaxe').tier('steel').tag(RARE)
+    event.create('steel_pickaxe', 'pickaxe').tag('minecraft:pickaxes').tag('forge:tools').tag('forge:tools/pickaxes').tag('minecraft:tools').texture('kubejs:item/steel_pickaxe').tier('steel').tag(RARE)
     event.create('steel_axe', 'axe').tag('minecraft:axes').tag('forge:tools').tag('forge:tools/axes').tag('minecraft:tools').texture('kubejs:item/steel_axe').tier('steel').tag(RARE)
     event.create('steel_hoe', 'hoe').tag('minecraft:hoes').tag('forge:tools').tag('forge:tools/hoes').tag('minecraft:tools').texture('kubejs:item/steel_hoe').tier('steel').tag(RARE)
     event.create('steel_shovel', 'shovel').tag('minecraft:shovels').tag('forge:tools').tag('forge:tools/shovels').tag('minecraft:tools').texture('kubejs:item/steel_shovel').tier('steel').tag(RARE)

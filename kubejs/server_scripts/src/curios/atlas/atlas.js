@@ -34,12 +34,8 @@ NetworkEvents.dataReceived(global.AtlasKeyPressedChannel, event => {
         CreateWaypoint(player, airdropPos, new Date().toLocaleString(), 0xFAED34)
     }
 
-    if (atlasItem.getDamageValue() + 1 >= atlasItem.getMaxDamage()) {
-        atlasItem.shrink(1)
-    } else {
-        atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
-    }
-    player.addItemCooldown(atlasItem, 20 * 30)
+    atlasItem.setDamageValue(atlasItem.getDamageValue() + 1)
+    player.addItemCooldown(atlasItem, 20 * 5)
 
     let encodeAbility = player.getAttribute('kubejs:encode_ability').getValue()
     let mapItem = getMapItem(level, airdropPos)
