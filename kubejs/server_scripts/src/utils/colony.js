@@ -78,3 +78,17 @@ export function GetBuildingByPos(colony, blockPos) {
 export function SummonGuardFollowPlayer(level, player, building, colony, ticks) {
     $ItemScrollGuardHelp.summonGuardFollowPlayer(level, player, building, colony, ticks)
 }
+
+/**
+ * 
+ * @param {$IColony} colony 
+ * @param {$MutableComponent} msg 
+ */
+export function SendMsgToColonyOwner(colony, msg) {
+    let ownerPlayerUUID = colony.getPermissions().getOwner()
+    let level = colony.getWorld()
+    let ownerPlayer = level.getPlayerByUUID(ownerPlayerUUID)
+    if (ownerPlayer) {
+        ownerPlayer.tell(msg)
+    }
+}

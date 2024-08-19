@@ -5,6 +5,7 @@ const { $IColony } = require("packages/com/minecolonies/api/colony/$IColony")
 const { $ICitizenData } = require("packages/com/minecolonies/api/colony/$ICitizenData")
 const { $InventoryUtils } = require("packages/com/minecolonies/api/util/$InventoryUtils")
 const { ConvertMoneyIntoCoinItemList } = require("../utils/coin")
+const { SendMsgToColonyOwner } = require("../utils/colony")
 
 
 ServerEvents.tick(event => {
@@ -15,6 +16,7 @@ ServerEvents.tick(event => {
 
     let colonies = $IColonyManager.getInstance().getAllColonies()
     colonies.forEach(/**@param {$IColony} colony*/colony => {
+        // 如果殖民地不活跃，那么就不会进行税收
         if (!colony.isActive()) return
         dailyReward(colony)
         collectColonyTax(colony)
@@ -26,11 +28,6 @@ ServerEvents.tick(event => {
  * @returns 
  */
 function collectColonyTax(colony) {
-    let ownerPlayerUUID = colony.getPermissions().getOwner()
-    let level = colony.getWorld()
-    let ownerPlayer = level.getPlayerByUUID(ownerPlayerUUID)
-    if (!ownerPlayer) return
-
     // 税收是对于殖民者维度进行的
     let totalTaxAmount = 0
     let disableMourn = colony.getDisableMourn() ? 1 : 0
@@ -56,8 +53,7 @@ function collectColonyTax(colony) {
         totalTaxAmount = totalTaxAmount + citizenTax
     })
 
-    let averageTax = totalTaxAmount / citizenList.size()
-    ownerPlayer.tell(Text.translatable('msg.colony.daily_tax.1', Text.gold(colony.getName()), Text.yellow(colony.getDay().toFixed()), Text.gold(totalTaxAmount.toFixed()), Text.gold(averageTax.toFixed(1))))
+    SendMsgToColonyOwner(colony, Text.translatable('msg.colony.daily_tax.1', Text.gold(colony.getName()), Text.yellow(colony.getDay().toFixed()), Text.gold(totalTaxAmount.toFixed()), Text.gold(averageTax.toFixed(1))))
     return
 }
 
@@ -75,11 +71,6 @@ function dailyReward(colony) {
     let buildingItemCap = townHallBuilding.getCapability(ForgeCapabilities.ITEM_HANDLER).orElse(null)
     if (!buildingItemCap) return
 
-    let ownerPlayerUUID = colony.getPermissions().getOwner()
-    let level = colony.getWorld()
-    let ownerPlayer = level.getPlayerByUUID(ownerPlayerUUID)
-    if (!ownerPlayer) return
-
     let randomCitizen = colony.getCitizenManager().getRandomCitizen()
     if (day <= 7) {
         switch (day) {
@@ -89,32 +80,28 @@ function dailyReward(colony) {
                     nbt.putString('levelReq', '1')
                     let item = Item.of('kubejs:building_gift_box', 3, nbt)
                     $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-
-                    ownerPlayer.tell(Text.translate('msg.colony.daily_rews_1.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_rews_1.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
             case 3:
                 if (randomCitizen) {
                     let item = Item.of('kubejs:wood_atlas', 1)
                     $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-
-                    ownerPlayer.tell(Text.translate('msg.colony.daily_rews_3.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_rews_3.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
             case 5:
                 if (randomCitizen) {
                     let item = Item.of('torchmaster:megatorch', 1)
                     $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-
-                    ownerPlayer.tell(Text.translate('msg.colony.daily_rews_5.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_rews_5.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
             case 7:
                 if (randomCitizen) {
                     let item = Item.of('kubejs:snoop_ring', 1)
                     $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-
-                    ownerPlayer.tell(Text.translate('msg.colony.daily_rews_7.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                    SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_rews_7.1', Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
                 }
                 break
         }
@@ -129,7 +116,7 @@ function dailyReward(colony) {
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList1)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-                ownerPlayer.tell(Text.translate('msg.colony.daily_overallHappiness_rews_5_7.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_overallHappiness_rews_5_7.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
             }
             break
         case overallHappiness < 9:
@@ -137,7 +124,7 @@ function dailyReward(colony) {
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList2)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-                ownerPlayer.tell(Text.translate('msg.colony.daily_overallHappiness_rews_7_9.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_overallHappiness_rews_7_9.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
             }
             break
         case overallHappiness < 10:
@@ -145,7 +132,7 @@ function dailyReward(colony) {
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList3)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
-                ownerPlayer.tell(Text.translate('msg.colony.daily_overallHappiness_rews_9_10.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
+                SendMsgToColonyOwner(colony, Text.translate('msg.colony.daily_overallHappiness_rews_9_10.1', Text.gold(day.toFixed()), Text.yellow(randomCitizen.getName()), Text.of(item.getDisplayName()).append(' x ').append(item.getCount())))
             }
             break
     }
