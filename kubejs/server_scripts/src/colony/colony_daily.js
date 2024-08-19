@@ -4,9 +4,14 @@ const { $IColonyManager } = require("packages/com/minecolonies/api/colony/$IColo
 const { $IColony } = require("packages/com/minecolonies/api/colony/$IColony")
 const { $ICitizenData } = require("packages/com/minecolonies/api/colony/$ICitizenData")
 const { $InventoryUtils } = require("packages/com/minecolonies/api/util/$InventoryUtils")
-const { ConvertMoneyIntoCoinItemList } = require("../utils/coin")
+const { ConvertMoneyIntoCoinItemList, ChocolateCoinList, ChocolateCopperCoinItem, ConvertIntoMoneyValue } = require("../utils/lightmans")
 const { SendMsgToColonyOwner } = require("../utils/colony")
+const { $TaxSaveData } = require("packages/io/github/lightman314/lightmanscurrency/common/taxes/$TaxSaveData")
+const { $ExpirationBasedHappinessModifier } = require("packages/com/minecolonies/api/entity/citizen/happiness/$ExpirationBasedHappinessModifier")
+const { $StaticHappinessSupplier } = require("packages/com/minecolonies/api/entity/citizen/happiness/$StaticHappinessSupplier")
 
+const offsetList = [new Vec3i(1, 0, 0), new Vec3i(0, 1, 0), new Vec3i(0, 0, 1)
+    , new Vec3i(-1, 0, 0), new Vec3i(0, -1, 0), new Vec3i(0, 0, -1)]
 
 ServerEvents.tick(event => {
     if (event.server.tickCount % 20 != 0) return
@@ -28,6 +33,32 @@ ServerEvents.tick(event => {
  * @returns 
  */
 function collectColonyTax(colony) {
+    // 获取可能的税收方块的位置
+    let townHall = colony.getBuildingManager().getTownHall()
+    let level = colony.getWorld()
+    let hadTaxBlock = false
+    let taxEntry = null
+    // 认为默认税率为20%，映射值为 0.05 ~ 4
+    let taxRate = 1
+    if (townHall) {
+        let townHallPosition = townHall.getPosition()
+        offsetList.forEach((offset) => {
+            if (hadTaxBlock) return
+            let newPos = townHallPosition.offset(offset)
+            let block = level.getBlock(newPos.getX(), newPos.getY(), newPos.getZ())
+            if (!block) return
+            if (block.id == 'lightmanscurrency:tax_block') {
+                if (!block.entityData) return
+                let entryId = block.entityData.getInt('EntryID')
+                taxEntry = $TaxSaveData.GetTaxEntry(entryId, false)
+                if (!taxEntry.isActive()) return
+                hadTaxBlock = true
+                // 波动范围 1% ~ 80%
+                taxRate = taxEntry.getTaxRate() / 20
+            }
+        })
+    }
+
     // 税收是对于殖民者维度进行的
     let totalTaxAmount = 0
     let disableMourn = colony.getDisableMourn() ? 1 : 0
@@ -43,17 +74,23 @@ function collectColonyTax(colony) {
         let happiness = citizen.getCitizenHappinessHandler().getHappiness(colony, citizen)
         // 如果启用状态控制则进行系数调整
         let isForceWork = citizen.getForceStatus() == 'guardLike' ? 1 : underEmergencyProtocol
-        let citizenTax = Math.max(Math.ceil(1 * buildingLevel * (Math.ceil(happiness) * 0.5) * (1 - Math.max(0.5 * disableMourn, 0.9 * isForceWork))), 1)
+        let citizenTax = Math.max(Math.ceil(1 * buildingLevel * Math.pow((Math.ceil(happiness) / 3), 1.5) * (1 - Math.max(0.5 * disableMourn, 0.8 * isForceWork))) * taxRate, 1)
 
-        let coinList = ConvertMoneyIntoCoinItemList(ChocolateCoinList, citizenTax)
-        coinList.forEach(coinItem => {
-            citizen.getInventory().insertItem(coinItem, false)
-        })
-
+        if (!hadTaxBlock) {
+            let coinList = ConvertMoneyIntoCoinItemList(ChocolateCoinList, citizenTax)
+            coinList.forEach(coinItem => {
+                citizen.getInventory().insertItem(coinItem, false)
+            })
+        }
+        citizen.getCitizenHappinessHandler()
+        .addModifier(new $ExpirationBasedHappinessModifier('tax', 2.5, new $StaticHappinessSupplier(2 - taxRate), 1))
         totalTaxAmount = totalTaxAmount + citizenTax
     })
-
-    SendMsgToColonyOwner(colony, Text.translatable('msg.colony.daily_tax.1', Text.gold(colony.getName()), Text.yellow(colony.getDay().toFixed()), Text.gold(totalTaxAmount.toFixed()), Text.gold(averageTax.toFixed(1))))
+    if (hadTaxBlock) {
+        taxEntry.depositMoney(ConvertIntoMoneyValue(ChocolateCopperCoinItem, totalTaxAmount))
+    }
+    let averageTax = totalTaxAmount / citizenList.length
+    SendMsgToColonyOwner(colony, Text.translatable('msg.colony.daily_tax.1', Text.gold(colony.getName()), Text.yellow(colony.getDay().toFixed()), Text.gold(totalTaxAmount.toFixed()), Text.gold(averageTax.toFixed(1)), Text.gold((taxRate * 20).toFixed(1) + '%')))
     return
 }
 

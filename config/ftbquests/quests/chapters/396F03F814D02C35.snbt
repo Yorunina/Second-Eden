@@ -43,17 +43,25 @@
 			size: 6.0d
 			subtitle: "怀揣地图，呼叫支援"
 			tasks: [{
-				id: "16B41D0A6441E832"
+				id: "5EEB1F2E2457C85E"
 				item: {
 					Count: 1
-					ForgeCaps: {
-						"curios:item": { }
-					}
-					id: "kubejs:newer_atlas"
+					id: "minecraft:filled_map"
 					tag: {
-						Damage: 0
+						Decorations: [{
+							id: "+"
+							rot: 180.0d
+							type: 26b
+							x: 53.0d
+							z: 510.0d
+						}]
+						display: {
+							Name: "{\"translate\":\"item.map.kubejs.airdrop\"}"
+						}
+						map: 0
 					}
 				}
+				title: "使用地图册，获得空投地图"
 				type: "item"
 			}]
 			title: "新手地图册"
@@ -1258,14 +1266,8 @@
 			size: 4.0d
 			subtitle: "似曾相识的传承"
 			tasks: [{
-				id: "6138FA6CEBC84125"
-				item: {
-					Count: 1
-					id: "kubejs:friend_to_the_end"
-					tag: {
-						friendName: "Meatbalil"
-					}
-				}
+				id: "1D09A11D7325C63A"
+				item: "kubejs:friend_to_the_end"
 				type: "item"
 			}]
 			title: "和朋友一起远征"
@@ -1390,7 +1392,7 @@
 				xp: 100
 			}]
 			shape: "diamond"
-			size: 4.0d
+			size: 6.0d
 			subtitle: "如标题所示"
 			tasks: [{
 				id: "39EB14E1EC5AF882"
@@ -1399,6 +1401,182 @@
 			}]
 			title: "现在你可以开启第二章任务了！"
 			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["12B4A667D16DFF5E"]
+			description: [
+				"&d<Truly－Modular>模组&r是一个旨在让玩家能自由地以全新的方式&a研究、制造模块化装备&r的模组。"
+				""
+				"它主要用于&a提升玩家个人的战斗/作业能力&r，但同时还能&e作为殖民地卫兵的装备&r，更好的保护你的殖民地。"
+				""
+				"&7请注意，卫兵并不能使用该模组提供的所有武器，仅类似原版剑、斧、弓、弩类武器能够使用，护甲装备则没有太多限制，请玩家妥善尝试&r"
+			]
+			id: "2F4F3082E7F059E0"
+			rewards: [{
+				id: "60CFCEE22D0592B1"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "另一个四面体"
+			tasks: [{
+				id: "605BCC4B0C134A11"
+				item: "miapi:modular_work_bench"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: ["&7一个用于测试伤害的假人，它似乎有很多故事......&r"]
+			id: "10D6DC8248011CB2"
+			rewards: [
+				{
+					id: "39846FC074638E27"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "514B37272E411EA0"
+					item: "kubejs:transmog_mirror"
+					type: "item"
+				}
+			]
+			size: 4.0d
+			subtitle: "似曾相识"
+			tasks: [{
+				id: "06D6546D747083CD"
+				item: "dummmmmmy:target_dummy"
+				type: "item"
+			}]
+			title: "伤害测试假人"
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["294FB78060A8492F"]
+			description: ["一种可以快速挖掘泥土的镐子。"]
+			id: "0B13331A6EC7D843"
+			rewards: [{
+				id: "1B08A678159D2E7C"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "27F243F7F84FCB4C"
+				item: {
+					Count: 1
+					id: "miapi:modular_shovel"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_shovel\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_shovel\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——伐木斧可以让你更快的砍伐树木，高效率收集木材。&r"
+				""
+				"&6伐木斧&r的&2制作方法与锤子相同&r，仅在最后一步选择制造&a“锤子”&r即可。"
+				""
+				"请查看制造铁锤子的FTB任务。"
+			]
+			id: "294FB78060A8492F"
+			rewards: [{
+				id: "4F5B15FD62296AE6"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "420E9E63E8A7567D"
+				item: {
+					Count: 1
+					id: "miapi:modular_axe"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"axe_cutter\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F4F3082E7F059E0"]
+			description: [
+				"&7——锤子可以让你更大范围的破坏石制方块，增加你的采矿效率。&r"
+				""
+				"接下来将通过&2文字简略描述&r，以&6锤子&r为例，如何通过&6模块化工作台&r制作一把&a工具/武器/装备&r。"
+				""
+				"1.在创建界面选择本次制作的类型，选择&a“工具”&r。"
+				""
+				"2.工具柄界面放入材料。"
+				""
+				"3.&2空工具头槽&r中选择&a“工具适配器”&r。"
+				""
+				"4.新的&2空工具头槽&r中选择&a“锤头”&r。"
+			]
+			id: "6E6FC319BAE7DB80"
+			rewards: [{
+				id: "1730827F4BFF9FA5"
+				item: "simplehats:hatbag_common"
+				type: "item"
+			}]
+			size: 4.0d
+			tasks: [{
+				id: "09BE33827BB52D4E"
+				item: {
+					Count: 1
+					id: "miapi:modular_hammer"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"hammer\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6E6FC319BAE7DB80"]
+			description: ["一种可以挖掘整条矿脉的镐子。"]
+			id: "25AC7C508E6A4BDF"
+			rewards: [{
+				id: "6AE49A6D84D6086F"
+				item: "simplehats:hatbag_uncommon"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "连...连锁采集？"
+			tasks: [{
+				id: "1D153D7DB0048D4A"
+				item: {
+					Count: 1
+					id: "miapi:modular_pickaxe"
+					tag: {
+						Damage: 0
+						miapi_modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+						modules: "{\"module\":\"handle_tool\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{\"0\":{\"module\":\"tool_adapter\",\"moduleData\":{},\"subModules\":{\"0\":{\"module\":\"vein_pickaxe\",\"moduleData\":{\"properties\":\"{\\\"material\\\":\\\"iron\\\"}\"},\"subModules\":{}}}}}}"
+					}
+				}
+				type: "item"
+			}]
+			x: 20.0d
 			y: 2.0d
 		}
 	]

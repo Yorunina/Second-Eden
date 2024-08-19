@@ -36,7 +36,7 @@ BlockEvents.rightClicked(event => {
 
     if (item.hasNBT() && item.nbt.getInt('force') == 1) return
 
-    if (!block || !block.entityData.contains('blueprintDataProvider')) return
+    if (!block || !block.entityData || !block.entityData.contains('blueprintDataProvider')) return
     let blueprintDataProvider = block.entityData.getCompound('blueprintDataProvider')
     let blueprintPath = blueprintDataProvider.getString('path')
     let blueprintPack = blueprintDataProvider.getString('pack')

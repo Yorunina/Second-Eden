@@ -243,7 +243,7 @@
 	#Note: The sum of multiple tax collectors rates can still exceed this number.
 	#If a machine reaches a total tax rate of 100% it will forcible prevent all monetary interactions until this is resolved.
 	#Range: 1 -> 99
-	maxTaxRate=25
+	maxTaxRate=80
 	
 	#The maximum radius of a Tax Collectors area in meters.
 	#Range: 16 -> 2147483647

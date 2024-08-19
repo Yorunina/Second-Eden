@@ -23,12 +23,20 @@
 			]
 			icon: "minecraft:oak_hanging_sign"
 			id: "17DEAC22459AB152"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "19DFACAC896BFBE4"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19DFACAC896BFBE4"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7B29990F6E046B05"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			size: 6.0d
 			subtitle: "规划你的殖民地"
 			tasks: [{
@@ -65,6 +73,12 @@
 					item: "minecraft:moss_block"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "2F27B99D32278F32"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
 			]
 			size: 4.0d
 			subtitle: "伐伐伐伐伐木工"
@@ -88,12 +102,20 @@
 				"{image:kubejs:textures/task/restaurant_1.png width:180 height:202 align:1}"
 			]
 			id: "4153CA3DBEAFD200"
-			rewards: [{
-				count: 10
-				id: "096CB73010DE636F"
-				item: "minecraft:sweet_berries"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "096CB73010DE636F"
+					item: "minecraft:sweet_berries"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1B5129E4A92BF26A"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			subtitle: "民以食为本"
@@ -116,12 +138,20 @@
 			]
 			icon: "farmersdelight:stove"
 			id: "791CA5DF667A96A5"
-			rewards: [{
-				count: 10
-				id: "6C5D05FDB0116A7F"
-				item: "farmersdelight:melon_popsicle"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "6C5D05FDB0116A7F"
+					item: "farmersdelight:melon_popsicle"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2A0A673A3ED01CE6"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 4.0d
 			tasks: [{
@@ -147,12 +177,20 @@
 				"小屋每提升一级，就可以&2额外饲养两只羊&r。"
 			]
 			id: "7031C2F542F45F0B"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0BD63BF4BBF0D70B"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0BD63BF4BBF0D70B"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34E6C56FF230F79A"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -178,12 +216,20 @@
 			]
 			hide_dependency_lines: true
 			id: "133DB3E04EE28397"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "1C31CE0C4DD65787"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1C31CE0C4DD65787"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "24039CD7BBB25F80"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -209,12 +255,20 @@
 			]
 			hide_dependency_lines: true
 			id: "72C52C33BBE98EF9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7B51F7F57A62266E"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B51F7F57A62266E"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3EDD2E2B9A9DCA54"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -240,12 +294,20 @@
 			]
 			hide_dependency_lines: true
 			id: "15451D62750D643A"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5C13D4C8E9BBD825"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C13D4C8E9BBD825"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6403F320DD78B88B"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -269,12 +331,20 @@
 			]
 			hide_dependency_lines: true
 			id: "4419C9845823F38F"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "468B334CAA88DF47"
-				table_id: 7517863136333816811L
-				type: "loot"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "468B334CAA88DF47"
+					table_id: 7517863136333816811L
+					type: "loot"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "19AA0F1F6E31B896"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -301,12 +371,20 @@
 				"矿井等级影响工人&a最高能使用的工具品质&r，也影响工人的&a最大开采深度&r。"
 			]
 			id: "19A82DA478C4E234"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "74DB0BBB0AF09D94"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "74DB0BBB0AF09D94"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2DB4874BA0F2E4F0"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			subtitle: "探索与挖掘"
@@ -330,12 +408,20 @@
 				"&7如果在建筑工具页面没有找到采石场，请尝试切换主题包。&r"
 			]
 			id: "34749243B92836B9"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "19CC9C55E31A7111"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19CC9C55E31A7111"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5DB180D9C1BE56FB"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -350,12 +436,20 @@
 			dependencies: ["34749243B92836B9"]
 			description: ["用途同&b简易采石场&r，&2提供的挖掘区域更大&r。"]
 			id: "20FC6394B95B770D"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "5A014F2FA63E5316"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A014F2FA63E5316"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "34DE414A487020D0"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -387,12 +481,20 @@
 			]
 			icon: "minecolonies:blockhutenchanter"
 			id: "454B2E001427F930"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "56EEEE72E3F04C7B"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "56EEEE72E3F04C7B"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "52924EE64C5A1FF8"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			subtitle: "强大的魔法卷轴！"
@@ -429,12 +531,20 @@
 			]
 			icon: "minecolonies:blockhutdeliveryman"
 			id: "082FAB88FE33CBB3"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "63FC56E5B5C7810A"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "63FC56E5B5C7810A"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "3170B378DA97EA39"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 6.0d
 			subtitle: "主角登场！自动化的开始！"
@@ -462,12 +572,20 @@
 				"勾选&aDeliver-what's-available&r后，视为永久请求该物品直至玩家手动取消或信箱自带容量爆满。&7（每次退出信箱GUI后勾选自动取消，所以你需要在此界面挂机才能达到效果）&r"
 			]
 			id: "26F57776CEEB7597"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "0637E36B13C5B88B"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0637E36B13C5B88B"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "389F9CC5E99B759D"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			size: 4.0d
 			tasks: [{
 				id: "741718E03D9C9B0D"
@@ -486,12 +604,20 @@
 			]
 			hide_dependency_lines: true
 			id: "7F35605653AAA39C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "459C69144E984A1F"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "459C69144E984A1F"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2F555E96B2AAB5F7"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			size: 4.0d
 			tasks: [{
 				id: "280548403DCDFEBE"
@@ -512,12 +638,20 @@
 			]
 			hide_dependency_lines: true
 			id: "494F2734B1E9620C"
-			rewards: [{
-				count: 10
-				id: "47DF5BACA8F7197F"
-				item: "minecraft:melon_slice"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 10
+					id: "47DF5BACA8F7197F"
+					item: "minecraft:melon_slice"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2CE12A7FC665835D"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -555,6 +689,12 @@
 					item: "minecraft:name_tag"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "4DFD5367A0BA1270"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
 			]
 			size: 4.0d
 			tasks: [
@@ -584,12 +724,20 @@
 			]
 			icon: "minecraft:oak_hanging_sign"
 			id: "540D37928023BA6C"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "17CA6A96ECAEFC1F"
-				table_id: 7517863136333816811L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "17CA6A96ECAEFC1F"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0201B77306B6A3BB"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			size: 4.0d
 			tasks: [{
@@ -639,12 +787,20 @@
 			]
 			icon: "minecraft:oak_hanging_sign"
 			id: "43BB214913EF7032"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "140418ECA082D958"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "140418ECA082D958"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "44A79999664DF812"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "diamond"
 			size: 4.0d
 			subtitle: "以矿井为例"

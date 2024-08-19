@@ -165,7 +165,7 @@
 				type: "checkmark"
 			}]
 			title: "更合理的岗位分配"
-			x: 26.0d
+			x: 32.0d
 			y: -8.0d
 		}
 		{
@@ -285,7 +285,7 @@
 				type: "item"
 			}]
 			title: "灵魂宝石"
-			x: 32.0d
+			x: 38.0d
 			y: -8.0d
 		}
 		{
@@ -320,7 +320,7 @@
 				}
 				type: "item"
 			}]
-			x: 38.0d
+			x: 44.0d
 			y: -8.0d
 		}
 		{
@@ -352,7 +352,7 @@
 				}
 				type: "item"
 			}]
-			x: 38.0d
+			x: 44.0d
 			y: 4.0d
 		}
 		{
@@ -381,7 +381,7 @@
 				type: "checkmark"
 			}]
 			title: "学无止境"
-			x: 62.0d
+			x: 68.0d
 			y: -2.0d
 		}
 		{
@@ -409,11 +409,19 @@
 				}
 			}
 			id: "7D863AE63787CE9F"
-			rewards: [{
-				id: "76785F6A4093C5D7"
-				item: "minecolonies:ancienttome"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "76785F6A4093C5D7"
+					item: "minecolonies:ancienttome"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FD0945B55751428"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "gear"
 			size: 4.0d
 			subtitle: "野蛮入侵"
@@ -423,7 +431,7 @@
 				type: "checkmark"
 			}]
 			title: "敌对袭击"
-			x: 32.0d
+			x: 38.0d
 			y: -2.0d
 		}
 		{
@@ -532,7 +540,7 @@
 		{
 			dependencies: [
 				"0E140DD8AE0C7D73"
-				"6AAF1859CF4A5496"
+				"5AF7B68229B1FEAA"
 			]
 			description: [
 				"&d——建筑说明——&r"
@@ -570,7 +578,7 @@
 				item: "minecolonies:blockhutguardtower"
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: -2.0d
 		}
 		{
@@ -600,7 +608,7 @@
 				}
 				type: "item"
 			}]
-			x: 26.0d
+			x: 32.0d
 			y: 4.0d
 		}
 		{
@@ -629,7 +637,7 @@
 				type: "checkmark"
 			}]
 			title: "市政厅全局雇佣设置"
-			x: 32.0d
+			x: 38.0d
 			y: -14.0d
 		}
 		{
@@ -658,7 +666,7 @@
 				type: "checkmark"
 			}]
 			title: "调岗"
-			x: 38.0d
+			x: 44.0d
 			y: -14.0d
 		}
 		{
@@ -676,12 +684,20 @@
 			]
 			icon: "minecolonies:blockhutbuilder"
 			id: "1BC31AE4D5CC9452"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "32BBD4C93C4DCF2F"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "32BBD4C93C4DCF2F"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "46EC6537F3C2BB03"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			subtitle: "再建造一个1级建筑工小屋"
@@ -692,7 +708,7 @@
 				type: "item"
 			}]
 			title: "岗位！需要岗位！"
-			x: 38.0d
+			x: 44.0d
 			y: -2.0d
 		}
 		{
@@ -716,12 +732,20 @@
 			]
 			icon: "minecolonies:blockhutfarmer"
 			id: "08D157B06A70DAE5"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "7A17B584F3383FFD"
-				table_id: 3054476279840700017L
-				type: "choice"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7A17B584F3383FFD"
+					table_id: 3054476279840700017L
+					type: "choice"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "577FB605782995D7"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			subtitle: "自动种植，并提供岗位"
@@ -730,7 +754,7 @@
 				item: "minecolonies:blockhutfarmer"
 				type: "item"
 			}]
-			x: 44.0d
+			x: 50.0d
 			y: -8.0d
 		}
 		{
@@ -757,7 +781,7 @@
 				item: "minecolonies:blockhutfield"
 				type: "item"
 			}]
-			x: 50.0d
+			x: 56.0d
 			y: -8.0d
 		}
 		{
@@ -820,6 +844,12 @@
 					item: "supplementaries:flax_seeds"
 					type: "item"
 				}
+				{
+					exclude_from_claim_all: true
+					id: "4EA8C0F7DA97CD89"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
 			]
 			size: 4.0d
 			subtitle: "春播秋种"
@@ -829,7 +859,7 @@
 				type: "checkmark"
 			}]
 			title: "四季对作物的影响"
-			x: 50.0d
+			x: 56.0d
 			y: -14.0d
 		}
 		{
@@ -865,7 +895,7 @@
 				item: "minecolonies:blockhutchickenherder"
 				type: "item"
 			}]
-			x: 50.0d
+			x: 56.0d
 			y: 4.0d
 		}
 		{
@@ -897,7 +927,7 @@
 				item: "supplementaries:cage"
 				type: "item"
 			}]
-			x: 44.0d
+			x: 50.0d
 			y: 4.0d
 		}
 		{
@@ -933,12 +963,20 @@
 				"{image:kubejs:textures/task/text_6.png width:200 height:62 align:center}"
 			]
 			id: "2B39314EAB45A5F4"
-			rewards: [{
-				count: 8
-				id: "38BA7CFC3B16C233"
-				item: "minecraft:name_tag"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 8
+					id: "38BA7CFC3B16C233"
+					item: "minecraft:name_tag"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0B21991CA9377139"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			size: 4.0d
 			subtitle: "提升人口上限的常用建筑"
 			tasks: [{
@@ -947,7 +985,7 @@
 				type: "item"
 			}]
 			title: "住宅"
-			x: 56.0d
+			x: 62.0d
 			y: -2.0d
 		}
 		{
@@ -962,12 +1000,20 @@
 			]
 			icon: "minecraft:name_tag"
 			id: "7617CF08A1D8AB61"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "073946E569D0B50D"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "073946E569D0B50D"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "40DC12450D2C4EC7"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			size: 4.0d
 			subtitle: "自定义公民名称"
 			tasks: [{
@@ -976,7 +1022,7 @@
 				type: "item"
 			}]
 			title: "文明"
-			x: 56.0d
+			x: 62.0d
 			y: 4.0d
 		}
 		{
@@ -1009,7 +1055,7 @@
 				}
 				type: "item"
 			}]
-			x: 50.0d
+			x: 56.0d
 			y: 10.0d
 		}
 		{
@@ -1032,12 +1078,20 @@
 				"{image:kubejs:textures/task/fish_1.png width:150 height:155 align:center}"
 			]
 			id: "5E20F811C15B7422"
-			rewards: [{
-				exclude_from_claim_all: true
-				id: "07E0EA60118A00D5"
-				table_id: 3054476279840700017L
-				type: "random"
-			}]
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07E0EA60118A00D5"
+					table_id: 3054476279840700017L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2288D079436AC388"
+					table_id: 7517863136333816811L
+					type: "random"
+				}
+			]
 			shape: "rsquare"
 			size: 4.0d
 			tasks: [{
@@ -1045,7 +1099,7 @@
 				item: "minecolonies:blockhutfisherman"
 				type: "item"
 			}]
-			x: 44.0d
+			x: 50.0d
 			y: -2.0d
 		}
 		{
@@ -1101,6 +1155,73 @@
 				type: "item"
 			}]
 			x: 20.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6AAF1859CF4A5496"]
+			description: [
+				"你可以向你的殖民地工人&a征税&r——&e这是自动进行的&r。"
+				""
+				"每天你的殖民地工人都会自动为你提供巧克力币，这取决于以下方面："
+				""
+				"&e——殖民地工作岗位数量"
+				""
+				"&e——殖民地工作小屋等级"
+				""
+				"&e——公民的幸福度"
+				""
+				"&e——人性化的统治（是否强制化工作、是否禁止哀悼）&r"
+				""
+				"你可以用&6巧克力币&r在&6贸易站&r换取&a各种建筑材料&r。"
+				""
+				"&c巧克力币将生成于工人的物品栏中，当你拥有仓库和快递员之后，每当工人开始工作，便会将巧克力币放入所属建筑的存储空间，再由快递员带回仓库。&r"
+			]
+			id: "5AF7B68229B1FEAA"
+			rewards: [{
+				id: "2E933A397568400B"
+				item: "lightmanscurrency:coin_chocolate_copper"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 4.0d
+			subtitle: "税收政策"
+			tasks: [{
+				id: "588EBC3A6A376125"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			title: "贸易站"
+			x: 26.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7AC699326CF74534"]
+			description: [
+				"&7——公民初期的属性是很低的，这意味着他们的工作速度可能不尽如人意。&r"
+				""
+				"当你了解建筑工的工作分为&a“破坏阶段”&r和&a“建筑阶段”&r后，你便&e可以帮助他工作&r。"
+				""
+				"&e——在“破坏阶段”你可以帮助他铲平地基。"
+				""
+				"&e——在建筑阶段，你可以帮他放置方块。"
+			]
+			icon: "minecraft:oak_hanging_sign"
+			id: "5086A808A0E43901"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E0AC4BD06840F03"
+				table_id: 3054476279840700017L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 4.0d
+			tasks: [{
+				id: "2E7EE29D44F9D66F"
+				title: "我已了解"
+				type: "checkmark"
+			}]
+			title: "给予帮助"
+			x: 2.0d
 			y: 4.0d
 		}
 	]

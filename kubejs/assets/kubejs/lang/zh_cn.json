@@ -112,7 +112,7 @@
     "msg.colony.daily_overallHappiness_rews_5_7.1": "殖民地第 %s 天，%s 为了表达对你亲力亲为建设殖民地的感激，为你送上了 %s 。",
     "msg.colony.daily_overallHappiness_rews_7_9.1": "殖民地第 %s 天，%s 为了感谢你赋予了居民安逸的生活，特别送上了 %s 作为礼物。",
     "msg.colony.daily_overallHappiness_rews_9_10.1": "殖民地第 %s 天，%s 非常感谢你能够赐予居民如此舒适的生活，费劲周章后准备了 %s 作为礼物。",
-    "msg.colony.daily_tax.1": "今天是 %s 的第 %s 天。\n        昨日纳税总额为： %s 巧克力铜币；\n        人均纳税额度为： %s 巧克力铜币",
+    "msg.colony.daily_tax.1": "今天是 %s 的第 %s 天。\n        昨日纳税总额为： %s 巧克力铜币；\n        人均纳税额度为： %s 巧克力铜币\n        税率： %s",
     "msg.item.building_gift_box.1": "蓝图不存在，无法获取蓝图信息！",
     "msg.item.trial_spawner.modify.1": "已将修饰符的战利品表应用于刷怪笼！",
     "msg.item.trial_vault.modify.1": "已将修饰符的战利品表应用于金库！",
@@ -788,5 +788,9 @@
     "kubejs.tip.tip_10": "9x9是最简单的风格包，没有之一！",
     "kubejs.tip.tip_11": "工人在工作中会提高主要属性，也可能会降低某些属性，你可以在公民的职业界面查看。",
     "_comment.farmingforblockheads": "贸易站",
-    "farmingforblockheads.tooltip.building_material":"建筑材料"
+    "farmingforblockheads.tooltip.building_material":"建筑材料",
+    "_comment.other": "其他",
+    "com.minecolonies.coremod.gui.townhall.happiness.tax": "税收",
+    "com.minecolonies.coremod.gui.townhall.happiness.desc.tax": "过高的税收可能会导致居民的不满，较低的税收会使居民舒适。"
+    
 }
