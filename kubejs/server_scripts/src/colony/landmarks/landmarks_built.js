@@ -58,14 +58,14 @@ const SpecialBuildRequestCompletedStrategy = {
         return true
     },
     'ColonyLandMarks/EiffelTower2': (event) => {
-        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower2', 1)) return false
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower2', 1)) return false
         if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/eiffeltower1', 'kubejs:landmarks/eiffeltower2', 'kubejs:landmarks/eiffeltower3'])) {
             if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)) return false
         }
         return true
     },
     'ColonyLandMarks/EiffelTower3': (event) => {
-        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffelTower3', 1)) return false
+        if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower3', 1)) return false
         if (checkMultiStructIsFulfill(event.colony, ['kubejs:landmarks/eiffeltower1', 'kubejs:landmarks/eiffeltower2', 'kubejs:landmarks/eiffeltower3'])) {
             if (!finishResearch(event.colony, 'kubejs:landmarks', 'kubejs:landmarks/eiffeltower', 1)) return false
         }

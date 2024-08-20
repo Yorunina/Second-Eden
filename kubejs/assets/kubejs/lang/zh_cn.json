@@ -182,7 +182,7 @@
     "com.kubejs.research.landmarks.eiffeltower2.name": "埃菲尔铁塔-2",
     "com.kubejs.research.landmarks.eiffeltower2.subtitle": "埃菲尔铁塔的中部，建筑工如果要建造这里，或许需要一些额外的帮助。\n§4该科技需要建造地标EiffelTower2自动解锁。",
     "com.kubejs.research.landmarks.eiffeltower3.name": "埃菲尔铁塔-3",
-    "com.kubejs.research.landmarks.eiffeltower3.subtitle": "埃菲尔铁塔的顶部，终于，这个建筑要完成了！\n§4该科技需要建造地标EiffelTower2自动解锁。",
+    "com.kubejs.research.landmarks.eiffeltower3.subtitle": "埃菲尔铁塔的顶部，终于，这个建筑要完成了！\n§4该科技需要建造地标EiffelTower3自动解锁。",
     "com.kubejs.research.landmarks.eiffeltower.name": "埃菲尔铁塔",
     "com.kubejs.research.landmarks.eiffeltower.subtitle": "这就是埃菲尔铁塔在这里的复制品！它虽然并不那么好看，但它的意义非比寻常！不过，我们的冶炼工人在建造过程中确实受了不少苦。\n§4完成前置后自动解锁。",
     "com.kubejs.research.effects.smeltingmaster.description": "冶炼厂冶炼时，如果触发了双倍冶炼，那么现在会变成三倍；如果触发了三倍，那么会变成五倍。",
