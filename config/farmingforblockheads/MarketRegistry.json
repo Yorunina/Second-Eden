@@ -37,6 +37,13 @@
                 "item": "minecraft:sweet_berries"
             },
             "sortIndex": 20
+        },
+        "special_item": {
+            "name": "Ãÿ ‚ŒÔ∆∑",
+            "icon": {
+                "item": "kubejs:building_gift_box"
+            },
+            "sortIndex": 30
         }
     },
     "customEntries": [
@@ -44,6 +51,39 @@
             "output": {
                 "item": "minecraft:cobblestone",
                 "count": 64
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:cobbled_deepslate",
+                "count": 32
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:diorite",
+                "count": 16
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:andesite",
+                "count": 16
             },
             "payment": {
                 "item": "lightmanscurrency:coin_chocolate_gold",
@@ -91,6 +131,28 @@
             },
             "payment": {
                 "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:clay",
+                "count": 8
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:quartz_block",
+                "count": 16
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
                 "count": 1
             },
             "category": "building_material"
@@ -699,6 +761,142 @@
                 "count": 1
             },
             "category": "plants_material"
+        },
+        {
+            "output": {
+                "item": "kubejs:building_gift_box",
+                "nbt": {
+                    "levelReq": "1"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 10
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:building_gift_box",
+                "nbt": {
+                    "levelReq": "2"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 5
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:building_gift_box",
+                "nbt": {
+                    "levelReq": "3"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 10
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:building_gift_box",
+                "nbt": {
+                    "levelReq": "4"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
+                "count": 5
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:building_gift_box",
+                "nbt": {
+                    "levelReq": "5"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
+                "count": 10
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:master_certificate",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "simplehats:hatbag_festive",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "simplehats:hatbag_halloween",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "simplehats:hatbag_summer",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "simplehats:hatbag_easter",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "trials:trial_vault",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
+                "count": 1
+            },
+            "category": "special_item"
         }
     ]
 }

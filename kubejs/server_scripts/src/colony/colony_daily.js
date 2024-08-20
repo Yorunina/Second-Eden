@@ -149,7 +149,7 @@ function dailyReward(colony) {
         case overallHappiness < 5:
             break
         case overallHappiness < 7:
-            if (Math.random() > 0.2) return
+            if (Math.random() > 0.3) return
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList1)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
@@ -157,7 +157,7 @@ function dailyReward(colony) {
             }
             break
         case overallHappiness < 9:
-            if (Math.random() > 0.2) return
+            if (Math.random() > 0.3) return
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList2)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)
@@ -165,7 +165,7 @@ function dailyReward(colony) {
             }
             break
         case overallHappiness < 10:
-            if (Math.random() > 0.2) return
+            if (Math.random() > 0.3) return
             if (randomCitizen) {
                 let item = RandomGet(OverallHappinessGiftList3)
                 $InventoryUtils.addItemStackToItemHandlerWithResult(buildingItemCap, item)

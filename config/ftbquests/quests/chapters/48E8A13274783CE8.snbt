@@ -1178,8 +1178,8 @@
 			]
 			id: "5AF7B68229B1FEAA"
 			rewards: [{
-				id: "2E933A397568400B"
-				item: "lightmanscurrency:coin_chocolate_copper"
+				id: "55B3F2FDCE346FF4"
+				item: "lightmanscurrency:coin_chocolate_gold"
 				type: "item"
 			}]
 			shape: "gear"
@@ -1222,6 +1222,34 @@
 			}]
 			title: "给予帮助"
 			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5AF7B68229B1FEAA"]
+			description: [
+				"或许&220%&r的税率仍不能满足你的要求？或者单纯的嫌&e快递员&r收集税款太慢？"
+				""
+				"通过在大学研究高级经济学，解锁&6收税方块&r，将其放置在市政厅方块的临近，市政厅就会按照收税方块的配置进行税务处理！"
+				""
+				"在收税方块中&2设置激活&r，可以让市政厅将所有税款直接转化为&6数字货币&r存储在&6收税方块&r中。如果你有链接到银行账户的话，税款会直接打到你的银行账户中！"
+				""
+				"同时，你也可以在收税方块中调整你的收税政策，较高的税率会使得居民&4幸福度下降&r，因此你需要格外谨慎。"
+			]
+			id: "35E731FE628FD17B"
+			rewards: [{
+				id: "5588D1421B5234CA"
+				item: "lightmanscurrency:coin_chocolate_emerald"
+				type: "item"
+			}]
+			size: 4.0d
+			subtitle: "自动化税务设施"
+			tasks: [{
+				id: "3631A80A5FA482FC"
+				item: "lightmanscurrency:tax_block"
+				type: "item"
+			}]
+			title: "数字税务"
+			x: 26.0d
 			y: 4.0d
 		}
 	]
