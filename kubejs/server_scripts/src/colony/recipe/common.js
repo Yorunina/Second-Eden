@@ -35,6 +35,11 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:soul_soil', 3), [Item.of('minecraft:nether_brick', 1)])
             .setIntermediate('minecraft:air'))
 
+    event.addJson(`kubejs:crafterrecipes/cursher/nether_brick.json`,
+        new ColonyCraftRecipes('crusher_custom', Item.of('minecraft:prismarine_shard', 4), [Item.of('minecraft:prismarine', 1)])
+            .setIntermediate('minecraft:air'))
+
+
     event.addJson(`kubejs:crafterrecipes/alchemist/oxidized_copper.json`,
         new ColonyCraftRecipes('alchemist_crafting', Item.of('minecraft:oxidized_copper', 1), [Item.of('minecraft:copper_block', 1)])
             .setIntermediate('minecraft:air'))

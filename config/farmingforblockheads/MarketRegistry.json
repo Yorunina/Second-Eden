@@ -25,7 +25,7 @@
             "sortIndex": 0
         },
         "wood_material": {
-            "name": "Ä¾²Ä",
+            "name": "Ä¾ÖÊ²ÄÁÏ",
             "icon": {
                 "item": "minecraft:oak_log"
             },
@@ -51,6 +51,17 @@
             "output": {
                 "item": "minecraft:cobblestone",
                 "count": 64
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:stone",
+                "count": 32
             },
             "payment": {
                 "item": "lightmanscurrency:coin_chocolate_gold",
@@ -138,6 +149,28 @@
         {
             "output": {
                 "item": "minecraft:clay",
+                "count": 8
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:white_wool",
+                "count": 16
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 1
+            },
+            "category": "building_material"
+        },
+        {
+            "output": {
+                "item": "minecraft:prismarine",
                 "count": 8
             },
             "payment": {
@@ -895,6 +928,67 @@
             "payment": {
                 "item": "lightmanscurrency:coin_chocolate_diamond",
                 "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "splat:splatter",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "lightmanscurrency:tax_block",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_diamond",
+                "count": 1
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:undead_raid_book",
+                "nbt": {
+                    "rank": "1"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 3
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:undead_raid_book",
+                "nbt": {
+                    "rank": "5"
+                },
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_emerald",
+                "count": 3
+            },
+            "category": "special_item"
+        },
+        {
+            "output": {
+                "item": "kubejs:common_atlas",
+                "count": 1
+            },
+            "payment": {
+                "item": "lightmanscurrency:coin_chocolate_gold",
+                "count": 3
             },
             "category": "special_item"
         }
