@@ -20,11 +20,15 @@ ServerEvents.tick(event => {
     if (level.getDayTime() % 24000 >= 20) return
 
     let colonies = $IColonyManager.getInstance().getAllColonies()
+    let tickCounter = 10
     colonies.forEach(/**@param {$IColony} colony*/colony => {
         // 如果殖民地不活跃，那么就不会进行税收
         if (!colony.isActive()) return
-        dailyReward(colony)
-        collectColonyTax(colony)
+        level.server.scheduleInTicks(tickCounter, callback => {
+            dailyReward(colony)
+            collectColonyTax(colony)
+        })
+        tickCounter = tickCounter + 20
     })
 })
 
@@ -74,7 +78,7 @@ function collectColonyTax(colony) {
         let happiness = citizen.getCitizenHappinessHandler().getHappiness(colony, citizen)
         // 如果启用状态控制则进行系数调整
         let isForceWork = citizen.getForceStatus() == 'guardLike' ? 1 : underEmergencyProtocol
-        let citizenTax = Math.max(Math.ceil(1 * buildingLevel * Math.pow((Math.ceil(happiness) / 3), 1.5) * (1 - Math.max(0.5 * disableMourn, 0.8 * isForceWork))) * taxRate, 1)
+        let citizenTax = Math.max(Math.ceil(1 * buildingLevel * Math.pow((happiness / 3), 1.5) * (1 - Math.max(0.5 * disableMourn, 0.8 * isForceWork))) * taxRate, 1)
 
         if (!hadTaxBlock) {
             let coinList = ConvertMoneyIntoCoinItemList(ChocolateCoinList, citizenTax)

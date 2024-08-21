@@ -6,7 +6,7 @@ const { $ItemStorage } = require("packages/com/minecolonies/api/crafting/$ItemSt
 const { $SchemAnalyzerUtil } = require("packages/com/minecolonies/core/util/$SchemAnalyzerUtil");
 
 ItemEvents.rightClicked('kubejs:building_gift_box', event => {
-    let { player, item } = event
+    let { player, item, level } = event
 
     if (item.id != 'kubejs:building_gift_box') return
 
@@ -22,8 +22,12 @@ ItemEvents.rightClicked('kubejs:building_gift_box', event => {
         return
     }
     let analyzationResult = $SchemAnalyzerUtil.analyzeSchematic(bluePrint)
+    let tickCounter = 2
     analyzationResult.differentBlocks.forEach(/** @param {$ItemStorage} itemStorage*/(itemStorage) => {
-        player.give(itemStorage.getItemStack().withCount(itemStorage.getAmount()))
+        level.server.scheduleInTicks(tickCounter, callback => {
+            player.give(itemStorage.getItemStack().withCount(itemStorage.getAmount()))
+        })
+        tickCounter = tickCounter + 2
     })
     item.shrink(1)
 })
