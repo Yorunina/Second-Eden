@@ -18,13 +18,15 @@ ItemEvents.rightClicked('kubejs:building_gift_box', event => {
     /**@type {$Blueprint} */
     let bluePrint = $StructurePacks['getBlueprint(java.lang.String,java.lang.String,boolean)'](blueprintPack, blueprintPath, true)
     if (!bluePrint) {
-        player.setStatusMessage(Text.of('msg.item.building_gift_box.1'))
+        player.setStatusMessage(Text.translatable('msg.item.building_gift_box.1'))
         return
     }
     let analyzationResult = $SchemAnalyzerUtil.analyzeSchematic(bluePrint)
     let tickCounter = 2
     analyzationResult.differentBlocks.forEach(/** @param {$ItemStorage} itemStorage*/(itemStorage) => {
+        if (itemStorage.getItemStack().getId() == 'minecraft:air' || itemStorage.getItemStack().getIdLocation().getNamespace() == 'structurize') return
         level.server.scheduleInTicks(tickCounter, callback => {
+            player.tell(itemStorage.getItemStack().getId())
             player.give(itemStorage.getItemStack().withCount(itemStorage.getAmount()))
         })
         tickCounter = tickCounter + 2
@@ -47,7 +49,7 @@ BlockEvents.rightClicked(event => {
     let targetBluePrintPath = blueprintPath
 
     if (item.hasNBT() && item.nbt.contains('levelReq')) {
-        let reg = new RegExp(/(\S+)([0-5])\.blueprint/)
+        let reg = new RegExp(/([\s\S]+)([0-5])\.blueprint/)
         if (!reg.test(blueprintPath)) return
         let levelReq = item.nbt.getString('levelReq')
         targetBluePrintPath = RegExp.$1 + levelReq + '.blueprint'
