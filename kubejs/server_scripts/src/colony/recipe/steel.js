@@ -6,12 +6,13 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:coal_coke'), [Item.of('minecraft:bone_meal'), Item.of('minecraft:coal', 1)])
             .setResearchId('kubejs:effects/coalcokeunlock', true))
 
-    event.addJson(`kubejs:crafterrecipes/blacksmith/steel_ingot.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:steel_ingot'), [Item.of('minecraft:iron_ingot', 2), Item.of('kubejs:coal_coke', 2)])
-            .setResearchId('kubejs:effects/steelunlock', true))
+    // event.addJson(`kubejs:crafterrecipes/blacksmith/steel_ingot.json`,
+    //     new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:steel_ingot'), [Item.of('minecraft:iron_ingot', 1), Item.of('kubejs:coal_coke', 1)])
+    //         .setResearchId('kubejs:effects/steelunlock', true))
 })
 
 ServerEvents.recipes(event => {
+    event.smelting(Item.of('kubejs:steel_ingot', 1), Item.of('minecraft:iron_ingot', 1), 0, 1200)
     event.shaped('kubejs:steel_helmet', ['SSS', 'S S', '   '], { S: 'kubejs:steel_ingot' })
     event.shaped('kubejs:steel_chestplate', ['S S', 'SSS', 'SSS'], { S: 'kubejs:steel_ingot' })
     event.shaped('kubejs:steel_leggings', ['SSS', 'S S', 'S S'], { S: 'kubejs:steel_ingot' })

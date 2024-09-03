@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "kubejs:item/singularity",
-    "layer1": "kubejs:item/singularity_overlay"
-  }
-}

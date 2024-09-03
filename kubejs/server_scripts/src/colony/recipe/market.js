@@ -22,12 +22,6 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'lightmanscurrency:item_trader_server_med' })
     event.remove({ output: 'lightmanscurrency:item_trader_server_lrg' })
     event.remove({ output: 'lightmanscurrency:item_trader_server_xlrg' })
-    event.remove({ output: 'lightmanscurrency:cash_register' })
-    event.remove({ output: 'lightmanscurrency:portable_gem_terminal' })
-    event.remove({ output: 'lightmanscurrency:gem_terminal' })
-    event.remove({ output: 'lightmanscurrency:portable_terminal' })
-    event.remove({ output: 'lightmanscurrency:item_trader_interface' })
-    event.remove({ output: 'lightmanscurrency:terminal' })
 
     event.remove({ output: 'lightmanscurrency:paygate' })
     event.remove({ output: 'lightmanscurrency:tax_block' })
@@ -43,45 +37,6 @@ ServerEvents.highPriorityData(event => {
     event.addJson(`kubejs:crafterrecipes/enchanter/trading_core.json`,
         new ColonyCraftRecipes('enchanter_custom', Item.of('lightmanscurrency:trading_core'), [Item.of('minecraft:iron_ingot'), Item.of('minecraft:gold_ingot')])
             .setResearchId('kubejs:effects/introeconomics', true))
-
-    // 中级经济学
-    event.addJson(`kubejs:crafterrecipes/blacksmith/coin_copper.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('lightmanscurrency:coin_copper'), [Item.of('minecraft:copper_ingot')])
-            .setTool('coin_engraving')
-            .setMinBuildingLevel(1)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/coin_iron.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('lightmanscurrency:coin_iron'), [Item.of('minecraft:iron_ingot'), Item.of('minecraft:gunpowder')])
-            .setTool('coin_engraving')
-            .setMinBuildingLevel(3)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/coin_gold.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('lightmanscurrency:coin_gold'), [Item.of('minecraft:gold_ingot'), Item.of('minecraft:gunpowder'), Item.of('minecraft:blaze_powder')])
-            .setTool('coin_engraving')
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/rare_coin_engraving.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:rare_coin_engraving'), [Item.of('kubejs:common_coin_engraving'), Item.of('minecraft:diamond')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/epic_coin_engraving.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:epic_coin_engraving'), [Item.of('kubejs:rare_coin_engraving'), Item.of('minecraft:netherite_ingot')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/legendary_coin_engraving.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:legendary_coin_engraving'), [Item.of('kubejs:epic_coin_engraving'), Item.of('kubejs:iridium_ingot')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
-
-    event.addJson(`kubejs:crafterrecipes/blacksmith/overlimit_coin_engraving.json`,
-        new ColonyCraftRecipes('blacksmith_crafting', Item.of('kubejs:overlimit_coin_engraving'), [Item.of('kubejs:legendary_coin_engraving'), Item.of('kubejs:neutron_ingot')])
-            .setMinBuildingLevel(5)
-            .setResearchId('kubejs:effects/intermedeconomics', true))
 
     // 高级经济学
     event.addJson(`kubejs:crafterrecipes/mechanic/auction_stand_dark_oak.json`,
@@ -134,3 +89,4 @@ ServerEvents.highPriorityData(event => {
         new ColonyCraftRecipes('mechanic_crafting', Item.of('lightmanscurrency:ticket_kiosk'), [Item.of('minecraft:iron_ingot', 8), Item.of('minecraft:ink_sac', 4), Item.of('minecraft:redstone', 6), Item.of('lightmanscurrency:trading_core', 2)])
             .setResearchId('kubejs:effects/adveconomics', true))
 })
+

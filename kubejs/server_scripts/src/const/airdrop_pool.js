@@ -368,13 +368,6 @@ const AdvancedAirdropPool = new Map()
         new AirdropPoolItem('arcanelanterns:wailing_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
         new AirdropPoolItem('arcanelanterns:warding_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
         new AirdropPoolItem('arcanelanterns:withering_lantern').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
-    ]).set('coin', [
-        new AirdropPoolItem('kubejs:common_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.5),
-        new AirdropPoolItem('kubejs:rare_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.25),
-        new AirdropPoolItem('kubejs:epic_coin_engraving').setMinCount(1).setMaxCount(3).setFortuneCoe(0).setChance(0.05),
-        new AirdropPoolItem('lightmanscurrency:coin_iron').setMinCount(16).setMaxCount(64).setFortuneCoe(0.5).setChance(0.9),
-        new AirdropPoolItem('lightmanscurrency:coin_gold').setMinCount(4).setMaxCount(16).setFortuneCoe(0.5).setChance(0.5),
-        new AirdropPoolItem('lightmanscurrency:coin_emerald').setMinCount(1).setMaxCount(4).setFortuneCoe(0.5).setChance(0.3),
     ])
 
 const UltraAirdropPool = new Map()

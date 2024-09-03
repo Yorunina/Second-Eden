@@ -11,20 +11,6 @@ ServerEvents.highPriorityData(event => {
     )
     event.addJson(`kubejs:researches/effects/introeconomics.json`, { "effect": true })
 
-
-    event.addJson(`kubejs:researches/civilian/intermedeconomics.json`,
-        new ColonyResearchModel('minecolonies:civilian', 2, [
-            new BuildingRequirementModel('townhall', 2),
-            new ItemRequirementModel(['minecraft:gold_ingot'], 32),
-            new ItemRequirementModel(['minecraft:glowstone'], 8)
-        ])
-            .setEffects([{ 'kubejs:effects/intermedeconomics': 1 }])
-            .setParentResearch('kubejs:civilian/introeconomics')
-            .setSubtitle('com.kubejs.research.civilian.intermedeconomics.subtitle')
-    )
-    event.addJson(`kubejs:researches/effects/intermedeconomics.json`, { "effect": true })
-
-    
     event.addJson(`kubejs:researches/civilian/adveconomics.json`,
         new ColonyResearchModel('minecolonies:civilian', 2, [
             new BuildingRequirementModel('townhall', 3),
@@ -32,9 +18,8 @@ ServerEvents.highPriorityData(event => {
             new ItemRequirementModel(['lightmanscurrency:coin_gold'], 16)
         ])
             .setEffects([{ 'kubejs:effects/adveconomics': 1 }])
-            .setParentResearch('kubejs:civilian/intermedeconomics')
+            .setParentResearch('kubejs:civilian/introeconomics')
             .setSubtitle('com.kubejs.research.civilian.adveconomics.subtitle')
     )
     event.addJson(`kubejs:researches/effects/adveconomics.json`, { "effect": true })
-
 })

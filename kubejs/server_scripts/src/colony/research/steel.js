@@ -15,15 +15,4 @@ ServerEvents.highPriorityData(event => {
     )
     event.addJson(`kubejs:researches/effects/coalcokeunlock.json`, { "effect": true })
 
-    event.addJson(`kubejs:researches/technology/steelunlock.json`,
-        new ColonyResearchModel('minecolonies:technology', 3, [
-            new BuildingRequirementModel('smeltery', 2),
-            new ItemRequirementModel(['kubejs:coal_coke'], 16),
-            new ItemRequirementModel(['minecraft:bone_block'], 32),
-        ])
-            .setEffects([{ 'kubejs:effects/steelunlock': 1 }])
-            .setParentResearch('kubejs:technology/coalcokeunlock')
-            .setSubtitle('com.kubejs.research.technology.steelunlock.subtitle')
-    )
-    event.addJson(`kubejs:researches/effects/steelunlock.json`, { "effect": true })
 })

@@ -17,6 +17,5 @@ ServerEvents.recipes(event => {
     })
 
     event.shaped('kubejs:neutron_block', ['SSS', 'SSS', 'SSS'], { S: 'kubejs:neutron_ingot' })
-
     event.shapeless(Item.of('kubejs:neutron_pile', 9), ['kubejs:neutron_nugget'])
 })
