@@ -1,4 +1,187 @@
 {
-  "Traders": [],
-  "Auctions": []
+  "Traders": [
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "trader_1",
+      "Name": "建材市场",
+      "OwnerName": "Server",
+      "Rules": [
+        {
+          "Duration": 7200000,
+          "Fluctuation": 20,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "SALE",
+          "SellItem": {
+            "ID": "minecraft:dirt",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_copper",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    }
+  ],
+  "Auctions": [
+    {
+      "id": "auction_1",
+      "Item1": {
+        "ID": "kubejs:building_gift_box",
+        "Count": 1,
+        "Tag": "{levelReq:\"3\"}"
+      },
+      "Duration": 3600000,
+      "StartingBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_gold",
+            "Amount": 1
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "MinimumBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_iron",
+            "Amount": 2
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "Overtime": true
+    },
+    {
+      "id": "auction_2",
+      "Item1": {
+        "ID": "kubejs:building_gift_box",
+        "Count": 1,
+        "Tag": "{levelReq:\"4\"}"
+      },
+      "Duration": 3600000,
+      "StartingBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_gold",
+            "Amount": 3
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "MinimumBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_iron",
+            "Amount": 2
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "Overtime": true
+    },
+    {
+      "id": "auction_3",
+      "Item1": {
+        "ID": "kubejs:building_gift_box",
+        "Count": 1,
+        "Tag": "{levelReq:\"5\"}"
+      },
+      "Duration": 3600000,
+      "StartingBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_gold",
+            "Amount": 5
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "MinimumBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_iron",
+            "Amount": 3
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "Overtime": true
+    },
+    {
+      "id": "auction_4",
+      "Item1": {
+        "ID": "kubejs:master_certificate",
+        "Count": 1
+      },
+      "Duration": 3600000,
+      "StartingBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_gold",
+            "Amount": 1
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "MinimumBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_iron",
+            "Amount": 1
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "Overtime": true
+    },
+    {
+      "id": "auction_5",
+      "Item1": {
+        "ID": "minecraft:splash_potion",
+        "Count": 1,
+        "Tag": "{Potion:\"kubejs:creative_builder\"}"
+      },
+      "Duration": 3600000,
+      "StartingBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_gold",
+            "Amount": 3
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "MinimumBid": {
+        "Value": [
+          {
+            "Coin": "lightmanscurrency:coin_chocolate_iron",
+            "Amount": 5
+          }
+        ],
+        "Chain": "chocolate_coins",
+        "type": "lightmanscurrency:coins"
+      },
+      "Overtime": true
+    }
+  ]
 }
