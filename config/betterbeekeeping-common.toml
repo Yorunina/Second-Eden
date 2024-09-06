@@ -1,0 +1,8 @@
+
+#Game settings
+[general]
+	#Better Beekeeping adds the option for bees to hibernate in cold weather. Set to true to turn this feature on!
+	beeHibernation = false
+	#Custom hives from Better Beekeeping can generate unique flavors of honey with minor additional effects. Set to false if you want to just use normal honey.
+	flavoredHoney = true
+

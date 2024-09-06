@@ -42,6 +42,8 @@
             If this is disabled, the other fields in this section will have no effect
             */
             "generate_materials": true,
+            // Whether Miapi generated converters if a JsonMaterial doesnt specify if it wants the api to
+            "default_generate_converters": true,
             // The maximum amount of materials generated per type
             "max_generated_materials": 200,
             /*
