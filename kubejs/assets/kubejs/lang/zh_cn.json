@@ -23,7 +23,7 @@
     "_comment.curios": "饰品",
     "curios.identifier.atlas": "地图册",
     "curios.modifiers.atlas": "按下“呼叫空投”按键以从某处获取一个空投地图",
-    "curios.modifiers.feets": "佩戴足饰时：",
+    "curios.modifiers.feet": "佩戴足饰时：",
     "_comment.key": "按键",
     "key.kubejs.atlas_key": "呼叫空投",
     "key.categories.kubejs": "kubejs",

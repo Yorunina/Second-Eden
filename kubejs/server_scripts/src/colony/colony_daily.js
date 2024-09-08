@@ -87,7 +87,7 @@ function collectColonyTax(colony) {
             })
         }
         citizen.getCitizenHappinessHandler()
-        .addModifier(new $ExpirationBasedHappinessModifier('tax', 2.5, new $StaticHappinessSupplier(2 - taxRate), 1))
+        .addModifier(new $ExpirationBasedHappinessModifier('tax', 3, new $StaticHappinessSupplier(2 - taxRate), 1))
         totalTaxAmount = totalTaxAmount + citizenTax
     })
     if (hadTaxBlock) {

@@ -5,6 +5,13 @@
       "ID": "trader_1",
       "Name": "建材市场",
       "OwnerName": "Server",
+      "CustomIcon": {
+        "Item": {
+          "Count": 1,
+          "id": "minecraft:dirt"
+        },
+        "Type": "lightmanscurrency:item"
+      },
       "Rules": [
         {
           "Duration": 7200000,
@@ -24,6 +31,45 @@
               {
                 "Coin": "lightmanscurrency:coin_chocolate_copper",
                 "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "trader_2",
+      "Name": "家具收购",
+      "OwnerName": "Server",
+      "CustomIcon": {
+        "Item": {
+          "Count": 1,
+          "id": "minecraft:stone"
+        },
+        "Type": "lightmanscurrency:item"
+      },
+      "Rules": [
+        {
+          "Duration": 7200000,
+          "Fluctuation": 5,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "chimes:amethyst_chimes",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 1
               }
             ],
             "Chain": "chocolate_coins",
