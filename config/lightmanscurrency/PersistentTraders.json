@@ -8,7 +8,7 @@
       "CustomIcon": {
         "Item": {
           "Count": 1,
-          "id": "minecraft:dirt"
+          "id": "minecraft:oak_log"
         },
         "Type": "lightmanscurrency:item"
       },
@@ -47,7 +47,7 @@
       "CustomIcon": {
         "Item": {
           "Count": 1,
-          "id": "minecraft:stone"
+          "id": "chimes:amethyst_chimes"
         },
         "Type": "lightmanscurrency:item"
       },
@@ -62,14 +62,296 @@
         {
           "TradeType": "PURCHASE",
           "SellItem": {
-            "ID": "chimes:amethyst_chimes",
+            "ID": "chimes:bamboo_chimes",
             "Count": 1
           },
           "Price": {
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "chimes:carved_bamboo_chimes",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "chimes:copper_chimes",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 8
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "chimes:iron_chimes",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
                 "Amount": 1
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "chimes:amethyst_chimes",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "trader_3",
+      "Name": "食品收购",
+      "OwnerName": "Server",
+      "CustomIcon": {
+        "Item": {
+          "Count": 1,
+          "id": "minecolonies:sugary_bread"
+        },
+        "Type": "lightmanscurrency:item"
+      },
+      "Rules": [
+        {
+          "Duration": 7200000,
+          "Fluctuation": 10,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecolonies:sugary_bread",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecolonies:milky_bread",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecolonies:golden_bread",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 8
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "minecolonies:chorus_bread",
+            "Count": 4
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 1
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "trader_4",
+      "Name": "重工收购",
+      "OwnerName": "Server",
+      "CustomIcon": {
+        "Item": {
+          "Count": 1,
+          "id": "immersive_aircraft:biplane"
+        },
+        "Type": "lightmanscurrency:item"
+      },
+      "Rules": [
+        {
+          "Duration": 7200000,
+          "Fluctuation": 10,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:airship",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:cargo_airship",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:biplane",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:gyrodyne",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 3
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:quadrocopter",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "immersive_aircraft:warship",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 5
               }
             ],
             "Chain": "chocolate_coins",

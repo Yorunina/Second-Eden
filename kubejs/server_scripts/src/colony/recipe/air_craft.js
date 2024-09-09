@@ -12,7 +12,8 @@ ServerEvents.recipes(event => {
     event.remove({ output: 'immersive_aircraft:quadrocopter' })
     event.remove({ output: 'immersive_aircraft:biplane' })
     event.remove({ output: 'immersive_aircraft:gyrodyne' })
-
+    event.remove({ output: 'immersive_aircraft:warship' })
+    
     event.remove({ output: 'immersive_aircraft:improved_landing_gear' })
     event.remove({ output: 'immersive_aircraft:enhanced_propeller' })
     event.remove({ output: 'immersive_aircraft:eco_engine' })
