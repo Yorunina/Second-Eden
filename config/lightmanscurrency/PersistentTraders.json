@@ -14,7 +14,7 @@
       },
       "Rules": [
         {
-          "Duration": 7200000,
+          "Duration": 3600000,
           "Fluctuation": 20,
           "Type": "lightmanscurrency:price_fluctuation"
         }
@@ -53,7 +53,7 @@
       },
       "Rules": [
         {
-          "Duration": 7200000,
+          "Duration": 3600000,
           "Fluctuation": 5,
           "Type": "lightmanscurrency:price_fluctuation"
         }
@@ -160,7 +160,7 @@
       },
       "Rules": [
         {
-          "Duration": 7200000,
+          "Duration": 3600000,
           "Fluctuation": 10,
           "Type": "lightmanscurrency:price_fluctuation"
         }
@@ -233,6 +233,125 @@
             "Chain": "chocolate_coins",
             "type": "lightmanscurrency:coins"
           }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "delightful:jelly_bottle",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "delightful:glow_jelly_bottle",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "delightful:nut_butter_bottle",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 1
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:apple_pie",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:chocolate_pie",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "farmersdelight:sweet_berry_cheesecake",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 5
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "delightful:salmonberry_pie",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_iron",
+                "Amount": 8
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
         }
       ]
     },
@@ -250,7 +369,7 @@
       },
       "Rules": [
         {
-          "Duration": 7200000,
+          "Duration": 3600000,
           "Fluctuation": 10,
           "Type": "lightmanscurrency:price_fluctuation"
         }
@@ -266,7 +385,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
-                "Amount": 3
+                "Amount": 4
               }
             ],
             "Chain": "chocolate_coins",
@@ -283,7 +402,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
-                "Amount": 3
+                "Amount": 4
               }
             ],
             "Chain": "chocolate_coins",
@@ -300,7 +419,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
-                "Amount": 3
+                "Amount": 4
               }
             ],
             "Chain": "chocolate_coins",
@@ -317,7 +436,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
-                "Amount": 3
+                "Amount": 4
               }
             ],
             "Chain": "chocolate_coins",
@@ -334,7 +453,7 @@
             "Value": [
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
-                "Amount": 2
+                "Amount": 3
               }
             ],
             "Chain": "chocolate_coins",
@@ -352,6 +471,317 @@
               {
                 "Coin": "lightmanscurrency:coin_chocolate_gold",
                 "Amount": 5
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        }
+      ]
+    },
+    {
+      "Type": "lightmanscurrency:item_trader",
+      "ID": "trader_5",
+      "Name": "乐器收购",
+      "OwnerName": "Server",
+      "CustomIcon": {
+        "Item": {
+          "Count": 1,
+          "id": "xercamusic:violin"
+        },
+        "Type": "lightmanscurrency:item"
+      },
+      "Rules": [
+        {
+          "Duration": 3600000,
+          "Fluctuation": 50,
+          "Type": "lightmanscurrency:price_fluctuation"
+        }
+      ],
+      "Trades": [
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:french_horn",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:god",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:drum_kit",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:redstone_guitar",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:flute",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:cello",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:bass_guitar",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:saxophone",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:sansula",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:lyre",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:banjo",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:guitar",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:piano",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:violin",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:xylophone",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:oboe",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
+              }
+            ],
+            "Chain": "chocolate_coins",
+            "type": "lightmanscurrency:coins"
+          }
+        },
+        {
+          "TradeType": "PURCHASE",
+          "SellItem": {
+            "ID": "xercamusic:tubular_bell",
+            "Count": 1
+          },
+          "Price": {
+            "Value": [
+              {
+                "Coin": "lightmanscurrency:coin_chocolate_gold",
+                "Amount": 2
               }
             ],
             "Chain": "chocolate_coins",
